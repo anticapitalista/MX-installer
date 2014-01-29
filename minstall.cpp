@@ -2040,8 +2040,6 @@ void MInstall::on_swapCombo_activated() {;
   homeCombo->clear();
   homeCombo->addItem("root"); 
   for (int i = 0; i < diskCombo->count(); ++i) {
-    printf("count = ",  rootCombo->count());
-    printf("iterator = ", i);
     QString drv = QString("/dev/%1").arg(diskCombo->itemText(i));
     QString cmd = QString("/sbin/fdisk -l %1 | /bin/grep \"^/dev\"").arg(drv);
     FILE *fp = popen(cmd.toAscii(), "r");
