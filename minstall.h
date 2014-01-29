@@ -106,6 +106,7 @@ class MInstall : public QWidget, public Ui::MeInstall {
     bool removeKernel();
     bool makeGrub(int rootdev, QString rootpart, const char *rootmnt, bool initrd);
     void updatePartitionWidgets();
+    bool checkDisk();
 
     void gotoPage(int next);
     void pageDisplayed(int next);

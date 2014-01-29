@@ -426,6 +426,21 @@ bool MInstall::mountPartition(QString dev, const char *point) {
   return true;
 }
 
+// checks SMART status of the selected disk, returs false if it detects errors and user chooses to abort
+bool MInstall::checkDisk() {
+    QString drv = QString("/dev/%1").arg(diskCombo->currentText());
+    QString output = getCmdOut("smartctl -H " + drv + "|grep PASSED");
+    if (!output.contains("PASSED")) {
+      QString msg = "The disk you selected for installation is failing.\nFor more information run \"smartctl -A " + drv + "\" in console, as root.\n\nDo you want to abort the installation?";
+      int ans = QMessageBox::critical(0, QString::null, msg,
+        tr("Yes"), tr("No"));
+      if (ans == 0) {
+        return false;
+      }
+    }
+    return true;
+}
+
 /////////////////////////////////////////////////////////////////////////
 // install functions
 
@@ -1721,6 +1736,10 @@ void MInstall::pageDisplayed(int next) {
       break;
 
     case 3:
+      if (!checkDisk()) {
+        goBack(tr("Returning to Step 1 to select another disk."));
+        break;
+      }
       setCursor(QCursor(Qt::WaitCursor));
       tipsEdit->setText(tr("<p><b>Special Thanks</b><br/>Thanks to everyone who has chosen to support MX-14 with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.</p>"
       "<p>Without you there would be no MX-14 Linux.</p>"
@@ -2040,8 +2059,6 @@ void MInstall::on_swapCombo_activated() {;
   homeCombo->clear();
   homeCombo->addItem("root"); 
   for (int i = 0; i < diskCombo->count(); ++i) {
-    printf("count = ",  rootCombo->count());
-    printf("iterator = ", i);
     QString drv = QString("/dev/%1").arg(diskCombo->itemText(i));
     QString cmd = QString("/sbin/fdisk -l %1 | /bin/grep \"^/dev\"").arg(drv);
     FILE *fp = popen(cmd.toAscii(), "r");
