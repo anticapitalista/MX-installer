@@ -428,14 +428,29 @@ bool MInstall::mountPartition(QString dev, const char *point) {
 
 // checks SMART status of the selected disk, returs false if it detects errors and user chooses to abort
 bool MInstall::checkDisk() {
+    QString msg;
+    int ans;
+    QString output;
+    
     QString drv = QString("/dev/%1").arg(diskCombo->currentText());
-    QString output = getCmdOut("smartctl -H " + drv + "|grep PASSED");
-    if (!output.contains("PASSED")) {
-      QString msg = "The disk you selected for installation is failing.\nFor more information run \"smartctl -A " + drv + "\" in console, as root.\n\nDo you want to abort the installation?";
-      int ans = QMessageBox::critical(0, QString::null, msg,
+    output = getCmdOut("smartctl -H " + drv + "|grep -w FAILED");
+    if (output.contains("FAILED")) {
+      msg = output + "\n\nThe disk you selected for installation is failing.\nFor more information run \"smartctl -A " + drv + "\" in console, as root.\nYou are strongly advised to abort.\n\nDo you want to abort the installation?";
+      ans = QMessageBox::critical(0, QString::null, msg,
         tr("Yes"), tr("No"));
       if (ans == 0) {
         return false;
+      }
+    }
+    else {
+      output = getCmdOut("smartctl -H " + drv + "|egrep \"Reallocated|Pending|Uncorrect\"");
+      if (output != "") {
+        msg = output + "\n\nThe disk you selected has a number of SMART warnings.\nFor more information run \"smartctl -A " + drv + "\" in console, as root.\n\nDo you want to abort the installation?";
+        ans = QMessageBox::warning(0, QString::null, msg,
+          tr("Yes"), tr("No"));
+        if (ans == 0) {
+          return false;
+        }
       }
     }
     return true;
