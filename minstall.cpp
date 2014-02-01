@@ -1780,7 +1780,7 @@ void MInstall::pageDisplayed(int next) {
       ((MMain *)mmn)->setHelpText(tr("<p><b>Select Boot Method</b><br/>MX-14 uses the GRUB bootloader to boot MX-14 and MS-Windows. "
         "<p>By default GRUB2 is installed in the Master Boot Record of your boot drive and replaces the boot loader you were using before. This is normal.</p>"
         "<p>If you choose to install GRUB2 at root instead of MBR, then GRUB2 will be installed at the beginning of the root partition.  This option is for experts only.</p>"
-        "<p>If you do not select the Install GRUB checkbox, GRUB will not be installed at this time.  You can install GRUB later by using the Reinstall GRUB function in the MEPIS System Assistant.</p>"));
+        "<p>If you do not select the Install GRUB checkbox, GRUB will not be installed at this time.  This option is for experts only .</p>"));
       backButton->setEnabled(false);
       break;
 
