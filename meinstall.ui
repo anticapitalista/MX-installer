@@ -47,7 +47,7 @@
       </size>
      </property>
      <property name="currentIndex">
-      <number>0</number>
+      <number>4</number>
      </property>
      <widget class="QWidget" name="Step_0">
       <layout class="QGridLayout">
@@ -1931,22 +1931,6 @@ p, li { white-space: pre-wrap; }
     <hint type="destinationlabel">
      <x>414</x>
      <y>231</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>grubRootButton</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>grubRootButton</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>376</x>
-     <y>78</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>376</x>
-     <y>78</y>
     </hint>
    </hints>
   </connection>
