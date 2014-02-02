@@ -866,7 +866,7 @@ p, li { white-space: pre-wrap; }
              </sizepolicy>
             </property>
             <property name="text">
-             <string>Install GRUB for antiX and Windows</string>
+             <string>Install GRUB for MX-14 and Windows</string>
             </property>
             <property name="shortcut">
              <string>Alt+A</string>
