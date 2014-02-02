@@ -25,8 +25,6 @@ MMain::MMain() {
   minstall = new MInstall(mainFrame);
   minstall->move(5,0);
   firstShow = true;
-  system("mkdir -p /mnt/temp");
-  system("mkdir -p /mnt/temp2");
 }
 
 MMain::~MMain() {
@@ -41,6 +39,7 @@ void MMain::setHelpText(const QString &text) {
 void MMain::closeEvent(QCloseEvent *e) {
   system("umount -l /mnt/antiX/home >/dev/null 2>&1");
   system("umount -l /mnt/antiX >/dev/null 2>&1");
+  system("rm -r /mnt/antiX 2>&1");
   QWidget::closeEvent(e);
 }
 
