@@ -927,25 +927,6 @@ p, li { white-space: pre-wrap; }
             </property>
            </spacer>
           </item>
-          <item row="3" column="1" colspan="3">
-           <widget class="QCheckBox" name="initrdCheck">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="text">
-             <string>use initrd (recommended)</string>
-            </property>
-            <property name="shortcut">
-             <string>Alt+X</string>
-            </property>
-            <property name="checked">
-             <bool>true</bool>
-            </property>
-           </widget>
-          </item>
           <item row="1" column="3">
            <widget class="QRadioButton" name="grubRootButton">
             <property name="sizePolicy">
@@ -1755,7 +1736,6 @@ p, li { white-space: pre-wrap; }
   <tabstop>grubCheckBox</tabstop>
   <tabstop>grubMbrButton</tabstop>
   <tabstop>grubBootCombo</tabstop>
-  <tabstop>initrdCheck</tabstop>
   <tabstop>csView</tabstop>
   <tabstop>computerNameEdit</tabstop>
   <tabstop>computerDomainEdit</tabstop>
@@ -1835,22 +1815,6 @@ p, li { white-space: pre-wrap; }
     <hint type="destinationlabel">
      <x>262</x>
      <y>82</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>grubCheckBox</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>initrdCheck</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>187</x>
-     <y>55</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>172</x>
-     <y>145</y>
     </hint>
    </hints>
   </connection>
