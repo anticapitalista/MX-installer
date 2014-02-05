@@ -1348,15 +1348,33 @@ bool MInstall::setComputerName() {
     replaceStringInFile("mxgrp", computerGroupEdit->text(), "/mnt/antiX/etc/samba/smb.conf");
   }
   if (sambaCheckBox->isChecked()) {
-    system("mv -f /mnt/antiX/etc/rc5.d/K20samba /mnt/antiX/etc/rc5.d/S20samba >/dev/null 2>&1");
-    system("mv -f /mnt/antiX/etc/rc4.d/K20samba /mnt/antiX/etc/rc4.d/S20samba >/dev/null 2>&1");
-    system("mv -f /mnt/antiX/etc/rc3.d/K20samba /mnt/antiX/etc/rc3.d/S20samba >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc5.d/K01smbd /mnt/antiX/etc/rc5.d/S20smbd >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc4.d/K01smbd /mnt/antiX/etc/rc4.d/S20smbd >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc3.d/K01smbd /mnt/antiX/etc/rc3.d/S20smbd >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc2.d/K01smbd /mnt/antiX/etc/rc2.d/S20smbd >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc5.d/K01samba-ad-dc /mnt/antiX/etc/rc5.d/S18samba-ad-dc >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc4.d/K01samba-ad-dc /mnt/antiX/etc/rc4.d/S18samba-ad-dc >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc3.d/K01samba-ad-dc /mnt/antiX/etc/rc3.d/S18samba-ad-dc >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc2.d/K01samba-ad-dc /mnt/antiX/etc/rc2.d/S18samba-ad-dc >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc5.d/K01nmbd /mnt/antiX/etc/rc5.d/S18nmbd >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc4.d/K01nmbd /mnt/antiX/etc/rc4.d/S18nmbd >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc3.d/K01nmbd /mnt/antiX/etc/rc3.d/S18nmbd >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc2.d/K01nmbd /mnt/antiX/etc/rc2.d/S18nmbd >/dev/null 2>&1");
   } else {
-    system("mv -f /mnt/antiX/etc/rc5.d/S20samba /mnt/antiX/etc/rc5.d/K20samba >/dev/null 2>&1");
-    system("mv -f /mnt/antiX/etc/rc4.d/S20samba /mnt/antiX/etc/rc4.d/K20samba >/dev/null 2>&1");
-    system("mv -f /mnt/antiX/etc/rc3.d/S20samba /mnt/antiX/etc/rc3.d/K20samba >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc5.d/S20smbd /mnt/antiX/etc/rc5.d/K01smbd >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc4.d/S20smbd /mnt/antiX/etc/rc4.d/K01smbd >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc3.d/S20smbd /mnt/antiX/etc/rc3.d/K01smbd >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc2.d/S20smbd /mnt/antiX/etc/rc2.d/K01smbd >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc5.d/S18samba-ad-dc /mnt/antiX/etc/rc5.d/K01samba-ad-dc >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc4.d/S18samba-ad-dc /mnt/antiX/etc/rc4.d/K01samba-ad-dc >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc3.d/S18samba-ad-dc /mnt/antiX/etc/rc3.d/K01samba-ad-dc >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc2.d/S18samba-ad-dc /mnt/antiX/etc/rc2.d/K01samba-ad-dc >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc5.d/S18nmbd /mnt/antiX/etc/rc5.d/K01nmbd >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc4.d/S18nmbd /mnt/antiX/etc/rc4.d/K01nmbd >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc3.d/S18nmbd /mnt/antiX/etc/rc3.d/K01nmbd >/dev/null 2>&1");
+    system("mv -f /mnt/antiX/etc/rc2.d/S18nmbd /mnt/antiX/etc/rc2.d/K01nmbd >/dev/null 2>&1");
   }
-
+  
   replaceStringInFile("mx1", computerNameEdit->text(), "/mnt/antiX/etc/hosts");
 
   QString cmd = QString("echo \"%1\" | cat > /mnt/antiX/etc/hostname").arg(computerNameEdit->text());
