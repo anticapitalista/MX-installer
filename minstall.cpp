@@ -88,7 +88,11 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   }
   QString locale;
   locale = getCmdOut("grep ^LANG /etc/default/locale").section('=',1);
-  localeCombo->setCurrentIndex(localeCombo->findText(locale));	
+  if (localeCombo->findText(locale) != -1) {
+    localeCombo->setCurrentIndex(localeCombo->findText(locale));
+  } else {
+    localeCombo->setCurrentIndex(localeCombo->findText("en_US"));
+  }
 
   proc = new QProcess(this);
   timer = new QTimer(this);
