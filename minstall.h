@@ -62,7 +62,9 @@ class MInstall : public QWidget, public Ui::MeInstall {
     QTreeWidgetItem *acpidItem;
     QTreeWidgetItem *hddtempItem;
     QTreeWidgetItem *acpifakekeyItem;
- 
+    QTreeWidgetItem *havegedItem;
+    QTreeWidgetItem *winbindItem;
+
 
     QDialog *mmn;
 
