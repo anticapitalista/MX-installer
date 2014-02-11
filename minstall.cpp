@@ -66,7 +66,11 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   kb = kb.section('=', 1);
   kb = kb.section(',', 0, 0);
   kb.remove(QChar('"'));
-  keyboardCombo->setCurrentIndex(keyboardCombo->findText(kb));
+  if (keyboardCombo->findText(kb) != -1) {
+    keyboardCombo->setCurrentIndex(keyboardCombo->findText(kb));
+  } else {
+    keyboardCombo->setCurrentIndex(keyboardCombo->findText("us"));
+  }
 
   // locale
   localeCombo->clear();
