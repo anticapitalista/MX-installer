@@ -66,7 +66,11 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   kb = kb.section('=', 1);
   kb = kb.section(',', 0, 0);
   kb.remove(QChar('"'));
-  keyboardCombo->setCurrentIndex(keyboardCombo->findText(kb));
+  if (keyboardCombo->findText(kb) != -1) {
+    keyboardCombo->setCurrentIndex(keyboardCombo->findText(kb));
+  } else {
+    keyboardCombo->setCurrentIndex(keyboardCombo->findText("us"));
+  }
 
   // locale
   localeCombo->clear();
@@ -84,7 +88,11 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   }
   QString locale;
   locale = getCmdOut("grep ^LANG /etc/default/locale").section('=',1);
-  localeCombo->setCurrentIndex(localeCombo->findText(locale));	
+  if (localeCombo->findText(locale) != -1) {
+    localeCombo->setCurrentIndex(localeCombo->findText(locale));
+  } else {
+    localeCombo->setCurrentIndex(localeCombo->findText("en_US"));
+  }
 
   proc = new QProcess(this);
   timer = new QTimer(this);
