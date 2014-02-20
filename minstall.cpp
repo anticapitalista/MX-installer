@@ -1363,7 +1363,12 @@ bool MInstall::setComputerName() {
     QMessageBox::critical(0, QString::null,
       tr("Sorry your computer domain needs to be at least\n2 characters long. You'll have to select a different\nname before proceeding."));
     return false;
+  } else if (computerDomainEdit->text().contains(QRegExp("[^0-9a-zA-Z-.]|^-|-$"))) {
+    QMessageBox::critical(0, QString::null,
+      tr("Sorry your computer domain contains invalid characters.\nYou'll have to select a different\nname before proceeding."));
+    return false;
   }
+      
 
   QString val = getCmdValue("dpkg -s samba | grep '^Status'", "ok", " ", " ");
   if (val.compare("installed") == 0) {
@@ -1374,7 +1379,7 @@ bool MInstall::setComputerName() {
       return false;
     }
     replaceStringInFile("mx1", computerNameEdit->text(), "/mnt/antiX/etc/samba/smb.conf");
-    replaceStringInFile("mxgrp", computerGroupEdit->text(), "/mnt/antiX/etc/samba/smb.conf");
+    replaceStringInFile("Workgroup", computerGroupEdit->text(), "/mnt/antiX/etc/samba/smb.conf");
   }
   if (sambaCheckBox->isChecked()) {
     system("mv -f /mnt/antiX/etc/rc5.d/K01smbd /mnt/antiX/etc/rc5.d/S03smbd >/dev/null 2>&1");
@@ -1887,6 +1892,7 @@ void MInstall::pageDisplayed(int next) {
     case 6:
       ((MMain *)mmn)->setHelpText(tr("<p><b>Computer Identity</b><br/>The computer name is a common unique name which will identify your computer if it is on a network. "
         "The computer domain is unlikely to be used unless your ISP or local network requires it.</p>"
+        "<p>The domain name can contain only alphanumeric characters, dots, hyphens. It cannot contain blank spaces, start or end with hyphens</p>"
         "<p>The SaMBa Server needs to be activated if you want to use it to share some of your directories or printer "
         "with a local computer that is running MS-Windows or Mac OSX.</p>"));
       nextButton->setEnabled(true);
