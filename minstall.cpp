@@ -1374,7 +1374,7 @@ bool MInstall::setComputerName() {
       return false;
     }
     replaceStringInFile("mx1", computerNameEdit->text(), "/mnt/antiX/etc/samba/smb.conf");
-    replaceStringInFile("mxgrp", computerGroupEdit->text(), "/mnt/antiX/etc/samba/smb.conf");
+    replaceStringInFile("WORKGROUP", computerGroupEdit->text(), "/mnt/antiX/etc/samba/smb.conf");
   }
   if (sambaCheckBox->isChecked()) {
     system("mv -f /mnt/antiX/etc/rc5.d/K01smbd /mnt/antiX/etc/rc5.d/S03smbd >/dev/null 2>&1");
