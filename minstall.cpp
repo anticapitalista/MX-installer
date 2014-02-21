@@ -1292,8 +1292,8 @@ bool MInstall::setUserInfo() {
     return false;
   } else if (!userNameEdit->text().contains(QRegExp("^[a-z_][a-z0-9_-]*[$]?$"))) {
     QMessageBox::critical(0, QString::null,
-      tr("The user name needs be lower case\n"
-      "and it cannot contain special characters\n"
+      tr("The user name needs be lower case and it\n"
+      "cannot contain special characters or spaces\n"
       "please choose another name before proceeding."));
     return false;
   }
