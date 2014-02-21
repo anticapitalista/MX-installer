@@ -1290,6 +1290,12 @@ bool MInstall::setUserInfo() {
       "2 characters long. Please select\n"
       "a longer name before proceeding."));
     return false;
+  } else if (!userNameEdit->text().contains(QRegExp("^[a-z_][a-z0-9_-]*[$]?$"))) {
+    QMessageBox::critical(0, QString::null,
+      tr("The user name needs be lower case\n"
+      "and it cannot contain special characters\n"
+      "please choose another name before proceeding."));
+    return false;
   }
   if (strlen(userPasswordEdit->text().toAscii()) < 2) {
     QMessageBox::critical(0, QString::null,
@@ -1357,13 +1363,17 @@ bool MInstall::setComputerName() {
     QMessageBox::critical(0, QString::null,
       tr("Sorry your computer name needs to be\nat least 2 characters long. You'll have to\nselect a different name before proceeding."));
     return false;
+  } else if (computerNameEdit->text().contains(QRegExp("[^0-9a-zA-Z-.]|^[.-]|[.-]$|\\.\\."))) {
+    QMessageBox::critical(0, QString::null,
+      tr("Sorry your computer name contains invalid characters.\nYou'll have to select a different\nname before proceeding."));
+    return false;
   }
   // see if name is reasonable
   if (computerDomainEdit->text().length() < 2) {
     QMessageBox::critical(0, QString::null,
       tr("Sorry your computer domain needs to be at least\n2 characters long. You'll have to select a different\nname before proceeding."));
     return false;
-  } else if (computerDomainEdit->text().contains(QRegExp("[^0-9a-zA-Z-.]|^[.-]|[.-]$|\.\."))) {
+  } else if (computerDomainEdit->text().contains(QRegExp("[^0-9a-zA-Z-.]|^[.-]|[.-]$|\\.\\."))) {
     QMessageBox::critical(0, QString::null,
       tr("Sorry your computer domain contains invalid characters.\nYou'll have to select a different\nname before proceeding."));
     return false;
@@ -1431,7 +1441,7 @@ void MInstall::setLocale() {
   if (kb == "uk") {
     kb = "gb";
   }
-  cmd = QString("sed -i 's/.*us/XKBLAYOUT=\"%1,us\/g' /mnt/antiX/etc/default/keyboard").arg(kb);
+  cmd = QString("sed -i 's/.*us/XKBLAYOUT=\"%1,us\\/g' /mnt/antiX/etc/default/keyboard").arg(kb);
   system(cmd.toAscii());
 
   //locale
@@ -1891,7 +1901,7 @@ void MInstall::pageDisplayed(int next) {
     case 6:
       ((MMain *)mmn)->setHelpText(tr("<p><b>Computer Identity</b><br/>The computer name is a common unique name which will identify your computer if it is on a network. "
         "The computer domain is unlikely to be used unless your ISP or local network requires it.</p>"
-        "<p>The domain name can contain only alphanumeric characters, dots, hyphens. It cannot contain blank spaces, start or end with hyphens</p>"
+        "<p>The computer and domain names can contain only alphanumeric characters, dots, hyphens. They cannot contain blank spaces, start or end with hyphens</p>"
         "<p>The SaMBa Server needs to be activated if you want to use it to share some of your directories or printer "
         "with a local computer that is running MS-Windows or Mac OSX.</p>"));
       nextButton->setEnabled(true);
