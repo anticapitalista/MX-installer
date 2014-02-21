@@ -1090,7 +1090,7 @@ bool MInstall::installLoader() {
       // error
       setCursor(QCursor(Qt::ArrowCursor));
       QMessageBox::critical(this, QString::null,
-        tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX-14 then reboot to the DVD and repair the installation with the reinstall GRUB function."));
+        tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX-14 then reboot to the CD and repair the installation with the reinstall GRUB function."));
       return false;
     }
   }
