@@ -1441,7 +1441,7 @@ void MInstall::setLocale() {
   if (kb == "uk") {
     kb = "gb";
   }
-  cmd = QString("sed -i 's/.*us/XKBLAYOUT=\"%1,us\\/g' /mnt/antiX/etc/default/keyboard").arg(kb);
+  cmd = QString("sed -i 's/.*us/XKBLAYOUT=\"%1,us/g' /mnt/antiX/etc/default/keyboard").arg(kb);
   system(cmd.toAscii());
 
   //locale
