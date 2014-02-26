@@ -1101,6 +1101,7 @@ bool MInstall::installLoader() {
   system("mount -o bind /proc /mnt/antiX/proc");
 
   system("chroot /mnt/antiX update-grub");
+  system("chroot /mnt/antiX dev2uuid_fstab");
 
   system("umount /mnt/antiX/proc");
   system("umount /mnt/antiX/sys");
