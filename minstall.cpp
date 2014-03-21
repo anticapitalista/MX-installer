@@ -1101,6 +1101,8 @@ bool MInstall::installLoader() {
   system("mount -o bind /proc /mnt/antiX/proc");
 
   system("chroot /mnt/antiX update-grub");
+  system("chroot /mnt/antiX make-fstab --swap-only");
+  system("chroot /mnt/antiX dev2uuid_fstab");
 
   system("umount /mnt/antiX/proc");
   system("umount /mnt/antiX/sys");
@@ -1441,7 +1443,11 @@ void MInstall::setLocale() {
   if (kb == "uk") {
     kb = "gb";
   }
+  if (kb == "us") {
+  cmd = QString("sed -i 's/.*us/XKBLAYOUT=\"%1/g' /mnt/antiX/etc/default/keyboard").arg(kb);
+  } else {
   cmd = QString("sed -i 's/.*us/XKBLAYOUT=\"%1,us/g' /mnt/antiX/etc/default/keyboard").arg(kb);
+  }
   system(cmd.toAscii());
 
   //locale
@@ -1757,6 +1763,7 @@ void MInstall::stopInstall() {
         "Do you want to reboot now?"),
         tr("Yes"), tr("No"));
     if (ans == 0) {
+      system("/bin/rm -rf /mnt/antiX/mnt/antiX");
       system("/bin/umount -l /mnt/antiX/home >/dev/null 2>&1");
       system("/bin/umount -l /mnt/antiX >/dev/null 2>&1");
       system("/usr/local/bin/persist-config --shutdown --command reboot");
@@ -1771,6 +1778,7 @@ void MInstall::stopInstall() {
       return;
     }
   }
+  system("/bin/rm -rf /mnt/antiX/mnt/antiX");
   system("/bin/umount -l /mnt/antiX/home >/dev/null 2>&1");
   system("/bin/umount -l /mnt/antiX >/dev/null 2>&1");
 }
@@ -2314,10 +2322,10 @@ void MInstall::copyDone(int exitCode, QProcess::ExitStatus exitStatus) {
         sprintf(line, "%s / auto defaults,noatime 1 1\n", rootdev);
       }
       fputs(line, fp);
-      if (strcmp(swapdev, "/dev/none") != 0) {
-        sprintf(line, "%s swap swap sw,pri=1 0 0\n", swapdev);
-        fputs(line, fp);
-      }
+      //if (strcmp(swapdev, "/dev/none") != 0) {
+      //  sprintf(line, "%s swap swap sw,pri=1 0 0\n", swapdev);
+      //  fputs(line, fp);
+      //}
       fputs("proc /proc proc defaults 0 0\n", fp);
       fputs("devpts /dev/pts devpts mode=0622 0 0\n", fp);
       if (strcmp(homedev, "/dev/root") != 0) {
@@ -2347,10 +2355,10 @@ void MInstall::copyDone(int exitCode, QProcess::ExitStatus exitStatus) {
       fclose(fp);
     }
     // Copy live set up to install and clean up.
-    system("/bin/mv -f /etc/rc.local /mnt/antiX/etc/rc.local2");
+    //system("/bin/mv -f /etc/rc.local /mnt/antiX/etc/rc.local2");
     system("/bin/rm /mnt/antiX/etc/skel/Desktop/Installer.desktop");
     system("/bin/rm /mnt/antiX/etc/skel/.config/xfce4/desktop/icons.screen0-958x752.rc");
-    system("/bin/cp -fp /usr/share/antiX/rc.local.live /mnt/antiX/etc/rc.local");
+    //system("/bin/cp -fp /usr/share/antiX/rc.local.live /mnt/antiX/etc/rc.local");
     system("/bin/cp -fp /etc/init.d/debian/cron /mnt/antiX/etc/init.d/cron");
     system("/bin/cp -fp /etc/init.d/debian/gpm /mnt/antiX/etc/init.d/gpm");
     system("/bin/cp -fp /etc/init.d/debian/umountfs /mnt/antiX/etc/init.d/umountfs");
