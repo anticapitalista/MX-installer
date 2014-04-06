@@ -19,6 +19,7 @@
 #include "minstall.h"
 #include "mmain.h"
 
+
 MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   setupUi(this);
   char line[260];
@@ -461,7 +462,7 @@ bool MInstall::checkDisk() {
     int ans;
     QString output;
     
-    QString drv = QString("/dev/%1").arg(diskCombo->currentText());
+    QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
     output = getCmdOut("smartctl -H " + drv + "|grep -w FAILED");
     if (output.contains("FAILED")) {
       msg = output + "\n\nThe disk you selected for installation is failing.\nFor more information run \"smartctl -A " + drv + "\" in console, as root.\nYou are strongly advised to abort.\n\nDo you want to abort the installation?";
@@ -626,7 +627,7 @@ bool MInstall::makeDefaultPartitions() {
   char line[130];
   int ans;
 
-  QString drv = QString("/dev/%1").arg(diskCombo->currentText());
+  QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
   QString rootdev = QString(drv).append("1");
   QString swapdev = QString(drv).append("2");
   QString msg = QString(tr("Ok to format and use the entire disk (%1) for MX-14?")).arg(drv);
@@ -764,7 +765,7 @@ bool MInstall::makeChosenPartitions() {
   char type[20];
   QString cmd;
 
-  QString drv = QString("/dev/%1").arg(diskCombo->currentText());
+  QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
 
   // get config
   strncpy(type, rootTypeCombo->currentText().toAscii(), 4);
@@ -956,7 +957,7 @@ bool MInstall::makeChosenPartitions() {
 void MInstall::installLinux() {
   char line[130];
 
-  QString drv = QString("/dev/%1").arg(diskCombo->currentText());
+  QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
 
   strcpy(line, rootCombo->currentText().toAscii());
   char *tok = strtok(line, " -");
@@ -994,7 +995,7 @@ void MInstall::installLinux() {
 void MInstall::copyLinux() {
   char line[130];
 
-  QString drv = QString("/dev/%1").arg(diskCombo->currentText());
+  QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
 
   strcpy(line, rootCombo->currentText().toAscii());
   char *tok = strtok(line, " -");
@@ -1063,8 +1064,6 @@ bool MInstall::installLoader() {
   QString bootdrv = QString(grubBootCombo->currentText()).section(" ", 0, 0);
   QString rootpart = QString(rootCombo->currentText()).section(" ", 0, 0);
   QString boot;
-  //int rootdev = diskCombo->currentIndex();
-
 
   if (grubMbrButton->isChecked()) {
     boot = bootdrv;
@@ -2012,29 +2011,18 @@ void MInstall::refresh() {
   this->updatePartitionWidgets();
 
 //  system("umount -a 2>/dev/null");
-  FILE *fp = popen("cat /proc/partitions | grep '[h,s,v].[a-z]$' | sort --key=4 2>/dev/null", "r");
+  FILE *fp = popen("lsblk -ln -o NAME,SIZE,LABEL,MODEL -d -e 2,11 | grep '^[h,s,v].[a-z]' | sort 2>/dev/null", "r");
   if (fp == NULL) {
     return;
   }
   diskCombo->clear();
   grubBootCombo->clear();
-  char *ndev, *nsz;
-  int i, nsize;
+  int i;
   while (fgets(line, sizeof line, fp) != NULL) {
     i = strlen(line);
     line[--i] = '\0';
-    strtok(line, " \t");
-    strtok(NULL, " \t");
-    nsz = strtok(NULL, " \t");
-    ndev = strtok(NULL, " \t");
-    if (ndev != NULL && strlen(ndev) == 3) {
-      nsize = atoi(nsz) / 1024;
-      if (nsize > 1000) {
-        sprintf(line, "%s", ndev);
-        diskCombo->addItem(line);
-        grubBootCombo->addItem(line);
-      }
-    }
+    diskCombo->addItem(line);
+    grubBootCombo->addItem(line);
   }
   pclose(fp);
 
@@ -2094,7 +2082,7 @@ void MInstall::on_qtpartedButton_clicked() {
 // disk selection changed, rebuild root
 void MInstall::on_diskCombo_activated() {
   char line[130];
-  QString drv = QString("/dev/%1").arg(diskCombo->currentText());
+  QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
 
   rootCombo->clear();
   QString cmd = QString("/sbin/fdisk -l %1 | /bin/grep \"^/dev\"").arg(drv);
@@ -2135,7 +2123,7 @@ void MInstall::on_diskCombo_activated() {
 // root partition changed, rebuild swap
 void MInstall::on_rootCombo_activated() {
   char line[130];
-  QString drv = QString("/dev/%1").arg(diskCombo->currentText());
+  QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
 
   swapCombo->clear();
   swapCombo->addItem("none - or existing");
