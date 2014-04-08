@@ -1191,13 +1191,17 @@ bool MInstall::setUserName() {
     }
   } else {
     // dir does exist, clean it up
-    cmd = QString("cp /mnt/antiX/etc/skel/.bash_profile %1").arg(dpath);
+    cmd = QString("cp -n /mnt/antiX/etc/skel/.bash_profile %1").arg(dpath);
     system(cmd.toAscii());
-    cmd = QString("cp /mnt/antiX/etc/skel/.bashrc %1").arg(dpath);
+    cmd = QString("cp -n /mnt/antiX/etc/skel/.bashrc %1").arg(dpath);
     system(cmd.toAscii());
-    cmd = QString("cp /mnt/antiX/etc/skel/.gtkrc %1").arg(dpath);
+    cmd = QString("cp -n /mnt/antiX/etc/skel/.gtkrc %1").arg(dpath);
     system(cmd.toAscii());
-    cmd = QString("cp /mnt/antiX/etc/skel/.gtkrc-2.0 %1").arg(dpath);
+    cmd = QString("cp -n /mnt/antiX/etc/skel/.gtkrc-2.0 %1").arg(dpath);
+    system(cmd.toAscii());
+    cmd = QString("cp -Rn /mnt/antiX/etc/skel/.config %1").arg(dpath);
+    system(cmd.toAscii());
+    cmd = QString("cp -Rn /mnt/antiX/etc/skel/.local %1").arg(dpath); 
     system(cmd.toAscii());
   }
   // fix the ownership, demo=newuser
