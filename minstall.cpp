@@ -799,7 +799,7 @@ bool MInstall::makeChosenPartitions() {
   if (!(saveHomeCheck->isChecked() && homedev.compare("/dev/root") == 0)) {
     msg = QString(tr("Ok to format and destroy all data on \n%1 for the / (root) partition?")).arg(rootdev);
   } else {
-    msg = QString(tr("Ok to use (no format) \n%1 as the / (root) partition?")).arg(rootdev);
+    msg = QString(tr("All data on %1 will be deleted, except for /home\nOk to continue?")).arg(rootdev);
   }
   ans = QMessageBox::warning(0, QString::null, msg,
         tr("Yes"), tr("No"));
@@ -915,7 +915,7 @@ bool MInstall::makeChosenPartitions() {
     // save home
     if (homedev.compare("/dev/root") != 0) {
       // not on root
-      system("rm -r -d /mnt/antiX/home >/dev/null 2>&1");
+      // system("rm -r -d /mnt/antiX/home >/dev/null 2>&1"); ///not sure why this was here
       updateStatus(tr("Mounting the /home partition"), 8);
       if (!mountPartition(homedev, "/mnt/antiX/home")) {
         return false;
@@ -927,7 +927,7 @@ bool MInstall::makeChosenPartitions() {
     }
   } else {
     // don't save home
-    system("/bin/rm -r -d /mnt/antiX/home >/dev/null 2>&1");
+    system("/bin/rm -r /mnt/antiX/home >/dev/null 2>&1");
     mkdir("/mnt/antiX/home",0755);
     if (homedev.compare("/dev/root") != 0) {
       // not on root
@@ -981,13 +981,9 @@ void MInstall::installLinux() {
     disconnect(proc, SIGNAL(started()), 0, 0);
     connect(proc, SIGNAL(started()), this, SLOT(delStart()));
     disconnect(proc, SIGNAL(finished(int, QProcess::ExitStatus)), 0, 0);
-    connect(proc, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(delDone(int, QProcess::ExitStatus)));
-    // setup and start the process
-    QString cmd = QString("/bin/rm -r -d /mnt/antiX/bin /mnt/antiX/boot");
-    cmd.append(" /mnt/antiX/dev /mnt/antiX/etc /mnt/antiX/lib /mnt/antiX/mnt");
-    cmd.append(" /mnt/antiX/opt /mnt/antiX/proc /mnt/antiX/root /mnt/antiX/sbin");
-    cmd.append(" /mnt/antiX/selinux /mnt/antiX/sys /mnt/antiX/tmp /mnt/antiX/usr");
-    cmd.append(" /mnt/antiX/var /mnt/antiX/run");
+    connect(proc, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(delDone(int, QProcess::ExitStatus))); 
+    // remove all folders in root except for /home
+    QString cmd = QString("/bin/bash -c \"find /mnt/antiX -mindepth 1 -maxdepth 1 ! -name home -exec rm -r {} \\;\"");
     proc->start(cmd);
   }
 }
