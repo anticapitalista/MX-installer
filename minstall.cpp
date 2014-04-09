@@ -1115,6 +1115,10 @@ bool MInstall::setUserName() {
   DIR *dir;
   QString msg, cmd;
 
+  if (remasterCheckBox->isChecked()) {
+    return true;
+  }
+
   // see if user directory already exists
   QString dpath = QString("/mnt/antiX/home/%1").arg(userNameEdit->text());
   if ((dir = opendir(dpath.toAscii())) != NULL) {
@@ -1227,6 +1231,9 @@ bool MInstall::setUserName() {
 }
 
 bool MInstall::setPasswords() {
+  if (remasterCheckBox->isChecked()) {
+    return true;
+  }
   FILE *fp = popen("chroot /mnt/antiX passwd root", "w");
   bool fpok = true;
   QString cmd = QString("%1\n").arg(rootPasswordEdit->text());
@@ -1282,7 +1289,9 @@ bool MInstall::setPasswords() {
 }
 
 bool MInstall::setUserInfo() {
-
+  if (remasterCheckBox->isChecked()) {
+    return true;
+  }
   //validate data before proceeding
   // see if username is reasonable length
   if (strlen(userNameEdit->text().toAscii()) < 2) {
