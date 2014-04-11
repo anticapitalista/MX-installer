@@ -1611,7 +1611,7 @@ p, li { white-space: pre-wrap; }
           <string>Use this option only for installing remastered ISOs</string>
          </property>
          <property name="text">
-          <string>Preserve remastered accounts</string>
+          <string>Preserve snapshot-backup accounts</string>
          </property>
         </widget>
        </item>
