@@ -1608,7 +1608,7 @@ p, li { white-space: pre-wrap; }
        <item row="4" column="0">
         <widget class="QCheckBox" name="remasterCheckBox">
          <property name="toolTip">
-          <string>Use this option only for installing remastered ISOs</string>
+          <string>Use this option only for installing snapshot-backup ISOs</string>
          </property>
          <property name="text">
           <string>Preserve snapshot-backup accounts</string>
