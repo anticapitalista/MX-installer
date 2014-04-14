@@ -1776,6 +1776,8 @@ void MInstall::stopInstall() {
       system("/bin/umount -l /mnt/antiX >/dev/null 2>&1");
       system("/usr/local/bin/persist-config --shutdown --command reboot");
       return;
+    } else {
+      qApp->exit(0);
     }
 
   } else if (curr > 3) {
