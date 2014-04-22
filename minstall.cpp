@@ -1767,7 +1767,7 @@ void MInstall::stopInstall() {
   } else if (curr >= c-3) {
     int ans = QMessageBox::information(0, QString::null,
       tr("MX-14 installation and configuration is complete.\n"
-        "To use the new installation, reboot without the CD.\n"
+        "To use the new installation, reboot without the installation media.\n"
         "Do you want to reboot now?"),
         tr("Yes"), tr("No"));
     if (ans == 0) {
