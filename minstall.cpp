@@ -473,7 +473,7 @@ bool MInstall::checkDisk() {
       }
     }
     else {
-      output = getCmdOut("smartctl -H " + drv + "| grep -E \"Reallocated|Pending|Uncorrect\" | awk '{ if ( $10 != 0 ) { print } }'");
+      output = getCmdOut("smartctl -A " + drv + "| grep -E \"Reallocated|Pending|Uncorrect\" | awk '{ if ( $10 != 0 ) { print } }'");
       if (output != "") {
         msg = output + "\n\nThe disk you selected has a number of SMART warnings.\nFor more information run \"smartctl -A " + drv + "\" in console, as root.\n\nDo you want to abort the installation?";
         ans = QMessageBox::warning(0, QString::null, msg,
