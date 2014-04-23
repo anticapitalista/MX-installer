@@ -473,7 +473,7 @@ bool MInstall::checkDisk() {
       }
     }
     else {
-      output = getCmdOut("smartctl -H " + drv + "|egrep \"Reallocated|Pending|Uncorrect\"");
+      output = getCmdOut("smartctl -A " + drv + "| grep -E \"Reallocated|Pending|Uncorrect\" | awk '{ if ( $10 != 0 ) { print } }'");
       if (output != "") {
         msg = output + "\n\nThe disk you selected has a number of SMART warnings.\nFor more information run \"smartctl -A " + drv + "\" in console, as root.\n\nDo you want to abort the installation?";
         ans = QMessageBox::warning(0, QString::null, msg,
@@ -1767,7 +1767,7 @@ void MInstall::stopInstall() {
   } else if (curr >= c-3) {
     int ans = QMessageBox::information(0, QString::null,
       tr("MX-14 installation and configuration is complete.\n"
-        "To use the new installation, reboot without the CD.\n"
+        "To use the new installation, reboot without the installation media.\n"
         "Do you want to reboot now?"),
         tr("Yes"), tr("No"));
     if (ans == 0) {
