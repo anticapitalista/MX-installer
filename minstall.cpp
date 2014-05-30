@@ -342,8 +342,8 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
     computerGroupEdit->setEnabled(false);
     computerGroupEdit->setText("");
   }
+  csView->resizeColumnToContents(0);
   csView->resizeColumnToContents(1);
-  csView->resizeColumnToContents(2);
 }
 
 MInstall::~MInstall() {
