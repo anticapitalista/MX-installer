@@ -125,7 +125,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   if (val.compare("installed") == 0) {
   sshItem = new QTreeWidgetItem(networkItem);
   sshItem->setText(0, "ssh");
-  sshItem->setText(1, tr("ssh"));
+  sshItem->setText(1, tr("Secure Shell"));
   sshItem->setCheckState(0, Qt::Checked);
   } else {
     sshItem = NULL;
@@ -135,7 +135,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   if (val.compare("installed") == 0) {
   spamassassinItem = new QTreeWidgetItem(networkItem);
   spamassassinItem->setText(0, "spamassassin");
-  spamassassinItem->setText(1, tr("spamassassin"));
+  spamassassinItem->setText(1, tr("Mail filter"));
   spamassassinItem->setCheckState(0, Qt::Checked);
   } else {
     spamassassinItem = NULL;
@@ -145,7 +145,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   if (val.compare("installed") == 0) {
   nfsItem = new QTreeWidgetItem(networkItem);
   nfsItem->setText(0, "nfs");
-  nfsItem->setText(1, tr("nfs"));
+  nfsItem->setText(1, tr("Network File System"));
   nfsItem->setCheckState(0, Qt::Checked);
   } else {
     nfsItem = NULL;
@@ -155,7 +155,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   if (val.compare("installed") == 0) {
   rpcbindItem = new QTreeWidgetItem(networkItem);
   rpcbindItem->setText(0, "rpcbind");
-  rpcbindItem->setText(1, tr("rpcbind"));
+  rpcbindItem->setText(1, tr("Port mapper"));
   rpcbindItem->setCheckState(0, Qt::Checked);
   } else {
     rpcbindItem = NULL;
@@ -165,7 +165,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   if (val.compare("installed") == 0) {
   bluetoothItem = new QTreeWidgetItem(networkItem);
   bluetoothItem->setText(0, "bluetooth");
-  bluetoothItem->setText(1, tr("bluetooth"));
+  bluetoothItem->setText(1, tr("Bluetooth"));
   bluetoothItem->setCheckState(0, Qt::Checked);
   } else {
     bluetoothItem = NULL;
@@ -189,7 +189,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   if (val.compare("installed") == 0) {
     anacronItem = new QTreeWidgetItem(hardwareItem);
     anacronItem->setText(0, "anacron");
-    anacronItem->setText(1, tr("anacron"));
+    anacronItem->setText(1, tr("Runs commands periodically"));
     anacronItem->setCheckState(0, Qt::Checked);
   } else {
     anacronItem = NULL;
@@ -199,7 +199,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   if (val.compare("installed") == 0) {
     smartmontoolsItem = new QTreeWidgetItem(hardwareItem);
     smartmontoolsItem->setText(0, "smartmontools");
-    smartmontoolsItem->setText(1, tr("smartmontools"));
+    smartmontoolsItem->setText(1, tr("S.M.A.R.T. monitoring tools"));
     smartmontoolsItem->setCheckState(0, Qt::Checked);
   } else {
     smartmontoolsItem = NULL;
@@ -209,7 +209,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   if (val.compare("installed") == 0) {
     acpidItem = new QTreeWidgetItem(hardwareItem);
     acpidItem->setText(0, "acpid");
-    acpidItem->setText(1, tr("acpid"));
+    acpidItem->setText(1, tr("Advanced Configuration and Power Interface event daemon"));
     acpidItem->setCheckState(0, Qt::Checked);
   } else {
     acpidItem = NULL;
@@ -219,7 +219,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   if (val.compare("installed") == 0) {
     hddtempItem = new QTreeWidgetItem(hardwareItem);
     hddtempItem->setText(0, "hddtemp");
-    hddtempItem->setText(1, tr("hddtemp"));
+    hddtempItem->setText(1, tr("HDD temperature monitor"));
     hddtempItem->setCheckState(0, Qt::Checked);
   } else {
     hddtempItem = NULL;
@@ -229,7 +229,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   if (val.compare("installed") == 0) {
     acpifakekeyItem = new QTreeWidgetItem(hardwareItem);
     acpifakekeyItem->setText(0, "acpi-fakekey");
-    acpifakekeyItem->setText(1, tr("acpi-fakekey"));
+    acpifakekeyItem->setText(1, tr("Generates key events for ACPI scripts"));
     acpifakekeyItem->setCheckState(0, Qt::Checked);
   } else {
     acpifakekeyItem = NULL;
@@ -239,7 +239,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   if (val.compare("installed") == 0) {
     dbusItem = new QTreeWidgetItem(hardwareItem);
     dbusItem->setText(0, "dbus");
-    dbusItem->setText(1, tr("dbus"));
+    dbusItem->setText(1, tr("Message bus daemon"));
     dbusItem->setCheckState(0, Qt::Checked);
   } else {
     dbusItem = NULL;
@@ -249,7 +249,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   if (val.compare("installed") == 0) {
     cronItem = new QTreeWidgetItem(hardwareItem);
     cronItem->setText(0, "cron");
-    cronItem->setText(1, tr("cron"));
+    cronItem->setText(1, tr("Time-based job scheduler"));
     cronItem->setCheckState(0, Qt::Checked);
   } else {
     cronItem = NULL;
@@ -259,7 +259,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   if (val.compare("installed") == 0) {
     rsyncItem = new QTreeWidgetItem(hardwareItem);
     rsyncItem->setText(0, "rsync");
-    rsyncItem->setText(1, tr("rsync"));
+    rsyncItem->setText(1, tr("File-copying tool"));
     rsyncItem->setCheckState(0, Qt::Checked);
   } else {
     rsyncItem = NULL;
@@ -269,7 +269,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   if (val.compare("installed") == 0) {
     gpmItem = new QTreeWidgetItem(hardwareItem);
     gpmItem->setText(0, "gpm");
-    gpmItem->setText(1, tr("gpm"));
+    gpmItem->setText(1, tr("Mouse event server"));
     gpmItem->setCheckState(0, Qt::Checked);
   } else {
     gpmItem = NULL;
@@ -279,7 +279,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   if (val.compare("installed") == 0) {
     sudoItem = new QTreeWidgetItem(hardwareItem);
     sudoItem->setText(0, "sudo");
-    sudoItem->setText(1, tr("sudo"));
+    sudoItem->setText(1, tr("Execute a command as another user"));
     sudoItem->setCheckState(0, Qt::Checked);
   } else {
     sudoItem = NULL;
@@ -289,7 +289,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   if (val.compare("installed") == 0) {
     sanedItem = new QTreeWidgetItem(hardwareItem);
     sanedItem->setText(0, "saned");
-    sanedItem->setText(1, tr("saned"));
+    sanedItem->setText(1, tr("Scanner daemon"));
     sanedItem->setCheckState(0, Qt::Checked);
   } else {
     sanedItem = NULL;
@@ -299,7 +299,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   if (val.compare("installed") == 0) {
     havegedItem = new QTreeWidgetItem(hardwareItem);
     havegedItem->setText(0, "haveged");
-    havegedItem->setText(1, tr("haveged"));
+    havegedItem->setText(1, tr("Random number generator"));
     havegedItem->setCheckState(0, Qt::Checked);
   } else {
     havegedItem = NULL;
@@ -309,7 +309,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   if (val.compare("installed") == 0) {
     winbindItem = new QTreeWidgetItem(hardwareItem);
     winbindItem->setText(0, "winbind");
-    winbindItem->setText(1, tr("winbind"));
+    winbindItem->setText(1, tr("Name Service Switch daemon for resolving names from NT servers"));
     winbindItem->setCheckState(0, Qt::Checked);
   } else {
     winbindItem = NULL;
@@ -324,7 +324,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   if (val.compare("installed") == 0) {
     cupsItem = new QTreeWidgetItem(printItem);
     cupsItem->setText(0, "cups");
-    cupsItem->setText(1, tr("Linux and OSX printer service"));
+    cupsItem->setText(1, tr("Linux and OS X printer service"));
     cupsItem->setCheckState(0, Qt::Checked);
     cupsItem->setExpanded(true);
     printItem->setExpanded(true);
@@ -342,7 +342,8 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
     computerGroupEdit->setEnabled(false);
     computerGroupEdit->setText("");
   }
-
+  csView->resizeColumnToContents(0);
+  csView->resizeColumnToContents(1);
 }
 
 MInstall::~MInstall() {

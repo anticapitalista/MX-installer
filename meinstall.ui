@@ -47,7 +47,7 @@
       </size>
      </property>
      <property name="currentIndex">
-      <number>8</number>
+      <number>5</number>
      </property>
      <widget class="QWidget" name="Step_0">
       <layout class="QGridLayout">
@@ -1009,6 +1009,12 @@ p, li { white-space: pre-wrap; }
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
+            </property>
+            <property name="verticalScrollBarPolicy">
+             <enum>Qt::ScrollBarAsNeeded</enum>
+            </property>
+            <property name="horizontalScrollBarPolicy">
+             <enum>Qt::ScrollBarAsNeeded</enum>
             </property>
             <property name="alternatingRowColors">
              <bool>true</bool>
