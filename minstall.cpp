@@ -2355,10 +2355,8 @@ void MInstall::copyDone(int exitCode, QProcess::ExitStatus exitStatus) {
       fclose(fp);
     }
     // Copy live set up to install and clean up.
-    //system("/bin/mv -f /etc/rc.local /mnt/antiX/etc/rc.local2");
-    system("/bin/rm /mnt/antiX/etc/skel/Desktop/Installer.desktop");
+    system("/bin/rm -rf /mnt/antiX/etc/skel/Desktop");
     system("/bin/rm /mnt/antiX/etc/skel/.config/xfce4/desktop/icons.screen0-958x752.rc");
-    //system("/bin/cp -fp /usr/share/antiX/rc.local.live /mnt/antiX/etc/rc.local");
     system("/bin/cp -fp /etc/init.d/debian/cron /mnt/antiX/etc/init.d/cron");
     system("/bin/cp -fp /etc/init.d/debian/gpm /mnt/antiX/etc/init.d/gpm");
     system("/bin/cp -fp /etc/init.d/debian/umountfs /mnt/antiX/etc/init.d/umountfs");
