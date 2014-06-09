@@ -1116,10 +1116,6 @@ bool MInstall::setUserName() {
   DIR *dir;
   QString msg, cmd;
 
-  if (remasterCheckBox->isChecked()) {
-    return true;
-  }
-
   // see if user directory already exists
   QString dpath = QString("/mnt/antiX/home/%1").arg(userNameEdit->text());
   if ((dir = opendir(dpath.toAscii())) != NULL) {
@@ -1232,9 +1228,6 @@ bool MInstall::setUserName() {
 }
 
 bool MInstall::setPasswords() {
-  if (remasterCheckBox->isChecked()) {
-    return true;
-  }
   FILE *fp = popen("chroot /mnt/antiX passwd root", "w");
   bool fpok = true;
   QString cmd = QString("%1\n").arg(rootPasswordEdit->text());
@@ -1290,9 +1283,6 @@ bool MInstall::setPasswords() {
 }
 
 bool MInstall::setUserInfo() {
-  if (remasterCheckBox->isChecked()) {
-    return true;
-  }
   //validate data before proceeding
   // see if username is reasonable length
   if (strlen(userNameEdit->text().toAscii()) < 2) {
@@ -1478,8 +1468,7 @@ void MInstall::setLocale() {
 
   if (gmtCheckBox->isChecked()) {
     replaceStringInFile("^UTC", "LOCAL", "/mnt/antiX/etc/adjtime");
-}
-
+  }
 }
 
 void MInstall::setServices() {
@@ -1819,7 +1808,7 @@ int MInstall::showPage(int curr, int next) {
       return curr;
     }
   } else if (next == 9 && curr == 8) {
-    if (!setUserInfo()) {
+     if (!setUserInfo()) {
       return curr;
     }
   } else if (next == 7 && curr == 6) {
@@ -1828,6 +1817,11 @@ int MInstall::showPage(int curr, int next) {
     }
   } else if (next == 8 && curr == 7) {
     setLocale();
+    // Detect snapshot-backup account(s)
+    // test if there's another user than demo in /home, if exists skip to next step, also skip accoutn setup if demo is present on squashfs
+    if (system("ls /home | grep -v lost+found | grep -v demo | grep -q [a-zA-Z0-9]") == 0 | system("test -d /live/linux/home/demo") == 0) {
+      next +=1;
+    }
   } else if (next == 6 && curr == 5) {
     setServices();
   }
