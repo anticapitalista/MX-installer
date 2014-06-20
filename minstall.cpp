@@ -19,14 +19,12 @@
 #include "minstall.h"
 #include "mmain.h"
 
-
 MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   setupUi(this);
   char line[260];
   char *tok;
   FILE *fp;
   int i;
-
   // timezone
   timezoneCombo->clear();
   fp = popen("awk -F '\\t' '!/^#/ { print $3 }' /usr/share/zoneinfo/zone.tab | sort", "r");
@@ -466,7 +464,9 @@ bool MInstall::checkDisk() {
     QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
     output = getCmdOut("smartctl -H " + drv + "|grep -w FAILED");
     if (output.contains("FAILED")) {
-      msg = output + "\n\nThe disk you selected for installation is failing.\nFor more information run \"smartctl -A " + drv + "\" in console, as root.\nYou are strongly advised to abort.\n\nDo you want to abort the installation?";
+      msg = output + "\n\nThe disk with the partition you selected for installation is failing.\n\n"
+            "For more information run \"smartctl -A " + drv + "\" in console, as root.\nYou are strongly advised to abort.\n\n"
+            "Do you want to abort the installation?";
       ans = QMessageBox::critical(0, QString::null, msg,
         tr("Yes"), tr("No"));
       if (ans == 0) {
@@ -476,7 +476,10 @@ bool MInstall::checkDisk() {
     else {
         output = getCmdOut("smartctl -A " + drv + "| grep -E \"^  5|^196|^197|^198\" | awk '{ if ( $10 != 0 ) { print $1,$2,$10} }'");
       if (output != "") {
-        msg = "Smartmon tool output:\n\n" + output + "\n\nThe smartmon tools report that the disk you selected for installation might have a higher than average failure rate in the upcoming year.\n\nDo you want to continue?";
+          msg = "Smartmon tool output:\n\n" + output + "\n\n"
+                "The disk with the partition you selected for installation passes the S.M.A.R.T. monitor test (smartctl)\n"
+                "but the tests indicate it will have a higher than average failure rate in the upcoming year.\n\n"
+                "Do you want to continue?";
         ans = QMessageBox::warning(0, QString::null, msg,
           tr("Yes"), tr("No"));
         if (ans != 0) {
