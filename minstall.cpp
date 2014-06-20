@@ -476,7 +476,7 @@ bool MInstall::checkDisk() {
     else {
         output = getCmdOut("smartctl -A " + drv + "| grep -E \"^  5|^196|^197|^198\" | awk '{ if ( $10 != 0 ) { print $1,$2,$10} }'");
       if (output != "") {
-        msg = output + "\n\nThe disk you selected for installation appears to be failing,\nas the disk health indicator (S.M.A.R.T.) warning above indicates.\nWe recommend you abort the installation and have the disk checked or replaced.\n\nDo you want to abort?";
+        msg = "Smartmon tool output:\n\n" + output + "\n\nThe smartmon tools report that the disk you selected for installation might have a higher than average failure rate in the upcoming year.\nWe recommend you install on a different disk.\n\nDo you want to abort?";
         ans = QMessageBox::warning(0, QString::null, msg,
           tr("Yes"), tr("No"));
         if (ans == 0) {
