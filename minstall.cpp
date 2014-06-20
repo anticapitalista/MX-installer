@@ -476,10 +476,10 @@ bool MInstall::checkDisk() {
     else {
         output = getCmdOut("smartctl -A " + drv + "| grep -E \"^  5|^196|^197|^198\" | awk '{ if ( $10 != 0 ) { print $1,$2,$10} }'");
       if (output != "") {
-        msg = "Smartmon tool output:\n\n" + output + "\n\nThe smartmon tools report that the disk you selected for installation might have a higher than average failure rate in the upcoming year.\nWe recommend you install on a different disk.\n\nDo you want to abort?";
+        msg = "Smartmon tool output:\n\n" + output + "\n\nThe smartmon tools report that the disk you selected for installation might have a higher than average failure rate in the upcoming year.\n\nDo you want to continue?";
         ans = QMessageBox::warning(0, QString::null, msg,
           tr("Yes"), tr("No"));
-        if (ans == 0) {
+        if (ans != 0) {
           return false;
         }
       }
