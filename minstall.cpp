@@ -1971,7 +1971,7 @@ void MInstall::gotoPage(int next) {
   next = showPage(curr, next);
 
   // modify ui for standard cases
-  if (next == 0) {
+  if (next == 1) {
     // entering first page
     nextButton->setDefault(true);
     nextButton->setText(tr("Next >"));
@@ -1991,7 +1991,7 @@ void MInstall::gotoPage(int next) {
   if (next > c-1) {
     // finished
     stopInstall();
-    gotoPage(0);
+    gotoPage(1);
     return;
   }
   // display the next page
@@ -2043,7 +2043,7 @@ void MInstall::refresh() {
 
   on_diskCombo_activated();
 
-  gotoPage(0);
+  gotoPage(1);
 }
 
 /////////////////////////////////////////////////////////////////////////
