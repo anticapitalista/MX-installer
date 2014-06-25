@@ -464,9 +464,10 @@ bool MInstall::checkDisk() {
     QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
     output = getCmdOut("smartctl -H " + drv + "|grep -w FAILED");
     if (output.contains("FAILED")) {
-      msg = output + "\n\nThe disk with the partition you selected for installation is failing.\n\n"
-            "For more information run \"smartctl -A " + drv + "\" in console, as root.\nYou are strongly advised to abort.\n\n"
-            "Do you want to abort the installation?";
+      msg = output + tr("\n\nThe disk with the partition you selected for installation is failing.\n\n") +
+            tr("You are strongly advised to abort.\n") +
+            tr("If unsure, please exit the Installer and run GSmartControl for more information.\n\n") +
+            tr("Do you want to abort the installation?");
       ans = QMessageBox::critical(0, QString::null, msg,
         tr("Yes"), tr("No"));
       if (ans == 0) {
@@ -476,10 +477,11 @@ bool MInstall::checkDisk() {
     else {
         output = getCmdOut("smartctl -A " + drv + "| grep -E \"^  5|^196|^197|^198\" | awk '{ if ( $10 != 0 ) { print $1,$2,$10} }'");
       if (output != "") {
-          msg = "Smartmon tool output:\n\n" + output + "\n\n"
-                "The disk with the partition you selected for installation passes the S.M.A.R.T. monitor test (smartctl)\n"
-                "but the tests indicate it will have a higher than average failure rate in the upcoming year.\n\n"
-                "Do you want to continue?";
+          msg = tr("Smartmon tool output:\n\n") + output + "\n\n" +
+                tr("The disk with the partition you selected for installation passes the S.M.A.R.T. monitor test (smartctl)\n") +
+                tr("but the tests indicate it will have a higher than average failure rate in the upcoming year.\n") +
+                tr("If unsure, please exit the Installer and run GSmartControl for more information.\n\n") +
+                tr("Do you want to continue?");
         ans = QMessageBox::warning(0, QString::null, msg,
           tr("Yes"), tr("No"));
         if (ans != 0) {
@@ -1771,7 +1773,7 @@ void MInstall::stopInstall() {
   } else if (curr >= c-3) {
     int ans = QMessageBox::information(0, QString::null,
       tr("MX-14 installation and configuration is complete.\n"
-        "To use the new installation, reboot without the installation media.\n"
+        "To use the new installation, reboot without the installation media.\n\n"
         "Do you want to reboot now?"),
         tr("Yes"), tr("No"));
     if (ans == 0) {
