@@ -465,7 +465,8 @@ bool MInstall::checkDisk() {
     output = getCmdOut("smartctl -H " + drv + "|grep -w FAILED");
     if (output.contains("FAILED")) {
       msg = output + tr("\n\nThe disk with the partition you selected for installation is failing.\n\n") +
-            tr("For more information run \"smartctl -A ") + drv + tr("\" in console, as root.\nYou are strongly advised to abort.\n\n") +
+            tr("You are strongly advised to abort.\n") +
+            tr("If unsure, please exit the Installer and run GSmartControl for more information.\n\n") +
             tr("Do you want to abort the installation?");
       ans = QMessageBox::critical(0, QString::null, msg,
         tr("Yes"), tr("No"));
@@ -478,7 +479,8 @@ bool MInstall::checkDisk() {
       if (output != "") {
           msg = tr("Smartmon tool output:\n\n") + output + "\n\n" +
                 tr("The disk with the partition you selected for installation passes the S.M.A.R.T. monitor test (smartctl)\n") +
-                tr("but the tests indicate it will have a higher than average failure rate in the upcoming year.\n\n") +
+                tr("but the tests indicate it will have a higher than average failure rate in the upcoming year.\n") +
+                tr("If unsure, please exit the Installer and run GSmartControl for more information.\n\n") +
                 tr("Do you want to continue?");
         ans = QMessageBox::warning(0, QString::null, msg,
           tr("Yes"), tr("No"));
@@ -1771,7 +1773,7 @@ void MInstall::stopInstall() {
   } else if (curr >= c-3) {
     int ans = QMessageBox::information(0, QString::null,
       tr("MX-14 installation and configuration is complete.\n"
-        "To use the new installation, reboot without the installation media.\n"
+        "To use the new installation, reboot without the installation media.\n\n"
         "Do you want to reboot now?"),
         tr("Yes"), tr("No"));
     if (ans == 0) {
