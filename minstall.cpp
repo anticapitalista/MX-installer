@@ -570,7 +570,7 @@ bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad) {
       system("/bin/cp -fp /bin/true /sbin/fsck.auto");
       if (bad) {
         // do with badblocks
-        cmd = QString("/sbin/mkfs.btrfs -f -c %1").arg(dev);
+        cmd = QString("/sbin/mkfs.btrfs -f %1").arg(dev);
        } else {
         // do no badblocks
         cmd = QString("/sbin/mkfs.btrfs -f %1").arg(dev);
