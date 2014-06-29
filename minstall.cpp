@@ -568,13 +568,7 @@ bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad) {
      if (strncmp(type, "btrfs", 4) == 0) {
       // btrfs and set up fsck
       system("/bin/cp -fp /bin/true /sbin/fsck.auto");
-      if (bad) {
-        // do with badblocks
-        cmd = QString("/sbin/mkfs.btrfs -c %1").arg(dev);
-       } else {
-        // do no badblocks
-        cmd = QString("/sbin/mkfs.btrfs %1").arg(dev);
-      }
+      cmd = QString("/sbin/mkfs.btrfs -f %1").arg(dev);
     } else {
      //xfs
      if (strncmp(type, "xfs", 4) == 0) {
