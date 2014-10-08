@@ -1089,8 +1089,13 @@ bool MInstall::installLoader() {
       return false;
     }
   }
- 
+
+  // replace "quiet" in /etc/default/grub with the non-live boot codes
+  QString cmdline = getCmdOut("/live/bin/non-live-cmdline");
+  replaceStringInFile("quiet", cmdline, "/mnt/antiX/etc/default/grub");
+
   // update grub config
+
   system("mount -o bind /dev /mnt/antiX/dev");
   system("mount -o bind /sys /mnt/antiX/sys");
   system("mount -o bind /proc /mnt/antiX/proc");
