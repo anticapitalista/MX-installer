@@ -19,6 +19,7 @@
 #include "minstall.h"
 #include "mmain.h"
 
+
 MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   setupUi(this);
   char line[260];
@@ -1092,7 +1093,8 @@ bool MInstall::installLoader() {
 
   // replace "quiet" in /etc/default/grub with the non-live boot codes
   QString cmdline = getCmdOut("/live/bin/non-live-cmdline");
-  replaceStringInFile("quiet", cmdline, "/mnt/antiX/etc/default/grub");
+  cmd = QString("sed -ir 's|^\\(GRUB_CMDLINE_LINUX_DEFAULT=\\).*|\\1\"%1\"|' /mnt/antiX/etc/default/grub").arg(cmdline);
+  system(cmd.toAscii());
 
   // update grub config
 
