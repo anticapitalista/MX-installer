@@ -1093,6 +1093,7 @@ bool MInstall::installLoader() {
 
   // replace "quiet" in /etc/default/grub with the non-live boot codes
   QString cmdline = getCmdOut("/live/bin/non-live-cmdline");
+  cmdline.replace('\\', "\\\\");
   cmdline.replace('|', "\\|");
   cmd = QString("sed -i -r 's|^(GRUB_CMDLINE_LINUX_DEFAULT=).*|\\1\'%1\'|' /mnt/antiX/etc/default/grub").arg(cmdline);
   system(cmd.toAscii());
