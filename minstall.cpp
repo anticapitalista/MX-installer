@@ -1095,7 +1095,7 @@ bool MInstall::installLoader() {
   QString cmdline = getCmdOut("/live/bin/non-live-cmdline");
   cmdline.replace('\\', "\\\\");
   cmdline.replace('|', "\\|");
-  cmd = QString("sed -i -r 's|^(GRUB_CMDLINE_LINUX_DEFAULT=).*|\\1\'%1\'|' /mnt/antiX/etc/default/grub").arg(cmdline);
+  cmd = QString("sed -i -r 's|^(GRUB_CMDLINE_LINUX_DEFAULT=).*|\\1\"%1\"|' /mnt/antiX/etc/default/grub").arg(cmdline);
   system(cmd.toAscii());
 
   // update grub config
