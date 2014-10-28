@@ -127,7 +127,6 @@ class MInstall : public QWidget, public Ui::MeInstall {
     virtual void on_rootCombo_activated();
     virtual void on_swapCombo_activated();
     virtual void on_rootTypeCombo_activated();
-    virtual void on_advButton_clicked();
     void procAbort();
     virtual bool close();
 //    void moreClicked(QListViewItem *item);
@@ -139,4 +138,6 @@ class MInstall : public QWidget, public Ui::MeInstall {
     void copyDone(int exitCode, QProcess::ExitStatus exitStatus);
     void copyTime();
 
+  private slots:
+    void on_viewServicesButton_clicked();
 };

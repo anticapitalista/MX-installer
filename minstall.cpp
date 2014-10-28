@@ -1840,8 +1840,9 @@ int MInstall::showPage(int curr, int next) {
     setLocale();
   } else if (next == 6 && curr == 5) {
     setServices();
+    return 7; // goes back to the screen that called Services screen
   } else if (next == 4 && curr == 5) {
-    return 6; // goes back to the screen that called Services screen
+    return 7; // goes back to the screen that called Services screen
   }
   return next;
 }
@@ -1855,7 +1856,7 @@ void MInstall::pageDisplayed(int next) {
       ((MMain *)mmn)->setHelpText(tr("<p><b>General Instructions</b><br/>BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.</p>"
         "<p>On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. "
         "You will be prompted for confirmation before any destructive actions are performed.</p>"
-        "<p>MX-14 require about 3-5 GB of space. 5 GB or more is preferred. "
+        "<p>MX-14 require about 3.5 GB of space. 5 GB or more is preferred. "
         "You can use the entire disk or you can put MX-14 on existing partitions. </p>"
         "<p>If you are using PC type hardware, run GParted from here if you need to modify some partitions before doing a custom install. If you are using Apple hardware, you must never use parted or GParted on your boot drive. Instead you must setup your partitions and boot manager in OSX before installing MX-14.</p>"
 "<p>The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.</p>"));
@@ -2095,7 +2096,8 @@ void MInstall::on_abortInstallButton_clicked() {
 }
 
 // clicking advanced button to go to Services page
-void MInstall::on_advButton_clicked() {
+void MInstall::on_viewServicesButton_clicked()
+{
   gotoPage(5);
 }
 
@@ -2459,5 +2461,4 @@ void MInstall::copyTime() {
       break;
   } 
 }
-
 
