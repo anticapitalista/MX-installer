@@ -1816,7 +1816,6 @@ void MInstall::goBack(QString msg) {
 int MInstall::showPage(int curr, int next) {
   if (next == 1 && curr == 0) {
   } else if (next == 2 && curr == 1) {
-    //agreeCheckBox->setChecked(false);
     if (entireDiskButton->isChecked()) {
       return 3;
     }
@@ -1825,7 +1824,10 @@ int MInstall::showPage(int curr, int next) {
   } else if (next == 5 && curr == 4) {
     if (!installLoader()) {
       return curr;
+    } else {
+      return next + 1; // skip Services screen
     }
+
   } else if (next == 9 && curr == 8) {
     if (!setUserInfo()) {
       return curr;
@@ -1838,6 +1840,8 @@ int MInstall::showPage(int curr, int next) {
     setLocale();
   } else if (next == 6 && curr == 5) {
     setServices();
+  } else if (next == 4 && curr == 5) {
+    return 6; // goes back to the screen that called Services screen
   }
   return next;
 }
@@ -1851,7 +1855,7 @@ void MInstall::pageDisplayed(int next) {
       ((MMain *)mmn)->setHelpText(tr("<p><b>General Instructions</b><br/>BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.</p>"
         "<p>On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. "
         "You will be prompted for confirmation before any destructive actions are performed.</p>"
-        "<p>MX-14 require about 3,5 GB of space. 5 GB or more is preferred."
+        "<p>MX-14 require about 3-5 GB of space. 5 GB or more is preferred. "
         "You can use the entire disk or you can put MX-14 on existing partitions. </p>"
         "<p>If you are using PC type hardware, run GParted from here if you need to modify some partitions before doing a custom install. If you are using Apple hardware, you must never use parted or GParted on your boot drive. Instead you must setup your partitions and boot manager in OSX before installing MX-14.</p>"
 "<p>The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.</p>"));
@@ -1914,8 +1918,8 @@ void MInstall::pageDisplayed(int next) {
       setCursor(QCursor(Qt::ArrowCursor));
       ((MMain *)mmn)->setHelpText(tr("<p><b>Select Boot Method</b><br/>MX-14 uses the GRUB bootloader to boot MX-14 and MS-Windows. "
         "<p>By default GRUB2 is installed in the Master Boot Record of your boot drive and replaces the boot loader you were using before. This is normal.</p>"
-        "<p>If you choose to install GRUB2 at root instead of MBR, then GRUB2 will be installed at the beginning of the root partition.  This option is for experts only.</p>"
-        "<p>If you do not select the Install GRUB checkbox, GRUB will not be installed at this time.  This option is for experts only.</p>"));
+        "<p>If you choose to install GRUB2 at root instead of MBR, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.</p>"
+        "<p>If you do not select the Install GRUB checkbox, GRUB will not be installed at this time. This option is for experts only.</p>"));
       backButton->setEnabled(false);
       break;
 
@@ -1936,8 +1940,8 @@ void MInstall::pageDisplayed(int next) {
       break;
 
     case 7:
-      ((MMain *)mmn)->setHelpText(tr("<p><b>Localization Defaults</b><br/>Set the default keyboard and locale.  These will apply unless, they are overridden later by the user.</p>"
-        "<p><b>Configure Clock</b><br/>If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time.  To change, check the box for 'System clock uses LOCAL.'</p>"
+      ((MMain *)mmn)->setHelpText(tr("<p><b>Localization Defaults</b><br/>Set the default keyboard and locale. These will apply unless, they are overridden later by the user.</p>"
+        "<p><b>Configure Clock</b><br/>If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for 'System clock uses LOCAL.'</p>"
         "The CD boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Adjust Date & Time...</p>"));
       nextButton->setEnabled(true);
       backButton->setEnabled(false);
@@ -2088,6 +2092,11 @@ void MInstall::on_backButton_clicked() {
 void MInstall::on_abortInstallButton_clicked() {
   procAbort();
   QApplication::beep();
+}
+
+// clicking advanced button to go to Services page
+void MInstall::on_advButton_clicked() {
+  gotoPage(5);
 }
 
 void MInstall::on_qtpartedButton_clicked() {
@@ -2450,3 +2459,5 @@ void MInstall::copyTime() {
       break;
   } 
 }
+
+
