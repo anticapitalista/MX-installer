@@ -1858,8 +1858,8 @@ void MInstall::pageDisplayed(int next) {
         "You will be prompted for confirmation before any destructive actions are performed.</p>"
         "<p>MX Linux require about 3.5 GB of space. 5 GB or more is preferred. "
         "You can use the entire disk or you can put MX Linux on existing partitions. </p>"
-        "<p>If you are using PC type hardware, run GParted from here if you need to modify some partitions before doing a custom install. If you are using Apple hardware, you must never use parted or GParted on your boot drive. Instead you must setup your partitions and boot manager in OSX before installing MX Linux.</p>"
-"<p>The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.</p>"));
+        "<p>If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system's software to set up partitions and boot manager before installing MX Linux.</p>"
+        "<p>The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.</p>"));
       break;
     
     case 2:
