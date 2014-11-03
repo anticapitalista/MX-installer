@@ -2426,7 +2426,7 @@ void MInstall::copyTime() {
   switch (i) {
     case 1:
       tipsEdit->setText(tr("<p><b>Getting Help</b><br/>"
-        "Basic information about MX Linux is at http://antix.mepis.com and http://www.mepis.org. "
+        "Basic information about MX Linux is at http://antix.mepis.com and http://www.mepiscommunity.org/mx. "
         "There are volunteers to help you at the antiX Forum, http://antix.freeforums.org and the MEPIS Community Forum http://forum.mepiscommunity.org </p>"
         "<p>If you ask for help, please remember to describe your problem and your computer "
         "in some detail. Usually statements like 'it didn't work' are not helpful.</p>"));
