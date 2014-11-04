@@ -34,7 +34,7 @@ int main(int argc, char *argv[]) {
   a.installTranslator(&qtTran);
 
   QTranslator appTran;
-  appTran.load(QString("minstall_") + QLocale::system().name(), "/usr/share/installer-mx/locale");
+  appTran.load(QString("mx-installer_") + QLocale::system().name(), "/usr/share/installer-mx/locale");
   a.installTranslator(&appTran);
 
   if (getuid() == 0) {
