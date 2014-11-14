@@ -1856,7 +1856,7 @@ void MInstall::pageDisplayed(int next) {
       ((MMain *)mmn)->setHelpText(tr("<p><b>General Instructions</b><br/>BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.</p>"
         "<p>On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. "
         "You will be prompted for confirmation before any destructive actions are performed.</p>"
-        "<p>MX Linux require about 3.5 GB of space. 5 GB or more is preferred. "
+        "<p>MX Linux requires about 3.5 GB of space. 5 GB or more is preferred. "
         "You can use the entire disk or you can put MX Linux on existing partitions. </p>"
         "<p>If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system's software to set up partitions and boot manager before installing MX Linux.</p>"
         "<p>The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.</p>"));
@@ -1960,7 +1960,7 @@ void MInstall::pageDisplayed(int next) {
       break;
 
     case 9:
-      ((MMain *)mmn)->setHelpText(tr("<p><b>Congratulations!</b><br/>You have completed the installation of ") + "MX-14 Linux." + tr("</p>"
+      ((MMain *)mmn)->setHelpText(tr("<p><b>Congratulations!</b><br/>You have completed the installation of ") + " MX Linux." + tr("</p>"
         "<p><b>Finding Applications</b><br/>There are hundreds of excellent applications installed with MX Linux. "
         "The best way to learn about them is to browse through the Menu and try them. "
         "Many of the apps were developed specifically for the Xfce environment. "
@@ -1972,7 +1972,7 @@ void MInstall::pageDisplayed(int next) {
 
     default:
       // case 0 or any other
-      ((MMain *)mmn)->setHelpText("<p><b>Enjoy using MX Linux!</b></p>");
+      ((MMain *)mmn)->setHelpText(tr("<p><b>Enjoy using MX Linux!</b></p>"));
       break;
   }
 }
