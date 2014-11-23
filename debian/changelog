@@ -1,0 +1,128 @@
+installer-mx (0.2.3) unstable; urgency=low 
+   
+  * installer adds boot parameters.
+  * changed code for replacing sting in /etc/default/grub.
+  * replaced single quotes with double in sed.
+  * disable automount in Thunar.
+  * services screen is hidden and called by 'Advanced' button.
+  * modified location view Services button.
+  * changed translation location to match other mx tools.
+  * changed MX-14 to MX Linux and other strings.
+  * changed minstall_ to mx-installer_ in app.cpp.
+  * added .qm files and added Japanes in src.pro.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 09 Nov 2014 22:14:00 +0200
+
+
+installer-mx (0.2.2) unstable; urgency=low 
+ 
+  * Removed condition in setting btrfs file system and added -f option. 
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 29 Jun 2014 11:30:00 +0200
+
+
+installer-mx (0.2.1) unstable; urgency=low 
+ 
+  * Disk warning text changed again.
+  * New localisations.
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 27 Jun 2014 20:20:00 +0200
+
+
+installer-mx (0.2.0) unstable; urgency=low 
+ 
+  * Changed disk warning text.
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 22 Jun 2014 13:30:00 +0200
+
+
+installer-mx (0.1.9) unstable; urgency=low 
+ 
+  * fixed GUI problem selecting installing GRUB on boot.
+  * added info about disks in combobox.
+  * copy skel/.local and skel/.config to saved home but do not overwrite.
+  * added option to install snapshot ISOs
+  * fixed checkDisk.
+  * exit installer at the end.
+  * added descriptions for services.
+  * changed size of columns.
+  * scrollbar added.
+  * remove /etc/skel/Desktop  
+  * Japanese localisation added.
+  
+ -- anticapitalista <antiX@operamail.com>  Sun, 08 Jun 2014 19:50:00 +0200
+
+
+installer-mx (0.1.8) unstable; urgency=low 
+ 
+  * Changed focus policy for button on screen 3.
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 21 Mar 2014 13:40:00 +0200
+
+
+installer-mx (0.1.7) unstable; urgency=low 
+ 
+  * Removed all code relating to buildfstab.
+  * Remove /etc/skel/Desktop folder.
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 14 Mar 2014 18:30:00 +0200
+
+
+installer-mx (0.1.6) unstable; urgency=low 
+ 
+  * Fixed issues with sv translation.
+  * New Romanian and Dutch translation.
+  * If us/gb/uk keyboard selected, only use that ie remove us,us.
+  * set swap (if any) using make-fstab script;
+  * use dev2uuid_fstab script to rebuild /etc/fstab for uuid
+  * removed rc.local.live - no longer needed.
+
+ -- anticapitalista <antiX@operamail.com>  Thu, 27 Feb 2014 18:10:00 +0200
+
+
+installer-mx (0.1.5) unstable; urgency=low 
+ 
+  * Added checks to hostname.
+  * New translations including Romanian and Swedish.
+
+ -- anticapitalista <antiX@operamail.com>  Fri, 20 Feb 2014 21:40:00 +0200
+
+
+installer-mx (0.1.4) unstable; urgency=low 
+ 
+  * Localisation completed.
+  * Added winbind and haveged to startup on/off options.
+
+ -- anticapitalista <antiX@operamail.com>  Tue, 11 Feb 2014 16:40:00 +0200
+
+
+installer-mx (0.1.3) unstable; urgency=low 
+ 
+  * Changes to localisation (incomplete).
+  * Added hard disk check.
+  * Added show passwords.
+  * Code cleaned up.
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 03 Feb 2014 18:40:00 +0200
+
+
+installer-mx (0.1.2) unstable; urgency=low 
+ 
+  * Minor changes to comments and translations.
+
+ -- anticapitalista <antiX@operamail.com>  Tue, 28 Jan 2014 15:40:00 +0200
+
+
+installer-mx (0.1.1) unstable; urgency=low 
+ 
+  * Added ability for separate /home on different drive.
+
+ -- anticapitalista <antiX@operamail.com>  Wed, 22 Jan 2014 12:30:00 +0200
+
+
+installer-mx (0.1.0) unstable; urgency=low 
+ 
+  * Initial Release.
+
+ -- anticapitalista <antiX@operamail.com>  Mon, 13 Jan 2014 22:30:00 +0200
+
