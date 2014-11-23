@@ -1746,7 +1746,7 @@ p, li { white-space: pre-wrap; }
          </layout>
         </widget>
        </item>
-       <item row="5" column="0">
+       <item row="4" column="0">
         <spacer>
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -1896,16 +1896,6 @@ p, li { white-space: pre-wrap; }
         <widget class="QCheckBox" name="passwordCheckBox">
          <property name="text">
           <string>Show passwords</string>
-         </property>
-        </widget>
-       </item>
-       <item row="4" column="0">
-        <widget class="QCheckBox" name="remasterCheckBox">
-         <property name="toolTip">
-          <string>Use this option only for installing snapshot-backup ISOs</string>
-         </property>
-         <property name="text">
-          <string>Preserve snapshot-backup accounts</string>
          </property>
         </widget>
        </item>
@@ -2190,70 +2180,6 @@ p, li { white-space: pre-wrap; }
     <hint type="destinationlabel">
      <x>414</x>
      <y>231</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>remasterCheckBox</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>userBox</receiver>
-   <slot>setDisabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>224</x>
-     <y>296</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>224</x>
-     <y>76</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>remasterCheckBox</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>rootPasswordBox</receiver>
-   <slot>setDisabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>224</x>
-     <y>296</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>224</x>
-     <y>184</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>remasterCheckBox</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>passwordCheckBox</receiver>
-   <slot>setDisabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>224</x>
-     <y>296</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>224</x>
-     <y>244</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>remasterCheckBox</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>autologinCheckBox</receiver>
-   <slot>setDisabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>224</x>
-     <y>296</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>224</x>
-     <y>270</y>
     </hint>
    </hints>
   </connection>
