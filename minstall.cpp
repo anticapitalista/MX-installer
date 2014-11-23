@@ -26,7 +26,6 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   char *tok;
   FILE *fp;
   int i;
-
   // timezone
   timezoneCombo->clear();
   fp = popen("awk -F '\\t' '!/^#/ { print $3 }' /usr/share/zoneinfo/zone.tab | sort", "r");
@@ -466,7 +465,10 @@ bool MInstall::checkDisk() {
     QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
     output = getCmdOut("smartctl -H " + drv + "|grep -w FAILED");
     if (output.contains("FAILED")) {
-      msg = output + "\n\nThe disk you selected for installation is failing.\nFor more information run \"smartctl -A " + drv + "\" in console, as root.\nYou are strongly advised to abort.\n\nDo you want to abort the installation?";
+      msg = output + tr("\n\nThe disk with the partition you selected for installation is failing.\n\n") +
+            tr("You are strongly advised to abort.\n") +
+            tr("If unsure, please exit the Installer and run GSmartControl for more information.\n\n") +
+            tr("Do you want to abort the installation?");
       ans = QMessageBox::critical(0, QString::null, msg,
         tr("Yes"), tr("No"));
       if (ans == 0) {
@@ -474,12 +476,16 @@ bool MInstall::checkDisk() {
       }
     }
     else {
-      output = getCmdOut("smartctl -A " + drv + "| grep -E \"Reallocated|Pending|Uncorrect\" | awk '{ if ( $10 != 0 ) { print } }'");
+        output = getCmdOut("smartctl -A " + drv + "| grep -E \"^  5|^196|^197|^198\" | awk '{ if ( $10 != 0 ) { print $1,$2,$10} }'");
       if (output != "") {
-        msg = output + "\n\nThe disk you selected for installation appears to be failing,\nas the disk health indicator (S.M.A.R.T.) warning above indicates.\nWe recommend you abort the installation and have the disk checked or replaced.\n\nDo you want to abort?";
+          msg = tr("Smartmon tool output:\n\n") + output + "\n\n" +
+                tr("The disk with the partition you selected for installation passes the S.M.A.R.T. monitor test (smartctl)\n") +
+                tr("but the tests indicate it will have a higher than average failure rate in the upcoming year.\n") +
+                tr("If unsure, please exit the Installer and run GSmartControl for more information.\n\n") +
+                tr("Do you want to continue?");
         ans = QMessageBox::warning(0, QString::null, msg,
           tr("Yes"), tr("No"));
-        if (ans == 0) {
+        if (ans != 0) {
           return false;
         }
       }
@@ -510,7 +516,7 @@ int MInstall::getPartitionNumber()
 // unmount antiX in case we are retrying
 void MInstall::prepareToInstall() {
 
-  updateStatus(tr("Ready to install MX-14 filesystem"), 0);
+  updateStatus(tr("Ready to install MX Linux filesystem"), 0);
   // unmount /home if it exists
   system("/bin/umount -l /mnt/antiX/home >/dev/null 2>&1");
   system("/bin/umount -l /mnt/antiX >/dev/null 2>&1");
@@ -563,13 +569,7 @@ bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad) {
      if (strncmp(type, "btrfs", 4) == 0) {
       // btrfs and set up fsck
       system("/bin/cp -fp /bin/true /sbin/fsck.auto");
-      if (bad) {
-        // do with badblocks
-        cmd = QString("/sbin/mkfs.btrfs -c %1").arg(dev);
-       } else {
-        // do no badblocks
-        cmd = QString("/sbin/mkfs.btrfs %1").arg(dev);
-      }
+      cmd = QString("/sbin/mkfs.btrfs -f %1").arg(dev);
     } else {
      //xfs
      if (strncmp(type, "xfs", 4) == 0) {
@@ -631,7 +631,7 @@ bool MInstall::makeDefaultPartitions() {
   QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
   QString rootdev = QString(drv).append("1");
   QString swapdev = QString(drv).append("2");
-  QString msg = QString(tr("Ok to format and use the entire disk (%1) for MX-14?")).arg(drv);
+  QString msg = QString(tr("Ok to format and use the entire disk (%1) for MX Linux?")).arg(drv);
   ans = QMessageBox::information(0, QString::null, msg,
          tr("Yes"), tr("No"));
  if (ans != 0) {
@@ -1086,12 +1086,20 @@ bool MInstall::installLoader() {
       // error
       setCursor(QCursor(Qt::ArrowCursor));
       QMessageBox::critical(this, QString::null,
-        tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX-14 then reboot to the CD and repair the installation with the reinstall GRUB function."));
+        tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function."));
       return false;
     }
   }
- 
+
+  // replace "quiet" in /etc/default/grub with the non-live boot codes
+  QString cmdline = getCmdOut("/live/bin/non-live-cmdline");
+  cmdline.replace('\\', "\\\\");
+  cmdline.replace('|', "\\|");
+  cmd = QString("sed -i -r 's|^(GRUB_CMDLINE_LINUX_DEFAULT=).*|\\1\"%1\"|' /mnt/antiX/etc/default/grub").arg(cmdline);
+  system(cmd.toAscii());
+
   // update grub config
+
   system("mount -o bind /dev /mnt/antiX/dev");
   system("mount -o bind /sys /mnt/antiX/sys");
   system("mount -o bind /proc /mnt/antiX/proc");
@@ -1756,8 +1764,8 @@ void MInstall::stopInstall() {
     return;
   } else if (curr >= c-3) {
     int ans = QMessageBox::information(0, QString::null,
-      tr("MX-14 installation and configuration is complete.\n"
-        "To use the new installation, reboot without the installation media.\n"
+      tr("MX Linux installation and configuration is complete.\n"
+        "To use the new installation, reboot without the installation media.\n\n"
         "Do you want to reboot now?"),
         tr("Yes"), tr("No"));
     if (ans == 0) {
@@ -1797,7 +1805,6 @@ void MInstall::goBack(QString msg) {
 int MInstall::showPage(int curr, int next) {
   if (next == 1 && curr == 0) {
   } else if (next == 2 && curr == 1) {
-    //agreeCheckBox->setChecked(false);
     if (entireDiskButton->isChecked()) {
       return 3;
     }
@@ -1806,7 +1813,10 @@ int MInstall::showPage(int curr, int next) {
   } else if (next == 5 && curr == 4) {
     if (!installLoader()) {
       return curr;
+    } else {
+      return next + 1; // skip Services screen
     }
+
   } else if (next == 9 && curr == 8) {
      if (!setUserInfo()) {
       return curr;
@@ -1824,6 +1834,9 @@ int MInstall::showPage(int curr, int next) {
     }
   } else if (next == 6 && curr == 5) {
     setServices();
+    return 7; // goes back to the screen that called Services screen
+  } else if (next == 4 && curr == 5) {
+    return 7; // goes back to the screen that called Services screen
   }
   return next;
 }
@@ -1837,21 +1850,21 @@ void MInstall::pageDisplayed(int next) {
       ((MMain *)mmn)->setHelpText(tr("<p><b>General Instructions</b><br/>BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.</p>"
         "<p>On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. "
         "You will be prompted for confirmation before any destructive actions are performed.</p>"
-        "<p>MX-14 require about 3,5 GB of space. 5 GB or more is preferred."
-        "You can use the entire disk or you can put MX-14 on existing partitions. </p>"
-        "<p>If you are using PC type hardware, run GParted from here if you need to modify some partitions before doing a custom install. If you are using Apple hardware, you must never use parted or GParted on your boot drive. Instead you must setup your partitions and boot manager in OSX before installing MX-14.</p>"
-"<p>The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.</p>"));
+        "<p>MX Linux require about 3.5 GB of space. 5 GB or more is preferred. "
+        "You can use the entire disk or you can put MX Linux on existing partitions. </p>"
+        "<p>If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system's software to set up partitions and boot manager before installing MX Linux.</p>"
+        "<p>The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.</p>"));
       break;
     
     case 2:
       ((MMain *)mmn)->setHelpText(tr("<p><b>Limitations</b><br/>Remember, this software is provided AS-IS with no warranty what-so-ever. "
          "It's solely your responsibility to backup your data before proceeding.</p>"
-         "<p><b>Choose Partitions</b><br/>MX-14 requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX-14, you will need a swap partition that is larger than your physical memory size.</p>"
+         "<p><b>Choose Partitions</b><br/>MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.</p>"
          "<p>If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.</p>"
          "<p><b>Upgrading</b><br/>To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.</p>"
          "<p>If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. "
          "As a result, the installation will take much longer than usual.</p>"
-         "<p><b>Preferred Filesystem Type</b><br/>For MX-14 Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. </p>"
+         "<p><b>Preferred Filesystem Type</b><br/>For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. </p>"
          "<p><b>Bad Blocks</b><br/>If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for badblocks on the drive. "
          "The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has badblocks.</p>"));
       break;
@@ -1862,11 +1875,11 @@ void MInstall::pageDisplayed(int next) {
         break;
       }
       setCursor(QCursor(Qt::WaitCursor));
-      tipsEdit->setText(tr("<p><b>Special Thanks</b><br/>Thanks to everyone who has chosen to support MX-14 with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.</p>"
-      "<p>Without you there would be no MX-14 Linux.</p>"
+      tipsEdit->setText(tr("<p><b>Special Thanks</b><br/>Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.</p>"
+      "<p>Without you there would be no MX Linux.</p>"
       "<p>anticapitalista, Mepis and antiX Communities</p>"));
       ((MMain *)mmn)->setHelpText(tr("<p><b>Installation in Progress</b><br/>"
-        "MX-14 is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.</p>"
+        "MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.</p>"
         "<p>If you click the Abort button, the installation will be stopped as soon as possible.</p>"));
       nextButton->setEnabled(false);
       prepareToInstall();
@@ -1898,15 +1911,15 @@ void MInstall::pageDisplayed(int next) {
 
     case 4:
       setCursor(QCursor(Qt::ArrowCursor));
-      ((MMain *)mmn)->setHelpText(tr("<p><b>Select Boot Method</b><br/>MX-14 uses the GRUB bootloader to boot MX-14 and MS-Windows. "
+      ((MMain *)mmn)->setHelpText(tr("<p><b>Select Boot Method</b><br/>MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. "
         "<p>By default GRUB2 is installed in the Master Boot Record of your boot drive and replaces the boot loader you were using before. This is normal.</p>"
-        "<p>If you choose to install GRUB2 at root instead of MBR, then GRUB2 will be installed at the beginning of the root partition.  This option is for experts only.</p>"
-        "<p>If you do not select the Install GRUB checkbox, GRUB will not be installed at this time.  This option is for experts only.</p>"));
+        "<p>If you choose to install GRUB2 at root instead of MBR, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.</p>"
+        "<p>If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.</p>"));
       backButton->setEnabled(false);
       break;
 
     case 5:
-      ((MMain *)mmn)->setHelpText(tr("<p><b>Common Services to Enable</b><br/>Select any of the these common services that you might need with your system configuration and the services will be started automatically when you start MX-14.</p>"));
+      ((MMain *)mmn)->setHelpText(tr("<p><b>Common Services to Enable</b><br/>Select any of the these common services that you might need with your system configuration and the services will be started automatically when you start MX Linux.</p>"));
       nextButton->setEnabled(true);
       backButton->setEnabled(true);
       break;
@@ -1922,9 +1935,10 @@ void MInstall::pageDisplayed(int next) {
       break;
 
     case 7:
-      ((MMain *)mmn)->setHelpText(tr("<p><b>Localization Defaults</b><br/>Set the default keyboard and locale.  These will apply unless, they are overridden later by the user.</p>"
-        "<p><b>Configure Clock</b><br/>If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time.  To change, check the box for 'System clock uses LOCAL.'</p>"
-        "The CD boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Adjust Date & Time...</p>"));
+      ((MMain *)mmn)->setHelpText(tr("<p><b>Localization Defaults</b><br/>Set the default keyboard and locale. These will apply unless, they are overridden later by the user.</p>"
+        "<p><b>Configure Clock</b><br/>If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for 'System clock uses LOCAL.'</p>"
+        "<p><b>Timezone Settings</b><br/>The CD boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Adjust Date & Time...</p>"
+        "<p><b>Service Settings</b><br/>Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! "));
       nextButton->setEnabled(true);
       backButton->setEnabled(false);
       break;
@@ -1933,26 +1947,26 @@ void MInstall::pageDisplayed(int next) {
       ((MMain *)mmn)->setHelpText(tr("<p><b>Default User Login</b><br/>The root user is similar to the Administrator user in some other operating systems. "
         "You should not use the root user as your daily user account. "
         "Please enter the name for a new (default) user account that you will use on a daily basis. "
-        "If needed, you can add other user accounts later. </p>"
+        "If needed, you can add other user accounts later with MX User Manager. </p>"
         "<p><b>Passwords</b><br/>Enter a new password for your default user account and for the root account. "
         "Each password must be entered twice.</p>"));
       nextButton->setEnabled(true);
       break;
 
     case 9:
-      ((MMain *)mmn)->setHelpText(tr("<p><b>Congratulations!</b><br/>You have completed the installation of MX-14 Linux.</p>"
-        "<p><b>Finding Applications</b><br/>There are hundreds of excellent applications installed with MX-14. "
+      ((MMain *)mmn)->setHelpText(tr("<p><b>Congratulations!</b><br/>You have completed the installation of ") + "MX-14 Linux." + tr("</p>"
+        "<p><b>Finding Applications</b><br/>There are hundreds of excellent applications installed with MX Linux. "
         "The best way to learn about them is to browse through the Menu and try them. "
         "Many of the apps were developed specifically for the Xfce environment. "
         "These are shown in the main menus. "
-        "<p>In addition MX-14 includes many standard linux applications that are run only from the commandline and therefore do not show up in Menu.</p>"));
+        "<p>In addition MX Linux includes many standard Linux applications that are run only from the commandline and therefore do not show up in Menu.</p>"));
       nextButton->setEnabled(true);
       backButton->setEnabled(false);
       break;
 
     default:
       // case 0 or any other
-      ((MMain *)mmn)->setHelpText("<p><b>Enjoy using MX-14!</b></p>");
+      ((MMain *)mmn)->setHelpText("<p><b>Enjoy using MX Linux!</b></p>");
       break;
   }
 }
@@ -2076,7 +2090,15 @@ void MInstall::on_abortInstallButton_clicked() {
   QApplication::beep();
 }
 
+// clicking advanced button to go to Services page
+void MInstall::on_viewServicesButton_clicked()
+{
+  gotoPage(5);
+}
+
 void MInstall::on_qtpartedButton_clicked() {
+  // disable automounting in Thunar
+  system("xfconf-query --channel thunar-volman --property /automount-drives/enabled --set false");
   system("/sbin/swapoff -a 2>&1");
   system("/usr/sbin/gparted");
   //system("/usr/sbin/buildfstab -r");
@@ -2217,7 +2239,7 @@ void MInstall::procAbort() {
 bool MInstall::close() {
   if (proc->state() != QProcess::NotRunning) {
     int ans = QMessageBox::warning(0, QString::null,
-        tr("MX-14 is installing, are you \nsure you want to Close now?"),
+        tr("MX Linux is installing, are you \nsure you want to Close now?"),
         tr("Yes"), tr("No"));
     if (ans != 0) {
       return false;
@@ -2250,7 +2272,7 @@ void MInstall::delDone(int exitCode, QProcess::ExitStatus exitStatus) {
     copyLinux();
   } else {
     nextButton->setEnabled(true);
-    unmountGoBack(tr("Failed to delete old MX-14 on destination.\nReturning to Step 1."));
+    unmountGoBack(tr("Failed to delete old MX Linux on destination.\nReturning to Step 1."));
   }
 }
 
@@ -2371,7 +2393,7 @@ void MInstall::copyDone(int exitCode, QProcess::ExitStatus exitStatus) {
     on_nextButton_clicked();
   } else {
     nextButton->setEnabled(true);
-    unmountGoBack(tr("Failed to write MX-14 to destination.\nReturning to Step 1."));
+    unmountGoBack(tr("Failed to write MX Linux to destination.\nReturning to Step 1."));
   }
 }
 
@@ -2398,7 +2420,7 @@ void MInstall::copyTime() {
   switch (i) {
     case 1:
       tipsEdit->setText(tr("<p><b>Getting Help</b><br/>"
-        "Basic information about MX-14 Linux is at http://antix.mepis.com and http://www.mepis.org. "
+        "Basic information about MX Linux is at http://antix.mepis.com and http://www.mepiscommunity.org/mx. "
         "There are volunteers to help you at the antiX Forum, http://antix.freeforums.org and the MEPIS Community Forum http://forum.mepiscommunity.org </p>"
         "<p>If you ask for help, please remember to describe your problem and your computer "
         "in some detail. Usually statements like 'it didn't work' are not helpful.</p>"));
@@ -2406,31 +2428,32 @@ void MInstall::copyTime() {
     
     case 15:
       tipsEdit->setText(tr("<p><b>Repairing Your Installation</b><br/>"
-      "If MX-14 stops working from the hard drive, sometimes it's possible to fix the problem by booting from CD and running one of the utilities in System Configuration or by using one of the regular Linux tools to repair the system.</p>"
-      "<p>You can also use your MX-14 CD to recover data from MS-Windows systems!</p>"));
+      "If MX Linux stops working from the hard drive, sometimes it's possible to fix the problem by booting from CD and running one of the utilities in System Configuration or by using one of the regular Linux tools to repair the system.</p>"
+      "<p>You can also use your MX Linux CD to recover data from MS-Windows systems!</p>"));
       break;
 
     case 30:
-      tipsEdit->setText(tr("<p><b>Support MX-14</b><br/>"
-      "MX-14 is supported by people like you. Some help others at the "
+      tipsEdit->setText(tr("<p><b>Support MX Linux</b><br/>"
+      "MX Linux is supported by people like you. Some help others at the "
       "support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different "
       "languages, or make suggestions, write documentation, or help test new software.</p>"));
       break;
 
     case 45:
       tipsEdit->setText(tr("<p><b>Adjusting Your Sound Mixer</b><br/>"
-      "MX-14 attempts to configure the sound mixer for you but sometimes it will be "
+      "MX Linux attempts to configure the sound mixer for you but sometimes it will be "
       "necessary for you to turn up volumes and unmute channels in the mixer "
       "in order to hear sound.</p> "
       "<p>The mixer shortcut is located in the menu. Click on it to open the mixer. </p>"));
       break;
 
     case 60:
-      tipsEdit->setText(tr("<p><b>Keep Your Copy of MX-14 up-to-date</b><br/>"
-        "For MX-14 information and updates please visit http://antix.freeforums.org or http://forum.mepiscommunity.org </p>"));
+      tipsEdit->setText(tr("<p><b>Keep Your Copy of MX Linux up-to-date</b><br/>"
+        "For MX Linux information and updates please visit http://antix.freeforums.org or http://forum.mepiscommunity.org </p>"));
       break;
 
     default:
       break;
   } 
 }
+

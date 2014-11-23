@@ -138,4 +138,6 @@ class MInstall : public QWidget, public Ui::MeInstall {
     void copyDone(int exitCode, QProcess::ExitStatus exitStatus);
     void copyTime();
 
+  private slots:
+    void on_viewServicesButton_clicked();
 };
