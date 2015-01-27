@@ -6,6 +6,10 @@ build-arch:
 
 build-indep:
 
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f src/translations/*.qm
+
 clean:
 	dh_testdir
 	dh_testroot
@@ -19,6 +23,7 @@ install:
 binary-arch:
 
 binary-indep: install
+	lrelease-qt4 src.pro
 	dh_testdir
 	dh_testroot
 	#dh_installchangelogs

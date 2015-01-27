@@ -1,4 +1,4 @@
-Source: installer-mx
+Source: mx-installer
 Section: system
 Priority: optional
 Maintainer: anticapitalista <antiX@operamail.com>
@@ -6,7 +6,7 @@ Build-Depends: debhelper (>= 9.20120115)
 Standards-Version: 3.9.4
 Homepage: http://antix.mepis.org
 
-Package: installer-mx
+Package: mx-installer
 Architecture: i386
 Depends: libqt4-gui, os-prober 
 Recommends: gparted, partitionmanager

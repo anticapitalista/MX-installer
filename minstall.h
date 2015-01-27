@@ -68,7 +68,7 @@ class MInstall : public QWidget, public Ui::MeInstall {
 
     QDialog *mmn;
 
-    
+
   public:
     /** construtor */
     MInstall(QWidget* parent=0);
@@ -92,7 +92,7 @@ class MInstall : public QWidget, public Ui::MeInstall {
     bool mountPartition(QString dev, const char *point);
     void prepareToInstall();
     bool makeSwapPartition(QString dev);
-    bool makeLinuxPartition(QString dev, const char *type, bool bad);
+    bool makeLinuxPartition(QString dev, const char *type, bool bad, QString label);
     bool makeDefaultPartitions();
     bool makeChosenPartitions();
     void installLinux();
@@ -140,4 +140,5 @@ class MInstall : public QWidget, public Ui::MeInstall {
 
   private slots:
     void on_viewServicesButton_clicked();
+    void on_homeCombo_activated(const QString &arg1);
 };
