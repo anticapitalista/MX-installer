@@ -539,7 +539,7 @@ void MInstall::prepareToInstall() {
 }
 
 bool MInstall::makeSwapPartition(QString dev) {
-  QString cmd = QString("/sbin/mkswap %1").arg(dev);
+  QString cmd = QString("/sbin/mkswap %1 -L MXswap").arg(dev);
   if (system(cmd.toAscii()) != 0) {
     // error
     return false;
