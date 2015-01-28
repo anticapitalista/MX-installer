@@ -1840,7 +1840,7 @@ int MInstall::showPage(int curr, int next) {
     setLocale();
     // Detect snapshot-backup account(s)
     // test if there's another user than demo in /home, if exists skip to next step, also skip account setup if demo is present on squashfs
-    if (system("ls /home | grep -v lost+found | grep -v demo | grep -q [a-zA-Z0-9]") == 0 || system("test -d /live/linux/home/demo") == 0) {
+    if (system("ls /home | grep -v lost+found | grep -v demo | grep -v snapshot | grep -q [a-zA-Z0-9]") == 0 || system("test -d /live/linux/home/demo") == 0) {
       next +=1;
     }
   } else if (next == 6 && curr == 5) {
