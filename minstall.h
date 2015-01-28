@@ -81,6 +81,7 @@ class MInstall : public QWidget, public Ui::MeInstall {
     void unmountGoBack(QString msg);
 
     // helpers
+    QString getCmdOut2(QString cmd);
     static QString getCmdOut(QString cmd);
     static QStringList getCmdOuts(QString cmd);
     static QString getCmdValue(QString cmd, QString key, QString keydel, QString valdel);

@@ -19,6 +19,8 @@
 #include "minstall.h"
 #include "mmain.h"
 
+//#include <QDebug>
+
 
 MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   setupUi(this);
@@ -98,7 +100,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
   timer = new QTimer(this);
 
   // if it looks like an apple...
-  if (system("grub-probe -d /dev/sda2 | grep hfsplus") == 0) {
+  if (system("grub-probe -d /dev/sda2 2>/dev/null | grep hfsplus") == 0) {
     grubRootButton->setChecked(true);
     grubMbrButton->setEnabled(false);
     gmtCheckBox->setChecked(true);
@@ -130,7 +132,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent) {
     sshItem = NULL;
   }
 
-  val = getCmdValue("dpkg -s spamassassin | grep '^Status'", "ok", " ", " ");
+  val = getCmdValue("dpkg -s spamassassin 2>/dev/null | grep '^Status'", "ok", " ", " ");
   if (val.compare("installed") == 0) {
   spamassassinItem = new QTreeWidgetItem(networkItem);
   spamassassinItem->setText(0, "spamassassin");
@@ -366,6 +368,16 @@ QString MInstall::getCmdOut(QString cmd) {
   }
   pclose(fp);
   return QString (ret);
+}
+
+// Alternative function for getting bash command output
+QString MInstall::getCmdOut2(QString cmd)
+{
+    QEventLoop loop;
+    connect(proc, SIGNAL(finished(int)), &loop, SLOT(quit()));
+    proc->start("/bin/bash", QStringList() << "-c" << cmd);
+    loop.exec();
+    return proc->readAllStandardOutput().trimmed();
 }
 
 QStringList MInstall::getCmdOuts(QString cmd) {
@@ -618,6 +630,7 @@ bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad, QStri
     }
     return true;
   }
+  return true;
 }
 ///////////////////////////////////////////////////////////////////////////
 // in this case use all of the drive
@@ -1826,8 +1839,8 @@ int MInstall::showPage(int curr, int next) {
   } else if (next == 8 && curr == 7) {
     setLocale();
     // Detect snapshot-backup account(s)
-    // test if there's another user than demo in /home, if exists skip to next step, also skip accoutn setup if demo is present on squashfs
-    if (system("ls /home | grep -v lost+found | grep -v demo | grep -q [a-zA-Z0-9]") == 0 | system("test -d /live/linux/home/demo") == 0) {
+    // test if there's another user than demo in /home, if exists skip to next step, also skip account setup if demo is present on squashfs
+    if (system("ls /home | grep -v lost+found | grep -v demo | grep -q [a-zA-Z0-9]") == 0 || system("test -d /live/linux/home/demo") == 0) {
       next +=1;
     }
   } else if (next == 6 && curr == 5) {
@@ -2029,7 +2042,7 @@ void MInstall::refresh() {
   this->updatePartitionWidgets();
 
 //  system("umount -a 2>/dev/null");
-  FILE *fp = popen("lsblk -ln -o NAME,SIZE,LABEL,MODEL -d -e 2,11 | grep '^[h,s,v].[a-z]' | sort 2>/dev/null", "r");
+  FILE *fp = popen("lsblk -ln -o NAME,SIZE,MODEL -d -e 2,11 | grep '^[h,s,v].[a-z]' | sort 2>/dev/null", "r");
   if (fp == NULL) {
     return;
   }
@@ -2114,6 +2127,7 @@ void MInstall::on_diskCombo_activated() {
 
   rootCombo->clear();
   QString cmd = QString("/sbin/fdisk -l %1 | /bin/grep \"^/dev\"").arg(drv);
+
   FILE *fp = popen(cmd.toAscii(), "r");
   int rcount = 0;
   if (fp != NULL) {
@@ -2133,9 +2147,11 @@ void MInstall::on_diskCombo_activated() {
       nsys2 = strtok(NULL, " *+\t");
       nsize = atoi(nsz);
       nsize = nsize / 1024;
+      cmd = QString("blkid /dev/%1 -s LABEL -o value").arg(ndev);
+      char* label = getCmdOut2(cmd.toAscii()).toUtf8().data();
 
       if ((nsize >= 1200) && (strncmp(nsys, "Linux", 5) == 0 || (strncmp(nsys, "FAT", 3) == 0) || (strncmp(nsys, "W95", 3) == 0) || (strncmp(nsys, "HPFS", 4) == 0))) {;
-        sprintf(line, "%s - %dMB - %s", ndev, nsize, nsys);
+        sprintf(line, "%s - %dMB - %s (%s)", ndev, nsize, label, nsys);
         rootCombo->addItem(line);
         rcount++;
       }
@@ -2175,7 +2191,9 @@ void MInstall::on_rootCombo_activated() {
       nsize = atoi(nsz);
       nsize = nsize / 1024;
       if (nsys2 != NULL && strncmp(nsys2, "swap", 4) == 0) {
-        sprintf(line, "%s - %dMB - %s", ndev, nsize, nsys2);
+        cmd = QString("blkid /dev/%1 -s LABEL -o value").arg(ndev);
+        char* label = getCmdOut2(cmd.toAscii()).toUtf8().data();
+        sprintf(line, "%s - %dMB - %s (%s)", ndev, nsize, label, nsys2);
         swapCombo->addItem(line);
         rcount++;
       }
@@ -2211,11 +2229,14 @@ void MInstall::on_swapCombo_activated() {;
         nsys2 = strtok(NULL, " *+\t");
         nsize = atoi(nsz);
         nsize = nsize / 1024;
+
         if (strcmp(ndev, rootCombo->currentText().section(' ', 0, 0).toAscii()) != 0 &&
-          (nsize >= 100) && (strncmp(nsys, "Linux", 5) == 0) && (nsys2 == NULL)) {;
-        sprintf(line, "%s - %dMB - %s", ndev, nsize, nsys);
-        homeCombo->addItem(line);
-          }
+            (nsize >= 100) && (strncmp(nsys, "Linux", 5) == 0) && (nsys2 == NULL)) {;
+          cmd = QString("blkid /dev/%1 -s LABEL -o value").arg(ndev);
+          char* label = getCmdOut2(cmd.toAscii()).toUtf8().data();
+          sprintf(line, "%s - %dMB - %s (%s)", ndev, nsize, label, nsys);
+          homeCombo->addItem(line);
+        }
       }
       pclose(fp);
     }
