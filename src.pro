@@ -14,6 +14,7 @@ TRANSLATIONS += translations/mx-installer_ca.ts \
        		translations/mx-installer_pt_BR.ts \
 		translations/mx-installer_pt.ts \
                 translations/mx-installer_ro.ts \
+                translations/mx-installer_ru.ts \
                 translations/mx-installer_sv.ts \
                 translations/mx-installer_uk.ts 
 FORMS += memain.ui meinstall.ui 
