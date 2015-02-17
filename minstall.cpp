@@ -1087,6 +1087,7 @@ bool MInstall::installLoader() {
     return false;
   }
   setCursor(QCursor(Qt::WaitCursor));
+  qApp->processEvents();
 
   // install new Grub now
   cmd = QString("grub-install --recheck --no-floppy --force --boot-directory=/mnt/antiX/boot /dev/%1").arg(boot);
@@ -1191,18 +1192,21 @@ bool MInstall::setUserName() {
     }
   }
 
+  setCursor(QCursor(Qt::WaitCursor));
   if ((dir = opendir(dpath.toAscii())) == NULL) {
     // dir does not exist, must create it
     // copy skel to demo
     if (system("cp -a /mnt/antiX/etc/skel /mnt/antiX/home") != 0) {
       QMessageBox::critical(0, QString::null,
         tr("Sorry, failed to create user directory."));
+      setCursor(QCursor(Qt::ArrowCursor));
       return false;
     }
     cmd = QString("mv -f /mnt/antiX/home/skel %1").arg(dpath);
     if (system(cmd.toAscii()) != 0) {
       QMessageBox::critical(0, QString::null,
         tr("Sorry, failed to name user directory."));
+      setCursor(QCursor(Qt::ArrowCursor));
       return false;
     }
   } else {
@@ -1225,6 +1229,7 @@ bool MInstall::setUserName() {
   if (system(cmd.toAscii()) != 0) {
     QMessageBox::critical(0, QString::null,
       tr("Sorry, failed to set ownership of user directory."));
+    setCursor(QCursor(Qt::ArrowCursor));
     return false;
   }
 
@@ -1242,7 +1247,7 @@ bool MInstall::setUserName() {
   }
   cmd = QString("touch /mnt/antiX/var/mail/%1").arg(userNameEdit->text());
   system(cmd.toAscii());
-
+  setCursor(QCursor(Qt::ArrowCursor));
   return true;
 }
 
