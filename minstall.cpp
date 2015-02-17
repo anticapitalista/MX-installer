@@ -1142,6 +1142,7 @@ bool MInstall::setUserName() {
     // already exists
     closedir(dir);
     msg = QString( tr("The home directory for %1 already exists.Would you like to reuse the old home directory?")).arg(userNameEdit->text());
+    setCursor(QCursor(Qt::ArrowCursor));
     ans = QMessageBox::information(0, QString::null, msg,
         tr("Yes"), tr("No"));
     if (ans != 0) {
@@ -1314,6 +1315,8 @@ bool MInstall::setPasswords() {
 }
 
 bool MInstall::setUserInfo() {
+  setCursor(QCursor(Qt::WaitCursor));
+  qApp->processEvents();
   //validate data before proceeding
   // see if username is reasonable length
   if (strlen(userNameEdit->text().toAscii()) < 2) {
@@ -1382,8 +1385,6 @@ bool MInstall::setUserInfo() {
   if (!setPasswords()) {
     return false;
   }
-  setCursor(QCursor(Qt::WaitCursor));
-  qApp->processEvents();
   return setUserName();
 }
 
