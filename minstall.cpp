@@ -1229,7 +1229,7 @@ bool MInstall::setUserName() {
   }
   // saving Desktop changes
   if (saveDesktopCheckBox->isChecked()) {
-    cmd = QString("rsync -a /home/demo/ %1 --exclude '.cache' --exclude '.dbus' --exclude '.Xauthority'").arg(dpath);
+    cmd = QString("rsync -a /home/demo/ %1 --exclude '.cache' --exclude '.dbus' --exclude '.Xauthority' --exclude '.mozilla'").arg(dpath);
     if (system(cmd.toAscii()) != 0) {
       setCursor(QCursor(Qt::ArrowCursor));
       QMessageBox::critical(0, QString::null,
