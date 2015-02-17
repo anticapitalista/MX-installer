@@ -1882,6 +1882,7 @@ void MInstall::pageDisplayed(int next) {
       break;
 
     case 2:
+      setCursor(QCursor(Qt::ArrowCursor));
       ((MMain *)mmn)->setHelpText(tr("<p><b>Limitations</b><br/>Remember, this software is provided AS-IS with no warranty what-so-ever. "
          "It's solely your responsibility to backup your data before proceeding.</p>"
          "<p><b>Choose Partitions</b><br/>MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.</p>"
@@ -1944,12 +1945,14 @@ void MInstall::pageDisplayed(int next) {
       break;
 
     case 5:
+      setCursor(QCursor(Qt::ArrowCursor));
       ((MMain *)mmn)->setHelpText(tr("<p><b>Common Services to Enable</b><br/>Select any of the these common services that you might need with your system configuration and the services will be started automatically when you start MX Linux.</p>"));
       nextButton->setEnabled(true);
       backButton->setEnabled(true);
       break;
 
     case 6:
+      setCursor(QCursor(Qt::ArrowCursor));
       ((MMain *)mmn)->setHelpText(tr("<p><b>Computer Identity</b><br/>The computer name is a common unique name which will identify your computer if it is on a network. "
         "The computer domain is unlikely to be used unless your ISP or local network requires it.</p>"
         "<p>The computer and domain names can contain only alphanumeric characters, dots, hyphens. They cannot contain blank spaces, start or end with hyphens</p>"
@@ -1960,6 +1963,7 @@ void MInstall::pageDisplayed(int next) {
       break;
 
     case 7:
+      setCursor(QCursor(Qt::ArrowCursor));
       ((MMain *)mmn)->setHelpText(tr("<p><b>Localization Defaults</b><br/>Set the default keyboard and locale. These will apply unless, they are overridden later by the user.</p>"
         "<p><b>Configure Clock</b><br/>If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for 'System clock uses LOCAL.'</p>"
         "<p><b>Timezone Settings</b><br/>The CD boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Adjust Date & Time...</p>"
@@ -1969,6 +1973,7 @@ void MInstall::pageDisplayed(int next) {
       break;
 
     case 8:
+      setCursor(QCursor(Qt::ArrowCursor));
       ((MMain *)mmn)->setHelpText(tr("<p><b>Default User Login</b><br/>The root user is similar to the Administrator user in some other operating systems. "
         "You should not use the root user as your daily user account. "
         "Please enter the name for a new (default) user account that you will use on a daily basis. "
@@ -1979,6 +1984,7 @@ void MInstall::pageDisplayed(int next) {
       break;
 
     case 9:
+      setCursor(QCursor(Qt::ArrowCursor));
       ((MMain *)mmn)->setHelpText(tr("<p><b>Congratulations!</b><br/>You have completed the installation of ") + " MX Linux." + tr("</p>"
         "<p><b>Finding Applications</b><br/>There are hundreds of excellent applications installed with MX Linux. "
         "The best way to learn about them is to browse through the Menu and try them. "
