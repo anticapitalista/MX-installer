@@ -1176,14 +1176,17 @@ bool MInstall::setUserName() {
             tr("Yes"), tr("No"));
         if (ans == 0) {
           // delete the directory
+          setCursor(QCursor(Qt::WaitCursor));
           cmd = QString("rm -f %1").arg(dpath);
           if (system(cmd.toAscii()) != 0) {
+            setCursor(QCursor(Qt::ArrowCursor));
             QMessageBox::critical(0, QString::null,
               tr("Sorry, failed to delete old home directory. Before proceeding, \nyou'll have to select a different username."));
             return false;
           }
         } else {
             // don't save, reuse or delete -- can't proceed
+            setCursor(QCursor(Qt::ArrowCursor));
             QMessageBox::critical(0, QString::null,
             tr("You've chosen to not use, save or delete the old home directory.\nBefore proceeding, you'll have to select a different username."));
           return false;
@@ -1191,20 +1194,21 @@ bool MInstall::setUserName() {
       }
     }
   }
+  setCursor(QCursor(Qt::WaitCursor));
   if ((dir = opendir(dpath.toAscii())) == NULL) {
     // dir does not exist, must create it
     // copy skel to demo
     if (system("cp -a /mnt/antiX/etc/skel /mnt/antiX/home") != 0) {
+      setCursor(QCursor(Qt::ArrowCursor));
       QMessageBox::critical(0, QString::null,
         tr("Sorry, failed to create user directory."));
-      setCursor(QCursor(Qt::ArrowCursor));
       return false;
     }
     cmd = QString("mv -f /mnt/antiX/home/skel %1").arg(dpath);
     if (system(cmd.toAscii()) != 0) {
+      setCursor(QCursor(Qt::ArrowCursor));
       QMessageBox::critical(0, QString::null,
         tr("Sorry, failed to name user directory."));
-      setCursor(QCursor(Qt::ArrowCursor));
       return false;
     }
   } else {
@@ -1225,9 +1229,9 @@ bool MInstall::setUserName() {
   // fix the ownership, demo=newuser
   cmd = QString("chown -R demo.users %1").arg(dpath);
   if (system(cmd.toAscii()) != 0) {
+    setCursor(QCursor(Qt::ArrowCursor));
     QMessageBox::critical(0, QString::null,
       tr("Sorry, failed to set ownership of user directory."));
-    setCursor(QCursor(Qt::ArrowCursor));
     return false;
   }
 
@@ -1250,6 +1254,8 @@ bool MInstall::setUserName() {
 }
 
 bool MInstall::setPasswords() {
+  setCursor(QCursor(Qt::WaitCursor));
+  qApp->processEvents();
   FILE *fp = popen("chroot /mnt/antiX passwd root", "w");
   bool fpok = true;
   QString cmd = QString("%1\n").arg(rootPasswordEdit->text());
@@ -1271,6 +1277,7 @@ bool MInstall::setPasswords() {
   }
 
   if (!fpok) {
+    setCursor(QCursor(Qt::ArrowCursor));
     QMessageBox::critical(0, QString::null,
       tr("Sorry, unable to set root password."));
     return false;
@@ -1297,10 +1304,12 @@ bool MInstall::setPasswords() {
   }
 
   if (!fpok) {
+    setCursor(QCursor(Qt::ArrowCursor));
     QMessageBox::critical(0, QString::null,
       tr("Sorry, unable to set user password."));
     return false;
   }
+  setCursor(QCursor(Qt::ArrowCursor));
   return true;
 }
 
