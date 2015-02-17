@@ -1191,8 +1191,8 @@ bool MInstall::setUserName() {
       }
     }
   }
-
   setCursor(QCursor(Qt::WaitCursor));
+  qApp->processEvents();
   if ((dir = opendir(dpath.toAscii())) == NULL) {
     // dir does not exist, must create it
     // copy skel to demo
