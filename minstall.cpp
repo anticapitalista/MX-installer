@@ -1227,6 +1227,15 @@ bool MInstall::setUserName() {
     cmd = QString("cp -Rn /mnt/antiX/etc/skel/.local %1").arg(dpath);
     system(cmd.toAscii());
   }
+  // saving Desktop changes
+  if (saveDesktopCheckBox->isChecked()) {
+    cmd = QString("rsync -a /home/demo/ %1 --exclude '.cache' --exclude '.dbus' --exclude '.Xauthority'").arg(dpath);
+    if (system(cmd.toAscii()) != 0) {
+      setCursor(QCursor(Qt::ArrowCursor));
+      QMessageBox::critical(0, QString::null,
+        tr("Sorry, failed to save the desktop chages."));
+    }
+  }
   // fix the ownership, demo=newuser
   cmd = QString("chown -R demo.users %1").arg(dpath);
   if (system(cmd.toAscii()) != 0) {
