@@ -1315,8 +1315,6 @@ bool MInstall::setPasswords() {
 }
 
 bool MInstall::setUserInfo() {
-  setCursor(QCursor(Qt::WaitCursor));
-  qApp->processEvents();
   //validate data before proceeding
   // see if username is reasonable length
   if (strlen(userNameEdit->text().toAscii()) < 2) {
@@ -1381,7 +1379,8 @@ bool MInstall::setUserInfo() {
       "a longer password before proceeding."));
     return false;
   }
-
+  setCursor(QCursor(Qt::WaitCursor));
+  qApp->processEvents();
   if (!setPasswords()) {
     return false;
   }
