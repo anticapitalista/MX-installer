@@ -91,9 +91,6 @@
        <height>160</height>
       </size>
      </property>
-     <property name="toolTip">
-      <string>Preserve desktop modifications make in the live environment</string>
-     </property>
      <property name="currentIndex">
       <number>8</number>
      </property>
