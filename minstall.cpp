@@ -1233,7 +1233,7 @@ bool MInstall::setUserName() {
     if (system(cmd.toAscii()) != 0) {
       setCursor(QCursor(Qt::ArrowCursor));
       QMessageBox::critical(0, QString::null,
-        tr("Sorry, failed to save the desktop chages."));
+        tr("Sorry, failed to save desktop changes."));
     }
   }
   // fix the ownership, demo=newuser

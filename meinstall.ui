@@ -91,8 +91,11 @@
        <height>160</height>
       </size>
      </property>
+     <property name="toolTip">
+      <string>Preserve desktop modifications make in the live environment</string>
+     </property>
      <property name="currentIndex">
-      <number>2</number>
+      <number>8</number>
      </property>
      <widget class="QWidget" name="Step_0">
       <layout class="QGridLayout">
@@ -1828,7 +1831,7 @@ p, li { white-space: pre-wrap; }
          </layout>
         </widget>
        </item>
-       <item row="4" column="0">
+       <item row="5" column="0">
         <spacer>
          <property name="orientation">
           <enum>Qt::Vertical</enum>
@@ -1978,6 +1981,16 @@ p, li { white-space: pre-wrap; }
         <widget class="QCheckBox" name="passwordCheckBox">
          <property name="text">
           <string>Show passwords</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QCheckBox" name="saveDesktopCheckBox">
+         <property name="toolTip">
+          <string>Desktop modification made in the live environment will be carried over to the installed OS</string>
+         </property>
+         <property name="text">
+          <string>Save desktop changes</string>
          </property>
         </widget>
        </item>
