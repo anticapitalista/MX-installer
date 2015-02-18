@@ -1987,7 +1987,7 @@ p, li { white-space: pre-wrap; }
           <string>Desktop modification made in the live environment will be carried over to the installed OS</string>
          </property>
          <property name="text">
-          <string>Save desktop changes</string>
+          <string>Save live desktop changes</string>
          </property>
         </widget>
        </item>
