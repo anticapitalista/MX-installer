@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="ca">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ca" version="2.0">
 <context>
     <name>MInstall</name>
     <message>
@@ -16,7 +14,7 @@
     <message>
         <location filename="../minstall.cpp" line="129"/>
         <source>Secure Shell</source>
-        <translation>Secure Shell </translation>
+        <translation>Intèrpret Segur </translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="139"/>
@@ -26,7 +24,7 @@
     <message>
         <location filename="../minstall.cpp" line="149"/>
         <source>Network File System</source>
-        <translation>Sistema de fitxers de xarxa</translation>
+        <translation>Sistema de Fitxers de Xarxa</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="159"/>
@@ -46,12 +44,12 @@
     <message>
         <location filename="../minstall.cpp" line="183"/>
         <source>CPU frequency, irqbalance</source>
-        <translation>Freqüència de CPU,  equilibri d&apos;irq </translation>
+        <translation>Freqüència de CPU,  compensació d&apos;irq </translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="193"/>
         <source>Runs commands periodically</source>
-        <translation>Executa ordres periòdicament  </translation>
+        <translation>Executa ordres periòdicament </translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="203"/>
@@ -106,7 +104,7 @@
     <message>
         <location filename="../minstall.cpp" line="303"/>
         <source>Random number generator</source>
-        <translation>Generador de números aleatoris  </translation>
+        <translation>Generador de nombres aleatoris  </translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="313"/>
@@ -132,7 +130,7 @@ The disk with the partition you selected for installation is failing.
 </source>
         <translation>
 
-El disc amb la partició que heu seleccionat per a la instal · lació està fallant. 
+El disc amb la partició que heu seleccionat per a la instal·lació està fallant. 
 
 </translation>
     </message>
@@ -149,7 +147,7 @@ El disc amb la partició que heu seleccionat per a la instal · lació està fal
         <source>If unsure, please exit the Installer and run GSmartControl for more information.
 
 </source>
-        <translation>Si no n&apos;esteu segus, sortiu de l&apos;instal·lador i execueu GSmartControl per tenir més informació. 
+        <translation>Si no n&apos;esteu segurs, sortiu de l&apos;instal·lador i executeu GSmartControl per tenir més informació. 
 
 </translation>
     </message>
@@ -216,7 +214,7 @@ El disc amb la partició que heu seleccionat per a la instal · lació està fal
         <location filename="../minstall.cpp" line="495"/>
         <source>but the tests indicate it will have a higher than average failure rate in the upcoming year.
 </source>
-        <translation>però les proves indiquen que té un ridsc de fallades superior a la mitjana per l&apos;any vinent. 
+        <translation>però les proves indiquen que té un risc de fallades superior a la mitjana per l&apos;any vinent. 
 </translation>
     </message>
     <message>
@@ -353,7 +351,7 @@ i crear-ne un de nou?</translation>
     <message>
         <location filename="../minstall.cpp" line="1166"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Ho sento, no s&apos;ha pogut desar el directori d&apos;usuaris antic.
 Abans de continuar, cal triar un nom d&apos;usuari nou o
@@ -373,7 +371,7 @@ Abans de continuar, cal triar un nom d&apos;usuari diferent.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1192"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Heu triat no usar, desar o esborrar el directori d&apos;usuaris antic.
 Abans de continuar, cal que trieu un nom d&apos;usuari diferent. </translation>
@@ -391,7 +389,7 @@ Abans de continuar, cal que trieu un nom d&apos;usuari diferent. </translation>
     <message>
         <location filename="../minstall.cpp" line="1236"/>
         <source>Sorry, failed to save desktop changes.</source>
-        <translation type="unfinished"></translation>
+        <translation>Ho sento, no s&apos;han pogut desar els canvis a l&apos;escriptori.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1244"/>
@@ -465,13 +463,13 @@ coincideixen. Proveu-ho un altre cop.</translation>
         <location filename="../minstall.cpp" line="1373"/>
         <source>The root password entries do
  not match.  Please try again.</source>
-        <translation>Les contrasenyes d&apos;administrador no
+        <translation>Les contrasenyes d&apos;usuari primari no
 coincideixen. Proveu-ho un altre cop.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1407"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>Ho sento, el nom de l&apos;ordinador ha de
 tenir 2 caràcters com a mínim. Cal que
@@ -480,36 +478,38 @@ en trieu un altre abans de continuar.</translation>
     <message>
         <location filename="../minstall.cpp" line="1411"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Ho sento, el nom d&apos;ordinador conté caràcters no vàlids. 
-Cal que en trieu un altre abans de continuar.</translation>
+Cal que en trieu un altre diferent
+abans de continuar.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1417"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Ho sento, el domini de l&apos;ordinador ha de tenir
 2 caràcters com a mínim. Cal que en trieu un
-altre abans de continuar.</translation>
+altre diferent abans de continuar.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1421"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Ho sento, el domini de l&apos;ordinador conté caràcters no vàlids. 
-Cal que en trieu un altre abans de continuar.</translation>
+Cal que en trieu un altre diferent
+abans de continuar.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1430"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
-        <translation>Ho sento, el nom del grup de treball ha
-de tenir 2 caràcters com a mínim. Cal que
-en trieu un altre abans de continuar.</translation>
+        <translation>Ho sento, el nom del grup de treball ha de
+tenir 2 caràcters com a mínim. Cal que en
+trieu un altre diferent abans de continuar.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1801"/>
@@ -519,9 +519,9 @@ To use the new installation, reboot without the installation media.
 Do you want to reboot now?</source>
         <translation>Ja ha acabat la instal·lació i configuració de MX Linux. 
 Per tal d&apos;usar la nova instal·lació, cal tornar a arrencar 
-sense el CD o USB. 
+sense el CD/DVD o USB. 
 
-Voleu fer-ho ara? </translation>
+Voleu tornar a arrencar ara? </translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1817"/>
@@ -533,7 +533,7 @@ De debò voleu aturar-la ara?</translation>
     <message>
         <location filename="../minstall.cpp" line="1884"/>
         <source>&lt;p&gt;&lt;b&gt;General Instructions&lt;/b&gt;&lt;br/&gt;BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.&lt;/p&gt;&lt;p&gt;On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. You will be prompted for confirmation before any destructive actions are performed.&lt;/p&gt;&lt;p&gt;MX Linux requires about 3.5 GB of space. 5 GB or more is preferred. You can use the entire disk or you can put MX Linux on existing partitions. &lt;/p&gt;&lt;p&gt;If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system&apos;s software to set up partitions and boot manager before installing MX Linux.&lt;/p&gt;&lt;p&gt;The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Instruccions Generals&lt;/b&gt;&lt;br/&gt;ABANS DE CONTINUAR, TANQUEU TOTS ELS ALTRES PROGRAMES.&lt;/p&gt;&lt;p&gt;A cada pàgina, llegiu-ne les instruccions, feu la vostra tria i cliqueu &quot;Següent&quot; quan vulgueu continuar. Se us demanarà confirmació abans d&apos;executar accions destructives.&lt;/p&gt;&lt;p&gt;MX Linux necessita al voltant de 3,5 GB d&apos;espai al disc dur. És preferible tenir-ne 5 GB o més. Podeu usar el disc sencer o instal·lar MX Linux en una de les particions existents. &lt;/p&gt;&lt;p&gt;Si teniu maquinari Apple o bé useu MS-Windows (Vista o superior) podeu usar el programari d&apos;aquests Sistemes Opeartius per definir les particions i l&apos;arrencador abans d&apos;instal·lar MX Linux.&lt;/p&gt;&lt;p&gt;Se suporten tots els sistemes de fitxers Linux ext2, ext3, ext4, jfs, xfs, btrfs i reiserfs, tot i que es recomana ext4.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;b&gt;Instruccions Generals&lt;/b&gt;&lt;br/&gt;ABANS DE CONTINUAR, TANQUEU TOTS ELS ALTRES PROGRAMES.&lt;/p&gt;&lt;p&gt;A cada pàgina, llegiu-ne les instruccions, feu la vostra tria i cliqueu &quot;Següent&quot; quan vulgueu continuar. Se us demanarà confirmació abans d&apos;executar accions destructives.&lt;/p&gt;&lt;p&gt;MX Linux necessita al voltant de 3,5 GB d&apos;espai al disc dur. És preferible tenir-ne 5 GB o més. Podeu usar el disc sencer o instal·lar MX Linux en una de les particions existents. &lt;/p&gt;&lt;p&gt;Si teniu maquinari Apple o bé useu MS-Windows (Vista o superior) és millor usar el programari d&apos;aquests Sistemes Operatius per definir les particions i l&apos;arrencador abans d&apos;instal·lar MX Linux.&lt;/p&gt;&lt;p&gt;Se suporten tots els sistemes de fitxers Linux: ext2, ext3, ext4, jfs, xfs, btrfs i reiserfs, tot i que es recomana ext4.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1895"/>
@@ -548,12 +548,12 @@ De debò voleu aturar-la ara?</translation>
     <message>
         <location filename="../minstall.cpp" line="1913"/>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis and antiX Communities&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Agraïments&lt;/b&gt;&lt;br/&gt;Gràcies a tots aquells que han donat suport a MX Linux amb el seu temps, diners, suggeriments, treball, elogis, idees, promoció i/o ànims.&lt;/p&gt;&lt;p&gt;Sense vosaltres MX Linux no hagués estat possible.&lt;/p&gt;&lt;p&gt;Anticapitalista, i les comunitats Mepis  i antiX.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;b&gt;Agraïments&lt;/b&gt;&lt;br/&gt;Gràcies a tothom que han donat suport a MX Linux amb el seu temps, diners, suggeriments, treball, elogis, idees, promoció i/o ànims.&lt;/p&gt;&lt;p&gt;Sense vosaltres MX Linux no hagués estat possible.&lt;/p&gt;&lt;p&gt;Anticapitalista i les comunitats Mepis  i antiX.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1916"/>
         <source>&lt;p&gt;&lt;b&gt;Installation in Progress&lt;/b&gt;&lt;br/&gt;MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.&lt;/p&gt;&lt;p&gt;If you click the Abort button, the installation will be stopped as soon as possible.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Instal·lació en progrés&lt;/b&gt;&lt;br/&gt;S&apos;està instal·lant MX Linux.  Per a una instal·lació nova, això trigarà probablement entre 3 i 20 minuts, depenent de la velocitat del vostre maquinari i de la mida de les particions que reformateu.&lt;/p&gt;&lt;p&gt;Si cliqueu el botó d&apos;interrupció, la instal·lació s&apos;aturarà tan aviat com sigui possible.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;b&gt;Instal·lació en curs&lt;/b&gt;&lt;br/&gt;S&apos;està instal·lant MX Linux.  Per a una instal·lació nova, això trigarà probablement entre 3 i 20 minuts, depenent de la velocitat del vostre maquinari i de la mida de les particions que reformateu.&lt;/p&gt;&lt;p&gt;Si cliqueu el botó d&apos;interrupció, la instal·lació s&apos;aturarà tan aviat com sigui possible.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1928"/>
@@ -587,7 +587,7 @@ Retornant al primer pas.</translation>
     <message>
         <location filename="../minstall.cpp" line="1976"/>
         <source>&lt;p&gt;&lt;b&gt;Localization Defaults&lt;/b&gt;&lt;br/&gt;Set the default keyboard and locale. These will apply unless, they are overridden later by the user.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configure Clock&lt;/b&gt;&lt;br/&gt;If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for &apos;System clock uses LOCAL.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Timezone Settings&lt;/b&gt;&lt;br/&gt;The CD boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Adjust Date &amp; Time...&lt;/p&gt;&lt;p&gt;&lt;b&gt;Service Settings&lt;/b&gt;&lt;br/&gt;Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! </source>
-        <translation>&lt;p&gt;&lt;b&gt;Localització per omissió&lt;/b&gt;&lt;br/&gt;Definiu el teclat per omissió i el &lt;i&gt;locale&lt;/i&gt;.  Aquests s&apos;aplicaran llevat que es canviïn més endavant per l&apos;usuari.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configuració del Rellotge&lt;/b&gt;&lt;br/&gt;Si teniu un ordinador Apple o un sistema Unix pur, per omissió el rellotge del sistema s&apos;estableix en hora GMT (&lt;i&gt;Greenwich Mean Time&lt;/i&gt;) o UT (&lt;i&gt;Universal Time&lt;/i&gt;).  Per canviar-ho, marqueu la casella de &quot;Rellotge de Sistema en LOCAL.&quot;.&lt;/p&gt;El CD arrenca amb la zona horària GMT/UTC, per omissió. Per canviar la zona horària, un cop heu arrencat amb la nova instal·lació, feu clic amb el botó dret del ratolí sobre el rellotge del plafó i trieu &quot;Ajusta el dia i l&apos;hora...&quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configuració dels Serveis&lt;/b&gt;&lt;br/&gt;La majoria d&apos;usuaris no hauríen ce canviar els valors per omissió. Els usuaris amb pocs recursos de maquinari potser vulguin desactivar alguns serveis per tal de minimitzar el ús de la RAM. Assegureu-vos de saber el que aneu a fer! </translation>
+        <translation>&lt;p&gt;&lt;b&gt;Localització per omissió&lt;/b&gt;&lt;br/&gt;Definiu el teclat per omissió i el &lt;i&gt;locale&lt;/i&gt;.  Aquests s&apos;aplicaran a continuació, però es poden canviar més endavant per l&apos;usuari.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configuració del Rellotge&lt;/b&gt;&lt;br/&gt;Si teniu un ordinador Apple o un sistema Unix pur, per omissió el rellotge del sistema s&apos;estableix en hora GMT (&lt;i&gt;Greenwich Mean Time&lt;/i&gt;) o UT (&lt;i&gt;Universal Time&lt;/i&gt;).  Per canviar-ho, marqueu la casella de &quot;Rellotge de Sistema en LOCAL&quot;.&lt;/p&gt;El CD/DVD arrenca amb la zona horària GMT/UTC, per omissió. Per canviar la zona horària, un cop heu arrencat amb la nova instal·lació, feu clic amb el botó dret del ratolí sobre el rellotge del plafó i trieu &quot;Ajusta el dia i l&apos;hora...&quot;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configuració dels Serveis&lt;/b&gt;&lt;br/&gt;La majoria d&apos;usuaris no haurien ce canviar els valors per omissió. Els usuaris amb pocs recursos de maquinari potser vulguin desactivar alguns serveis per tal de minimitzar l&apos;ús de la RAM. Assegureu-vos de saber el que aneu a fer! </translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1986"/>
@@ -602,12 +602,12 @@ Retornant al primer pas.</translation>
     <message>
         <location filename="../minstall.cpp" line="1997"/>
         <source>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Finding Applications&lt;/b&gt;&lt;br/&gt;There are hundreds of excellent applications installed with MX Linux. The best way to learn about them is to browse through the Menu and try them. Many of the apps were developed specifically for the Xfce environment. These are shown in the main menus. &lt;p&gt;In addition MX Linux includes many standard Linux applications that are run only from the commandline and therefore do not show up in Menu.&lt;/p&gt;</source>
-        <translation>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Trobar programari&lt;/b&gt;&lt;br/&gt;Hi ha centenars de programes excel·lents ja instal·lats a MX Linux. La millor manera de familiaritzar-se amb ells és explorar mitjançant el Menú i provar-los. Molts programes s&apos;han desenvolupat específicament per a l&apos;entorn Xfce. Els trobareu als menús principals i als de &quot;Més aplicacions&quot;. Altres programes Linux es poden trobar també al Menú, però a l&apos;apartat &quot;Aplicacions &quot;  o el seu equivalent.&lt;/p&gt;&lt;p&gt;Addicionalment, MX Linux inclou molts programes estàndard Linux que s&apos;executen a la línia d&apos;ordres i per tant no apareixen al Menú.&lt;/p&gt;</translation>
+        <translation>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Trobar programari&lt;/b&gt;&lt;br/&gt;Hi ha centenars de programes excel·lents ja instal·lats a MX Linux. La millor manera de familiaritzar-se amb ells és explorar mitjançant el Menú i provar-los. Molts programes s&apos;han desenvolupat específicament per a l&apos;entorn Xfce. Els trobareu als menús principals i als de &quot;Més aplicacions&quot;. Altres programes Linux es poden trobar també al Menú, però a l&apos;apartat &quot;Aplicacions&quot; o el seu equivalent.&lt;/p&gt;&lt;p&gt;Addicionalment, MX Linux inclou molts programes estàndard Linux que s&apos;executen a la línia d&apos;ordres i per tant no apareixen al Menú.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2009"/>
         <source>&lt;p&gt;&lt;b&gt;Enjoy using MX Linux!&lt;/b&gt;&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Gaudiu amb MX Linux!&lt;/b&gt;&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;b&gt;Gaudiu usant MX Linux!&lt;/b&gt;&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2022"/>
@@ -659,7 +659,7 @@ Retornant al primer pas.</translation>
     <message>
         <location filename="../minstall.cpp" line="2483"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at http://antix.mepis.com and http://www.mepiscommunity.org/mx. There are volunteers to help you at the antiX Forum, http://antix.freeforums.org and the MEPIS Community Forum http://forum.mepiscommunity.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Cercar Ajuda&lt;/b&gt;&lt;br/&gt;Trobareu informació bàsica quant a MX Linux a http://www.mepiscommunity.org/mx i http://antix.mepis.com. Els voluntaris de la Comunitat antiX també us ajudaran al fòrum http://antix.freeforums.org, i la comunitat MX a http://forum.mepiscommunity.org. Més endavant també trobareu ajuda en català a http://www.mxlinux.cat.&lt;/p&gt;&lt;p&gt;Si demaneu ajuda, recordeu-vos de descriure el vostre problema i el maquinari. Normalment títols com &quot;No funciona!&quot; no son gaire útils.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;b&gt;Cercar Ajuda&lt;/b&gt;&lt;br/&gt;Trobareu informació bàsica quant a MX Linux a http://www.mepiscommunity.org/mx i http://antix.mepis.com. Els voluntaris de la Comunitat antiX també us ajudaran al fòrum http://antix.freeforums.org, i la comunitat MX a http://forum.mepiscommunity.org. Més endavant també trobareu ajuda en català a http://www.mxlinux.cat.&lt;/p&gt;&lt;p&gt;Si demaneu ajuda, recordeu-vos de descriure el vostre problema i el maquinari amb detall. Normalment títols com &quot;No funciona!&quot; no son gens útils.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2491"/>
@@ -669,7 +669,7 @@ Retornant al primer pas.</translation>
     <message>
         <location filename="../minstall.cpp" line="2497"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Suport de MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux té el suport de gent com vosaltres. Alguns ajuden als demés als fòrums de suport, com  http://forum.mepiscommunity.org i http://antix.freeforums.org, altres tradueixen programari o fitxers d&apos;ajuda a altres llengües, fan suggeriments, escriuen manuals i documentació, o ajuden a provar el funcionament del programari nou.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;b&gt;Suport de MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux té el suport de gent com vosaltres. Alguns ajuden als altres als fòrums de suport, com  http://forum.mepiscommunity.org i http://antix.freeforums.org, altres tradueixen programari o fitxers d&apos;ajuda a altres llengües, fan suggeriments, escriuen manuals i documentació, o ajuden a provar el funcionament del programari nou.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2504"/>
@@ -719,11 +719,11 @@ Retornant al primer pas.</translation>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;MX Linux is an independent linux distribution based on Debian Stable&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans'; font-size:10pt;&quot;&gt;MX Linux is an independent linux distribution based on Debian Stable&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans'; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans'; font-size:10pt;&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans'; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;Enjoy using MX Linux.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -733,7 +733,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;MX Linux utilitza alguns components de MEPIS Linux que s&apos;han publicat sota una llicència lliure Apache. Alguns components de MEPIS han estat modificats per MX Linux.&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;Gaudiu amb MX Linux.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;Gaudiu usant MX Linux.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="223"/>
@@ -803,7 +803,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="600"/>
         <source>Change default / (root) partition label:</source>
-        <translation>Canvia l&apos;etiqueta de la partició / (arrel): </translation>
+        <translation>Canvia l&apos;etiqueta per omissió de la partició / (arrel): </translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="614"/>
@@ -874,17 +874,17 @@ p, li { white-space: pre-wrap; }
         <location filename="../meinstall.ui" line="831"/>
         <location filename="../meinstall.ui" line="1204"/>
         <source>root</source>
-        <translation>arrel</translation>
+        <translation>Arrel</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="867"/>
         <source>3. Installation in progress</source>
-        <translation>3. Instal·lació en progrés</translation>
+        <translation>3. Instal·lació en curs </translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="910"/>
         <source>Abort</source>
-        <translation>Atura</translation>
+        <translation>Interromp </translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="913"/>
@@ -955,12 +955,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="1363"/>
         <source>Workgroup</source>
-        <translation>Grup de treball:</translation>
+        <translation>Grup de treball</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1376"/>
         <source>Workgroup:</source>
-        <translation>Grup de treball:</translation>
+        <translation>Grup de treball: </translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1392"/>
@@ -1005,7 +1005,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="1564"/>
         <source>6b. Configure Clock</source>
-        <translation>6b. Configura Rellotge</translation>
+        <translation>6b. Configura el Rellotge</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1585"/>
@@ -1020,17 +1020,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="1631"/>
         <source>Locale:</source>
-        <translation>Locale:</translation>
+        <translation>Locale: </translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1670"/>
         <source>Keyboard:</source>
-        <translation>Teclat:</translation>
+        <translation>Teclat: </translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1689"/>
         <source>6c. Timezone Settings</source>
-        <translation>6c. Ajust fus horari</translation>
+        <translation>6c. Ajusts fus horari</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1695"/>
@@ -1040,7 +1040,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="1746"/>
         <source>7b. Root (administrator) Account</source>
-        <translation>7b. Compte d&apos;Usuari Principal (root)</translation>
+        <translation>7b. Compte d&apos;Usuari Primaril (root)</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1805"/>
@@ -1050,7 +1050,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="1821"/>
         <source>Root password:</source>
-        <translation>Contrasenya de root:</translation>
+        <translation>Contrasenya de root: </translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1853"/>
@@ -1075,7 +1075,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="1960"/>
         <source>Default user login name:</source>
-        <translation>Nom de registre d&apos;usuari:</translation>
+        <translation>Nom de registre d&apos;usuari per omissió: </translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1973"/>
@@ -1090,12 +1090,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="1987"/>
         <source>Desktop modification made in the live environment will be carried over to the installed OS</source>
-        <translation type="unfinished"></translation>
+        <translation>Les modificacions fetes a l&apos;entorn autònom es traslladaran al S. O. instal·lat </translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1990"/>
-        <source>Save desktop changes</source>
-        <translation type="unfinished"></translation>
+        <source>Save live desktop changes</source>
+        <translation>Desa els canvis de l&apos;escriptori autònom </translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2022"/>
@@ -1107,15 +1107,15 @@ p, li { white-space: pre-wrap; }
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans'; font-size:10pt; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Suport de MX Linux&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;MX Linux té el suport de gent com vosaltres. Alguns ajuden als demés als fòrums de suport, com http://forum.mepiscommunity.org o http://antix.freeforums.org,  tradueixen programari o fitxers d&apos;ajuda a altres llengües, fan suggeriments, escriuen manuals i documentació, o ajuden a provar el funcionament del programari nou.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;MX Linux té el suport de gent com vosaltres. Alguns ajuden als altres als fòrums de suport, com http://forum.mepiscommunity.org o http://antix.freeforums.org,  tradueixen programari o fitxers d&apos;ajuda a altres llengües, fan suggeriments, escriuen manuals i documentació, o ajuden a provar el funcionament del programari nou.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>

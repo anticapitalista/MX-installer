@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="es">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="es" version="2.0">
 <context>
     <name>MInstall</name>
     <message>
@@ -353,7 +351,7 @@ y crear un nuevo directorio /home?</translation>
     <message>
         <location filename="../minstall.cpp" line="1166"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Fallo guardando el directorio /home anterior. Antes de proceder, 
 tendrá que seleccionar un nombre de usuario diferente, o 
@@ -373,7 +371,7 @@ tendrá que seleccionar un nombre de usuario diferente.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1192"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Ha elegido no usar, guardar ni borrar el viejo directorio /home. 
 Antes de seguir, tendrá que seleccionar un nombre de usuario diferente.</translation>
@@ -391,7 +389,7 @@ Antes de seguir, tendrá que seleccionar un nombre de usuario diferente.</transl
     <message>
         <location filename="../minstall.cpp" line="1236"/>
         <source>Sorry, failed to save desktop changes.</source>
-        <translation type="unfinished"></translation>
+        <translation>Lo sentimos. Falló el guardado de los cambios al escritorio.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1244"/>
@@ -472,7 +470,7 @@ no concuerdan. Por favor, intenténtelo de nuevo.</translation>
     <message>
         <location filename="../minstall.cpp" line="1407"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>Lo siento, el nombre del computador necesita ser 
 de por lo menos 2 caracteres de largo. Tendrá que 
@@ -481,7 +479,7 @@ escoger un nombre diferente antes de proceder.</translation>
     <message>
         <location filename="../minstall.cpp" line="1411"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>El nombre de su computadora contiene caracteres inválidos.
 Deberá seleccionar uno diferente
@@ -490,7 +488,7 @@ antes de proseguir.</translation>
     <message>
         <location filename="../minstall.cpp" line="1417"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Lo siento, el nombre del dominio necesita ser por lo menos, 
 de 2 caracteres de largo. Tendrá que escoger un dominio 
@@ -499,7 +497,7 @@ diferente antes de proceder.</translation>
     <message>
         <location filename="../minstall.cpp" line="1421"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>El dominio de su computadora contiene caracteres inválidos.
 Deberá seleccionar uno diferente
@@ -508,7 +506,7 @@ antes de continuar.</translation>
     <message>
         <location filename="../minstall.cpp" line="1430"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Lo siento, el nombre del grupo de trabajo necesita ser por lo menos, 
 de 2 caracteres de largo. Tendrá que escoger un nombre 
@@ -555,7 +553,7 @@ Do you really want to stop now?</source>
     <message>
         <location filename="../minstall.cpp" line="1916"/>
         <source>&lt;p&gt;&lt;b&gt;Installation in Progress&lt;/b&gt;&lt;br/&gt;MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.&lt;/p&gt;&lt;p&gt;If you click the Abort button, the installation will be stopped as soon as possible.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Instalación en Progreso&lt;/b&gt;&lt;br/&gt;MX Linux se está instalando.  Una instalación nueva tomará unas 3 a 20 minutos, dependiendo la velocidad de su sistema y del tamaño de las particiones que esté formateando.&lt;/p&gt;&lt;p&gt;Si presiona el botón Abortar, se detendrá la instalación tan pronto como sea posible.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;b&gt;Instalación en Progreso&lt;/b&gt;&lt;br/&gt;MX Linux se está instalando.  Una instalación nueva tomará unos 3-20 minutos, dependiendo la velocidad de su sistema y del tamaño de las particiones que esté formateando.&lt;/p&gt;&lt;p&gt;Si presiona el botón Abortar, se detendrá la instalación tan pronto como sea posible.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1928"/>
@@ -719,11 +717,11 @@ Returning to Step 1.</source>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;MX Linux is an independent linux distribution based on Debian Stable&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans'; font-size:10pt;&quot;&gt;MX Linux is an independent linux distribution based on Debian Stable&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans'; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans'; font-size:10pt;&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans'; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;Enjoy using MX Linux.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -1090,12 +1088,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="1987"/>
         <source>Desktop modification made in the live environment will be carried over to the installed OS</source>
-        <translation type="unfinished"></translation>
+        <translation>Las modificaciones hechas en el ambiente live se mantendrán en el sistema instalado.</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1990"/>
-        <source>Save desktop changes</source>
-        <translation type="unfinished"></translation>
+        <source>Save live desktop changes</source>
+        <translation>Guardar los cambios del escritorio live</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2022"/>
@@ -1107,8 +1105,8 @@ p, li { white-space: pre-wrap; }
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans Serif'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans'; font-size:10pt; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
