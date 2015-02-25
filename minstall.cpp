@@ -1862,8 +1862,12 @@ int MInstall::showPage(int curr, int next) {
   } else if (next == 8 && curr == 7) {
     setLocale();
     // Detect snapshot-backup account(s)
-    // test if there's another user than demo in /home, if exists skip to next step, also skip account setup if demo is present on squashfs
+    // test if there's another user than demo in /home, if exists, copy the /home and skip to next step, also skip account setup if demo is present on squashfs
     if (system("ls /home | grep -v lost+found | grep -v demo | grep -v snapshot | grep -q [a-zA-Z0-9]") == 0 || system("test -d /live/linux/home/demo") == 0) {
+      setCursor(QCursor(Qt::WaitCursor));
+      QString cmd = "rsync -a /home/ /mnt/antiX/home/ --exclude '.cache' --exclude '.gvfs' --exclude '.dbus' --exclude '.Xauthority' --exclude '.ICEauthority' --exclude '.mozilla' --exclude 'Installer.desktop'";
+      system(cmd.toAscii());
+      setCursor(QCursor(Qt::ArrowCursor));
       next +=1;
     }
   } else if (next == 6 && curr == 5) {

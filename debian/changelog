@@ -1,3 +1,9 @@
+mx-installer (15.2.1) mx; urgency=medium
+
+  * copy /home directory when installing a snapshot-backup
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 25 Feb 2015 10:10:30 -0500
+
 mx-installer (15.2) mx; urgency=medium
 
   * GUI fixes, added saving live desktop when installing
