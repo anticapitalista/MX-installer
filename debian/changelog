@@ -1,3 +1,9 @@
+mx-installer (15.4mx14) mx; urgency=medium
+
+  * protection agains running the program multiple times
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 10 Apr 2015 20:18:29 -0400
+
 mx-installer (15.2.1) mx; urgency=medium
 
   * copy /home directory when installing a snapshot-backup
