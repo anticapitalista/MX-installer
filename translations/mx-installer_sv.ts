@@ -1143,7 +1143,7 @@ p, li { white-space: pre-wrap; }
 <context>
     <name>QApplication</name>
     <message>
-        <location filename="../app.cpp" line="53"/>
+        <location filename="../app.cpp" line="51"/>
         <source>You must run this app as root.</source>
         <translation>Du måste köra detta program som root.</translation>
     </message>

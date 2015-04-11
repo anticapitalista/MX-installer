@@ -10,8 +10,8 @@ Build-Depends: qt4-qmake, debhelper (>= 9.20120115)
 Package-List: 
  mx-installer deb system optional
 Checksums-Sha1: 
- 7c78d0c55bb27874b12fd1a904cc2084c138caad 7658198 mx-installer_15.4mx14.tar.gz
+ e73ec8b3f363a71af6df34ef84cd68b8edb533f8 543480 mx-installer_15.4mx14.tar.gz
 Checksums-Sha256: 
- 36b9457dc3fa570b22895426e28508559b7708ced038cf1ab03db49f20a505ff 7658198 mx-installer_15.4mx14.tar.gz
+ eddc5abdeaaf1932386e9f7e07e380bc6371b49e642712c7c467cde46cbe7187 543480 mx-installer_15.4mx14.tar.gz
 Files: 
- 37f78f60144a4918363bf4f94afe0b01 7658198 mx-installer_15.4mx14.tar.gz
+ ea3b344e96235d797d96a41e01ad3d70 543480 mx-installer_15.4mx14.tar.gz

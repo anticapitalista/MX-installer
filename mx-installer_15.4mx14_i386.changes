@@ -15,14 +15,14 @@ Changes:
  .
    * protection agains running the program multiple times
 Checksums-Sha1: 
- c4bd4a02e46862c90a4843b0e8f0a9c20c698a6f 605 mx-installer_15.4mx14.dsc
- 7c78d0c55bb27874b12fd1a904cc2084c138caad 7658198 mx-installer_15.4mx14.tar.gz
- 60d649957399211300f4213b4e03ea22abd37c7b 211504 mx-installer_15.4mx14_i386.deb
+ beb2ad810834f99fd05ca3e0b52b7f289a21161a 602 mx-installer_15.4mx14.dsc
+ e73ec8b3f363a71af6df34ef84cd68b8edb533f8 543480 mx-installer_15.4mx14.tar.gz
+ 52fc9f4959b5251eed7806d7e5ae48911db32ee5 211334 mx-installer_15.4mx14_i386.deb
 Checksums-Sha256: 
- 50edbed1bb116f74b5f5a09e5043a8fb35f83e148bbc8c9466bd5b8ec9146da0 605 mx-installer_15.4mx14.dsc
- 36b9457dc3fa570b22895426e28508559b7708ced038cf1ab03db49f20a505ff 7658198 mx-installer_15.4mx14.tar.gz
- 4e7578270ed66467e8bd8e491c1e85152db52321d4f8a3c6c3497790db781046 211504 mx-installer_15.4mx14_i386.deb
+ dd6ae19b08b012d58606e73bbd00104d49620f2156a8285912dcddd667f5408e 602 mx-installer_15.4mx14.dsc
+ eddc5abdeaaf1932386e9f7e07e380bc6371b49e642712c7c467cde46cbe7187 543480 mx-installer_15.4mx14.tar.gz
+ d8c9b823b392535fd8072c5a833abef36d9d944ed8c3989044031f1c9c374e07 211334 mx-installer_15.4mx14_i386.deb
 Files: 
- 532887e5693f6f83db1f9d65bc67c86f 605 system optional mx-installer_15.4mx14.dsc
- 37f78f60144a4918363bf4f94afe0b01 7658198 system optional mx-installer_15.4mx14.tar.gz
- cebc9559792c8d0b2011db4e2a5546e0 211504 system optional mx-installer_15.4mx14_i386.deb
+ 7e705718aa593e97aaa56b4627e4a885 602 system optional mx-installer_15.4mx14.dsc
+ ea3b344e96235d797d96a41e01ad3d70 543480 system optional mx-installer_15.4mx14.tar.gz
+ 445546d4c31ec6a725073828444c937d 211334 system optional mx-installer_15.4mx14_i386.deb

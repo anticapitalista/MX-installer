@@ -25,8 +25,6 @@
 
 #include "mmain.h"
 
-#include <QDebug>
-
 int main(int argc, char *argv[]) {
   //exit if "minstall" is already running
   if (system("ps -C minstall | sed '0,/minstall/{s/minstall//}' | grep minstall") == 0) {
