@@ -1,3 +1,9 @@
+mx-installer (15.4.1mx14) mx; urgency=medium
+
+  * added translation
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 21 Apr 2015 14:09:35 -0400
+
 mx-installer (15.4mx14) mx; urgency=medium
 
   * protection agains running the program multiple times
