@@ -1,0 +1,11 @@
+Package: mx-installer
+Version: 15.5.1mx15
+Architecture: i386
+Maintainer: anticapitalista <antiX@operamail.com>
+Installed-Size: 1314
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.7.0~beta1), libstdc++6 (>= 4.1.1), os-prober
+Recommends: gparted, partitionmanager
+Section: system
+Priority: optional
+Homepage: http://antix.mepis.org
+Description: GUI installer for MX-14.

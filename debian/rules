@@ -1,34 +1,21 @@
 #!/usr/bin/make -f
 
-build:
+QMAKE_OPTS = DEFINES+=NO_DEBUG_ON_CONSOLE
+MAKE_OPTS  = QMAKE=qmake-qt4 LRELEASE=lrelease-qt4 QMAKE_OPTS="$(QMAKE_OPTS)"
 
-build-arch:
+override_dh_auto_clean:
+	dh_auto_clean
+	rm -f src/translations/*.qm
 
-build-indep:
+override_dh_auto_build:
+	lrelease-qt4 src.pro
+	dh_auto_build -- $(MAKE_OPTS)
 
-clean:
-	dh_testdir
-	dh_testroot
-	dh_clean
+override_dh_auto_install:
+	dh_auto_install -- $(MAKE_OPTS)
 
-install:
-	dh_install 
-	dh_testdir
-	dh_testroot
-
-binary-arch:
-
-binary-indep: install
-	dh_testdir
-	dh_testroot
-	#dh_installchangelogs
-	dh_installdocs
-	dh_fixperms
-	dh_installdeb
-	dh_gencontrol
-	dh_md5sums
+override_dh_builddeb:
 	dh_builddeb -- -Z xz
 
-binary: binary-indep binary-arch
-
-.PHONY: clean install binary-arch binary-indep binary
+%:
+	dh $@ --parallel 
