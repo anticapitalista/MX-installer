@@ -356,7 +356,7 @@ MInstall::~MInstall() {
 QString MInstall::getCmdOut(QString cmd) {
   char line[260];
   const char* ret = "";
-  FILE* fp = popen(cmd.toAscii(), "r");
+  FILE* fp = popen(cmd.toUtf8(), "r");
   if (fp == NULL) {
     return QString (ret);
   }
@@ -382,7 +382,7 @@ QString MInstall::getCmdOut2(QString cmd)
 
 QStringList MInstall::getCmdOuts(QString cmd) {
   char line[260];
-  FILE* fp = popen(cmd.toAscii(), "r");
+  FILE* fp = popen(cmd.toUtf8(), "r");
   QStringList results;
   if (fp == NULL) {
     return results;
@@ -403,12 +403,12 @@ QString MInstall::getCmdValue(QString cmd, QString key, QString keydel, QString 
 
   QStringList strings = getCmdOuts(cmd);
   for (QStringList::Iterator it = strings.begin(); it != strings.end(); ++it) {
-    strcpy(line, ((QString)*it).toAscii());
-    char* keyptr = strstr(line, key.toAscii());
+    strcpy(line, ((QString)*it).toUtf8());
+    char* keyptr = strstr(line, key.toUtf8());
     if (keyptr != NULL) {
       // key found
-      strtok(keyptr, keydel.toAscii());
-      const char* val = strtok(NULL, valdel.toAscii());
+      strtok(keyptr, keydel.toUtf8());
+      const char* val = strtok(NULL, valdel.toUtf8());
       if (val != NULL) {
         ret = val;
       }
@@ -420,7 +420,7 @@ QString MInstall::getCmdValue(QString cmd, QString key, QString keydel, QString 
 
 QStringList MInstall::getCmdValues(QString cmd, QString key, QString keydel, QString valdel) {
   char line[130];
-  FILE* fp = popen(cmd.toAscii(), "r");
+  FILE* fp = popen(cmd.toUtf8(), "r");
   QStringList results;
   if (fp == NULL) {
     return results;
@@ -429,11 +429,11 @@ QStringList MInstall::getCmdValues(QString cmd, QString key, QString keydel, QSt
   while (fgets(line, sizeof line, fp) != NULL) {
     i = strlen(line);
     line[--i] = '\0';
-    char* keyptr = strstr(line, key.toAscii());
+    char* keyptr = strstr(line, key.toUtf8());
     if (keyptr != NULL) {
       // key found
-      strtok(keyptr, keydel.toAscii());
-      const char* val = strtok(NULL, valdel.toAscii());
+      strtok(keyptr, keydel.toUtf8());
+      const char* val = strtok(NULL, valdel.toUtf8());
       if (val != NULL) {
         results.append(val);
       }
@@ -446,14 +446,14 @@ QStringList MInstall::getCmdValues(QString cmd, QString key, QString keydel, QSt
 bool MInstall::replaceStringInFile(QString oldtext, QString newtext, QString filepath) {
 
 QString cmd = QString("sed -i 's/%1/%2/g' %3").arg(oldtext).arg(newtext).arg(filepath);
-  if (system(cmd.toAscii()) != 0) {
+  if (system(cmd.toUtf8()) != 0) {
     return false;
   }
   return true;
 }
 
 void MInstall::updateStatus(QString msg, int val) {
-  installLabel->setText(msg.toAscii());
+  installLabel->setText(msg.toUtf8());
   progressBar->setValue(val);
   qApp->processEvents();
 }
@@ -462,7 +462,7 @@ bool MInstall::mountPartition(QString dev, const char *point) {
 
   mkdir(point, 0755);
   QString cmd = QString("/bin/mount %1 %2").arg(dev).arg(point);
-  if (system(cmd.toAscii()) != 0) {
+  if (system(cmd.toUtf8()) != 0) {
     return false;
   }
   return true;
@@ -540,7 +540,7 @@ void MInstall::prepareToInstall() {
 
 bool MInstall::makeSwapPartition(QString dev) {
   QString cmd = QString("/sbin/mkswap %1 -L MXswap").arg(dev);
-  if (system(cmd.toAscii()) != 0) {
+  if (system(cmd.toUtf8()) != 0) {
     // error
     return false;
   }
@@ -614,7 +614,7 @@ bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad, QStri
           }
         }
       }
-      if (system(cmd.toAscii()) != 0) {
+      if (system(cmd.toUtf8()) != 0) {
         // error
         return false;
       }
@@ -624,7 +624,7 @@ bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad, QStri
         // ext4 tuning
         cmd = QString("/sbin/tune2fs -c0 -C0 -i1m %1").arg(dev);
       }
-      if (system(cmd.toAscii()) != 0) {
+      if (system(cmd.toUtf8()) != 0) {
         // error
       }
     }
@@ -662,7 +662,7 @@ bool MInstall::makeDefaultPartitions() {
 
   // unmount root part
   QString cmd = QString("/bin/umount -l %1 >/dev/null 2>&1").arg(rootdev);
-  if (system(cmd.toAscii()) != 0) {
+  if (system(cmd.toUtf8()) != 0) {
     // error
   }
 
@@ -679,7 +679,7 @@ bool MInstall::makeDefaultPartitions() {
   // get the total disk size
   sleep(1);
   cmd = QString("/sbin/sfdisk -s %1").arg(drv);
-  FILE *fp = popen(cmd.toAscii(), "r");
+  FILE *fp = popen(cmd.toUtf8(), "r");
   fgets(line, sizeof line, fp);
   tstr = strtok(line," ");
   pclose(fp);
@@ -716,16 +716,16 @@ bool MInstall::makeDefaultPartitions() {
 
   // new partition table
   cmd = QString("/bin/dd if=/dev/zero of=%1 bs=512 count=100").arg(drv);
-  system(cmd.toAscii());
+  system(cmd.toUtf8());
   cmd = QString("/sbin/sfdisk --no-reread -D -uM %1").arg(drv);
-  fp = popen(cmd.toAscii(), "w");
+  fp = popen(cmd.toUtf8(), "w");
   if (fp != NULL) {
     if (free) {
       cmd = QString(",%1,L,*\n,%2,S\n,,\n;\ny\n").arg(ri).arg(si);
     } else {
       cmd = QString(",%1,L,*\n,,S\n,,\n;\ny\n").arg(ri);
     }
-    fputs(cmd.toAscii(), fp);
+    fputs(cmd.toUtf8(), fp);
     fputc(EOF, fp);
     pclose(fp);
   } else {
@@ -780,17 +780,17 @@ bool MInstall::makeChosenPartitions() {
   QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
 
   // get config
-  strncpy(type, rootTypeCombo->currentText().toAscii(), 4);
+  strncpy(type, rootTypeCombo->currentText().toUtf8(), 4);
 
-  strcpy(line, rootCombo->currentText().toAscii());
+  strcpy(line, rootCombo->currentText().toUtf8());
   char *tok = strtok(line, " -");
   QString rootdev = QString("/dev/%1").arg(tok);
 
-  strcpy(line, swapCombo->currentText().toAscii());
+  strcpy(line, swapCombo->currentText().toUtf8());
   tok = strtok(line, " -");
   QString swapdev = QString("/dev/%1").arg(tok);
 
-  strcpy(line, homeCombo->currentText().toAscii());
+  strcpy(line, homeCombo->currentText().toUtf8());
   tok = strtok(line, " -");
   QString homedev = QString("/dev/%1").arg(tok);
 
@@ -862,38 +862,38 @@ bool MInstall::makeChosenPartitions() {
   if (homedev.compare("/dev/root") != 0) {
     // has homedev
     cmd = QString("pumount %1").arg(homedev);
-    if (system(cmd.toAscii()) != 0) {
+    if (system(cmd.toUtf8()) != 0) {
       // error
-      if (swapoff(homedev.toAscii()) != 0) {
+      if (swapoff(homedev.toUtf8()) != 0) {
       }
     }
   }
 
   // unmount root part
   cmd = QString("pumount %1").arg(rootdev);
-  if (system(cmd.toAscii()) != 0) {
+  if (system(cmd.toUtf8()) != 0) {
     // error
-    if (swapoff(rootdev.toAscii()) != 0) {
+    if (swapoff(rootdev.toUtf8()) != 0) {
     }
   }
 
   if (swapdev.compare("/dev/none") != 0) {
-    if (swapoff(swapdev.toAscii()) != 0) {
+    if (swapoff(swapdev.toUtf8()) != 0) {
       cmd = QString("pumount %1").arg(swapdev);
-      if (system(cmd.toAscii()) != 0) {
+      if (system(cmd.toUtf8()) != 0) {
       }
     }
     updateStatus(tr("Formatting swap partition"), 2);
     // always set type
     QString cmd = QString("/sbin/sfdisk %1 -c %2 82").arg(swapdev.mid(0,8)).arg(swapdev.mid(8));
-    system(cmd.toAscii());
+    system(cmd.toUtf8());
     system("sleep 1");
     if (!makeSwapPartition(swapdev)) {
       return false;
     }
     // enable the new swap partition asap
     system("sleep 1");
-    swapon(swapdev.toAscii(),0);
+    swapon(swapdev.toUtf8(),0);
   }
 
   // maybe format root
@@ -901,7 +901,7 @@ bool MInstall::makeChosenPartitions() {
     updateStatus(tr("Formatting the / (root) partition"), 3);
     // always set type
     QString cmd = QString("/sbin/sfdisk %1 -c %2 83").arg(rootdev.mid(0,8)).arg(rootdev.mid(8));
-    system(cmd.toAscii());
+    system(cmd.toUtf8());
     system("sleep 1");
     if (!makeLinuxPartition(rootdev, type, badblocksCheck->isChecked(), rootLabelEdit->text())) {
       return false;
@@ -946,7 +946,7 @@ bool MInstall::makeChosenPartitions() {
       updateStatus(tr("Formatting the /home partition"), 8);
       // always set type
       QString cmd = QString("/sbin/sfdisk %1 -c %2 83").arg(homedev.mid(0,8)).arg(homedev.mid(8));
-      system(cmd.toAscii());
+      system(cmd.toUtf8());
       system("sleep 1");
       if (!makeLinuxPartition(homedev, type, badblocksCheck->isChecked(), homeLabelEdit->text())) {
         return false;
@@ -971,11 +971,11 @@ void MInstall::installLinux() {
 
   QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
 
-  strcpy(line, rootCombo->currentText().toAscii());
+  strcpy(line, rootCombo->currentText().toUtf8());
   char *tok = strtok(line, " -");
   QString rootdev = QString("/dev/%1").arg(tok);
 
-  strcpy(line, homeCombo->currentText().toAscii());
+  strcpy(line, homeCombo->currentText().toUtf8());
   tok = strtok(line, " -");
   QString homedev = QString("/dev/%1").arg(tok);
 
@@ -1005,11 +1005,11 @@ void MInstall::copyLinux() {
 
   QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
 
-  strcpy(line, rootCombo->currentText().toAscii());
+  strcpy(line, rootCombo->currentText().toUtf8());
   char *tok = strtok(line, " -");
   QString rootdev = QString("/dev/%1").arg(tok);
 
-  strcpy(line, homeCombo->currentText().toAscii());
+  strcpy(line, homeCombo->currentText().toUtf8());
   tok = strtok(line, " -");
   QString homedev = QString("/dev/%1").arg(tok);
 
@@ -1051,7 +1051,7 @@ bool MInstall::installLoader() {
   // the old initrd is not valid for this hardware
   if (!val.isEmpty()) {
     cmd = QString("rm -f /mnt/antiX/boot/%1").arg(val);
-    system(cmd.toAscii());
+    system(cmd.toUtf8());
   }
 
   // maybe replace the initrd.img file
@@ -1059,7 +1059,7 @@ bool MInstall::installLoader() {
       setCursor(QCursor(Qt::WaitCursor));
       system("chroot /mnt/antiX mount /proc");
       cmd = QString("chroot /mnt/antiX mkinitramfs -o /boot/%1").arg(val);
-      system(cmd.toAscii());
+      system(cmd.toUtf8());
       system("chroot /mnt/antiX umount /proc");
       setCursor(QCursor(Qt::ArrowCursor));
   //}
@@ -1091,10 +1091,10 @@ bool MInstall::installLoader() {
 
   // install new Grub now
   cmd = QString("grub-install --recheck --no-floppy --force --boot-directory=/mnt/antiX/boot /dev/%1").arg(boot);
-  if (system(cmd.toAscii()) != 0) {
+  if (system(cmd.toUtf8()) != 0) {
     // error, try again
     // this works for reiser-grub bug
-    if (system(cmd.toAscii()) != 0) {
+    if (system(cmd.toUtf8()) != 0) {
       // error
       setCursor(QCursor(Qt::ArrowCursor));
       QMessageBox::critical(this, QString::null,
@@ -1108,7 +1108,7 @@ bool MInstall::installLoader() {
   cmdline.replace('\\', "\\\\");
   cmdline.replace('|', "\\|");
   cmd = QString("sed -i -r 's|^(GRUB_CMDLINE_LINUX_DEFAULT=).*|\\1\"%1\"|' /mnt/antiX/etc/default/grub").arg(cmdline);
-  system(cmd.toAscii());
+  system(cmd.toUtf8());
 
   // update grub config
 
@@ -1138,7 +1138,7 @@ bool MInstall::setUserName() {
 
   // see if user directory already exists
   QString dpath = QString("/mnt/antiX/home/%1").arg(userNameEdit->text());
-  if ((dir = opendir(dpath.toAscii())) != NULL) {
+  if ((dir = opendir(dpath.toUtf8())) != NULL) {
     // already exists
     closedir(dir);
     msg = QString( tr("The home directory for %1 already exists.Would you like to reuse the old home directory?")).arg(userNameEdit->text());
@@ -1153,15 +1153,15 @@ bool MInstall::setUserName() {
       if (ans == 0) {
         // save the old directory
         cmd = QString("mv -f %1 %2.001").arg(dpath).arg(dpath);
-        if (system(cmd.toAscii()) != 0) {
+        if (system(cmd.toUtf8()) != 0) {
           cmd = QString("mv -f %1 %2.002").arg(dpath).arg(dpath);
-          if (system(cmd.toAscii()) != 0) {
+          if (system(cmd.toUtf8()) != 0) {
             cmd = QString("mv -f %1 %2.003").arg(dpath).arg(dpath);
-            if (system(cmd.toAscii()) != 0) {
+            if (system(cmd.toUtf8()) != 0) {
               cmd = QString("mv -f %1 %2.004").arg(dpath).arg(dpath);
-              if (system(cmd.toAscii()) != 0) {
+              if (system(cmd.toUtf8()) != 0) {
                 cmd = QString("mv -f %1 %2.005").arg(dpath).arg(dpath);
-                if (system(cmd.toAscii()) != 0) {
+                if (system(cmd.toUtf8()) != 0) {
                   QMessageBox::critical(0, QString::null,
                     tr("Sorry, failed to save old home directory. Before proceeding,\nyou'll have to select a different username or\ndelete a previously saved copy of your home directory."));
                   return false;
@@ -1179,7 +1179,7 @@ bool MInstall::setUserName() {
           // delete the directory
           setCursor(QCursor(Qt::WaitCursor));
           cmd = QString("rm -f %1").arg(dpath);
-          if (system(cmd.toAscii()) != 0) {
+          if (system(cmd.toUtf8()) != 0) {
             setCursor(QCursor(Qt::ArrowCursor));
             QMessageBox::critical(0, QString::null,
               tr("Sorry, failed to delete old home directory. Before proceeding, \nyou'll have to select a different username."));
@@ -1196,7 +1196,7 @@ bool MInstall::setUserName() {
     }
   }
   setCursor(QCursor(Qt::WaitCursor));
-  if ((dir = opendir(dpath.toAscii())) == NULL) {
+  if ((dir = opendir(dpath.toUtf8())) == NULL) {
     // dir does not exist, must create it
     // copy skel to demo
     if (system("cp -a /mnt/antiX/etc/skel /mnt/antiX/home") != 0) {
@@ -1206,7 +1206,7 @@ bool MInstall::setUserName() {
       return false;
     }
     cmd = QString("mv -f /mnt/antiX/home/skel %1").arg(dpath);
-    if (system(cmd.toAscii()) != 0) {
+    if (system(cmd.toUtf8()) != 0) {
       setCursor(QCursor(Qt::ArrowCursor));
       QMessageBox::critical(0, QString::null,
         tr("Sorry, failed to name user directory."));
@@ -1215,22 +1215,22 @@ bool MInstall::setUserName() {
   } else {
     // dir does exist, clean it up
     cmd = QString("cp -n /mnt/antiX/etc/skel/.bash_profile %1").arg(dpath);
-    system(cmd.toAscii());
+    system(cmd.toUtf8());
     cmd = QString("cp -n /mnt/antiX/etc/skel/.bashrc %1").arg(dpath);
-    system(cmd.toAscii());
+    system(cmd.toUtf8());
     cmd = QString("cp -n /mnt/antiX/etc/skel/.gtkrc %1").arg(dpath);
-    system(cmd.toAscii());
+    system(cmd.toUtf8());
     cmd = QString("cp -n /mnt/antiX/etc/skel/.gtkrc-2.0 %1").arg(dpath);
-    system(cmd.toAscii());
+    system(cmd.toUtf8());
     cmd = QString("cp -Rn /mnt/antiX/etc/skel/.config %1").arg(dpath);
-    system(cmd.toAscii());
+    system(cmd.toUtf8());
     cmd = QString("cp -Rn /mnt/antiX/etc/skel/.local %1").arg(dpath);
-    system(cmd.toAscii());
+    system(cmd.toUtf8());
   }
   // saving Desktop changes
   if (saveDesktopCheckBox->isChecked()) {
     cmd = QString("rsync -a /home/demo/ %1 --exclude '.cache' --exclude '.gvfs' --exclude '.dbus' --exclude '.Xauthority' --exclude '.ICEauthority' --exclude '.mozilla' --exclude 'Installer.desktop'").arg(dpath);
-    if (system(cmd.toAscii()) != 0) {
+    if (system(cmd.toUtf8()) != 0) {
       setCursor(QCursor(Qt::ArrowCursor));
       QMessageBox::critical(0, QString::null,
         tr("Sorry, failed to save desktop changes."));
@@ -1238,7 +1238,7 @@ bool MInstall::setUserName() {
   }
   // fix the ownership, demo=newuser
   cmd = QString("chown -R demo.users %1").arg(dpath);
-  if (system(cmd.toAscii()) != 0) {
+  if (system(cmd.toUtf8()) != 0) {
     setCursor(QCursor(Qt::ArrowCursor));
     QMessageBox::critical(0, QString::null,
       tr("Sorry, failed to set ownership of user directory."));
@@ -1258,7 +1258,7 @@ bool MInstall::setUserName() {
     replaceStringInFile("autologin-user=", "#autologin-user=", "/mnt/antiX/etc/lightdm/lightdm.conf");
   }
   cmd = QString("touch /mnt/antiX/var/mail/%1").arg(userNameEdit->text());
-  system(cmd.toAscii());
+  system(cmd.toUtf8());
   setCursor(QCursor(Qt::ArrowCursor));
   return true;
 }
@@ -1271,10 +1271,10 @@ bool MInstall::setPasswords() {
   QString cmd = QString("%1\n").arg(rootPasswordEdit->text());
   if (fp != NULL) {
     sleep(6);
-    if (fputs(cmd.toAscii(), fp) >= 0) {
+    if (fputs(cmd.toUtf8(), fp) >= 0) {
       fflush(fp);
       sleep(2);
-      if (fputs(cmd.toAscii(), fp) < 0) {
+      if (fputs(cmd.toUtf8(), fp) < 0) {
         fpok = false;
       }
       fflush(fp);
@@ -1298,10 +1298,10 @@ bool MInstall::setPasswords() {
   cmd = QString("%1\n").arg(userPasswordEdit->text());
   if (fp != NULL) {
     sleep(1);
-    if (fputs(cmd.toAscii(), fp) >= 0) {
+    if (fputs(cmd.toUtf8(), fp) >= 0) {
       fflush(fp);
       sleep(1);
-      if (fputs(cmd.toAscii(), fp) < 0) {
+      if (fputs(cmd.toUtf8(), fp) < 0) {
         fpok = false;
       }
       fflush(fp);
@@ -1326,7 +1326,7 @@ bool MInstall::setPasswords() {
 bool MInstall::setUserInfo() {
   //validate data before proceeding
   // see if username is reasonable length
-  if (strlen(userNameEdit->text().toAscii()) < 2) {
+  if (strlen(userNameEdit->text().toUtf8()) < 2) {
     QMessageBox::critical(0, QString::null,
       tr("The user name needs to be at least\n"
       "2 characters long. Please select\n"
@@ -1339,14 +1339,14 @@ bool MInstall::setUserInfo() {
       "please choose another name before proceeding."));
     return false;
   }
-  if (strlen(userPasswordEdit->text().toAscii()) < 2) {
+  if (strlen(userPasswordEdit->text().toUtf8()) < 2) {
     QMessageBox::critical(0, QString::null,
       tr("The user password needs to be at least\n"
       "2 characters long. Please select\n"
       "a longer password before proceeding."));
     return false;
   }
-  if (strlen(rootPasswordEdit->text().toAscii()) < 2) {
+  if (strlen(rootPasswordEdit->text().toUtf8()) < 2) {
     QMessageBox::critical(0, QString::null,
       tr("The root password needs to be at least\n"
       "2 characters long. Please select\n"
@@ -1355,33 +1355,33 @@ bool MInstall::setUserInfo() {
   }
   // check that user name is not already used
   QString cmd = QString("grep '^%1' /etc/passwd >/dev/null").arg(userNameEdit->text());
-  if (system(cmd.toAscii()) == 0) {
+  if (system(cmd.toUtf8()) == 0) {
         QMessageBox::critical(0, QString::null,
             tr("Sorry that name is in use.\n"
               "Please select a different name.\n"));
       return false;
   }
 
-  if (strcmp(userPasswordEdit->text().toAscii(), userPasswordEdit2->text().toAscii()) != 0) {
+  if (strcmp(userPasswordEdit->text().toUtf8(), userPasswordEdit2->text().toUtf8()) != 0) {
     QMessageBox::critical(0, QString::null,
       tr("The user password entries do\n"
         "not match.  Please try again."));
     return false;
   }
-  if (strcmp(rootPasswordEdit->text().toAscii(), rootPasswordEdit2->text().toAscii()) != 0) {
+  if (strcmp(rootPasswordEdit->text().toUtf8(), rootPasswordEdit2->text().toUtf8()) != 0) {
     QMessageBox::critical(0, QString::null,
       tr("The root password entries do\n"
         " not match.  Please try again."));
     return false;
   }
-  if (strlen(userPasswordEdit->text().toAscii()) < 2) {
+  if (strlen(userPasswordEdit->text().toUtf8()) < 2) {
     QMessageBox::critical(0, QString::null,
       tr("The user password needs to be at least\n"
       "2 characters long. Please select\n"
       "a longer password before proceeding."));
     return false;
   }
-  if (strlen(rootPasswordEdit->text().toAscii()) < 2) {
+  if (strlen(rootPasswordEdit->text().toUtf8()) < 2) {
     QMessageBox::critical(0, QString::null,
       tr("The root password needs to be at least\n"
       "2 characters long. Please select\n"
@@ -1464,13 +1464,13 @@ bool MInstall::setComputerName() {
   replaceStringInFile("mx1", computerNameEdit->text(), "/mnt/antiX/etc/hosts");
 
   QString cmd = QString("echo \"%1\" | cat > /mnt/antiX/etc/hostname").arg(computerNameEdit->text());
-  system(cmd.toAscii());
+  system(cmd.toUtf8());
   cmd = QString("echo \"%1\" | cat > /mnt/antiX/etc/mailname").arg(computerNameEdit->text());
-  system(cmd.toAscii());
+  system(cmd.toUtf8());
   cmd = QString("sed -i 's/.*send host-name.*/send host-name \"%1\";/g' /mnt/antiX/etc/dhcp/dhclient.conf").arg(computerNameEdit->text());
-  system(cmd.toAscii());
+  system(cmd.toUtf8());
   cmd = QString("echo \"%1\" | cat > /mnt/antiX/etc/defaultdomain").arg(computerDomainEdit->text());
-  system(cmd.toAscii());
+  system(cmd.toUtf8());
 
   return true;
 }
@@ -1480,7 +1480,7 @@ void MInstall::setLocale() {
   QString kb = keyboardCombo->currentText();
   //keyboard
   QString cmd = QString("chroot /mnt/antiX /usr/sbin/install-keymap \"%1\"").arg(kb);
-  system(cmd.toAscii());
+  system(cmd.toUtf8());
   if (kb == "uk") {
     kb = "gb";
   }
@@ -1489,11 +1489,11 @@ void MInstall::setLocale() {
   } else {
   cmd = QString("sed -i 's/.*us/XKBLAYOUT=\"%1,us/g' /mnt/antiX/etc/default/keyboard").arg(kb);
   }
-  system(cmd.toAscii());
+  system(cmd.toUtf8());
 
   //locale
   cmd = QString("chroot /mnt/antiX /usr/sbin/update-locale \"LANG=%1\"").arg(localeCombo->currentText());
-  system(cmd.toAscii());
+  system(cmd.toUtf8());
   cmd = QString("Language=%1").arg(localeCombo->currentText());
 
   //
@@ -1503,10 +1503,10 @@ void MInstall::setLocale() {
   system("cp -f /etc/adjtime /mnt/antiX/etc/");
   // /etc/localtime is a copy of one of the timezone files in /usr/share/zoneinfo. Use the one selected by the user.
   cmd = QString("cp -f /usr/share/zoneinfo/%1 /mnt/antiX/etc/localtime").arg(timezoneCombo->currentText());
-  system(cmd.toAscii());
+  system(cmd.toUtf8());
   // /etc/timezone is text file with the timezone written in it. Write the user-selected timezone in it now.
   cmd = QString("echo %1 > /mnt/antiX/etc/timezone").arg(timezoneCombo->currentText());
-  system(cmd.toAscii());
+  system(cmd.toUtf8());
 
   if (gmtCheckBox->isChecked()) {
     replaceStringInFile("^UTC", "LOCAL", "/mnt/antiX/etc/adjtime");
@@ -1866,7 +1866,7 @@ int MInstall::showPage(int curr, int next) {
     if (system("ls /home | grep -v lost+found | grep -v demo | grep -v snapshot | grep -q [a-zA-Z0-9]") == 0 || system("test -d /live/linux/home/demo") == 0) {
       setCursor(QCursor(Qt::WaitCursor));
       QString cmd = "rsync -a /home/ /mnt/antiX/home/ --exclude '.cache' --exclude '.gvfs' --exclude '.dbus' --exclude '.Xauthority' --exclude '.ICEauthority'";
-      system(cmd.toAscii());
+      system(cmd.toUtf8());
       setCursor(QCursor(Qt::ArrowCursor));
       next +=1;
     }
@@ -2161,7 +2161,7 @@ void MInstall::on_diskCombo_activated() {
   rootCombo->clear();
   QString cmd = QString("/sbin/fdisk -l %1 | /bin/grep \"^/dev\"").arg(drv);
 
-  FILE *fp = popen(cmd.toAscii(), "r");
+  FILE *fp = popen(cmd.toUtf8(), "r");
   int rcount = 0;
   if (fp != NULL) {
     char *ndev, *nsz, *nsys, *nsys2;
@@ -2181,7 +2181,7 @@ void MInstall::on_diskCombo_activated() {
       nsize = atoi(nsz);
       nsize = nsize / 1024;
       cmd = QString("blkid /dev/%1 -s LABEL -o value").arg(ndev);
-      char* label = getCmdOut2(cmd.toAscii()).toUtf8().data();
+      char* label = getCmdOut2(cmd.toUtf8()).toUtf8().data();
 
       if ((nsize >= 1200) && (strncmp(nsys, "Linux", 5) == 0 || (strncmp(nsys, "FAT", 3) == 0) || (strncmp(nsys, "W95", 3) == 0) || (strncmp(nsys, "HPFS", 4) == 0))) {;
         sprintf(line, "%s - %dMB - %s (%s)", ndev, nsize, label, nsys);
@@ -2206,7 +2206,7 @@ void MInstall::on_rootCombo_activated() {
   swapCombo->addItem("none - or existing");
   int rcount = 1;
   QString cmd = QString("/sbin/fdisk -l %1 | /bin/grep \"^/dev\"").arg(drv);
-  FILE *fp = popen(cmd.toAscii(), "r");
+  FILE *fp = popen(cmd.toUtf8(), "r");
   if (fp != NULL) {
     char *ndev, *nsz, *nsys, *nsys2;
     int nsize, i;
@@ -2225,7 +2225,7 @@ void MInstall::on_rootCombo_activated() {
       nsize = nsize / 1024;
       if (nsys2 != NULL && strncmp(nsys2, "swap", 4) == 0) {
         cmd = QString("blkid /dev/%1 -s LABEL -o value").arg(ndev);
-        char* label = getCmdOut2(cmd.toAscii()).toUtf8().data();
+        char* label = getCmdOut2(cmd.toUtf8()).toUtf8().data();
         sprintf(line, "%s - %dMB - %s (%s)", ndev, nsize, label, nsys2);
         swapCombo->addItem(line);
         rcount++;
@@ -2245,7 +2245,7 @@ void MInstall::on_swapCombo_activated() {;
   for (int i = 0; i < diskCombo->count(); ++i) {
     QString drv = QString("/dev/%1").arg(diskCombo->itemText(i));
     QString cmd = QString("/sbin/fdisk -l %1 | /bin/grep \"^/dev\"").arg(drv);
-    FILE *fp = popen(cmd.toAscii(), "r");
+    FILE *fp = popen(cmd.toUtf8(), "r");
     if (fp != NULL) {
       char *ndev, *nsz, *nsys, *nsys2;
       int nsize, i;
@@ -2263,10 +2263,10 @@ void MInstall::on_swapCombo_activated() {;
         nsize = atoi(nsz);
         nsize = nsize / 1024;
 
-        if (strcmp(ndev, rootCombo->currentText().section(' ', 0, 0).toAscii()) != 0 &&
+        if (strcmp(ndev, rootCombo->currentText().section(' ', 0, 0).toUtf8()) != 0 &&
             (nsize >= 100) && (strncmp(nsys, "Linux", 5) == 0) && (nsys2 == NULL)) {;
           cmd = QString("blkid /dev/%1 -s LABEL -o value").arg(ndev);
-          char* label = getCmdOut2(cmd.toAscii()).toUtf8().data();
+          char* label = getCmdOut2(cmd.toUtf8()).toUtf8().data();
           sprintf(line, "%s - %dMB - %s (%s)", ndev, nsize, label, nsys);
           homeCombo->addItem(line);
         }
@@ -2360,13 +2360,13 @@ void MInstall::copyDone(int exitCode, QProcess::ExitStatus exitStatus) {
   char homedev[20];
 
   // get config
-  strcpy(line, rootCombo->currentText().toAscii());
+  strcpy(line, rootCombo->currentText().toUtf8());
   char *tok = strtok(line, " -");
   sprintf(rootdev, "/dev/%s", tok);
-  strcpy(line, swapCombo->currentText().toAscii());
+  strcpy(line, swapCombo->currentText().toUtf8());
   tok = strtok(line, " -");
   sprintf(swapdev, "/dev/%s", tok);
-  strcpy(line, homeCombo->currentText().toAscii());
+  strcpy(line, homeCombo->currentText().toUtf8());
   tok = strtok(line, " -");
   sprintf(homedev, "/dev/%s", tok);
 
@@ -2465,7 +2465,7 @@ void MInstall::copyDone(int exitCode, QProcess::ExitStatus exitStatus) {
 void MInstall::copyTime() {
   char line[130];
   char rootdev[20];
-  strcpy(line, rootCombo->currentText().toAscii());
+  strcpy(line, rootCombo->currentText().toUtf8());
   char *tok = strtok(line, " -");
   sprintf(rootdev, "/dev/%s", tok);
 
