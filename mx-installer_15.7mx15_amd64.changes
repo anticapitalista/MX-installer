@@ -15,14 +15,14 @@ Changes:
  .
    * update to qt5
 Checksums-Sha1:
- 1782f7f6a7e39ced01d5788e14b16cf5caa766b1 607 mx-installer_15.7mx15.dsc
- dd0bb91d4ca23afa0fa45a70c72c1137ad09d78b 261816 mx-installer_15.7mx15.tar.xz
- 35367d6465644e0be70d5b74e23d2b7137d99b45 218022 mx-installer_15.7mx15_amd64.deb
+ fc6c40b2a10a22aaa3f0c27bf7eb25fcd7978536 607 mx-installer_15.7mx15.dsc
+ 2ebfaa19533429066e1a17b04d5dfc5bd0daf6c6 521476 mx-installer_15.7mx15.tar.xz
+ 17511906176a4424f98647f122d3284960b696b4 214982 mx-installer_15.7mx15_amd64.deb
 Checksums-Sha256:
- 8d0eb88e368e9f255941ab7c8647e9a7c126263514883bf765def7c574a0d917 607 mx-installer_15.7mx15.dsc
- 74bc98f1806c255fa7a36c415455ac5b4c3bdb3283b684167955294382695955 261816 mx-installer_15.7mx15.tar.xz
- 90b168ef8df959c20eb5e73c2f478decd98a9d7c6441cb946e2c6492dd2d39d5 218022 mx-installer_15.7mx15_amd64.deb
+ 3877b295443e1b6c1c3e398d1b6c8994304ec840b996efd5e8cf8deaf46cf534 607 mx-installer_15.7mx15.dsc
+ a6e181cfdb3b2b09d0bc9551219a5d6369de5966d6ba511bbf6acfa550526c05 521476 mx-installer_15.7mx15.tar.xz
+ e4846da0194f3f9a74db11af01250f19def0a507155764bd9fd03e9666992507 214982 mx-installer_15.7mx15_amd64.deb
 Files:
- 1c0b0dc09a8074e9910d6c27e8adabee 607 system optional mx-installer_15.7mx15.dsc
- 47923c4b819eaa24bb92ff0ed145034e 261816 system optional mx-installer_15.7mx15.tar.xz
- bc1c7c98ef93720d3be2c121d78011af 218022 system optional mx-installer_15.7mx15_amd64.deb
+ 2e4460c83e623b1f7a0e7af6e2a21602 607 system optional mx-installer_15.7mx15.dsc
+ 5b2fe3c7873dba76dbc40849c2fd7a97 521476 system optional mx-installer_15.7mx15.tar.xz
+ 2e200dbe56a042a6e53ae30c36db5380 214982 system optional mx-installer_15.7mx15_amd64.deb
