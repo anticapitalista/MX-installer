@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Tue, 30 Jun 2015 16:11:37 -0400
+Source: mx-installer
+Binary: mx-installer
+Architecture: source i386
+Version: 15.7mx15
+Distribution: mx
+Urgency: medium
+Maintainer: anticapitalista <antiX@operamail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-installer - GUI installer for MX-14.
+Changes:
+ mx-installer (15.7mx15) mx; urgency=medium
+ .
+   * update to qt5
+Checksums-Sha1:
+ 0f6b01250893b8f516b0b7ae12bdcd8a58c2d3ed 607 mx-installer_15.7mx15.dsc
+ c6153ee11f559a8d78eb8a70f107bcd3d2ce84b6 336800 mx-installer_15.7mx15.tar.xz
+ e2e3bc5eaf5ce30b9d8da95fa5afcfd10cb478a9 218280 mx-installer_15.7mx15_i386.deb
+Checksums-Sha256:
+ 3732c8958723b178551be337f36c19d7c8a973960b92a580d145a0191cf7c74b 607 mx-installer_15.7mx15.dsc
+ e46c3fe7e092af09c8a0e23af805a90695908929e943a07fe573aa9d6b858230 336800 mx-installer_15.7mx15.tar.xz
+ be5e87ac19094ddc9fa4e6b791d4bd0ae64aae970bb9c4143fd6d1873722106f 218280 mx-installer_15.7mx15_i386.deb
+Files:
+ b5e8190a31cabe645f402eeb80822955 607 system optional mx-installer_15.7mx15.dsc
+ 11674df8fd998df5ae9ec9715c7e93cc 336800 system optional mx-installer_15.7mx15.tar.xz
+ 197f0fb8601e6f1a2420e03bede3a3ce 218280 system optional mx-installer_15.7mx15_i386.deb
