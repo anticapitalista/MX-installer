@@ -124,7 +124,7 @@
         <translation>Usługa druku systemów Linux i OS X</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="480"/>
+        <location filename="../minstall.cpp" line="470"/>
         <source>
 
 The disk with the partition you selected for installation is failing.
@@ -137,15 +137,15 @@ Partycja wybrana do instalacji zawodzi.
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="481"/>
+        <location filename="../minstall.cpp" line="471"/>
         <source>You are strongly advised to abort.
 </source>
         <translation>Zalecamy przerwanie.
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="482"/>
-        <location filename="../minstall.cpp" line="496"/>
+        <location filename="../minstall.cpp" line="472"/>
+        <location filename="../minstall.cpp" line="486"/>
         <source>If unsure, please exit the Installer and run GSmartControl for more information.
 
 </source>
@@ -154,50 +154,50 @@ Partycja wybrana do instalacji zawodzi.
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="483"/>
+        <location filename="../minstall.cpp" line="473"/>
         <source>Do you want to abort the installation?</source>
         <translation>Czy chcesz przerwać instalację?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="485"/>
-        <location filename="../minstall.cpp" line="499"/>
-        <location filename="../minstall.cpp" line="647"/>
-        <location filename="../minstall.cpp" line="805"/>
+        <location filename="../minstall.cpp" line="475"/>
+        <location filename="../minstall.cpp" line="489"/>
+        <location filename="../minstall.cpp" line="637"/>
+        <location filename="../minstall.cpp" line="795"/>
+        <location filename="../minstall.cpp" line="807"/>
         <location filename="../minstall.cpp" line="817"/>
-        <location filename="../minstall.cpp" line="827"/>
-        <location filename="../minstall.cpp" line="839"/>
-        <location filename="../minstall.cpp" line="852"/>
-        <location filename="../minstall.cpp" line="1085"/>
-        <location filename="../minstall.cpp" line="1147"/>
-        <location filename="../minstall.cpp" line="1152"/>
-        <location filename="../minstall.cpp" line="1177"/>
-        <location filename="../minstall.cpp" line="1804"/>
-        <location filename="../minstall.cpp" line="1818"/>
-        <location filename="../minstall.cpp" line="2308"/>
+        <location filename="../minstall.cpp" line="829"/>
+        <location filename="../minstall.cpp" line="842"/>
+        <location filename="../minstall.cpp" line="1075"/>
+        <location filename="../minstall.cpp" line="1137"/>
+        <location filename="../minstall.cpp" line="1142"/>
+        <location filename="../minstall.cpp" line="1167"/>
+        <location filename="../minstall.cpp" line="1794"/>
+        <location filename="../minstall.cpp" line="1808"/>
+        <location filename="../minstall.cpp" line="2293"/>
         <source>Yes</source>
         <translation>Tak</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="485"/>
-        <location filename="../minstall.cpp" line="499"/>
-        <location filename="../minstall.cpp" line="647"/>
-        <location filename="../minstall.cpp" line="805"/>
+        <location filename="../minstall.cpp" line="475"/>
+        <location filename="../minstall.cpp" line="489"/>
+        <location filename="../minstall.cpp" line="637"/>
+        <location filename="../minstall.cpp" line="795"/>
+        <location filename="../minstall.cpp" line="807"/>
         <location filename="../minstall.cpp" line="817"/>
-        <location filename="../minstall.cpp" line="827"/>
-        <location filename="../minstall.cpp" line="839"/>
-        <location filename="../minstall.cpp" line="852"/>
-        <location filename="../minstall.cpp" line="1085"/>
-        <location filename="../minstall.cpp" line="1147"/>
-        <location filename="../minstall.cpp" line="1152"/>
-        <location filename="../minstall.cpp" line="1177"/>
-        <location filename="../minstall.cpp" line="1804"/>
-        <location filename="../minstall.cpp" line="1818"/>
-        <location filename="../minstall.cpp" line="2308"/>
+        <location filename="../minstall.cpp" line="829"/>
+        <location filename="../minstall.cpp" line="842"/>
+        <location filename="../minstall.cpp" line="1075"/>
+        <location filename="../minstall.cpp" line="1137"/>
+        <location filename="../minstall.cpp" line="1142"/>
+        <location filename="../minstall.cpp" line="1167"/>
+        <location filename="../minstall.cpp" line="1794"/>
+        <location filename="../minstall.cpp" line="1808"/>
+        <location filename="../minstall.cpp" line="2293"/>
         <source>No</source>
         <translation>Nie</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="493"/>
+        <location filename="../minstall.cpp" line="483"/>
         <source>Smartmon tool output:
 
 </source>
@@ -206,153 +206,153 @@ Partycja wybrana do instalacji zawodzi.
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="494"/>
+        <location filename="../minstall.cpp" line="484"/>
         <source>The disk with the partition you selected for installation passes the S.M.A.R.T. monitor test (smartctl)
 </source>
         <translation>Wybrana partycja przechodzi test monitora S.M.A.R.T. (smartctl)
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="495"/>
+        <location filename="../minstall.cpp" line="485"/>
         <source>but the tests indicate it will have a higher than average failure rate in the upcoming year.
 </source>
         <translation>lecz testy wskazują na to, że stan Twojego dysku może pogorszyć się w najbliższym roku.
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="497"/>
+        <location filename="../minstall.cpp" line="487"/>
         <source>Do you want to continue?</source>
         <translation>Czy chcesz kontynuować?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="531"/>
+        <location filename="../minstall.cpp" line="521"/>
         <source>Ready to install MX Linux filesystem</source>
         <translation>Gotowy do zainstalowania systemu plików MX Linux</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="645"/>
+        <location filename="../minstall.cpp" line="635"/>
         <source>Ok to format and use the entire disk (%1) for MX Linux?</source>
         <translation>Sformatować i użyć wybrany dysk (%1) dla MX Linux?
 	</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="657"/>
+        <location filename="../minstall.cpp" line="647"/>
         <source>Creating required partitions</source>
         <translation>Tworzenie wymaganych partycji</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="736"/>
-        <location filename="../minstall.cpp" line="886"/>
+        <location filename="../minstall.cpp" line="726"/>
+        <location filename="../minstall.cpp" line="876"/>
         <source>Formatting swap partition</source>
         <translation>Formatowanie partycji SWAP</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="745"/>
+        <location filename="../minstall.cpp" line="735"/>
         <source>Formatting root partition</source>
         <translation>Formatowanie partycji głównej</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="799"/>
+        <location filename="../minstall.cpp" line="789"/>
         <source>You must choose a root partition.
 The root partition must be at least 3.5 GB.</source>
         <translation>Musisz wybrać partycję główną.
 Partycja główna musi mieć przynajmniej 3,5G.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="803"/>
+        <location filename="../minstall.cpp" line="793"/>
         <source>The partition you selected for root, appears to be a MS-Windows partition.  Are you sure you want to reformat this partition?</source>
         <translation>Wybrana partycja główna wygląda na partycję MS Windows. Czy jesteś pewny, że chcesz ją sformatować?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="812"/>
+        <location filename="../minstall.cpp" line="802"/>
         <source>Ok to format and destroy all data on 
 %1 for the / (root) partition?</source>
         <translation>Sformatować i usunąć
 wszelkie dane na %1 dla partycji / (głównej)?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="814"/>
+        <location filename="../minstall.cpp" line="804"/>
         <source>All data on %1 will be deleted, except for /home
 Ok to continue?</source>
         <translation>Wszystkie dane na% 1 zostaną usunięte, z wyjątkiem /home
 Kontynuować? </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="825"/>
+        <location filename="../minstall.cpp" line="815"/>
         <source>Ok to format and destroy all data on 
 %1 for the swap partition?</source>
         <translation>Przygotowany do sformatowania i usunięcia
 wszelkich danych na %1 dla partycji swap?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="837"/>
+        <location filename="../minstall.cpp" line="827"/>
         <source>The partition you selected for /home, appears to be a MS-Windows partition.  Are you sure you want to reformat this partition?</source>
         <translation>Wybrana partycja dla /home wygląda na partycję MS Windows. Czy jesteś pewny, że chcesz sformatować tę partycję?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="846"/>
+        <location filename="../minstall.cpp" line="836"/>
         <source>Ok to reuse (no reformat) %1 as the /home partition?</source>
         <translation>Gotowy do ponownego użycia (bez formatowania) partycji %1 jako /home?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="848"/>
+        <location filename="../minstall.cpp" line="838"/>
         <source>Ok to format and destroy all data on %1 for the /home partition?</source>
         <translation>Gotowy do sformatowania i usunięcia wszystkich danych na partycji %1 dla /home?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="859"/>
+        <location filename="../minstall.cpp" line="849"/>
         <source>Preparing required partitions</source>
         <translation>Przygotowywanie wymaganych partycji</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="901"/>
+        <location filename="../minstall.cpp" line="891"/>
         <source>Formatting the / (root) partition</source>
         <translation>Formatowanie / (głównej) partycji</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="931"/>
+        <location filename="../minstall.cpp" line="921"/>
         <source>Mounting the /home partition</source>
         <translation>Montowanie partycji /home</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="946"/>
+        <location filename="../minstall.cpp" line="936"/>
         <source>Formatting the /home partition</source>
         <translation>Formatowanie partycji /home</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="988"/>
+        <location filename="../minstall.cpp" line="978"/>
         <source>Mounting the / (root) partition</source>
         <translation>Montowanie / (głównej) partycji</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1018"/>
+        <location filename="../minstall.cpp" line="1008"/>
         <source>Creating system directories</source>
         <translation>Tworzenie katalogów systemowych</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1083"/>
+        <location filename="../minstall.cpp" line="1073"/>
         <source>Ok to install GRUB bootloader at %1 ?</source>
         <translation>Gotowy do zainstalowania programu rozruchowego GRUB na %1?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1101"/>
+        <location filename="../minstall.cpp" line="1091"/>
         <source>Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function.</source>
         <translation>Przepraszam, instalacja GRUB nie powiodła się. Może to być spowodowane zmianą przy formatowaniu dysku. Możesz odznaczyć GRUB i zakończyć instalację MX Linux&apos;a, następnie uruchomić ponownie komputer z płytą CD i naprawić instalację funkcją reinstalacji GRUB.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1144"/>
+        <location filename="../minstall.cpp" line="1134"/>
         <source>The home directory for %1 already exists.Would you like to reuse the old home directory?</source>
         <translation>Katalog domowy dla %1 już istnieje. Czy chcesz ponownie użyć stary katalog domowy?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1150"/>
+        <location filename="../minstall.cpp" line="1140"/>
         <source>Would you like to save the old home directory
 and create a new home directory?</source>
         <translation>Czy chcesz zachować stary katalog domowy
 i stworzyć nowy katalog domowy?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1166"/>
+        <location filename="../minstall.cpp" line="1156"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
 you&apos;ll have to select a different username or
 delete a previously saved copy of your home directory.</source>
@@ -361,56 +361,56 @@ powinieneś wybrać inną nazwę użytkownika
 i usunąć poprzednią kopię swojego katalogu domowego.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1175"/>
+        <location filename="../minstall.cpp" line="1165"/>
         <source>Would you like to delete the old home directory for %1?</source>
         <translation>Czy chcesz usunąć stary katalog domowy dla %1?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1185"/>
+        <location filename="../minstall.cpp" line="1175"/>
         <source>Sorry, failed to delete old home directory. Before proceeding, 
 you&apos;ll have to select a different username.</source>
         <translation>Przepraszam, wystąpił błąd przy usuwaniu starego katalogu domowego. By kontynuować, 
 powinieneś wybrać inną nazwę użytkownika.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1192"/>
+        <location filename="../minstall.cpp" line="1182"/>
         <source>You&apos;ve chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Nie wybrałeś ani używania, zachowania, ani usunięcia starego katalogu domowego.
 By kontynuować powinieneś wybrać inną nazwę użytkownika.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1205"/>
+        <location filename="../minstall.cpp" line="1195"/>
         <source>Sorry, failed to create user directory.</source>
         <translation>Przepraszam, wystąpił błąd przy tworzeniu katalogu użytkownika.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1212"/>
+        <location filename="../minstall.cpp" line="1202"/>
         <source>Sorry, failed to name user directory.</source>
         <translation>Przepraszam, wystąpił błąd przy nazywaniu katalogu użytkownika.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1236"/>
+        <location filename="../minstall.cpp" line="1226"/>
         <source>Sorry, failed to save desktop changes.</source>
         <translation>Przepraszam, wystąpił błąd zapisu zmian pulpitu.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1244"/>
+        <location filename="../minstall.cpp" line="1234"/>
         <source>Sorry, failed to set ownership of user directory.</source>
         <translation>Przepraszam, wystąpił błąd przy ustawianiu własności katalogu użytkownika.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1292"/>
+        <location filename="../minstall.cpp" line="1282"/>
         <source>Sorry, unable to set root password.</source>
         <translation>Przepraszam, nie można ustawić hasła administratora.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1319"/>
+        <location filename="../minstall.cpp" line="1309"/>
         <source>Sorry, unable to set user password.</source>
         <translation>Przepraszam, nie można ustawić hasła użytkownika.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1331"/>
+        <location filename="../minstall.cpp" line="1321"/>
         <source>The user name needs to be at least
 2 characters long. Please select
 a longer name before proceeding.</source>
@@ -419,7 +419,7 @@ a longer name before proceeding.</source>
 dłuższą nazwę, by kontynuować.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1337"/>
+        <location filename="../minstall.cpp" line="1327"/>
         <source>The user name needs be lower case and it
 cannot contain special characters or spaces
 please choose another name before proceeding.</source>
@@ -428,8 +428,8 @@ i nie może zawierać znaków specjalnych i spacji
 proszę wybierz inną nazwę by kontynuować.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1344"/>
-        <location filename="../minstall.cpp" line="1379"/>
+        <location filename="../minstall.cpp" line="1334"/>
+        <location filename="../minstall.cpp" line="1369"/>
         <source>The user password needs to be at least
 2 characters long. Please select
 a longer password before proceeding.</source>
@@ -438,8 +438,8 @@ a longer password before proceeding.</source>
 dłuższe hasło, by kontynuować.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1351"/>
-        <location filename="../minstall.cpp" line="1386"/>
+        <location filename="../minstall.cpp" line="1341"/>
+        <location filename="../minstall.cpp" line="1376"/>
         <source>The root password needs to be at least
 2 characters long. Please select
 a longer password before proceeding.</source>
@@ -448,7 +448,7 @@ a longer password before proceeding.</source>
 dłuższe hasło, by kontynuować.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1360"/>
+        <location filename="../minstall.cpp" line="1350"/>
         <source>Sorry that name is in use.
 Please select a different name.
 </source>
@@ -458,21 +458,21 @@ Proszę wybierz inną.
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1367"/>
+        <location filename="../minstall.cpp" line="1357"/>
         <source>The user password entries do
 not match.  Please try again.</source>
         <translation>Hasła użytkownika nie zgadzają się.
 Spróbuj ponownie.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1373"/>
+        <location filename="../minstall.cpp" line="1363"/>
         <source>The root password entries do
  not match.  Please try again.</source>
         <translation>Hasła administratora nie zgadzają się.
 Spróbuj ponownie.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1407"/>
+        <location filename="../minstall.cpp" line="1397"/>
         <source>Sorry your computer name needs to be
 at least 2 characters long. You&apos;ll have to
 select a different name before proceeding.</source>
@@ -481,7 +481,7 @@ co najmniej 2 znaki. Wybierz inną
 nazwę, by kontynuować.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1411"/>
+        <location filename="../minstall.cpp" line="1401"/>
         <source>Sorry your computer name contains invalid characters.
 You&apos;ll have to select a different
 name before proceeding.</source>
@@ -490,7 +490,7 @@ Musisz wybrać inną
 nazwę, by kontynuować.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1417"/>
+        <location filename="../minstall.cpp" line="1407"/>
         <source>Sorry your computer domain needs to be at least
 2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
@@ -499,7 +499,7 @@ co najmniej 2 znaki. Wybierz inną
 nazwę, by kontynuować.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1421"/>
+        <location filename="../minstall.cpp" line="1411"/>
         <source>Sorry your computer domain contains invalid characters.
 You&apos;ll have to select a different
 name before proceeding.</source>
@@ -508,7 +508,7 @@ Wybierz inną,
 by kontynuować.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1430"/>
+        <location filename="../minstall.cpp" line="1420"/>
         <source>Sorry your workgroup needs to be at least
 2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
@@ -517,7 +517,7 @@ co najmniej 2 znaki. Wybierz inną
 nazwę, by kontynuować.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1801"/>
+        <location filename="../minstall.cpp" line="1791"/>
         <source>MX Linux installation and configuration is complete.
 To use the new installation, reboot without the installation media.
 
@@ -527,160 +527,160 @@ Aby skorzystać z nowej instalacji, uruchom ponownie komputer bez płyty CD/DVD/
  Czy chcesz uruchomić ponownie teraz? </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1817"/>
+        <location filename="../minstall.cpp" line="1807"/>
         <source>The installation and configuration is incomplete.
 Do you really want to stop now?</source>
         <translation>Instalacja i konfiguracja MX-14&apos;a jest niekompletna.
 Czy naprawdę chcesz zakończyć?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1888"/>
+        <location filename="../minstall.cpp" line="1878"/>
         <source>&lt;p&gt;&lt;b&gt;General Instructions&lt;/b&gt;&lt;br/&gt;BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.&lt;/p&gt;&lt;p&gt;On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. You will be prompted for confirmation before any destructive actions are performed.&lt;/p&gt;&lt;p&gt;MX Linux requires about 3.5 GB of space. 5 GB or more is preferred. You can use the entire disk or you can put MX Linux on existing partitions. &lt;/p&gt;&lt;p&gt;If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system&apos;s software to set up partitions and boot manager before installing MX Linux.&lt;/p&gt;&lt;p&gt;The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Instrukcja&lt;/b&gt;&lt;br/&gt;PRZED ROZPOCZĘCIEM ZAMKNIJ WSZYSTKIE INNE APLIKACJE.&lt;/p&gt;&lt;p&gt;Przeczytaj instrukcje zawarte na każdej ze stron, dokonaj wyborów, a potem kliknij „Następna”, gdy jesteś gotów kontynuować. Zostaniesz poproszony o potwierdzenie przed każdą akcją, która może dokonać poważnych zmian na komputerze.&lt;/p&gt;&lt;p&gt; MX Linux wymaga około 3,5G przestrzeni dyskowej. Zalecamy jednak przygotowanie przynajmniej 5G. Możesz wykorzystać cały dysk lub zainstalować MX Linux na istniejących partycjach. &lt;/p&gt;&lt;p&gt; Jeśli korzystasz z systemu Mac OS lub Windows (poczynając od Visty), może zaistnieć konieczność wykorzystania oprogramowania systemowego do przygotowania partycji oraz menadżera rozruchu przed instalacją MX Linux.&lt;/p&gt;&lt;p&gt;MX Linux wspiera partycje wykorzystujące następujące systemy plików: ext2, ext3, ext4 (rekomendowany), jfs, xfs, btrfs, reiserfs. &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1899"/>
+        <location filename="../minstall.cpp" line="1889"/>
         <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for badblocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has badblocks.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Ograniczenia&lt;/b&gt;&lt;br/&gt;Pamiętaj, że oprogramowanie jest dostarczone w przedstawionej formie – bez żadnej gwarancji. Zalecamy wykonanie kopii zapasowej Twoich danych przed kontynuowaniem procesu na własną odpowiedzialność.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Wybierz partycje&lt;/b&gt;&lt;br/&gt;MX Linux wymaga partycji głównej (root). Obecność partycji wymiany (SWAP) jest opcjonalna, lecz rekomendowana. Jeśli chcesz korzystać z funkcji hibernacji, partycja SWAP musi być większa niż dostępna w Twoim komputerze pamięć RAM.&lt;/p&gt;&lt;p&gt;Jeśli wybierzesz osobną partycję /home łatwiej będzie Ci w przyszłości zaktualizować system. Jej utworzenie nie jest możliwe jeśli aktualizujesz istniejącą instalację, która jej nie posiada. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Aktualizacja&lt;/b&gt;&lt;br/&gt;By zaktualizować obecną instalację systemu Linux, wybierz te same partycje, co poprzednio i zaznacz opcję zachowania danych w /home.&lt;/p&gt;&lt;p&gt; Jeśli zachowujesz dane z /home, które zlokalizowane jest na partycji głównej, instalator jej nie sformatuje. W rezultacie instalacja potrwa znacznie dłużej niż zwykle.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Zalecany system plików&lt;/b&gt;&lt;br/&gt;MX Linux wspiera systemy plików ext2, ext3, ext4, jfs, xfs, btrfs i reiserfs.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Uszkodzone sektory&lt;/b&gt;&lt;br/&gt;Jeśli wybierzesz ext2, ext3 lub ext4 zyskasz możliwość sprawdzenia oraz korekty uszkodzonych sektorów dysku. Sprawdzenie dysku pod kątem błędnych sektorów trwa bardzo długo, możesz zatem je pominąć, chyba że podejrzewasz ich obecność na dysku.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1913"/>
+        <location filename="../minstall.cpp" line="1903"/>
         <source>Returning to Step 1 to select another disk.</source>
         <translation>Powrót do kroku pierwszego by wybrać inny dysk.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1917"/>
+        <location filename="../minstall.cpp" line="1907"/>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis and antiX Communities&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Specjalne podziękowania&lt;/b&gt;&lt;br/&gt;Pragnę podziękować wszystkim, którzy przyczynili się do wsparcia MX Linux swoim czasem, pieniędzmi, sugestiami, pracą, pochwałą, pomysłami, promocją i/lub zachętą.&lt;/p&gt;&lt;p&gt;Bez Was nie byłoby MX Linux.&lt;/p&gt;&lt;p&gt;oraz społeczności anticapitalista, Mepis i antiX&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1920"/>
+        <location filename="../minstall.cpp" line="1910"/>
         <source>&lt;p&gt;&lt;b&gt;Installation in Progress&lt;/b&gt;&lt;br/&gt;MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.&lt;/p&gt;&lt;p&gt;If you click the Abort button, the installation will be stopped as soon as possible.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Trwa instalacja&lt;/b&gt;&lt;br/&gt;MX Linux jest instalowany. Świeża instalacja zajmie prawdopodobnie od 3 do 20 minut, w zależności od możliwości sprzętowych Twojego komputera i rozmiaru partycji, które zostały ustanowione.&lt;/p&gt;&lt;p&gt;Jeśli zostanie kliknięty przycisk Przerwij, instalacja zostanie zatrzymana tak szybko jak to możliwe.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1932"/>
+        <location filename="../minstall.cpp" line="1922"/>
         <source>Failed to create required partitions.
 Returning to Step 1.</source>
         <translation>Błąd przy tworzeniu wymaganych partycji.
 Powracam do kroku 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1941"/>
+        <location filename="../minstall.cpp" line="1931"/>
         <source>Failed to prepare chosen partitions.
 Returning to Step 1.</source>
         <translation>Błąd przy przygotowywaniu wybranych partycji.
 Powracam do kroku 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1953"/>
+        <location filename="../minstall.cpp" line="1943"/>
         <source>&lt;p&gt;&lt;b&gt;Select Boot Method&lt;/b&gt;&lt;br/&gt;MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. &lt;p&gt;By default GRUB2 is installed in the Master Boot Record of your boot drive and replaces the boot loader you were using before. This is normal.&lt;/p&gt;&lt;p&gt;If you choose to install GRUB2 at root instead of MBR, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.&lt;/p&gt;&lt;p&gt;If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Wybierz metodę rozruchu&lt;/b&gt;&lt;br/&gt;MX Linux wykorzystuje menadżera rozruchu GRUB do uruchomienia siebie i systemu MS Windows. &lt;/p&gt;&lt;p&gt;Domyślnie GRUB2 instalowany jest w głównym sektorze rozruchowym (MBR) Twojego dysku i zastępuje obecny dotychczas menadżer. &lt;/p&gt;&lt;p&gt;Jeśli jako cel instalacji GRUB2 wskażesz partycję główną (root) zamiast MBR, zostanie on zainstalowany na jej początku. Jest to opcja zalecana jedynie dla ekspertów.&lt;/p&gt;&lt;p&gt;Jeśli odznaczysz opcję instalacji GRUB, tym razem nie zostanie on zainstalowany. Ponownie opcja zalecana tylko dla ekspertów.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1962"/>
+        <location filename="../minstall.cpp" line="1952"/>
         <source>&lt;p&gt;&lt;b&gt;Common Services to Enable&lt;/b&gt;&lt;br/&gt;Select any of the these common services that you might need with your system configuration and the services will be started automatically when you start MX Linux.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Wybór aktywnych usług&lt;/b&gt;&lt;br/&gt;Wybierz usługi, których będziesz potrzebować w swoim systemie, a zostaną one uruchomione automatycznie, wraz ze startem MX Linux.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1969"/>
+        <location filename="../minstall.cpp" line="1959"/>
         <source>&lt;p&gt;&lt;b&gt;Computer Identity&lt;/b&gt;&lt;br/&gt;The computer name is a common unique name which will identify your computer if it is on a network. The computer domain is unlikely to be used unless your ISP or local network requires it.&lt;/p&gt;&lt;p&gt;The computer and domain names can contain only alphanumeric characters, dots, hyphens. They cannot contain blank spaces, start or end with hyphens&lt;/p&gt;&lt;p&gt;The SaMBa Server needs to be activated if you want to use it to share some of your directories or printer with a local computer that is running MS-Windows or Mac OSX.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Tożsamość komputera&lt;/b&gt;&lt;br/&gt;Nazwa komputera jest unikalnym identyfikatorem Twojego komputera w sieci. Domena komputera prawdopodobnie nie będzie wykorzystywana, dopóki nie jest wymagana przez administratora sieci lokalnej lub dostawcę internetu.&lt;/p&gt;&lt;p&gt;Nazwy komputera i domeny mogą zawierać jedynie litery, numery, kropki oraz podkreślenia. Nie mogą zawierać spacji oraz zaczynać się i kończyć podkreśleniem.&lt;/p&gt;&lt;p&gt;Serwer SaMBa musi zostać aktywowany jeśli chcesz współdzielić jakiekolwiek zasoby w sieci lokalnej z komputerami działającymi pod kontrolą systemów operacyjnych MS Windows i Mac OSX.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1980"/>
+        <location filename="../minstall.cpp" line="1970"/>
         <source>&lt;p&gt;&lt;b&gt;Localization Defaults&lt;/b&gt;&lt;br/&gt;Set the default keyboard and locale. These will apply unless, they are overridden later by the user.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configure Clock&lt;/b&gt;&lt;br/&gt;If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for &apos;System clock uses LOCAL.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Timezone Settings&lt;/b&gt;&lt;br/&gt;The CD boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Adjust Date &amp; Time...&lt;/p&gt;&lt;p&gt;&lt;b&gt;Service Settings&lt;/b&gt;&lt;br/&gt;Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! </source>
         <translation>&lt;p&gt;&lt;b&gt;Domyślne ustawienia językowe&lt;/b&gt;&lt;br/&gt;Zdefiniuj domyślne ustawienia klawiatury oraz języka. Będą one wykorzystywanie dopóki nie nadpisze ich dla siebie jeden z użytkowników systemu.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Ustawienia zegara&lt;/b&gt;&lt;br/&gt;Jeśli korzystasz z komputera Apple lub czysto uniksowej maszyny, domyślnie zegar zostanie ustawiony na czas uniwersalny (GMT) lub uniwersalny czas koordynowany (UTC). By zmienić zaznacz pole „Zegar systemowy korzysta z czasu lokalnego”.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Ustawienia strefy czasowej&lt;/b&gt;&lt;br/&gt;CD uruchamia się w strefie czasowej predefiniowanej dla GMT/UTC. By zmienić ją dla nowej instalacji, po restarcie, kliknij prawym przyciskiem myszy na zegar w panelu i wybierz opcję „Dostosuj datę i czas”.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Ustawienia usług&lt;/b&gt;&lt;br&gt;Większość użytkowników nie powinna zmieniać ustawień domyślnych. Ci, którzy posługują się maszynami o mniejszych możliwościach sprzętowych mogą chcieć wyłączyć zbędne usługi by zachować możliwie dużą wydajność komputera. Bądź pewien, że wiesz co robisz!</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1990"/>
+        <location filename="../minstall.cpp" line="1980"/>
         <source>&lt;p&gt;&lt;b&gt;Default User Login&lt;/b&gt;&lt;br/&gt;The root user is similar to the Administrator user in some other operating systems. You should not use the root user as your daily user account. Please enter the name for a new (default) user account that you will use on a daily basis. If needed, you can add other user accounts later with MX User Manager. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Passwords&lt;/b&gt;&lt;br/&gt;Enter a new password for your default user account and for the root account. Each password must be entered twice.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Tworzenie użytkownika&lt;/b&gt;&lt;br/&gt;Użytkownik uprzywilejowany (root) ma charakter zbliżony do konta Administratora w innych systemach operacyjnych. Nie powinieneś korzystać z niego, w swoich codziennych działaniach. Wprowadź proszę nazwę konta nowego użytkownika, które będziesz wykorzystywać. Możesz potem dodać kolejnych użytkowników za pomocą narzędzia MX Zarządzanie użytkownikami. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Hasła&lt;/b&gt;&lt;br/&gt;Wprowadź nowe hasło dla zdefiniowanego wcześniej konta oraz dla konta uprzywilejowanego (root). Każde hasło musi zostać wprowadzone dwukrotnie.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2001"/>
+        <location filename="../minstall.cpp" line="1991"/>
         <source>&lt;p&gt;&lt;b&gt;Congratulations!&lt;/b&gt;&lt;br/&gt;You have completed the installation of </source>
         <translation>&lt;p&gt;&lt;b&gt;Gratulujemy!&lt;/b&gt;&lt;br/&gt;Zakończono instalację</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2001"/>
+        <location filename="../minstall.cpp" line="1991"/>
         <source>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Finding Applications&lt;/b&gt;&lt;br/&gt;There are hundreds of excellent applications installed with MX Linux. The best way to learn about them is to browse through the Menu and try them. Many of the apps were developed specifically for the Xfce environment. These are shown in the main menus. &lt;p&gt;In addition MX Linux includes many standard Linux applications that are run only from the commandline and therefore do not show up in Menu.&lt;/p&gt;</source>
         <translation>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Szukanie oprogramowania&lt;/b&gt;&lt;br/&gt;MX Linux dostarcza setki świetnych programów już zaraz po instalacji! Nie wahaj się przeglądać ich i poznawać korzystając z Menu. Wiele z nich jest dedykowanych dla środowiska XFCE, są one wyróżnione w głównych menu.&lt;p&gt;Dodatkowo MX Linux dostarcza wiele standardowych aplikacji systemu Linux, które dostępne są jedynie z linii komend. Nie są one wymienione w Menu. &lt;p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2013"/>
+        <location filename="../minstall.cpp" line="2003"/>
         <source>&lt;p&gt;&lt;b&gt;Enjoy using MX Linux!&lt;/b&gt;&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Miłego korzystania z MX Linux!&lt;/b&gt;&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2026"/>
-        <location filename="../minstall.cpp" line="2038"/>
+        <location filename="../minstall.cpp" line="2016"/>
+        <location filename="../minstall.cpp" line="2028"/>
         <source>Next &gt;</source>
         <translation>Dalej &gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2036"/>
+        <location filename="../minstall.cpp" line="2026"/>
         <source>Finish</source>
         <translation>Zakończ</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2307"/>
+        <location filename="../minstall.cpp" line="2292"/>
         <source>MX Linux is installing, are you 
 sure you want to Close now?</source>
         <translation>MX Linux jest instalowany, czy jesteś
 pewien, że chcesz teraz zakończyć?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2332"/>
+        <location filename="../minstall.cpp" line="2317"/>
         <source>Deleting old system</source>
         <translation>Usuwanie starego systemu</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2340"/>
+        <location filename="../minstall.cpp" line="2325"/>
         <source>Failed to delete old MX Linux on destination.
 Returning to Step 1.</source>
         <translation>Wystąpił błąd podczas usuwania starego MX Linux&apos;a w miejscu docelowym.
 Powracam do kroku 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2353"/>
+        <location filename="../minstall.cpp" line="2338"/>
         <source>Copying new system</source>
         <translation>Kopiowanie nowego systemu</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2376"/>
+        <location filename="../minstall.cpp" line="2361"/>
         <source>Fixing configuration</source>
         <translation>Naprawianie konfiguracji</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2461"/>
+        <location filename="../minstall.cpp" line="2446"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
         <translation>Wystąpił błąd podczas zapisu MX Linux do miejsca przeznaczenia.
 Powracam do Kroku 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2487"/>
+        <location filename="../minstall.cpp" line="2472"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at http://antix.mepis.com and http://www.mepiscommunity.org/mx. There are volunteers to help you at the antiX Forum, http://antix.freeforums.org and the MEPIS Community Forum http://forum.mepiscommunity.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Szukanie pomocy&lt;/b&gt;&lt;br/&gt;Podstawowe informacje o MX Linux znajdują się na stronach http://antix.mepis.com i http://mepiscommunity.org/mx. Nasi wolontariusze chętnie pomogą Ci na forach http://antix.freeforums.org i http://forum.mepiscommunity.org.&lt;/p&gt;&lt;p&gt;Pamiętaj proszę, by prosząc o pomoc opisać możliwie szczegółowo swój problem oraz maszynę, z której korzystasz. &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2495"/>
+        <location filename="../minstall.cpp" line="2480"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from CD and running one of the utilities in System Configuration or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux CD to recover data from MS-Windows systems!&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Naprawa Twojej instalacji&lt;/b&gt;&lt;br/&gt;Jeśli doświadczasz problemów z instalacją MX Linux na Twoim dysku, możliwa jest czasem naprawa poprzez uruchomienie systemu z płyty CD i skorzystanie z jednego z narzędzi naprawy.&lt;/p&gt;&lt;p&gt;Możesz także wykorzystać płytę z MX Linux do odzyskiwania danych z systemów MS Windows!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2501"/>
+        <location filename="../minstall.cpp" line="2486"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Wesprzyj MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux jest dystrybucją tworzoną przez wolontariuszy, którzy aktywnie pomagają na forach (http://antix.freeforums.org, http://forum.mepiscommunity.org), tworzą kolejne tłumaczenia, dzielą się pomysłami rozwoju dystrybucji, piszą nową dokumentację i testują oprogramowanie. Dołącz do nich!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2508"/>
+        <location filename="../minstall.cpp" line="2493"/>
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Dostosowanie ustawień dźwięku&lt;/b&gt;&lt;br/&gt;MX Linux próbuje skonfigurować Twoją kartę dźwiękową, jednak czasem trzeba ręcznie dostosować głośność lub odblokować któryś z kanałów, by usłyszeć dźwięk.&lt;/p&gt;&lt;p&gt;Skrót do właściwych ustawień znajdziesz w menu. Kliknij w niego prawym przyciskiem myszy i otwórz mikser.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2516"/>
+        <location filename="../minstall.cpp" line="2501"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit http://antix.freeforums.org or http://forum.mepiscommunity.org &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Aktualizuj swój system&lt;/b&gt;&lt;br/&gt;Najnowsze informacje o aktualizacjach dystrybucji MX Linux znajdziesz na naszych forach:  http://antix.freeforums.org, http://forum.mepiscommunity.org&lt;/p&gt;</translation>
     </message>

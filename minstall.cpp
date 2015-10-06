@@ -19,7 +19,7 @@
 #include "minstall.h"
 #include "mmain.h"
 
-//#include <QDebug>
+#include <QDebug>
 
 
 MInstall::MInstall(QWidget *parent) : QWidget(parent) {
@@ -368,16 +368,6 @@ QString MInstall::getCmdOut(QString cmd) {
   }
   pclose(fp);
   return QString (ret);
-}
-
-// Alternative function for getting bash command output
-QString MInstall::getCmdOut2(QString cmd)
-{
-    QEventLoop loop;
-    connect(proc, SIGNAL(finished(int)), &loop, SLOT(quit()));
-    proc->start("/bin/bash", QStringList() << "-c" << cmd);
-    loop.exec();
-    return proc->readAllStandardOutput().trimmed();
 }
 
 QStringList MInstall::getCmdOuts(QString cmd) {
@@ -2159,12 +2149,12 @@ void MInstall::on_diskCombo_activated() {
   QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
 
   rootCombo->clear();
-  QString cmd = QString("/sbin/fdisk -l %1 | /bin/grep \"^/dev\"").arg(drv);
+  QString cmd = QString("gptdospartinfo %1").arg(drv);
 
   FILE *fp = popen(cmd.toUtf8(), "r");
   int rcount = 0;
   if (fp != NULL) {
-    char *ndev, *nsz, *nsys, *nsys2;
+    char *ndev, *nsz, *nsys, *label;
     int nsize;
     int i;
     while (fgets(line, sizeof line, fp) != NULL) {
@@ -2172,19 +2162,17 @@ void MInstall::on_diskCombo_activated() {
       line[--i] = '\0';
       strtok(line, " /*+\t");
       ndev = strtok(NULL, " /*+\t");
-      strtok(NULL, " *+\t");
-      strtok(NULL, " *+\t");
       nsz = strtok(NULL, " *+\t");
-      strtok(NULL, " *+\t");
       nsys = strtok(NULL, " *+\t");
-      nsys2 = strtok(NULL, " *+\t");
+      strtok(NULL, " *+\t");
+      label = strtok(NULL, " *+\t");
       nsize = atoi(nsz);
       nsize = nsize / 1024;
-      cmd = QString("blkid /dev/%1 -s LABEL -o value").arg(ndev);
-      char* label = getCmdOut2(cmd.toUtf8()).toUtf8().data();
-
-      if ((nsize >= 1200) && (strncmp(nsys, "Linux", 5) == 0 || (strncmp(nsys, "FAT", 3) == 0) || (strncmp(nsys, "W95", 3) == 0) || (strncmp(nsys, "HPFS", 4) == 0))) {;
-        sprintf(line, "%s - %dMB - %s (%s)", ndev, nsize, label, nsys);
+      if (strncmp(label, "~~~~~", 5) == 0) {
+        strncpy(label, "     ", 5);
+      }
+      if ((nsize >= 1200) && (strncmp(nsys, "swap", 4) != 0)) {
+        sprintf(line, "%s - %dMB - %s %s", ndev, nsize, nsys, label);
         rootCombo->addItem(line);
         rcount++;
       }
@@ -2205,28 +2193,27 @@ void MInstall::on_rootCombo_activated() {
   swapCombo->clear();
   swapCombo->addItem("none - or existing");
   int rcount = 1;
-  QString cmd = QString("/sbin/fdisk -l %1 | /bin/grep \"^/dev\"").arg(drv);
+  QString cmd = QString("gptdospartinfo %1").arg(drv);
   FILE *fp = popen(cmd.toUtf8(), "r");
   if (fp != NULL) {
-    char *ndev, *nsz, *nsys, *nsys2;
+    char *ndev, *nsz, *nsys, *label;
     int nsize, i;
     while (fgets(line, sizeof line, fp) != NULL) {
       i = strlen(line);
       line[--i] = '\0';
       strtok(line, " /*+\t");
       ndev = strtok(NULL, " /*+\t");
-      strtok(NULL, " *+\t");
-      strtok(NULL, " *+\t");
       nsz = strtok(NULL, " *+\t");
-      strtok(NULL, " *+\t");
       nsys = strtok(NULL, " *+\t");
-      nsys2 = strtok(NULL, " *+\t");
+      strtok(NULL, " *+\t");
+      label = strtok(NULL, " *+\t");
       nsize = atoi(nsz);
-      nsize = nsize / 1024;
-      if (nsys2 != NULL && strncmp(nsys2, "swap", 4) == 0) {
-        cmd = QString("blkid /dev/%1 -s LABEL -o value").arg(ndev);
-        char* label = getCmdOut2(cmd.toUtf8()).toUtf8().data();
-        sprintf(line, "%s - %dMB - %s (%s)", ndev, nsize, label, nsys2);
+      nsize = nsize / 1024;      
+      if (strncmp(label, "~~~~~", 5) == 0) {
+        strncpy(label, "     ", 5);
+      }
+      if (nsys != NULL && strncmp(nsys, "swap", 4) == 0) {
+        sprintf(line, "%s - %dMB - %s %s", ndev, nsize, nsys, label);
         swapCombo->addItem(line);
         rcount++;
       }
@@ -2244,30 +2231,28 @@ void MInstall::on_swapCombo_activated() {;
   homeCombo->addItem("root");
   for (int i = 0; i < diskCombo->count(); ++i) {
     QString drv = QString("/dev/%1").arg(diskCombo->itemText(i));
-    QString cmd = QString("/sbin/fdisk -l %1 | /bin/grep \"^/dev\"").arg(drv);
+    QString cmd = QString("gptdospartinfo %1").arg(drv);
     FILE *fp = popen(cmd.toUtf8(), "r");
     if (fp != NULL) {
-      char *ndev, *nsz, *nsys, *nsys2;
+      char *ndev, *nsz, *nsys, *label;
       int nsize, i;
       while (fgets(line, sizeof line, fp) != NULL) {
         i = strlen(line);
         line[--i] = '\0';
         strtok(line, " /*+\t");
         ndev = strtok(NULL, " /*+\t");
-        strtok(NULL, " *+\t");
-        strtok(NULL, " *+\t");
         nsz = strtok(NULL, " *+\t");
-        strtok(NULL, " *+\t");
         nsys = strtok(NULL, " *+\t");
-        nsys2 = strtok(NULL, " *+\t");
+        strtok(NULL, " *+\t");
+        label = strtok(NULL, " *+\t");
         nsize = atoi(nsz);
         nsize = nsize / 1024;
-
+        if (strncmp(label, "~~~~~", 5) == 0) {
+          strncpy(label, "     ", 5);
+        }
         if (strcmp(ndev, rootCombo->currentText().section(' ', 0, 0).toUtf8()) != 0 &&
-            (nsize >= 100) && (strncmp(nsys, "Linux", 5) == 0) && (nsys2 == NULL)) {;
-          cmd = QString("blkid /dev/%1 -s LABEL -o value").arg(ndev);
-          char* label = getCmdOut2(cmd.toUtf8()).toUtf8().data();
-          sprintf(line, "%s - %dMB - %s (%s)", ndev, nsize, label, nsys);
+            (nsize >= 100) && (strncmp(nsys, "Linux", 5) == 0)) {;
+          sprintf(line, "%s - %dMB - %s %s", ndev, nsize, nsys, label);
           homeCombo->addItem(line);
         }
       }

@@ -11,6 +11,6 @@ Homepage: http://antix.mepis.org
 
 Package: mx-installer
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, os-prober 
+Depends: ${misc:Depends}, ${shlibs:Depends}, os-prober, gdisk 
 Recommends: gparted, partitionmanager
 Description: GUI installer for MX-14.
