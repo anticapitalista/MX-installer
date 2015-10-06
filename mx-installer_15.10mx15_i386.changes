@@ -15,14 +15,14 @@ Changes:
  .
    * use gptdospartinfo to list GPT and DOS partitions
 Checksums-Sha1: 
- 2f1802ace8f67fecc06f37bd2f90c6d7748250e4 642 mx-installer_15.10mx15.dsc
- 41c148c15e62fff1c0b86661aaede6c25eed004b 1976437 mx-installer_15.10mx15.tar.gz
- 97b3372eddfbd262c36ce1d6ad9e4f486673b7d4 213424 mx-installer_15.10mx15_i386.deb
+ f82c7a48226dcba77b82fbbfa1b5fa912827dd90 639 mx-installer_15.10mx15.dsc
+ af10bf2af9326340abac5a37fbcd11a3d00362e8 660085 mx-installer_15.10mx15.tar.gz
+ e5c9636347d3d9218eb5f651c61956946c4b38f2 214068 mx-installer_15.10mx15_i386.deb
 Checksums-Sha256: 
- cc14a16c29d3b4e616ec71e9b98cd623032d2528a5fd394d55cdc8ce9ecb36f3 642 mx-installer_15.10mx15.dsc
- bbd3ccbd848c10893ed66e108d1ba0ff05b1dc57e50a87e4018789aaad1afe84 1976437 mx-installer_15.10mx15.tar.gz
- 984af6abfec3634b3dd3c225f092a466f35aefc82f3b449b45a7b4825bc03a49 213424 mx-installer_15.10mx15_i386.deb
+ e95be7d45e16d17f9ebf4f894da8f7dba467b80afa22a6a9d7b98e2d36aa9d6d 639 mx-installer_15.10mx15.dsc
+ d78ba12108235a32c36eedb4af9e7395583620245a5921ec68e1f8998b86eb07 660085 mx-installer_15.10mx15.tar.gz
+ 6a23e0458ced71a75a989893a86ac0c4d0c95cd596c875f1cb0c126e8b15a1bf 214068 mx-installer_15.10mx15_i386.deb
 Files: 
- d37830672195e1501972b06bcbbf18d0 642 system optional mx-installer_15.10mx15.dsc
- c3b68d82f954b59d69f9331b69345990 1976437 system optional mx-installer_15.10mx15.tar.gz
- f4c43aec810b78287d0f97f11f964b83 213424 system optional mx-installer_15.10mx15_i386.deb
+ 5184de0e6d9bc34c080f94043cb9bb8f 639 system optional mx-installer_15.10mx15.dsc
+ d5b4109e7735fdaa89a74b39299fc48a 660085 system optional mx-installer_15.10mx15.tar.gz
+ 73fb1d1f4e5e339393ceaa5fccc06475 214068 system optional mx-installer_15.10mx15_i386.deb

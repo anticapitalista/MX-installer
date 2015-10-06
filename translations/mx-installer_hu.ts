@@ -169,7 +169,7 @@ A lemezt a partíció kiválasztott telepítés nem. </translation>
         <location filename="../minstall.cpp" line="1165"/>
         <location filename="../minstall.cpp" line="1792"/>
         <location filename="../minstall.cpp" line="1806"/>
-        <location filename="../minstall.cpp" line="2272"/>
+        <location filename="../minstall.cpp" line="2279"/>
         <source>Yes</source>
         <translation>Igen</translation>
     </message>
@@ -188,7 +188,7 @@ A lemezt a partíció kiválasztott telepítés nem. </translation>
         <location filename="../minstall.cpp" line="1165"/>
         <location filename="../minstall.cpp" line="1792"/>
         <location filename="../minstall.cpp" line="1806"/>
-        <location filename="../minstall.cpp" line="2272"/>
+        <location filename="../minstall.cpp" line="2279"/>
         <source>No</source>
         <translation>Nem</translation>
     </message>
@@ -613,62 +613,62 @@ Visszatérés az 1. lépéshez.</translation>
         <translation>Befejezés</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2271"/>
+        <location filename="../minstall.cpp" line="2278"/>
         <source>MX Linux is installing, are you 
 sure you want to Close now?</source>
         <translation>A MX Linux telepszik, biztosan meg akarod szakítani?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2296"/>
+        <location filename="../minstall.cpp" line="2303"/>
         <source>Deleting old system</source>
         <translation>Régi rendszer törlése</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2304"/>
+        <location filename="../minstall.cpp" line="2311"/>
         <source>Failed to delete old MX Linux on destination.
 Returning to Step 1.</source>
         <translation>A régi MX Linux törlése sikertelen a célmeghajtón.
 Visszatérés az 1. lépéshez.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2317"/>
+        <location filename="../minstall.cpp" line="2324"/>
         <source>Copying new system</source>
         <translation>Új rendszer másolása</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2340"/>
+        <location filename="../minstall.cpp" line="2347"/>
         <source>Fixing configuration</source>
         <translation>Beállítások javítása</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2425"/>
+        <location filename="../minstall.cpp" line="2432"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
         <translation>Nem sikerült a kijelölt helyre írni a MX Linux-t.
 Visszatérés az 1. Lépéshez.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2451"/>
+        <location filename="../minstall.cpp" line="2458"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at http://antix.mepis.com and http://www.mepiscommunity.org/mx. There are volunteers to help you at the antiX Forum, http://antix.freeforums.org and the MEPIS Community Forum http://forum.mepiscommunity.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Segítség Szerzése&lt;/b&gt;&lt;br/&gt;A MX Linux-ről alapinformációk a a http://antix.mepis.com és http://www.mepiscommunity.org/mx oldalon találhatók, valamint önkéntesek is segítenek probléma estén a antiX Fórumon, http://antix.freeforums.org és MEPIS Community Forum http://forum.mepiscommunity.org &lt;/p&gt;&lt;p&gt;Ha segítséget kérsz, emlékezz hogy a problámát a problémád és számítógéped valamennyi szükséges részletével együtt írd le. Az &apos;ez nem működik&apos; típusú kijelentések általában nem segítenek a probléma megoldásában.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2459"/>
+        <location filename="../minstall.cpp" line="2466"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from CD and running one of the utilities in System Configuration or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux CD to recover data from MS-Windows systems!&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;A Telepített Rendszer Javítása&lt;/b&gt;&lt;br/&gt;Ha a MX Linux nem működik a merevlemezről többé, akkor néha meg lehet oldani a problémát a CD-ről való indítás segítségével. Választhatjuk a CD-n lévő System Configuration-ben lévő segédek egyikét, vagy éppen valamelyik szokásos Linux alkalmazást, hogy kijavítsuk a rendszerhibát.&lt;/p&gt;&lt;p&gt;A MX Linux CD-t MS-WIndows rendszerekről való adatmentésre is fel tudod használni!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2465"/>
+        <location filename="../minstall.cpp" line="2472"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Támogasd a MX Linux-t&lt;/b&gt;&lt;br/&gt;A MX Linux-t olyan emberek támogatják, mint te. Néhányan a http://antix.freeforums.org - http://forum.mepiscommunity.org fórumon keresztül segítenek másokat, mások fájlokat fordítanak más nyelvekre, javaslatokat tesznek, dokumentációt írnak, vagy éppen az új szofvert tesztelik.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2472"/>
+        <location filename="../minstall.cpp" line="2479"/>
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;A Hangkeverő Beállítása&lt;/b&gt;&lt;br/&gt;A MX Linux megpróbálja beállítani a hangkeverőt a számodra, de néha szükséges lehet a hangerő felerősítése, valamint hangcsatornák némításának kikapcsolása a hallható hang érdekében.&lt;/p&gt; &lt;p&gt;A keverő ikonja a panelen megtalálható. Nyomd meg, hogy megnyisd a keverőt.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2480"/>
+        <location filename="../minstall.cpp" line="2487"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit http://antix.freeforums.org or http://forum.mepiscommunity.org &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Tartsd a MX Linux-ed Frissítve&lt;/b&gt;&lt;br/&gt;MX Linux információkért és frissítésekért látogasd meg a http://antix.freeforums.org vagy http://forum.mepiscommunity.org weblapot. &lt;/p&gt;</translation>
     </message>

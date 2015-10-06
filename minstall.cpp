@@ -2144,6 +2144,7 @@ void MInstall::on_qtpartedButton_clicked() {
 // disk selection changed, rebuild dropdown menus
 void MInstall::on_diskCombo_activated() {
   char line[130];
+  QString strLabel;
   QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
 
   rootCombo->clear();
@@ -2154,7 +2155,7 @@ void MInstall::on_diskCombo_activated() {
   removedItem = "";
 
   // build rootCombo
-  QString cmd = QString("gptdospartinfo %1").arg(drv);
+  QString cmd = QString("gptdospartinfo %1 -e").arg(drv);
   FILE *fp = popen(cmd.toUtf8(), "r");
   int rcount = 0;
   if (fp != NULL) {
@@ -2174,10 +2175,13 @@ void MInstall::on_diskCombo_activated() {
       nsize = nsize / 1024;
       if (strncmp(label, "~~~~~", 5) == 0) {
         strncpy(label, "     ", 5);
+      } else if (strstr(label, "~.~") != 0) {
+          strLabel = QString(label);
+          strLabel.replace("~.~", " ");
       }
       if ((nsize >= 1200) && (strncmp(nsys, "swap", 4) != 0)) {
-        sprintf(line, "%s - %dMB - %s %s", ndev, nsize, nsys, label);
-        rootCombo->addItem(line);
+        sprintf(line, "%s - %dMB - %s", ndev, nsize, nsys);
+        rootCombo->addItem(QString(line) + " " + strLabel);
         rcount++;
       }
     }
@@ -2190,7 +2194,7 @@ void MInstall::on_diskCombo_activated() {
   // build home and swap combo for all disks
   for (int i = 0; i < diskCombo->count(); ++i) {
     QString drv = QString("/dev/%1").arg(diskCombo->itemText(i));
-    QString cmd = QString("gptdospartinfo %1").arg(drv);
+    QString cmd = QString("gptdospartinfo %1 -e").arg(drv);
     FILE *fp = popen(cmd.toUtf8(), "r");
     if (fp != NULL) {
       char *ndev, *nsz, *nsys, *label;
@@ -2208,14 +2212,17 @@ void MInstall::on_diskCombo_activated() {
         nsize = nsize / 1024;
         if (strncmp(label, "~~~~~", 5) == 0) {
           strncpy(label, "     ", 5);
+        } else if (strstr(label, "~.~") != 0) {
+            strLabel = QString(label);
+            strLabel.replace("~.~", " ");
         }
         if (strcmp(ndev, rootCombo->currentText().section(' ', 0, 0).toUtf8()) != 0 &&
             (nsize >= 100) && (strncmp(nsys, "Linux", 5) == 0)) {;
-          sprintf(line, "%s - %dMB - %s %s", ndev, nsize, nsys, label);
-          homeCombo->addItem(line);
+          sprintf(line, "%s - %dMB - %s", ndev, nsize, nsys);
+          homeCombo->addItem(QString(line) + " " + strLabel);
         } else if (nsys != NULL && strncmp(nsys, "swap", 4) == 0) {
-          sprintf(line, "%s - %dMB - %s %s", ndev, nsize, nsys, label);
-          swapCombo->addItem(line);
+          sprintf(line, "%s - %dMB - %s", ndev, nsize, nsys);
+          swapCombo->addItem(QString(line) + " " + strLabel);
         }
       }
       pclose(fp);
