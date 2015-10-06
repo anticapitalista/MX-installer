@@ -9,20 +9,20 @@ Urgency: medium
 Maintainer: anticapitalista <antiX@operamail.com>
 Changed-By: Adrian <adrian@mxlinux.org>
 Description: 
- mx-installer - GUI installer for MX-14.
+ mx-installer - GUI installer for MX Linux.
 Changes: 
  mx-installer (15.10mx15) mx; urgency=medium
  .
    * use gptdospartinfo to list GPT and DOS partitions
 Checksums-Sha1: 
- f82c7a48226dcba77b82fbbfa1b5fa912827dd90 639 mx-installer_15.10mx15.dsc
- af10bf2af9326340abac5a37fbcd11a3d00362e8 660085 mx-installer_15.10mx15.tar.gz
- e5c9636347d3d9218eb5f651c61956946c4b38f2 214068 mx-installer_15.10mx15_i386.deb
+ bfe84df09dca33adef59d7e66f8868d61a212cab 639 mx-installer_15.10mx15.dsc
+ aa1129de6129fd4d20a3c6d4502ae8bcfda245d6 659754 mx-installer_15.10mx15.tar.gz
+ 594363d200dde1df3011e18d7edd84f7c3495227 214006 mx-installer_15.10mx15_i386.deb
 Checksums-Sha256: 
- e95be7d45e16d17f9ebf4f894da8f7dba467b80afa22a6a9d7b98e2d36aa9d6d 639 mx-installer_15.10mx15.dsc
- d78ba12108235a32c36eedb4af9e7395583620245a5921ec68e1f8998b86eb07 660085 mx-installer_15.10mx15.tar.gz
- 6a23e0458ced71a75a989893a86ac0c4d0c95cd596c875f1cb0c126e8b15a1bf 214068 mx-installer_15.10mx15_i386.deb
+ 4c6f0b2c90da3e976abbaf34d80f631f525dd3e8b75f5cac976b61bccb73eb34 639 mx-installer_15.10mx15.dsc
+ 82534577d1f17b8d1abfda0bfe0e3b27c710536f99abbc66306b32f044460a33 659754 mx-installer_15.10mx15.tar.gz
+ e0d38f7323023588ce5830f4c6e4f479f0581b91731a71c7740c3061cbd525b5 214006 mx-installer_15.10mx15_i386.deb
 Files: 
- 5184de0e6d9bc34c080f94043cb9bb8f 639 system optional mx-installer_15.10mx15.dsc
- d5b4109e7735fdaa89a74b39299fc48a 660085 system optional mx-installer_15.10mx15.tar.gz
- 73fb1d1f4e5e339393ceaa5fccc06475 214068 system optional mx-installer_15.10mx15_i386.deb
+ cf82e5c911e5dcfecef527ba79c24820 639 system optional mx-installer_15.10mx15.dsc
+ dd3be7443d9d472e639378446d6817b3 659754 system optional mx-installer_15.10mx15.tar.gz
+ 1d237182a683b23c7da74e4b1461989b 214006 system optional mx-installer_15.10mx15_i386.deb

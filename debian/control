@@ -13,4 +13,4 @@ Package: mx-installer
 Architecture: any
 Depends: ${misc:Depends}, ${shlibs:Depends}, os-prober, gdisk 
 Recommends: gparted, partitionmanager
-Description: GUI installer for MX-14.
+Description: GUI installer for MX Linux.
