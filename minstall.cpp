@@ -749,9 +749,7 @@ bool MInstall::makeDefaultPartitions() {
 
   on_diskCombo_activated();
   rootCombo->setCurrentIndex(0);
-  on_rootCombo_activated();
   swapCombo->setCurrentIndex(1);
-  on_swapCombo_activated();
   homeCombo->setCurrentIndex(0);
 
   return true;
@@ -2143,14 +2141,20 @@ void MInstall::on_qtpartedButton_clicked() {
   on_diskCombo_activated();
 }
 
-// disk selection changed, rebuild root
+// disk selection changed, rebuild dropdown menus
 void MInstall::on_diskCombo_activated() {
   char line[130];
   QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
 
   rootCombo->clear();
-  QString cmd = QString("gptdospartinfo %1").arg(drv);
+  swapCombo->clear();
+  swapCombo->addItem("none - or existing");
+  homeCombo->clear();
+  homeCombo->addItem("root");
+  removedItem = "";
 
+  // build rootCombo
+  QString cmd = QString("gptdospartinfo %1").arg(drv);
   FILE *fp = popen(cmd.toUtf8(), "r");
   int rcount = 0;
   if (fp != NULL) {
@@ -2182,53 +2186,8 @@ void MInstall::on_diskCombo_activated() {
   if (rcount == 0) {
     rootCombo->addItem("none");
   }
-  on_rootCombo_activated();
-}
 
-// root partition changed, rebuild swap
-void MInstall::on_rootCombo_activated() {
-  char line[130];
-  QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
-
-  swapCombo->clear();
-  swapCombo->addItem("none - or existing");
-  int rcount = 1;
-  QString cmd = QString("gptdospartinfo %1").arg(drv);
-  FILE *fp = popen(cmd.toUtf8(), "r");
-  if (fp != NULL) {
-    char *ndev, *nsz, *nsys, *label;
-    int nsize, i;
-    while (fgets(line, sizeof line, fp) != NULL) {
-      i = strlen(line);
-      line[--i] = '\0';
-      strtok(line, " /*+\t");
-      ndev = strtok(NULL, " /*+\t");
-      nsz = strtok(NULL, " *+\t");
-      nsys = strtok(NULL, " *+\t");
-      strtok(NULL, " *+\t");
-      label = strtok(NULL, " *+\t");
-      nsize = atoi(nsz);
-      nsize = nsize / 1024;      
-      if (strncmp(label, "~~~~~", 5) == 0) {
-        strncpy(label, "     ", 5);
-      }
-      if (nsys != NULL && strncmp(nsys, "swap", 4) == 0) {
-        sprintf(line, "%s - %dMB - %s %s", ndev, nsize, nsys, label);
-        swapCombo->addItem(line);
-        rcount++;
-      }
-    }
-    pclose(fp);
-  }
-  on_swapCombo_activated();
-}
-
-// swap partition changed, rebuild home
-void MInstall::on_swapCombo_activated() {;
-  char line[130];
-
-  homeCombo->clear();
-  homeCombo->addItem("root");
+  // build home and swap combo for all disks
   for (int i = 0; i < diskCombo->count(); ++i) {
     QString drv = QString("/dev/%1").arg(diskCombo->itemText(i));
     QString cmd = QString("gptdospartinfo %1").arg(drv);
@@ -2254,11 +2213,31 @@ void MInstall::on_swapCombo_activated() {;
             (nsize >= 100) && (strncmp(nsys, "Linux", 5) == 0)) {;
           sprintf(line, "%s - %dMB - %s %s", ndev, nsize, nsys, label);
           homeCombo->addItem(line);
+        } else if (nsys != NULL && strncmp(nsys, "swap", 4) == 0) {
+          sprintf(line, "%s - %dMB - %s %s", ndev, nsize, nsys, label);
+          swapCombo->addItem(line);
         }
       }
       pclose(fp);
     }
   }
+}
+
+// root partition changed, rebuild home
+void MInstall::on_rootCombo_activated() {
+   // add back removed item
+   if (removedItem != "") {
+       homeCombo->insertItem(removedItemIndex, removedItem);
+   }
+   // remove item that matches root selection
+   int index = homeCombo->findText(rootCombo->currentText().section(' ', 0, 0).toUtf8(), Qt::MatchStartsWith);
+   if ( index != -1 ) {
+     removedItem = homeCombo->itemText(index);
+     removedItemIndex = index;
+     homeCombo->removeItem(index);
+   } else {
+     removedItem = "";
+   }
 }
 
 void MInstall::on_rootTypeCombo_activated() {;

@@ -76,6 +76,8 @@ class MInstall : public QWidget, public Ui::MeInstall {
     ~MInstall();
 
     bool abortInstall;
+    int removedItemIndex;
+    QString removedItem;
 
     void goBack(QString msg);
     void unmountGoBack(QString msg);
@@ -125,7 +127,6 @@ class MInstall : public QWidget, public Ui::MeInstall {
     virtual void on_qtpartedButton_clicked();
     virtual void on_diskCombo_activated();
     virtual void on_rootCombo_activated();
-    virtual void on_swapCombo_activated();
     virtual void on_rootTypeCombo_activated();
     void procAbort();
     virtual bool close();
