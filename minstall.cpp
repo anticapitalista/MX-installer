@@ -2171,13 +2171,13 @@ void MInstall::on_diskCombo_activated() {
       nsys = strtok(NULL, " *+\t");
       strtok(NULL, " *+\t");
       label = strtok(NULL, " *+\t");
+      strLabel = QString(label);
       nsize = atoi(nsz);
       nsize = nsize / 1024;
-      if (strncmp(label, "~~~~~", 5) == 0) {
-        strncpy(label, "     ", 5);
-      } else if (strstr(label, "~.~") != 0) {
-          strLabel = QString(label);
-          strLabel.replace("~.~", " ");
+      if (strLabel.contains("~~~~~")) {
+        strLabel.replace("~~~~~", "");
+      } else if (strLabel.contains("~.~")) {
+        strLabel.replace("~.~", " ");
       }
       if ((nsize >= 1200) && (strncmp(nsys, "swap", 4) != 0)) {
         sprintf(line, "%s - %dMB - %s", ndev, nsize, nsys);
@@ -2208,13 +2208,13 @@ void MInstall::on_diskCombo_activated() {
         nsys = strtok(NULL, " *+\t");
         strtok(NULL, " *+\t");
         label = strtok(NULL, " *+\t");
+        strLabel = QString(label);
         nsize = atoi(nsz);
         nsize = nsize / 1024;
-        if (strncmp(label, "~~~~~", 5) == 0) {
-          strncpy(label, "     ", 5);
-        } else if (strstr(label, "~.~") != 0) {
-            strLabel = QString(label);
-            strLabel.replace("~.~", " ");
+        if (strLabel.contains("~~~~~")) {
+          strLabel.replace("~~~~~", "");
+        } else if (strLabel.contains("~.~")) {
+          strLabel.replace("~.~", " ");
         }
         if (strcmp(ndev, rootCombo->currentText().section(' ', 0, 0).toUtf8()) != 0 &&
             (nsize >= 100) && (strncmp(nsys, "Linux", 5) == 0)) {;
