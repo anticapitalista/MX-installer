@@ -173,7 +173,7 @@ El disco, con la partición seleccionada, esta fallando.
         <location filename="../minstall.cpp" line="1174"/>
         <location filename="../minstall.cpp" line="1801"/>
         <location filename="../minstall.cpp" line="1815"/>
-        <location filename="../minstall.cpp" line="2291"/>
+        <location filename="../minstall.cpp" line="2292"/>
         <source>Yes</source>
         <translation>Sí</translation>
     </message>
@@ -192,7 +192,7 @@ El disco, con la partición seleccionada, esta fallando.
         <location filename="../minstall.cpp" line="1174"/>
         <location filename="../minstall.cpp" line="1801"/>
         <location filename="../minstall.cpp" line="1815"/>
-        <location filename="../minstall.cpp" line="2291"/>
+        <location filename="../minstall.cpp" line="2292"/>
         <source>No</source>
         <translation>No</translation>
     </message>
@@ -624,60 +624,60 @@ La mayoría de los usuarios no deben cambiar los valores por defecto.  Los usuar
         <translation>Terminar</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2290"/>
+        <location filename="../minstall.cpp" line="2291"/>
         <source>MX Linux is installing, are you 
 sure you want to Close now?</source>
         <translation>MX Linux se está instalando, ¿está seguro que desea cerrar ahora?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2315"/>
+        <location filename="../minstall.cpp" line="2316"/>
         <source>Deleting old system</source>
         <translation>Quitando sistema viejo</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2323"/>
+        <location filename="../minstall.cpp" line="2324"/>
         <source>Failed to delete old MX Linux on destination.
 Returning to Step 1.</source>
         <translation>Hubo un fallo al borrar la versión anterior de MX Linux. Regresando al Paso 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2336"/>
+        <location filename="../minstall.cpp" line="2337"/>
         <source>Copying new system</source>
         <translation>Copiando el sistema nuevo</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2359"/>
+        <location filename="../minstall.cpp" line="2360"/>
         <source>Fixing configuration</source>
         <translation>Reparando la configuración</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2444"/>
+        <location filename="../minstall.cpp" line="2445"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
         <translation>Hubo un fallo al escribir MX Linux. Regresando al Paso 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2470"/>
+        <location filename="../minstall.cpp" line="2471"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at http://antix.mepis.com and http://www.mepiscommunity.org/mx. There are volunteers to help you at the antiX Forum, http://antix.freeforums.org and the MEPIS Community Forum http://forum.mepiscommunity.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Obtener Ayuda&lt;/b&gt;&lt;br/&gt;La Información básica acerca de MX Linux se encuentra en http://antix.mepis.com y http://www.mepiscommunity.org/mx. Además, hay voluntarios que brindan ayuda en el Foro de MX Linux, http://antix.freeforums.org y MEPIS Community Forum http://forum.mepiscommunity.org &lt;/p&gt;&lt;p&gt;Si pide ayuda, por favor recuerde: debe describir el problema y carácteristicas del computador detalladamente. Las declaraciones como, &quot;Esto no funciona&quot; no son útiles para obtener ayuda.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2478"/>
+        <location filename="../minstall.cpp" line="2479"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from CD and running one of the utilities in System Configuration or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux CD to recover data from MS-Windows systems!&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Reparar su Instalación&lt;/b&gt;&lt;br/&gt;Si MX Liinux deja de funcionar desde el disco duro, a veces es posible corregir el problema arrancando del CD y ejecutando una de las utilidades en Configuración del Sistema o con algunas de las herramientas regulares de Linux para reparar el sistema.&lt;/p&gt;&lt;p&gt;¡También puede utilizar el CD de MX Linux para recuperar los datos de un sistema de MS-Windows!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2484"/>
+        <location filename="../minstall.cpp" line="2485"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Soporte de MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux cuenta con el apoyo de gente como usted. Algunos ayudan a los otros en el foro de soporte en - http://antix.freeforums.org, - http://forum.mepiscommunity.org o traducen los archivos de ayuda a diferentes idiomas, hacen sugerencias, escriben la documentación, y/o prueban el software nuevo.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2491"/>
+        <location filename="../minstall.cpp" line="2492"/>
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Ajuste del mezclador de Sonido&lt;/b&gt;&lt;br/&gt;MX Linux intenta configurar la mezcla de sonido pero a veces es necesario subir el volumen o quitar el mudo de algún canal del mezclador para escucharlo.&lt;/p&gt; &lt;p&gt;El atajo del mezclador está ubicado en la bandeja. Haga clic en el ícono para abrir el mezclador. &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2499"/>
+        <location filename="../minstall.cpp" line="2500"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit http://antix.freeforums.org or http://forum.mepiscommunity.org &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Mantenga su MX Linux actualizado (Up-to-date)&lt;/b&gt;&lt;br/&gt;Para información de MX Linux y actualizaciones, por favor visite http://antix.freeforums.org o http://forum.mepiscommunity.org &lt;/p&gt;</translation>
     </message>

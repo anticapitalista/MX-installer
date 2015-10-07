@@ -2050,6 +2050,7 @@ void MInstall::gotoPage(int next) {
 void MInstall::firstRefresh(QDialog *main) {
   mmn = main;
   // disable automounting in Thunar
+  system("runuser demo -c 'xfconf-query --channel thunar-volman --property /automount-drives/enabled --set false'");
   system("xfconf-query --channel thunar-volman --property /automount-drives/enabled --set false");
   refresh();
 }
