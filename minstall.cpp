@@ -2049,6 +2049,8 @@ void MInstall::gotoPage(int next) {
 
 void MInstall::firstRefresh(QDialog *main) {
   mmn = main;
+  // disable automounting in Thunar
+  system("xfconf-query --channel thunar-volman --property /automount-drives/enabled --set false");
   refresh();
 }
 
@@ -2143,8 +2145,6 @@ void MInstall::on_viewServicesButton_clicked()
 }
 
 void MInstall::on_qtpartedButton_clicked() {
-  // disable automounting in Thunar
-  system("xfconf-query --channel thunar-volman --property /automount-drives/enabled --set false");
   system("/sbin/swapoff -a 2>&1");
   system("/usr/sbin/gparted");
   //system("/usr/sbin/buildfstab -r");

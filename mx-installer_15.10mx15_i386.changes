@@ -8,21 +8,21 @@ Distribution: mx
 Urgency: medium
 Maintainer: anticapitalista <antiX@operamail.com>
 Changed-By: Adrian <adrian@mxlinux.org>
-Description: 
+Description:
  mx-installer - GUI installer for MX Linux.
-Changes: 
+Changes:
  mx-installer (15.10mx15) mx; urgency=medium
  .
    * use gptdospartinfo to list GPT and DOS partitions
-Checksums-Sha1: 
- bd0d37b5f8b7492aaf33b17c052576d4a7a54342 642 mx-installer_15.10mx15.dsc
- 730cf2febba6cf5c8292b99712c86af53f5a9dcc 1487438 mx-installer_15.10mx15.tar.gz
- 20c7aca8d7aecb718978b3dc3189325553cd8b7b 214388 mx-installer_15.10mx15_i386.deb
-Checksums-Sha256: 
- 2ec76c1f46aed4721555527f80d62cd738a7333d475619a61cc690fac99a05a1 642 mx-installer_15.10mx15.dsc
- 33a2c9c22e6489885f50ee13b3b91786b583bf11dd14fff76b9675c5c320bd22 1487438 mx-installer_15.10mx15.tar.gz
- 74842e0f739df0f27cf6019ad5bb2f834f7a437c452db7fc093e6d6159af168e 214388 mx-installer_15.10mx15_i386.deb
-Files: 
- 705b911900833c29ab0ab3693914678c 642 system optional mx-installer_15.10mx15.dsc
- ac5ae77589018c653e5e6cf237cff6a9 1487438 system optional mx-installer_15.10mx15.tar.gz
- 0c199ecc385b0caa772daa19443e6dd7 214388 system optional mx-installer_15.10mx15_i386.deb
+Checksums-Sha1:
+ 612561f4391779ae38b00fc97378076fd248f50c 647 mx-installer_15.10mx15.dsc
+ 03ea0a0201bef4b043688ed2d436c38a020cea6d 1195588 mx-installer_15.10mx15.tar.xz
+ 1f15bb92e9cfdb1266a9bff25af07f8f096d22e0 215378 mx-installer_15.10mx15_i386.deb
+Checksums-Sha256:
+ 02b845ff6b1fa76900ae10ae10db65de542a82608b97750971aa649a814857a8 647 mx-installer_15.10mx15.dsc
+ e70fdf43da388341660837fd1e9c99b65e3388a4177c4c40fc4e5f23be435fea 1195588 mx-installer_15.10mx15.tar.xz
+ 6652c1f0d841ee465ad6ed9840243e0d2c879d037f62d4caa369633f7f8cb2c9 215378 mx-installer_15.10mx15_i386.deb
+Files:
+ 9906c2a1cc88ff19464edc2716bd88a0 647 system optional mx-installer_15.10mx15.dsc
+ 727e246a8f3eb413454c486385447b86 1195588 system optional mx-installer_15.10mx15.tar.xz
+ a3d6835b88bf7e85b55ef899d45d783b 215378 system optional mx-installer_15.10mx15_i386.deb
