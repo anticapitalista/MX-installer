@@ -2225,8 +2225,7 @@ void MInstall::on_diskCombo_activated() {
         } else if (strLabel.contains("~.~")) {
           strLabel.replace("~.~", " ");
         }
-        if (strcmp(ndev, rootCombo->currentText().section(' ', 0, 0).toUtf8()) != 0 &&
-            (nsize >= 100) && (strncmp(nsys, "Linux", 5) == 0)) {;
+        if ((nsize >= 100) && (strncmp(nsys, "Linux", 5) == 0)) {;
           sprintf(line, "%s - %dMB - %s", ndev, nsize, nsys);
           homeCombo->addItem(QString(line) + " " + strLabel);
         } else if (nsys != NULL && strncmp(nsys, "swap", 4) == 0) {
