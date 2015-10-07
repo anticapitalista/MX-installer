@@ -370,16 +370,6 @@ QString MInstall::getCmdOut(QString cmd) {
   return QString (ret);
 }
 
-// Alternative function for getting bash command output
-QString MInstall::getCmdOut2(QString cmd)
-{
-    QEventLoop loop;
-    connect(proc, SIGNAL(finished(int)), &loop, SLOT(quit()));
-    proc->start("/bin/bash", QStringList() << "-c" << cmd);
-    loop.exec();
-    return proc->readAllStandardOutput().trimmed();
-}
-
 QStringList MInstall::getCmdOuts(QString cmd) {
   char line[260];
   FILE* fp = popen(cmd.toUtf8(), "r");
@@ -540,11 +530,7 @@ void MInstall::prepareToInstall() {
 
 bool MInstall::makeSwapPartition(QString dev) {
   QString cmd = QString("/sbin/mkswap %1 -L MXswap").arg(dev);
-<<<<<<< HEAD
-  if (system(cmd.toAscii()) != 0) {
-=======
   if (system(cmd.toUtf8()) != 0) {
->>>>>>> upstream/master
     // error
     return false;
   }
@@ -567,11 +553,7 @@ bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad, QStri
           cmd = QString("/sbin/mkfs.ext3 -c %1 -L %2").arg(dev).arg(label);
         } else {
           // do no badblocks
-<<<<<<< HEAD
           cmd = QString("/sbin/mkfs.ext3 -F %1 -L %2").arg(dev).arg(label);
-=======
-          cmd = QString("/sbin/mkfs.ext3 %1 -L %2").arg(dev).arg(label);
->>>>>>> upstream/master
         }
       } else {
         if (strncmp(type, "ext2", 4) == 0) {
@@ -581,11 +563,7 @@ bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad, QStri
             cmd = QString("/sbin/mkfs.ext2 -c %1 -L %2").arg(dev).arg(label);
           } else {
             // do no badblocks
-<<<<<<< HEAD
             cmd = QString("/sbin/mkfs.ext2 -F %1 -L %2").arg(dev).arg(label);
-=======
-            cmd = QString("/sbin/mkfs.ext2 %1 -L %2").arg(dev).arg(label);
->>>>>>> upstream/master
           }
         } else {
           if (strncmp(type, "btrfs", 4) == 0) {
@@ -619,22 +597,14 @@ bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad, QStri
                   cmd = QString("/sbin/mkfs.ext4 -c %1 -L %2").arg(dev).arg(label);
                 } else {
                   // do no badblocks
-<<<<<<< HEAD
                   cmd = QString("/sbin/mkfs.ext4 -F %1 -L %2").arg(dev).arg(label);
-=======
-                  cmd = QString("/sbin/mkfs.ext4 %1 -L %2").arg(dev).arg(label);
->>>>>>> upstream/master
                 }
               }
             }
           }
         }
       }
-<<<<<<< HEAD
-      if (system(cmd.toAscii()) != 0) {
-=======
       if (system(cmd.toUtf8()) != 0) {
->>>>>>> upstream/master
         // error
         return false;
       }
@@ -644,11 +614,7 @@ bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad, QStri
         // ext4 tuning
         cmd = QString("/sbin/tune2fs -c0 -C0 -i1m %1").arg(dev);
       }
-<<<<<<< HEAD
-      if (system(cmd.toAscii()) != 0) {
-=======
       if (system(cmd.toUtf8()) != 0) {
->>>>>>> upstream/master
         // error
       }
     }
@@ -1150,7 +1116,7 @@ bool MInstall::installLoader() {
   system("chroot /mnt/antiX update-grub");
   system("chroot /mnt/antiX make-fstab --swap-only");
   system("chroot /mnt/antiX dev2uuid_fstab");
-  system("chroot /mnt/antiX update-initramfs -u -t");
+  system("chroot /mnt/antiX update-initramfs -u -t -k all");
   system("umount /mnt/antiX/proc");
   system("umount /mnt/antiX/sys");
   system("umount /mnt/antiX/dev");
@@ -1210,11 +1176,7 @@ bool MInstall::setUserName() {
           // delete the directory
           setCursor(QCursor(Qt::WaitCursor));
           cmd = QString("rm -f %1").arg(dpath);
-<<<<<<< HEAD
-          if (system(cmd.toAscii()) != 0) {
-=======
           if (system(cmd.toUtf8()) != 0) {
->>>>>>> upstream/master
             setCursor(QCursor(Qt::ArrowCursor));
             QMessageBox::critical(0, QString::null,
               tr("Sorry, failed to delete old home directory. Before proceeding, \nyou'll have to select a different username."));
@@ -1231,11 +1193,7 @@ bool MInstall::setUserName() {
     }
   }
   setCursor(QCursor(Qt::WaitCursor));
-<<<<<<< HEAD
-  if ((dir = opendir(dpath.toAscii())) == NULL) {
-=======
   if ((dir = opendir(dpath.toUtf8())) == NULL) {
->>>>>>> upstream/master
     // dir does not exist, must create it
     // copy skel to demo
     if (system("cp -a /mnt/antiX/etc/skel /mnt/antiX/home") != 0) {
@@ -1245,11 +1203,7 @@ bool MInstall::setUserName() {
       return false;
     }
     cmd = QString("mv -f /mnt/antiX/home/skel %1").arg(dpath);
-<<<<<<< HEAD
-    if (system(cmd.toAscii()) != 0) {
-=======
     if (system(cmd.toUtf8()) != 0) {
->>>>>>> upstream/master
       setCursor(QCursor(Qt::ArrowCursor));
       QMessageBox::critical(0, QString::null,
         tr("Sorry, failed to name user directory."));
@@ -1266,11 +1220,6 @@ bool MInstall::setUserName() {
     cmd = QString("cp -n /mnt/antiX/etc/skel/.gtkrc-2.0 %1").arg(dpath);
     system(cmd.toUtf8());
     cmd = QString("cp -Rn /mnt/antiX/etc/skel/.config %1").arg(dpath);
-<<<<<<< HEAD
-    system(cmd.toAscii());
-    cmd = QString("cp -Rn /mnt/antiX/etc/skel/.local %1").arg(dpath);
-    system(cmd.toAscii());
-=======
     system(cmd.toUtf8());
     cmd = QString("cp -Rn /mnt/antiX/etc/skel/.local %1").arg(dpath);
     system(cmd.toUtf8());
@@ -1283,24 +1232,10 @@ bool MInstall::setUserName() {
       QMessageBox::critical(0, QString::null,
         tr("Sorry, failed to save desktop changes."));
     }
->>>>>>> upstream/master
-  }
-  // saving Desktop changes
-  if (saveDesktopCheckBox->isChecked()) {
-    cmd = QString("rsync -a /home/demo/ %1 --exclude '.cache' --exclude '.gvfs' --exclude '.dbus' --exclude '.Xauthority' --exclude '.ICEauthority' --exclude '.mozilla' --exclude 'Installer.desktop'").arg(dpath);
-    if (system(cmd.toAscii()) != 0) {
-      setCursor(QCursor(Qt::ArrowCursor));
-      QMessageBox::critical(0, QString::null,
-        tr("Sorry, failed to save desktop changes."));
-    }
   }
   // fix the ownership, demo=newuser
   cmd = QString("chown -R demo.users %1").arg(dpath);
-<<<<<<< HEAD
-  if (system(cmd.toAscii()) != 0) {
-=======
   if (system(cmd.toUtf8()) != 0) {
->>>>>>> upstream/master
     setCursor(QCursor(Qt::ArrowCursor));
     QMessageBox::critical(0, QString::null,
       tr("Sorry, failed to set ownership of user directory."));
@@ -1320,11 +1255,7 @@ bool MInstall::setUserName() {
     replaceStringInFile("autologin-user=", "#autologin-user=", "/mnt/antiX/etc/lightdm/lightdm.conf");
   }
   cmd = QString("touch /mnt/antiX/var/mail/%1").arg(userNameEdit->text());
-<<<<<<< HEAD
-  system(cmd.toAscii());
-=======
   system(cmd.toUtf8());
->>>>>>> upstream/master
   setCursor(QCursor(Qt::ArrowCursor));
   return true;
 }
@@ -1428,11 +1359,7 @@ bool MInstall::setUserInfo() {
       return false;
   }
 
-<<<<<<< HEAD
-  if (strcmp(userPasswordEdit->text().toAscii(), userPasswordEdit2->text().toAscii()) != 0) {
-=======
   if (strcmp(userPasswordEdit->text().toUtf8(), userPasswordEdit2->text().toUtf8()) != 0) {
->>>>>>> upstream/master
     QMessageBox::critical(0, QString::null,
       tr("The user password entries do\n"
         "not match.  Please try again."));
@@ -1540,11 +1467,7 @@ bool MInstall::setComputerName() {
   cmd = QString("sed -i 's/.*send host-name.*/send host-name \"%1\";/g' /mnt/antiX/etc/dhcp/dhclient.conf").arg(computerNameEdit->text());
   system(cmd.toUtf8());
   cmd = QString("echo \"%1\" | cat > /mnt/antiX/etc/defaultdomain").arg(computerDomainEdit->text());
-<<<<<<< HEAD
-  system(cmd.toAscii());
-=======
   system(cmd.toUtf8());
->>>>>>> upstream/master
 
   return true;
 }
@@ -1940,11 +1863,7 @@ int MInstall::showPage(int curr, int next) {
     if (system("ls /home | grep -v lost+found | grep -v demo | grep -v snapshot | grep -q [a-zA-Z0-9]") == 0 || system("test -d /live/linux/home/demo") == 0) {
       setCursor(QCursor(Qt::WaitCursor));
       QString cmd = "rsync -a /home/ /mnt/antiX/home/ --exclude '.cache' --exclude '.gvfs' --exclude '.dbus' --exclude '.Xauthority' --exclude '.ICEauthority'";
-<<<<<<< HEAD
-      system(cmd.toAscii());
-=======
       system(cmd.toUtf8());
->>>>>>> upstream/master
       setCursor(QCursor(Qt::ArrowCursor));
       next +=1;
     }
@@ -2153,11 +2072,7 @@ void MInstall::refresh() {
   this->updatePartitionWidgets();
 
 //  system("umount -a 2>/dev/null");
-<<<<<<< HEAD
-  FILE *fp = popen("lsblk -ln -o NAME,SIZE,MODEL -d -e 2,11 | grep '^[h,s,v].[a-z]' | sort 2>/dev/null", "r");
-=======
   FILE *fp = popen("lsblk -ln -o NAME,SIZE,MODEL -d -e 2,11 | grep '^[h,s,v].[a-z]' | grep -v $(lsblk -l | grep /live/boot-dev | cut -c1-3) | sort 2>/dev/null", "r");
->>>>>>> upstream/master
   if (fp == NULL) {
     return;
   }
@@ -2242,11 +2157,6 @@ void MInstall::on_diskCombo_activated() {
   QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
 
   rootCombo->clear();
-<<<<<<< HEAD
-  QString cmd = QString("/sbin/fdisk -l %1 | /bin/grep \"^/dev\"").arg(drv);
-
-  FILE *fp = popen(cmd.toAscii(), "r");
-=======
   swapCombo->clear();
   swapCombo->addItem("none - or existing");
   homeCombo->clear();
@@ -2256,7 +2166,6 @@ void MInstall::on_diskCombo_activated() {
   // build rootCombo
   QString cmd = QString("gptdospartinfo %1 -e").arg(drv);
   FILE *fp = popen(cmd.toUtf8(), "r");
->>>>>>> upstream/master
   int rcount = 0;
   if (fp != NULL) {
     char *ndev, *nsz, *nsys, *label;
@@ -2274,14 +2183,6 @@ void MInstall::on_diskCombo_activated() {
       strLabel = QString(label);
       nsize = atoi(nsz);
       nsize = nsize / 1024;
-<<<<<<< HEAD
-      cmd = QString("blkid /dev/%1 -s LABEL -o value").arg(ndev);
-      char* label = getCmdOut2(cmd.toAscii()).toUtf8().data();
-
-      if ((nsize >= 1200) && (strncmp(nsys, "Linux", 5) == 0 || (strncmp(nsys, "FAT", 3) == 0) || (strncmp(nsys, "W95", 3) == 0) || (strncmp(nsys, "HPFS", 4) == 0))) {;
-        sprintf(line, "%s - %dMB - %s (%s)", ndev, nsize, label, nsys);
-        rootCombo->addItem(line);
-=======
       if (strLabel.contains("~~~~~")) {
         strLabel.replace("~~~~~", "");
       } else if (strLabel.contains("~.~")) {
@@ -2290,7 +2191,6 @@ void MInstall::on_diskCombo_activated() {
       if ((nsize >= 1200) && (strncmp(nsys, "swap", 4) != 0)) {
         sprintf(line, "%s - %dMB - %s", ndev, nsize, nsys);
         rootCombo->addItem(QString(line) + " " + strLabel);
->>>>>>> upstream/master
         rcount++;
       }
     }
@@ -2299,59 +2199,8 @@ void MInstall::on_diskCombo_activated() {
   if (rcount == 0) {
     rootCombo->addItem("none");
   }
-<<<<<<< HEAD
-  on_rootCombo_activated();
-}
-
-// root partition changed, rebuild swap
-void MInstall::on_rootCombo_activated() {
-  char line[130];
-  QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
-
-  swapCombo->clear();
-  swapCombo->addItem("none - or existing");
-  int rcount = 1;
-  QString cmd = QString("/sbin/fdisk -l %1 | /bin/grep \"^/dev\"").arg(drv);
-  FILE *fp = popen(cmd.toAscii(), "r");
-  if (fp != NULL) {
-    char *ndev, *nsz, *nsys, *nsys2;
-    int nsize, i;
-    while (fgets(line, sizeof line, fp) != NULL) {
-      i = strlen(line);
-      line[--i] = '\0';
-      strtok(line, " /*+\t");
-      ndev = strtok(NULL, " /*+\t");
-      strtok(NULL, " *+\t");
-      strtok(NULL, " *+\t");
-      nsz = strtok(NULL, " *+\t");
-      strtok(NULL, " *+\t");
-      nsys = strtok(NULL, " *+\t");
-      nsys2 = strtok(NULL, " *+\t");
-      nsize = atoi(nsz);
-      nsize = nsize / 1024;
-      if (nsys2 != NULL && strncmp(nsys2, "swap", 4) == 0) {
-        cmd = QString("blkid /dev/%1 -s LABEL -o value").arg(ndev);
-        char* label = getCmdOut2(cmd.toAscii()).toUtf8().data();
-        sprintf(line, "%s - %dMB - %s (%s)", ndev, nsize, label, nsys2);
-        swapCombo->addItem(line);
-        rcount++;
-      }
-    }
-    pclose(fp);
-  }
-  on_swapCombo_activated();
-}
-
-// swap partition changed, rebuild home
-void MInstall::on_swapCombo_activated() {;
-  char line[130];
-
-  homeCombo->clear();
-  homeCombo->addItem("root");
-=======
 
   // build home and swap combo for all disks
->>>>>>> upstream/master
   for (int i = 0; i < diskCombo->count(); ++i) {
     QString drv = QString("/dev/%1").arg(diskCombo->itemText(i));
     QString cmd = QString("gptdospartinfo %1 -e").arg(drv);
@@ -2371,15 +2220,6 @@ void MInstall::on_swapCombo_activated() {;
         strLabel = QString(label);
         nsize = atoi(nsz);
         nsize = nsize / 1024;
-<<<<<<< HEAD
-
-        if (strcmp(ndev, rootCombo->currentText().section(' ', 0, 0).toAscii()) != 0 &&
-            (nsize >= 100) && (strncmp(nsys, "Linux", 5) == 0) && (nsys2 == NULL)) {;
-          cmd = QString("blkid /dev/%1 -s LABEL -o value").arg(ndev);
-          char* label = getCmdOut2(cmd.toAscii()).toUtf8().data();
-          sprintf(line, "%s - %dMB - %s (%s)", ndev, nsize, label, nsys);
-          homeCombo->addItem(line);
-=======
         if (strLabel.contains("~~~~~")) {
           strLabel.replace("~~~~~", "");
         } else if (strLabel.contains("~.~")) {
@@ -2391,7 +2231,6 @@ void MInstall::on_swapCombo_activated() {;
         } else if (nsys != NULL && strncmp(nsys, "swap", 4) == 0) {
           sprintf(line, "%s - %dMB - %s", ndev, nsize, nsys);
           swapCombo->addItem(QString(line) + " " + strLabel);
->>>>>>> upstream/master
         }
       }
       pclose(fp);
@@ -2579,7 +2418,6 @@ void MInstall::copyDone(int exitCode, QProcess::ExitStatus exitStatus) {
     // Copy live set up to install and clean up.
     system("/bin/rm -rf /mnt/antiX/etc/skel/Desktop");
     system("/bin/rm /mnt/antiX/etc/skel/.config/xfce4/desktop/icons.screen0-958x752.rc");
-<<<<<<< HEAD
     //system("/bin/cp -fp /etc/init.d/debian/cron /mnt/antiX/etc/init.d/cron");
     //system("/bin/cp -fp /etc/init.d/debian/gpm /mnt/antiX/etc/init.d/gpm");
     //system("/bin/cp -fp /etc/init.d/debian/umountfs /mnt/antiX/etc/init.d/umountfs");
@@ -2593,20 +2431,6 @@ void MInstall::copyDone(int exitCode, QProcess::ExitStatus exitStatus) {
     system("/bin/rm -rf /mnt/antiX/media/sd*");
     system("/bin/rm -rf /mnt/antiX/media/hd*");
     //system("/bin/mv -f /mnt/antiX/etc/X11/xorg.conf /mnt/antiX/etc/X11/xorg.conf.live >/dev/null 2>&1");
-=======
-    system("/bin/cp -fp /etc/init.d/debian/cron /mnt/antiX/etc/init.d/cron");
-    system("/bin/cp -fp /etc/init.d/debian/gpm /mnt/antiX/etc/init.d/gpm");
-    system("/bin/cp -fp /etc/init.d/debian/umountfs /mnt/antiX/etc/init.d/umountfs");
-    system("/bin/cp -fp /etc/init.d/debian/sendsigs /mnt/antiX/etc/init.d/sendsigs");
-    system("/bin/cp -fp /etc/init.d/debian/console-setup /mnt/antiX/etc/init.d/console-setup");
-    system("/bin/cp -fp /usr/share/antix-install/issue /mnt/antiX/etc/issue");
-
-    system("chroot /mnt/antiX dpkg --purge live-init-mx");
-    system("/bin/rm -rf /mnt/antiX/home/demo");
-    system("/bin/rm -rf /mnt/antiX/media/sd*");
-    system("/bin/rm -rf /mnt/antiX/media/hd*");
-    system("/bin/mv -f /mnt/antiX/etc/X11/xorg.conf /mnt/antiX/etc/X11/xorg.conf.live >/dev/null 2>&1");
->>>>>>> upstream/master
 
     progressBar->setValue(100);
     nextButton->setEnabled(true);
