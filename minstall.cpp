@@ -2072,7 +2072,10 @@ void MInstall::refresh() {
   this->updatePartitionWidgets();
 
 //  system("umount -a 2>/dev/null");
-  FILE *fp = popen("lsblk -ln -o NAME,SIZE,MODEL -d -e 2,11 | grep '^[h,s,v].[a-z]' | grep -v $(lsblk -l | grep /live/boot-dev | cut -c1-3) | sort 2>/dev/null", "r");
+  FILE *fp = popen("[ ! $(lsblk -lno MOUNTPOINT | grep /live/boot-dev) ]|| \
+                   lsblk -ln -o NAME,SIZE,MODEL -d -e 2,11 | grep '^[h,s,v].[a-z]' | grep -v $(lsblk -l | grep /live/boot-dev | cut -c1-3) | sort 2>/dev/null; \
+                   [   $(lsblk -lno MOUNTPOINT | grep /live/boot-dev) ]|| \
+                   lsblk -ln -o NAME,SIZE,MODEL -d -e 2,11 | grep '^[h,s,v].[a-z]' | sort 2>/dev/null", "r");
   if (fp == NULL) {
     return;
   }
