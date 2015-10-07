@@ -1,29 +1,28 @@
 #!/bin/bash
 
-BLKID="$(blkid | sort -V | grep -E -e/dev/[h,s,v][d].[0-9]+[:] -e' 'TYPE='"'[a-zA-Z0-9]+'" ' -o | sed ':a;N;$!ba;s/\n/ /g' | sed 's| /dev/|\n/dev/|g;s/  / /g' | grep -v :$)"
+IntermediateResult="$(for i in $(cat /proc/partitions | awk '{print $3,$4}' | grep -v ^1\ | grep -Eo $(basename $1)[0-9]+ | grep -Eo [0-9]+);\
+                      do paste <(lsblk -blno NAME $1$i | awk '{print "/dev/"$1}')\
+                               <(lsblk -blno SIZE $1$i | awk '{OFMT="%.0f";print ($1/1024)}')\
+                               <(lsblk -blno FSTYPE $1$i | sed 's/^$/~~~~~/')\
+                               <(sgdisk -p $1 | grep '  '$i' ' | awk '{print $6}')\
+                               <(sgdisk -p $1 | grep -q '  '$i' ' || echo -ne ~~~~)\
+                               <(lsblk -blno LABEL $1$i | sed 's/^$/~~~~~/;s/ /~.~/g'); done)"
 
-IntermediateResult="$(paste \
-                      <(for i in $(cat /proc/partitions | awk '{print $3,$4}' | grep -v ^1\ | grep -Eo $(basename $1)[0-9]+ | grep -Eo [0-9]+); \
-                        do echo $BLKID | sed 's /dev \n/dev g' | grep $1$i:||echo -e $1$i': TYPE="\x7e\x7e\x7e\x7e\x7e"'; done) \
-                      <(sgdisk -p $1 2>/dev/null | grep ^Number -A999 | sed 's/^ *//g' | grep ^[0-9] ) |
-                      sed 's/TYPE="//;s/"//' |
-                      awk '{OFMT="%.0f"};{print $1,((($5-$4)+1)/2),$2,$8}' | 
-                      sed 's/://')"
 
 if [ "$2" = "--efi-filter" ] || [ "$2" = "-e" ] || [ "$3" = "--efi-filter" ] || [ "$3" = "-e" ]
 
   then
     #exclude iso9600
-    IntermediateResult="$(sed 's| /dev|\n/dev|g' <<<$IntermediateResult | grep -v iso9660)"
+    IntermediateResult="$(sed 's| /dev|\n/dev|g' <<<$IntermediateResult | grep -v ' iso9660 ')"
 
     #exclude EFI System partition
-    IntermediateResult="$(sed 's| /dev|\n/dev|g' <<<$IntermediateResult | grep -v EF00$)"
+    IntermediateResult="$(sed 's| /dev|\n/dev|g' <<<$IntermediateResult | grep -v ' EF00 ')"
 
     #exclude Microsoft reserved partition
-    IntermediateResult="$(sed 's| /dev|\n/dev|g' <<<$IntermediateResult | grep -v 0C01$)"
+    IntermediateResult="$(sed 's| /dev|\n/dev|g' <<<$IntermediateResult | grep -v ' 0C01 ')"
 
     #exclude Microsoft recovery partition(s)
-    IntermediateResult="$(sed 's| /dev|\n/dev|g' <<<$IntermediateResult | grep -v 2700$)"
+    IntermediateResult="$(sed 's| /dev|\n/dev|g' <<<$IntermediateResult | grep -v ' 2700 ')"
     
   else
     :
@@ -35,7 +34,7 @@ if [ "$2" = "--real-type-name" ] || [ "$2" = "-r" ] || [ "$3" = "--real-type-nam
     
   else
     #for Linux GPT Partitions (8300) strip off the partition type (ext3, ext4, etc.) so they're named just 'Linux 8300'
-    IntermediateResult="$(sed 's| /dev|\n/dev|g' <<<$IntermediateResult | sed 's/\(.*\) \(.*\) 8300$/\1 Linux 8300/')"
+    IntermediateResult="$(sed 's| /dev|\n/dev|g' <<<$IntermediateResult | sed 's/\(.*\) \(.*\) 8300 /\1 Linux 8300 /')"
 
     #rename hfsplus to HPFS    
     IntermediateResult="$(sed 's| /dev|\n/dev|g' <<<$IntermediateResult | sed 's/hfsplus/HPFS/')"
@@ -49,9 +48,6 @@ if [ "$2" = "--real-type-name" ] || [ "$2" = "-r" ] || [ "$3" = "--real-type-nam
                         sed -r 's/(btrfs|ext2|ext3|ext4|jfs|nilfs2|reiser4|reiserfs|ufs|xfs) 0700/Linux 8300/')"
 fi
 
-for i in $(cat /proc/partitions | awk '{print $3,$4}' | grep -v ^1\ | grep -Eo $(basename $1)[0-9]+ | grep -Eo [0-9]+); \
-  do LABEL=$(blkid $1$i -s LABEL -o value); [ "$(echo -n $LABEL|wc -c)" != "0" ] || LABEL="$(echo -ne '\x7e\x7e\x7e\x7e\x7e')"; \
-  LABEL="$(echo $LABEL | sed 's/ /\x7e\x2e\x7e/g')"; paste <(sed 's| /dev|\n/dev|g' <<<$IntermediateResult | grep $1$i' ') <(echo $LABEL) | grep ^/ | \
-  awk '{print $1,$2,$3,$4,$5}'; done | column -t
+sed 's| /dev|\n/dev|g' <<<$IntermediateResult | awk '{print $1,$2,$3,$4,$5}' | column -t
 
 exit 0
