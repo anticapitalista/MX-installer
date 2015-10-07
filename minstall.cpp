@@ -2236,6 +2236,7 @@ void MInstall::on_diskCombo_activated() {
       pclose(fp);
     }
   }
+  on_rootCombo_activated();
 }
 
 // root partition changed, rebuild home

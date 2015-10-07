@@ -171,7 +171,7 @@ The disk with the partition you selected for installation is failing.
         <location filename="../minstall.cpp" line="1174"/>
         <location filename="../minstall.cpp" line="1801"/>
         <location filename="../minstall.cpp" line="1815"/>
-        <location filename="../minstall.cpp" line="2287"/>
+        <location filename="../minstall.cpp" line="2288"/>
         <source>Yes</source>
         <translation>はい</translation>
     </message>
@@ -190,7 +190,7 @@ The disk with the partition you selected for installation is failing.
         <location filename="../minstall.cpp" line="1174"/>
         <location filename="../minstall.cpp" line="1801"/>
         <location filename="../minstall.cpp" line="1815"/>
-        <location filename="../minstall.cpp" line="2287"/>
+        <location filename="../minstall.cpp" line="2288"/>
         <source>No</source>
         <translation>いいえ</translation>
     </message>
@@ -617,63 +617,63 @@ Step 1 に処理を戻します。</translation>
         <translation>完了</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2286"/>
+        <location filename="../minstall.cpp" line="2287"/>
         <source>MX Linux is installing, are you 
 sure you want to Close now?</source>
         <translation>MX Linux はインストール中です。
 本当に閉じてもよろしいですか？</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2311"/>
+        <location filename="../minstall.cpp" line="2312"/>
         <source>Deleting old system</source>
         <translation>旧システムの削除中</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2319"/>
+        <location filename="../minstall.cpp" line="2320"/>
         <source>Failed to delete old MX Linux on destination.
 Returning to Step 1.</source>
         <translation>古い MX Linux の削除に失敗しました。
 Step 1 に処理を戻します。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2332"/>
+        <location filename="../minstall.cpp" line="2333"/>
         <source>Copying new system</source>
         <translation>新システムのコピー中</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2355"/>
+        <location filename="../minstall.cpp" line="2356"/>
         <source>Fixing configuration</source>
         <translation>設定の構築中</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2440"/>
+        <location filename="../minstall.cpp" line="2441"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
         <translation>MX Linux の書き込みに失敗しました。
 Step 1 へ処理を戻します。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2466"/>
+        <location filename="../minstall.cpp" line="2467"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at http://antix.mepis.com and http://www.mepiscommunity.org/mx. There are volunteers to help you at the antiX Forum, http://antix.freeforums.org and the MEPIS Community Forum http://forum.mepiscommunity.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;困った時は (英語情報)&lt;/b&gt;&lt;br/&gt;MX Linux の基本的な情報は http://antix.mepis.com および http://www.mepiscommunity.org/mx で参照できます。 antiX Forum http://antix.freeforums.org と MEPIS Community Forum http://forum.mepiscommunity.org で助けてくれる人がいるでしょう。&lt;/p&gt;&lt;p&gt;もし助けを求める場合、必須情報として問題の詳細とコンピュータ情報を忘れずに記述して下さい。通常「動きません」とだけ書かれた内容は役に立ちません。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2474"/>
+        <location filename="../minstall.cpp" line="2475"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from CD and running one of the utilities in System Configuration or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux CD to recover data from MS-Windows systems!&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;インストールの復旧&lt;/b&gt;&lt;br/&gt;もし MX Linux が動作しない場合は、CD や USB から起動し、システム設定にあるユーティリティを実行するか、基本的な Linux ツールを使用してシステムを復旧させる事ができます。&lt;/p&gt;&lt;p&gt;マイクロソフト Windows で使用していたデータを復旧させるために MX Linux の CD・USB メモリを使用する事も可能です。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2480"/>
+        <location filename="../minstall.cpp" line="2481"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;MX Linux のサポート&lt;/b&gt;&lt;br/&gt;MX Linux はあなたのような皆様に支援されています。サポートフォーラム http://antix.freeforums.org http://forum.mepiscommunity.orgで他の人を助ける、使用している言語の翻訳作業を行う、ドキュメント作成を行う、新しいバージョンのテストを行う、といった支援が可能です。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2487"/>
+        <location filename="../minstall.cpp" line="2488"/>
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;音量調整&lt;/b&gt;&lt;br/&gt;MX Linux は音楽ミキサーを備えます。たまに音を聞くため、ミキサーでチャンネル毎の音量調整が必要になるかもしれません。&lt;/p&gt; &lt;p&gt;ミキサーの素早い起動はメニューからミキサーをクリックして開いて下さい。 &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2495"/>
+        <location filename="../minstall.cpp" line="2496"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit http://antix.freeforums.org or http://forum.mepiscommunity.org &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;MX Linux の最新情報&lt;/b&gt;&lt;br/&gt;MX Linux の最新情報はフォーラムを参照して下さい。 http://antix.freeforums.org http://forum.mepiscommunity.org &lt;/p&gt;</translation>
     </message>
