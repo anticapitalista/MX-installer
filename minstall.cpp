@@ -759,13 +759,21 @@ bool MInstall::makeDefaultPartitions() {
 // Make the chosen partitions and mount them
 
 bool MInstall::makeChosenPartitions() {
-  char line[130];
-  QString msg;
+  bool gpt;
   int ans;
+  char line[130];
   char type[20];
+  QString msg;
   QString cmd;
 
   QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
+
+  cmd = QString("blkid %1 | grep PTTYPE=\"gpt\"").arg(drv);
+  if (system(cmd.toUtf8()) == 0) {
+     gpt = true;
+  } else {
+     gpt = false;
+  }
 
   // get config
   strncpy(type, rootTypeCombo->currentText().toUtf8(), 4);
@@ -873,7 +881,11 @@ bool MInstall::makeChosenPartitions() {
     }
     updateStatus(tr("Formatting swap partition"), 2);
     // always set type
-    QString cmd = QString("/sbin/sfdisk %1 -c %2 82").arg(swapdev.mid(0,8)).arg(swapdev.mid(8));
+    if (gpt) {
+      cmd = QString("/sbin/sgdisk %1 -t=%2:8200").arg(swapdev.mid(0,8)).arg(swapdev.mid(8));
+    } else {
+      cmd = QString("/sbin/sfdisk %1 -c %2 82").arg(swapdev.mid(0,8)).arg(swapdev.mid(8));
+    }
     system(cmd.toUtf8());
     system("sleep 1");
     if (!makeSwapPartition(swapdev)) {
@@ -888,7 +900,11 @@ bool MInstall::makeChosenPartitions() {
   if (!(saveHomeCheck->isChecked() && homedev.compare("/dev/root") == 0)) {
     updateStatus(tr("Formatting the / (root) partition"), 3);
     // always set type
-    QString cmd = QString("/sbin/sfdisk %1 -c %2 83").arg(rootdev.mid(0,8)).arg(rootdev.mid(8));
+    if (gpt) {
+        cmd = QString("/sbin/sgdisk %1 -t=%2:8300").arg(swapdev.mid(0,8)).arg(swapdev.mid(8));
+    } else {
+        cmd = QString("/sbin/sfdisk %1 -c %2 83").arg(rootdev.mid(0,8)).arg(rootdev.mid(8));
+    }
     system(cmd.toUtf8());
     system("sleep 1");
     if (!makeLinuxPartition(rootdev, type, badblocksCheck->isChecked(), rootLabelEdit->text())) {
@@ -933,7 +949,11 @@ bool MInstall::makeChosenPartitions() {
       // not on root
       updateStatus(tr("Formatting the /home partition"), 8);
       // always set type
-      QString cmd = QString("/sbin/sfdisk %1 -c %2 83").arg(homedev.mid(0,8)).arg(homedev.mid(8));
+      if (gpt) {
+        cmd = QString("/sbin/sgdisk %1 -t=%2:8302").arg(swapdev.mid(0,8)).arg(swapdev.mid(8));
+      } else {
+        cmd = QString("/sbin/sfdisk %1 -c %2 83").arg(homedev.mid(0,8)).arg(homedev.mid(8));
+      }
       system(cmd.toUtf8());
       system("sleep 1");
       if (!makeLinuxPartition(homedev, type, badblocksCheck->isChecked(), homeLabelEdit->text())) {
@@ -1061,8 +1081,8 @@ bool MInstall::installLoader() {
   QString rootpart = QString(rootCombo->currentText()).section(" ", 0, 0);
   QString boot;
 
-  // install to root if drive uses GPT (or Apple)
-  cmd = QString("fdisk.distrib -l %1 | grep -q ^Disklabel.*gpt").arg("/dev/" + bootdrv);
+  // install to root if drive uses GPT (or Apple)    
+  cmd = QString("blkid %1 | grep PTTYPE=\"gpt\"").arg("/dev/" + bootdrv);
   if ((system(cmd.toUtf8()) == 0) || (system("grub-probe -d /dev/sda2 2>/dev/null | grep hfsplus") == 0)) {
       grubMbrButton->setDisabled(true);
       grubRootButton->setChecked(true);
@@ -2093,6 +2113,7 @@ void MInstall::refresh() {
     diskCombo->addItem(line);
     grubBootCombo->addItem(line);
   }
+
   pclose(fp);
 
   on_diskCombo_activated();
