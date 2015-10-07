@@ -553,7 +553,7 @@ bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad, QStri
           cmd = QString("/sbin/mkfs.ext3 -c %1 -L %2").arg(dev).arg(label);
         } else {
           // do no badblocks
-          cmd = QString("/sbin/mkfs.ext3 %1 -L %2").arg(dev).arg(label);
+          cmd = QString("/sbin/mkfs.ext3 -F %1 -L %2").arg(dev).arg(label);
         }
       } else {
         if (strncmp(type, "ext2", 4) == 0) {
@@ -563,7 +563,7 @@ bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad, QStri
             cmd = QString("/sbin/mkfs.ext2 -c %1 -L %2").arg(dev).arg(label);
           } else {
             // do no badblocks
-            cmd = QString("/sbin/mkfs.ext2 %1 -L %2").arg(dev).arg(label);
+            cmd = QString("/sbin/mkfs.ext2 -F %1 -L %2").arg(dev).arg(label);
           }
         } else {
           if (strncmp(type, "btrfs", 4) == 0) {
@@ -597,7 +597,7 @@ bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad, QStri
                   cmd = QString("/sbin/mkfs.ext4 -c %1 -L %2").arg(dev).arg(label);
                 } else {
                   // do no badblocks
-                  cmd = QString("/sbin/mkfs.ext4 %1 -L %2").arg(dev).arg(label);
+                  cmd = QString("/sbin/mkfs.ext4 -F %1 -L %2").arg(dev).arg(label);
                 }
               }
             }
@@ -1116,7 +1116,7 @@ bool MInstall::installLoader() {
   system("chroot /mnt/antiX update-grub");
   system("chroot /mnt/antiX make-fstab --swap-only");
   system("chroot /mnt/antiX dev2uuid_fstab");
-
+  system("chroot /mnt/antiX update-initramfs -u -t -k all");
   system("umount /mnt/antiX/proc");
   system("umount /mnt/antiX/sys");
   system("umount /mnt/antiX/dev");
