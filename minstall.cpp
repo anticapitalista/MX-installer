@@ -19,7 +19,7 @@
 #include "minstall.h"
 #include "mmain.h"
 
-#include <QDebug>
+//#include <QDebug>
 
 
 MInstall::MInstall(QWidget *parent) : QWidget(parent) {
@@ -1060,6 +1060,15 @@ bool MInstall::installLoader() {
   QString bootdrv = QString(grubBootCombo->currentText()).section(" ", 0, 0);
   QString rootpart = QString(rootCombo->currentText()).section(" ", 0, 0);
   QString boot;
+
+  // install to root if drive uses GPT (or Apple)
+  cmd = QString("fdisk.distrib -l $1 | grep -q ^Disklabel.*gpt").arg("/dev/" + bootdrv);
+  if ((system(cmd.toUtf8()) == 0) || (system("grub-probe -d /dev/sda2 2>/dev/null | grep hfsplus") == 0)) {
+      grubMbrButton->setDisabled(true);
+      grubRootButton->setChecked(true);
+  } else {
+      grubMbrButton->setDisabled(false);
+  }
 
   if (grubMbrButton->isChecked()) {
     boot = bootdrv;
