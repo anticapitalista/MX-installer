@@ -1,9 +1,29 @@
+<<<<<<< HEAD
 mx-installer (15.5.1mx15) mx; urgency=medium
 
   * Changes for MX-15
 
  -- Adrian <adrian@mxlinux.org>  Fri, 29 May 2015 17:44:35 -0400
 
+=======
+mx-installer (15.10mx15) mx; urgency=medium
+
+  * use gptdospartinfo to list GPT and DOS partitions
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 05 Oct 2015 17:45:55 -0400
+
+mx-installer (15.7.1mx15) mx; urgency=medium
+
+  * added build-deps
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 09 Jul 2015 21:27:28 -0400
+
+mx-installer (15.7mx15) mx; urgency=medium
+
+  * update to qt5
+
+ -- Adrian <adrian@mxlinux.org>  Tue, 30 Jun 2015 16:11:37 -0400
+>>>>>>> upstream/master
 
 mx-installer (15.4.1mx14) mx; urgency=medium
 

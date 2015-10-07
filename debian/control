@@ -2,13 +2,23 @@ Source: mx-installer
 Section: system
 Priority: optional
 Maintainer: anticapitalista <antiX@operamail.com>
+<<<<<<< HEAD
 Build-Depends: qt4-qmake,
+=======
+Build-Depends: qt5-qmake,
+	qt5-default,
+	qttools5-dev-tools,
+>>>>>>> upstream/master
 	debhelper (>= 9.20120115)
 Standards-Version: 3.9.4
 Homepage: http://antix.mepis.org
 
 Package: mx-installer
 Architecture: any
+<<<<<<< HEAD
 Depends: ${misc:Depends}, ${shlibs:Depends}, os-prober 
+=======
+Depends: ${misc:Depends}, ${shlibs:Depends}, os-prober, gdisk 
+>>>>>>> upstream/master
 Recommends: gparted, partitionmanager
-Description: GUI installer for MX-14.
+Description: GUI installer for MX Linux.
