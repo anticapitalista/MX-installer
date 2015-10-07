@@ -768,7 +768,7 @@ bool MInstall::makeChosenPartitions() {
 
   QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
 
-  cmd = QString("blkid %1 | grep PTTYPE=\"gpt\"").arg(drv);
+  cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
   if (system(cmd.toUtf8()) == 0) {
      gpt = true;
   } else {
@@ -1082,7 +1082,7 @@ bool MInstall::installLoader() {
   QString boot;
 
   // install to root if drive uses GPT (or Apple)    
-  cmd = QString("blkid %1 | grep PTTYPE=\"gpt\"").arg("/dev/" + bootdrv);
+  cmd = QString("blkid %1 | grep PTTYPE=\\\"gpt\\\"").arg("/dev/" + bootdrv);
   if ((system(cmd.toUtf8()) == 0) || (system("grub-probe -d /dev/sda2 2>/dev/null | grep hfsplus") == 0)) {
       grubMbrButton->setDisabled(true);
       grubRootButton->setChecked(true);
