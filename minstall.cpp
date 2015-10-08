@@ -1052,8 +1052,7 @@ void MInstall::copyLinux() {
 // install loader
 
 // build a grub configuration and install grub
-bool MInstall::installLoader() {
-  on_grubBootCombo_activated();
+bool MInstall::installLoader() {  
   QString cmd;
   QString val = getCmdOut("ls /mnt/antiX/boot | grep 'initrd.img-3.6'");
 
@@ -1855,6 +1854,7 @@ int MInstall::showPage(int curr, int next) {
   } else if (next == 3 && curr == 4) {
     return 1;
   } else if (next == 5 && curr == 4) {
+    on_grubBootCombo_activated();
     if (!installLoader()) {
       return curr;
     } else {
@@ -2297,7 +2297,7 @@ void MInstall::on_homeCombo_activated(const QString &arg1) {
 void MInstall::on_grubBootCombo_activated()
 {
     QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
-    QString cmd = QString("blkid %1 | grep PTTYPE=\\\"gpt\\\"").arg(drv);
+    QString cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
     if ((system(cmd.toUtf8()) == 0) || (system("grub-probe -d /dev/sda2 2>/dev/null | grep hfsplus") == 0)) {
         grubMbrButton->setDisabled(true);
         grubRootButton->setChecked(true);

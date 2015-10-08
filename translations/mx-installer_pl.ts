@@ -167,12 +167,12 @@ Partycja wybrana do instalacji zawodzi.
         <location filename="../minstall.cpp" line="823"/>
         <location filename="../minstall.cpp" line="835"/>
         <location filename="../minstall.cpp" line="848"/>
-        <location filename="../minstall.cpp" line="1095"/>
-        <location filename="../minstall.cpp" line="1157"/>
-        <location filename="../minstall.cpp" line="1162"/>
-        <location filename="../minstall.cpp" line="1187"/>
-        <location filename="../minstall.cpp" line="1814"/>
-        <location filename="../minstall.cpp" line="1828"/>
+        <location filename="../minstall.cpp" line="1094"/>
+        <location filename="../minstall.cpp" line="1156"/>
+        <location filename="../minstall.cpp" line="1161"/>
+        <location filename="../minstall.cpp" line="1186"/>
+        <location filename="../minstall.cpp" line="1813"/>
+        <location filename="../minstall.cpp" line="1827"/>
         <location filename="../minstall.cpp" line="2318"/>
         <source>Yes</source>
         <translation>Tak</translation>
@@ -186,12 +186,12 @@ Partycja wybrana do instalacji zawodzi.
         <location filename="../minstall.cpp" line="823"/>
         <location filename="../minstall.cpp" line="835"/>
         <location filename="../minstall.cpp" line="848"/>
-        <location filename="../minstall.cpp" line="1095"/>
-        <location filename="../minstall.cpp" line="1157"/>
-        <location filename="../minstall.cpp" line="1162"/>
-        <location filename="../minstall.cpp" line="1187"/>
-        <location filename="../minstall.cpp" line="1814"/>
-        <location filename="../minstall.cpp" line="1828"/>
+        <location filename="../minstall.cpp" line="1094"/>
+        <location filename="../minstall.cpp" line="1156"/>
+        <location filename="../minstall.cpp" line="1161"/>
+        <location filename="../minstall.cpp" line="1186"/>
+        <location filename="../minstall.cpp" line="1813"/>
+        <location filename="../minstall.cpp" line="1827"/>
         <location filename="../minstall.cpp" line="2318"/>
         <source>No</source>
         <translation>Nie</translation>
@@ -330,29 +330,29 @@ wszelkich danych na %1 dla partycji swap?</translation>
         <translation>Tworzenie katalogów systemowych</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1093"/>
+        <location filename="../minstall.cpp" line="1092"/>
         <source>Ok to install GRUB bootloader at %1 ?</source>
         <translation>Gotowy do zainstalowania programu rozruchowego GRUB na %1?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1111"/>
+        <location filename="../minstall.cpp" line="1110"/>
         <source>Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function.</source>
         <translation>Przepraszam, instalacja GRUB nie powiodła się. Może to być spowodowane zmianą przy formatowaniu dysku. Możesz odznaczyć GRUB i zakończyć instalację MX Linux&apos;a, następnie uruchomić ponownie komputer z płytą CD i naprawić instalację funkcją reinstalacji GRUB.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1154"/>
+        <location filename="../minstall.cpp" line="1153"/>
         <source>The home directory for %1 already exists.Would you like to reuse the old home directory?</source>
         <translation>Katalog domowy dla %1 już istnieje. Czy chcesz ponownie użyć stary katalog domowy?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1160"/>
+        <location filename="../minstall.cpp" line="1159"/>
         <source>Would you like to save the old home directory
 and create a new home directory?</source>
         <translation>Czy chcesz zachować stary katalog domowy
 i stworzyć nowy katalog domowy?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1176"/>
+        <location filename="../minstall.cpp" line="1175"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
 you&apos;ll have to select a different username or
 delete a previously saved copy of your home directory.</source>
@@ -361,56 +361,56 @@ powinieneś wybrać inną nazwę użytkownika
 i usunąć poprzednią kopię swojego katalogu domowego.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1185"/>
+        <location filename="../minstall.cpp" line="1184"/>
         <source>Would you like to delete the old home directory for %1?</source>
         <translation>Czy chcesz usunąć stary katalog domowy dla %1?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1195"/>
+        <location filename="../minstall.cpp" line="1194"/>
         <source>Sorry, failed to delete old home directory. Before proceeding, 
 you&apos;ll have to select a different username.</source>
         <translation>Przepraszam, wystąpił błąd przy usuwaniu starego katalogu domowego. By kontynuować, 
 powinieneś wybrać inną nazwę użytkownika.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1202"/>
+        <location filename="../minstall.cpp" line="1201"/>
         <source>You&apos;ve chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Nie wybrałeś ani używania, zachowania, ani usunięcia starego katalogu domowego.
 By kontynuować powinieneś wybrać inną nazwę użytkownika.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1215"/>
+        <location filename="../minstall.cpp" line="1214"/>
         <source>Sorry, failed to create user directory.</source>
         <translation>Przepraszam, wystąpił błąd przy tworzeniu katalogu użytkownika.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1222"/>
+        <location filename="../minstall.cpp" line="1221"/>
         <source>Sorry, failed to name user directory.</source>
         <translation>Przepraszam, wystąpił błąd przy nazywaniu katalogu użytkownika.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1246"/>
+        <location filename="../minstall.cpp" line="1245"/>
         <source>Sorry, failed to save desktop changes.</source>
         <translation>Przepraszam, wystąpił błąd zapisu zmian pulpitu.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1254"/>
+        <location filename="../minstall.cpp" line="1253"/>
         <source>Sorry, failed to set ownership of user directory.</source>
         <translation>Przepraszam, wystąpił błąd przy ustawianiu własności katalogu użytkownika.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1302"/>
+        <location filename="../minstall.cpp" line="1301"/>
         <source>Sorry, unable to set root password.</source>
         <translation>Przepraszam, nie można ustawić hasła administratora.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1329"/>
+        <location filename="../minstall.cpp" line="1328"/>
         <source>Sorry, unable to set user password.</source>
         <translation>Przepraszam, nie można ustawić hasła użytkownika.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1341"/>
+        <location filename="../minstall.cpp" line="1340"/>
         <source>The user name needs to be at least
 2 characters long. Please select
 a longer name before proceeding.</source>
@@ -419,7 +419,7 @@ a longer name before proceeding.</source>
 dłuższą nazwę, by kontynuować.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1347"/>
+        <location filename="../minstall.cpp" line="1346"/>
         <source>The user name needs be lower case and it
 cannot contain special characters or spaces
 please choose another name before proceeding.</source>
@@ -428,8 +428,8 @@ i nie może zawierać znaków specjalnych i spacji
 proszę wybierz inną nazwę by kontynuować.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1354"/>
-        <location filename="../minstall.cpp" line="1389"/>
+        <location filename="../minstall.cpp" line="1353"/>
+        <location filename="../minstall.cpp" line="1388"/>
         <source>The user password needs to be at least
 2 characters long. Please select
 a longer password before proceeding.</source>
@@ -438,8 +438,8 @@ a longer password before proceeding.</source>
 dłuższe hasło, by kontynuować.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1361"/>
-        <location filename="../minstall.cpp" line="1396"/>
+        <location filename="../minstall.cpp" line="1360"/>
+        <location filename="../minstall.cpp" line="1395"/>
         <source>The root password needs to be at least
 2 characters long. Please select
 a longer password before proceeding.</source>
@@ -448,7 +448,7 @@ a longer password before proceeding.</source>
 dłuższe hasło, by kontynuować.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1370"/>
+        <location filename="../minstall.cpp" line="1369"/>
         <source>Sorry that name is in use.
 Please select a different name.
 </source>
@@ -458,21 +458,21 @@ Proszę wybierz inną.
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1377"/>
+        <location filename="../minstall.cpp" line="1376"/>
         <source>The user password entries do
 not match.  Please try again.</source>
         <translation>Hasła użytkownika nie zgadzają się.
 Spróbuj ponownie.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1383"/>
+        <location filename="../minstall.cpp" line="1382"/>
         <source>The root password entries do
  not match.  Please try again.</source>
         <translation>Hasła administratora nie zgadzają się.
 Spróbuj ponownie.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1417"/>
+        <location filename="../minstall.cpp" line="1416"/>
         <source>Sorry your computer name needs to be
 at least 2 characters long. You&apos;ll have to
 select a different name before proceeding.</source>
@@ -481,7 +481,7 @@ co najmniej 2 znaki. Wybierz inną
 nazwę, by kontynuować.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1421"/>
+        <location filename="../minstall.cpp" line="1420"/>
         <source>Sorry your computer name contains invalid characters.
 You&apos;ll have to select a different
 name before proceeding.</source>
@@ -490,7 +490,7 @@ Musisz wybrać inną
 nazwę, by kontynuować.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1427"/>
+        <location filename="../minstall.cpp" line="1426"/>
         <source>Sorry your computer domain needs to be at least
 2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
@@ -499,7 +499,7 @@ co najmniej 2 znaki. Wybierz inną
 nazwę, by kontynuować.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1431"/>
+        <location filename="../minstall.cpp" line="1430"/>
         <source>Sorry your computer domain contains invalid characters.
 You&apos;ll have to select a different
 name before proceeding.</source>
@@ -508,7 +508,7 @@ Wybierz inną,
 by kontynuować.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1440"/>
+        <location filename="../minstall.cpp" line="1439"/>
         <source>Sorry your workgroup needs to be at least
 2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
@@ -517,7 +517,7 @@ co najmniej 2 znaki. Wybierz inną
 nazwę, by kontynuować.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1811"/>
+        <location filename="../minstall.cpp" line="1810"/>
         <source>MX Linux installation and configuration is complete.
 To use the new installation, reboot without the installation media.
 
@@ -527,7 +527,7 @@ Aby skorzystać z nowej instalacji, uruchom ponownie komputer bez płyty CD/DVD/
  Czy chcesz uruchomić ponownie teraz? </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1827"/>
+        <location filename="../minstall.cpp" line="1826"/>
         <source>The installation and configuration is incomplete.
 Do you really want to stop now?</source>
         <translation>Instalacja i konfiguracja MX-14&apos;a jest niekompletna.

@@ -165,12 +165,12 @@ The disk with the partition you selected for installation is failing.
         <location filename="../minstall.cpp" line="823"/>
         <location filename="../minstall.cpp" line="835"/>
         <location filename="../minstall.cpp" line="848"/>
-        <location filename="../minstall.cpp" line="1095"/>
-        <location filename="../minstall.cpp" line="1157"/>
-        <location filename="../minstall.cpp" line="1162"/>
-        <location filename="../minstall.cpp" line="1187"/>
-        <location filename="../minstall.cpp" line="1814"/>
-        <location filename="../minstall.cpp" line="1828"/>
+        <location filename="../minstall.cpp" line="1094"/>
+        <location filename="../minstall.cpp" line="1156"/>
+        <location filename="../minstall.cpp" line="1161"/>
+        <location filename="../minstall.cpp" line="1186"/>
+        <location filename="../minstall.cpp" line="1813"/>
+        <location filename="../minstall.cpp" line="1827"/>
         <location filename="../minstall.cpp" line="2318"/>
         <source>Yes</source>
         <translation>はい</translation>
@@ -184,12 +184,12 @@ The disk with the partition you selected for installation is failing.
         <location filename="../minstall.cpp" line="823"/>
         <location filename="../minstall.cpp" line="835"/>
         <location filename="../minstall.cpp" line="848"/>
-        <location filename="../minstall.cpp" line="1095"/>
-        <location filename="../minstall.cpp" line="1157"/>
-        <location filename="../minstall.cpp" line="1162"/>
-        <location filename="../minstall.cpp" line="1187"/>
-        <location filename="../minstall.cpp" line="1814"/>
-        <location filename="../minstall.cpp" line="1828"/>
+        <location filename="../minstall.cpp" line="1094"/>
+        <location filename="../minstall.cpp" line="1156"/>
+        <location filename="../minstall.cpp" line="1161"/>
+        <location filename="../minstall.cpp" line="1186"/>
+        <location filename="../minstall.cpp" line="1813"/>
+        <location filename="../minstall.cpp" line="1827"/>
         <location filename="../minstall.cpp" line="2318"/>
         <source>No</source>
         <translation>いいえ</translation>
@@ -327,29 +327,29 @@ Ok to continue?</source>
         <translation>システムディレクトリの生成中</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1093"/>
+        <location filename="../minstall.cpp" line="1092"/>
         <source>Ok to install GRUB bootloader at %1 ?</source>
         <translation>GRUB ブートローダを %1 へインストールしてよろしいですか？</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1111"/>
+        <location filename="../minstall.cpp" line="1110"/>
         <source>Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function.</source>
         <translation>すみません、GRUB のインストールに失敗しました。これはフォーマット形式の変化によって生じているかもしれません。GRUB のチェックを外して MX Linux のインストールを進めて再起動した後、CD から GRUB 機能の再インストールするためのインストール復旧を行う事ができます。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1154"/>
+        <location filename="../minstall.cpp" line="1153"/>
         <source>The home directory for %1 already exists.Would you like to reuse the old home directory?</source>
         <translation>ホームディレクトリ %1 はすでに存在しています。このホームディレクトリを使用しますか？</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1160"/>
+        <location filename="../minstall.cpp" line="1159"/>
         <source>Would you like to save the old home directory
 and create a new home directory?</source>
         <translation>今までのホームディレクトリを保存し、
 新たなホームディレクトリを作成しますか？</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1176"/>
+        <location filename="../minstall.cpp" line="1175"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
 you&apos;ll have to select a different username or
 delete a previously saved copy of your home directory.</source>
@@ -358,55 +358,55 @@ delete a previously saved copy of your home directory.</source>
 /home ディレクトリを削除しなければいけません。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1185"/>
+        <location filename="../minstall.cpp" line="1184"/>
         <source>Would you like to delete the old home directory for %1?</source>
         <translation>古いホームディレクトリ %1 を削除してよろしいですか？</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1195"/>
+        <location filename="../minstall.cpp" line="1194"/>
         <source>Sorry, failed to delete old home directory. Before proceeding, 
 you&apos;ll have to select a different username.</source>
         <translation>ホームディレクトリの削除ができませんでした。処理を進めるために、異なるユーザー名にする必要があります。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1202"/>
+        <location filename="../minstall.cpp" line="1201"/>
         <source>You&apos;ve chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>ホームディレクトリの使用・保存・削除をしたくない場合は
 ユーザー名を変更して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1215"/>
+        <location filename="../minstall.cpp" line="1214"/>
         <source>Sorry, failed to create user directory.</source>
         <translation>ユーザーディレクトリの生成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1222"/>
+        <location filename="../minstall.cpp" line="1221"/>
         <source>Sorry, failed to name user directory.</source>
         <translation>ユーザーディレクトリ生成に失敗しました。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1246"/>
+        <location filename="../minstall.cpp" line="1245"/>
         <source>Sorry, failed to save desktop changes.</source>
         <translation>ごめんなさい。デスクトップの変更保存に問題が発生しました。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1254"/>
+        <location filename="../minstall.cpp" line="1253"/>
         <source>Sorry, failed to set ownership of user directory.</source>
         <translation>ユーザーディレクトリの権限設定に失敗しました。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1302"/>
+        <location filename="../minstall.cpp" line="1301"/>
         <source>Sorry, unable to set root password.</source>
         <translation>root パスワードが設定できませんでした。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1329"/>
+        <location filename="../minstall.cpp" line="1328"/>
         <source>Sorry, unable to set user password.</source>
         <translation>ユーザーパスワードの設定ができませんでした。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1341"/>
+        <location filename="../minstall.cpp" line="1340"/>
         <source>The user name needs to be at least
 2 characters long. Please select
 a longer name before proceeding.</source>
@@ -415,7 +415,7 @@ a longer name before proceeding.</source>
 再度入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1347"/>
+        <location filename="../minstall.cpp" line="1346"/>
         <source>The user name needs be lower case and it
 cannot contain special characters or spaces
 please choose another name before proceeding.</source>
@@ -424,8 +424,8 @@ please choose another name before proceeding.</source>
 他の名前を入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1354"/>
-        <location filename="../minstall.cpp" line="1389"/>
+        <location filename="../minstall.cpp" line="1353"/>
+        <location filename="../minstall.cpp" line="1388"/>
         <source>The user password needs to be at least
 2 characters long. Please select
 a longer password before proceeding.</source>
@@ -434,8 +434,8 @@ a longer password before proceeding.</source>
 再度入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1361"/>
-        <location filename="../minstall.cpp" line="1396"/>
+        <location filename="../minstall.cpp" line="1360"/>
+        <location filename="../minstall.cpp" line="1395"/>
         <source>The root password needs to be at least
 2 characters long. Please select
 a longer password before proceeding.</source>
@@ -444,7 +444,7 @@ a longer password before proceeding.</source>
 再度入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1370"/>
+        <location filename="../minstall.cpp" line="1369"/>
         <source>Sorry that name is in use.
 Please select a different name.
 </source>
@@ -452,20 +452,20 @@ Please select a different name.
 別の名前を入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1377"/>
+        <location filename="../minstall.cpp" line="1376"/>
         <source>The user password entries do
 not match.  Please try again.</source>
         <translation>パスワードが一致しません。
 もう一度入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1383"/>
+        <location filename="../minstall.cpp" line="1382"/>
         <source>The root password entries do
  not match.  Please try again.</source>
         <translation>ルートパスワードが一致していません。再度行って下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1417"/>
+        <location filename="../minstall.cpp" line="1416"/>
         <source>Sorry your computer name needs to be
 at least 2 characters long. You&apos;ll have to
 select a different name before proceeding.</source>
@@ -474,7 +474,7 @@ select a different name before proceeding.</source>
 再度設定して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1421"/>
+        <location filename="../minstall.cpp" line="1420"/>
         <source>Sorry your computer name contains invalid characters.
 You&apos;ll have to select a different
 name before proceeding.</source>
@@ -483,7 +483,7 @@ name before proceeding.</source>
 もう一度入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1427"/>
+        <location filename="../minstall.cpp" line="1426"/>
         <source>Sorry your computer domain needs to be at least
 2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
@@ -492,7 +492,7 @@ name before proceeding.</source>
 再度入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1431"/>
+        <location filename="../minstall.cpp" line="1430"/>
         <source>Sorry your computer domain contains invalid characters.
 You&apos;ll have to select a different
 name before proceeding.</source>
@@ -501,7 +501,7 @@ name before proceeding.</source>
 もう一度入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1440"/>
+        <location filename="../minstall.cpp" line="1439"/>
         <source>Sorry your workgroup needs to be at least
 2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
@@ -510,7 +510,7 @@ name before proceeding.</source>
 再度入力して下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1811"/>
+        <location filename="../minstall.cpp" line="1810"/>
         <source>MX Linux installation and configuration is complete.
 To use the new installation, reboot without the installation media.
 
@@ -520,7 +520,7 @@ Do you want to reboot now?</source>
 今すぐ再起動を行ってもよろしいですか？</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1827"/>
+        <location filename="../minstall.cpp" line="1826"/>
         <source>The installation and configuration is incomplete.
 Do you really want to stop now?</source>
         <translation>インストールと設定がまだ完了していません。
