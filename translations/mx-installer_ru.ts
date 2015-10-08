@@ -529,39 +529,39 @@ Do you really want to stop now?</source>
 Вы действительно хотите остановить сейчас?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1898"/>
+        <location filename="../minstall.cpp" line="1897"/>
         <source>&lt;p&gt;&lt;b&gt;General Instructions&lt;/b&gt;&lt;br/&gt;BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.&lt;/p&gt;&lt;p&gt;On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. You will be prompted for confirmation before any destructive actions are performed.&lt;/p&gt;&lt;p&gt;MX Linux requires about 3.5 GB of space. 5 GB or more is preferred. You can use the entire disk or you can put MX Linux on existing partitions. &lt;/p&gt;&lt;p&gt;If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system&apos;s software to set up partitions and boot manager before installing MX Linux.&lt;/p&gt;&lt;p&gt;The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Общие инструкции&lt;/b&gt;&lt;br/Прежде чем продолжить, закройте все другие приложения.&lt;/p&gt;&lt;p&gt;На каждой странице, пожалуйста, прочтите инструкции, сделайте выбор, а затем нажмите на Следующее, когда будете готовы, чтобы продолжить. Вам будет предложены подтверждения прежде, чем любые деструктивные действия готовы выполняться.&lt;/p&gt;&lt;p&gt;MX Linux требуется около 3,5 Гб дискового пространства. Предпочтительно, 5 Гб или больше. Вы можете использовать весь диск или вы можете поместить MX Linux на существующих разделах. &lt;/p&gt;&lt;p&gt;Если вы работаете в Mac OS или OS Windows (от Vista, и далее), вам, возможно, придется использовать программное обеспечение, системы для создания разделов и менеджерa загрузки перед установкой MX Linux.&lt;/p&gt;&lt;p&gt;Ext2, ext3, ext4, JFS, XFS, Btrfs и ReiserFS Linux файловые системы поддерживаются и ext4 рекомендуется.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1909"/>
+        <location filename="../minstall.cpp" line="1908"/>
         <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for badblocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has badblocks.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Oграничения&lt;/b&gt;&lt;br/&gt;Помните, что это программное обеспечение предоставляется абсолютно без гарантии. Обеспечение резервныx копий ваших данных перед началом работы является исключительно вашей ответственностью.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Выберите разделы&lt;/b&gt;&lt;br/&gt;MX Linux требует корневого раздела.Раздел подкачки не является обязательным, но очень рекомендуется. Если вы хотите использовать функцию Suspend-To-Disk МХ Linux, вам понадобится раздел подкачки, который больше вашей физической памяти.&lt;/p&gt;&lt;p&gt;Если вы выбираете отдельный / домашний раздел,  то вам будет легче обновить его в будущем, но это уже не будет возможным, если вы обновляете от той установки, которaя не имеeт отдельного раздела для домашнего.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Обновление&lt;/b&gt;&lt;br/&gt;Чтобы обновить существующую установку Linux, выберите тот же домашний раздел как и до, чтобы сохранить данные в / дом.&lt;/p&gt;&lt;p&gt;Если вы сохраняете существующуий / домашний каталог, который находится на корневом разделе, программа установки не будет переформатировать корневой раздел. В результате, установка займет гораздо больше времени, чем обычно.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Предпочтительный файловой Тип&lt;/b&gt;&lt;br/&gt;Для MX Linux, вы можете выбрать для форматирования разделы с файловой системой ext2, ext3, ext4, JFS, XFS, Btrfs или Райзер.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Плохие блоки&lt;/b&gt;&lt;br/&gt;Если вы выбираете ext2, ext3 или ext4 в качестве типа формата, у вас есть возможность проверки и исправления для badblocks на диске.Проверка badblock занимаеточень много времени, так что вы можете пропустить этот шаг, если вы не подозреваете, что ваш привод имеет badblocks.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1923"/>
+        <location filename="../minstall.cpp" line="1922"/>
         <source>Returning to Step 1 to select another disk.</source>
         <translation>Возвращаемся к этапу 1, чтобы выбрать другой диск</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1927"/>
+        <location filename="../minstall.cpp" line="1926"/>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis and antiX Communities&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Особая благодарность&lt;/b&gt;&lt;br/&gt;Спасибо всем, кто поддержал MX Linux времeм, деньгaми, предложениями, работaми, похвалaми, идеями, продвижениями по службе и / или поощрениями.&lt;/p&gt;&lt;p&gt;Без вас не было бы никакого MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis и Antix Сообщества&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1930"/>
+        <location filename="../minstall.cpp" line="1929"/>
         <source>&lt;p&gt;&lt;b&gt;Installation in Progress&lt;/b&gt;&lt;br/&gt;MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.&lt;/p&gt;&lt;p&gt;If you click the Abort button, the installation will be stopped as soon as possible.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Идет установка&lt;/b&gt;&lt;br/&gt;MX Linux занимается установкой. Для новой установки, это, вероятно, займет 3-20 минут, в зависимости от скорости вашей системы и размера разделoв, которые вы переформатироваeтe.&lt;/p&gt;&lt;p&gt;Если вы нажмете кнопку Отмена, установка будет остановлена, как можно скорее.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1942"/>
+        <location filename="../minstall.cpp" line="1941"/>
         <source>Failed to create required partitions.
 Returning to Step 1.</source>
         <translation>Не удалось создать необходимую перегородкy
 Возврат к этапу 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1951"/>
+        <location filename="../minstall.cpp" line="1950"/>
         <source>Failed to prepare chosen partitions.
 Returning to Step 1.</source>
         <translation>Не удалось подготовить выбранный перегородкy

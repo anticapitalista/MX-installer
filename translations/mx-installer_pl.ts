@@ -534,39 +534,39 @@ Do you really want to stop now?</source>
 Czy naprawdę chcesz zakończyć?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1898"/>
+        <location filename="../minstall.cpp" line="1897"/>
         <source>&lt;p&gt;&lt;b&gt;General Instructions&lt;/b&gt;&lt;br/&gt;BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.&lt;/p&gt;&lt;p&gt;On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. You will be prompted for confirmation before any destructive actions are performed.&lt;/p&gt;&lt;p&gt;MX Linux requires about 3.5 GB of space. 5 GB or more is preferred. You can use the entire disk or you can put MX Linux on existing partitions. &lt;/p&gt;&lt;p&gt;If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system&apos;s software to set up partitions and boot manager before installing MX Linux.&lt;/p&gt;&lt;p&gt;The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Instrukcja&lt;/b&gt;&lt;br/&gt;PRZED ROZPOCZĘCIEM ZAMKNIJ WSZYSTKIE INNE APLIKACJE.&lt;/p&gt;&lt;p&gt;Przeczytaj instrukcje zawarte na każdej ze stron, dokonaj wyborów, a potem kliknij „Następna”, gdy jesteś gotów kontynuować. Zostaniesz poproszony o potwierdzenie przed każdą akcją, która może dokonać poważnych zmian na komputerze.&lt;/p&gt;&lt;p&gt; MX Linux wymaga około 3,5G przestrzeni dyskowej. Zalecamy jednak przygotowanie przynajmniej 5G. Możesz wykorzystać cały dysk lub zainstalować MX Linux na istniejących partycjach. &lt;/p&gt;&lt;p&gt; Jeśli korzystasz z systemu Mac OS lub Windows (poczynając od Visty), może zaistnieć konieczność wykorzystania oprogramowania systemowego do przygotowania partycji oraz menadżera rozruchu przed instalacją MX Linux.&lt;/p&gt;&lt;p&gt;MX Linux wspiera partycje wykorzystujące następujące systemy plików: ext2, ext3, ext4 (rekomendowany), jfs, xfs, btrfs, reiserfs. &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1909"/>
+        <location filename="../minstall.cpp" line="1908"/>
         <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for badblocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has badblocks.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Ograniczenia&lt;/b&gt;&lt;br/&gt;Pamiętaj, że oprogramowanie jest dostarczone w przedstawionej formie – bez żadnej gwarancji. Zalecamy wykonanie kopii zapasowej Twoich danych przed kontynuowaniem procesu na własną odpowiedzialność.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Wybierz partycje&lt;/b&gt;&lt;br/&gt;MX Linux wymaga partycji głównej (root). Obecność partycji wymiany (SWAP) jest opcjonalna, lecz rekomendowana. Jeśli chcesz korzystać z funkcji hibernacji, partycja SWAP musi być większa niż dostępna w Twoim komputerze pamięć RAM.&lt;/p&gt;&lt;p&gt;Jeśli wybierzesz osobną partycję /home łatwiej będzie Ci w przyszłości zaktualizować system. Jej utworzenie nie jest możliwe jeśli aktualizujesz istniejącą instalację, która jej nie posiada. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Aktualizacja&lt;/b&gt;&lt;br/&gt;By zaktualizować obecną instalację systemu Linux, wybierz te same partycje, co poprzednio i zaznacz opcję zachowania danych w /home.&lt;/p&gt;&lt;p&gt; Jeśli zachowujesz dane z /home, które zlokalizowane jest na partycji głównej, instalator jej nie sformatuje. W rezultacie instalacja potrwa znacznie dłużej niż zwykle.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Zalecany system plików&lt;/b&gt;&lt;br/&gt;MX Linux wspiera systemy plików ext2, ext3, ext4, jfs, xfs, btrfs i reiserfs.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Uszkodzone sektory&lt;/b&gt;&lt;br/&gt;Jeśli wybierzesz ext2, ext3 lub ext4 zyskasz możliwość sprawdzenia oraz korekty uszkodzonych sektorów dysku. Sprawdzenie dysku pod kątem błędnych sektorów trwa bardzo długo, możesz zatem je pominąć, chyba że podejrzewasz ich obecność na dysku.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1923"/>
+        <location filename="../minstall.cpp" line="1922"/>
         <source>Returning to Step 1 to select another disk.</source>
         <translation>Powrót do kroku pierwszego by wybrać inny dysk.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1927"/>
+        <location filename="../minstall.cpp" line="1926"/>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis and antiX Communities&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Specjalne podziękowania&lt;/b&gt;&lt;br/&gt;Pragnę podziękować wszystkim, którzy przyczynili się do wsparcia MX Linux swoim czasem, pieniędzmi, sugestiami, pracą, pochwałą, pomysłami, promocją i/lub zachętą.&lt;/p&gt;&lt;p&gt;Bez Was nie byłoby MX Linux.&lt;/p&gt;&lt;p&gt;oraz społeczności anticapitalista, Mepis i antiX&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1930"/>
+        <location filename="../minstall.cpp" line="1929"/>
         <source>&lt;p&gt;&lt;b&gt;Installation in Progress&lt;/b&gt;&lt;br/&gt;MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.&lt;/p&gt;&lt;p&gt;If you click the Abort button, the installation will be stopped as soon as possible.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Trwa instalacja&lt;/b&gt;&lt;br/&gt;MX Linux jest instalowany. Świeża instalacja zajmie prawdopodobnie od 3 do 20 minut, w zależności od możliwości sprzętowych Twojego komputera i rozmiaru partycji, które zostały ustanowione.&lt;/p&gt;&lt;p&gt;Jeśli zostanie kliknięty przycisk Przerwij, instalacja zostanie zatrzymana tak szybko jak to możliwe.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1942"/>
+        <location filename="../minstall.cpp" line="1941"/>
         <source>Failed to create required partitions.
 Returning to Step 1.</source>
         <translation>Błąd przy tworzeniu wymaganych partycji.
 Powracam do kroku 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1951"/>
+        <location filename="../minstall.cpp" line="1950"/>
         <source>Failed to prepare chosen partitions.
 Returning to Step 1.</source>
         <translation>Błąd przy przygotowywaniu wybranych partycji.

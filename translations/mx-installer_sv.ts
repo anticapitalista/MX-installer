@@ -535,39 +535,39 @@ Do you really want to stop now?</source>
 Vill du verkligen sluta nu?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1898"/>
+        <location filename="../minstall.cpp" line="1897"/>
         <source>&lt;p&gt;&lt;b&gt;General Instructions&lt;/b&gt;&lt;br/&gt;BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.&lt;/p&gt;&lt;p&gt;On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. You will be prompted for confirmation before any destructive actions are performed.&lt;/p&gt;&lt;p&gt;MX Linux requires about 3.5 GB of space. 5 GB or more is preferred. You can use the entire disk or you can put MX Linux on existing partitions. &lt;/p&gt;&lt;p&gt;If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system&apos;s software to set up partitions and boot manager before installing MX Linux.&lt;/p&gt;&lt;p&gt;The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Allmänna instruktioner&lt;/b&gt;&lt;br/&gt;INNAN DU FORTSÄTTER, STÄNG ALLA ANDRA PROGRAM.&lt;/p&gt;&lt;p&gt;Var vänlig läs instruktionerna på varje sida, gör dina val och klicka sen på Nästa när du är klar att fortsätta. Du kommer att ombes konfirmera innan några förstörande åtgärder utförs.&lt;/p&gt;&lt;p&gt;MX Linux behöver cirka 3,5 GB utrymme. 5 GB eller mer är att föredra. Du kan använda hela hårddisken eller du kan installera MX Linux på existerande partitioner. &lt;/p&gt;&lt;p&gt;Om du använder Mac OS eller Windows OS (från och med Vista), kan du behöva använda det systemets program för att sätta upp partitioner och  boot manager före installationen av MX Linux.&lt;/p&gt;&lt;p&gt;ext2, ext3, ext4, jfs, xfs, btrfs och reiserfs Linux filesystem stöds och ext4 rekommenderas.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1909"/>
+        <location filename="../minstall.cpp" line="1908"/>
         <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for badblocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has badblocks.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Begränsningar&lt;/b&gt;&lt;br/&gt;Kom ihåg, denna mjukvara kommer som den är utan någon som helst garanti. Det är helt ditt eget ansvar att backa upp dina data innan du fortsätter.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Välj partitioner&lt;/b&gt;&lt;br/&gt;MX Linux behöver en root partition. Swap partitionen är frivillig, men är varmt rekommenderad. Om du vill använda Suspend-to-Disk viloläget hos MX Linux, behöver du en swap partition som är större än den fysiska minnesstorleken.&lt;/p&gt;&lt;p&gt;Om du har valt en separat /home partition blir det lättare för dig att uppgradera i framtiden, men det kommer inte att vara möjligt om du uppgraderar från en installation utan en separat hempartition&lt;/p&gt;&lt;p&gt;&lt;b&gt;Uppgradera&lt;/b&gt;&lt;br/&gt;För att uppgradera från en existerande Linux installation, välj samma hem-partition som tidigare och kryssa för alternativet att bevara data i /home.&lt;/p&gt;&lt;p&gt;Om du bevarar ett existerande hemkatalog-träd beläget på root partitionen, kommer installeraren inte att omformatera root partitionen. Resultatet blir att installationen tar mycket längre tid än vanligt.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Föredragen Filsystemstyp&lt;/b&gt;&lt;br/&gt;För MX Linux kan du välja att formatera partitionerna som ext2, ext3, ext4, jfs, xfs, btrfs eller reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Dåliga sektorer&lt;/b&gt;&lt;br/&gt;Om du valt ext2, ext3 or ext4 som filformat, har du möjlighet att undersöka och korrigera för dåliga sektorer på hårddisken. Dåliga sektorer-kontollen tar mycket lång tid, så det är troligt att du vill hoppa över det här steget om du inte tror att hårddisken har dåliga sektorer.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1923"/>
+        <location filename="../minstall.cpp" line="1922"/>
         <source>Returning to Step 1 to select another disk.</source>
         <translation>Återvänder till Steg 1 för att välja en annan disk.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1927"/>
+        <location filename="../minstall.cpp" line="1926"/>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis and antiX Communities&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Speciellt Tack&lt;/b&gt;&lt;br/&gt;Tack till alla som valt att stöda MX Linux med sin tid, pengar, förslag, arbete, lovord, ideéer, reklam, och/eller uppmuntran. &lt;/p&gt;&lt;p&gt;Utan er skulle det inte finnas något MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis och antiX Communities&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1930"/>
+        <location filename="../minstall.cpp" line="1929"/>
         <source>&lt;p&gt;&lt;b&gt;Installation in Progress&lt;/b&gt;&lt;br/&gt;MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.&lt;/p&gt;&lt;p&gt;If you click the Abort button, the installation will be stopped as soon as possible.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Installation pågår&lt;/b&gt;&lt;br/&gt;MX Linux installeras. För en ny installation tar det troligen 3-20 minuter, beroende på ditt systems prestanda och storleken på partitionerna du omformaterar&lt;/p&gt;&lt;p&gt;Om du trycker på Avbryt-knappen, kommer installationen att stoppas så snart som möjligt.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1942"/>
+        <location filename="../minstall.cpp" line="1941"/>
         <source>Failed to create required partitions.
 Returning to Step 1.</source>
         <translation>Misslyckades med att skapa nödvändiga partitioner.
 Återvänder till Steg 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1951"/>
+        <location filename="../minstall.cpp" line="1950"/>
         <source>Failed to prepare chosen partitions.
 Returning to Step 1.</source>
         <translation>Misslyckades med att förbereda valda partitioner.

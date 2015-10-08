@@ -1853,8 +1853,7 @@ int MInstall::showPage(int curr, int next) {
     }
   } else if (next == 3 && curr == 4) {
     return 1;
-  } else if (next == 5 && curr == 4) {
-    on_grubBootCombo_activated();
+  } else if (next == 5 && curr == 4) {    
     if (!installLoader()) {
       return curr;
     } else {
@@ -1959,6 +1958,7 @@ void MInstall::pageDisplayed(int next) {
       break;
 
     case 4:
+      on_grubBootCombo_activated();
       setCursor(QCursor(Qt::ArrowCursor));
       ((MMain *)mmn)->setHelpText(tr("<p><b>Select Boot Method</b><br/>MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. "
         "<p>By default GRUB2 is installed in the Master Boot Record of your boot drive and replaces the boot loader you were using before. This is normal.</p>"

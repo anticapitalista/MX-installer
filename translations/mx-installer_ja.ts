@@ -527,39 +527,39 @@ Do you really want to stop now?</source>
 処理を止めてよろしいですか？</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1898"/>
+        <location filename="../minstall.cpp" line="1897"/>
         <source>&lt;p&gt;&lt;b&gt;General Instructions&lt;/b&gt;&lt;br/&gt;BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.&lt;/p&gt;&lt;p&gt;On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. You will be prompted for confirmation before any destructive actions are performed.&lt;/p&gt;&lt;p&gt;MX Linux requires about 3.5 GB of space. 5 GB or more is preferred. You can use the entire disk or you can put MX Linux on existing partitions. &lt;/p&gt;&lt;p&gt;If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system&apos;s software to set up partitions and boot manager before installing MX Linux.&lt;/p&gt;&lt;p&gt;The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;はじめに&lt;/b&gt;&lt;br/&gt;実行の前に他のアプリケーションを閉じて下さい。&lt;/p&gt;&lt;p&gt;各ページに表示される表示を読み、選択を行って下さい。進めてもよろしければ「次へ」を押して進めて下さい。&lt;/p&gt;&lt;p&gt;MX Linux では 3.5 GB の空き容量が必要です。5 GB 以上が推奨されます。任意のディスクによるパーティション内で MX Linux を使用する事ができます。&lt;/p&gt;&lt;p&gt;もしパソコンをご利用で、パーティション作業が必要であれば GParted を実行しパーティションを修正した後、カスタムインストールを使用して下さい。もし Apple 製のハードウェアを使用している場合は parted や GParted を起動ドライブで使用しないで下さい。MX Linux をインストールする前に OS X または Windows OS (Vista 以降) からパーティションとブートマネージャの設定を行って下さい。&lt;/p&gt;&lt;p&gt;ファイルシステムは ext2、ext3、ext4、jfs、xfs、btrfs、reiserfs の Linux ファイルシステムに対応しています。ext4 が推奨されます。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1909"/>
+        <location filename="../minstall.cpp" line="1908"/>
         <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for badblocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has badblocks.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;無保証&lt;/b&gt;&lt;br/&gt;このソフトウェアは保証なしで提供されます。 データのバックアップを取って下さい。&lt;/p&gt;&lt;p&gt;&lt;b&gt;パーティション&lt;/b&gt;&lt;br/&gt;MX Linux はルートパーティションが必須です。また swap パーティションも作成でき、推奨されます。MX Linux でディスクを休ませるようにするには、swap パーティションを実際のメモリより大きい容量にして下さい。&lt;/p&gt;&lt;p&gt;ホームパーティションを別のパーティションで作成すると、将来的にアップグレードを容易に行う事ができます。&lt;/p&gt;&lt;p&gt;&lt;b&gt;更新&lt;/b&gt;&lt;br/&gt;すでにインストールしている Linux を更新する場合、ホームパーティションが存在すれば、それを選んで下さい。&lt;/p&gt;&lt;p&gt;もしルートパーティション内にホームディレクトリが存在する場合、ルートパーティションのフォーマットを行いません。この場合インストール作業は時間を要します。&lt;/p&gt;&lt;p&gt;&lt;b&gt;望ましいファイルシステムの種類&lt;/b&gt;&lt;br/&gt;MX Linux ではext2、ext3、ext4、jfs、xfs、btrfs、reiser をフォーマットの種類として選択できます。&lt;/p&gt;&lt;p&gt;&lt;b&gt;不良ブロック&lt;/b&gt;&lt;br/&gt;ext2、ext3、ext4 をフォーマット形式で選んだ場合、ドライブの不良ブロック確認するオプションを選択できます。不良ドライブの確認はとても時間を要します。ドライブに不良ブロックがある事を思われない限りはこの手順をスキップしても良いでしょう。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1923"/>
+        <location filename="../minstall.cpp" line="1922"/>
         <source>Returning to Step 1 to select another disk.</source>
         <translation>Step 1 へ処理を戻します。他のディスクを選んで下さい。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1927"/>
+        <location filename="../minstall.cpp" line="1926"/>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis and antiX Communities&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;スペシャルサンクス&lt;/b&gt;&lt;br/&gt;時間、金銭、作業、賞賛、アイデアなど、MX Linux を支援していただく皆様に感謝いたします。&lt;/p&gt;&lt;p&gt;あなたなしでは MX Linux は存在しません。&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis and antiX Communities&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1930"/>
+        <location filename="../minstall.cpp" line="1929"/>
         <source>&lt;p&gt;&lt;b&gt;Installation in Progress&lt;/b&gt;&lt;br/&gt;MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.&lt;/p&gt;&lt;p&gt;If you click the Abort button, the installation will be stopped as soon as possible.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;インストール作業&lt;/b&gt;&lt;br/&gt;MX Linux をインストールしています。フレッシュインストールの場合はおおよそ 3〜20 分要します。この速度はシステムやパーティション構成で変わります。&lt;/p&gt;&lt;p&gt;もし中断ボタンを押した場合、はやいうちにインストールを止める事ができます。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1942"/>
+        <location filename="../minstall.cpp" line="1941"/>
         <source>Failed to create required partitions.
 Returning to Step 1.</source>
         <translation>必須パーティションの生成に失敗しました。
 Step 1 へ処理を戻します。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1951"/>
+        <location filename="../minstall.cpp" line="1950"/>
         <source>Failed to prepare chosen partitions.
 Returning to Step 1.</source>
         <translation>パーティションの設定に失敗しました。

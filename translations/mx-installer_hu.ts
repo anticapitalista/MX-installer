@@ -523,39 +523,39 @@ Do you really want to stop now?</source>
 Biztos meg akarod állítani a folyamatot?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1898"/>
+        <location filename="../minstall.cpp" line="1897"/>
         <source>&lt;p&gt;&lt;b&gt;General Instructions&lt;/b&gt;&lt;br/&gt;BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.&lt;/p&gt;&lt;p&gt;On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. You will be prompted for confirmation before any destructive actions are performed.&lt;/p&gt;&lt;p&gt;MX Linux requires about 3.5 GB of space. 5 GB or more is preferred. You can use the entire disk or you can put MX Linux on existing partitions. &lt;/p&gt;&lt;p&gt;If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system&apos;s software to set up partitions and boot manager before installing MX Linux.&lt;/p&gt;&lt;p&gt;The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Általános Útmutatók&lt;/b&gt;&lt;br/&gt;MIELŐTT FOLYTATNÁD, ZÁRD BE AZ ÖSSZES EGYÉB ALKALMAZÁST. HA A 3D ASZTALT HASZNÁLOD, JAVASOLT A KIJELENTKEZÉS ÉS A SIMA KDE ASZTALRA VALÓ ÚJBÓLI BEJELENTKEZÉS.&lt;/p&gt;&lt;p&gt;Mindegyik oldalon olvasd el az útmutatókat, válaszd ki a megfelelő beállításokat, majd nyomd meg a Tovább gombot mikor kész vagy. Mindennemű destruktív művelet előtt a beleegyezésed ki lesz kérve.&lt;/p&gt;&lt;p&gt;A MX Linux még a bővebb verzió 3,5 GB-ot. 5 GB vagy annál több rendelkezésre álló hely javasolt. Az egész lemezt is fölhasználhatod vagy már meglévő partíciókra is telepítheted a MX Linux-t.&lt;/p&gt;&lt;p&gt;Ha PC típusú hardvert használsz, akkor futtasd innen a GParted alkalmazást, ha módosítanod kell néhány partíciót az egyéni telepítés előtt. Ha Apple típusú hardvert használsz, soha ne használd a GParted vagy parted alkalmazást a boot lemezeden. Ehelyett használd az OSX alkalmazásait a partíciók beállítására illetve az OSX bootmenedzserét a MX Linux telepítése előtt.&lt;/p&gt;&lt;p&gt;Az ext2, ext3, ext4, jfs, xfs, btrfs és reiserfs fájlrendszerek vannak támogatva, amelyek közül az ext4 az ajánlott.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1909"/>
+        <location filename="../minstall.cpp" line="1908"/>
         <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for badblocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has badblocks.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Korlátozások&lt;/b&gt;&lt;br/&gt;Emlékezz, hogy ezt a programot úgy kapod AHOGY VAN, mindenféle garancia nélkül. Teljesen a te felelőséged az adatok lementése a telepítés folytatása előtt.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Partíciók Kiválasztása&lt;/b&gt;&lt;br/&gt;A MX Linux-nek szüksége van egy root partícióra. A swap partíció használata tetszőleges, ám erősen ajánlott. Ha a későbbiekben szeretnéd használni a MX Linux hibernálás funkcióját, akkor a fizikai memóriánál (RAM) nagyobb méretű swap partícióra szükséged lesz.&lt;/p&gt;&lt;p&gt;Ha a különálló /home partíció mellett döntesz, akkor a későbbiekben könnyebb lesz a rendszer frissítése. Különálló home partíció nélküli rendszer esetén az ilyen, egyszerű frissítés nem lehetséges.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Frissítés&lt;/b&gt;&lt;br/&gt;Ha egy már létező Linux-ot frissítesz, akkor válaszd ki az előzőleg használt /home partíciót és pipáld be a &apos;Adatok meghagyása a /home-ban&apos; opciót.&lt;/p&gt;&lt;p&gt;Ha a root partíción már létező home könyvtárban hagyod meg az adatokat, akkor a telepítő nem fogja újraformázni a root partíciót. Ennek az lesz az eredménye, hogy a telepítés a szokásosnál hosszabb ideig fog tartani.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Ajánlott Fájlrendszer Típus&lt;/b&gt;&lt;br/&gt;Az ext3, ext4, jfs, xfs, btrfs és reiserfs fájlrendszerek egyikét választhatod ki a MX Linux számára.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Hibás Blokkok&lt;/b&gt;&lt;br/&gt;Ha az ext2, ext3 és ext4 fájlrendszert választod, akkor lehetőséged van a merevlemezen esetlegesen előforduló hibás blokkok keresésére és javítására. A hibás blokkok keresése nagyon időigényes. Hacsak nem gyanakszol hibás blokkokra a merevlemezeden, akkor valószínűleg ki szeretnéd hagyni ezt a tesztet.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1923"/>
+        <location filename="../minstall.cpp" line="1922"/>
         <source>Returning to Step 1 to select another disk.</source>
         <translation>Visszatérés az 1. Lépéshez.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1927"/>
+        <location filename="../minstall.cpp" line="1926"/>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis and antiX Communities&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Külön Köszönet&lt;/b&gt;&lt;br/&gt;Köszönöm mindenkinek aki időt, pénzt, tanácsot, munkát, dicséretet, ötletet, híresztelést és/vagy bátorítást adott, hogy támogassa a MX Linux-t.&lt;/p&gt;&lt;p&gt;Nélkületek nem létezne MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis és antiX Communities&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1930"/>
+        <location filename="../minstall.cpp" line="1929"/>
         <source>&lt;p&gt;&lt;b&gt;Installation in Progress&lt;/b&gt;&lt;br/&gt;MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.&lt;/p&gt;&lt;p&gt;If you click the Abort button, the installation will be stopped as soon as possible.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Telepítés Folyamatban&lt;/b&gt;&lt;br/&gt;A MX Linux telepszik. Új telepítésnél ez valószínűleg 3-20 percet fog igénybe venni a rendszered sebességétől és a általad formázott partíciók méretétől függően.&lt;/p&gt;&lt;p&gt;Ha megnyomod a Megszakít gombot, akkor a telepítés a lehető leghamarább le fog állni.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1942"/>
+        <location filename="../minstall.cpp" line="1941"/>
         <source>Failed to create required partitions.
 Returning to Step 1.</source>
         <translation>A szükséges partíciók létrehozása sikertelen.
 Visszatérés az 1. lépéshez.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1951"/>
+        <location filename="../minstall.cpp" line="1950"/>
         <source>Failed to prepare chosen partitions.
 Returning to Step 1.</source>
         <translation>A kiválasztott partíciók előkészítése sikertelen.

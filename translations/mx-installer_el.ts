@@ -528,39 +528,39 @@ Do you really want to stop now?</source>
 Θέλετε πραγματικά να σταματήσετε τώρα;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1898"/>
+        <location filename="../minstall.cpp" line="1897"/>
         <source>&lt;p&gt;&lt;b&gt;General Instructions&lt;/b&gt;&lt;br/&gt;BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.&lt;/p&gt;&lt;p&gt;On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. You will be prompted for confirmation before any destructive actions are performed.&lt;/p&gt;&lt;p&gt;MX Linux requires about 3.5 GB of space. 5 GB or more is preferred. You can use the entire disk or you can put MX Linux on existing partitions. &lt;/p&gt;&lt;p&gt;If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system&apos;s software to set up partitions and boot manager before installing MX Linux.&lt;/p&gt;&lt;p&gt;The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Γενικές Οδηγίες&lt;/b&gt;&lt;br/&gt;ΠΡΙΝ ΠΡΟΧΩΡΗΣΕΤΕ, ΚΛΕΙΣΤΕ ΟΛΕΣ ΤΙΣ ΑΛΛΕΣ ΕΦΑΡΜΟΓΕΣ.&lt;/p&gt;&lt;p&gt;Σε κάθε σελίδα, παρακαλώ διαβάστε τις οδηγίες, κάντε τις επιλογές σας και μετά κάντε κλικ στο Επόμενο, όταν είσθε έτοιμοι να προχωρήσετε. Θα σας ζητηθεί επιβεβαίωση πριν κάνετε οποιαδήποτε πιθανώς καταστροφική ενέργεια.&lt;/p&gt;&lt;p&gt;Το MX Linux απαιτούν περίπου 3,5 GB χώρου. Είναι προτιμώτερα τα 5 ή και παραπάνω GB χώρου. Μπορείτε να χρησιμοποιήσετε ολόκληρο το δίσκο, ή μπορείτε να βάλετε το MX Linux σε κάποια από τις υπάρχουσες κατατμήσεις.  &lt;/p&gt;&lt;p&gt;Αν χρησιμοποιείτε hardware τύπου PC, τρέξτε το GParted από εδώ, αν πρέπει να τροποποιήσετε μερικές κατατμήσεις, πριν κάνετε μία παραμετροποιημένη εγκατάσταση (custom). Αν χρησιμοποιείτε hardware της Apple, δεν θα πρέπει να χρησιμοποιήσετε σε καμία περίπτωση το parted ήτο GParted στο boot drive σας. Αντιθέτως, πρέπει να ρυθμίσετε τις κατατμήσεις σας και τον διαχειριστή εκκίνησης (boot manager) στο OSX, πριν εγκαταστήσετε το MX Linux.&lt;/p&gt;&lt;p&gt;Υποστηρίζονται τα συστήματα αρχείων Linux τύπου ext2, ext3, ext4 jfs, xfs, btrfs και reiserfs, ενώ συστήνονται τα ext4.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1909"/>
+        <location filename="../minstall.cpp" line="1908"/>
         <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for badblocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has badblocks.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Περιορισμοί&lt;/b&gt;&lt;br/&gt;Να θυμάστε ότι αυτό το λογισμικό προσφέρεται ΩΣ ΕΧΕΙ χωρίς καμία απολύτως εγγύηση. Είναι αποκλειστικά δικιά σας ευθύνη να πάρετε αντίγραφα ασφαλείας των δεδομένων σας πριν.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Επιλέξτε Κατατμήσεις&lt;/b&gt;&lt;br/&gt;Το MX Linux προαπαιτεί την ύπαρξη μίας κατάτμησης συστήματος (root partition). Η κατάτμηση swap είναι προαιρετική αλλά συστήνεται εντόνως. Αν θέλετε να χρησιμοποιήσετε την δυνατότητα Suspend-to-Disk του MX Linux, τότε θα χρειασθείτε μία κατάτμηση swap που να είναι μεγαλύτερη από το μέγεθος της φυσικής σας μνήμης.&lt;/p&gt;&lt;p&gt;Αν επιλέξετε μία χωριστή κατάτμηση χρήστη /home partition, θα είναι ευκολότερο να κάνετε αναβαθμίσεις στο μέλλον, ενώ κάτι τέτοιο δεν θα είναι εφικτό αν αναβαθμίσετε από μία εγκατάσταση που δεν διαθέτει μία χωριστή κατάτμηση χρήστη.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Αναβάθμιση&lt;/b&gt;&lt;br/&gt;Για να κάνετε αναβάθμιση από μία υπάρχουσα εγκατάσταση Linux, επιλέξτε την ίδια κατάτμηση χρήστη (home partition) όπως και πριν, και τσεκάρετε την προτίμηση να διατηρούνται τα δεδομένα στο /home.&lt;/p&gt;&lt;p&gt;Αν φροντίσετε το υπάρχον /home directory tree να βρίσκεται στην κατάτμηση συστήματος (root partition), τότε ο εγκαταστάτης δεν θα ξανακάνει φορμά στην κατάτμηση συστήματος. Συνεπώς, η εγκατάσταση θα κρατήσει πολύ παραπάνω από το συνηθισμένο.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Προτιμώμενες μορφές Αρχείων Συστήματος&lt;/b&gt;&lt;br/&gt;Για το MX Linux, μπορείτε να επιλέξετε τη μορφοποίηση των κατατμήσεων σε ext2, ext3, ext4, jfs, xfs, btrfs ή reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;Αν επιλέξετε το ext2, ext3 or ext4 σαν τη μορφή αρχείων, έχετε την επιλογή να τσεκάρετε και να διορθώσετε τα badblocks που έχει το drive. Ο έλεγχος για badblock είναι πολύ χρονοβόρος, και έτσι μπορεί να θέλετε να παραβλέψετε αυτό το βήμα, εκτός και αν υποψιάζεσθε ότι το δικό σας drive μπορεί να έχει badblocks.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1923"/>
+        <location filename="../minstall.cpp" line="1922"/>
         <source>Returning to Step 1 to select another disk.</source>
         <translation>Επιστροφή στο Βήμα 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1927"/>
+        <location filename="../minstall.cpp" line="1926"/>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis and antiX Communities&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Ιδιαίτερες Ευχαριστίες&lt;/b&gt;&lt;br/&gt;Τις ευχαριστίες μου προς όλους εκείνους που επέλεξαν να υποστηρίξουν το MX Linux με τον χρόνο τους, χρήμα, υποδείξεις, εργασία, επαίνους, ιδέες, προώθηση και/ή ενθάρρυνση.&lt;/p&gt;&lt;p&gt;Χωρίς εσάς, δεν θα υπήρχε καθόλου το MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis και antiX Communities&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1930"/>
+        <location filename="../minstall.cpp" line="1929"/>
         <source>&lt;p&gt;&lt;b&gt;Installation in Progress&lt;/b&gt;&lt;br/&gt;MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.&lt;/p&gt;&lt;p&gt;If you click the Abort button, the installation will be stopped as soon as possible.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Η εγκατάσταση προχωρά&lt;/b&gt;&lt;br/&gt;Το MX Linux εγκαθίσταται. Μία νέα εγκατάσταση, θα πάρει πιθανώς περί τα 3-20 λεπτα, ανάλογα με την ταχύτητα του συστήματός σας και το μέγεθος των κατατμήσεων τις οποίες επαναμορφοποιέιτε.&lt;/p&gt;&lt;p&gt;Αν κάνετε κλικ στο κουμπί Ματαίωση, η εγκατάσταση θα σταματήσει το συντομώτερο δυνατόν.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1942"/>
+        <location filename="../minstall.cpp" line="1941"/>
         <source>Failed to create required partitions.
 Returning to Step 1.</source>
         <translation>Αποτυχία δημιουργίας των απαιτούμενων κατατμήσεων.
 Επιστροφή στο Βήμα 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1951"/>
+        <location filename="../minstall.cpp" line="1950"/>
         <source>Failed to prepare chosen partitions.
 Returning to Step 1.</source>
         <translation>Αποτυχία προετοιμασίας των Κατατμήσεων που επιλέχθηκαν.

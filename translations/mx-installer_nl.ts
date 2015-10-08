@@ -528,39 +528,39 @@ Do you really want to stop now?</source>
 Wilt u werkelijk stoppen?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1898"/>
+        <location filename="../minstall.cpp" line="1897"/>
         <source>&lt;p&gt;&lt;b&gt;General Instructions&lt;/b&gt;&lt;br/&gt;BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.&lt;/p&gt;&lt;p&gt;On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. You will be prompted for confirmation before any destructive actions are performed.&lt;/p&gt;&lt;p&gt;MX Linux requires about 3.5 GB of space. 5 GB or more is preferred. You can use the entire disk or you can put MX Linux on existing partitions. &lt;/p&gt;&lt;p&gt;If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system&apos;s software to set up partitions and boot manager before installing MX Linux.&lt;/p&gt;&lt;p&gt;The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Algemene aanwijzingen&lt;b&gt;&lt;br/&gt;VOORDAT U VERDER GAAT, SLUIT EERST ALLE ANDERE TOEPASSINGEN.&lt;/p&gt;&lt;p&gt;Lees de aanwijzingen op iedere pagina, maak uw keuze, en klik dan op &apos;Volgende&apos; als u weer verder wilt gaan. U wordt steeds om bevestiging gevraagd voordat een riskante handeling wordt uitgevoerd.&lt;/p&gt;&lt;p&gt; MX Linux ongeveer 3,5 GB geheugenruimte. 5 GB of meer verdient echter de voorkeur. U kunt de gehele schijf gebruiken of u kunt MX Linux installeren op bestaande partities. &lt;/p&gt;&lt;p&gt; Indien u Mac OS of Windows OS (Vista of nieuwer) gebruikt, dient U bij voorkeur systeemsoftware van die OS&apos;n te gebruiken om de gewenste partities en boot manager in te stellen voordat MX Linux wordt geinstalleerd. voer GParted van hier uit, wanneer de partities moeten worden aangepast voordat u een standaard installatie kunt doen..&lt;/p&gt;&lt;p&gt;De ext2, ext3, ext4, jfs, xfs, btrfs en reiserfs Linux bestands-systemen worden ondersteund, en ext4 wordt aanbevolen.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1909"/>
+        <location filename="../minstall.cpp" line="1908"/>
         <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for badblocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has badblocks.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Beperkingen&lt;/b&gt;&lt;br/&gt;Weet dat in deze software wordt voorzien AS-IS, zonder enige garantie. Het is louter uw verantwoordelijkheid om uw gegevens op te slaan, voordat u verder gaat.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Partities kiezen&lt;/b&gt;&lt;br/&gt;MX Linux vereist een root-partitie. De swap-partitie is optioneel, maar wordt sterk aanbevolen. Indien u de Suspend-to-Disk mogelijkheid van MX Linux wilt gebruiken, hebt u een swap-partitie nodig die groter is dan de omvang van het fysieke geheugen.&lt;/p&gt;&lt;p&gt;Indien u kiest voor een afzonderlijke/home-partitie zal het gemakkelijker zijn om in de toekomst op te waarderen, maar dit zal niet mogelijk zijn als u een installatie wilt opwaarderen zonder aparte /home-partitie.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Opwaarderen&lt;/b&gt;&lt;br/&gt;Om een bestaande Linux-installatie op te waarderen, kies dezelfde home-partitie als voorheen en vink de voorkeur aan, om de gegevens op te slaan in /home.&lt;/p&gt;&lt;p&gt;Indien u een reeds bestaande /home-directory structuur bewaart die onderdeel uitmaakt van uw root-partitie, zal het installatieprogramma de root-partitie niet opnieuw formatteren. De installatie zal dientengevolge veel meer tijd in beslag nemen dan normaal.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Aanbevolen type bestandssysteem&lt;/b&gt;&lt;br/&gt;Voor MX Linux kunt u ervoor kiezen om de partities te formatteren als ext3, ext4, jfs, xfs, btrfs of reiser.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;Als u kiest voor ext2, ext3 of ext4 als het format-type, hebt u de mogelijk om &apos;Bad Blocks&apos; op uw schijf op te sporen en te corrigeren. Deze procedure kost echter veel tijd. U kunt ervoor kiezen om deze stap over te slaan, tenzij u vermoedt dat uw schijf Bad Blocks heeft.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1923"/>
+        <location filename="../minstall.cpp" line="1922"/>
         <source>Returning to Step 1 to select another disk.</source>
         <translation>Terugkeren naar stap 1 om een andere schijf te selecteren.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1927"/>
+        <location filename="../minstall.cpp" line="1926"/>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis and antiX Communities&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Speciale dank&lt;/b&gt;&lt;br/&gt;Mijn dank aan iedereen die MX Linux ondersteunt met tijd, geld, suggesties, werk, gebed, ideeen, promotie, en/of aanmoediging.&lt;/p&gt;&lt;p&gt;Zonder u zou er geen MX Linux zijn.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis en antiX Communities&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1930"/>
+        <location filename="../minstall.cpp" line="1929"/>
         <source>&lt;p&gt;&lt;b&gt;Installation in Progress&lt;/b&gt;&lt;br/&gt;MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.&lt;/p&gt;&lt;p&gt;If you click the Abort button, the installation will be stopped as soon as possible.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Voortgang van installatie&lt;/b&gt;&lt;br/&gt;MX Linux wordt geinstalleerd. Voor een nieuwe installatie zal dat ongeveer 3-20 minuten in beslag nemen, afhankelijk van de snelheid van uw systeem en de grootte van de partities die u herformatteert.&lt;/p&gt;&lt;p&gt;Wanneer u de knop &apos;Afgelasten&apos; aanklikt, wordt de installatie zo snel mogelijk stopgezet.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1942"/>
+        <location filename="../minstall.cpp" line="1941"/>
         <source>Failed to create required partitions.
 Returning to Step 1.</source>
         <translation>Het aanmaken van de vereiste partities is mislukt.
 Terugkeren naar stap 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1951"/>
+        <location filename="../minstall.cpp" line="1950"/>
         <source>Failed to prepare chosen partitions.
 Returning to Step 1.</source>
         <translation>Het voorbereiden van de gekozen partities is mislukt.
