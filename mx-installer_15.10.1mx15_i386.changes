@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Thu, 08 Oct 2015 16:37:04 -0400
+Source: mx-installer
+Binary: mx-installer
+Architecture: source i386
+Version: 15.10.1mx15
+Distribution: mx
+Urgency: medium
+Maintainer: anticapitalista <antiX@operamail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description: 
+ mx-installer - GUI installer for MX Linux.
+Changes: 
+ mx-installer (15.10.1mx15) mx; urgency=medium
+ .
+   * update gptdospartinfo script
+Checksums-Sha1: 
+ 2217951e331cfeab14f2c4d98c81f7503ead01f1 650 mx-installer_15.10.1mx15.dsc
+ 7330584645a1964c550a884d955bfa42a51dcfe2 5071266 mx-installer_15.10.1mx15.tar.gz
+ 907deb954a97f197d88bea78bd390af4e27a7a1d 219932 mx-installer_15.10.1mx15_i386.deb
+Checksums-Sha256: 
+ 88a6cd25a1d6b4badf168a83b583dac5bd7a08505c36414870591ed9026eb47c 650 mx-installer_15.10.1mx15.dsc
+ 00d529e3dd1b5453aa98b89e35bfac83d9574d036ff20f51cbe561b93ee355f8 5071266 mx-installer_15.10.1mx15.tar.gz
+ fb7b48f71de8f85b64b41621480294592b210ef8946cc008bca980d4a21bb401 219932 mx-installer_15.10.1mx15_i386.deb
+Files: 
+ 0645ae9361f473ac75478db3a0f4accf 650 system optional mx-installer_15.10.1mx15.dsc
+ ec367ed7cff7c6703a6398541cbfd01b 5071266 system optional mx-installer_15.10.1mx15.tar.gz
+ 9c34355bcb4b65ccaee9c5862a9a0bca 219932 system optional mx-installer_15.10.1mx15_i386.deb

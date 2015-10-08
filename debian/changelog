@@ -1,3 +1,9 @@
+mx-installer (15.10.1mx15) mx; urgency=medium
+
+  * update gptdospartinfo script
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 08 Oct 2015 16:37:04 -0400
+
 mx-installer (15.10mx15) mx; urgency=medium
 
   * added GPT support

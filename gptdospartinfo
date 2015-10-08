@@ -1,13 +1,13 @@
 #!/bin/bash
 
-IntermediateResult="$(for i in $(cat /proc/partitions | awk '{print $3,$4}' | grep -v ^1\ | grep -Eo $(basename $1)[0-9]+ | grep -Eo [0-9]+);\
-                      do paste <(lsblk -blno NAME $1$i | awk '{print "/dev/"$1}')\
-                               <(lsblk -blno SIZE $1$i | awk '{OFMT="%.0f";print ($1/1024)}')\
-                               <(lsblk -blno FSTYPE $1$i | sed 's/^$/~~~~~/')\
-                               <(sgdisk -p $1 | grep '  '$i' ' | awk '{print $6}')\
-                               <(sgdisk -p $1 | grep -q '  '$i' ' || echo -ne ~~~~)\
-                               <(lsblk -blno LABEL $1$i | sed 's/^$/~~~~~/;s/ /~.~/g'); done)"
-
+#IntermediateResult="$(for i in $(cat /proc/partitions | awk '{print $3,$4}' | grep -v ^1\ | grep -Eo $(basename $1)[0-9]+ | grep -Eo [0-9]+);\
+#                      do paste <(lsblk -blno NAME $1$i | awk '{print "/dev/"$1}')\
+#                               <(lsblk -blno SIZE $1$i | awk '{OFMT="%.0f";print ($1/1024)}')\
+#                               <(lsblk -blno FSTYPE $1$i | sed 's/^$/~~~~~/')\
+#                               <(sgdisk -p $1 | grep '  '$i' ' | awk '{print $6}')\
+#                               <(sgdisk -p $1 | grep -q '  '$i' ' || echo -ne ~~~~)\
+#                               <(lsblk -blno LABEL $1$i | sed 's/^$/~~~~~/;s/ /~.~/g'); done)"
+IntermediateResult=$(paste <(lsblk -b -P -o NAME,SIZE,FSTYPE,LABEL $1 | sed 's/""/"~~~~~"/g' | cut -f2,4,6,8 -d\" | sed 's/ /~.~/g' | sed 's/"/ /g' | grep -E ^$(cut -c6- <<<$1)[0-9]+) <(for i in $(cat /proc/partitions | awk '{print $4}' | grep -Eo $(basename $1)[0-9]+ | grep -Eo [0-9]+);do sgdisk -p $1 | grep '  '$i' ' | awk '{print $6}';sgdisk -p $1 | grep -q '  '$i' ' || echo ~~~~; done) | awk '{OFMT="%.0f"};{print "/dev/"$1,$2/1024,$3,$5,$4}' | grep -Ev $1[0-9]+[\ ]+'1 ')
 
 if [ "$2" = "--efi-filter" ] || [ "$2" = "-e" ] || [ "$3" = "--efi-filter" ] || [ "$3" = "-e" ]
 
