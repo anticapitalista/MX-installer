@@ -540,64 +540,76 @@ bool MInstall::makeSwapPartition(QString dev) {
 bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad, QString label) {
   QString cmd;
   if (strncmp(type, "reiserfs", 4) == 0) {
-    cmd = QString("/sbin/mkfs.reiserfs -q %1 -l %2").arg(dev).arg(label);
+    cmd = QString("/sbin/mkfs.reiserfs -q %1 -l \"%2\"").arg(dev).arg(label);
   } else {
     if (strncmp(type, "reiser4", 4) == 0) {
       // reiser4
-      cmd = QString("/sbin/mkfs.reiser4 -f -y %1 -L %2").arg(dev).arg(label);
+      cmd = QString("/sbin/mkfs.reiser4 -f -y %1 -L \"%2\"").arg(dev).arg(label);
     } else {
       if (strncmp(type, "ext3", 4) == 0) {
         // ext3
         if (bad) {
           // do with badblocks
-          cmd = QString("/sbin/mkfs.ext3 -c %1 -L %2").arg(dev).arg(label);
+          cmd = QString("/sbin/mkfs.ext3 -c %1 -L \"%2\"").arg(dev).arg(label);
         } else {
           // do no badblocks
+<<<<<<< HEAD
           cmd = QString("/sbin/mkfs.ext3 -F %1 -L %2").arg(dev).arg(label);
+=======
+          cmd = QString("/sbin/mkfs.ext3 -F %1 -L \"%2\"").arg(dev).arg(label);
+>>>>>>> upstream/master
         }
       } else {
         if (strncmp(type, "ext2", 4) == 0) {
           // ext2
           if (bad) {
             // do with badblocks
-            cmd = QString("/sbin/mkfs.ext2 -c %1 -L %2").arg(dev).arg(label);
+            cmd = QString("/sbin/mkfs.ext2 -c %1 -L \"%2\"").arg(dev).arg(label);
           } else {
             // do no badblocks
+<<<<<<< HEAD
             cmd = QString("/sbin/mkfs.ext2 -F %1 -L %2").arg(dev).arg(label);
+=======
+            cmd = QString("/sbin/mkfs.ext2 -F %1 -L \"%2\"").arg(dev).arg(label);
+>>>>>>> upstream/master
           }
         } else {
           if (strncmp(type, "btrfs", 4) == 0) {
             // btrfs and set up fsck
             system("/bin/cp -fp /bin/true /sbin/fsck.auto");
-            cmd = QString("/sbin/mkfs.btrfs -f %1 -L %2").arg(dev).arg(label);
+            cmd = QString("/sbin/mkfs.btrfs -f %1 -L \"%2\"").arg(dev).arg(label);
           } else {
             //xfs
             if (strncmp(type, "xfs", 4) == 0) {
               if (bad) {
                 // do with badblocks
-                cmd = QString("/sbin/mkfs.xfs -f -c %1 -L %2").arg(dev).arg(label);
+                cmd = QString("/sbin/mkfs.xfs -f -c %1 -L \"%2\"").arg(dev).arg(label);
               } else {
                 // do no badblocks
-                cmd = QString("/sbin/mkfs.xfs -f %1 -L %2").arg(dev).arg(label);
+                cmd = QString("/sbin/mkfs.xfs -f %1 -L \"%2\"").arg(dev).arg(label);
               }
             } else {
               //jfs
               if (strncmp(type, "jfs", 4) == 0) {
                 if (bad) {
                   // do with badblocks
-                  cmd = QString("/sbin/mkfs.jfs -q -c %1 -L %2").arg(dev).arg(label);
+                  cmd = QString("/sbin/mkfs.jfs -q -c %1 -L \"%2\"").arg(dev).arg(label);
                 } else {
                   // do no badblocks
-                  cmd = QString("/sbin/mkfs.jfs -q %1 -L %2").arg(dev).arg(label);
+                  cmd = QString("/sbin/mkfs.jfs -q %1 -L \"%2\"").arg(dev).arg(label);
                 }
               } else {
                 // must be ext4
                 if (bad) {
                   // do with badblocks
-                  cmd = QString("/sbin/mkfs.ext4 -c %1 -L %2").arg(dev).arg(label);
+                  cmd = QString("/sbin/mkfs.ext4 -c %1 -L \"%2\"").arg(dev).arg(label);
                 } else {
                   // do no badblocks
+<<<<<<< HEAD
                   cmd = QString("/sbin/mkfs.ext4 -F %1 -L %2").arg(dev).arg(label);
+=======
+                  cmd = QString("/sbin/mkfs.ext4 -F %1 -L \"%2\"").arg(dev).arg(label);
+>>>>>>> upstream/master
                 }
               }
             }
@@ -759,13 +771,21 @@ bool MInstall::makeDefaultPartitions() {
 // Make the chosen partitions and mount them
 
 bool MInstall::makeChosenPartitions() {
-  char line[130];
-  QString msg;
+  bool gpt;
   int ans;
+  char line[130];
   char type[20];
+  QString msg;
   QString cmd;
 
   QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
+
+  cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
+  if (system(cmd.toUtf8()) == 0) {
+     gpt = true;
+  } else {
+     gpt = false;
+  }
 
   // get config
   strncpy(type, rootTypeCombo->currentText().toUtf8(), 4);
@@ -873,7 +893,11 @@ bool MInstall::makeChosenPartitions() {
     }
     updateStatus(tr("Formatting swap partition"), 2);
     // always set type
-    QString cmd = QString("/sbin/sfdisk %1 -c %2 82").arg(swapdev.mid(0,8)).arg(swapdev.mid(8));
+    if (gpt) {
+      cmd = QString("/sbin/sgdisk %1 -t=%2:8200").arg(swapdev.mid(0,8)).arg(swapdev.mid(8));
+    } else {
+      cmd = QString("/sbin/sfdisk %1 -c %2 82").arg(swapdev.mid(0,8)).arg(swapdev.mid(8));
+    }
     system(cmd.toUtf8());
     system("sleep 1");
     if (!makeSwapPartition(swapdev)) {
@@ -888,7 +912,11 @@ bool MInstall::makeChosenPartitions() {
   if (!(saveHomeCheck->isChecked() && homedev.compare("/dev/root") == 0)) {
     updateStatus(tr("Formatting the / (root) partition"), 3);
     // always set type
-    QString cmd = QString("/sbin/sfdisk %1 -c %2 83").arg(rootdev.mid(0,8)).arg(rootdev.mid(8));
+    if (gpt) {
+        cmd = QString("/sbin/sgdisk %1 -t=%2:8300").arg(swapdev.mid(0,8)).arg(swapdev.mid(8));
+    } else {
+        cmd = QString("/sbin/sfdisk %1 -c %2 83").arg(rootdev.mid(0,8)).arg(rootdev.mid(8));
+    }
     system(cmd.toUtf8());
     system("sleep 1");
     if (!makeLinuxPartition(rootdev, type, badblocksCheck->isChecked(), rootLabelEdit->text())) {
@@ -933,7 +961,11 @@ bool MInstall::makeChosenPartitions() {
       // not on root
       updateStatus(tr("Formatting the /home partition"), 8);
       // always set type
-      QString cmd = QString("/sbin/sfdisk %1 -c %2 83").arg(homedev.mid(0,8)).arg(homedev.mid(8));
+      if (gpt) {
+        cmd = QString("/sbin/sgdisk %1 -t=%2:8302").arg(swapdev.mid(0,8)).arg(swapdev.mid(8));
+      } else {
+        cmd = QString("/sbin/sfdisk %1 -c %2 83").arg(homedev.mid(0,8)).arg(homedev.mid(8));
+      }
       system(cmd.toUtf8());
       system("sleep 1");
       if (!makeLinuxPartition(homedev, type, badblocksCheck->isChecked(), homeLabelEdit->text())) {
@@ -1032,9 +1064,10 @@ void MInstall::copyLinux() {
 // install loader
 
 // build a grub configuration and install grub
-bool MInstall::installLoader() {
+bool MInstall::installLoader() {  
   QString cmd;
   QString val = getCmdOut("ls /mnt/antiX/boot | grep 'initrd.img-3.6'");
+
 
   // the old initrd is not valid for this hardware
   if (!val.isEmpty()) {
@@ -1060,15 +1093,6 @@ bool MInstall::installLoader() {
   QString bootdrv = QString(grubBootCombo->currentText()).section(" ", 0, 0);
   QString rootpart = QString(rootCombo->currentText()).section(" ", 0, 0);
   QString boot;
-
-  // install to root if drive uses GPT (or Apple)
-  cmd = QString("fdisk.distrib -l $1 | grep -q ^Disklabel.*gpt").arg("/dev/" + bootdrv);
-  if ((system(cmd.toUtf8()) == 0) || (system("grub-probe -d /dev/sda2 2>/dev/null | grep hfsplus") == 0)) {
-      grubMbrButton->setDisabled(true);
-      grubRootButton->setChecked(true);
-  } else {
-      grubMbrButton->setDisabled(false);
-  }
 
   if (grubMbrButton->isChecked()) {
     boot = bootdrv;
@@ -1841,7 +1865,7 @@ int MInstall::showPage(int curr, int next) {
     }
   } else if (next == 3 && curr == 4) {
     return 1;
-  } else if (next == 5 && curr == 4) {
+  } else if (next == 5 && curr == 4) {    
     if (!installLoader()) {
       return curr;
     } else {
@@ -1946,6 +1970,7 @@ void MInstall::pageDisplayed(int next) {
       break;
 
     case 4:
+      on_grubBootCombo_activated();
       setCursor(QCursor(Qt::ArrowCursor));
       ((MMain *)mmn)->setHelpText(tr("<p><b>Select Boot Method</b><br/>MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. "
         "<p>By default GRUB2 is installed in the Master Boot Record of your boot drive and replaces the boot loader you were using before. This is normal.</p>"
@@ -2049,6 +2074,9 @@ void MInstall::gotoPage(int next) {
 
 void MInstall::firstRefresh(QDialog *main) {
   mmn = main;
+  // disable automounting in Thunar
+  system("runuser demo -c 'xfconf-query --channel thunar-volman --property /automount-drives/enabled --set false'");
+  system("xfconf-query --channel thunar-volman --property /automount-drives/enabled --set false");
   refresh();
 }
 
@@ -2072,7 +2100,10 @@ void MInstall::refresh() {
   this->updatePartitionWidgets();
 
 //  system("umount -a 2>/dev/null");
-  FILE *fp = popen("lsblk -ln -o NAME,SIZE,MODEL -d -e 2,11 | grep '^[h,s,v].[a-z]' | grep -v $(lsblk -l | grep /live/boot-dev | cut -c1-3) | sort 2>/dev/null", "r");
+  FILE *fp = popen("[ ! $(lsblk -lno MOUNTPOINT | grep /live/boot-dev) ]|| \
+                   lsblk -ln -o NAME,SIZE,MODEL -d -e 2,11 | grep '^[h,s,v].[a-z]' | grep -v $(lsblk -l | grep /live/boot-dev | cut -c1-3) | sort 2>/dev/null; \
+                   [   $(lsblk -lno MOUNTPOINT | grep /live/boot-dev) ]|| \
+                   lsblk -ln -o NAME,SIZE,MODEL -d -e 2,11 | grep '^[h,s,v].[a-z]' | sort 2>/dev/null", "r");
   if (fp == NULL) {
     return;
   }
@@ -2087,6 +2118,7 @@ void MInstall::refresh() {
     diskCombo->addItem(line);
     grubBootCombo->addItem(line);
   }
+
   pclose(fp);
 
   on_diskCombo_activated();
@@ -2140,8 +2172,6 @@ void MInstall::on_viewServicesButton_clicked()
 }
 
 void MInstall::on_qtpartedButton_clicked() {
-  // disable automounting in Thunar
-  system("xfconf-query --channel thunar-volman --property /automount-drives/enabled --set false");
   system("/sbin/swapoff -a 2>&1");
   system("/usr/sbin/gparted");
   //system("/usr/sbin/buildfstab -r");
@@ -2275,6 +2305,18 @@ void MInstall::on_homeCombo_activated(const QString &arg1) {
     }
 }
 
+// determine if selected drive uses GPT (or Apple)
+void MInstall::on_grubBootCombo_activated()
+{
+    QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
+    QString cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
+    if ((system(cmd.toUtf8()) == 0) || (system("grub-probe -d /dev/sda2 2>/dev/null | grep hfsplus") == 0)) {
+        grubMbrButton->setDisabled(true);
+        grubRootButton->setChecked(true);
+    } else {
+        grubMbrButton->setDisabled(false);
+    }
+}
 
 void MInstall::procAbort() {
   proc->terminate();
@@ -2502,4 +2544,3 @@ void MInstall::copyTime() {
       break;
   }
 }
-

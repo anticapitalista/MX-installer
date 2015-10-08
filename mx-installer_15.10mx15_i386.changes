@@ -8,21 +8,21 @@ Distribution: mx
 Urgency: medium
 Maintainer: anticapitalista <antiX@operamail.com>
 Changed-By: Adrian <adrian@mxlinux.org>
-Description: 
+Description:
  mx-installer - GUI installer for MX Linux.
-Changes: 
+Changes:
  mx-installer (15.10mx15) mx; urgency=medium
  .
-   * use gptdospartinfo to list GPT and DOS partitions
-Checksums-Sha1: 
- 07163567dcbe90dc12eab791339c8f03919b0a08 642 mx-installer_15.10mx15.dsc
- eb4264630e24bec48f9c5cbe0d31c05083662399 1487233 mx-installer_15.10mx15.tar.gz
- 76a986c2b49271b33b1736ffbb5213f568deccaa 214568 mx-installer_15.10mx15_i386.deb
-Checksums-Sha256: 
- ae9a1d2e65dbdc0b5305cb16d2bc8752342e7a4aed6fb359c16c147c7710dea8 642 mx-installer_15.10mx15.dsc
- 0f106ee8690c54bde5de182eb0bd31ecf8ba9792398b5c1df670acc96347bb73 1487233 mx-installer_15.10mx15.tar.gz
- 920c99d8d20cc012752df810f9bf76ce35a0d1af1f1396e2c2adbee919326e71 214568 mx-installer_15.10mx15_i386.deb
-Files: 
- 7b4efde5ba67504f3ced10c2a8a54b6c 642 system optional mx-installer_15.10mx15.dsc
- 2407fb6b10b0463747dd485790c2cc0a 1487233 system optional mx-installer_15.10mx15.tar.gz
- 5e71914de06b84d073e5ea2f41915e5b 214568 system optional mx-installer_15.10mx15_i386.deb
+   * added GPT support
+Checksums-Sha1:
+ 553699028844b36ffd8b24b6ed60e7fae730497e 647 mx-installer_15.10mx15.dsc
+ 8db0a4a98411920af576610f3cbbf3beb1680e64 4008360 mx-installer_15.10mx15.tar.xz
+ 581fe5bdc6a5cb00e61245c3e6a77479c9ebb4f0 215930 mx-installer_15.10mx15_i386.deb
+Checksums-Sha256:
+ 0940ee7318aede5f50df6e76d57c922b6a3148195105cf27e38157a59f10636f 647 mx-installer_15.10mx15.dsc
+ f3d842308211071cb7b8fef34b0afe07bed5cd3bfaaa03ad5f78367d471a0a3a 4008360 mx-installer_15.10mx15.tar.xz
+ 6751618484e664b63116768f0ce36726731b66e6014631e02b817f17bb30de54 215930 mx-installer_15.10mx15_i386.deb
+Files:
+ 60e7fd8eca3868d91f677c8a956f75d5 647 system optional mx-installer_15.10mx15.dsc
+ 654895578a1aff38363774b46ccc456f 4008360 system optional mx-installer_15.10mx15.tar.xz
+ ba7fad2ae39926e04eed408301ea05cb 215930 system optional mx-installer_15.10mx15_i386.deb

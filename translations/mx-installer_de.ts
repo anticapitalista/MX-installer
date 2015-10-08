@@ -200,6 +200,7 @@ Das Laufwerk mit der Partition, die Sie für die Installation gewählt haben, ve
         <location filename="../minstall.cpp" line="475"/>
         <location filename="../minstall.cpp" line="489"/>
         <location filename="../minstall.cpp" line="637"/>
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="793"/>
         <location filename="../minstall.cpp" line="805"/>
         <location filename="../minstall.cpp" line="815"/>
@@ -212,6 +213,20 @@ Das Laufwerk mit der Partition, die Sie für die Installation gewählt haben, ve
         <location filename="../minstall.cpp" line="1801"/>
         <location filename="../minstall.cpp" line="1815"/>
         <location filename="../minstall.cpp" line="2288"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="801"/>
+        <location filename="../minstall.cpp" line="813"/>
+        <location filename="../minstall.cpp" line="823"/>
+        <location filename="../minstall.cpp" line="835"/>
+        <location filename="../minstall.cpp" line="848"/>
+        <location filename="../minstall.cpp" line="1094"/>
+        <location filename="../minstall.cpp" line="1156"/>
+        <location filename="../minstall.cpp" line="1161"/>
+        <location filename="../minstall.cpp" line="1186"/>
+        <location filename="../minstall.cpp" line="1813"/>
+        <location filename="../minstall.cpp" line="1827"/>
+        <location filename="../minstall.cpp" line="2318"/>
 >>>>>>> upstream/master
         <source>Yes</source>
         <translation>Ja</translation>
@@ -237,6 +252,7 @@ Das Laufwerk mit der Partition, die Sie für die Installation gewählt haben, ve
         <location filename="../minstall.cpp" line="475"/>
         <location filename="../minstall.cpp" line="489"/>
         <location filename="../minstall.cpp" line="637"/>
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="793"/>
         <location filename="../minstall.cpp" line="805"/>
         <location filename="../minstall.cpp" line="815"/>
@@ -249,6 +265,20 @@ Das Laufwerk mit der Partition, die Sie für die Installation gewählt haben, ve
         <location filename="../minstall.cpp" line="1801"/>
         <location filename="../minstall.cpp" line="1815"/>
         <location filename="../minstall.cpp" line="2288"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="801"/>
+        <location filename="../minstall.cpp" line="813"/>
+        <location filename="../minstall.cpp" line="823"/>
+        <location filename="../minstall.cpp" line="835"/>
+        <location filename="../minstall.cpp" line="848"/>
+        <location filename="../minstall.cpp" line="1094"/>
+        <location filename="../minstall.cpp" line="1156"/>
+        <location filename="../minstall.cpp" line="1161"/>
+        <location filename="../minstall.cpp" line="1186"/>
+        <location filename="../minstall.cpp" line="1813"/>
+        <location filename="../minstall.cpp" line="1827"/>
+        <location filename="../minstall.cpp" line="2318"/>
 >>>>>>> upstream/master
         <source>No</source>
         <translation>Nein</translation>
@@ -330,7 +360,11 @@ Das Laufwerk mit der Partition, die Sie für die Installation gewählt haben, ve
         <location filename="../minstall.cpp" line="886"/>
 =======
         <location filename="../minstall.cpp" line="726"/>
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="874"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="882"/>
 >>>>>>> upstream/master
         <source>Formatting swap partition</source>
         <translation>Formatiere Auslagerungspartition (swap)</translation>
@@ -346,9 +380,13 @@ Das Laufwerk mit der Partition, die Sie für die Installation gewählt haben, ve
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="799"/>
 =======
         <location filename="../minstall.cpp" line="787"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="795"/>
 >>>>>>> upstream/master
         <source>You must choose a root partition.
 The root partition must be at least 3.5 GB.</source>
@@ -357,18 +395,26 @@ Die &quot;root&quot;-Partition benötigt mindestens 3,5GB freien Speicherplatz.<
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="803"/>
 =======
         <location filename="../minstall.cpp" line="791"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="799"/>
 >>>>>>> upstream/master
         <source>The partition you selected for root, appears to be a MS-Windows partition.  Are you sure you want to reformat this partition?</source>
         <translation>Die für das System (root) gewählte Partition, scheint eine MS-Windows Partition zu sein. Sind Sie sicher, das diese Partition neuformatiert werden soll?</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="812"/>
 =======
         <location filename="../minstall.cpp" line="800"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="808"/>
 >>>>>>> upstream/master
         <source>Ok to format and destroy all data on 
 %1 for the / (root) partition?</source>
@@ -377,9 +423,13 @@ und die Formatierung für / (root) durchführen?</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="814"/>
 =======
         <location filename="../minstall.cpp" line="802"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="810"/>
 >>>>>>> upstream/master
         <source>All data on %1 will be deleted, except for /home
 Ok to continue?</source>
@@ -388,9 +438,13 @@ Ok, um fortzufahren? </translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="825"/>
 =======
         <location filename="../minstall.cpp" line="813"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="821"/>
 >>>>>>> upstream/master
         <source>Ok to format and destroy all data on 
 %1 for the swap partition?</source>
@@ -399,117 +453,169 @@ und die Formatierung für die Swap-Partition durchführen?</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="837"/>
 =======
         <location filename="../minstall.cpp" line="825"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="833"/>
 >>>>>>> upstream/master
         <source>The partition you selected for /home, appears to be a MS-Windows partition.  Are you sure you want to reformat this partition?</source>
         <translation>Die Partition, die Sie als /home-Partition ausgewählt haben, scheint eine MS-Windows-Partition zu sein.  Sind Sie sicher, dass Sie diese Partition formatieren wollen?</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="846"/>
 =======
         <location filename="../minstall.cpp" line="834"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="842"/>
 >>>>>>> upstream/master
         <source>Ok to reuse (no reformat) %1 as the /home partition?</source>
         <translation>Wollen Sie alle Daten auf Partition %1 behalten (keine Formatierung) und sie für /home benutzen?</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="848"/>
 =======
         <location filename="../minstall.cpp" line="836"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="844"/>
 >>>>>>> upstream/master
         <source>Ok to format and destroy all data on %1 for the /home partition?</source>
         <translation>Wollen Sie alle Daten auf Partition %1 löschen und die Formatierung für die /home-Partition durchführen?</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="859"/>
 =======
         <location filename="../minstall.cpp" line="847"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="855"/>
 >>>>>>> upstream/master
         <source>Preparing required partitions</source>
         <translation>Bereite benötigte Partitionen vor</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="901"/>
 =======
         <location filename="../minstall.cpp" line="889"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="901"/>
 >>>>>>> upstream/master
         <source>Formatting the / (root) partition</source>
         <translation>Formatiere / (root) Partition</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="931"/>
 =======
         <location filename="../minstall.cpp" line="919"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="935"/>
 >>>>>>> upstream/master
         <source>Mounting the /home partition</source>
         <translation>Hänge /home Partition ein</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="946"/>
 =======
         <location filename="../minstall.cpp" line="934"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="950"/>
 >>>>>>> upstream/master
         <source>Formatting the /home partition</source>
         <translation>Formatiere /home Partition</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="988"/>
 =======
         <location filename="../minstall.cpp" line="976"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="996"/>
 >>>>>>> upstream/master
         <source>Mounting the / (root) partition</source>
         <translation>Hänge / (root) Partition ein</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1018"/>
 =======
         <location filename="../minstall.cpp" line="1006"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1026"/>
 >>>>>>> upstream/master
         <source>Creating system directories</source>
         <translation>Erstelle Systemverzeichnisse</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1083"/>
 =======
         <location filename="../minstall.cpp" line="1080"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1092"/>
 >>>>>>> upstream/master
         <source>Ok to install GRUB bootloader at %1 ?</source>
         <translation>Der GRUB Bootloader wird auf %1 installiert. OK?</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1101"/>
 =======
         <location filename="../minstall.cpp" line="1098"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1110"/>
 >>>>>>> upstream/master
         <source>Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function.</source>
         <translation>Konnte GRUB nicht installieren. Der Grund dafür kann eine Änderung der Disk-Formatierung sein. Sie können GRUB abwählen und die Installation von MX LInux abschliessen, dann einen Neustart mit der CD durchführen und die Installation mit der ReInstall GRUB Funktion reparieren.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1144"/>
 =======
         <location filename="../minstall.cpp" line="1141"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1153"/>
 >>>>>>> upstream/master
         <source>The home directory for %1 already exists.Would you like to reuse the old home directory?</source>
         <translation>Das Home-Verzeichnis für %1 existiert bereits. Möchten Sie das alte Home-Verzeichnis wiederverwenden?</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1150"/>
 =======
         <location filename="../minstall.cpp" line="1147"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1159"/>
 >>>>>>> upstream/master
         <source>Would you like to save the old home directory
 and create a new home directory?</source>
@@ -518,9 +624,13 @@ und ein neues Home-Verzeichnis anlegen?</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1166"/>
 =======
         <location filename="../minstall.cpp" line="1163"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1175"/>
 >>>>>>> upstream/master
         <source>Sorry, failed to save old home directory. Before proceeding,
 you&apos;ll have to select a different username or
@@ -531,18 +641,26 @@ eine bereits früher angelegte Kopie Ihres Home-Verzeichnisses löschen.</transl
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1175"/>
 =======
         <location filename="../minstall.cpp" line="1172"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1184"/>
 >>>>>>> upstream/master
         <source>Would you like to delete the old home directory for %1?</source>
         <translation>Möchten Sie das alte Home-Verzeichnis von %1 löschen?</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1185"/>
 =======
         <location filename="../minstall.cpp" line="1182"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1194"/>
 >>>>>>> upstream/master
         <source>Sorry, failed to delete old home directory. Before proceeding, 
 you&apos;ll have to select a different username.</source>
@@ -551,9 +669,13 @@ müssen Sie einen anderen Benutzernamen auswählen.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1192"/>
 =======
         <location filename="../minstall.cpp" line="1189"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1201"/>
 >>>>>>> upstream/master
         <source>You&apos;ve chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
@@ -562,63 +684,91 @@ Bevor Sie weitermachen, müssen Sie einen anderen Benutzernamen auswählen.</tra
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1205"/>
 =======
         <location filename="../minstall.cpp" line="1202"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1214"/>
 >>>>>>> upstream/master
         <source>Sorry, failed to create user directory.</source>
         <translation>Konnte das User-Verzeichnis nicht anlegen.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1212"/>
 =======
         <location filename="../minstall.cpp" line="1209"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1221"/>
 >>>>>>> upstream/master
         <source>Sorry, failed to name user directory.</source>
         <translation>Konnte das User-Verzeichnis nicht umbenennen.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1236"/>
 =======
         <location filename="../minstall.cpp" line="1233"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1245"/>
 >>>>>>> upstream/master
         <source>Sorry, failed to save desktop changes.</source>
         <translation>Änderungen am Desktop konnten leider nicht gespeichert werden.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1244"/>
 =======
         <location filename="../minstall.cpp" line="1241"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1253"/>
 >>>>>>> upstream/master
         <source>Sorry, failed to set ownership of user directory.</source>
         <translation>Konnte das Eigentumsrecht des Benutzer-Verzeichnisses nicht setzen.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1292"/>
 =======
         <location filename="../minstall.cpp" line="1289"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1301"/>
 >>>>>>> upstream/master
         <source>Sorry, unable to set root password.</source>
         <translation>Konnte root-Passwort nicht setzen.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1319"/>
 =======
         <location filename="../minstall.cpp" line="1316"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1328"/>
 >>>>>>> upstream/master
         <source>Sorry, unable to set user password.</source>
         <translation>Konnte Benutzerpasswort nicht setzen.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1331"/>
 =======
         <location filename="../minstall.cpp" line="1328"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1340"/>
 >>>>>>> upstream/master
         <source>The user name needs to be at least
 2 characters long. Please select
@@ -629,9 +779,13 @@ Sie einen längeren Namen, bevor Sie weitermachen.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1337"/>
 =======
         <location filename="../minstall.cpp" line="1334"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1346"/>
 >>>>>>> upstream/master
         <source>The user name needs be lower case and it
 cannot contain special characters or spaces
@@ -641,11 +795,16 @@ Bitte wählen Sie einen anderen Namen ein, bevor Sie fortfahren.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1344"/>
         <location filename="../minstall.cpp" line="1379"/>
 =======
         <location filename="../minstall.cpp" line="1341"/>
         <location filename="../minstall.cpp" line="1376"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1353"/>
+        <location filename="../minstall.cpp" line="1388"/>
 >>>>>>> upstream/master
         <source>The user password needs to be at least
 2 characters long. Please select
@@ -656,11 +815,16 @@ Sie ein längeres Passwort, bevor Sie weitermachen.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1351"/>
         <location filename="../minstall.cpp" line="1386"/>
 =======
         <location filename="../minstall.cpp" line="1348"/>
         <location filename="../minstall.cpp" line="1383"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1360"/>
+        <location filename="../minstall.cpp" line="1395"/>
 >>>>>>> upstream/master
         <source>The root password needs to be at least
 2 characters long. Please select
@@ -671,9 +835,13 @@ Sie ein längeres Passwort, bevor Sie weitermachen.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1360"/>
 =======
         <location filename="../minstall.cpp" line="1357"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1369"/>
 >>>>>>> upstream/master
         <source>Sorry that name is in use.
 Please select a different name.
@@ -684,9 +852,13 @@ Bitte einen anderen Namen wählen.
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1367"/>
 =======
         <location filename="../minstall.cpp" line="1364"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1376"/>
 >>>>>>> upstream/master
         <source>The user password entries do
 not match.  Please try again.</source>
@@ -695,9 +867,13 @@ nicht überein.  Bitte versuchen Sie es noch einmal.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1373"/>
 =======
         <location filename="../minstall.cpp" line="1370"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1382"/>
 >>>>>>> upstream/master
         <source>The root password entries do
  not match.  Please try again.</source>
@@ -706,9 +882,13 @@ nicht überein.  Bitte versuchen Sie es noch einmal.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1407"/>
 =======
         <location filename="../minstall.cpp" line="1404"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1416"/>
 >>>>>>> upstream/master
         <source>Sorry your computer name needs to be
 at least 2 characters long. You&apos;ll have to
@@ -719,9 +899,13 @@ Sie ein längeren Namen, bevor Sie weitermachen.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1411"/>
 =======
         <location filename="../minstall.cpp" line="1408"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1420"/>
 >>>>>>> upstream/master
         <source>Sorry your computer name contains invalid characters.
 You&apos;ll have to select a different
@@ -731,9 +915,13 @@ Sie ein anderen Namen, bevor Sie weitermachen.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1417"/>
 =======
         <location filename="../minstall.cpp" line="1414"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1426"/>
 >>>>>>> upstream/master
         <source>Sorry your computer domain needs to be at least
 2 characters long. You&apos;ll have to select a different
@@ -744,9 +932,13 @@ Sie einen längeren Namen, bevor Sie weitermachen.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1421"/>
 =======
         <location filename="../minstall.cpp" line="1418"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1430"/>
 >>>>>>> upstream/master
         <source>Sorry your computer domain contains invalid characters.
 You&apos;ll have to select a different
@@ -756,9 +948,13 @@ Bitte wählen Sie einen anderen Namen, bevor Sie weitermachen.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1430"/>
 =======
         <location filename="../minstall.cpp" line="1427"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1439"/>
 >>>>>>> upstream/master
         <source>Sorry your workgroup needs to be at least
 2 characters long. You&apos;ll have to select a different
@@ -769,9 +965,13 @@ Sie ein längeren Namen, bevor Sie weitermachen.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1801"/>
 =======
         <location filename="../minstall.cpp" line="1798"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1810"/>
 >>>>>>> upstream/master
         <source>MX Linux installation and configuration is complete.
 To use the new installation, reboot without the installation media.
@@ -781,9 +981,13 @@ Do you want to reboot now?</source>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1817"/>
 =======
         <location filename="../minstall.cpp" line="1814"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1826"/>
 >>>>>>> upstream/master
         <source>The installation and configuration is incomplete.
 Do you really want to stop now?</source>
@@ -792,54 +996,78 @@ Möchten Sie jetzt wirklich den Vorgang beenden?</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1888"/>
 =======
         <location filename="../minstall.cpp" line="1885"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1897"/>
 >>>>>>> upstream/master
         <source>&lt;p&gt;&lt;b&gt;General Instructions&lt;/b&gt;&lt;br/&gt;BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.&lt;/p&gt;&lt;p&gt;On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. You will be prompted for confirmation before any destructive actions are performed.&lt;/p&gt;&lt;p&gt;MX Linux requires about 3.5 GB of space. 5 GB or more is preferred. You can use the entire disk or you can put MX Linux on existing partitions. &lt;/p&gt;&lt;p&gt;If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system&apos;s software to set up partitions and boot manager before installing MX Linux.&lt;/p&gt;&lt;p&gt;The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Allgemeine Hinweise&lt;/b&gt;&lt;br/&gt;BEVOR SIE WEIERMACHEN, BEENDEN SIE MITTE ALLE ANDEREN ANWENDUNGEN. WENN SIE GERADE DEN BERYL 3D DESKTOP BENUTZEN, MELDEN SIE SICH BITTE AB UND MELDEN SICH MIT EINER KDE-SITZUNG NEU AN.&lt;/p&gt;&lt;p&gt;Lesen Sie bitte auf jeder Seite genau die Anweisungen, treffen Ihre Wahl und klicken auf Weiter um fortzufahren. Sie werden bei gefährlichen Aktionen um eine Bestätigung gebeten, bevor diese ausgeführt werden.&lt;/p&gt;&lt;p&gt;MX Linux verlangt ungefähr 3,5 GB Platz. Es wird ein Wert von 5 GB vorgeschlagen. Sie können die gesamte Disk benutzen oder MX Linux in eine bestehende Partition installieren. &lt;/p&gt;&lt;p&gt;Wenn Sie Mac OS oder Windows OS (Vista und später) benutzen, wird es vielleicht nötig sein, Ihre Partitionen mit dem einheimischen Boot Manager zu modifizieren, bevor Sie MX Linux installieren. &lt;/p&gt;&lt;p&gt;Es werden ext2, ext3, ext4, jfs, xfs, btrfs und reiserfs Linux Filesysteme unterstützt und ext4 wird empfohlen.&lt;/p&gt;</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1899"/>
 =======
         <location filename="../minstall.cpp" line="1896"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1908"/>
 >>>>>>> upstream/master
         <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for badblocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has badblocks.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Beschränkungen&lt;/b&gt;&lt;br/&gt;Bitte denken Sie daran: diese Software wird geliefert WIE-SIE-IST mit keinerlei Gewähr für die Funktion. Es liegt ausschliesslich in Ihrer Verantwortung, Ihre Daten zu sichern bevor Sie fortfahren.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Partitionsauswahl&lt;/b&gt;&lt;br/&gt;MX Linux benötigt eine Root-Partition. Die Swap-Partition ist optional, wird jedoch dringend empfohlen. Wenn Sie das Suspend-to-Disk Feature von MX-14 benutzen wollen, benötigen Sie eine Swap_partition, die grösser als die Menge Ihres physikalisch vorhandenen RAMs ist.&lt;/p&gt;&lt;p&gt;Wenn Sie eine separate Home-Partition auswählen, wird es für Sie in der Zukunft einfacher werden ein Upgrade auszuführen, dieses wird jedoch nicht möglich sein, wenn Sie ein Upgrade von einem System machen möchten, dass keine separate Home-Partition hat.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrade&lt;/b&gt;&lt;br/&gt;Um ein Upgrade einer existierenden Linux Installation durchzuführen, wählen Sie die gleiche Home-Partition wie zuvor und markieren Daten behalten in /home.&lt;/p&gt;&lt;p&gt;Wenn Sie ein existierendes Home-Directory auf der Root-Partition zum behalten markieren, wird der Installer die Root-Partition nicht neu formatieren. Daraus ergibt sich, dass die Installation viel länger dauert, als gewöhlich.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Bevorzugter Filesystem Typ&lt;/b&gt;&lt;br/&gt;Für MX Linux können sie auswählen, ob die Partition mit ext2, ext3, ext4, jfs, xfs, btrfs oder reiser formatiert wird. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Fehlerhafte Blöcke&lt;/b&gt;&lt;br/&gt;Wenn sie ext2, ext3 oder ext4 als Formatierungstyp ausgewählt haben, gibt es die Option einen Check und evtl. eine Korrektur auf fehlerhafte Blöcke auf dem Laufwerk durchzuführen. Diese Überprüfung ist sehr zeitaufwendig. Sie können diesen Schritt überspringen, es sei denn, Sie haben den Verdacht, dass ihr Laufwerk Fehler aufweist.&lt;/p&gt;</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1913"/>
 =======
         <location filename="../minstall.cpp" line="1910"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1922"/>
 >>>>>>> upstream/master
         <source>Returning to Step 1 to select another disk.</source>
         <translation>Zurück zu Schritt 1.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1917"/>
 =======
         <location filename="../minstall.cpp" line="1914"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1926"/>
 >>>>>>> upstream/master
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis and antiX Communities&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Einen besonderem Dank&lt;/b&gt;&lt;br/&gt;Dank geht an all diejenigen, die sich dafür entschieden haben MX Linux mit ihrer Zeit, Geld, Anregungen, Arbeit, Lob, Ideen, Förderung und/oder Hilfe zu unterstützen&lt;/p&gt;&lt;p&gt;Ohne Sie würde es kein MX Linux geben.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis und antiX Communities&lt;/p&gt;</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1920"/>
 =======
         <location filename="../minstall.cpp" line="1917"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1929"/>
 >>>>>>> upstream/master
         <source>&lt;p&gt;&lt;b&gt;Installation in Progress&lt;/b&gt;&lt;br/&gt;MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.&lt;/p&gt;&lt;p&gt;If you click the Abort button, the installation will be stopped as soon as possible.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Installation läuft&lt;/b&gt;&lt;br/&gt;MX Linux wird installiert. Für eine Neuinstallation wird dieses 3-20 Minuten dauern, dieses ist auch abhängig von der Geschwindigkeit der CPU und der Grösse der Partitionen, die neu formatiert werden.&lt;/p&gt;&lt;p&gt;Wenn Sie die Taste Abbruch betätigen, wird die Installation so schnell wie möglich abgebrohen.&lt;/p&gt;</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1932"/>
 =======
         <location filename="../minstall.cpp" line="1929"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1941"/>
 >>>>>>> upstream/master
         <source>Failed to create required partitions.
 Returning to Step 1.</source>
@@ -848,9 +1076,13 @@ Zurück zu Schritt 1.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1941"/>
 =======
         <location filename="../minstall.cpp" line="1938"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1950"/>
 >>>>>>> upstream/master
         <source>Failed to prepare chosen partitions.
 Returning to Step 1.</source>
@@ -859,36 +1091,52 @@ Zurück zu Schritt 1.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1953"/>
 =======
         <location filename="../minstall.cpp" line="1950"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1963"/>
 >>>>>>> upstream/master
         <source>&lt;p&gt;&lt;b&gt;Select Boot Method&lt;/b&gt;&lt;br/&gt;MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. &lt;p&gt;By default GRUB2 is installed in the Master Boot Record of your boot drive and replaces the boot loader you were using before. This is normal.&lt;/p&gt;&lt;p&gt;If you choose to install GRUB2 at root instead of MBR, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.&lt;/p&gt;&lt;p&gt;If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Bootmethode auswählen&lt;/b&gt;&lt;br/&gt;MX Linux benutzt den GRUB-Bootloader, um MX-14 und MS-Windows zu starten. &lt;p&gt;Der GRUB2-Bootloader wird defaultmässig in den Master Boot Record Ihres Boot-Laufwerkes eingetragen und ersetzt jeglichen, bisher dort vorhandenen Bootloader. Das ist normal.&lt;/p&gt;&lt;p&gt;Wenn Sie sich entscheiden, GRUB2 auf der Root-Partition, statt im MBR zu installieren, wird GRUB2 am Beginn der Root-Partition installiert. Diese Option ist nur für Experten gedacht.&lt;/p&gt;&lt;p&gt;Wenn Sie das Kontrollkästchen Install GRUB nicht auswählen, wird GRUB zu diesem Zeitpunkt nicht installiert werden. Diese Option ist nur für Experten gedacht.&lt;/p&gt;</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1962"/>
 =======
         <location filename="../minstall.cpp" line="1959"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1972"/>
 >>>>>>> upstream/master
         <source>&lt;p&gt;&lt;b&gt;Common Services to Enable&lt;/b&gt;&lt;br/&gt;Select any of the these common services that you might need with your system configuration and the services will be started automatically when you start MX Linux.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Dienste automatisch starten&lt;/b&gt;&lt;br/&gt;Bitte wählen Sie die Dienste aus, die automatisch beim Start von MX Linux gestartet werden sollen.&lt;/p&gt;</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1969"/>
 =======
         <location filename="../minstall.cpp" line="1966"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1979"/>
 >>>>>>> upstream/master
         <source>&lt;p&gt;&lt;b&gt;Computer Identity&lt;/b&gt;&lt;br/&gt;The computer name is a common unique name which will identify your computer if it is on a network. The computer domain is unlikely to be used unless your ISP or local network requires it.&lt;/p&gt;&lt;p&gt;The computer and domain names can contain only alphanumeric characters, dots, hyphens. They cannot contain blank spaces, start or end with hyphens&lt;/p&gt;&lt;p&gt;The SaMBa Server needs to be activated if you want to use it to share some of your directories or printer with a local computer that is running MS-Windows or Mac OSX.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Computer Identifikation&lt;/b&gt;&lt;br/&gt;Der Computername ist ein aussagekräftiger Name, der Ihren Computer in einem Netzwerk eindeutig identifiziert. Der Computer Domänenname sollte nur verwendet werden, falls Ihr ISP oder das lokale Netzwerk dieses erfordern.&lt;/p&gt;&lt;p&gt;Die Computer-und Domänennamen können nur alphanumerische Zeichen, Punkte, Bindestriche enthalten. Sie können keine Leerzeichen enthalten sowie mit Bindestrichen beginnen oder enden.&lt;/p&gt;&lt;p&gt;Der SaMBa Server muss aktiviert sein, wenn Sie ihn dazu benutzen wollen, einige Ihrer Verzeichnisse oder Drucker mit anderen Computern gemeinsam zu nutzen, die mit MS-Windows oder MAC OSX betrieben werden.&lt;/p&gt;</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1980"/>
 =======
         <location filename="../minstall.cpp" line="1977"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="1990"/>
 >>>>>>> upstream/master
         <source>&lt;p&gt;&lt;b&gt;Localization Defaults&lt;/b&gt;&lt;br/&gt;Set the default keyboard and locale. These will apply unless, they are overridden later by the user.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configure Clock&lt;/b&gt;&lt;br/&gt;If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for &apos;System clock uses LOCAL.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Timezone Settings&lt;/b&gt;&lt;br/&gt;The CD boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Adjust Date &amp; Time...&lt;/p&gt;&lt;p&gt;&lt;b&gt;Service Settings&lt;/b&gt;&lt;br/&gt;Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! </source>
         <translation>&lt;p&gt;&lt;b&gt;Lokalisierungs Einstellung&lt;/b&gt;&lt;br/&gt;Setzen des Tastatur-Layouts und der Spracheinstellungen. Diese Einstellungen finden Anwendung, solange Sie nicht durch den Anwender geändert werden.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Uhrzeit einstellen&lt;/b&gt;&lt;br/&gt;Wenn Sie einen Apple oder einen wirklichen Unix Computer haben, wird als Defaultwert für die Rechner-Uhr die Zeitzone GMT oder Universal Time gesetzt. In diesem Fall markieren Sie bitte das Kästchen &apos;Systemuhr benutzt LOCAL.&apos;&lt;/p&gt;Die CD bootet mit der vorgesetzten Zeitzone GMT/UTC. Um die Zeitzone umzustellen, nachdem Sie die neue Installation gebootet haben, machen Sie einen Rechtsklick auf die Uhr im Panel und wählen Sie Adjust Date &amp; Time...&lt;/p&gt;
@@ -896,41 +1144,58 @@ Zurück zu Schritt 1.</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="1990"/>
 =======
         <location filename="../minstall.cpp" line="1987"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="2000"/>
 >>>>>>> upstream/master
         <source>&lt;p&gt;&lt;b&gt;Default User Login&lt;/b&gt;&lt;br/&gt;The root user is similar to the Administrator user in some other operating systems. You should not use the root user as your daily user account. Please enter the name for a new (default) user account that you will use on a daily basis. If needed, you can add other user accounts later with MX User Manager. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Passwords&lt;/b&gt;&lt;br/&gt;Enter a new password for your default user account and for the root account. Each password must be entered twice.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Default User Login&lt;/b&gt;&lt;br/&gt;Der Benutzer root entspricht dem Administrator in einigen anderen Betriebssystemen. Sie sollten den root Benutzer nicht für Ihren täglichen Gebrauch benutzen.Bitte geben Sie einen Namen für ein neues (Default) Benutzer-Konto an, das Sie dann täglich benutzen. Wenn notwendig, können Sie später weitere Benutzer mit MX Benutzer Manager hinzufügen. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Passworte&lt;/b&gt;&lt;br/&gt;Bitte geben Sie ein neues Passwort für Ihr Default-Benutzer-Konto und für das root Systemverwalter-Konto ein. Jedes der Passworte muss doppelt eingegeben werden.&lt;/p&gt;</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="2001"/>
 =======
         <location filename="../minstall.cpp" line="1998"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="2011"/>
 >>>>>>> upstream/master
         <source>&lt;p&gt;&lt;b&gt;Congratulations!&lt;/b&gt;&lt;br/&gt;You have completed the installation of </source>
         <translation>&lt;p&gt;&lt;b&gt;Glückwunsch!&lt;/b&gt;&lt;br/&gt;Sie haben die Installation von &lt;/p&gt;</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="2001"/>
 =======
         <location filename="../minstall.cpp" line="1998"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="2011"/>
 >>>>>>> upstream/master
         <source>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Finding Applications&lt;/b&gt;&lt;br/&gt;There are hundreds of excellent applications installed with MX Linux. The best way to learn about them is to browse through the Menu and try them. Many of the apps were developed specifically for the Xfce environment. These are shown in the main menus. &lt;p&gt;In addition MX Linux includes many standard Linux applications that are run only from the commandline and therefore do not show up in Menu.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Applicationen suchen/finden&lt;/b&gt;&lt;br/&gt;Es gibt Hunderte von exzellenten Applikationen die mit MX Linux installiert wurden. Der schnellste Weg, um sie zu finden führt über das Menü. Durchforschen Sie es und machen sich damit vertraut. Viele der Applikationen wurden speziell für das Xfce Environment entwickelt. Diese werden in den Hauptmenüs angezeigt. &lt;/p&gt;&lt;p&gt;Zusätzlich beinhaltet MX-14 viele Standard Linux-Applikationen, die nur aus einer Konsole heraus ausgeführt werden können und daher nicht im Menü erscheinen.&lt;/p&gt;</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="2013"/>
 =======
         <location filename="../minstall.cpp" line="2010"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="2023"/>
 >>>>>>> upstream/master
         <source>&lt;p&gt;&lt;b&gt;Enjoy using MX Linux!&lt;/b&gt;&lt;/p&gt;</source>
         <translation>Haben Sie viel Freude an MX Linux!</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../minstall.cpp" line="2026"/>
         <location filename="../minstall.cpp" line="2038"/>
@@ -938,23 +1203,35 @@ Zurück zu Schritt 1.</translation>
         <location filename="../minstall.cpp" line="2023"/>
         <location filename="../minstall.cpp" line="2035"/>
 >>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="2036"/>
+        <location filename="../minstall.cpp" line="2048"/>
+>>>>>>> upstream/master
         <source>Next &gt;</source>
         <translation>Weiter &gt;</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="2036"/>
 =======
         <location filename="../minstall.cpp" line="2033"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="2046"/>
 >>>>>>> upstream/master
         <source>Finish</source>
         <translation>Abschließen</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="2307"/>
 =======
         <location filename="../minstall.cpp" line="2287"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="2317"/>
 >>>>>>> upstream/master
         <source>MX Linux is installing, are you 
 sure you want to Close now?</source>
@@ -962,18 +1239,26 @@ sure you want to Close now?</source>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="2332"/>
 =======
         <location filename="../minstall.cpp" line="2312"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="2342"/>
 >>>>>>> upstream/master
         <source>Deleting old system</source>
         <translation>Lösche altes System</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="2340"/>
 =======
         <location filename="../minstall.cpp" line="2320"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="2350"/>
 >>>>>>> upstream/master
         <source>Failed to delete old MX Linux on destination.
 Returning to Step 1.</source>
@@ -981,27 +1266,39 @@ Returning to Step 1.</source>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="2353"/>
 =======
         <location filename="../minstall.cpp" line="2333"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="2363"/>
 >>>>>>> upstream/master
         <source>Copying new system</source>
         <translation>Kopiere neues System</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="2376"/>
 =======
         <location filename="../minstall.cpp" line="2356"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="2386"/>
 >>>>>>> upstream/master
         <source>Fixing configuration</source>
         <translation>Schliesse Konfiguration ab</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="2461"/>
 =======
         <location filename="../minstall.cpp" line="2441"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="2471"/>
 >>>>>>> upstream/master
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
@@ -1009,9 +1306,13 @@ Returning to Step 1.</source>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="2487"/>
 =======
         <location filename="../minstall.cpp" line="2467"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="2497"/>
 >>>>>>> upstream/master
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at http://antix.mepis.com and http://www.mepiscommunity.org/mx. There are volunteers to help you at the antiX Forum, http://antix.freeforums.org and the MEPIS Community Forum http://forum.mepiscommunity.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
         <translation>Wo Sie Hilfe erhalten.
@@ -1031,36 +1332,52 @@ Wenn Sie um Hilfe bitten, denken Sie bitte daran eine genaue Problembeschreibung
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="2495"/>
 =======
         <location filename="../minstall.cpp" line="2475"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="2505"/>
 >>>>>>> upstream/master
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from CD and running one of the utilities in System Configuration or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux CD to recover data from MS-Windows systems!&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Reparatur der Installation&lt;/b&gt;&lt;br/&gt;Falls MX Linux auf der Festplatte nicht mehr startet oder richtig arbeitet, ist es oftmals möglich, das Problem dadurch zu lösen, dass man von der CD startet und eines der Programme aus der System Konfiguration oder eines der regulären Linux Programme benutzt, um das System zu reparieren.&lt;/p&gt;&lt;p&gt;Sie können Ihre MX Linux CD auch benutzen, um Daten Ihres MS-Windows zu retten!&lt;/p&gt;</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="2501"/>
 =======
         <location filename="../minstall.cpp" line="2481"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="2511"/>
 >>>>>>> upstream/master
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;MX Linux unterstützen&lt;/b&gt;&lt;br/&gt;MX Liinux wird von Menschen wie Ihnen unterstützt. Einige helfen anderen im Form - http://antix.freeforums.org, - http://forum.mepiscommunity.org, oder übersetzen Hilfe-Dateien in andere Sprachen oder machen Vorschläge, schreiben Dokumentationen, oder helfen, neue Software zu testen.&lt;/p&gt;</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="2508"/>
 =======
         <location filename="../minstall.cpp" line="2488"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="2518"/>
 >>>>>>> upstream/master
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Einstellung des Sound Mixers&lt;/b&gt;&lt;br/&gt;MX LInux versucht, Ihren SoundMixer für Sie einzustellen, aber manchmal ist es notwendig Lautstärke-Einstellungen anzupassen oder abgeschaltete Kanäle im Mixer einzuschalten um etwas hören zu können.&lt;/p&gt; &lt;p&gt;Ein Mixer-Schnellstart-Symbol befindet sich in der Menüliste. Um den Mixer zu öffnen, einfach darauf klicken. &lt;/p&gt;</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../minstall.cpp" line="2516"/>
 =======
         <location filename="../minstall.cpp" line="2496"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../minstall.cpp" line="2526"/>
 >>>>>>> upstream/master
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit http://antix.freeforums.org or http://forum.mepiscommunity.org &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Halten Sie Ihre Kopie von MX Linux aktuell&lt;/b&gt;&lt;br/&gt;Informationen und Aktualisierungen zu MX Linux erhalten Sie auf http://antix.freeforums.org oder http://forum.mepiscommunity.org. &lt;/p&gt;</translation>
@@ -1199,72 +1516,73 @@ p, li { white-space: pre-wrap; }
         <translation>Daten im /home Verzeichnis beibehalten (bei Upgrade)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="577"/>
+        <location filename="../meinstall.ui" line="580"/>
         <source>Filesystem type:</source>
         <translation>Dateisystem:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="600"/>
+        <location filename="../meinstall.ui" line="606"/>
         <source>Change default / (root) partition label:</source>
         <translation>Ändere voreingestellten Partitionsbezeichner / (root):</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="614"/>
+        <location filename="../meinstall.ui" line="620"/>
         <source>ext4</source>
         <translation>ext4</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="619"/>
+        <location filename="../meinstall.ui" line="625"/>
         <source>ext3</source>
         <translation>ext3</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="624"/>
+        <location filename="../meinstall.ui" line="630"/>
         <source>ext2</source>
         <translation>ext2</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="629"/>
+        <location filename="../meinstall.ui" line="635"/>
         <source>jfs</source>
         <translation>jfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="634"/>
+        <location filename="../meinstall.ui" line="640"/>
         <source>xfs</source>
         <translation>xfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="639"/>
+        <location filename="../meinstall.ui" line="645"/>
         <source>btrfs</source>
         <translation>btrfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="644"/>
+        <location filename="../meinstall.ui" line="650"/>
         <source>reiserfs</source>
         <translation>reiserfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="655"/>
+        <location filename="../meinstall.ui" line="661"/>
         <source>Change default /home partition label:</source>
         <translation>Ändere voreingestellten Partitionsbezeichner /home:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="674"/>
+        <location filename="../meinstall.ui" line="680"/>
         <source>Check for badblocks (takes longer)</source>
         <translation>Auf fehlerhafte Blöcke (badblocks) untersuchen (dauert länger)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="693"/>
+        <location filename="../meinstall.ui" line="699"/>
         <source>2a. Choose partitions</source>
         <translation>2a. Partitonen wählen</translation>
 <<<<<<< HEAD
     </message>
     <message>
-        <location filename="../meinstall.ui" line="723"/>
+        <location filename="../meinstall.ui" line="729"/>
         <source>/ (root) partition:</source>
         <translation>/ (root) Partition:</translation>
     </message>
     <message>
+<<<<<<< HEAD
 =======
     </message>
     <message>
@@ -1275,15 +1593,19 @@ p, li { white-space: pre-wrap; }
     <message>
 >>>>>>> upstream/master
         <location filename="../meinstall.ui" line="739"/>
+=======
+        <location filename="../meinstall.ui" line="745"/>
+>>>>>>> upstream/master
         <source>swap partition:</source>
         <translation>swap (Auslagerungs-) Partition:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="755"/>
+        <location filename="../meinstall.ui" line="761"/>
         <source>/home partition:</source>
         <translation>/home Partition:</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../meinstall.ui" line="831"/>
         <location filename="../meinstall.ui" line="1204"/>
@@ -1291,28 +1613,41 @@ p, li { white-space: pre-wrap; }
         <location filename="../meinstall.ui" line="834"/>
         <location filename="../meinstall.ui" line="1207"/>
 >>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="840"/>
+        <location filename="../meinstall.ui" line="1213"/>
+>>>>>>> upstream/master
         <source>root</source>
         <translation>root</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="867"/>
 =======
         <location filename="../meinstall.ui" line="870"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="876"/>
 >>>>>>> upstream/master
         <source>3. Installation in progress</source>
         <translation>3. Installation läuft</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="910"/>
 =======
         <location filename="../meinstall.ui" line="913"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="919"/>
 >>>>>>> upstream/master
         <source>Abort</source>
         <translation>Abbrechen</translation>
     </message>
     <message>
+<<<<<<< HEAD
 <<<<<<< HEAD
         <location filename="../meinstall.ui" line="913"/>
         <location filename="../meinstall.ui" line="1131"/>
@@ -1320,392 +1655,568 @@ p, li { white-space: pre-wrap; }
         <location filename="../meinstall.ui" line="916"/>
         <location filename="../meinstall.ui" line="1134"/>
 >>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="922"/>
+        <location filename="../meinstall.ui" line="1140"/>
+>>>>>>> upstream/master
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="952"/>
 =======
         <location filename="../meinstall.ui" line="955"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="961"/>
 >>>>>>> upstream/master
         <source>Ready to install MX Linux filesystem</source>
         <translation>Bereit zum installieren des MX Linux Dateisystem</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="974"/>
 =======
         <location filename="../meinstall.ui" line="977"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="983"/>
 >>>>>>> upstream/master
         <source>Tips</source>
         <translation>Tipps</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1048"/>
 =======
         <location filename="../meinstall.ui" line="1051"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1057"/>
 >>>>>>> upstream/master
         <source>4. Select Boot Method</source>
         <translation>4. Bootmethode auswählen</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1081"/>
 =======
         <location filename="../meinstall.ui" line="1084"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1090"/>
 >>>>>>> upstream/master
         <source>MBR</source>
         <translation>MBR</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1084"/>
 =======
         <location filename="../meinstall.ui" line="1087"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1093"/>
 >>>>>>> upstream/master
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1112"/>
 =======
         <location filename="../meinstall.ui" line="1115"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1121"/>
 >>>>>>> upstream/master
         <source>Install on:</source>
         <translation>Installiere auf:</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1128"/>
 =======
         <location filename="../meinstall.ui" line="1131"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1137"/>
 >>>>>>> upstream/master
         <source>Install GRUB for MX Linux and Windows</source>
         <translation>GRUB für MX Linux und Windows installieren</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1172"/>
 =======
         <location filename="../meinstall.ui" line="1175"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1181"/>
 >>>>>>> upstream/master
         <source>System boot disk:</source>
         <translation>System Start-Laufwerk:</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1255"/>
 =======
         <location filename="../meinstall.ui" line="1258"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1264"/>
 >>>>>>> upstream/master
         <source>Common Services to Enable</source>
         <translation>Übliche Dienste einschalten</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1295"/>
 =======
         <location filename="../meinstall.ui" line="1298"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1304"/>
 >>>>>>> upstream/master
         <source>Service</source>
         <translation>Dienst</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1300"/>
 =======
         <location filename="../meinstall.ui" line="1303"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1309"/>
 >>>>>>> upstream/master
         <source>Description</source>
         <translation>Beschreibung</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1336"/>
 =======
         <location filename="../meinstall.ui" line="1339"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1345"/>
 >>>>>>> upstream/master
         <source>5. Computer Network Names</source>
         <translation>5. Computer Netzwerk Namen</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1363"/>
 =======
         <location filename="../meinstall.ui" line="1366"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1372"/>
 >>>>>>> upstream/master
         <source>Workgroup</source>
         <translation>Arbeitsgruppe</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1376"/>
 =======
         <location filename="../meinstall.ui" line="1379"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1385"/>
 >>>>>>> upstream/master
         <source>Workgroup:</source>
         <translation>Arbeitsgruppe:</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1392"/>
 =======
         <location filename="../meinstall.ui" line="1395"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1401"/>
 >>>>>>> upstream/master
         <source>SaMBa Server for MS Networking</source>
         <translation>Samba Server für MS-Netzwerk</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1408"/>
 =======
         <location filename="../meinstall.ui" line="1411"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1417"/>
 >>>>>>> upstream/master
         <source>example.dom</source>
         <translation>beispiel.dom</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1421"/>
 =======
         <location filename="../meinstall.ui" line="1424"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1430"/>
 >>>>>>> upstream/master
         <source>Computer domain:</source>
         <translation>Computer Domäne:</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1437"/>
 =======
         <location filename="../meinstall.ui" line="1440"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1446"/>
 >>>>>>> upstream/master
         <source>mx1</source>
         <translation>mx1</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1453"/>
 =======
         <location filename="../meinstall.ui" line="1456"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1462"/>
 >>>>>>> upstream/master
         <source>Computer name:</source>
         <translation>Computername:</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1526"/>
 =======
         <location filename="../meinstall.ui" line="1529"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1535"/>
 >>>>>>> upstream/master
         <source>6d. Service Settings (advanced)</source>
         <translation>6d. Einstellungen von Diensten (fortgeschritten) </translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1532"/>
 =======
         <location filename="../meinstall.ui" line="1535"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1541"/>
 >>>>>>> upstream/master
         <source>Adjust which services should run at startup</source>
         <translation>Wählen Sie die Dienste, die beim Start laufen sollen</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1535"/>
 =======
         <location filename="../meinstall.ui" line="1538"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1544"/>
 >>>>>>> upstream/master
         <source>View</source>
         <translation>Schauen</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1564"/>
 =======
         <location filename="../meinstall.ui" line="1567"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1573"/>
 >>>>>>> upstream/master
         <source>6b. Configure Clock</source>
         <translation>6b. Uhrzeit einstellen</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1585"/>
 =======
         <location filename="../meinstall.ui" line="1588"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1594"/>
 >>>>>>> upstream/master
         <source>System clock uses LOCAL</source>
         <translation>Systemuhr benutzt lokale Zeit</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1601"/>
 =======
         <location filename="../meinstall.ui" line="1604"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1610"/>
 >>>>>>> upstream/master
         <source>6a. Localization Defaults</source>
         <translation>6a. Standardlokalisierung</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1631"/>
 =======
         <location filename="../meinstall.ui" line="1634"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1640"/>
 >>>>>>> upstream/master
         <source>Locale:</source>
         <translation>Sprache:</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1670"/>
 =======
         <location filename="../meinstall.ui" line="1673"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1679"/>
 >>>>>>> upstream/master
         <source>Keyboard:</source>
         <translation>Tastatur:</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1689"/>
 =======
         <location filename="../meinstall.ui" line="1692"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1698"/>
 >>>>>>> upstream/master
         <source>6c. Timezone Settings</source>
         <translation>6c. Zeitzone einstellen</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1695"/>
 =======
         <location filename="../meinstall.ui" line="1698"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1704"/>
 >>>>>>> upstream/master
         <source>Timezone:</source>
         <translation>Zeitzone:</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1746"/>
 =======
         <location filename="../meinstall.ui" line="1749"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1755"/>
 >>>>>>> upstream/master
         <source>7b. Root (administrator) Account</source>
         <translation>7b. root (Administrator) Konto</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1805"/>
 =======
         <location filename="../meinstall.ui" line="1808"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1814"/>
 >>>>>>> upstream/master
         <source>Confirm root password:</source>
         <translation>root-Passwort bestätigen:</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1821"/>
 =======
         <location filename="../meinstall.ui" line="1824"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1830"/>
 >>>>>>> upstream/master
         <source>Root password:</source>
         <translation>root-Passwort</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1853"/>
 =======
         <location filename="../meinstall.ui" line="1856"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1862"/>
 >>>>>>> upstream/master
         <source>7a. Default User Account</source>
         <translation>7a. Standard-Benutzerkonto</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1915"/>
 =======
         <location filename="../meinstall.ui" line="1918"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1924"/>
 >>>>>>> upstream/master
         <source>username</source>
         <translation>Benutzername</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1928"/>
 =======
         <location filename="../meinstall.ui" line="1931"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1937"/>
 >>>>>>> upstream/master
         <source>Confirm user password:</source>
         <translation>Benutzerpasswort bestätigen</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1944"/>
 =======
         <location filename="../meinstall.ui" line="1947"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1953"/>
 >>>>>>> upstream/master
         <source>Default user password:</source>
         <translation>Standard-Benutzerpasswort</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1960"/>
 =======
         <location filename="../meinstall.ui" line="1963"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1969"/>
 >>>>>>> upstream/master
         <source>Default user login name:</source>
         <translation>Standard-Benutzername</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1973"/>
 =======
         <location filename="../meinstall.ui" line="1976"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1982"/>
 >>>>>>> upstream/master
         <source>Autologin</source>
         <translation>Automatisches Login</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1980"/>
 =======
         <location filename="../meinstall.ui" line="1983"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1989"/>
 >>>>>>> upstream/master
         <source>Show passwords</source>
         <translation>Passwörter zeigen</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1987"/>
 =======
         <location filename="../meinstall.ui" line="1990"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1996"/>
 >>>>>>> upstream/master
         <source>Desktop modification made in the live environment will be carried over to the installed OS</source>
         <translation>In der Live-Umgebung vorgenommene Änderungen am Desktop werden in die Installation des OS übernommen</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="1990"/>
 =======
         <location filename="../meinstall.ui" line="1993"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="1999"/>
 >>>>>>> upstream/master
         <source>Save live desktop changes</source>
         <translation>Änderungen des Live-Desktop speichern</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="2022"/>
 =======
         <location filename="../meinstall.ui" line="2025"/>
+>>>>>>> upstream/master
+=======
+        <location filename="../meinstall.ui" line="2031"/>
 >>>>>>> upstream/master
         <source>Reminders</source>
         <translation>Erinnerungen</translation>
     </message>
     <message>
 <<<<<<< HEAD
+<<<<<<< HEAD
         <location filename="../meinstall.ui" line="2076"/>
 =======
         <location filename="../meinstall.ui" line="2079"/>
+=======
+        <location filename="../meinstall.ui" line="2085"/>
+>>>>>>> upstream/master
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }

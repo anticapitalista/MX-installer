@@ -93,9 +93,13 @@
      </property>
      <property name="currentIndex">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <number>8</number>
 =======
       <number>4</number>
+>>>>>>> upstream/master
+=======
+      <number>1</number>
 >>>>>>> upstream/master
      </property>
      <widget class="QWidget" name="Step_0">
@@ -558,6 +562,9 @@ p, li { white-space: pre-wrap; }
             <property name="text">
              <string notr="true">homeMX</string>
             </property>
+            <property name="maxLength">
+             <number>16</number>
+            </property>
            </widget>
           </item>
           <item row="4" column="0">
@@ -596,6 +603,9 @@ p, li { white-space: pre-wrap; }
 =======
              <string notr="true">rootMX-15</string>
 >>>>>>> upstream/master
+            </property>
+            <property name="maxLength">
+             <number>16</number>
             </property>
             <property name="placeholderText">
              <string/>
