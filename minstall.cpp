@@ -1053,8 +1053,10 @@ void MInstall::copyLinux() {
 
 // build a grub configuration and install grub
 bool MInstall::installLoader() {
+  on_grubBootCombo_activated();
   QString cmd;
   QString val = getCmdOut("ls /mnt/antiX/boot | grep 'initrd.img-3.6'");
+
 
   // the old initrd is not valid for this hardware
   if (!val.isEmpty()) {
@@ -1080,15 +1082,6 @@ bool MInstall::installLoader() {
   QString bootdrv = QString(grubBootCombo->currentText()).section(" ", 0, 0);
   QString rootpart = QString(rootCombo->currentText()).section(" ", 0, 0);
   QString boot;
-
-  // install to root if drive uses GPT (or Apple)    
-  cmd = QString("blkid %1 | grep PTTYPE=\\\"gpt\\\"").arg("/dev/" + bootdrv);
-  if ((system(cmd.toUtf8()) == 0) || (system("grub-probe -d /dev/sda2 2>/dev/null | grep hfsplus") == 0)) {
-      grubMbrButton->setDisabled(true);
-      grubRootButton->setChecked(true);
-  } else {
-      grubMbrButton->setDisabled(false);
-  }
 
   if (grubMbrButton->isChecked()) {
     boot = bootdrv;
@@ -2300,6 +2293,18 @@ void MInstall::on_homeCombo_activated(const QString &arg1) {
     }
 }
 
+// determine if selected drive uses GPT (or Apple)
+void MInstall::on_grubBootCombo_activated()
+{
+    QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
+    QString cmd = QString("blkid %1 | grep PTTYPE=\\\"gpt\\\"").arg(drv);
+    if ((system(cmd.toUtf8()) == 0) || (system("grub-probe -d /dev/sda2 2>/dev/null | grep hfsplus") == 0)) {
+        grubMbrButton->setDisabled(true);
+        grubRootButton->setChecked(true);
+    } else {
+        grubMbrButton->setDisabled(false);
+    }
+}
 
 void MInstall::procAbort() {
   proc->terminate();
@@ -2526,4 +2531,3 @@ void MInstall::copyTime() {
       break;
   }
 }
-

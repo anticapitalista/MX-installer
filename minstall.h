@@ -142,4 +142,5 @@ class MInstall : public QWidget, public Ui::MeInstall {
   private slots:
     void on_viewServicesButton_clicked();
     void on_homeCombo_activated(const QString &arg1);
+    void on_grubBootCombo_activated();
 };
