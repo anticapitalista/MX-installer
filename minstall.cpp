@@ -540,64 +540,64 @@ bool MInstall::makeSwapPartition(QString dev) {
 bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad, QString label) {
   QString cmd;
   if (strncmp(type, "reiserfs", 4) == 0) {
-    cmd = QString("/sbin/mkfs.reiserfs -q %1 -l %2").arg(dev).arg(label);
+    cmd = QString("/sbin/mkfs.reiserfs -q %1 -l \"%2\"").arg(dev).arg(label);
   } else {
     if (strncmp(type, "reiser4", 4) == 0) {
       // reiser4
-      cmd = QString("/sbin/mkfs.reiser4 -f -y %1 -L %2").arg(dev).arg(label);
+      cmd = QString("/sbin/mkfs.reiser4 -f -y %1 -L \"%2\"").arg(dev).arg(label);
     } else {
       if (strncmp(type, "ext3", 4) == 0) {
         // ext3
         if (bad) {
           // do with badblocks
-          cmd = QString("/sbin/mkfs.ext3 -c %1 -L %2").arg(dev).arg(label);
+          cmd = QString("/sbin/mkfs.ext3 -c %1 -L \"%2\"").arg(dev).arg(label);
         } else {
           // do no badblocks
-          cmd = QString("/sbin/mkfs.ext3 -F %1 -L %2").arg(dev).arg(label);
+          cmd = QString("/sbin/mkfs.ext3 -F %1 -L \"%2\"").arg(dev).arg(label);
         }
       } else {
         if (strncmp(type, "ext2", 4) == 0) {
           // ext2
           if (bad) {
             // do with badblocks
-            cmd = QString("/sbin/mkfs.ext2 -c %1 -L %2").arg(dev).arg(label);
+            cmd = QString("/sbin/mkfs.ext2 -c %1 -L \"%2\"").arg(dev).arg(label);
           } else {
             // do no badblocks
-            cmd = QString("/sbin/mkfs.ext2 -F %1 -L %2").arg(dev).arg(label);
+            cmd = QString("/sbin/mkfs.ext2 -F %1 -L \"%2\"").arg(dev).arg(label);
           }
         } else {
           if (strncmp(type, "btrfs", 4) == 0) {
             // btrfs and set up fsck
             system("/bin/cp -fp /bin/true /sbin/fsck.auto");
-            cmd = QString("/sbin/mkfs.btrfs -f %1 -L %2").arg(dev).arg(label);
+            cmd = QString("/sbin/mkfs.btrfs -f %1 -L \"%2\"").arg(dev).arg(label);
           } else {
             //xfs
             if (strncmp(type, "xfs", 4) == 0) {
               if (bad) {
                 // do with badblocks
-                cmd = QString("/sbin/mkfs.xfs -f -c %1 -L %2").arg(dev).arg(label);
+                cmd = QString("/sbin/mkfs.xfs -f -c %1 -L \"%2\"").arg(dev).arg(label);
               } else {
                 // do no badblocks
-                cmd = QString("/sbin/mkfs.xfs -f %1 -L %2").arg(dev).arg(label);
+                cmd = QString("/sbin/mkfs.xfs -f %1 -L \"%2\"").arg(dev).arg(label);
               }
             } else {
               //jfs
               if (strncmp(type, "jfs", 4) == 0) {
                 if (bad) {
                   // do with badblocks
-                  cmd = QString("/sbin/mkfs.jfs -q -c %1 -L %2").arg(dev).arg(label);
+                  cmd = QString("/sbin/mkfs.jfs -q -c %1 -L \"%2\"").arg(dev).arg(label);
                 } else {
                   // do no badblocks
-                  cmd = QString("/sbin/mkfs.jfs -q %1 -L %2").arg(dev).arg(label);
+                  cmd = QString("/sbin/mkfs.jfs -q %1 -L \"%2\"").arg(dev).arg(label);
                 }
               } else {
                 // must be ext4
                 if (bad) {
                   // do with badblocks
-                  cmd = QString("/sbin/mkfs.ext4 -c %1 -L %2").arg(dev).arg(label);
+                  cmd = QString("/sbin/mkfs.ext4 -c %1 -L \"%2\"").arg(dev).arg(label);
                 } else {
                   // do no badblocks
-                  cmd = QString("/sbin/mkfs.ext4 -F %1 -L %2").arg(dev).arg(label);
+                  cmd = QString("/sbin/mkfs.ext4 -F %1 -L \"%2\"").arg(dev).arg(label);
                 }
               }
             }
