@@ -1,16 +1,3 @@
-<<<<<<< HEAD
-translations/*.qm              usr/share/mx-installer/locale
-locales.template               usr/share/antiX
-copyright		       usr/share/doc/mx-installer
-LICENSE                        usr/share/doc/mx-installer 
-antiX                          usr/share/doc/mx-installer
-NOTICE                         usr/share/doc/mx-installer
-MEPIS_Collective_Work_License  usr/share/doc/mx-installer
-minstall                       usr/sbin 
-live-to-installed              usr/sbin 
-minstall.desktop               usr/share/applications/mx
-msystem.png                    usr/share/icons
-=======
 translations/*.qm               usr/share/mx-installer/locale
 locales.template                usr/share/antiX
 copyright		        usr/share/doc/mx-installer
@@ -20,6 +7,6 @@ NOTICE                          usr/share/doc/mx-installer
 MEPIS_Collective_Work_License   usr/share/doc/mx-installer
 minstall                        usr/sbin 
 gptdospartinfo			usr/sbin
+live-to-installed               usr/sbin
 minstall.desktop                usr/share/applications/mx
 msystem.png                     usr/share/icons
->>>>>>> upstream/master

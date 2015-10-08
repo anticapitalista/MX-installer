@@ -57,13 +57,13 @@ class MInstall : public QWidget, public Ui::MeInstall {
     QTreeWidgetItem *networkmanagerItem;
     QTreeWidgetItem *isdnItem;
     QTreeWidgetItem *nfsItem;
-    QTreeWidgetItem *rpcbindItem;
+    QTreeWidgetItem *openvpnItem;
     QTreeWidgetItem *smartmontoolsItem;
     QTreeWidgetItem *acpidItem;
     QTreeWidgetItem *hddtempItem;
     QTreeWidgetItem *acpifakekeyItem;
     QTreeWidgetItem *havegedItem;
-    QTreeWidgetItem *winbindItem;
+    QTreeWidgetItem *avahiItem;
 
 
     QDialog *mmn;
@@ -83,7 +83,6 @@ class MInstall : public QWidget, public Ui::MeInstall {
     void unmountGoBack(QString msg);
 
     // helpers
-    QString getCmdOut2(QString cmd);
     static QString getCmdOut(QString cmd);
     static QStringList getCmdOuts(QString cmd);
     static QString getCmdValue(QString cmd, QString key, QString keydel, QString valdel);

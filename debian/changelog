@@ -1,11 +1,3 @@
-<<<<<<< HEAD
-mx-installer (15.5.1mx15) mx; urgency=medium
-
-  * Changes for MX-15
-
- -- Adrian <adrian@mxlinux.org>  Fri, 29 May 2015 17:44:35 -0400
-
-=======
 mx-installer (15.10mx15) mx; urgency=medium
 
   * added GPT support
@@ -23,7 +15,6 @@ mx-installer (15.7mx15) mx; urgency=medium
   * update to qt5
 
  -- Adrian <adrian@mxlinux.org>  Tue, 30 Jun 2015 16:11:37 -0400
->>>>>>> upstream/master
 
 mx-installer (15.4.1mx14) mx; urgency=medium
 

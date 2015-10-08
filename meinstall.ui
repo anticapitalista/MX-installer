@@ -92,15 +92,7 @@
       </size>
      </property>
      <property name="currentIndex">
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <number>8</number>
-=======
-      <number>4</number>
->>>>>>> upstream/master
-=======
       <number>1</number>
->>>>>>> upstream/master
      </property>
      <widget class="QWidget" name="Step_0">
       <layout class="QGridLayout">
@@ -598,11 +590,7 @@ p, li { white-space: pre-wrap; }
              <bool>false</bool>
             </property>
             <property name="text">
-<<<<<<< HEAD
-             <string notr="true">rootMX</string>
-=======
              <string notr="true">rootMX-15</string>
->>>>>>> upstream/master
             </property>
             <property name="maxLength">
              <number>16</number>
@@ -794,8 +782,6 @@ p, li { white-space: pre-wrap; }
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
-<<<<<<< HEAD
-=======
             </property>
            </widget>
           </item>
@@ -845,64 +831,9 @@ p, li { white-space: pre-wrap; }
               <horstretch>0</horstretch>
               <verstretch>0</verstretch>
              </sizepolicy>
->>>>>>> upstream/master
             </property>
             <property name="insertPolicy">
              <enum>QComboBox::InsertAtBottom</enum>
-            </property>
-            <item>
-             <property name="text">
-              <string>root</string>
-             </property>
-            </item>
-           </widget>
-          </item>
-          <item row="3" column="0">
-           <spacer name="horizontalSpacer_3">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="3" column="1">
-           <spacer name="horizontalSpacer_4">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="3" column="2">
-           <spacer name="horizontalSpacer_2">
-            <property name="orientation">
-             <enum>Qt::Horizontal</enum>
-            </property>
-            <property name="sizeHint" stdset="0">
-             <size>
-              <width>40</width>
-              <height>20</height>
-             </size>
-            </property>
-           </spacer>
-          </item>
-          <item row="2" column="1" colspan="2">
-           <widget class="QComboBox" name="homeCombo">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="MinimumExpanding" vsizetype="Minimum">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
             </property>
             <item>
              <property name="text">
