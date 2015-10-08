@@ -92,7 +92,7 @@
       </size>
      </property>
      <property name="currentIndex">
-      <number>4</number>
+      <number>1</number>
      </property>
      <widget class="QWidget" name="Step_0">
       <layout class="QGridLayout">
@@ -554,6 +554,9 @@ p, li { white-space: pre-wrap; }
             <property name="text">
              <string notr="true">homeMX</string>
             </property>
+            <property name="maxLength">
+             <number>16</number>
+            </property>
            </widget>
           </item>
           <item row="4" column="0">
@@ -588,6 +591,9 @@ p, li { white-space: pre-wrap; }
             </property>
             <property name="text">
              <string notr="true">rootMX-15</string>
+            </property>
+            <property name="maxLength">
+             <number>16</number>
             </property>
             <property name="placeholderText">
              <string/>
