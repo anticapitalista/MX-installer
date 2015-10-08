@@ -57,13 +57,13 @@ class MInstall : public QWidget, public Ui::MeInstall {
     QTreeWidgetItem *networkmanagerItem;
     QTreeWidgetItem *isdnItem;
     QTreeWidgetItem *nfsItem;
-    QTreeWidgetItem *rpcbindItem;
+    QTreeWidgetItem *openvpnItem;
     QTreeWidgetItem *smartmontoolsItem;
     QTreeWidgetItem *acpidItem;
     QTreeWidgetItem *hddtempItem;
     QTreeWidgetItem *acpifakekeyItem;
     QTreeWidgetItem *havegedItem;
-    QTreeWidgetItem *winbindItem;
+    QTreeWidgetItem *avahiItem;
 
 
     QDialog *mmn;
