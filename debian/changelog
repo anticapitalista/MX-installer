@@ -1,3 +1,9 @@
+mx-installer (15.10.3mx15) mx; urgency=medium
+
+  * Fixed window icon 
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 11 Oct 2015 10:23:13 -0400
+
 mx-installer (15.10.2mx15) mx; urgency=medium
 
   * replaced gtpdospartinfo script with partinfo package
