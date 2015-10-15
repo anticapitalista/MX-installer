@@ -1,3 +1,9 @@
+mx-installer (15.10.4mx15) mx; urgency=medium
+
+  * install /home on non-Linux partitions
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 15 Oct 2015 09:27:48 -0400
+
 mx-installer (15.10.3mx15) mx; urgency=medium
 
   * Fixed window icon 
