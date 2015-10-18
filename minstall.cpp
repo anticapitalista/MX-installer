@@ -1042,7 +1042,7 @@ void MInstall::copyLinux() {
   connect(proc, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(copyDone(int, QProcess::ExitStatus)));
     // setup and start the process
   QString cmd = QString("/bin/cp -a /live/aufs/bin /live/aufs/boot /live/aufs/dev");
-  cmd.append(" /live/aufs/etc /live/aufs/lib /live/aufs/media /live/aufs/mnt");
+  cmd.append(" /live/aufs/etc /live/aufs/lib /live/aufs/lib64 /live/aufs/media /live/aufs/mnt");
   cmd.append(" /live/aufs/opt /live/aufs/root /live/aufs/sbin /live/aufs/selinux /live/aufs/usr");
   cmd.append(" /live/aufs/var /live/aufs/home /mnt/antiX");
   proc->start(cmd);
