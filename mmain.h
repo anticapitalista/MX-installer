@@ -14,34 +14,6 @@
 //   limitations under the License.
 //
 
-// include files for QT
-#include <fcntl.h>
-#include <qapplication.h>
-#include <qbuttongroup.h>
-#include <qcheckbox.h>
-#include <qcombobox.h>
-#include <qcursor.h>
-#include <qfiledialog.h>
-#include <qgroupbox.h>
-#include <qlabel.h>
-#include <qlineedit.h>
-#include <qlistwidget.h>
-#include <qlistview.h>
-#include <qmainwindow.h>
-#include <qprocess.h>
-#include <qprogressbar.h>
-#include <qpushbutton.h>
-#include <qradiobutton.h>
-#include <qregexp.h>
-#include <qspinbox.h>
-#include <qtabwidget.h>
-#include <qtextedit.h>
-#include <qtimer.h>
-#include <qstackedwidget.h>
-#include <stdlib.h>
-#include <string.h>
-
-
 #include "ui_memain.h"
 
 class MMain : public QDialog, public Ui::MeMain {

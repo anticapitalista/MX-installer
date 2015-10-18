@@ -15,9 +15,10 @@
 //   limitations under the License.
 //
 
-#include <QHeaderView>
+
 #include "minstall.h"
 #include "mmain.h"
+#include <QProgressDialog>
 
 //#include <QDebug>
 
@@ -444,7 +445,7 @@ QString cmd = QString("sed -i 's/%1/%2/g' %3").arg(oldtext).arg(newtext).arg(fil
 
 void MInstall::updateStatus(QString msg, int val) {
   installLabel->setText(msg.toUtf8());
-  progressBar->setValue(val);
+  progressBar->setValue(val);  
   qApp->processEvents();
 }
 
@@ -1052,26 +1053,18 @@ void MInstall::copyLinux() {
 // install loader
 
 // build a grub configuration and install grub
-bool MInstall::installLoader() {  
+bool MInstall::installLoader() {
+  QEventLoop loop;
+  QProcess process;
+  connect(&process, SIGNAL(finished(int)), &loop, SLOT(quit()));
   QString cmd;
   QString val = getCmdOut("ls /mnt/antiX/boot | grep 'initrd.img-3.6'");
 
-
   // the old initrd is not valid for this hardware
   if (!val.isEmpty()) {
-    cmd = QString("rm -f /mnt/antiX/boot/%1").arg(val);
+    cmd = QString("rm -f /mnt/antiX/boot/%1").arg(val);    
     system(cmd.toUtf8());
   }
-
-  // maybe replace the initrd.img file
-  //if (initrdCheck->isChecked()) {
-      setCursor(QCursor(Qt::WaitCursor));
-      system("chroot /mnt/antiX mount /proc");
-      cmd = QString("chroot /mnt/antiX mkinitramfs -o /boot/%1").arg(val);
-      system(cmd.toUtf8());
-      system("chroot /mnt/antiX umount /proc");
-      setCursor(QCursor(Qt::ArrowCursor));
-  //}
 
   if (!grubCheckBox->isChecked()) {
     // skip it
@@ -1096,21 +1089,36 @@ bool MInstall::installLoader() {
     return false;
   }
   setCursor(QCursor(Qt::WaitCursor));
+  QProgressDialog *progress = new QProgressDialog(this);
+  bar = new QProgressBar(progress);
+  progress->setWindowModality(Qt::WindowModal);
+  progress->setCancelButton(0);
+  progress->setLabelText(tr("Please wait till GRUB is installed, it might take about 30 seconds"));
+  progress->setAutoClose(false);
+  progress->setBar(bar);
+  bar->setTextVisible(false);
+  timer->start(100);
+  connect(timer, SIGNAL(timeout()), this, SLOT(procTime()));
+  progress->show();
   qApp->processEvents();
 
   // install new Grub now
   cmd = QString("grub-install --recheck --no-floppy --force --boot-directory=/mnt/antiX/boot /dev/%1").arg(boot);
-  if (system(cmd.toUtf8()) != 0) {
-    // error, try again
-    // this works for reiser-grub bug
-    if (system(cmd.toUtf8()) != 0) {
-      // error
-      setCursor(QCursor(Qt::ArrowCursor));
-      QMessageBox::critical(this, QString::null,
-        tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function."));
-      return false;
+  process.start("/bin/bash", QStringList() << "-c" << cmd);
+  loop.exec();
+  if (process.exitCode() != 0) {
+      // error, try again
+      // this works for reiser-grub bug
+      process.start("/bin/bash", QStringList() << "-c" << cmd);
+      loop.exec();
+      if (process.exitCode() != 0) {
+        // error
+        setCursor(QCursor(Qt::ArrowCursor));
+        QMessageBox::critical(this, QString::null,
+          tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function."));
+        return false;
+      }
     }
-  }
 
   // replace "quiet" in /etc/default/grub with the non-live boot codes
   QString cmdline = getCmdOut("/live/bin/non-live-cmdline");
@@ -1120,20 +1128,33 @@ bool MInstall::installLoader() {
   system(cmd.toUtf8());
 
   // update grub config
+  cmd = "mount -o bind /dev /mnt/antiX/dev; mount -o bind /sys /mnt/antiX/sys; mount -o bind /proc /mnt/antiX/proc";
+  process.start("/bin/bash", QStringList() << "-c" << cmd);
+  loop.exec();
 
-  system("mount -o bind /dev /mnt/antiX/dev");
-  system("mount -o bind /sys /mnt/antiX/sys");
-  system("mount -o bind /proc /mnt/antiX/proc");
+  cmd = "chroot /mnt/antiX update-grub";
+  process.start("/bin/bash", QStringList() << "-c" << cmd);
+  loop.exec();
 
-  system("chroot /mnt/antiX update-grub");
-  system("chroot /mnt/antiX make-fstab --swap-only");
-  system("chroot /mnt/antiX dev2uuid_fstab");
-  system("chroot /mnt/antiX update-initramfs -u -t -k all");
-  system("umount /mnt/antiX/proc");
-  system("umount /mnt/antiX/sys");
-  system("umount /mnt/antiX/dev");
+  cmd = "chroot /mnt/antiX make-fstab --swap-only";
+  process.start("/bin/bash", QStringList() << "-c" << cmd);
+  loop.exec();
+
+  cmd = "chroot /mnt/antiX dev2uuid_fstab";
+  process.start("/bin/bash", QStringList() << "-c" << cmd);
+  loop.exec();
+
+  cmd = "chroot /mnt/antiX update-initramfs -u -t -k all";
+  process.start("/bin/bash", QStringList() << "-c" << cmd);
+  loop.exec();
+
+  cmd = "umount /mnt/antiX/proc; umount /mnt/anctiX/sys; umount /mnt/antiX/dev";
+  process.start("/bin/bash", QStringList() << "-c" << cmd);
+  loop.exec();
 
   setCursor(QCursor(Qt::ArrowCursor));
+  timer->stop();
+  progress->close();
   return true;
 }
 
@@ -1853,7 +1874,7 @@ int MInstall::showPage(int curr, int next) {
     }
   } else if (next == 3 && curr == 4) {
     return 1;
-  } else if (next == 5 && curr == 4) {    
+  } else if (next == 5 && curr == 4) {
     if (!installLoader()) {
       return curr;
     } else {
@@ -2352,7 +2373,16 @@ void MInstall::delDone(int exitCode, QProcess::ExitStatus exitStatus) {
 }
 
 void MInstall::delTime() {
-  progressBar->setValue(progressBar->value() + 1);
+  progressBar->setValue(progressBar->value() + 1);  
+}
+
+// process time for QProgressDialog
+void MInstall::procTime() {
+  if (bar->value() == 100) {
+      bar->reset();
+  }
+  bar->setValue(bar->value() + 1);
+  qApp->processEvents();
 }
 
 /////////////////////////////////////////////////////////////////////////
@@ -2386,7 +2416,7 @@ void MInstall::copyDone(int exitCode, QProcess::ExitStatus exitStatus) {
     updateStatus(tr("Fixing configuration"), 99);
     chmod("/mnt/antiX/var/tmp",01777);
     system("cd /mnt/antiX && ln -s var/tmp tmp");
-    system("ls /lib64 && cd /mnt/antiX && ln -s lib lib64");
+    system("test -d /lib64 && cd /mnt/antiX && ln -s lib lib64");
 
     FILE *fp = fopen("/mnt/antiX/etc/fstab", "w");
     if (fp != NULL) {

@@ -14,18 +14,14 @@
 //   limitations under the License.
 //
 
-#include <sys/mount.h>
 #include <sys/stat.h>
 #include <sys/swap.h>
-#include <sys/types.h>
 #include <unistd.h>
-#include <qfile.h>
 #include <dirent.h>
-#include <qmessagebox.h>
-#include <qwidget.h>
-#include <qprocess.h>
-#include <qtimer.h>
-#include <qlistview.h>
+#include <QFile>
+#include <QMessageBox>
+#include <QProcess>
+#include <QTimer>
 #include "ui_meinstall.h"
 
 class MInstall : public QWidget, public Ui::MeInstall {
@@ -33,6 +29,7 @@ class MInstall : public QWidget, public Ui::MeInstall {
   protected:
     QProcess *proc;
     QTimer *timer;
+    QProgressBar *bar;
     QTreeWidgetItem *webminItem;
     QTreeWidgetItem *sshItem;
     QTreeWidgetItem *cupsItem;
@@ -138,6 +135,8 @@ class MInstall : public QWidget, public Ui::MeInstall {
     void copyStart();
     void copyDone(int exitCode, QProcess::ExitStatus exitStatus);
     void copyTime();
+
+    void procTime();
 
   private slots:
     void on_viewServicesButton_clicked();
