@@ -10,8 +10,8 @@ Build-Depends: qt5-qmake, qt5-default, qttools5-dev-tools, debhelper (>= 9.20120
 Package-List:
  mx-installer deb system optional arch=any
 Checksums-Sha1:
- 80979d2849579ea1caf8d9cc9d1ec57142e678b3 1533596 mx-installer_15.10.5mx15.tar.xz
+ 12f495be1a2bd0eac8055383201c3d9447507fd5 1766920 mx-installer_15.10.5mx15.tar.xz
 Checksums-Sha256:
- af45d6fa8887a2eeb5cd3c5b85bd5197ae8762de414ecd5639d216187109d44c 1533596 mx-installer_15.10.5mx15.tar.xz
+ d00a09de4136803f7fdabbba18f1474b854c4bb94df0beefee67c098ded48b28 1766920 mx-installer_15.10.5mx15.tar.xz
 Files:
- 8900f1d72fdb141ab809d79932f1959d 1533596 mx-installer_15.10.5mx15.tar.xz
+ ad19b1241e4fe421a5bc7cb2e8ea466b 1766920 mx-installer_15.10.5mx15.tar.xz
