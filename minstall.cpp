@@ -1093,7 +1093,7 @@ bool MInstall::installLoader() {
   bar = new QProgressBar(progress);
   progress->setWindowModality(Qt::WindowModal);
   progress->setCancelButton(0);
-  progress->setLabelText(tr("Please wait till GRUB is installed, it might take about 30 seconds"));
+  progress->setLabelText(tr("Please wait till GRUB is installed, it might take a couple of minutes."));
   progress->setAutoClose(false);
   progress->setBar(bar);
   bar->setTextVisible(false);
@@ -1113,9 +1113,10 @@ bool MInstall::installLoader() {
       loop.exec();
       if (process.exitCode() != 0) {
         // error
+        progress->close();
         setCursor(QCursor(Qt::ArrowCursor));
         QMessageBox::critical(this, QString::null,
-          tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function."));
+          tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function."));        
         return false;
       }
     }

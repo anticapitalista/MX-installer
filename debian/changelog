@@ -1,3 +1,9 @@
+mx-installer (15.10.5mx15) mx; urgency=medium
+
+  * show progress box when installing GRUB
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 19 Oct 2015 20:41:57 -0400
+
 mx-installer (15.10.4mx15) mx; urgency=medium
 
   * install /home on non-Linux partitions
