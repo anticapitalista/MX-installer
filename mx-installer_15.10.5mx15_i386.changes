@@ -15,14 +15,14 @@ Changes:
  .
    * show progress box when installing GRUB
 Checksums-Sha1:
- cafc59ad90a6933cd452fead40ef3a20e7924789 655 mx-installer_15.10.5mx15.dsc
- 80979d2849579ea1caf8d9cc9d1ec57142e678b3 1533596 mx-installer_15.10.5mx15.tar.xz
- 73c0333c450a37bc38160c1e394b73742d881616 221192 mx-installer_15.10.5mx15_i386.deb
+ a75ac3e2ef7cb301d14391cf18cdf65f0239b00f 655 mx-installer_15.10.5mx15.dsc
+ 3ba0f3824a636f97699fb5463919c9900f3606c6 1686440 mx-installer_15.10.5mx15.tar.xz
+ 8744a4555aabae9ff34abb73e0cecab66c0a035c 221422 mx-installer_15.10.5mx15_i386.deb
 Checksums-Sha256:
- 3310907f55c18034dda6cdf776347bf16b7997feda18311ac57892645c954cdd 655 mx-installer_15.10.5mx15.dsc
- af45d6fa8887a2eeb5cd3c5b85bd5197ae8762de414ecd5639d216187109d44c 1533596 mx-installer_15.10.5mx15.tar.xz
- 9297f878895f23520401b61a849349d5baafa7c212915aff49c5708b05b89607 221192 mx-installer_15.10.5mx15_i386.deb
+ 29e6bc03960d9e9e00e2ad466b6436ca3326321272c374fdc78dd91dd23dd7a3 655 mx-installer_15.10.5mx15.dsc
+ 63a1e1a4554336974604bc95bf43c1ebfd59098050f5674bba711ec8fa79239a 1686440 mx-installer_15.10.5mx15.tar.xz
+ ba9da0d7045802adc431199f657ab4646a3bfb12aa4d1ee73aee98e96f2623b7 221422 mx-installer_15.10.5mx15_i386.deb
 Files:
- e4f3521b8b4220c4e7f869d2aa1819a5 655 system optional mx-installer_15.10.5mx15.dsc
- 8900f1d72fdb141ab809d79932f1959d 1533596 system optional mx-installer_15.10.5mx15.tar.xz
- 58f42195a63a562397b27243bc12d9dd 221192 system optional mx-installer_15.10.5mx15_i386.deb
+ 046c4f0c92733dc7279374290dd85ec5 655 system optional mx-installer_15.10.5mx15.dsc
+ 985b8e26804e2d45eb0ed5ff023bae56 1686440 system optional mx-installer_15.10.5mx15.tar.xz
+ 7b2aad408fff2aa2d3c92f549b31aa36 221422 system optional mx-installer_15.10.5mx15_i386.deb
