@@ -445,7 +445,7 @@ QString cmd = QString("sed -i 's/%1/%2/g' %3").arg(oldtext).arg(newtext).arg(fil
 
 void MInstall::updateStatus(QString msg, int val) {
   installLabel->setText(msg.toUtf8());
-  progressBar->setValue(val);  
+  progressBar->setValue(val);
   qApp->processEvents();
 }
 
@@ -1062,7 +1062,7 @@ bool MInstall::installLoader() {
 
   // the old initrd is not valid for this hardware
   if (!val.isEmpty()) {
-    cmd = QString("rm -f /mnt/antiX/boot/%1").arg(val);    
+    cmd = QString("rm -f /mnt/antiX/boot/%1").arg(val);
     system(cmd.toUtf8());
   }
 
@@ -1105,18 +1105,20 @@ bool MInstall::installLoader() {
   // install new Grub now
   cmd = QString("grub-install --recheck --no-floppy --force --boot-directory=/mnt/antiX/boot /dev/%1").arg(boot);
   process.start("/bin/bash", QStringList() << "-c" << cmd);
+  process.waitForStarted();
   loop.exec();
   if (process.exitCode() != 0) {
       // error, try again
       // this works for reiser-grub bug
       process.start("/bin/bash", QStringList() << "-c" << cmd);
+      process.waitForStarted();
       loop.exec();
       if (process.exitCode() != 0) {
         // error
         progress->close();
         setCursor(QCursor(Qt::ArrowCursor));
         QMessageBox::critical(this, QString::null,
-          tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function."));        
+          tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function."));
         return false;
       }
     }
@@ -1131,30 +1133,37 @@ bool MInstall::installLoader() {
   // update grub config
   cmd = "mount -o bind /dev /mnt/antiX/dev; mount -o bind /sys /mnt/antiX/sys; mount -o bind /proc /mnt/antiX/proc";
   process.start("/bin/bash", QStringList() << "-c" << cmd);
+  process.waitForStarted();
   loop.exec();
 
   cmd = "chroot /mnt/antiX update-grub";
   process.start("/bin/bash", QStringList() << "-c" << cmd);
+  process.waitForStarted();
   loop.exec();
 
   cmd = "chroot /mnt/antiX make-fstab --swap-only";
   process.start("/bin/bash", QStringList() << "-c" << cmd);
+  process.waitForStarted();
   loop.exec();
 
   cmd = "chroot /mnt/antiX dev2uuid_fstab";
   process.start("/bin/bash", QStringList() << "-c" << cmd);
+  process.waitForStarted();
   loop.exec();
 
   cmd = "chroot /mnt/antiX update-initramfs -u -t -k all";
   process.start("/bin/bash", QStringList() << "-c" << cmd);
+  process.waitForStarted();
   loop.exec();
 
   cmd = "umount /mnt/antiX/proc; umount /mnt/anctiX/sys; umount /mnt/antiX/dev";
   process.start("/bin/bash", QStringList() << "-c" << cmd);
+  process.waitForStarted();
   loop.exec();
 
   setCursor(QCursor(Qt::ArrowCursor));
   timer->stop();
+  process.close();
   progress->close();
   return true;
 }
@@ -2374,7 +2383,7 @@ void MInstall::delDone(int exitCode, QProcess::ExitStatus exitStatus) {
 }
 
 void MInstall::delTime() {
-  progressBar->setValue(progressBar->value() + 1);  
+  progressBar->setValue(progressBar->value() + 1);
 }
 
 // process time for QProgressDialog
