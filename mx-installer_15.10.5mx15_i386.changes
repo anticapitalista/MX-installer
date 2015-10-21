@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Mon, 19 Oct 2015 20:41:57 -0400
+Source: mx-installer
+Binary: mx-installer
+Architecture: source i386
+Version: 15.10.5mx15
+Distribution: mx
+Urgency: medium
+Maintainer: anticapitalista <antiX@operamail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description: 
+ mx-installer - GUI installer for MX Linux.
+Changes: 
+ mx-installer (15.10.5mx15) mx; urgency=medium
+ .
+   * show progress box when installing GRUB
+Checksums-Sha1: 
+ a4172a0b3d873dd695161668e9e1e1bae3cdafd8 650 mx-installer_15.10.5mx15.dsc
+ 13c381fa298427e02f9c206029abe1c72685897e 4352967 mx-installer_15.10.5mx15.tar.gz
+ 48b3d2a4233e069138646e3ab1edcfddf476aac8 220018 mx-installer_15.10.5mx15_i386.deb
+Checksums-Sha256: 
+ dcd4f40bc3a125fa96445c369ce2432f160fff2657197d46edd7a86322e7b503 650 mx-installer_15.10.5mx15.dsc
+ ca023b1077db9570cfdafa26cbcb8c2997dc8cbb1c4cbc474131dc4902948618 4352967 mx-installer_15.10.5mx15.tar.gz
+ 4dae729509f35da0895677df496cdf68a16b08c0a8e187ddbc909783fa115efe 220018 mx-installer_15.10.5mx15_i386.deb
+Files: 
+ c6080ac736f689c6257a6939d044954e 650 system optional mx-installer_15.10.5mx15.dsc
+ 691fcba3d630202f8e4c616cbde05aca 4352967 system optional mx-installer_15.10.5mx15.tar.gz
+ 388ee7008ff36e81d89e4513dbb37f31 220018 system optional mx-installer_15.10.5mx15_i386.deb
