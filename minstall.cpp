@@ -18,7 +18,6 @@
 
 #include "minstall.h"
 #include "mmain.h"
-#include <QProgressDialog>
 
 //#include <QDebug>
 
@@ -386,6 +385,18 @@ QStringList MInstall::getCmdOuts(QString cmd) {
   }
   pclose(fp);
   return results;
+}
+
+int MInstall::runCmd(QString cmd) {
+  QEventLoop loop;
+  QProcess *process = new QProcess();
+  connect(process, SIGNAL(finished(int)), &loop, SLOT(quit()));
+  process->start("/bin/bash", QStringList() << "-c" << cmd);
+  process->waitForStarted();
+  loop.exec();
+  int exit_code = process->exitCode();
+  delete process;
+  return exit_code;
 }
 
 QString MInstall::getCmdValue(QString cmd, QString key, QString keydel, QString valdel) {
@@ -1054,9 +1065,6 @@ void MInstall::copyLinux() {
 
 // build a grub configuration and install grub
 bool MInstall::installLoader() {
-  QEventLoop loop;
-  QProcess process;
-  connect(&process, SIGNAL(finished(int)), &loop, SLOT(quit()));
   QString cmd;
   QString val = getCmdOut("ls /mnt/antiX/boot | grep 'initrd.img-3.6'");
 
@@ -1092,7 +1100,7 @@ bool MInstall::installLoader() {
   QProgressDialog *progress = new QProgressDialog(this);
   bar = new QProgressBar(progress);
   progress->setWindowModality(Qt::WindowModal);
-   progress->setWindowFlags(Qt::Dialog | Qt::CustomizeWindowHint | Qt::WindowTitleHint |Qt::WindowSystemMenuHint | Qt::WindowStaysOnTopHint);
+  progress->setWindowFlags(Qt::Dialog | Qt::CustomizeWindowHint | Qt::WindowTitleHint |Qt::WindowSystemMenuHint | Qt::WindowStaysOnTopHint);
   progress->setCancelButton(0);
   progress->setLabelText(tr("Please wait till GRUB is installed, it might take a couple of minutes."));
   progress->setAutoClose(false);
@@ -1105,16 +1113,11 @@ bool MInstall::installLoader() {
 
   // install new Grub now
   cmd = QString("grub-install --recheck --no-floppy --force --boot-directory=/mnt/antiX/boot /dev/%1").arg(boot);
-  process.start("/bin/bash", QStringList() << "-c" << cmd);
-  process.waitForStarted();
-  loop.exec();
-  if (process.exitCode() != 0) {
+  if (runCmd(cmd) != 0) {
       // error, try again
       // this works for reiser-grub bug
-      process.start("/bin/bash", QStringList() << "-c" << cmd);
-      process.waitForStarted();
-      loop.exec();
-      if (process.exitCode() != 0) {
+      runCmd(cmd);
+      if (runCmd(cmd) != 0) {
         // error
         progress->close();
         setCursor(QCursor(Qt::ArrowCursor));
@@ -1133,38 +1136,20 @@ bool MInstall::installLoader() {
 
   // update grub config
   cmd = "mount -o bind /dev /mnt/antiX/dev; mount -o bind /sys /mnt/antiX/sys; mount -o bind /proc /mnt/antiX/proc";
-  process.start("/bin/bash", QStringList() << "-c" << cmd);
-  process.waitForStarted();
-  loop.exec();
-
+  runCmd(cmd);
   cmd = "chroot /mnt/antiX update-grub";
-  process.start("/bin/bash", QStringList() << "-c" << cmd);
-  process.waitForStarted();
-  loop.exec();
-
+  runCmd(cmd);
   cmd = "chroot /mnt/antiX make-fstab --swap-only";
-  process.start("/bin/bash", QStringList() << "-c" << cmd);
-  process.waitForStarted();
-  loop.exec();
-
+  runCmd(cmd);
   cmd = "chroot /mnt/antiX dev2uuid_fstab";
-  process.start("/bin/bash", QStringList() << "-c" << cmd);
-  process.waitForStarted();
-  loop.exec();
-
+  runCmd(cmd);
   cmd = "chroot /mnt/antiX update-initramfs -u -t -k all";
-  process.start("/bin/bash", QStringList() << "-c" << cmd);
-  process.waitForStarted();
-  loop.exec();
-
+  runCmd(cmd);
   cmd = "umount /mnt/antiX/proc; umount /mnt/anctiX/sys; umount /mnt/antiX/dev";
-  process.start("/bin/bash", QStringList() << "-c" << cmd);
-  process.waitForStarted();
-  loop.exec();
+  runCmd(cmd);
 
   setCursor(QCursor(Qt::ArrowCursor));
   timer->stop();
-  process.close();
   progress->close();
   return true;
 }

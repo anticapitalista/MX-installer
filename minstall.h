@@ -22,6 +22,7 @@
 #include <QMessageBox>
 #include <QProcess>
 #include <QTimer>
+#include <QProgressDialog>
 #include "ui_meinstall.h"
 
 class MInstall : public QWidget, public Ui::MeInstall {
@@ -84,6 +85,7 @@ class MInstall : public QWidget, public Ui::MeInstall {
     static QStringList getCmdOuts(QString cmd);
     static QString getCmdValue(QString cmd, QString key, QString keydel, QString valdel);
     static QStringList getCmdValues(QString cmd, QString key, QString keydel, QString valdel);
+    static int runCmd(QString cmd);
     static bool replaceStringInFile(QString oldtext, QString newtext, QString filepath);
     static int getPartitionNumber();
 

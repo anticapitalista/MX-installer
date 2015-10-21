@@ -7,11 +7,11 @@ Maintainer: anticapitalista <antiX@operamail.com>
 Homepage: http://antix.mepis.org
 Standards-Version: 3.9.4
 Build-Depends: qt5-qmake, qt5-default, qttools5-dev-tools, debhelper (>= 9.20120115)
-Package-List:
- mx-installer deb system optional arch=any
-Checksums-Sha1:
- 12f495be1a2bd0eac8055383201c3d9447507fd5 1766920 mx-installer_15.10.5mx15.tar.xz
-Checksums-Sha256:
- d00a09de4136803f7fdabbba18f1474b854c4bb94df0beefee67c098ded48b28 1766920 mx-installer_15.10.5mx15.tar.xz
-Files:
- ad19b1241e4fe421a5bc7cb2e8ea466b 1766920 mx-installer_15.10.5mx15.tar.xz
+Package-List: 
+ mx-installer deb system optional
+Checksums-Sha1: 
+ 13c381fa298427e02f9c206029abe1c72685897e 4352967 mx-installer_15.10.5mx15.tar.gz
+Checksums-Sha256: 
+ ca023b1077db9570cfdafa26cbcb8c2997dc8cbb1c4cbc474131dc4902948618 4352967 mx-installer_15.10.5mx15.tar.gz
+Files: 
+ 691fcba3d630202f8e4c616cbde05aca 4352967 mx-installer_15.10.5mx15.tar.gz
