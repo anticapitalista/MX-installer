@@ -1116,7 +1116,6 @@ bool MInstall::installLoader() {
   if (runCmd(cmd) != 0) {
       // error, try again
       // this works for reiser-grub bug
-      runCmd(cmd);
       if (runCmd(cmd) != 0) {
         // error
         progress->close();
@@ -1132,21 +1131,29 @@ bool MInstall::installLoader() {
   cmdline.replace('\\', "\\\\");
   cmdline.replace('|', "\\|");
   cmd = QString("sed -i -r 's|^(GRUB_CMDLINE_LINUX_DEFAULT=).*|\\1\"%1\"|' /mnt/antiX/etc/default/grub").arg(cmdline);
-  system(cmd.toUtf8());
+  getCmdOut(cmd);
 
   // update grub config
-  cmd = "mount -o bind /dev /mnt/antiX/dev; mount -o bind /sys /mnt/antiX/sys; mount -o bind /proc /mnt/antiX/proc";
-  runCmd(cmd);
+  cmd = "mount -o bind /dev /mnt/antiX/dev";
+  getCmdOut(cmd);
+  cmd = "mount -o bind /sys /mnt/antiX/sys";
+  getCmdOut(cmd);
+  cmd = "mount -o bind /proc /mnt/antiX/proc";
+  getCmdOut(cmd);
   cmd = "chroot /mnt/antiX update-grub";
-  runCmd(cmd);
+  getCmdOut(cmd);
   cmd = "chroot /mnt/antiX make-fstab --swap-only";
-  runCmd(cmd);
+  getCmdOut(cmd);
   cmd = "chroot /mnt/antiX dev2uuid_fstab";
-  runCmd(cmd);
+  getCmdOut(cmd);
   cmd = "chroot /mnt/antiX update-initramfs -u -t -k all";
-  runCmd(cmd);
-  cmd = "umount /mnt/antiX/proc; umount /mnt/anctiX/sys; umount /mnt/antiX/dev";
-  runCmd(cmd);
+  getCmdOut(cmd);
+  cmd = "umount /mnt/antiX/proc";
+  getCmdOut(cmd);
+  cmd = "umount /mnt/antiX/sys";
+  getCmdOut(cmd);
+  cmd = "umount /mnt/antiX/dev";
+  getCmdOut(cmd);
 
   setCursor(QCursor(Qt::ArrowCursor));
   timer->stop();
