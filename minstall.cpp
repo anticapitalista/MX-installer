@@ -1092,6 +1092,7 @@ bool MInstall::installLoader() {
   QProgressDialog *progress = new QProgressDialog(this);
   bar = new QProgressBar(progress);
   progress->setWindowModality(Qt::WindowModal);
+   progress->setWindowFlags(Qt::Dialog | Qt::CustomizeWindowHint | Qt::WindowTitleHint |Qt::WindowSystemMenuHint | Qt::WindowStaysOnTopHint);
   progress->setCancelButton(0);
   progress->setLabelText(tr("Please wait till GRUB is installed, it might take a couple of minutes."));
   progress->setAutoClose(false);
