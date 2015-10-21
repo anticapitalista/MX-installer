@@ -22,6 +22,7 @@
 #include <QMessageBox>
 #include <QProcess>
 #include <QTimer>
+#include <QProgressDialog>
 #include "ui_meinstall.h"
 
 class MInstall : public QWidget, public Ui::MeInstall {

@@ -8,21 +8,21 @@ Distribution: mx
 Urgency: medium
 Maintainer: anticapitalista <antiX@operamail.com>
 Changed-By: Adrian <adrian@mxlinux.org>
-Description:
+Description: 
  mx-installer - GUI installer for MX Linux.
-Changes:
+Changes: 
  mx-installer (15.10.5mx15) mx; urgency=medium
  .
    * show progress box when installing GRUB
-Checksums-Sha1:
- 5e7764628dd4a4ae133427a293bf8698367c69b6 655 mx-installer_15.10.5mx15.dsc
- 12f495be1a2bd0eac8055383201c3d9447507fd5 1766920 mx-installer_15.10.5mx15.tar.xz
- debe6471d1f7751c76d596eda86bda88abed0fca 221246 mx-installer_15.10.5mx15_i386.deb
-Checksums-Sha256:
- d885b16942643097170bf51dbdf4f04925f62471954a142e70e3a9b6c453c7b4 655 mx-installer_15.10.5mx15.dsc
- d00a09de4136803f7fdabbba18f1474b854c4bb94df0beefee67c098ded48b28 1766920 mx-installer_15.10.5mx15.tar.xz
- 71c572551a808c9e5dda4b0140fc4910e5ef58edb1d9e4a136b254a0da18eb6f 221246 mx-installer_15.10.5mx15_i386.deb
-Files:
- 784df892c6cc19e6f01afa4109111950 655 system optional mx-installer_15.10.5mx15.dsc
- ad19b1241e4fe421a5bc7cb2e8ea466b 1766920 system optional mx-installer_15.10.5mx15.tar.xz
- 375da7f5db0545ee5f88b21cbb28f50d 221246 system optional mx-installer_15.10.5mx15_i386.deb
+Checksums-Sha1: 
+ 474b880164f0acabd4b2a20fd8ad3ae872ae537d 650 mx-installer_15.10.5mx15.dsc
+ f4e3a60522ab7a47acda0d56f367cddfb22c64ce 2176017 mx-installer_15.10.5mx15.tar.gz
+ d5326b80e44da289857476e886dc261bbb0be8ac 220264 mx-installer_15.10.5mx15_i386.deb
+Checksums-Sha256: 
+ e4e8653115acaf00c7c5b80747fea84ea8829d8d67009bc664773fa0361ebf72 650 mx-installer_15.10.5mx15.dsc
+ 6659adbd8ea568a0e640b2ebf3d82b4dcdf97ee03f4fc52e613e04b5e8e0296a 2176017 mx-installer_15.10.5mx15.tar.gz
+ d44de12c83309ac24315869447fae2c65e8d442619fec1d4511e15d0448add4c 220264 mx-installer_15.10.5mx15_i386.deb
+Files: 
+ 1294137ea2760befeb5e88cab2175a57 650 system optional mx-installer_15.10.5mx15.dsc
+ 3dd6535b7defd23a04b54442b99ccadc 2176017 system optional mx-installer_15.10.5mx15.tar.gz
+ 18abf410d602fa55d0283129617f0ca6 220264 system optional mx-installer_15.10.5mx15_i386.deb
