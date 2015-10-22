@@ -78,7 +78,7 @@ class MInstall : public QWidget, public Ui::MeInstall {
     QString removedItem;
 
     void goBack(QString msg);
-    void unmountGoBack(QString msg);
+    void unmountGoBack(QString msg);   
 
     // helpers
     static QString getCmdOut(QString cmd);
@@ -88,6 +88,7 @@ class MInstall : public QWidget, public Ui::MeInstall {
     static int runCmd(QString cmd);
     static bool replaceStringInFile(QString oldtext, QString newtext, QString filepath);
     static int getPartitionNumber();
+    static void command(const QString &string);
 
     void updateStatus(QString msg, int val);
     bool mountPartition(QString dev, const char *point);

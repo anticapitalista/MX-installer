@@ -394,7 +394,9 @@ int MInstall::runCmd(QString cmd) {
   process->start("/bin/bash", QStringList() << "-c" << cmd);
   process->waitForStarted();
   loop.exec();
+  disconnect(process, SIGNAL(finished(int)), 0, 0);
   int exit_code = process->exitCode();
+  process->close();
   delete process;
   return exit_code;
 }
@@ -741,7 +743,7 @@ bool MInstall::makeDefaultPartitions() {
     return false;
   }
   system("sleep 1");
-  //system("/usr/sbin/buildfstab -r");
+  system("make-fstab -s");
   system("/sbin/swapon -a 2>&1");
 
   updateStatus(tr("Formatting root partition"), 3);
@@ -905,6 +907,7 @@ bool MInstall::makeChosenPartitions() {
     }
     // enable the new swap partition asap
     system("sleep 1");
+    system("make-fstab -s");
     swapon(swapdev.toUtf8(),0);
   }
 
@@ -980,7 +983,7 @@ bool MInstall::makeChosenPartitions() {
   }
   // mount all swaps
   system("sleep 1");
-  //system("/usr/sbin/buildfstab -r");
+  system("make-fstab -s");
   system("/sbin/swapon -a 2>&1");
 
   return true;
@@ -1131,23 +1134,23 @@ bool MInstall::installLoader() {
   cmdline.replace('\\', "\\\\");
   cmdline.replace('|', "\\|");
   cmd = QString("sed -i -r 's|^(GRUB_CMDLINE_LINUX_DEFAULT=).*|\\1\"%1\"|' /mnt/antiX/etc/default/grub").arg(cmdline);
-  getCmdOut(cmd);
+  runCmd(cmd);
 
   // update grub config
   cmd = "mount -o bind /dev /mnt/antiX/dev";
-  getCmdOut(cmd);
+  runCmd(cmd);
   cmd = "mount -o bind /sys /mnt/antiX/sys";
-  getCmdOut(cmd);
+  runCmd(cmd);
   cmd = "mount -o bind /proc /mnt/antiX/proc";
-  getCmdOut(cmd);
+  runCmd(cmd);
   cmd = "chroot /mnt/antiX update-grub";
-  getCmdOut(cmd);
+  runCmd(cmd);
   cmd = "chroot /mnt/antiX make-fstab --swap-only";
-  getCmdOut(cmd);
+  runCmd(cmd);
   cmd = "chroot /mnt/antiX dev2uuid_fstab";
-  getCmdOut(cmd);
+  runCmd(cmd);
   cmd = "chroot /mnt/antiX update-initramfs -u -t -k all";
-  getCmdOut(cmd);
+  runCmd(cmd);
   cmd = "umount /mnt/antiX/proc";
   getCmdOut(cmd);
   cmd = "umount /mnt/antiX/sys";
@@ -1959,7 +1962,7 @@ void MInstall::pageDisplayed(int next) {
         if (!makeDefaultPartitions()) {
           // failed
           system("sleep 1");
-          //system("/usr/sbin/buildfstab -r");
+          system("make-fstab -s");
           system("/sbin/swapon -a 2>&1");
           nextButton->setEnabled(true);
           goBack(tr("Failed to create required partitions.\nReturning to Step 1."));
@@ -1976,7 +1979,7 @@ void MInstall::pageDisplayed(int next) {
         }
       }
       system("sleep 1");
-      //system("/usr/sbin/buildfstab -r");
+      system("make-fstab -s");
       system("/sbin/swapon -a 2>&1");
       installLinux();
       break;
@@ -2186,7 +2189,7 @@ void MInstall::on_viewServicesButton_clicked()
 void MInstall::on_qtpartedButton_clicked() {
   system("/sbin/swapoff -a 2>&1");
   system("/usr/sbin/gparted");
-  //system("/usr/sbin/buildfstab -r");
+  system("make-fstab -s");
   system("/sbin/swapon -a 2>&1");
   this->updatePartitionWidgets();
   on_diskCombo_activated();
