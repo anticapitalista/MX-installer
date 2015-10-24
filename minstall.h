@@ -23,9 +23,8 @@
 #include <QProcess>
 #include <QTimer>
 #include <QProgressDialog>
-#include "ui_meinstall.h"
-
 #include <QtConcurrent/QtConcurrent>
+#include "ui_meinstall.h"
 
 class MInstall : public QWidget, public Ui::MeInstall {
   Q_OBJECT
@@ -128,23 +127,23 @@ class MInstall : public QWidget, public Ui::MeInstall {
     virtual void on_backButton_clicked();
     virtual void on_abortInstallButton_clicked();
     virtual void on_qtpartedButton_clicked();
-    virtual void on_diskCombo_activated();
-    virtual void on_rootCombo_activated();
-    virtual void on_rootTypeCombo_activated();
+    virtual void on_diskCombo_activated(QString item = "");
+    virtual void on_rootCombo_activated(QString item = "");
+    virtual void on_rootTypeCombo_activated(QString item = "");
     void procAbort();
     virtual bool close();
 //    void moreClicked(QListViewItem *item);
     void delStart();
-    void delDone(int exitCode, QProcess::ExitStatus exitStatus);
+    void delDone(QProcess::ExitStatus exitStatus);
     void delTime();
 
     void copyStart();
-    void copyDone(int exitCode, QProcess::ExitStatus exitStatus);
+    void copyDone(QProcess::ExitStatus exitStatus);
     void copyTime();
     void procTime();
 
   private slots:
     void on_viewServicesButton_clicked();
     void on_homeCombo_activated(const QString &arg1);
-    void on_grubBootCombo_activated();
+    void on_grubBootCombo_activated(QString item = "");
 };
