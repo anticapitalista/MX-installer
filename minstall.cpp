@@ -18,8 +18,9 @@
 
 #include "minstall.h"
 #include "mmain.h"
+#include <QtConcurrent/QtConcurrent>
 
-//#include <QDebug>
+#include <QDebug>
 
 
 MInstall::MInstall(QWidget *parent) : QWidget(parent) {
@@ -387,18 +388,25 @@ QStringList MInstall::getCmdOuts(QString cmd) {
   return results;
 }
 
-int MInstall::runCmd(QString cmd) {
-  QEventLoop loop;
-  QProcess *process = new QProcess();
-  connect(process, SIGNAL(finished(int)), &loop, SLOT(quit()));
-  process->start("/bin/bash", QStringList() << "-c" << cmd);
-  process->waitForStarted();
-  loop.exec();
-  disconnect(process, SIGNAL(finished(int)), 0, 0);
-  int exit_code = process->exitCode();
-  process->close();
-  delete process;
-  return exit_code;
+
+int MInstall::command(const QString &cmd)
+{
+   qDebug() << cmd;
+   return system(cmd.toUtf8());
+}
+
+// helping function that runs a bash command in an event loop
+int MInstall::runCmd(QString cmd)
+{
+    QEventLoop loop;
+    QFutureWatcher<int> futureWatcher;
+    QFuture<int> future;
+    future = QtConcurrent::run(command, cmd);
+    futureWatcher.setFuture(future);
+    connect(&futureWatcher, SIGNAL(finished()), &loop, SLOT(quit()));
+    loop.exec();
+    qDebug() << "Exit code: " << future.result();
+    return future.result();
 }
 
 QString MInstall::getCmdValue(QString cmd, QString key, QString keydel, QString valdel) {
@@ -983,7 +991,6 @@ bool MInstall::makeChosenPartitions() {
   }
   // mount all swaps
   system("sleep 1");
-  system("make-fstab -s");
   system("/sbin/swapon -a 2>&1");
 
   return true;
@@ -1120,29 +1127,28 @@ bool MInstall::installLoader() {
       // error, try again
       // this works for reiser-grub bug
       if (runCmd(cmd) != 0) {
-        // error
-        progress->close();
-        setCursor(QCursor(Qt::ArrowCursor));
-        QMessageBox::critical(this, QString::null,
-          tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function."));
-        return false;
+          // error
+          progress->close();
+          setCursor(QCursor(Qt::ArrowCursor));
+          QMessageBox::critical(this, QString::null,
+                                tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function."));
+          return false;
       }
-    }
+  }
 
   // replace "quiet" in /etc/default/grub with the non-live boot codes
   QString cmdline = getCmdOut("/live/bin/non-live-cmdline");
   cmdline.replace('\\', "\\\\");
   cmdline.replace('|', "\\|");
   cmd = QString("sed -i -r 's|^(GRUB_CMDLINE_LINUX_DEFAULT=).*|\\1\"%1\"|' /mnt/antiX/etc/default/grub").arg(cmdline);
-  runCmd(cmd);
-
+  system(cmd.toUtf8());
   // update grub config
   cmd = "mount -o bind /dev /mnt/antiX/dev";
-  runCmd(cmd);
+  system(cmd.toUtf8());
   cmd = "mount -o bind /sys /mnt/antiX/sys";
-  runCmd(cmd);
+  system(cmd.toUtf8());
   cmd = "mount -o bind /proc /mnt/antiX/proc";
-  runCmd(cmd);
+  system(cmd.toUtf8());
   cmd = "chroot /mnt/antiX update-grub";
   runCmd(cmd);
   cmd = "chroot /mnt/antiX make-fstab --swap-only";
@@ -1152,11 +1158,11 @@ bool MInstall::installLoader() {
   cmd = "chroot /mnt/antiX update-initramfs -u -t -k all";
   runCmd(cmd);
   cmd = "umount /mnt/antiX/proc";
-  getCmdOut(cmd);
+  system(cmd.toUtf8());
   cmd = "umount /mnt/antiX/sys";
-  getCmdOut(cmd);
+  system(cmd.toUtf8());
   cmd = "umount /mnt/antiX/dev";
-  getCmdOut(cmd);
+  system(cmd.toUtf8());
 
   setCursor(QCursor(Qt::ArrowCursor));
   timer->stop();
@@ -2382,6 +2388,7 @@ void MInstall::delTime() {
   progressBar->setValue(progressBar->value() + 1);
 }
 
+
 // process time for QProgressDialog
 void MInstall::procTime() {
   if (bar->value() == 100) {
@@ -2492,7 +2499,6 @@ void MInstall::copyDone(int exitCode, QProcess::ExitStatus exitStatus) {
     //system("/bin/cp -fp /usr/share/antix-install/issue /mnt/antiX/etc/issue");
     system("/usr/sbin/live-to-installed /mnt/antiX");
 
-    //system("chroot /mnt/antiX dpkg --purge live-init-mx");
     system("/bin/rm -rf /mnt/antiX/home/demo");
     system("/bin/rm -rf /mnt/antiX/media/sd*");
     system("/bin/rm -rf /mnt/antiX/media/hd*");

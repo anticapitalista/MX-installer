@@ -25,12 +25,15 @@
 #include <QProgressDialog>
 #include "ui_meinstall.h"
 
+#include <QtConcurrent/QtConcurrent>
+
 class MInstall : public QWidget, public Ui::MeInstall {
   Q_OBJECT
   protected:
     QProcess *proc;
     QTimer *timer;
     QProgressBar *bar;
+    QFutureWatcher<void> futureWatcher;
     QTreeWidgetItem *webminItem;
     QTreeWidgetItem *sshItem;
     QTreeWidgetItem *cupsItem;
@@ -78,17 +81,17 @@ class MInstall : public QWidget, public Ui::MeInstall {
     QString removedItem;
 
     void goBack(QString msg);
-    void unmountGoBack(QString msg);   
+    void unmountGoBack(QString msg);
 
     // helpers
     static QString getCmdOut(QString cmd);
     static QStringList getCmdOuts(QString cmd);
     static QString getCmdValue(QString cmd, QString key, QString keydel, QString valdel);
     static QStringList getCmdValues(QString cmd, QString key, QString keydel, QString valdel);
-    static int runCmd(QString cmd);
     static bool replaceStringInFile(QString oldtext, QString newtext, QString filepath);
     static int getPartitionNumber();
-    static void command(const QString &string);
+    static int command(const QString &string);
+    int runCmd(QString cmd);
 
     void updateStatus(QString msg, int val);
     bool mountPartition(QString dev, const char *point);
@@ -138,7 +141,6 @@ class MInstall : public QWidget, public Ui::MeInstall {
     void copyStart();
     void copyDone(int exitCode, QProcess::ExitStatus exitStatus);
     void copyTime();
-
     void procTime();
 
   private slots:
