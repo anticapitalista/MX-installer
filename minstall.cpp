@@ -1022,8 +1022,8 @@ void MInstall::installLinux() {
     connect(timer, SIGNAL(timeout()), this, SLOT(delTime()));
     disconnect(proc, SIGNAL(started()), 0, 0);
     connect(proc, SIGNAL(started()), this, SLOT(delStart()));
-    disconnect(proc, SIGNAL(finished(QProcess::ExitStatus)), 0, 0);
-    connect(proc, SIGNAL(finished(QProcess::ExitStatus)), this, SLOT(delDone(QProcess::ExitStatus)));
+    disconnect(proc, SIGNAL(finished(int, QProcess::ExitStatus)), 0, 0);
+    connect(proc, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(delDone(int, QProcess::ExitStatus)));
     // remove all folders in root except for /home
     QString cmd = QString("/bin/bash -c \"find /mnt/antiX -mindepth 1 -maxdepth 1 ! -name home -exec rm -r {} \\;\"");
     proc->start(cmd);
@@ -1060,8 +1060,8 @@ void MInstall::copyLinux() {
   connect(timer, SIGNAL(timeout()), this, SLOT(copyTime()));
   disconnect(proc, SIGNAL(started()), 0, 0);
   connect(proc, SIGNAL(started()), this, SLOT(copyStart()));
-  disconnect(proc, SIGNAL(finished(QProcess::ExitStatus)), 0, 0);
-  connect(proc, SIGNAL(finished(QProcess::ExitStatus)), this, SLOT(copyDone(QProcess::ExitStatus)));
+  disconnect(proc, SIGNAL(finished(int, QProcess::ExitStatus)), 0, 0);
+  connect(proc, SIGNAL(finished(int, QProcess::ExitStatus)), this, SLOT(copyDone(int, QProcess::ExitStatus)));
     // setup and start the process
   QString cmd = QString("/bin/cp -a /live/aufs/bin /live/aufs/boot /live/aufs/dev");
   cmd.append(" /live/aufs/etc /live/aufs/lib /live/aufs/lib64 /live/aufs/media /live/aufs/mnt");
@@ -2202,7 +2202,7 @@ void MInstall::on_qtpartedButton_clicked() {
 }
 
 // disk selection changed, rebuild dropdown menus
-void MInstall::on_diskCombo_activated(QString item) {
+void MInstall::on_diskCombo_activated(QString) {
   char line[130];
   QString strLabel;
   QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
@@ -2291,7 +2291,7 @@ void MInstall::on_diskCombo_activated(QString item) {
 }
 
 // root partition changed, rebuild home
-void MInstall::on_rootCombo_activated(QString item) {
+void MInstall::on_rootCombo_activated(QString) {
    // add back removed item
    if (removedItem != "") {
        homeCombo->insertItem(removedItemIndex, removedItem);
@@ -2307,7 +2307,7 @@ void MInstall::on_rootCombo_activated(QString item) {
    }
 }
 
-void MInstall::on_rootTypeCombo_activated(QString item) {;
+void MInstall::on_rootTypeCombo_activated(QString) {;
   if (rootTypeCombo->currentText().startsWith("ext")) {
     badblocksCheck->setEnabled(true);
   } else {
@@ -2327,7 +2327,7 @@ void MInstall::on_homeCombo_activated(const QString &arg1) {
 }
 
 // determine if selected drive uses GPT (or Apple)
-void MInstall::on_grubBootCombo_activated(QString item)
+void MInstall::on_grubBootCombo_activated(QString)
 {
     QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
     QString cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
@@ -2375,7 +2375,7 @@ void MInstall::delStart() {
   updateStatus(tr("Deleting old system"), 4);
 }
 
-void MInstall::delDone(QProcess::ExitStatus exitStatus) {
+void MInstall::delDone(int, QProcess::ExitStatus exitStatus) {
   if (exitStatus == QProcess::NormalExit) {
     copyLinux();
   } else {
@@ -2406,7 +2406,7 @@ void MInstall::copyStart() {
   updateStatus(tr("Copying new system"), 15);
 }
 
-void MInstall::copyDone(QProcess::ExitStatus exitStatus) {
+void MInstall::copyDone(int, QProcess::ExitStatus exitStatus) {
   char line[130];
   char rootdev[20];
   char swapdev[20];

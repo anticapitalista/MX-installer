@@ -15,14 +15,14 @@ Changes:
  .
    * fixed progress bar, fixed swap
 Checksums-Sha1:
- 5069ba1da0afaf28017b8e1ef6ccb27c5a30d68a 658 mx-installer_15.10.6mx15.dsc
- 393e96730041a9da7f5a0fc808f82389f76e1718 24043460 mx-installer_15.10.6mx15.tar.xz
- d855ba52a66c94c9e854e9f6472d6e5611d9ddc8 225706 mx-installer_15.10.6mx15_i386.deb
+ 07053c40fff0abb801ec74f1519cd2e217b34007 658 mx-installer_15.10.6mx15.dsc
+ 3c13d5510c4dfe54939b11bfb532fef7d1423418 24281048 mx-installer_15.10.6mx15.tar.xz
+ bcaf998ca2606637932f17c7353714857f9531c3 225810 mx-installer_15.10.6mx15_i386.deb
 Checksums-Sha256:
- 7dd1f0933eb2cd5f36a5eab066081e9e26668a001e26b615540293fa267d1ef9 658 mx-installer_15.10.6mx15.dsc
- 5c6b110369052669c0ac6748f8917e2c88bdfc99a5b03a1d10b109ab6adf329e 24043460 mx-installer_15.10.6mx15.tar.xz
- 795d6c67ad496691c65280ee6fa0ece187369a131ff6252ae9898cfcf8bb4631 225706 mx-installer_15.10.6mx15_i386.deb
+ d29f9efe5d8d09c2a68e43b5301c6e091bcd66f2419b49f54425d6c5fd819877 658 mx-installer_15.10.6mx15.dsc
+ 343edb0abaeaa856f2008fb9f83842896695d83dde0f89dfa78c0d52984e2440 24281048 mx-installer_15.10.6mx15.tar.xz
+ b6e11ebaf87067d8aaefadcfd6b3ffa1f310c1e6f36a9ffb78c862d7fa9e8cc2 225810 mx-installer_15.10.6mx15_i386.deb
 Files:
- 2b4ca2c038646b167a0460103d978be9 658 system optional mx-installer_15.10.6mx15.dsc
- 5791bb1d46f279f6afe2a48ffaa5f598 24043460 system optional mx-installer_15.10.6mx15.tar.xz
- 9d157f3eec3f5b3fa85bf54b1ea3b06f 225706 system optional mx-installer_15.10.6mx15_i386.deb
+ 1ddd4246d3d2e553169b0089c9ca9d0c 658 system optional mx-installer_15.10.6mx15.dsc
+ 62748747b6da4c9ba1daa8042fa62bc7 24281048 system optional mx-installer_15.10.6mx15.tar.xz
+ 685b0973b82e9a4b77075a8c75d7e945 225810 system optional mx-installer_15.10.6mx15_i386.deb

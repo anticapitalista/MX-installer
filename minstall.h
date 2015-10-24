@@ -134,11 +134,11 @@ class MInstall : public QWidget, public Ui::MeInstall {
     virtual bool close();
 //    void moreClicked(QListViewItem *item);
     void delStart();
-    void delDone(QProcess::ExitStatus exitStatus);
+    void delDone(int, QProcess::ExitStatus exitStatus);
     void delTime();
 
     void copyStart();
-    void copyDone(QProcess::ExitStatus exitStatus);
+    void copyDone(int, QProcess::ExitStatus exitStatus);
     void copyTime();
     void procTime();
 
