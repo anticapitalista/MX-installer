@@ -2329,13 +2329,14 @@ void MInstall::on_homeCombo_activated(const QString &arg1) {
 // determine if selected drive uses GPT (or Apple)
 void MInstall::on_grubBootCombo_activated(QString)
 {
-    QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
+    QString drv = QString("/dev/%1").arg(grubBootCombo->currentText().section(" ", 0, 0));
     QString cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
     if ((system(cmd.toUtf8()) == 0) || (system("grub-probe -d /dev/sda2 2>/dev/null | grep hfsplus") == 0)) {
         grubMbrButton->setDisabled(true);
         grubRootButton->setChecked(true);
     } else {
         grubMbrButton->setDisabled(false);
+        grubMbrButton->setChecked(true);
     }
 }
 
