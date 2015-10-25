@@ -23,6 +23,7 @@
 #include <QProcess>
 #include <QTimer>
 #include <QProgressDialog>
+#include <QtConcurrent/QtConcurrent>
 #include "ui_meinstall.h"
 
 class MInstall : public QWidget, public Ui::MeInstall {
@@ -31,6 +32,7 @@ class MInstall : public QWidget, public Ui::MeInstall {
     QProcess *proc;
     QTimer *timer;
     QProgressBar *bar;
+    QFutureWatcher<void> futureWatcher;
     QTreeWidgetItem *webminItem;
     QTreeWidgetItem *sshItem;
     QTreeWidgetItem *cupsItem;
@@ -85,9 +87,10 @@ class MInstall : public QWidget, public Ui::MeInstall {
     static QStringList getCmdOuts(QString cmd);
     static QString getCmdValue(QString cmd, QString key, QString keydel, QString valdel);
     static QStringList getCmdValues(QString cmd, QString key, QString keydel, QString valdel);
-    static int runCmd(QString cmd);
     static bool replaceStringInFile(QString oldtext, QString newtext, QString filepath);
     static int getPartitionNumber();
+    static int command(const QString &string);
+    int runCmd(QString cmd);
 
     void updateStatus(QString msg, int val);
     bool mountPartition(QString dev, const char *point);
@@ -124,24 +127,23 @@ class MInstall : public QWidget, public Ui::MeInstall {
     virtual void on_backButton_clicked();
     virtual void on_abortInstallButton_clicked();
     virtual void on_qtpartedButton_clicked();
-    virtual void on_diskCombo_activated();
-    virtual void on_rootCombo_activated();
-    virtual void on_rootTypeCombo_activated();
+    virtual void on_diskCombo_activated(QString item = "");
+    virtual void on_rootCombo_activated(QString item = "");
+    virtual void on_rootTypeCombo_activated(QString item = "");
     void procAbort();
     virtual bool close();
 //    void moreClicked(QListViewItem *item);
     void delStart();
-    void delDone(int exitCode, QProcess::ExitStatus exitStatus);
+    void delDone(int, QProcess::ExitStatus exitStatus);
     void delTime();
 
     void copyStart();
-    void copyDone(int exitCode, QProcess::ExitStatus exitStatus);
+    void copyDone(int, QProcess::ExitStatus exitStatus);
     void copyTime();
-
     void procTime();
 
   private slots:
     void on_viewServicesButton_clicked();
     void on_homeCombo_activated(const QString &arg1);
-    void on_grubBootCombo_activated();
+    void on_grubBootCombo_activated(QString item = "");
 };
