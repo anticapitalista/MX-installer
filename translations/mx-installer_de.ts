@@ -658,13 +658,13 @@ Returning to Step 1.</source>
         <translation>Schliesse Konfiguration ab</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2515"/>
+        <location filename="../minstall.cpp" line="2514"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
         <translation>Konnte MX Linux nicht auf das Ziellaufwerk schreiben. Gehe zurück zu Schritt 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2541"/>
+        <location filename="../minstall.cpp" line="2540"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at http://antix.mepis.com and http://www.mepiscommunity.org/mx. There are volunteers to help you at the antiX Forum, http://antix.freeforums.org and the MEPIS Community Forum http://forum.mepiscommunity.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
         <translation>Wo Sie Hilfe erhalten.
 Hilfe und Support für MX-Linux gibt es auf: 
@@ -682,22 +682,22 @@ Wenn Sie um Hilfe bitten, denken Sie bitte daran eine genaue Problembeschreibung
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2549"/>
+        <location filename="../minstall.cpp" line="2548"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from CD and running one of the utilities in System Configuration or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux CD to recover data from MS-Windows systems!&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Reparatur der Installation&lt;/b&gt;&lt;br/&gt;Falls MX Linux auf der Festplatte nicht mehr startet oder richtig arbeitet, ist es oftmals möglich, das Problem dadurch zu lösen, dass man von der CD startet und eines der Programme aus der System Konfiguration oder eines der regulären Linux Programme benutzt, um das System zu reparieren.&lt;/p&gt;&lt;p&gt;Sie können Ihre MX Linux CD auch benutzen, um Daten Ihres MS-Windows zu retten!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2555"/>
+        <location filename="../minstall.cpp" line="2554"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;MX Linux unterstützen&lt;/b&gt;&lt;br/&gt;MX Liinux wird von Menschen wie Ihnen unterstützt. Einige helfen anderen im Form - http://antix.freeforums.org, - http://forum.mepiscommunity.org, oder übersetzen Hilfe-Dateien in andere Sprachen oder machen Vorschläge, schreiben Dokumentationen, oder helfen, neue Software zu testen.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2562"/>
+        <location filename="../minstall.cpp" line="2561"/>
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Einstellung des Sound Mixers&lt;/b&gt;&lt;br/&gt;MX LInux versucht, Ihren SoundMixer für Sie einzustellen, aber manchmal ist es notwendig Lautstärke-Einstellungen anzupassen oder abgeschaltete Kanäle im Mixer einzuschalten um etwas hören zu können.&lt;/p&gt; &lt;p&gt;Ein Mixer-Schnellstart-Symbol befindet sich in der Menüliste. Um den Mixer zu öffnen, einfach darauf klicken. &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2570"/>
+        <location filename="../minstall.cpp" line="2569"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit http://antix.freeforums.org or http://forum.mepiscommunity.org &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Halten Sie Ihre Kopie von MX Linux aktuell&lt;/b&gt;&lt;br/&gt;Informationen und Aktualisierungen zu MX Linux erhalten Sie auf http://antix.freeforums.org oder http://forum.mepiscommunity.org. &lt;/p&gt;</translation>
     </message>

@@ -8,21 +8,21 @@ Distribution: mx
 Urgency: medium
 Maintainer: anticapitalista <antiX@operamail.com>
 Changed-By: Adrian <adrian@mxlinux.org>
-Description:
+Description: 
  mx-installer - GUI installer for MX Linux.
-Changes:
+Changes: 
  mx-installer (15.10.7mx15) mx; urgency=medium
  .
    * fixed GRUB installing selection
-Checksums-Sha1:
- 22cae7b893cc738d89682fd285f49421ee11c74d 658 mx-installer_15.10.7mx15.dsc
- 2ec58288b0e5c922b6505596408802464075b4f7 24434780 mx-installer_15.10.7mx15.tar.xz
- 3736f2a14626d18064f2f9d0a7cea5c6e3d11a3b 225922 mx-installer_15.10.7mx15_i386.deb
-Checksums-Sha256:
- e440a3d0821fd52929d9e687557387d1e3350fee805186d9df6324afa92d6895 658 mx-installer_15.10.7mx15.dsc
- ef225867dcf72d325cad7d6b0ca135ee9407692b617a1abfa7bb9e71079a8a9d 24434780 mx-installer_15.10.7mx15.tar.xz
- 2753a0b3db46736276266a83eca052f43f8c7e8be0d70129eaae1ca458abf347 225922 mx-installer_15.10.7mx15_i386.deb
-Files:
- 007620265dde7746b1de457e6303d793 658 system optional mx-installer_15.10.7mx15.dsc
- cd07757f1453d2d815dc70f3b9e5832f 24434780 system optional mx-installer_15.10.7mx15.tar.xz
- 8860fab91c71f70f62402e1a5fbcfd08 225922 system optional mx-installer_15.10.7mx15_i386.deb
+Checksums-Sha1: 
+ 60a5afc10b4125c711ae8bdad1981ebf9d9211a3 647 mx-installer_15.10.7mx15.dsc
+ 3da9653ed775435243772ea7ab291250ad469158 294865 mx-installer_15.10.7mx15.tar.gz
+ 2592ec28a1e251b977587a20f65ad1eac99142f5 225394 mx-installer_15.10.7mx15_i386.deb
+Checksums-Sha256: 
+ b8a74b32f3d3d57857110b5cb75bc79b4c2d3c5b10c01440cf5d39c946d2eca7 647 mx-installer_15.10.7mx15.dsc
+ bef7954f6bdd11cd878558946f584a060a994948149d7f56009a09065e84fb2f 294865 mx-installer_15.10.7mx15.tar.gz
+ e912548d6782af7ac05c1e5830a69f5d4317d713798bb39826d2aeaedf9d1298 225394 mx-installer_15.10.7mx15_i386.deb
+Files: 
+ d25a0b5355af0e1638f175336cfef91c 647 system optional mx-installer_15.10.7mx15.dsc
+ 8155af95cec33071f344a47dbf0a5dde 294865 system optional mx-installer_15.10.7mx15.tar.gz
+ f62e0b3436c2dc79ebba1fbf8bfc37db 225394 system optional mx-installer_15.10.7mx15_i386.deb

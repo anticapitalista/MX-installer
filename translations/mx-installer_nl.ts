@@ -660,34 +660,34 @@ Terugkeren naar stap 1.</translation>
         <translation>Herstellen van de configuratie</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2515"/>
+        <location filename="../minstall.cpp" line="2514"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
         <translation>Het schrijven van MX Linux naar de bestemde plaats is mislukt. 
 Terugkeren naar stap 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2541"/>
+        <location filename="../minstall.cpp" line="2540"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at http://antix.mepis.com and http://www.mepiscommunity.org/mx. There are volunteers to help you at the antiX Forum, http://antix.freeforums.org and the MEPIS Community Forum http://forum.mepiscommunity.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Hulp verkrijgen&lt;/b&gt;&lt;br/&gt;Basis-informatie over MX Linux kunt u vinden op http://antix.mepis.com en http://www.mepiscommunity.org/mx. U vindt vrijwilligers die u verder willen helpen op het antiX forum http://antix.freeforums.org en op het MEPIS Community Forum http://forum.mepiscommunity.org &lt;/p&gt;&lt;p&gt;Indien u om hulp vraagt, probeer dan uw probleem en uw computer zo gedetailleerd mogelijk te beschrijven. Een uitspraak als &apos;Het heeft niet gewerkt&apos;, helpt u niet verder.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2549"/>
+        <location filename="../minstall.cpp" line="2548"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from CD and running one of the utilities in System Configuration or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux CD to recover data from MS-Windows systems!&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Uw installatie repareren&lt;/b&gt;&lt;br/&gt;Wanneer MX Linux niet meer werkt vanaf de harde schijf, is het soms mogelijk om het probleem op te lossen door op te starten met de CD en een van de &apos;utilities&apos; te gebruiken uit de systeem-configuratie. Ook kunt u reguliere Linux gereedschappen gebruiken om het systeem te herstellen.&lt;/p&gt;&lt;p&gt;U kunt uw MX Linux CD ook gebruiken om gegevens veilig te stellen op MS-Windows systemen!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2555"/>
+        <location filename="../minstall.cpp" line="2554"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Ondersteuning van MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux wordt ondersteund door mensen als u. Sommigen zijn anderen behulpzaam op het forum - http://antix.freeforums.org. - http://forum.mepiscommunity.org - of ze vertalen help-bestanden in de verschillende talen, doen suggesties, schrijven handleidingen of testen nieuwe software uit.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2562"/>
+        <location filename="../minstall.cpp" line="2561"/>
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Geluidsmixer instellen&lt;/b&gt;&lt;br/&gt;MX Linux probeert de geluidsmixer oor U in te stellen. Maar soms is het voor u toch noodzakelijk om het volume te verhogen, of kanalen in de mixer te veranderen om geluid te kunnen horen.&lt;/p&gt;&lt;p&gt;De snelkoppeling voor de mixer is geplaatst in de tray. Klik erop om de mixer te openen.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2570"/>
+        <location filename="../minstall.cpp" line="2569"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit http://antix.freeforums.org or http://forum.mepiscommunity.org &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Houdt uw kopie van MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;Voor MX Linux informatie en updates, kijkt U op http://antix.freeforums.org. of http://forum.mepiscommunity.org &lt;/p&gt;</translation>
     </message>

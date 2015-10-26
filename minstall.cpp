@@ -2430,7 +2430,6 @@ void MInstall::copyDone(int, QProcess::ExitStatus exitStatus) {
     updateStatus(tr("Fixing configuration"), 99);
     chmod("/mnt/antiX/var/tmp",01777);
     system("cd /mnt/antiX && ln -s var/tmp tmp");
-    system("test -d /lib64 && cd /mnt/antiX && ln -s lib lib64");
 
     FILE *fp = fopen("/mnt/antiX/etc/fstab", "w");
     if (fp != NULL) {
