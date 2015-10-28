@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="it">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.0">
 <context>
     <name>MInstall</name>
     <message>
@@ -29,8 +27,9 @@
         <translation>Network File System</translation>
     </message>
     <message>
-        <source>Port mapper</source>
-        <translation type="vanished">Port mapper</translation>
+        <location filename="../minstall.cpp" line="160"/>
+        <source>VPN program that creates secure connections</source>
+        <translation>VPN programma per realizzare connessioni sicure</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="170"/>
@@ -108,18 +107,9 @@
         <translation>Generatore di numeri random</translation>
     </message>
     <message>
-        <source>Name Service Switch daemon for resolving names from NT servers</source>
-        <translation type="vanished">Name Service Switch daemon for resolving names from NT servers</translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="160"/>
-        <source>VPN program that creates secure connections</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../minstall.cpp" line="314"/>
         <source>Enables programs to publish and discover services and hosts</source>
-        <translation type="unfinished"></translation>
+        <translation>Consente ai programmi di scoprire e pubblicare i servizi e gli host</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="323"/>
@@ -344,7 +334,7 @@ Ok a continuare?</translation>
     <message>
         <location filename="../minstall.cpp" line="1115"/>
         <source>Please wait till GRUB is installed, it might take a couple of minutes.</source>
-        <translation type="unfinished"></translation>
+        <translation>Si prega di attendere che GRUB sia installato, ci vorrà circa un paio di minuti.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1134"/>
@@ -366,7 +356,7 @@ e creare una nuova cartella home?</translation>
     <message>
         <location filename="../minstall.cpp" line="1208"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Spiacente, il salvataggio della vecchia home è fallito. Prima di procedere,
 dovrai scegliere un nome utente differente o
@@ -386,7 +376,7 @@ dovrai scegliere un nome utente differente. </translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1234"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Hai scelto di non usare, salvare o eliminare la vecchia cartella home.
 Prima di procedere, dovrai scegliere un nome utente differente.</translation>
@@ -485,7 +475,7 @@ non corrispondono. Prego, riprova.</translation>
     <message>
         <location filename="../minstall.cpp" line="1449"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>Spiacente, Il nome del tuo computer deve essere
  lungo almeno 2 caratteri. Devi scegliere
@@ -494,7 +484,7 @@ select a different name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1453"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Spiacente, il tuo computer contiene caratteri non validi.
 Devi scegliere un nome differente
@@ -503,7 +493,7 @@ prima di procedere.</translation>
     <message>
         <location filename="../minstall.cpp" line="1459"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Spiacente, il dominio del tuo computer deve essere lungo almeno
  2 caratteri. Devi scegliere un nome differente
@@ -512,7 +502,7 @@ name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1463"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Spiacente, il dominio del tuo computer contiene caratteri non validi.
 Devi scegliere un nome differente
@@ -521,7 +511,7 @@ Devi scegliere un nome differente
     <message>
         <location filename="../minstall.cpp" line="1472"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Spiacente, il nome del tuo gruppo di lavoro deve essere lungo almeno
  2 caratteri. Devi scegliere un nome differente
@@ -734,7 +724,7 @@ Torna allo Step 1.</translation>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;MX Linux is an independent linux distribution based on Debian Stable&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/p&gt;
@@ -1122,7 +1112,7 @@ p, li { white-space: pre-wrap; }
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;

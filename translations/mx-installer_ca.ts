@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ca">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ca" version="2.0">
 <context>
     <name>MInstall</name>
     <message>
@@ -29,8 +27,9 @@
         <translation>Sistema de Fitxers de Xarxa</translation>
     </message>
     <message>
-        <source>Port mapper</source>
-        <translation type="vanished">Mapatge de ports </translation>
+        <location filename="../minstall.cpp" line="160"/>
+        <source>VPN program that creates secure connections</source>
+        <translation>Programa VPN que crea connexions segures</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="170"/>
@@ -108,18 +107,9 @@
         <translation>Generador de nombres aleatoris  </translation>
     </message>
     <message>
-        <source>Name Service Switch daemon for resolving names from NT servers</source>
-        <translation type="vanished">Dimoni canviador de noms per resoldre noms dels servidors NT </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="160"/>
-        <source>VPN program that creates secure connections</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../minstall.cpp" line="314"/>
         <source>Enables programs to publish and discover services and hosts</source>
-        <translation type="unfinished"></translation>
+        <translation>Permet que els programes publiquin i descobreixin serveis i amfitrions </translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="323"/>
@@ -344,7 +334,7 @@ Voleu continuar? </translation>
     <message>
         <location filename="../minstall.cpp" line="1115"/>
         <source>Please wait till GRUB is installed, it might take a couple of minutes.</source>
-        <translation type="unfinished"></translation>
+        <translation>Si us plau, espereu mentre s&apos;instal·la el GRUB, pot trigar un parell de minuts. </translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1134"/>
@@ -366,7 +356,7 @@ i crear-ne un de nou?</translation>
     <message>
         <location filename="../minstall.cpp" line="1208"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Ho sento, no s&apos;ha pogut desar el directori d&apos;usuaris antic.
 Abans de continuar, cal triar un nom d&apos;usuari nou o
@@ -386,7 +376,7 @@ Abans de continuar, cal triar un nom d&apos;usuari diferent.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1234"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Heu triat no usar, desar o esborrar el directori d&apos;usuaris antic.
 Abans de continuar, cal que trieu un nom d&apos;usuari diferent. </translation>
@@ -484,7 +474,7 @@ coincideixen. Proveu-ho un altre cop.</translation>
     <message>
         <location filename="../minstall.cpp" line="1449"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>Ho sento, el nom de l&apos;ordinador ha de
 tenir 2 caràcters com a mínim. Cal que
@@ -493,7 +483,7 @@ en trieu un altre abans de continuar.</translation>
     <message>
         <location filename="../minstall.cpp" line="1453"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Ho sento, el nom d&apos;ordinador conté caràcters no vàlids. 
 Cal que en trieu un altre diferent
@@ -502,7 +492,7 @@ abans de continuar.</translation>
     <message>
         <location filename="../minstall.cpp" line="1459"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Ho sento, el domini de l&apos;ordinador ha de tenir
 2 caràcters com a mínim. Cal que en trieu un
@@ -511,7 +501,7 @@ altre diferent abans de continuar.</translation>
     <message>
         <location filename="../minstall.cpp" line="1463"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Ho sento, el domini de l&apos;ordinador conté caràcters no vàlids. 
 Cal que en trieu un altre diferent
@@ -520,7 +510,7 @@ abans de continuar.</translation>
     <message>
         <location filename="../minstall.cpp" line="1472"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Ho sento, el nom del grup de treball ha de
 tenir 2 caràcters com a mínim. Cal que en
@@ -734,7 +724,7 @@ Retornant al primer pas.</translation>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;MX Linux is an independent linux distribution based on Debian Stable&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/p&gt;
@@ -995,7 +985,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="1446"/>
         <source>mx1</source>
-        <translation>mx1</translation>
+        <translation>MX15</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1462"/>
@@ -1045,7 +1035,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="1698"/>
         <source>6c. Timezone Settings</source>
-        <translation>6c. Ajusts fus horari</translation>
+        <translation>6c. Paràmetres del fus horari</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1704"/>
@@ -1055,7 +1045,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="1755"/>
         <source>7b. Root (administrator) Account</source>
-        <translation>7b. Compte d&apos;Usuari Primaril (root)</translation>
+        <translation>7b. Compte d&apos;Usuari Primari (root)</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1814"/>
@@ -1122,7 +1112,7 @@ p, li { white-space: pre-wrap; }
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
