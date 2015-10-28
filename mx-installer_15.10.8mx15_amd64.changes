@@ -1,0 +1,28 @@
+Format: 1.8
+Date: Wed, 28 Oct 2015 17:32:44 -0400
+Source: mx-installer
+Binary: mx-installer
+Architecture: source amd64
+Version: 15.10.8mx15
+Distribution: mx
+Urgency: medium
+Maintainer: anticapitalista <antiX@operamail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-installer - GUI installer for MX Linux.
+Changes:
+ mx-installer (15.10.8mx15) mx; urgency=medium
+ .
+   * translations
+Checksums-Sha1:
+ 99e8484031dc4bbb03311cbe3919dd2a0ec36a1f 652 mx-installer_15.10.8mx15.dsc
+ bdae2a1801ff6375242f48554acb1a5b37a1f585 442984 mx-installer_15.10.8mx15.tar.xz
+ 016b93eac5698470636f5fffa7fbb2e23a8f4444 224944 mx-installer_15.10.8mx15_amd64.deb
+Checksums-Sha256:
+ 118832bf38d7c6c9a9c745802634d8fc2b770f6db24a7b2b97f1ea33690b9fb2 652 mx-installer_15.10.8mx15.dsc
+ 91f43ebd6b3a99e5a0d21466506eca8e4e6f7962e13f3571bd9901fa6959b9f3 442984 mx-installer_15.10.8mx15.tar.xz
+ 54244ffbacf4f621dbc165d1dad06a5bb2c760758826c9b4ff657ceed1499083 224944 mx-installer_15.10.8mx15_amd64.deb
+Files:
+ 86b5ce859d229ecfe1cd390dca4f79a3 652 system optional mx-installer_15.10.8mx15.dsc
+ 2f6b756b693209e7cf8830dee739fa24 442984 system optional mx-installer_15.10.8mx15.tar.xz
+ fe03d4dedf29ff81e22ec029f64be401 224944 system optional mx-installer_15.10.8mx15_amd64.deb
