@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
 Format: 1.8
 Date: Wed, 28 Oct 2015 17:32:44 -0400
 Source: mx-installer
@@ -15,14 +18,26 @@ Changes:
  .
    * translations
 Checksums-Sha1:
- 99e8484031dc4bbb03311cbe3919dd2a0ec36a1f 652 mx-installer_15.10.8mx15.dsc
- bdae2a1801ff6375242f48554acb1a5b37a1f585 442984 mx-installer_15.10.8mx15.tar.xz
- 016b93eac5698470636f5fffa7fbb2e23a8f4444 224944 mx-installer_15.10.8mx15_amd64.deb
+ b6c708670f5476f70c134f11d36cdd5cad7dedb7 1173 mx-installer_15.10.8mx15.dsc
+ b045f464b954dca477a2dc22742f49045fd0f318 749920 mx-installer_15.10.8mx15.tar.xz
+ b82cde8830e236add53b7be9470cb04c73a2f5d1 225092 mx-installer_15.10.8mx15_amd64.deb
 Checksums-Sha256:
- 118832bf38d7c6c9a9c745802634d8fc2b770f6db24a7b2b97f1ea33690b9fb2 652 mx-installer_15.10.8mx15.dsc
- 91f43ebd6b3a99e5a0d21466506eca8e4e6f7962e13f3571bd9901fa6959b9f3 442984 mx-installer_15.10.8mx15.tar.xz
- 54244ffbacf4f621dbc165d1dad06a5bb2c760758826c9b4ff657ceed1499083 224944 mx-installer_15.10.8mx15_amd64.deb
+ e6267bba56994515f2dad185dbcb3137163f9d3a521a3707624fd09670bc2b93 1173 mx-installer_15.10.8mx15.dsc
+ 994df4a7e2a61093157ae2053bf4c19b73ae4bab176bd8541f2d234fd41523c6 749920 mx-installer_15.10.8mx15.tar.xz
+ 79ceadf935e2013c72303e84c794c0ca0490a4fe9a97ba925cae8364ac9e4d6d 225092 mx-installer_15.10.8mx15_amd64.deb
 Files:
- 86b5ce859d229ecfe1cd390dca4f79a3 652 system optional mx-installer_15.10.8mx15.dsc
- 2f6b756b693209e7cf8830dee739fa24 442984 system optional mx-installer_15.10.8mx15.tar.xz
- fe03d4dedf29ff81e22ec029f64be401 224944 system optional mx-installer_15.10.8mx15_amd64.deb
+ 3656dc30313deab950e2b75a19a1bd0f 1173 system optional mx-installer_15.10.8mx15.dsc
+ a1ef5d2cf9d0387b21e6f48abead726e 749920 system optional mx-installer_15.10.8mx15.tar.xz
+ 5549e621592bb4e3cf627b6acfc84d28 225092 system optional mx-installer_15.10.8mx15_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWMXdKAAoJEHCTjHgGee6Ypj0IANOmSqf5SCOjZVVHR/vIn7je
+AIiIZKBjTm3Kg5/RYCJxJfvmIDSFhnL8Ocr81FTPE3Id0qe3cIzdasMDCUtZd3AT
+VSWxUGU1lIgPvuO7r3rIOW/yOst/xg1X/kLUhh/GUgkjhsMOOBFLvML+8JoxR6OH
+qQaTOGw14xWpr3OnzLo2Vvq7/uZ3SaW88Bmy/O9ciK8Gzylkb/Z128OpGDnNHw7l
+LdFzDQkQ8bXSkaJxH6ZIqg0J6a60J/+ln2KaMnKj7wxThNYaFwsAA56uZNsP3op4
+qhuF8Fw3SvOs5N2VyUa5AlvlnIA+T2hC9RxhGV+swvWKKEOZMPzO7/TxRTxkLCk=
+=bDuJ
+-----END PGP SIGNATURE-----

@@ -1,8 +1,11 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
 Format: 1.8
 Date: Wed, 28 Oct 2015 17:32:44 -0400
 Source: mx-installer
 Binary: mx-installer
-Architecture: source i386
+Architecture: i386
 Version: 15.10.8mx15
 Distribution: mx
 Urgency: medium
@@ -15,14 +18,20 @@ Changes:
  .
    * translations
 Checksums-Sha1:
- 0665793bd286cc8646e94c092fe9b0388ec517cc 652 mx-installer_15.10.8mx15.dsc
- 8f2a9d86dd41ad9f0221e1647f554b7b6b1331e2 596680 mx-installer_15.10.8mx15.tar.xz
- 2ecf08dfb8c7c3f7f74548389266106e6993bd51 227050 mx-installer_15.10.8mx15_i386.deb
+ ba8c47ef2eefc46bd438c54b7ad82f43daa33709 226798 mx-installer_15.10.8mx15_i386.deb
 Checksums-Sha256:
- b060e98d3e71b1a57e7d2601f9ab6054c16ad3f8fd9b7bdb9f79fc3e31ce12df 652 mx-installer_15.10.8mx15.dsc
- e66627ddf8f71ca78ab9d221b5f57e4a842d99a6b998893fc145130f64bb521f 596680 mx-installer_15.10.8mx15.tar.xz
- ac63dfbcddb995e892d4309934effb74a1badfb081600f4aff7928dd97673c3a 227050 mx-installer_15.10.8mx15_i386.deb
+ 23e49b6c54244203b357d5c63f1c0cc1fc4968941598b0a26494fd7d7df37b48 226798 mx-installer_15.10.8mx15_i386.deb
 Files:
- 0ae1796880be065be0492e144abbe5a3 652 system optional mx-installer_15.10.8mx15.dsc
- 05965f237073e0aa8fdde85215c11825 596680 system optional mx-installer_15.10.8mx15.tar.xz
- a742572d84c938d9ec9dcf13ddcc69d3 227050 system optional mx-installer_15.10.8mx15_i386.deb
+ dcabb4895d7e9ff12c406420990c1c11 226798 system optional mx-installer_15.10.8mx15_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWMYFVAAoJEHCTjHgGee6YJXgH/2splawtTJDxLouSQv9YBT0+
+i//Vn183BwJzE8HDTpWanwpl6qsVpUdrB78RABeRQaHdgeTRekLBYaaCfmak6Gir
+2sM3xZdjz3Ifyw3OD5+tv6zSaIc5g298llwVrm7A30RNu/h82WamLVRKA9O9oy6Q
+jzEktCUtpjjc6eCRK/kWXYQGM/1cQabYLy31tBTDNNGWlPkLHh1PyqPXBV6ZNA/e
+EhuKcKZuyDQXoEeeMDMqK/7n/NZGwiPe+T2uC+pPDzOsLJ3ZaU1McsSEpPBUO6xJ
+kjxnlTcIpOtEjFUjV0yRxrS3hSjl/wJiowkblY82DE24l38BgT9nLabLH8oyqkk=
+=v8h7
+-----END PGP SIGNATURE-----
