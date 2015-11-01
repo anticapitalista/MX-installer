@@ -1200,6 +1200,9 @@ p, li { white-space: pre-wrap; }
             <property name="enabled">
              <bool>false</bool>
             </property>
+            <property name="toolTip">
+             <string>EFI System Partition</string>
+            </property>
             <property name="text">
              <string>ESP</string>
             </property>

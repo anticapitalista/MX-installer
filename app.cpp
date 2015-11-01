@@ -14,14 +14,14 @@
 //   limitations under the License.
 //
 
-#include <qapplication.h>
-#include <qfont.h>
-#include <qstring.h>
-#include <qlocale.h>
-#include <qtranslator.h>
-#include <qmessagebox.h>
+#include <QApplication>
+#include <QFont>
+#include <QString>
+#include <QLocale>
+#include <QTranslator>
+#include <QMessageBox>
+#include <QFile>
 #include <unistd.h>
-#include <qfile.h>
 
 #include "mmain.h"
 

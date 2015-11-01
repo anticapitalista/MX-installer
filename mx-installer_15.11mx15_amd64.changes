@@ -18,26 +18,26 @@ Changes:
  .
    * install GRUB on ESP on GPT drives
 Checksums-Sha1:
- cca30724c6e25b1e7533526f56a79c76a0c22c3c 1165 mx-installer_15.11mx15.dsc
- 6fe777539ee1047920f9893f76ecd968e5f3c76a 238104 mx-installer_15.11mx15.tar.xz
- 0f8f82ef8773404395e461d0cfd7cfca14342973 225708 mx-installer_15.11mx15_amd64.deb
+ d293c3ee25117a5545544e584cb47280c0b80cc5 1165 mx-installer_15.11mx15.dsc
+ c1ec5bde26378f678d6ce4426c9f69bd073f47f7 392256 mx-installer_15.11mx15.tar.xz
+ c4c1f3fe91c1fdb47e629d4b8c81fa370967c5c6 225752 mx-installer_15.11mx15_amd64.deb
 Checksums-Sha256:
- 4d2c8b9e0d7904ccc6c59055f3c54a03579f1f14870c8bbc2f8eb990d21d642b 1165 mx-installer_15.11mx15.dsc
- fa40bbcfe5ae3115636e34b2a4fd5edf9c67df9084af7bcaed5a2216ba01577c 238104 mx-installer_15.11mx15.tar.xz
- bba9d8ce91a71f59bfc379fe23f6d3c4e8ccfc4f5db4067c6a71d00a3926d299 225708 mx-installer_15.11mx15_amd64.deb
+ 33c700c7115edd50d5236f7eed473e8c86ec36295a746636784579930a4879ed 1165 mx-installer_15.11mx15.dsc
+ d47e45d3bf392a27ab52dd2f7dc7632bfd6d829ad3e38295c3b9bf05bb4e81c0 392256 mx-installer_15.11mx15.tar.xz
+ d4d4f206f9d64f485965d78633219b8f13c4d1e83b093217cdabc70465d0b895 225752 mx-installer_15.11mx15_amd64.deb
 Files:
- 2452985064a9f3e88d454998324367f1 1165 system optional mx-installer_15.11mx15.dsc
- d0c609a65ee8a76c6d238502cca9e331 238104 system optional mx-installer_15.11mx15.tar.xz
- 0c10661dd36363aa38902b05e651f64d 225708 system optional mx-installer_15.11mx15_amd64.deb
+ d7ca3994a408d38cc22f5cbbd57ddc3a 1165 system optional mx-installer_15.11mx15.dsc
+ f439bf1df94b9c365fd3383d3fae18b6 392256 system optional mx-installer_15.11mx15.tar.xz
+ 16d4b96f0a94d9061db5da0b202fbf15 225752 system optional mx-installer_15.11mx15_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJWNmdsAAoJEHCTjHgGee6YinsH/Rx5PYTYkoEzftwzZ4sounV2
-5OCuPFINOyJneS59yom5FFsrvIfugCwQO3otGt7g/rC85Avzt9GHvT0EYU1X+ttp
-rmYahODhWPvGRMXlOYT74KpUBqgOqtN44FwC9KS/Ohw4fO5ieJiuwEroDCaXY/ds
-XiiR13EWnzvfeJhCqudMlPjYU/YKsoJvhQ+fg17eqgTY6HfLO8RkSMbR/SMSVfoh
-RMMycmuo+aIZEk68nx0OH7PaLhyqFsKkCMrFjqKpWC+9O1LjniH64jdl4o1uR9Qi
-m5TYFqZ4uyG0bmTCr/SFjL93k1PYOwdfJsYpC+YIT1iytAoSk008QlJVMtuI5Kc=
-=WXPx
+iQEcBAEBAgAGBQJWNpW5AAoJEHCTjHgGee6YalQIANHjTUzIAOY3PSvcxBuIWsra
+VOQlO2gQIfTx/tnKW9XkvhYzMFtJeuwKZ5SuNe7eSmyj+KMGaoIy3b2iGz2KLHB2
+uwr42xyu01hsLjZdcer4JGcKwptKc65I3OAmVBN9GicwlPi0lXkLGqW8AWFaMW/1
+A/HdKvOZb6QYurAFGNV9oTcW8CXYwSrF7bLzGSe70jozN7hOsaG5aAyOfA9wDF8L
+nLN/RC8X/Qr9u8/2kz3c8RliIVWDwmpeq4REOKw6Dp1LyD6XDqziXO0sHCMkIWIq
+zlHYL62pbCu8pxLyIjNqI0XVZLVEdEZdQ7NFIyxuXG0XCrQmcGB3C8oMcXKQOeM=
+=OwKb
 -----END PGP SIGNATURE-----
