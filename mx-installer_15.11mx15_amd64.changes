@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 01 Nov 2015 14:25:10 -0500
+Source: mx-installer
+Binary: mx-installer
+Architecture: source amd64
+Version: 15.11mx15
+Distribution: mx
+Urgency: medium
+Maintainer: anticapitalista <antiX@operamail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-installer - GUI installer for MX Linux.
+Changes:
+ mx-installer (15.11mx15) mx; urgency=medium
+ .
+   * install GRUB on ESP on GPT drives
+Checksums-Sha1:
+ cca30724c6e25b1e7533526f56a79c76a0c22c3c 1165 mx-installer_15.11mx15.dsc
+ 6fe777539ee1047920f9893f76ecd968e5f3c76a 238104 mx-installer_15.11mx15.tar.xz
+ 0f8f82ef8773404395e461d0cfd7cfca14342973 225708 mx-installer_15.11mx15_amd64.deb
+Checksums-Sha256:
+ 4d2c8b9e0d7904ccc6c59055f3c54a03579f1f14870c8bbc2f8eb990d21d642b 1165 mx-installer_15.11mx15.dsc
+ fa40bbcfe5ae3115636e34b2a4fd5edf9c67df9084af7bcaed5a2216ba01577c 238104 mx-installer_15.11mx15.tar.xz
+ bba9d8ce91a71f59bfc379fe23f6d3c4e8ccfc4f5db4067c6a71d00a3926d299 225708 mx-installer_15.11mx15_amd64.deb
+Files:
+ 2452985064a9f3e88d454998324367f1 1165 system optional mx-installer_15.11mx15.dsc
+ d0c609a65ee8a76c6d238502cca9e331 238104 system optional mx-installer_15.11mx15.tar.xz
+ 0c10661dd36363aa38902b05e651f64d 225708 system optional mx-installer_15.11mx15_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWNmdsAAoJEHCTjHgGee6YinsH/Rx5PYTYkoEzftwzZ4sounV2
+5OCuPFINOyJneS59yom5FFsrvIfugCwQO3otGt7g/rC85Avzt9GHvT0EYU1X+ttp
+rmYahODhWPvGRMXlOYT74KpUBqgOqtN44FwC9KS/Ohw4fO5ieJiuwEroDCaXY/ds
+XiiR13EWnzvfeJhCqudMlPjYU/YKsoJvhQ+fg17eqgTY6HfLO8RkSMbR/SMSVfoh
+RMMycmuo+aIZEk68nx0OH7PaLhyqFsKkCMrFjqKpWC+9O1LjniH64jdl4o1uR9Qi
+m5TYFqZ4uyG0bmTCr/SFjL93k1PYOwdfJsYpC+YIT1iytAoSk008QlJVMtuI5Kc=
+=WXPx
+-----END PGP SIGNATURE-----

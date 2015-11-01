@@ -545,6 +545,11 @@ void MInstall::prepareToInstall() {
   system("/bin/umount -l /mnt/antiX/home >/dev/null 2>&1");
   system("/bin/umount -l /mnt/antiX >/dev/null 2>&1");
 
+  // unmount /boot/efi if mounted by previous run
+  if (system("mountpoint -q /boot/efi") == 0) {
+    system("umount /boot/efi");
+  }
+
   isRootFormatted = false;
   isHomeFormatted = false;
   isFormatExt4 = true;
@@ -1122,7 +1127,18 @@ bool MInstall::installLoader() {
   qApp->processEvents();
 
   // install new Grub now
-  cmd = QString("grub-install --recheck --no-floppy --force --boot-directory=/mnt/antiX/boot /dev/%1").arg(boot);
+  if (!grubEspButton->isChecked()) {
+      cmd = QString("grub-install --recheck --no-floppy --force --boot-directory=/mnt/antiX/boot /dev/%1").arg(boot);
+  } else {
+      system("mkdir /boot/efi");
+      QString mount = QString("mount /dev/%1 /boot/efi").arg(boot);
+      runCmd(mount);
+      QString arch = getCmdOut("uname -m");
+      if (arch == "i686") { // rename arch to match grub-install target
+        arch = "i386";
+      }
+      cmd = QString("grub-install --target=%1-efi --efi-directory=/boot/efi --bootloader-id=MX-15 --recheck").arg(arch);
+  }
   if (runCmd(cmd) != 0) {
       // error, try again
       // this works for reiser-grub bug
@@ -1133,7 +1149,7 @@ bool MInstall::installLoader() {
           QMessageBox::critical(this, QString::null,
                                 tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function."));
           return false;
-      }
+      }      
   }
 
   // replace "quiet" in /etc/default/grub with the non-live boot codes
@@ -1143,12 +1159,9 @@ bool MInstall::installLoader() {
   cmd = QString("sed -i -r 's|^(GRUB_CMDLINE_LINUX_DEFAULT=).*|\\1\"%1\"|' /mnt/antiX/etc/default/grub").arg(cmdline);
   system(cmd.toUtf8());
   // update grub config
-  cmd = "mount -o bind /dev /mnt/antiX/dev";
-  system(cmd.toUtf8());
-  cmd = "mount -o bind /sys /mnt/antiX/sys";
-  system(cmd.toUtf8());
-  cmd = "mount -o bind /proc /mnt/antiX/proc";
-  system(cmd.toUtf8());
+  system("mount -o bind /dev /mnt/antiX/dev");
+  system("mount -o bind /sys /mnt/antiX/sys");
+  system("mount -o bind /proc /mnt/antiX/proc");
   cmd = "chroot /mnt/antiX update-grub";
   runCmd(cmd);
   cmd = "chroot /mnt/antiX make-fstab --swap-only";
@@ -1157,12 +1170,12 @@ bool MInstall::installLoader() {
   runCmd(cmd);
   cmd = "chroot /mnt/antiX update-initramfs -u -t -k all";
   runCmd(cmd);
-  cmd = "umount /mnt/antiX/proc";
-  system(cmd.toUtf8());
-  cmd = "umount /mnt/antiX/sys";
-  system(cmd.toUtf8());
-  cmd = "umount /mnt/antiX/dev";
-  system(cmd.toUtf8());
+  system("umount /mnt/antiX/proc");
+  system("umount /mnt/antiX/sys");
+  system("umount /mnt/antiX/dev");
+  if (system("mountpoint -q /boot/efi") == 0) {
+    system("umount /boot/efi");
+  }
 
   setCursor(QCursor(Qt::ArrowCursor));
   timer->stop();
@@ -2333,7 +2346,13 @@ void MInstall::on_grubBootCombo_activated(QString)
     QString cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
     if ((system(cmd.toUtf8()) == 0) || (system("grub-probe -d /dev/sda2 2>/dev/null | grep hfsplus") == 0)) {
         grubMbrButton->setDisabled(true);
-        grubRootButton->setChecked(true);
+        if (system("sgdisk -p $1 | grep -q ' EF00 '") == 0) {
+            grubEspButton->setEnabled(true);
+            grubEspButton->setChecked(true);
+        } else {
+            grubEspButton->setEnabled(false);
+            grubRootButton->setChecked(true);
+        }
     } else {
         grubMbrButton->setDisabled(false);
         grubMbrButton->setChecked(true);

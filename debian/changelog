@@ -1,3 +1,9 @@
+mx-installer (15.11mx15) mx; urgency=medium
+
+  * install GRUB on ESP on GPT drives
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 01 Nov 2015 14:25:10 -0500
+
 mx-installer (15.10.8mx15) mx; urgency=medium
 
   * translations
