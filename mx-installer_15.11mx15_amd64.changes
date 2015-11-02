@@ -18,26 +18,26 @@ Changes:
  .
    * install GRUB on ESP on GPT drives
 Checksums-Sha1:
- c99f48244f0b0ccaaed283e610b50f37cd35a73a 1165 mx-installer_15.11mx15.dsc
- 2ebb918b59ed3387ab363e89f1c460163de65564 855496 mx-installer_15.11mx15.tar.xz
- 61d53d31d75b80136f2e15313975781969132477 225858 mx-installer_15.11mx15_amd64.deb
+ e2f04454d0acac7ed07560a5bb157a9d9dea8699 1168 mx-installer_15.11mx15.dsc
+ dc27bcb4bc58696d6e5ea23774f39a64d8bfb13e 1009864 mx-installer_15.11mx15.tar.xz
+ 627b8dee5966e2ed4b7d073c31b4a09d8731bcd9 225870 mx-installer_15.11mx15_amd64.deb
 Checksums-Sha256:
- af4a6974de80ee7b24e36d224b297951e484afcfe0d184fa304203054ce6646c 1165 mx-installer_15.11mx15.dsc
- 61a7102590a0fa2d272b57b355950197545661f383d606853d067014284f250f 855496 mx-installer_15.11mx15.tar.xz
- d6381ce53def6d465d64733975e1c245a7a3ae6818cc82a801aea725e8f760c7 225858 mx-installer_15.11mx15_amd64.deb
+ e3dd5ab81206385bc21b59ec2af756fafd4a10b5fd70cce7f6350f48d840172a 1168 mx-installer_15.11mx15.dsc
+ 75c3e4c10b4fa13a0909e330df4b6faeb45c1e28b13e829e0945223a917b59df 1009864 mx-installer_15.11mx15.tar.xz
+ 617c7bddfeef6f8055e62d4fab91e280997dea66523c38ab5535a09703544a61 225870 mx-installer_15.11mx15_amd64.deb
 Files:
- 96e4c2474489db83e9bd6b0a0899fa8b 1165 system optional mx-installer_15.11mx15.dsc
- e42caba2ff7804b870fd31b1cc92b063 855496 system optional mx-installer_15.11mx15.tar.xz
- ed27153fcbca1e5ea7839b503d8ecc22 225858 system optional mx-installer_15.11mx15_amd64.deb
+ bb5e946f6ff6e3115b179c832feaa8b6 1168 system optional mx-installer_15.11mx15.dsc
+ d1b05896edb54b648dda22119901efbf 1009864 system optional mx-installer_15.11mx15.tar.xz
+ ba8b6666196fa7899adf1829b6dfce01 225870 system optional mx-installer_15.11mx15_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJWN299AAoJEHCTjHgGee6Ya7oH/jHgQUrna3MQ1zCqA3q0pij2
-ZbJhi6+66lRu7c8glUCB4y1oCFEGPgpmUVIbb/3THhpm+EHxtay4+sTGAmzmW9X/
-4tVlR+oFSQ39kL+ag7rBcPjbFAkVigEfYlqe7av7gDOC0VuRCx07RbJVl4s2iiPK
-/2R2uOVWOowBhJkJvj43I3he4djXOz+yvt+Zvn+P0PbiAzbilADUc+7nPtvQ6VhU
-Wz0aIJWivDtJTTEK6iJO9QxUVsh3uW/YgwjDzg4X/5k24d8mggD+wLMpjuB++txB
-4mPNnrHu2O9aKcPVaZW3mRDIJZ5Q+LZ4PatB5YcFo717ospiAuR74YRj00iHuQA=
-=TK1W
+iQEcBAEBAgAGBQJWN9NEAAoJEHCTjHgGee6Ya/AIAL19ua86nC+z5IsILkGFXPE0
+TTDIll4VHNJEUIPcHalRPfA/OdoC8BfR8Oh0RxFCL6SrsHqQNnkHFjiz9OxRQfY8
+BkCaZ4mQGDDoFTAT9+7DSSNvFX+2u0vQ+JvO7XVspIYTSgmM4vlo41cR+Oa9L/6V
+p56POm1thhLvX1EgYAaGwMbweS4YHRpr7Lb8BDz+RYIou4EHKKZSRog5qZA4jG14
+IKMJL65sdbqXye2mEUcHvLo/gqBIPhlA/XVvH4RJ/wS5z5e0Glh/H3wPlMMVkJYT
+OXL+DUA5b2BsaP4uC8ENSqSm7//MhTrwWQ/S4y4YAg4jTqmyq/TvIApzZd6WdyI=
+=3Psp
 -----END PGP SIGNATURE-----
