@@ -18,26 +18,26 @@ Changes:
  .
    * install GRUB on ESP on GPT drives
 Checksums-Sha1:
- dc3e5e7c5e786be51be6024697d3f89747795bc9 1165 mx-installer_15.11mx15.dsc
- 282ceecd301f35df61e7a7b8224cc2df7e404f77 547060 mx-installer_15.11mx15.tar.xz
- d891c04faa3daff5c60cbda11b8e59e30bd92585 225948 mx-installer_15.11mx15_amd64.deb
+ d816043e4bb938b62257c6471755e36ae665d794 1165 mx-installer_15.11mx15.dsc
+ 28e6e92cb0038e68f6cb009d5cda62c0e9637958 701436 mx-installer_15.11mx15.tar.xz
+ 42d1c8db3fb8ef6cc6b5aa7f4fe402f8007a5caf 225698 mx-installer_15.11mx15_amd64.deb
 Checksums-Sha256:
- 3036f0b1de087ef73651bff8434b318fac8a6f4509b585f3c289739fbe3b6bea 1165 mx-installer_15.11mx15.dsc
- 707c6a558205f31ea9f3913e497892008b57086c7d96c8a875202c139cc1ba64 547060 mx-installer_15.11mx15.tar.xz
- 39faca10611f15e70a7561b614a0aef8c6451d247e2f5760496dd5fc69ab81de 225948 mx-installer_15.11mx15_amd64.deb
+ 779028efaf00cb0fd805ce684cd7075ff9ef0d6827291f1463b9445552ac8817 1165 mx-installer_15.11mx15.dsc
+ be62cd4d5c11045749cb68263361cc79234c9a1747cba2c22e3c021e4dab4c79 701436 mx-installer_15.11mx15.tar.xz
+ bb2f0d035a4b91ea16b4b3c3eb88aec06bb7afc9d5ade41ed489e387380370a1 225698 mx-installer_15.11mx15_amd64.deb
 Files:
- 9423cbeba3d1e77ff9b1725fb1baab21 1165 system optional mx-installer_15.11mx15.dsc
- a25df830bd75394986b52abb8fe12df0 547060 system optional mx-installer_15.11mx15.tar.xz
- ca079af7aab5be0f516f035f33aea57d 225948 system optional mx-installer_15.11mx15_amd64.deb
+ 5ddf5cfb6cf1c1fe803b555a2342c22c 1165 system optional mx-installer_15.11mx15.dsc
+ be2751ddcb4173c852ed69a63b629d25 701436 system optional mx-installer_15.11mx15.tar.xz
+ 1a39c900fac0fd686a2162466cb5817a 225698 system optional mx-installer_15.11mx15_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJWNsOeAAoJEHCTjHgGee6YttYH/RgL5gpwUET3eK/3Q+3/OawK
-8F3xuTNsTq8Xs1Hr2kdgwuRZRlkHz1Su82Ym2jpzGFASH0YgNvJAhJyUo0JIbSbT
-DubIJD9HmLrBuBSTYiV/cj0tGQa35/kFxJzMftWvQw2JYh3KLZpgfGxp0/VagQ8m
-HMWzpi98m2w1C4YuzH6HESC9EH+qnnVUAjQIevl5PZInP3gsRDJc9MrNMIiV0Clp
-3HTA3SxdvfV5KpGK3g7Pg1WE1dW4ZGgDScEX7UnDrmcRE5R/X05QpgVlcuxSze/c
-YOVh8PpYscNHkGqPjCmYkjZRIVP5Yq1xq71YH8euPudnb49C0wCeS+yxpQ505yI=
-=HX2B
+iQEcBAEBAgAGBQJWNt3UAAoJEHCTjHgGee6YxncH/1NwrjgP4xgNPl4UQySRqFNh
+C3kUVTXubK8DuVoPT1tx0paw19ZQ/kEyQ3nXT4xXgqmRtmmJxQIZcERGow8pI+DD
+QkfkHwLxFDtraD37sRg582cHJNFLmsh4WUTJTKVzyRp8677GkIxYcZM5t4+BXJLy
+TmuGT/hJTvqXKeuKI9YcIhRiM9ZmZd8aLpAtNVAFX0qWufbYDBL0YBY5KnoLnMgC
+fG2P94FKHBtEpQg4oMobbgej+H4JYLKxhCYMBX3i9+VdfAX30dhaWKX3aBiVsCDv
+ChWKNQ5w/w/xf8qt9Emn2O/olcTwWPjiJcQ0TKg2owSAuGiuW3e4bOJL6C7aoGI=
+=fsc+
 -----END PGP SIGNATURE-----

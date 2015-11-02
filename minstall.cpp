@@ -1106,7 +1106,7 @@ bool MInstall::installLoader()
         boot = rootpart;
     } else if (grubEspButton->isChecked()) {
         // find first ESP on the boot disk
-        QString cmd = QString("sgdisk -p /dev/%1 | grep -q ' EF00 '| awk 'NR==1{print \"'/%1'\"$1}'").arg(bootdrv);
+        QString cmd = QString("sgdisk -p /dev/%1 | grep ' EF00 '| awk 'NR==1{print \"'/dev/%1'\"$1}'").arg(bootdrv);
         esp = getCmdOut(cmd);
     }
 
