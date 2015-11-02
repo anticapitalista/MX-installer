@@ -811,7 +811,7 @@ bool MInstall::makeChosenPartitions() {
 
   strcpy(line, swapCombo->currentText().toUtf8());
   tok = strtok(line, " -");
-  QString swapdev = QString("/dev/%1").arg(tok);
+  QString swapdev = QString("/dev/%1").arg(tok);  
 
   strcpy(line, homeCombo->currentText().toUtf8());
   tok = strtok(line, " -");
@@ -1079,37 +1079,43 @@ void MInstall::copyLinux() {
 // install loader
 
 // build a grub configuration and install grub
-bool MInstall::installLoader() {
-  QString cmd;
-  QString val = getCmdOut("ls /mnt/antiX/boot | grep 'initrd.img-3.6'");
+bool MInstall::installLoader()
+{
+    QString cmd;
+    QString val = getCmdOut("ls /mnt/antiX/boot | grep 'initrd.img-3.6'");
 
-  // the old initrd is not valid for this hardware
-  if (!val.isEmpty()) {
-    cmd = QString("rm -f /mnt/antiX/boot/%1").arg(val);
-    system(cmd.toUtf8());
-  }
+    // the old initrd is not valid for this hardware
+    if (!val.isEmpty()) {
+        cmd = QString("rm -f /mnt/antiX/boot/%1").arg(val);
+        system(cmd.toUtf8());
+    }
 
-  if (!grubCheckBox->isChecked()) {
-    // skip it
-    return true;
-  }
+    if (!grubCheckBox->isChecked()) {
+        // skip it
+        return true;
+    }
 
-  QString bootdrv = QString(grubBootCombo->currentText()).section(" ", 0, 0);
-  QString rootpart = QString(rootCombo->currentText()).section(" ", 0, 0);
-  QString boot;
+    QString bootdrv = QString(grubBootCombo->currentText()).section(" ", 0, 0);
+    QString rootpart = QString(rootCombo->currentText()).section(" ", 0, 0);
+    QString boot;
+    QString esp;
 
-  if (grubMbrButton->isChecked()) {
-    boot = bootdrv;
-  } else {
-    boot = rootpart;
-  }
+    if (grubMbrButton->isChecked()) {
+        boot = bootdrv;
+    } else if (grubRootButton->isChecked()) {
+        boot = rootpart;
+    } else if (grubEspButton->isChecked()) {
+        // find first ESP on the boot disk
+        QString cmd = QString("sgdisk -p /dev/%1 | grep -q ' EF00 '| awk 'NR==1{print \"'/%1'\"$1}'").arg(bootdrv);
+        esp = getCmdOut(cmd);
+    }
 
-  // install Grub?
-  QString msg = QString( tr("Ok to install GRUB bootloader at %1 ?")).arg(boot);
-  int ans = QMessageBox::warning(this, QString::null, msg,
-        tr("Yes"), tr("No"));
-  if (ans != 0) {
-    return false;
+    // install Grub?
+    QString msg = QString( tr("Ok to install GRUB bootloader at %1 ?")).arg(boot);
+    int ans = QMessageBox::warning(this, QString::null, msg,
+                                   tr("Yes"), tr("No"));
+    if (ans != 0) {
+        return false;
   }
   setCursor(QCursor(Qt::WaitCursor));
   QProgressDialog *progress = new QProgressDialog(this);
@@ -1129,10 +1135,7 @@ bool MInstall::installLoader() {
   // install new Grub now
   if (!grubEspButton->isChecked()) {
       cmd = QString("grub-install --recheck --no-floppy --force --boot-directory=/mnt/antiX/boot /dev/%1").arg(boot);
-  } else {
-      // find first ESP on the boot disk and mount it
-      QString detectESP = QString("sgdisk -p /dev/%1 | grep -q ' EF00 '| awk 'NR==1{print \"'/%1'\"$1}'").arg(boot);
-      QString esp = getCmdOut(detectESP);
+  } else {      
       system("mkdir /boot/efi");
       QString mount = QString("mount %1 /boot/efi").arg(esp);
       runCmd(mount);
@@ -1177,7 +1180,7 @@ bool MInstall::installLoader() {
   system("umount /mnt/antiX/sys");
   system("umount /mnt/antiX/dev");
   if (system("mountpoint -q /boot/efi") == 0) {
-    system("umount /boot/efi");
+      system("umount /boot/efi");
   }
 
   setCursor(QCursor(Qt::ArrowCursor));
@@ -2349,7 +2352,7 @@ void MInstall::on_grubBootCombo_activated(QString)
     QString cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
     if ((system(cmd.toUtf8()) == 0) || (system("grub-probe -d /dev/sda2 2>/dev/null | grep hfsplus") == 0)) {
         grubMbrButton->setDisabled(true);
-        QString detectESP = QString("sgdisk -p /dev/%1 | grep -q ' EF00 '").arg(drv);
+        QString detectESP = QString("sgdisk -p %1 | grep -q ' EF00 '").arg(drv);
         if (system(detectESP.toUtf8()) == 0) {
             grubEspButton->setEnabled(true);
             grubEspButton->setChecked(true);
