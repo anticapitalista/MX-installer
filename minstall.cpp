@@ -541,14 +541,15 @@ int MInstall::getPartitionNumber()
 void MInstall::prepareToInstall() {
 
   updateStatus(tr("Ready to install MX Linux filesystem"), 0);
-  // unmount /home if it exists
-  system("/bin/umount -l /mnt/antiX/home >/dev/null 2>&1");
-  system("/bin/umount -l /mnt/antiX >/dev/null 2>&1");
 
   // unmount /boot/efi if mounted by previous run
-  if (system("mountpoint -q /boot/efi") == 0) {
-    system("umount /boot/efi");
+  if (system("mountpoint -q /mnt/antiX/boot/efi") == 0) {
+    system("umount /mnt/antiX/boot/efi");
   }
+
+  // unmount /home if it exists
+  system("/bin/umount -l /mnt/antiX/home >/dev/null 2>&1");
+  system("/bin/umount -l /mnt/antiX >/dev/null 2>&1");  
 
   isRootFormatted = false;
   isHomeFormatted = false;
@@ -1132,18 +1133,23 @@ bool MInstall::installLoader()
   progress->show();
   qApp->processEvents();
 
+  // set mounts for chroot
+  system("mount -o bind /dev /mnt/antiX/dev");
+  system("mount -o bind /sys /mnt/antiX/sys");
+  system("mount -o bind /proc /mnt/antiX/proc");
+
   // install new Grub now
   if (!grubEspButton->isChecked()) {
       cmd = QString("grub-install --recheck --no-floppy --force --boot-directory=/mnt/antiX/boot /dev/%1").arg(boot);
   } else {      
-      system("mkdir /boot/efi");
-      QString mount = QString("mount %1 /boot/efi").arg(esp);
+      system("mkdir /mnt/antiX/boot/efi");
+      QString mount = QString("mount %1 /mnt/antiX/boot/efi").arg(esp);
       runCmd(mount);
       QString arch = getCmdOut("uname -m");
       if (arch == "i686") { // rename arch to match grub-install target
         arch = "i386";
       }
-      cmd = QString("grub-install --target=%1-efi --efi-directory=/boot/efi --bootloader-id=MX-15 --recheck").arg(arch);
+      cmd = QString("chroot /mnt/antiX grub-install --target=%1-efi --efi-directory=/boot/efi --bootloader-id=mx15 --recheck").arg(arch);
   }
   if (runCmd(cmd) != 0) {
       // error, try again
@@ -1154,6 +1160,12 @@ bool MInstall::installLoader()
           setCursor(QCursor(Qt::ArrowCursor));
           QMessageBox::critical(this, QString::null,
                                 tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function."));
+          system("umount /mnt/antiX/proc");
+          system("umount /mnt/antiX/sys");
+          system("umount /mnt/antiX/dev");
+          if (system("mountpoint -q /mnt/antiX/boot/efi") == 0) {
+              system("umount /mnt/antiX/boot/efi");
+          }
           return false;
       }      
   }
@@ -1165,22 +1177,15 @@ bool MInstall::installLoader()
   cmd = QString("sed -i -r 's|^(GRUB_CMDLINE_LINUX_DEFAULT=).*|\\1\"%1\"|' /mnt/antiX/etc/default/grub").arg(cmdline);
   system(cmd.toUtf8());
   // update grub config
-  system("mount -o bind /dev /mnt/antiX/dev");
-  system("mount -o bind /sys /mnt/antiX/sys");
-  system("mount -o bind /proc /mnt/antiX/proc");
-  cmd = "chroot /mnt/antiX update-grub";
-  runCmd(cmd);
-  cmd = "chroot /mnt/antiX make-fstab --swap-only";
-  runCmd(cmd);
-  cmd = "chroot /mnt/antiX dev2uuid_fstab";
-  runCmd(cmd);
-  cmd = "chroot /mnt/antiX update-initramfs -u -t -k all";
-  runCmd(cmd);
+  runCmd("chroot /mnt/antiX update-grub");
+  runCmd("chroot /mnt/antiX make-fstab --swap-only");
+  runCmd("chroot /mnt/antiX dev2uuid_fstab");
+  runCmd("chroot /mnt/antiX update-initramfs -u -t -k all");
   system("umount /mnt/antiX/proc");
   system("umount /mnt/antiX/sys");
   system("umount /mnt/antiX/dev");
-  if (system("mountpoint -q /boot/efi") == 0) {
-      system("umount /boot/efi");
+  if (system("mountpoint -q /mnt/antiX/boot/efi") == 0) {
+      system("umount /mnt/antiX/boot/efi");
   }
 
   setCursor(QCursor(Qt::ArrowCursor));

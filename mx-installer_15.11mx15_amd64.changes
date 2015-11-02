@@ -18,26 +18,26 @@ Changes:
  .
    * install GRUB on ESP on GPT drives
 Checksums-Sha1:
- d816043e4bb938b62257c6471755e36ae665d794 1165 mx-installer_15.11mx15.dsc
- 28e6e92cb0038e68f6cb009d5cda62c0e9637958 701436 mx-installer_15.11mx15.tar.xz
- 42d1c8db3fb8ef6cc6b5aa7f4fe402f8007a5caf 225698 mx-installer_15.11mx15_amd64.deb
+ c99f48244f0b0ccaaed283e610b50f37cd35a73a 1165 mx-installer_15.11mx15.dsc
+ 2ebb918b59ed3387ab363e89f1c460163de65564 855496 mx-installer_15.11mx15.tar.xz
+ 61d53d31d75b80136f2e15313975781969132477 225858 mx-installer_15.11mx15_amd64.deb
 Checksums-Sha256:
- 779028efaf00cb0fd805ce684cd7075ff9ef0d6827291f1463b9445552ac8817 1165 mx-installer_15.11mx15.dsc
- be62cd4d5c11045749cb68263361cc79234c9a1747cba2c22e3c021e4dab4c79 701436 mx-installer_15.11mx15.tar.xz
- bb2f0d035a4b91ea16b4b3c3eb88aec06bb7afc9d5ade41ed489e387380370a1 225698 mx-installer_15.11mx15_amd64.deb
+ af4a6974de80ee7b24e36d224b297951e484afcfe0d184fa304203054ce6646c 1165 mx-installer_15.11mx15.dsc
+ 61a7102590a0fa2d272b57b355950197545661f383d606853d067014284f250f 855496 mx-installer_15.11mx15.tar.xz
+ d6381ce53def6d465d64733975e1c245a7a3ae6818cc82a801aea725e8f760c7 225858 mx-installer_15.11mx15_amd64.deb
 Files:
- 5ddf5cfb6cf1c1fe803b555a2342c22c 1165 system optional mx-installer_15.11mx15.dsc
- be2751ddcb4173c852ed69a63b629d25 701436 system optional mx-installer_15.11mx15.tar.xz
- 1a39c900fac0fd686a2162466cb5817a 225698 system optional mx-installer_15.11mx15_amd64.deb
+ 96e4c2474489db83e9bd6b0a0899fa8b 1165 system optional mx-installer_15.11mx15.dsc
+ e42caba2ff7804b870fd31b1cc92b063 855496 system optional mx-installer_15.11mx15.tar.xz
+ ed27153fcbca1e5ea7839b503d8ecc22 225858 system optional mx-installer_15.11mx15_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJWNt3UAAoJEHCTjHgGee6YxncH/1NwrjgP4xgNPl4UQySRqFNh
-C3kUVTXubK8DuVoPT1tx0paw19ZQ/kEyQ3nXT4xXgqmRtmmJxQIZcERGow8pI+DD
-QkfkHwLxFDtraD37sRg582cHJNFLmsh4WUTJTKVzyRp8677GkIxYcZM5t4+BXJLy
-TmuGT/hJTvqXKeuKI9YcIhRiM9ZmZd8aLpAtNVAFX0qWufbYDBL0YBY5KnoLnMgC
-fG2P94FKHBtEpQg4oMobbgej+H4JYLKxhCYMBX3i9+VdfAX30dhaWKX3aBiVsCDv
-ChWKNQ5w/w/xf8qt9Emn2O/olcTwWPjiJcQ0TKg2owSAuGiuW3e4bOJL6C7aoGI=
-=fsc+
+iQEcBAEBAgAGBQJWN299AAoJEHCTjHgGee6Ya7oH/jHgQUrna3MQ1zCqA3q0pij2
+ZbJhi6+66lRu7c8glUCB4y1oCFEGPgpmUVIbb/3THhpm+EHxtay4+sTGAmzmW9X/
+4tVlR+oFSQ39kL+ag7rBcPjbFAkVigEfYlqe7av7gDOC0VuRCx07RbJVl4s2iiPK
+/2R2uOVWOowBhJkJvj43I3he4djXOz+yvt+Zvn+P0PbiAzbilADUc+7nPtvQ6VhU
+Wz0aIJWivDtJTTEK6iJO9QxUVsh3uW/YgwjDzg4X/5k24d8mggD+wLMpjuB++txB
+4mPNnrHu2O9aKcPVaZW3mRDIJZ5Q+LZ4PatB5YcFo717ospiAuR74YRj00iHuQA=
+=TK1W
 -----END PGP SIGNATURE-----
