@@ -11,27 +11,27 @@ Distribution: mx
 Urgency: medium
 Maintainer: anticapitalista <antiX@operamail.com>
 Changed-By: Adrian <adrian@mxlinux.org>
-Description:
+Description: 
  mx-installer - GUI installer for MX Linux.
-Changes:
+Changes: 
  mx-installer (15.11mx15) mx; urgency=medium
  .
    * install GRUB on ESP on GPT drives
-Checksums-Sha1:
- dca94d94e65c59fc4a2b61a5b5b3a12290cf904f 227788 mx-installer_15.11mx15_i386.deb
-Checksums-Sha256:
- eff0381d281d41861c38505cb96afb48ca1d8bda69ad43bce2fb29a2337f889f 227788 mx-installer_15.11mx15_i386.deb
-Files:
- 8e9e5a631475c0da8f55a8f29d7f7b87 227788 system optional mx-installer_15.11mx15_i386.deb
+Checksums-Sha1: 
+ 559d28ba8c11fd1607cdd29d5078b177df2016c4 227680 mx-installer_15.11mx15_i386.deb
+Checksums-Sha256: 
+ f6deda4db66edcbae83d254bef10b20c8ace373526ab28e712e97aaad77980b3 227680 mx-installer_15.11mx15_i386.deb
+Files: 
+ 654f59222437d038534542121f51b2f2 227680 system optional mx-installer_15.11mx15_i386.deb
 
 -----BEGIN PGP SIGNATURE-----
-Version: GnuPG v1
+Version: GnuPG v1.4.12 (GNU/Linux)
 
-iQEcBAEBAgAGBQJWNq6NAAoJEHCTjHgGee6YKZsH/RrITGBFeAaZyKniEKiWL6bD
-OI/n6s0lyZeqAIReaRlzAEx1z3363XoZ4mbiWUGI1rpfUmPIx2mvz3mPfjOeGxnG
-+NY0cRHkXuMP8jDcyy1HwJSLgz8fqVhq84XtjRrqE7SPg8xlg+80DDBkPfNVgX+Z
-Phis1LmEKc1S4MNZY7y1odKDDR8SI24lWvXiLYm8XIJ6cvF0lSQ7evN/Xxi1RHk5
-hWBXkYHs261wc+lnKqAmncx2fOPHQD5p7JRmadI4ARubbMoG5J1wELkeE8rUS5qp
-XgwQzLkHFOO+5ldT8JWtZds1WFlH/Z07cF0rTOfVSbGiYV03KeN5XQV0PUw/yG0=
-=nLSU
+iQEcBAEBAgAGBQJWN4KrAAoJEHCTjHgGee6YIFsH/A0dpO2Z72NvJIOgQpZkFy4o
+hw1udYas7ch6yebp4uXZSM5vjdqFGpmOY9PNHgc9xp7Y/4SjscZxZOPhmqQSChr/
+F++iF44d+4dEJLdFiGysh0G22yboJZmDz2qA5tL0+DSGq3yhSQjOhrJFrvF1u32n
+vFaEhDyq6UiBnuxykMrvNTT1Zn0zUsqk41Toz1DaoD3JgX9EF3BNvnBFfJj5Na+g
+eKxprCyxP1J5EAdCTY1VsTZ5Gg1kJAkqPwX5vEuCIQgPTl69mW2Xsjv7uEaX4h7Z
+xOB2f2mbMIIauHoOxn1sWs2uQuS7EO8Api8eSz+XqHBBA+PhHYfojBM9PQuZwVs=
+=13VS
 -----END PGP SIGNATURE-----
