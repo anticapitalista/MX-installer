@@ -1106,7 +1106,7 @@ bool MInstall::installLoader()
         boot = rootpart;
     } else if (grubEspButton->isChecked()) {
         // find first ESP on the boot disk
-        QString cmd = QString("sgdisk -p /dev/%1 | grep ' EF00 '| awk 'NR==1{print \"'/dev/%1'\"$1}'").arg(bootdrv);
+        QString cmd = QString("sgdisk -p /dev/%1 | grep ' EF00 '| awk 'NR==1{print \"'%1'\"$1}'").arg(bootdrv);
         boot = getCmdOut(cmd);
     }
 
@@ -1142,7 +1142,7 @@ bool MInstall::installLoader()
       cmd = QString("grub-install --recheck --no-floppy --force --boot-directory=/mnt/antiX/boot /dev/%1").arg(boot);
   } else {      
       system("mkdir /mnt/antiX/boot/efi");
-      QString mount = QString("mount %1 /mnt/antiX/boot/efi").arg(boot);
+      QString mount = QString("mount /dev/%1 /mnt/antiX/boot/efi").arg(boot);
       runCmd(mount);
       QString arch = getCmdOut("uname -m");
       if (arch == "i686") { // rename arch to match grub-install target
