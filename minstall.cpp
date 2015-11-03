@@ -1172,9 +1172,9 @@ bool MInstall::installLoader()
   if (grubEspButton->isChecked() && system("efibootmgr -v | grep -q MX15") != 0) {
       QString arch = getCmdOut("uname -m");
       if (arch == "i686") {
-          cmd = QString("chroot /mnt/antiX efibootmgr -c -d /dev/%1 -p %2 -L \"MX15\" -l \"\efi\boot\bootia32.efi\"").arg(bootdrv).arg(boot.remove(bootdrv));
+          cmd = QString("chroot /mnt/antiX efibootmgr -c -d /dev/%1 -p %2 -L \"MX15\" -l \"\\boot\\efi\\bootia32.efi\"").arg(bootdrv).arg(boot.remove(bootdrv));
       } else {
-          cmd = QString("chroot /mnt/antiX efibootmgr -c -d /dev/%1 -p %2 -L \"MX15\" -l \"\efi\boot\bootx64.efi\"").arg(bootdrv).arg(boot.remove(bootdrv));
+          cmd = QString("chroot /mnt/antiX efibootmgr -c -d /dev/%1 -p %2 -L \"MX15\" -l \"\\boot\\efi\\bootx64.efi\"").arg(bootdrv).arg(boot.remove(bootdrv));
       }
       runCmd(cmd);
   }
