@@ -18,26 +18,26 @@ Changes:
  .
    * install GRUB on ESP on GPT drives
 Checksums-Sha1:
- e2f04454d0acac7ed07560a5bb157a9d9dea8699 1168 mx-installer_15.11mx15.dsc
- dc27bcb4bc58696d6e5ea23774f39a64d8bfb13e 1009864 mx-installer_15.11mx15.tar.xz
- 627b8dee5966e2ed4b7d073c31b4a09d8731bcd9 225870 mx-installer_15.11mx15_amd64.deb
+ 2099272e191dbcd4360fb9521945cad1d9fd2885 1168 mx-installer_15.11mx15.dsc
+ 3ef0507ef51e24ad4659181cc614c10b7a1729d0 1164052 mx-installer_15.11mx15.tar.xz
+ 9e56ad56f3b2c6715136b3d08adfcc275eb5a95d 226026 mx-installer_15.11mx15_amd64.deb
 Checksums-Sha256:
- e3dd5ab81206385bc21b59ec2af756fafd4a10b5fd70cce7f6350f48d840172a 1168 mx-installer_15.11mx15.dsc
- 75c3e4c10b4fa13a0909e330df4b6faeb45c1e28b13e829e0945223a917b59df 1009864 mx-installer_15.11mx15.tar.xz
- 617c7bddfeef6f8055e62d4fab91e280997dea66523c38ab5535a09703544a61 225870 mx-installer_15.11mx15_amd64.deb
+ a4a765f1ae7ce56ea24c871cafd404602a31bdce4345bf89dc5459177aceb997 1168 mx-installer_15.11mx15.dsc
+ e2549c5bb88ffae79679acf58ee1791bb94f2e7cd8dcab15e11471f77357978d 1164052 mx-installer_15.11mx15.tar.xz
+ 3d690d2a8b930cd4865b3df360da831f8b9745f815a02c688bae02ef6eb949a8 226026 mx-installer_15.11mx15_amd64.deb
 Files:
- bb5e946f6ff6e3115b179c832feaa8b6 1168 system optional mx-installer_15.11mx15.dsc
- d1b05896edb54b648dda22119901efbf 1009864 system optional mx-installer_15.11mx15.tar.xz
- ba8b6666196fa7899adf1829b6dfce01 225870 system optional mx-installer_15.11mx15_amd64.deb
+ f8fd2dc89163bd85cdfbaf395eecf2b8 1168 system optional mx-installer_15.11mx15.dsc
+ 9bc10e55ae3a8fa5b4f1e2c85ffde018 1164052 system optional mx-installer_15.11mx15.tar.xz
+ a7089fb75527b53536a6f41875d6bdd5 226026 system optional mx-installer_15.11mx15_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJWN9NEAAoJEHCTjHgGee6Ya/AIAL19ua86nC+z5IsILkGFXPE0
-TTDIll4VHNJEUIPcHalRPfA/OdoC8BfR8Oh0RxFCL6SrsHqQNnkHFjiz9OxRQfY8
-BkCaZ4mQGDDoFTAT9+7DSSNvFX+2u0vQ+JvO7XVspIYTSgmM4vlo41cR+Oa9L/6V
-p56POm1thhLvX1EgYAaGwMbweS4YHRpr7Lb8BDz+RYIou4EHKKZSRog5qZA4jG14
-IKMJL65sdbqXye2mEUcHvLo/gqBIPhlA/XVvH4RJ/wS5z5e0Glh/H3wPlMMVkJYT
-OXL+DUA5b2BsaP4uC8ENSqSm7//MhTrwWQ/S4y4YAg4jTqmyq/TvIApzZd6WdyI=
-=3Psp
+iQEcBAEBAgAGBQJWOTvcAAoJEHCTjHgGee6Yz6sIAKz6EPpFyAi38rejiRjK+Qqg
+QALWtIKf0BNzItIizZ1mNo6rq4nJtB68zkdQNZfZV+NmBDV5szmU/mc/KzhcrTuK
+FaLpeK6nYQiSCp2fcUvZzGaNoXAtCJjMLPp9Ze0u/EV87GCzOjOrz55U/siIMWgH
+ei4BTxSvNS4gaFTY5mdhcum8Jt9UReonvAhGNQKa3MP6hz9ptEA2QUGK259IMyUG
+BDmZ6vWjsn4UGmKPKmETU3jmIEeCCByqPhaFSuy+PucLef/0TcIvt11CgUys8x5a
+VYVjuYqdnx9qc6ft5bHBQBbn2gnlfCdvq5ruWLAjgke6/e8GeUd7G9dnXdCRy3E=
+=M1Ze
 -----END PGP SIGNATURE-----
