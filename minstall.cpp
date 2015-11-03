@@ -1140,15 +1140,15 @@ bool MInstall::installLoader()
   // install new Grub now
   if (!grubEspButton->isChecked()) {
       cmd = QString("grub-install --recheck --no-floppy --force --boot-directory=/mnt/antiX/boot /dev/%1").arg(boot);
-  } else {      
+  } else {
       system("mkdir /mnt/antiX/boot/efi");
       QString mount = QString("mount /dev/%1 /mnt/antiX/boot/efi").arg(boot);
       runCmd(mount);
       QString arch = getCmdOut("uname -m");
       if (arch == "i686") { // rename arch to match grub-install target
-        arch = "i386";
+          arch = "i386";
       }
-      cmd = QString("chroot /mnt/antiX grub-install --target=%1-efi --efi-directory=/boot/efi --bootloader-id=mx15 --recheck").arg(arch);
+      cmd = QString("chroot /mnt/antiX grub-install --target=%1-efi --efi-directory=/boot/efi --bootloader-id=MX15 --recheck").arg(arch);
   }
   if (runCmd(cmd) != 0) {
       // error, try again
@@ -1166,7 +1166,17 @@ bool MInstall::installLoader()
               system("umount /mnt/antiX/boot/efi");
           }
           return false;
-      }      
+      }
+  }
+  // install GRUB as the active bootloader
+  if (grubEspButton->isChecked() && system("efibootmgr -v | grep -q MX15") != 0) {
+      QString arch = getCmdOut("uname -m");
+      if (arch == "i686") {
+          cmd = QString("chroot /mnt/antiX efibootmgr -c -d /dev/%1 -p %2 -L \"MX15\" -l \"\efi\boot\bootia32.efi\"").arg(bootdrv).arg(boot.remove(bootdrv));
+      } else {
+          cmd = QString("chroot /mnt/antiX efibootmgr -c -d /dev/%1 -p %2 -L \"MX15\" -l \"\efi\boot\bootx64.efi\"").arg(bootdrv).arg(boot.remove(bootdrv));
+      }
+      runCmd(cmd);
   }
 
   // replace "quiet" in /etc/default/grub with the non-live boot codes

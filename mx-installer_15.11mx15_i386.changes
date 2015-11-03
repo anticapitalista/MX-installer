@@ -18,20 +18,20 @@ Changes:
  .
    * install GRUB on ESP on GPT drives
 Checksums-Sha1: 
- 881fa765e6bb15133d97ba06476ef770a5d90c0f 227836 mx-installer_15.11mx15_i386.deb
+ ab26c8559129b9caeb1e116f6cd34956cbd7656b 228550 mx-installer_15.11mx15_i386.deb
 Checksums-Sha256: 
- 14284d44e11768752ebbc43fbef76a15b7ec4e265c6f888f1064a02f3c5129ad 227836 mx-installer_15.11mx15_i386.deb
+ 021d9bc67ea9a87a70d92997858ec1ff611aaa2c8182a21ce5f05d02d65e755f 228550 mx-installer_15.11mx15_i386.deb
 Files: 
- 913a769d43cd6dec2d7f2a81e1cb93c5 227836 system optional mx-installer_15.11mx15_i386.deb
+ e822ba20b0d56f46a800ae3c1897e555 228550 system optional mx-installer_15.11mx15_i386.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.12 (GNU/Linux)
 
-iQEcBAEBAgAGBQJWN6o/AAoJEHCTjHgGee6YoZQIAJsSRNL3MTMAfJqAG2A4hSoE
-EtTmFXeNxVvzxtBLWt5ECx7Sa5ID2YKH1kw/Z7TVx10jKy4qHvyqaqFsyskMTvM0
-MYvaDnCvSDjRMjDvCOBiXRcDvGHx+iCQV8dz9yOij48PnAAof4yNHahBwIcv4E4F
-g/KpIvoUYC3qvGUh48hvMLBHa4oMlpc5CWKO37mgcefV/BwUzVTrf2mg/3CUsNwb
-JGRnelMINYycuBvgyQT3SPTgLffhkO8r04AThJL233NNCDLlYpCYdvzJiiaIHJTp
-poqhEiJiHG+fVMu0Zl5aQBaDwoqbFICI0lyaBYLBCxNqlhYMkQus+VFQMDVn22g=
-=pkrf
+iQEcBAEBAgAGBQJWOPxoAAoJEHCTjHgGee6YDsgH/j3ngd0NKdPa+pPPIHaEtpzB
+0YIhGjomYxBa9Ag2g+t/u9Hfh69A/Jf+igwBCLVzYi1GEHf3z2dqMFQ9jxlgQej+
+2PeuLE4j37XXig32YmYOrli5aW1q8VXOutG1l6tT0REZjvX1wgYfshGnClWS9b6o
+lcts+jDxNhGph/cuFyUaEVlWejDyx4c9rRHKf26YjzXCVt7iSjDko3jPhROpdAZy
+OEIqmccoZtoSpmb02lav0Ff0G9oYKs/sz2bl3808cbUfolgCB9d+snZejJHhDsok
+5Kw1RFV7TX4ADXopV/WCey7iVtMTKiSRQ36JtsKN8EPFBEh1fYIiyBL3/cJIxjk=
+=Lnbn
 -----END PGP SIGNATURE-----
