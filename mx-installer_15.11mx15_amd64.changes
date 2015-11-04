@@ -18,26 +18,26 @@ Changes:
  .
    * install GRUB on ESP on GPT drives
 Checksums-Sha1:
- 2099272e191dbcd4360fb9521945cad1d9fd2885 1168 mx-installer_15.11mx15.dsc
- 3ef0507ef51e24ad4659181cc614c10b7a1729d0 1164052 mx-installer_15.11mx15.tar.xz
- 9e56ad56f3b2c6715136b3d08adfcc275eb5a95d 226026 mx-installer_15.11mx15_amd64.deb
+ 0188450c1ced717c45ec97a90c7f0ec218896f8a 1168 mx-installer_15.11mx15.dsc
+ e597cbaa081271f54f5e967b42375142768ebf74 1318696 mx-installer_15.11mx15.tar.xz
+ 8dd81019fc9b9abbde96d04ccfc613c7b8d0d8fb 226148 mx-installer_15.11mx15_amd64.deb
 Checksums-Sha256:
- a4a765f1ae7ce56ea24c871cafd404602a31bdce4345bf89dc5459177aceb997 1168 mx-installer_15.11mx15.dsc
- e2549c5bb88ffae79679acf58ee1791bb94f2e7cd8dcab15e11471f77357978d 1164052 mx-installer_15.11mx15.tar.xz
- 3d690d2a8b930cd4865b3df360da831f8b9745f815a02c688bae02ef6eb949a8 226026 mx-installer_15.11mx15_amd64.deb
+ 5b23624bc779844c311b2c5475d4ad221dac26b44fe0252a6e7b295c0f31f215 1168 mx-installer_15.11mx15.dsc
+ c1d991795a04fe4c8907d620c47ea095fa94b43b552a6aabc58d6ad70b837ea1 1318696 mx-installer_15.11mx15.tar.xz
+ 8e9de06d492d9a034db83601b141fde812eaa7b52781f787890364effcea83f7 226148 mx-installer_15.11mx15_amd64.deb
 Files:
- f8fd2dc89163bd85cdfbaf395eecf2b8 1168 system optional mx-installer_15.11mx15.dsc
- 9bc10e55ae3a8fa5b4f1e2c85ffde018 1164052 system optional mx-installer_15.11mx15.tar.xz
- a7089fb75527b53536a6f41875d6bdd5 226026 system optional mx-installer_15.11mx15_amd64.deb
+ fb76475a3151c77d150dd0c325fe0bcc 1168 system optional mx-installer_15.11mx15.dsc
+ d8d5f07a1adbbf080ef178041234ceb2 1318696 system optional mx-installer_15.11mx15.tar.xz
+ 6867b7f8c187d7d2f5936521bd6ee580 226148 system optional mx-installer_15.11mx15_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJWOTvcAAoJEHCTjHgGee6Yz6sIAKz6EPpFyAi38rejiRjK+Qqg
-QALWtIKf0BNzItIizZ1mNo6rq4nJtB68zkdQNZfZV+NmBDV5szmU/mc/KzhcrTuK
-FaLpeK6nYQiSCp2fcUvZzGaNoXAtCJjMLPp9Ze0u/EV87GCzOjOrz55U/siIMWgH
-ei4BTxSvNS4gaFTY5mdhcum8Jt9UReonvAhGNQKa3MP6hz9ptEA2QUGK259IMyUG
-BDmZ6vWjsn4UGmKPKmETU3jmIEeCCByqPhaFSuy+PucLef/0TcIvt11CgUys8x5a
-VYVjuYqdnx9qc6ft5bHBQBbn2gnlfCdvq5ruWLAjgke6/e8GeUd7G9dnXdCRy3E=
-=M1Ze
+iQEcBAEBAgAGBQJWOhDeAAoJEHCTjHgGee6YZcsH/1Q3/6ofjNHbEMUDkMnEi9CO
+dnzOVZ149EIIrMNXhng0j1ENTVSDxUHYeR97ubspcn4qAEtBt63l1ooW1gpbUJs9
+WV1KdCBn5/KaOPHtkXovoOSgLuunenaC/5G1BbNJjt1d+tvwBDUX7oF54dYabLR1
+LPsF1OQ7E7fcI9nSH1y8R4ZnFjp+u9ah4cKB92IqJf6koH7zQuD5tPdp0vK40NEt
+EvSbvKvDMyZWcF4abjdbomkclnB1jEyLcjyfmWMQbRg5CgUmlGWzfumhDYWSgMbO
+6T1sW1TNdVru9RcnsaBhOoFq/U8uEnc8CqaG7xVYkniZMtQsM42NRSxVWqCBLI0=
+=16pi
 -----END PGP SIGNATURE-----

@@ -1168,16 +1168,16 @@ bool MInstall::installLoader()
           return false;
       }
   }
-  // install GRUB as the active bootloader
-  if (grubEspButton->isChecked() && system("efibootmgr -v | grep -q MX15") != 0) {
-      QString arch = getCmdOut("uname -m");
-      if (arch == "i686") {
-          cmd = QString("chroot /mnt/antiX efibootmgr -c -d /dev/%1 -p %2 -L \"MX15\" -l \"\\efi\\mx15\\bootia32.efi\"").arg(bootdrv).arg(boot.remove(bootdrv));
-      } else {
-          cmd = QString("chroot /mnt/antiX efibootmgr -c -d /dev/%1 -p %2 -L \"MX15\" -l \"\\efi\\mx15\\bootx64.efi\"").arg(bootdrv).arg(boot.remove(bootdrv));
-      }
-      runCmd(cmd);
-  }
+//  // install GRUB as the active bootloader
+//  if (grubEspButton->isChecked() && system("efibootmgr -v | grep -q MX15") != 0) {
+//      QString arch = getCmdOut("uname -m");
+//      if (arch == "i686") {
+//          cmd = QString("chroot /mnt/antiX efibootmgr -c -d /dev/%1 -p %2 -L \"MX15\" -l \"\\efi\\mx15\\bootia32.efi\"").arg(bootdrv).arg(boot.remove(bootdrv));
+//      } else {
+//          cmd = QString("chroot /mnt/antiX efibootmgr -c -d /dev/%1 -p %2 -L \"MX15\" -l \"\\efi\\mx15\\bootx64.efi\"").arg(bootdrv).arg(boot.remove(bootdrv));
+//      }
+//      runCmd(cmd);
+//  }
 
   // replace "quiet" in /etc/default/grub with the non-live boot codes
   QString cmdline = getCmdOut("/live/bin/non-live-cmdline");
@@ -2367,7 +2367,7 @@ void MInstall::on_grubBootCombo_activated(QString)
     if ((system(cmd.toUtf8()) == 0) || (system("grub-probe -d /dev/sda2 2>/dev/null | grep hfsplus") == 0)) {
         grubMbrButton->setDisabled(true);
         QString detectESP = QString("sgdisk -p %1 | grep -q ' EF00 '").arg(drv);
-        if (system(detectESP.toUtf8()) == 0) {
+        if (system(detectESP.toUtf8()) == 0 && system("test -d /sys/firmware/efi") == 0) {
             grubEspButton->setEnabled(true);
             grubEspButton->setChecked(true);
         } else {
