@@ -20,11 +20,12 @@
 MInstall *minstall;
 bool firstShow;
 
-MMain::MMain() {
-  setupUi(this);
-  minstall = new MInstall(mainFrame);
-  minstall->move(5,0);
-  firstShow = true;
+MMain::MMain()
+{
+    setupUi(this);
+    minstall = new MInstall(mainFrame);
+    minstall->move(5,0);
+    firstShow = true;
 }
 
 MMain::~MMain() {
@@ -32,29 +33,33 @@ MMain::~MMain() {
 
 /////////////////////////////////////////////////////////////////////////
 
-void MMain::setHelpText(const QString &text) {
-  mainHelp->setText(text);
+void MMain::setHelpText(const QString &text)
+{
+    mainHelp->setText(text);
 }
 
-void MMain::closeEvent(QCloseEvent *e) {
-  system("umount -l /mnt/antiX/home >/dev/null 2>&1");
-  system("umount -l /mnt/antiX >/dev/null 2>&1");
-  system("rm -r /mnt/antiX >/dev/null 2>&1");
-  system("runuser demo -c 'xfconf-query --channel thunar-volman --property /automount-drives/enabled --set true'");
-  system("xfconf-query --channel thunar-volman --property /automount-drives/enabled --set true");
-  QWidget::closeEvent(e);
+void MMain::closeEvent(QCloseEvent *e)
+{
+    system("umount -l /mnt/antiX/home >/dev/null 2>&1");
+    system("umount -l /mnt/antiX >/dev/null 2>&1");
+    system("rm -r /mnt/antiX >/dev/null 2>&1");
+    system("runuser demo -c 'xfconf-query --channel thunar-volman --property /automount-drives/enabled --set true'");
+    system("xfconf-query --channel thunar-volman --property /automount-drives/enabled --set true");
+    QWidget::closeEvent(e);
 }
 
 /////////////////////////////////////////////////////////////////////////
 // public slots
 
-void MMain::closeClicked() {
-  close();
+void MMain::closeClicked()
+{
+    close();
 }
 
-void MMain::showEvent(QShowEvent *e) {
-  if (firstShow) {
-    firstShow = false;
-    minstall->firstRefresh(this);
-  }
+void MMain::showEvent(QShowEvent *e)
+{
+    if (firstShow) {
+        firstShow = false;
+        minstall->firstRefresh(this);
+    }
 }
