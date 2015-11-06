@@ -2053,8 +2053,8 @@ void MInstall::pageDisplayed(int next)
         on_grubBootCombo_activated();
         setCursor(QCursor(Qt::ArrowCursor));
         ((MMain *)mmn)->setHelpText(tr("<p><b>Select Boot Method</b><br/>MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. "
-                                       "<p>By default GRUB2 is installed in the Master Boot Record of your boot drive and replaces the boot loader you were using before. This is normal.</p>"
-                                       "<p>If you choose to install GRUB2 at root instead of MBR, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.</p>"
+                                       "<p>By default GRUB2 is installed in the Master Boot Record or ESP (EFI System Partition for 64-bit UEFI boot systems) of your boot drive and replaces the boot loader you were using before. This is normal.</p>"
+                                       "<p>If you choose to install GRUB2 at root instead, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.</p>"
                                        "<p>If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.</p>"));
         backButton->setEnabled(false);
         break;
@@ -2402,7 +2402,7 @@ void MInstall::on_grubBootCombo_activated(QString)
 {
     QString drv = QString("/dev/%1").arg(grubBootCombo->currentText().section(" ", 0, 0));
     QString cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
-    if (system(cmd.toUtf8()) == 0) {
+    if (system(cmd.toUtf8()) == 0 && getCmdOut("uname -m") == "x86_64") {
         QString detectESP = QString("sgdisk -p %1 | grep -q ' EF00 '").arg(drv);
         if (system(detectESP.toUtf8()) == 0) {
             grubEspButton->setEnabled(true);

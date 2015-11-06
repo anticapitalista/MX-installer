@@ -572,8 +572,12 @@ Step 1 に処理を戻します。</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2055"/>
+        <source>&lt;p&gt;&lt;b&gt;Select Boot Method&lt;/b&gt;&lt;br/&gt;MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. &lt;p&gt;By default GRUB2 is installed in the Master Boot Record or ESP (EFI System Partition for 64-bit UEFI boot systems) of your boot drive and replaces the boot loader you were using before. This is normal.&lt;/p&gt;&lt;p&gt;If you choose to install GRUB2 at root instead, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.&lt;/p&gt;&lt;p&gt;If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&lt;p&gt;&lt;b&gt;Select Boot Method&lt;/b&gt;&lt;br/&gt;MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. &lt;p&gt;By default GRUB2 is installed in the Master Boot Record of your boot drive and replaces the boot loader you were using before. This is normal.&lt;/p&gt;&lt;p&gt;If you choose to install GRUB2 at root instead of MBR, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.&lt;/p&gt;&lt;p&gt;If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;起動処理の選択&lt;/b&gt;&lt;br/&gt;MX Linux は GRUB ブートローダを使用し、MX Linux とマイクロソフト Windows を起動する事ができます。&lt;p&gt;通常はマスターブートレコード MBR に GRUB2 を今まで入っていたブートローダーから置き換えます。&lt;/p&gt;&lt;p&gt;代わりにルートパーティションへ GRUB2 をインストールする事も可能です。これは慣れている人向けのオプションです。&lt;/p&gt;&lt;p&gt;また、GRUB の選択を外す事で、GRUB のインストールを行わないようにする事もできます。これは慣れている人向けのオプションです。&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;起動処理の選択&lt;/b&gt;&lt;br/&gt;MX Linux は GRUB ブートローダを使用し、MX Linux とマイクロソフト Windows を起動する事ができます。&lt;p&gt;通常はマスターブートレコード MBR に GRUB2 を今まで入っていたブートローダーから置き換えます。&lt;/p&gt;&lt;p&gt;代わりにルートパーティションへ GRUB2 をインストールする事も可能です。これは慣れている人向けのオプションです。&lt;/p&gt;&lt;p&gt;また、GRUB の選択を外す事で、GRUB のインストールを行わないようにする事もできます。これは慣れている人向けのオプションです。&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2064"/>

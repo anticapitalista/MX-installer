@@ -581,8 +581,12 @@ Retour à l&apos;étape 1.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2055"/>
+        <source>&lt;p&gt;&lt;b&gt;Select Boot Method&lt;/b&gt;&lt;br/&gt;MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. &lt;p&gt;By default GRUB2 is installed in the Master Boot Record or ESP (EFI System Partition for 64-bit UEFI boot systems) of your boot drive and replaces the boot loader you were using before. This is normal.&lt;/p&gt;&lt;p&gt;If you choose to install GRUB2 at root instead, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.&lt;/p&gt;&lt;p&gt;If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&lt;p&gt;&lt;b&gt;Select Boot Method&lt;/b&gt;&lt;br/&gt;MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. &lt;p&gt;By default GRUB2 is installed in the Master Boot Record of your boot drive and replaces the boot loader you were using before. This is normal.&lt;/p&gt;&lt;p&gt;If you choose to install GRUB2 at root instead of MBR, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.&lt;/p&gt;&lt;p&gt;If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Choisir la méthode démarage&lt;/b&gt;&lt;br/&gt;MX Linux utilise le lanceur GRUB pour démarer MX Linux ou MS-Windows.
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Choisir la méthode démarage&lt;/b&gt;&lt;br/&gt;MX Linux utilise le lanceur GRUB pour démarer MX Linux ou MS-Windows.
 &lt;p&gt;Par défaut GRUB2 est installé dans le MBR (Master Boot Record) de votre disque de démarage et remplace le lanceur utilisé jusqu&apos;alors. Ceci est normal.
 &lt;/p&gt;&lt;p&gt;Si vous choisissez d&apos;installer GRUB2 à la racine au lieu du MBR, alors GRUB2 s&apos;installera au début de la partition racine. Cette option est reservée aux experts.&lt;/p&gt;&lt;p&gt;Si vous décommentez l&apos;onglet d&apos;installation de GRUB, GRUB ne sera pas installé. Cette option est réservée aux experts.&lt;/p&gt;</translation>
     </message>

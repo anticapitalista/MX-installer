@@ -1,3 +1,9 @@
+mx-installer (15.11.3mx15) mx; urgency=medium
+
+  * live-to-installed edit
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 06 Nov 2015 11:21:47 -0500
+
 mx-installer (15.11.2mx15) mx; urgency=medium
 
   * allow GRUB installation on MBR on GPT drives
