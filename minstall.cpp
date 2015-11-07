@@ -2402,13 +2402,17 @@ void MInstall::on_grubBootCombo_activated(QString)
 {
     QString drv = QString("/dev/%1").arg(grubBootCombo->currentText().section(" ", 0, 0));
     QString cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
-    if (system(cmd.toUtf8()) == 0 && getCmdOut("uname -m") == "x86_64") {
-        QString detectESP = QString("sgdisk -p %1 | grep -q ' EF00 '").arg(drv);
-        if (system(detectESP.toUtf8()) == 0) {
-            grubEspButton->setEnabled(true);
+    QString detectESP = QString("sgdisk -p %1 | grep -q ' EF00 '").arg(drv);
+    // if 64bit, GPT, and ESP exists
+    if (getCmdOut("uname -m") == "x86_64" && system(cmd.toUtf8()) == 0 && system(detectESP.toUtf8()) == 0) {
+        grubEspButton->setEnabled(true);
+        if (system("test -d /sys/firmware/efi") == 0) { // if booted from UEFI
+            grubEspButton->setChecked(true);
         } else {
-            grubEspButton->setEnabled(false);
+            grubMbrButton->setChecked(true);
         }
+    } else {
+        grubEspButton->setEnabled(false);
     }
 }
 
