@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 06 Nov 2015 20:00:53 -0500
+Source: mx-installer
+Binary: mx-installer
+Architecture: i386
+Version: 15.11.4mx15
+Distribution: mx
+Urgency: medium
+Maintainer: anticapitalista <antiX@operamail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-installer - GUI installer for MX Linux.
+Changes:
+ mx-installer (15.11.4mx15) mx; urgency=medium
+ .
+   * set ESP default when booted from UEFI
+Checksums-Sha1:
+ 1d74aa4a7f35892e7ee1b8a835d699732a1cf8c6 224942 mx-installer_15.11.4mx15_i386.deb
+Checksums-Sha256:
+ e6b14132a270464ccfc580773dcf8e52e48a9f0ab3abd677bfde861164730399 224942 mx-installer_15.11.4mx15_i386.deb
+Files:
+ d7b34b5206ea20c2185b4a95d9a53985 224942 system optional mx-installer_15.11.4mx15_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWPVbjAAoJEHCTjHgGee6YjxcH/3yjkomTc+UY6d24Ni08aJsf
+KV13lVxXexN7S6YFu4vVZRwX0LmfUM/NKS/YCFwgle+9Hvzglit7s7EDaqVNvOSQ
+KV5W/OMm1IOCo2GxZOjBB8ZHlP2/XKqJU43k8K7C7UJHhKdDTMvEdlvGjaUUv9oQ
+pkTAICToyU7tIHXMmHojVRF9aI+zH8ZnNdRqLuQ9U21Faqw30cQuVqFx0FnNqgmR
+nuHezuE+7RRcf7xo72kvyyxAyEVton493SiTI0BmFXA/9Wf5SFw1I0Vclt7mrjO3
+UMozfZDoGEptdM4aOo9lBHm0uRF2T57L37fIt3ds9TlxV2Qvk3Cz/zo3blerRQw=
+=cyuj
+-----END PGP SIGNATURE-----

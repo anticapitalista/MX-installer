@@ -14,43 +14,44 @@
 //   limitations under the License.
 //
 
-#include <qapplication.h>
-#include <qfont.h>
-#include <qstring.h>
-#include <qlocale.h>
-#include <qtranslator.h>
-#include <qmessagebox.h>
+#include <QApplication>
+#include <QFont>
+#include <QString>
+#include <QLocale>
+#include <QTranslator>
+#include <QMessageBox>
+#include <QFile>
 #include <unistd.h>
-#include <qfile.h>
 
 #include "mmain.h"
 
-int main(int argc, char *argv[]) {
-  //exit if "minstall" is already running
-  if (system("ps -C minstall | sed '0,/minstall/{s/minstall//}' | grep minstall") == 0) {
-    return 1;
-  }
-  QApplication a(argc, argv);
-  a.setWindowIcon(QIcon("/usr/share/icons/msystem.png"));
+int main(int argc, char *argv[])
+{
+    //exit if "minstall" is already running
+    if (system("ps -C minstall | sed '0,/minstall/{s/minstall//}' | grep minstall") == 0) {
+        return 1;
+    }
+    QApplication a(argc, argv);
+    a.setWindowIcon(QIcon("/usr/share/icons/msystem.png"));
 
-  QTranslator qtTran;
-  qtTran.load(QString("qt_") + QLocale::system().name());
-  a.installTranslator(&qtTran);
+    QTranslator qtTran;
+    qtTran.load(QString("qt_") + QLocale::system().name());
+    a.installTranslator(&qtTran);
 
-  QTranslator appTran;
-  appTran.load(QString("mx-installer_") + QLocale::system().name(), "/usr/share/mx-installer/locale");
-  a.installTranslator(&appTran);
+    QTranslator appTran;
+    appTran.load(QString("mx-installer_") + QLocale::system().name(), "/usr/share/mx-installer/locale");
+    a.installTranslator(&appTran);
 
-  if (getuid() == 0) {
-    MMain mmain;
-    mmain.show();
-    return a.exec();
-  } else {
-    QApplication::beep();
-    QMessageBox::critical(0, QString::null,
-      QApplication::tr("You must run this app as root."));
-    return 1;
-  }
+    if (getuid() == 0) {
+        MMain mmain;
+        mmain.show();
+        return a.exec();
+    } else {
+        QApplication::beep();
+        QMessageBox::critical(0, QString::null,
+                              QApplication::tr("You must run this app as root."));
+        return 1;
+    }
 }
 
 

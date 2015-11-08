@@ -69,7 +69,7 @@ main() {
     cp_dir        /etc/init.d/debian etc/init.d
     rm_dir        etc/init.d/debian
 
-    idir_chroot   dpkg --purge $PURGE_PACKAGES
+    #idir_chroot   dpkg --purge $PURGE_PACKAGES
 
     clear_dir     media run tmp var/tmp
     rm_dir        var/log/live

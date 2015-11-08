@@ -27,8 +27,8 @@
 #include "ui_meinstall.h"
 
 class MInstall : public QWidget, public Ui::MeInstall {
-  Q_OBJECT
-  protected:
+    Q_OBJECT
+protected:
     QProcess *proc;
     QTimer *timer;
     QProgressBar *bar;
@@ -69,7 +69,7 @@ class MInstall : public QWidget, public Ui::MeInstall {
     QDialog *mmn;
 
 
-  public:
+public:
     /** constructor */
     MInstall(QWidget* parent=0);
     /** destructor */
@@ -121,7 +121,7 @@ class MInstall : public QWidget, public Ui::MeInstall {
     void firstRefresh(QDialog *main);
     void refresh();
 
-  public slots:
+public slots:
     virtual void on_passwordCheckBox_stateChanged(int);
     virtual void on_nextButton_clicked();
     virtual void on_backButton_clicked();
@@ -132,7 +132,7 @@ class MInstall : public QWidget, public Ui::MeInstall {
     virtual void on_rootTypeCombo_activated(QString item = "");
     void procAbort();
     virtual bool close();
-//    void moreClicked(QListViewItem *item);
+    //    void moreClicked(QListViewItem *item);
     void delStart();
     void delDone(int, QProcess::ExitStatus exitStatus);
     void delTime();
@@ -142,7 +142,7 @@ class MInstall : public QWidget, public Ui::MeInstall {
     void copyTime();
     void procTime();
 
-  private slots:
+private slots:
     void on_viewServicesButton_clicked();
     void on_homeCombo_activated(const QString &arg1);
     void on_grubBootCombo_activated(QString item = "");
