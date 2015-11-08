@@ -1,3 +1,10 @@
+mx-installer (15.11.5mx15) mx; urgency=medium
+
+  * include rc.local.install to revert to 'empty' rc.local on installation
+
+ -- anticapitalista <antiX@operamail.com>  Sun, 08 Nov 2015 11:16:00 +0200
+
+
 mx-installer (15.11.4mx15) mx; urgency=medium
 
   * set ESP default when booted from UEFI

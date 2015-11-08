@@ -9,3 +9,4 @@ minstall                        usr/sbin
 live-to-installed               usr/sbin
 minstall.desktop                usr/share/applications/mx
 msystem.png                     usr/share/icons
+rc.local.install                usr/share/antiX
