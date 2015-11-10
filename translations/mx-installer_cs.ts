@@ -168,7 +168,7 @@ Disk s přepážkou jste vybrali pro instalaci selhává. </translation>
         <location filename="../minstall.cpp" line="1268"/>
         <location filename="../minstall.cpp" line="1901"/>
         <location filename="../minstall.cpp" line="1915"/>
-        <location filename="../minstall.cpp" line="2430"/>
+        <location filename="../minstall.cpp" line="2429"/>
         <source>Yes</source>
         <translation>Ano</translation>
     </message>
@@ -187,7 +187,7 @@ Disk s přepážkou jste vybrali pro instalaci selhává. </translation>
         <location filename="../minstall.cpp" line="1268"/>
         <location filename="../minstall.cpp" line="1901"/>
         <location filename="../minstall.cpp" line="1915"/>
-        <location filename="../minstall.cpp" line="2430"/>
+        <location filename="../minstall.cpp" line="2429"/>
         <source>No</source>
         <translation>Ne</translation>
     </message>
@@ -625,63 +625,63 @@ Návrat ke Kroku 1.</translation>
         <translation>Dokončit</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2429"/>
+        <location filename="../minstall.cpp" line="2428"/>
         <source>MX Linux is installing, are you 
 sure you want to Close now?</source>
         <translation>Probíhá instalace MX Linux, jste si 
 jisti, že chcete nyní Zavřít?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2456"/>
+        <location filename="../minstall.cpp" line="2455"/>
         <source>Deleting old system</source>
         <translation>Odstraňování starého systému</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2465"/>
+        <location filename="../minstall.cpp" line="2464"/>
         <source>Failed to delete old MX Linux on destination.
 Returning to Step 1.</source>
         <translation>Nelze smazat staré MX Linux v cílovém umístění.
 Návrat do Kroku 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2491"/>
+        <location filename="../minstall.cpp" line="2490"/>
         <source>Copying new system</source>
         <translation>Kopírování nového systému</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2515"/>
+        <location filename="../minstall.cpp" line="2514"/>
         <source>Fixing configuration</source>
         <translation>Fixování nastavení</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2599"/>
+        <location filename="../minstall.cpp" line="2598"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
         <translation>Nelze zapisovat MX Linux do cíle.
 Návrat ke Kroku 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2626"/>
+        <location filename="../minstall.cpp" line="2625"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at http://antix.mepis.com and http://www.mepiscommunity.org/mx. There are volunteers to help you at the antiX Forum, http://antix.freeforums.org and the MEPIS Community Forum http://forum.mepiscommunity.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Získání nápovědy&lt;/b&gt;&lt;br/&gt;Základní informace o MX Linux najdete na http://antix.mepis.com a http://www.mepiscommunity.org/mx. Na fóru antiX http://antix.freeforums.org a MEPIS Community Forum http://forum.mepiscommunity orgjsou dobrovolníci, kteří Vám pomohou.&lt;/p&gt;&lt;p&gt;Pokud požádáte o pomoc, nezapomeňte, prosím, Váš problém a počítač podrobně popsat. Většinou příspěvky jako &apos;nefunguje to&apos; nejsou moc ku prospěchu.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2634"/>
+        <location filename="../minstall.cpp" line="2633"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from CD and running one of the utilities in System Configuration or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux CD to recover data from MS-Windows systems!&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Oprava Vaší instalace&lt;b&gt;&lt;br/&gt;Pokud MX Linux přestane z Vašeho pevného disku fungovat, někdy je možné problém opravit načtením z CD a spuštěním jednoho z nástrojů v nastavení systému nebo použitím jednoho z normálních nástrojů Linux pro opravu systému.&lt;/p&gt;&lt;p&gt;Můžete také použít Vaše CD MX Linux k obnově dat ze systémů MS-WIndows!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2640"/>
+        <location filename="../minstall.cpp" line="2639"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Podpora MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux je podporován lidmi, jako jste vy. Některé pomáhat ostatním na support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org nebo překládat soubory nápovědy do různých jazyků, nebo návrhy, napište dokumentace, nebo pomoci test nového softwaru.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2647"/>
+        <location filename="../minstall.cpp" line="2646"/>
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Úprava Vašeho  Mixéru Zvuku&lt;/b&gt;&lt;br/&gt;MX Linux se pokusí Vám nastavit mixér zvuku, ale někdy bude potřeba, abyste zvýšili hlasitost a zrušili ztlumení některých kanálů, abyste slyšeli zvuk .&lt;/p&gt; &lt;p&gt;Zkratka mixéru je umístěna v hlavním panelu. Klikněte na ni pro otevření mixéru.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2655"/>
+        <location filename="../minstall.cpp" line="2654"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit http://antix.freeforums.org or http://forum.mepiscommunity.org &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Mějte stále aktuální kopii MX Linux&lt;/b&gt;&lt;br/&gt;Pro informace o MX Linux a aktualizacích si prosím prohlédněte http://antix.freeforums.org. nebo http://forum.mepiscommunity.org &lt;/p&gt;</translation>
     </message>
