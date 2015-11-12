@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="el">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="el" version="2.0">
 <context>
     <name>MInstall</name>
     <message>
@@ -355,7 +353,7 @@ and create a new home directory?</source>
     <message>
         <location filename="../minstall.cpp" line="1257"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Συγγνώμη, αποτυχία αποθήκευσης του Φακέλλου Χρήστη (home directory). 
 Πριν συνεχίσετε, πρέπει να επιλέξετε ένα διαφορετικό Όνομα Χρήστη, ή να 
@@ -375,7 +373,7 @@ you&apos;ll have to select a different username.</source>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1283"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Επιλέξατε να μη χρησιμοποιήσετε, αποθηκεύσετε ή διαγράψετε τον παλιό Φάκελλο Χρήστη (home directory). 
 Πριν προχωρήσετε, θα πρέπει να επιλέξετε ένα διαφορετικό όνομα χρήστη.</translation>
@@ -472,7 +470,7 @@ not match.  Please try again.</source>
     <message>
         <location filename="../minstall.cpp" line="1501"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>Συγγνώμη, το όνομα του υπολογιστή σας πρέπει να έχει 
 μήκος τουλάχιστον 2 χαρακτήρων. Θα πρέπει να 
@@ -481,7 +479,7 @@ select a different name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1505"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Συγγνώμη, το όνομα του υπολογιστή σας περιέχει μη έγκυρους χαρακτήρες. 
 Θα πρέπει να επιλέξετε ένα διαφορετικό όνομα 
@@ -490,7 +488,7 @@ name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1511"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Συγγνώμη, αλλά το όνομα του υπολογιστή σας πρέπει να έχει τουλάχιστον 
 ένα μήκος 2 χαρακτήρων. Θα πρέπει να επιλέξετε ένα διαφορετικό 
@@ -499,7 +497,7 @@ name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1515"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Συγγνώμη, αλλά το όνομα του υπολογιστή σας περιέχει μη έγκυρους χαρακτήρες. 
 Θα πρέπει να επιλέξετε ένα διαφορετικό όνομα πριν συνεχίσετε.</translation>
@@ -507,7 +505,7 @@ name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1524"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Συγγνώμη, η Ομάδα Εργασίας σας πρέπει να έχει μήκος 
 τουλάχιστον 2 χαρακτήρων. Πρέπει να επιλέξετε ένα 
@@ -574,11 +572,7 @@ Returning to Step 1.</source>
     <message>
         <location filename="../minstall.cpp" line="2055"/>
         <source>&lt;p&gt;&lt;b&gt;Select Boot Method&lt;/b&gt;&lt;br/&gt;MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. &lt;p&gt;By default GRUB2 is installed in the Master Boot Record or ESP (EFI System Partition for 64-bit UEFI boot systems) of your boot drive and replaces the boot loader you were using before. This is normal.&lt;/p&gt;&lt;p&gt;If you choose to install GRUB2 at root instead, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.&lt;/p&gt;&lt;p&gt;If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;&lt;b&gt;Select Boot Method&lt;/b&gt;&lt;br/&gt;MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. &lt;p&gt;By default GRUB2 is installed in the Master Boot Record of your boot drive and replaces the boot loader you were using before. This is normal.&lt;/p&gt;&lt;p&gt;If you choose to install GRUB2 at root instead of MBR, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.&lt;/p&gt;&lt;p&gt;If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.&lt;/p&gt;</source>
-        <translation type="vanished">&lt;p&gt;&lt;b&gt;Επιλέξτε Μέθοδο Εκκίνησης&lt;/b&gt;&lt;br/&gt;Το MX Linux χρησιμοποιεί τον εκκινητή φόρτωσης GRUB, για να ξεκινήσει το MX Linux και τα MS-Windows. &lt;/p&gt;&lt;p&gt;Αν εγκαταστήσετε τον GRUB2 εδώ, τότε αυτός θα μπει εκ προεπιλογής στο Master Boot Record του boot drive και θα αντικαταστήσει τον οποιονδήποτα άλλον εκκινητή φόρτωσης (boot loader) που ίσως είχατε πριν. Αυτό είναι φυσιολογικό.&lt;/p&gt;&lt;p&gt;Αν, αντιθέτως, επιλέξετε να εγκαταστήσετε τον GRUB2 στο root, αντί για το MBR, τότε ο GRUB θα εγκατασταθεί στην αρχή της κατάτμησης συστήματος (root partition).  Αυτή η επιλογή προορίζεται μόνο για τους πιο έμπειρους.&lt;/p&gt;&lt;p&gt;Αν δεν επιλέξετε το κουτάκι για την εγκατάσταση του GRUB, τότε ο GRUB δεν θα εγκατασταθεί προς το παρόν.  Αυτή η επιλογή προορίζεται μόνο για τους πιο έμπειρους.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;b&gt;Επιλέξτε Μέθοδο Εκκίνησης&lt;/b&gt;&lt;br/&gt;Το MX Linux χρησιμοποιεί τον εκκινητή φόρτωσης GRUB, για να ξεκινήσει το MX Linux και τα MS-Windows. &lt;p&gt;Αν εγκαταστήσετε τον GRUB2 εδώ, τότε αυτός θα μπει εκ προεπιλογής στο Master Boot Record η στο ESP (EFI Σύστημα εκκίνησης UEFI συστήματα 64-bit)του boot drive και θα αντικαταστήσει τον οποιονδήποτα άλλον εκκινητή φόρτωσης (boot loader) που ίσως είχατε πριν. Αυτό είναι φυσιολογικό.&lt;/p&gt;&lt;p&gt;Αν, αντιθέτως, επιλέξετε να εγκαταστήσετε τον GRUB2 στο root, αντί για το MBR, τότε ο GRUB θα εγκατασταθεί στην αρχή της κατάτμησης συστήματος (root partition). Αυτή η επιλογή προορίζεται μόνο για τους πιο έμπειρους.&lt;/p&gt;&lt;p&gt;Αν δεν επιλέξετε το κουτάκι για την εγκατάσταση του GRUB, τότε ο GRUB δεν θα εγκατασταθεί προς το παρόν. Αυτή η επιλογή προορίζεται μόνο για τους πιο έμπειρους.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2064"/>
@@ -725,7 +719,7 @@ Returning to Step 1.</source>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;MX Linux is an independent linux distribution based on Debian Stable&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/p&gt;
@@ -941,12 +935,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="1204"/>
         <source>EFI System Partition</source>
-        <translation type="unfinished"></translation>
+        <translation>Διαμέρισμα συστήματος EFI</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1207"/>
         <source>ESP</source>
-        <translation type="unfinished"></translation>
+        <translation>ESP</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1277"/>
@@ -1123,7 +1117,7 @@ p, li { white-space: pre-wrap; }
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;

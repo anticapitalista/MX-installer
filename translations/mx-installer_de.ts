@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="de">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.0">
 <context>
     <name>MInstall</name>
     <message>
@@ -111,7 +109,7 @@
     <message>
         <location filename="../minstall.cpp" line="315"/>
         <source>Enables programs to publish and discover services and hosts</source>
-        <translation>Ermöglicht es, dass Programme Services und Hosts seröffentlichen und entdecken </translation>
+        <translation>Ermöglicht es, dass Programme Services und Hosts veröffentlichen und entdecken </translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="324"/>
@@ -132,7 +130,7 @@ The disk with the partition you selected for installation is failing.
 </source>
         <translation>
 
-Das Laufwerk mit der Partition, die Sie für die Installation gewählt haben, versagt.
+Das Laufwerk mit der Partition, die Sie für die Installation gewählt haben, ist dabei zu versagen.
 
 </translation>
     </message>
@@ -209,7 +207,7 @@ Das Laufwerk mit der Partition, die Sie für die Installation gewählt haben, ve
         <location filename="../minstall.cpp" line="515"/>
         <source>The disk with the partition you selected for installation passes the S.M.A.R.T. monitor test (smartctl)
 </source>
-        <translation>Das Laufwerk mit der Partition, die Sie für die Installation gewählt haben, hat den S.M.A.R.T. monitor Test (smartctl) bestanden
+        <translation>Das Laufwerk mit der Partition, die Sie für die Installation gewählt haben, hat den S.M.A.R.T. Monitor Test (smartctl) bestanden
 </translation>
     </message>
     <message>
@@ -336,12 +334,12 @@ und die Formatierung für die Swap-Partition durchführen?</translation>
     <message>
         <location filename="../minstall.cpp" line="1141"/>
         <source>Please wait till GRUB is installed, it might take a couple of minutes.</source>
-        <translation>Abwarten bitte, bis GRUB installiert ist; es könnte einige Minuten dauern.</translation>
+        <translation>Bitte warten, bis GRUB installiert ist; es könnte einige Minuten dauern...</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1176"/>
         <source>Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function.</source>
-        <translation>Konnte GRUB nicht installieren. Der Grund dafür kann eine Änderung der Disk-Formatierung sein. Sie können GRUB abwählen und die Installation von MX LInux abschliessen, dann einen Neustart mit der CD durchführen und die Installation mit der ReInstall GRUB Funktion reparieren.</translation>
+        <translation>Konnte GRUB nicht installieren. Der Grund dafür kann eine Änderung der Disk-Formatierung sein. Sie können GRUB abwählen und die Installation von MX LInux abschließen, dann einen Neustart mit der CD durchführen und die Installation mit der Reinstall GRUB Funktion reparieren.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1235"/>
@@ -358,7 +356,7 @@ und ein neues Home-Verzeichnis anlegen?</translation>
     <message>
         <location filename="../minstall.cpp" line="1257"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Konnte das alte Home-Verzeichnis nicht sichern. Bevor Sie weitermachen,
 müssen Sie einen anderen Benutzernamen auswählen oder
@@ -378,7 +376,7 @@ müssen Sie einen anderen Benutzernamen auswählen.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1283"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Sie haben beschlossen das alte Home-Verzeichnis nicht zu benutzen, zu sichern oder zu löschen.
 Bevor Sie weitermachen, müssen Sie einen anderen Benutzernamen auswählen.</translation>
@@ -477,7 +475,7 @@ nicht überein.  Bitte gleiches Passwort zweimal eingeben.</translation>
     <message>
         <location filename="../minstall.cpp" line="1501"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>Der Name des Computers muss mindestens
 2 Zeichen lang sein. Bitte wählen Sie einen 
@@ -486,7 +484,7 @@ längeren Namen, bevor Sie weitermachen.</translation>
     <message>
         <location filename="../minstall.cpp" line="1505"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Der Computername enthält leider ungültige Zeichen.. 
 Bitte wählen Sie einen anderen Namen, 
@@ -495,7 +493,7 @@ bevor Sie weitermachen.</translation>
     <message>
         <location filename="../minstall.cpp" line="1511"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Der Domänenname des Computers muss mindestens
 2 Zeichen lang sein. Bitte wählen Sie einen 
@@ -504,7 +502,7 @@ längeren Namen, bevor Sie weitermachen.</translation>
     <message>
         <location filename="../minstall.cpp" line="1515"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Der Domänenname des Computers enthält leider ungültige Zeichen.
 Bitte wählen Sie einen anderen Namen, bevor Sie weitermachen.</translation>
@@ -512,7 +510,7 @@ Bitte wählen Sie einen anderen Namen, bevor Sie weitermachen.</translation>
     <message>
         <location filename="../minstall.cpp" line="1524"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Der Name der Arbeitsgruppe muss mindestens
 2 Zeichen lang sein. Bitte wählen Sie einen 
@@ -527,7 +525,7 @@ Do you want to reboot now?</source>
         <translation>Die MX Linux Installation und Konfiguration sind abgeschlossen. 
 Um die neue Installation zu benutzen, booten Sie erneut ohne das Installation-Medium.
 
-Möchten Sie jetzt neu starten?</translation>
+Möchten Sie jetzt den Computer neu starten?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1914"/>
@@ -539,7 +537,7 @@ Möchten Sie jetzt wirklich den Vorgang beenden?</translation>
     <message>
         <location filename="../minstall.cpp" line="1989"/>
         <source>&lt;p&gt;&lt;b&gt;General Instructions&lt;/b&gt;&lt;br/&gt;BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.&lt;/p&gt;&lt;p&gt;On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. You will be prompted for confirmation before any destructive actions are performed.&lt;/p&gt;&lt;p&gt;MX Linux requires about 3.5 GB of space. 5 GB or more is preferred. You can use the entire disk or you can put MX Linux on existing partitions. &lt;/p&gt;&lt;p&gt;If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system&apos;s software to set up partitions and boot manager before installing MX Linux.&lt;/p&gt;&lt;p&gt;The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Allgemeine Hinweise&lt;/b&gt;&lt;br/&gt;BEVOR SIE WEIERMACHEN, BEENDEN SIE MITTE ALLE ANDEREN ANWENDUNGEN.&lt;/p&gt;&lt;p&gt;Lesen Sie bitte auf jeder Seite genau die Anweisungen, treffen Ihre Wahl und klicken auf Weiter um fortzufahren. Sie werden bei gefährlichen Aktionen um eine Bestätigung gebeten, bevor diese ausgeführt werden.&lt;/p&gt;&lt;p&gt;MX Linux verlangt ungefähr 3,5 GB Platz. Es wird ein Wert von 5 GB vorgeschlagen. Sie können die gesamte Disk benutzen oder MX Linux in eine bestehende Partition installieren. &lt;/p&gt;&lt;p&gt;Wenn Sie Mac OS oder Windows OS (Vista und später) benutzen, wird es vielleicht nötig sein, Ihre Partitionen mit dem einheimischen Boot Manager zu modifizieren, bevor Sie MX Linux installieren. &lt;/p&gt;&lt;p&gt;Es werden ext2, ext3, ext4, jfs, xfs, btrfs und reiserfs Linux Filesysteme unterstützt und ext4 wird empfohlen.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;b&gt;Allgemeine Hinweise&lt;/b&gt;&lt;br/&gt;BEVOR SIE WEITERMACHEN, BEENDEN SIE BITTE ALLE ANDEREN ANWENDUNGEN.&lt;/p&gt;&lt;p&gt;Lesen Sie bitte auf jeder Seite genau die Anweisungen, wählen die gwünschten Optionen und klicken auf Weiter um fortzufahren. Sie werden bei gefährlichen Aktionen um eine Bestätigung gebeten, bevor diese ausgeführt werden.&lt;/p&gt;&lt;p&gt;MX Linux verlangt ungefähr 3,5 GB Platz. Es wird ein Wert von 5 GB empfohlen. Sie können die gesamte Festplatte benutzen oder MX Linux in eine bestehende Partition installieren. &lt;/p&gt;&lt;p&gt;Wenn Sie Mac OS oder Windows (Vista und später) benutzen, wird es vielleicht nötig sein, Ihre Partitionen mit deren Boot Manager zu modifizieren, bevor Sie MX Linux installieren. &lt;/p&gt;&lt;p&gt;Es werden ext2, ext3, ext4, jfs, xfs, btrfs und reiserfs Linux Filesysteme unterstützt und ext4 wird empfohlen.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2000"/>
@@ -578,11 +576,7 @@ Zurück zu Schritt 1.</translation>
     <message>
         <location filename="../minstall.cpp" line="2055"/>
         <source>&lt;p&gt;&lt;b&gt;Select Boot Method&lt;/b&gt;&lt;br/&gt;MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. &lt;p&gt;By default GRUB2 is installed in the Master Boot Record or ESP (EFI System Partition for 64-bit UEFI boot systems) of your boot drive and replaces the boot loader you were using before. This is normal.&lt;/p&gt;&lt;p&gt;If you choose to install GRUB2 at root instead, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.&lt;/p&gt;&lt;p&gt;If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;&lt;b&gt;Select Boot Method&lt;/b&gt;&lt;br/&gt;MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. &lt;p&gt;By default GRUB2 is installed in the Master Boot Record of your boot drive and replaces the boot loader you were using before. This is normal.&lt;/p&gt;&lt;p&gt;If you choose to install GRUB2 at root instead of MBR, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.&lt;/p&gt;&lt;p&gt;If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.&lt;/p&gt;</source>
-        <translation type="vanished">&lt;p&gt;&lt;b&gt;Boot-Methode auswählen&lt;/b&gt;&lt;br/&gt;MX Linux benutzt den GRUB-Bootloader, um MX-14 und MS-Windows zu starten. &lt;p&gt;Der GRUB2-Bootloader wird defaultmässig in den Master Boot Record Ihres Boot-Laufwerkes eingetragen und ersetzt jeglichen, bisher dort vorhandenen Bootloader. Das ist normal.&lt;/p&gt;&lt;p&gt;Wenn Sie sich entscheiden, GRUB2 auf der Root-Partition, statt im MBR zu installieren, wird GRUB2 am Beginn der Root-Partition installiert. Diese Option ist nur für Experten gedacht.&lt;/p&gt;&lt;p&gt;Wenn Sie das Kontrollkästchen Install GRUB nicht auswählen, wird GRUB zu diesem Zeitpunkt nicht installiert werden. Diese Option ist nur für Experten gedacht.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;b&gt;Boot-Methode auswählen&lt;/b&gt;&lt;br/&gt;MX Linux benutzt den GRUB-Bootloader, um MX-14 und MS-Windows zu starten. &lt;p&gt;Der GRUB2-Bootloader wird defaultmässig in den Master Boot Record oder ESP (EFI-Systempartition für 64-Bit UEFI-Boot-Systeme) Ihres Boot-Laufwerkes eingetragen und ersetzt jeglichen, bisher dort vorhandenen Bootloader. Das ist normal.&lt;/p&gt;&lt;p&gt;Wenn Sie sich entscheiden, GRUB2 auf der Root-Partition, statt im MBR zu installieren, wird GRUB2 am Beginn der Root-Partition installiert. Diese Option ist nur für Experten gedacht.&lt;/p&gt;&lt;p&gt;Wenn Sie das Kontrollkästchen Install GRUB nicht auswählen, wird GRUB zu diesem Zeitpunkt nicht installiert werden. Diese Option ist nur für Experten gedacht.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2064"/>
@@ -745,7 +739,7 @@ oder übersetzen Hilfe-Dateien in andere Sprachen oder machen Vorschläge, schre
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;MX Linux is an independent linux distribution based on Debian Stable&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/p&gt;
@@ -959,12 +953,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="1204"/>
         <source>EFI System Partition</source>
-        <translation type="unfinished"></translation>
+        <translation>EFI-Systempartition</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1207"/>
         <source>ESP</source>
-        <translation type="unfinished"></translation>
+        <translation>ESP</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1277"/>
@@ -1141,7 +1135,7 @@ p, li { white-space: pre-wrap; }
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
