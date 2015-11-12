@@ -98,6 +98,12 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent)
         localeCombo->setCurrentIndex(localeCombo->findText("en_US"));
     }
 
+    // clock 24/12 default
+    QString lang = getCmdOut("cat /etc/default/locale|grep LANG");
+    if (lang.contains("en_US.UTF-8") || lang.contains("LANG=ar_EG.UTF-8") || lang.contains("LANG=el_GR.UTF-8") || lang.contains("LANG=sq_AL.UTF-8")) {
+        radio12h->setChecked(true);
+    }
+
     proc = new QProcess(this);
     timer = new QTimer(this);
 
@@ -1591,8 +1597,6 @@ void MInstall::setLocale()
     system(cmd.toUtf8());
     cmd = QString("Language=%1").arg(localeCombo->currentText());
 
-    //
-
     // timezone
     system("cp -f /etc/default/rcS /mnt/antiX/etc/default");
     system("cp -f /etc/adjtime /mnt/antiX/etc/");
@@ -1603,8 +1607,23 @@ void MInstall::setLocale()
     cmd = QString("echo %1 > /mnt/antiX/etc/timezone").arg(timezoneCombo->currentText());
     system(cmd.toUtf8());
 
+    // Set clock to use LOCAL
     if (gmtCheckBox->isChecked()) {
         replaceStringInFile("^UTC", "LOCAL", "/mnt/antiX/etc/adjtime");
+    }
+
+    // Set 12h clock format
+    if (radio12h->isChecked()) {
+        //the first 4 are for the orage clock plugin
+        replaceStringInFile("data0=%H", "data0=%I", "/home/demo/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc");
+        replaceStringInFile("data0=%H", "data0=%I", "/mnt/antiX/etc/skel/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc");
+        replaceStringInFile("data0=%H", "data0=%I", "/mnt/antiX/usr/local/share/appdata/panels/vertical/panel/xfce4-orageclock-plugin-1.rc");
+        replaceStringInFile("data0=%H", "data0=%I", "/mnt/antiX/usr/local/share/appdata/panels/horizontal/panel/xfce4-orageclock-plugin-1.rc");
+        //#these next 4 lines are for the xfce4-clock plugin
+        replaceStringInFile("%H", "%I", "/home/demo/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml");
+        replaceStringInFile("%H", "%I", "/mnt/antiX/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml");
+        replaceStringInFile("%H", "%I", "/mnt/antiX/usr/local/share/appdata/panels/horizontal/xfce4-panel.xml");
+        replaceStringInFile("%H", "%I", "/mnt/antiX/usr/local/share/appdata/panels/vertical/xfce4-panel.xml");
     }
 }
 

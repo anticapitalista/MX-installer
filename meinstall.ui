@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>450</width>
-    <height>405</height>
+    <height>408</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -92,7 +92,7 @@
       </size>
      </property>
      <property name="currentIndex">
-      <number>2</number>
+      <number>7</number>
      </property>
      <widget class="QWidget" name="Step_0">
       <layout class="QGridLayout">
@@ -1601,12 +1601,49 @@ p, li { white-space: pre-wrap; }
           <property name="spacing">
            <number>6</number>
           </property>
-          <item row="0" column="0" colspan="2">
+          <item row="2" column="2">
+           <widget class="QRadioButton" name="radio12h">
+            <property name="text">
+             <string notr="true">1:57</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Format:</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="QRadioButton" name="radio24h">
+            <property name="text">
+             <string>13:57</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0" colspan="3">
            <widget class="QCheckBox" name="gmtCheckBox">
             <property name="text">
              <string>System clock uses LOCAL</string>
             </property>
            </widget>
+          </item>
+          <item row="2" column="3">
+           <spacer name="horizontalSpacer_5">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>40</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
           </item>
          </layout>
         </widget>
@@ -1728,6 +1765,9 @@ p, li { white-space: pre-wrap; }
         <spacer name="verticalSpacer_2">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Ignored</enum>
          </property>
          <property name="sizeHint" stdset="0">
           <size>
@@ -2142,7 +2182,6 @@ p, li { white-space: pre-wrap; }
   <tabstop>computerGroupEdit</tabstop>
   <tabstop>keyboardCombo</tabstop>
   <tabstop>localeCombo</tabstop>
-  <tabstop>gmtCheckBox</tabstop>
   <tabstop>userNameEdit</tabstop>
   <tabstop>userPasswordEdit</tabstop>
   <tabstop>userPasswordEdit2</tabstop>
