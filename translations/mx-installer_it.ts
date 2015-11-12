@@ -1010,127 +1010,127 @@ p, li { white-space: pre-wrap; }
         <translation>6d. Impostazioni Servizi (utenti avanzati)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1554"/>
+        <location filename="../meinstall.ui" line="1566"/>
         <source>Adjust which services should run at startup</source>
         <translation>Imposta quali servizi dovrebbero partire all&apos;avvio</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1557"/>
+        <location filename="../meinstall.ui" line="1569"/>
         <source>View</source>
         <translation>Mostra </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1586"/>
+        <location filename="../meinstall.ui" line="1598"/>
         <source>6b. Configure Clock</source>
         <translation>6b. Configurare l&apos;ora</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1614"/>
+        <location filename="../meinstall.ui" line="1626"/>
         <source>Format:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1621"/>
+        <location filename="../meinstall.ui" line="1633"/>
         <source>13:57</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1631"/>
+        <location filename="../meinstall.ui" line="1643"/>
         <source>System clock uses LOCAL</source>
         <translation>ora di sistema da usare LOCALE</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1660"/>
+        <location filename="../meinstall.ui" line="1672"/>
         <source>6a. Localization Defaults</source>
         <translation>6a. Impostazioni di Localizzazione</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1690"/>
+        <location filename="../meinstall.ui" line="1702"/>
         <source>Locale:</source>
         <translation>Lingua locale:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1729"/>
+        <location filename="../meinstall.ui" line="1741"/>
         <source>Keyboard:</source>
         <translation>Tastiera:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1748"/>
+        <location filename="../meinstall.ui" line="1760"/>
         <source>6c. Timezone Settings</source>
         <translation>6c. Impostazioni del fuso orario</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1754"/>
+        <location filename="../meinstall.ui" line="1766"/>
         <source>Timezone:</source>
         <translation>Fuso orario:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1808"/>
+        <location filename="../meinstall.ui" line="1820"/>
         <source>7b. Root (administrator) Account</source>
         <translation>7b. Account di root (amministratore)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1867"/>
+        <location filename="../meinstall.ui" line="1879"/>
         <source>Confirm root password:</source>
         <translation>Conferma la password amministratore</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1883"/>
+        <location filename="../meinstall.ui" line="1895"/>
         <source>Root password:</source>
         <translation>Password amministratore:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1915"/>
+        <location filename="../meinstall.ui" line="1927"/>
         <source>7a. Default User Account</source>
         <translation>7a. Account utente predefinito</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1977"/>
+        <location filename="../meinstall.ui" line="1989"/>
         <source>username</source>
         <translation>nome utente</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1990"/>
+        <location filename="../meinstall.ui" line="2002"/>
         <source>Confirm user password:</source>
         <translation>Conferma la password utente</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2006"/>
+        <location filename="../meinstall.ui" line="2018"/>
         <source>Default user password:</source>
         <translation>Password dell&apos;utente di default:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2022"/>
+        <location filename="../meinstall.ui" line="2034"/>
         <source>Default user login name:</source>
         <translation>Login dell&apos;utente di default:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2035"/>
+        <location filename="../meinstall.ui" line="2047"/>
         <source>Autologin</source>
         <translation>Login automatico</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2042"/>
+        <location filename="../meinstall.ui" line="2054"/>
         <source>Show passwords</source>
         <translation>Mostra le password</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2049"/>
+        <location filename="../meinstall.ui" line="2061"/>
         <source>Desktop modification made in the live environment will be carried over to the installed OS</source>
         <translation>Le modifiche del desktop, fatte in modalità &quot;live&quot;, verranno trasferite sul sistema una volta installato</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2052"/>
+        <location filename="../meinstall.ui" line="2064"/>
         <source>Save live desktop changes</source>
         <translation>Salva modifiche del desktop &quot;live&quot;</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2084"/>
+        <location filename="../meinstall.ui" line="2096"/>
         <source>Reminders</source>
         <translation>Promemoria</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2138"/>
+        <location filename="../meinstall.ui" line="2150"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }

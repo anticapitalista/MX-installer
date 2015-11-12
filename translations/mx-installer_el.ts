@@ -1005,127 +1005,127 @@ p, li { white-space: pre-wrap; }
         <translation>6d. Ρυθμίσεις υπηρεσίας (για προχωρημένους)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1554"/>
+        <location filename="../meinstall.ui" line="1566"/>
         <source>Adjust which services should run at startup</source>
         <translation>Ρυθμίστε ποιες υπηρεσίες θα πρέπει να εκτελείται κατά την εκκίνηση </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1557"/>
+        <location filename="../meinstall.ui" line="1569"/>
         <source>View</source>
         <translation>Άποψη</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1586"/>
+        <location filename="../meinstall.ui" line="1598"/>
         <source>6b. Configure Clock</source>
         <translation>6b. Ρύθμιση Ωρολογίου</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1614"/>
+        <location filename="../meinstall.ui" line="1626"/>
         <source>Format:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1621"/>
+        <location filename="../meinstall.ui" line="1633"/>
         <source>13:57</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1631"/>
+        <location filename="../meinstall.ui" line="1643"/>
         <source>System clock uses LOCAL</source>
         <translation>Το ρολόι του συστήματος χρησιμοποιεί ώρα LOCAL</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1660"/>
+        <location filename="../meinstall.ui" line="1672"/>
         <source>6a. Localization Defaults</source>
         <translation>6a. Προεπιλογές Τοπικοποίησης (Localization)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1690"/>
+        <location filename="../meinstall.ui" line="1702"/>
         <source>Locale:</source>
         <translation>Locale:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1729"/>
+        <location filename="../meinstall.ui" line="1741"/>
         <source>Keyboard:</source>
         <translation>Πληκτρολόγιο:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1748"/>
+        <location filename="../meinstall.ui" line="1760"/>
         <source>6c. Timezone Settings</source>
         <translation>6c. Ρυθμόσεις Ζώνης ώρας</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1754"/>
+        <location filename="../meinstall.ui" line="1766"/>
         <source>Timezone:</source>
         <translation>Ζώνη ώρας:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1808"/>
+        <location filename="../meinstall.ui" line="1820"/>
         <source>7b. Root (administrator) Account</source>
         <translation>7b. Λογαριασμός Root (Διαχειριστή)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1867"/>
+        <location filename="../meinstall.ui" line="1879"/>
         <source>Confirm root password:</source>
         <translation>Επιβεβαιώστε τον Κωδικό Συστήματος:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1883"/>
+        <location filename="../meinstall.ui" line="1895"/>
         <source>Root password:</source>
         <translation>Κωδικός του χρήστη root:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1915"/>
+        <location filename="../meinstall.ui" line="1927"/>
         <source>7a. Default User Account</source>
         <translation>7a. Λογαριασμός Προεπιλεγμένου Χρήστη</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1977"/>
+        <location filename="../meinstall.ui" line="1989"/>
         <source>username</source>
         <translation>όνομα χρήστη</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1990"/>
+        <location filename="../meinstall.ui" line="2002"/>
         <source>Confirm user password:</source>
         <translation>Επιβεβαίωση Κωδικού Χρήστη:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2006"/>
+        <location filename="../meinstall.ui" line="2018"/>
         <source>Default user password:</source>
         <translation>Κωδικός Προεπιλεγμένου Χρήστη:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2022"/>
+        <location filename="../meinstall.ui" line="2034"/>
         <source>Default user login name:</source>
         <translation>Όνομα σύνδεσης προεπιλεγμένου χρήστη:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2035"/>
+        <location filename="../meinstall.ui" line="2047"/>
         <source>Autologin</source>
         <translation>Autologin</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2042"/>
+        <location filename="../meinstall.ui" line="2054"/>
         <source>Show passwords</source>
         <translation>Εμφάνιση κωδικών</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2049"/>
+        <location filename="../meinstall.ui" line="2061"/>
         <source>Desktop modification made in the live environment will be carried over to the installed OS</source>
         <translation>Οι τροποποιήσεις της επιφάνειας εργασίας σε live περιβάλλον, θα μεταφέρονται στο εγκατεστημένο λειτουργικό σύστημα</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2052"/>
+        <location filename="../meinstall.ui" line="2064"/>
         <source>Save live desktop changes</source>
         <translation>Αποθηκεύστε ζωντανά αλλαγές στην επιφάνεια εργασίας </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2084"/>
+        <location filename="../meinstall.ui" line="2096"/>
         <source>Reminders</source>
         <translation>Υπενθυμίσεις</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2138"/>
+        <location filename="../meinstall.ui" line="2150"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
