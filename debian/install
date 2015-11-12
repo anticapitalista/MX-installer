@@ -9,4 +9,5 @@ minstall                        usr/sbin
 live-to-installed               usr/sbin
 minstall.desktop                usr/share/applications/mx
 msystem.png                     usr/share/icons
+msystem.png                     usr/share/pixmaps
 rc.local.install                usr/share/antiX

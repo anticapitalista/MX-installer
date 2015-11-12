@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Wed, 11 Nov 2015 13:44:46 -0500
+Source: mx-installer
+Binary: mx-installer
+Architecture: source amd64
+Version: 15.11.7mx15
+Distribution: mx
+Urgency: medium
+Maintainer: anticapitalista <antiX@operamail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-installer - GUI installer for MX Linux.
+Changes:
+ mx-installer (15.11.7mx15) mx; urgency=medium
+ .
+   * added clock format selection
+Checksums-Sha1:
+ 418dce65663f26e678cd615f1dcf2ee89dc5bb00 1173 mx-installer_15.11.7mx15.dsc
+ e9d5126c09f7d44685be8a9fdd5e7684eff0487d 152932 mx-installer_15.11.7mx15.tar.xz
+ 3c6dd40a472d39408da36145128915333ee44ccd 226590 mx-installer_15.11.7mx15_amd64.deb
+Checksums-Sha256:
+ 4e548a471b99bf5f222efed395ffab8cd15c99c88dacbb9d049cb584ed3fc22f 1173 mx-installer_15.11.7mx15.dsc
+ 97bcaae0533c0c64813e29162a0b1e5ef9148b1892893012230e4401426d6f0a 152932 mx-installer_15.11.7mx15.tar.xz
+ f621a4b4865485db0486be7840be95e0cb02d3ccb36fc3c4a05da0e7abd2f551 226590 mx-installer_15.11.7mx15_amd64.deb
+Files:
+ 44c673e3df0e82fd71543c94b7a238ff 1173 system optional mx-installer_15.11.7mx15.dsc
+ cf2016e46ff0d1d5b320715aabbecd3a 152932 system optional mx-installer_15.11.7mx15.tar.xz
+ c5cbcc461a10d41d3b1cfd54e3e82c4c 226590 system optional mx-installer_15.11.7mx15_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWRRYrAAoJEHCTjHgGee6Y1aEH/R17ATA6iR0tKkLfdq+evwHj
+L52n3OC6M7We6qBzqDIUjUOw4nLqbSKP5y2DGwOgVzez//9xP0vG5rO+xV/I1bzM
+OybqvHTsQBMStBIDh76egWDMYguoH+wXN4ScnZDn6kdB9GHIIyTsn91Gp0yjmeLu
+pexkE+G4kNbpG05Lmd4Ky8t/d8Z3iuy7P8KDdw/DXm6tUghIBJEuJn+KHUCFmklQ
+trU8TKvc0Bq74velfbMpaCIRPtP4t0+UIwLsUhXzCeurzDYf6YqbBxIavfO/BjNo
+jeEUpnC9u9UCPU1RLg62cx5bL/79moJGVuCVOwlWDVzVqATlZ90V1ZcFBQlCid0=
+=3qRM
+-----END PGP SIGNATURE-----
