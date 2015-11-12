@@ -1150,12 +1150,12 @@ p, li { white-space: pre-wrap; }
         <translation>MX Linux installatie</translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="116"/>
+        <location filename="../memain.ui" line="100"/>
         <source>Close</source>
         <translation>Sluiten</translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="143"/>
+        <location filename="../memain.ui" line="127"/>
         <source>Help</source>
         <translation>Help</translation>
     </message>

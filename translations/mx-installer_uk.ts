@@ -1141,12 +1141,12 @@ p, li { white-space: pre-wrap; }
         <translation>Встановити MX Linux</translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="116"/>
+        <location filename="../memain.ui" line="100"/>
         <source>Close</source>
         <translation>Закрити</translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="143"/>
+        <location filename="../memain.ui" line="127"/>
         <source>Help</source>
         <translation>Довідка</translation>
     </message>

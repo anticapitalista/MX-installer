@@ -1142,12 +1142,12 @@ p, li { white-space: pre-wrap; }
         <translation>MX Linux telepítő</translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="116"/>
+        <location filename="../memain.ui" line="100"/>
         <source>Close</source>
         <translation>Bezár</translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="143"/>
+        <location filename="../memain.ui" line="127"/>
         <source>Help</source>
         <translation>Segítség</translation>
     </message>

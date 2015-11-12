@@ -18,20 +18,20 @@ Changes:
  .
    * added clock format selection
 Checksums-Sha1: 
- 3a3949066c34150593c1cd1cfc7c5dd014d2e3f9 228690 mx-installer_15.11.7mx15_i386.deb
+ 9133bf104c338bb66fb7389681eb84bfd4167d99 228488 mx-installer_15.11.7mx15_i386.deb
 Checksums-Sha256: 
- 2895c4b3242fc50fe1338ea8bad89d061d561d20a509d9edb6a83c892cd5831f 228690 mx-installer_15.11.7mx15_i386.deb
+ 169f787f9f3686b740efc71e3debedde11fadfbd42f9483f8094380429260e17 228488 mx-installer_15.11.7mx15_i386.deb
 Files: 
- 6b571fe1928a9a0e9a092ec011d818f0 228690 system optional mx-installer_15.11.7mx15_i386.deb
+ f3a8e5df6abfcfb65d8c908a9b47f15c 228488 system optional mx-installer_15.11.7mx15_i386.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.12 (GNU/Linux)
 
-iQEcBAEBAgAGBQJWRL0jAAoJEHCTjHgGee6Y1+8H/0tw7iBsfWxjiVme+He6517q
-SXGVh2vSjKkUijZgJrpFFVGZNIKbFB46E+NyTe5EX8HXKjDrUBEeNAW9Y4PtKMmV
-BcvBu7UYhG3+jZBHb0HRY9slWQvGhB+QCzSeVTdpmRTivPkpRozw8BXtkZuLy31j
-mjXEFqdg4d0eYbccTGwOtb7chbYf257ZYkLg8obpaOJcLFYEE3JboA3QMnBWTDt+
-W9tU2TR6A0/a8qRDYV76S5LGoUAzdahksxDbJVQCzo2RXMgLfGo+mQpwWO2EnUfo
-xEa6N0GyeLwHPD2BJVKDFmUwlcy2dNIbD/TA2xC06h+TywHfuig/OgwBGnHoJME=
-=xvK2
+iQEcBAEBAgAGBQJWRMUHAAoJEHCTjHgGee6YHkUH/jYhS0E/Xs22sZ8tLgxNpZli
+e0pjpvDmo+ex1MJUqkttFXa/FiA2OrJIu7tEhQvG2GHZ7UEf4zXRmqLRBCyN2uqE
+RieMpGPciMVKi4pr7yXx+0spHFmOWK276Lhko6Rg7cZNTONvZZn/9zu/O2CQNZZw
+McYmGDFFoUxlvJRrlwFZVFBhZDrJBhyulpefz1c9ZcoXFgQP/30dhZhbEuItwgjP
+wpaH1k6pmXLpOdR30yl16jXj4vHaOUF05NnTqV63TkCC6DS23U03vbNzXhi8qViP
+tJNSJAv1jJoYT4cK1msdW3DXIlorIgxVwAPb4yTedpotc0YcLgOnTlEqfHfBYVY=
+=EUH2
 -----END PGP SIGNATURE-----
