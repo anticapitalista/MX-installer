@@ -1612,18 +1612,17 @@ void MInstall::setLocale()
         replaceStringInFile("^UTC", "LOCAL", "/mnt/antiX/etc/adjtime");
     }
 
-    // Set 12h clock format
+    // Set clock format
     if (radio12h->isChecked()) {
-        //the first 4 are for the orage clock plugin
-        replaceStringInFile("data0=%H", "data0=%l", "/home/demo/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc");
-        replaceStringInFile("data0=%H", "data0=%l", "/mnt/antiX/etc/skel/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc");
-        replaceStringInFile("data0=%H", "data0=%l", "/mnt/antiX/usr/local/share/appdata/panels/vertical/panel/xfce4-orageclock-plugin-1.rc");
-        replaceStringInFile("data0=%H", "data0=%l", "/mnt/antiX/usr/local/share/appdata/panels/horizontal/panel/xfce4-orageclock-plugin-1.rc");
-        //#these next 4 lines are for the xfce4-clock plugin
-        replaceStringInFile("%H", "%l", "/home/demo/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml");
-        replaceStringInFile("%H", "%l", "/mnt/antiX/etc/skel/.config/xfce4/xfconf/xfce-perchannel-xml/xfce4-panel.xml");
-        replaceStringInFile("%H", "%l", "/mnt/antiX/usr/local/share/appdata/panels/horizontal/xfce4-panel.xml");
-        replaceStringInFile("%H", "%l", "/mnt/antiX/usr/local/share/appdata/panels/vertical/xfce4-panel.xml");
+        system("sed -i '/data0=/c\\data0=%l:%M' /home/demo/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc");
+        system("sed -i '/data0=/c\\data0=%l:%M' /mnt/antiX/etc/skel/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc");
+        system("sed -i '/data0=/c\\data0=%l:%M' /mnt/antiX/usr/local/share/appdata/panels/vertical/panel/xfce4-orageclock-plugin-1.rc");
+        system("sed -i '/data0=/c\\data0=%l:%M' /mnt/antiX/usr/local/share/appdata/panels/horizontal/panel/xfce4-orageclock-plugin-1.rc");
+    } else {
+        system("sed -i '/data0=/c\\data0=%H:%M' /home/demo/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc");
+        system("sed -i '/data0=/c\\data0=%H:%M' /mnt/antiX/etc/skel/.config/xfce4/panel/xfce4-orageclock-plugin-1.rc");
+        system("sed -i '/data0=/c\\data0=%H:%M' /mnt/antiX/usr/local/share/appdata/panels/vertical/panel/xfce4-orageclock-plugin-1.rc");
+        system("sed -i '/data0=/c\\data0=%H:%M' /mnt/antiX/usr/local/share/appdata/panels/horizontal/panel/xfce4-orageclock-plugin-1.rc");
     }
 }
 
