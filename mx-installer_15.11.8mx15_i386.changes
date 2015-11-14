@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 13 Nov 2015 14:59:21 -0500
+Source: mx-installer
+Binary: mx-installer
+Architecture: i386
+Version: 15.11.8mx15
+Distribution: mx
+Urgency: medium
+Maintainer: anticapitalista <antiX@operamail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-installer - GUI installer for MX Linux.
+Changes:
+ mx-installer (15.11.8mx15) mx; urgency=medium
+ .
+   * minor clock format change
+Checksums-Sha1:
+ 94f919b00994bbff47242188c3eb33f4663d4e69 225344 mx-installer_15.11.8mx15_i386.deb
+Checksums-Sha256:
+ c4725c88ca0cb15d407e0e71b1a06bd6691e14d4968e60b6f69470a16e021c53 225344 mx-installer_15.11.8mx15_i386.deb
+Files:
+ 35364986eb4ae92d3b60ba30dd425ba8 225344 system optional mx-installer_15.11.8mx15_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWRq5eAAoJEHCTjHgGee6YCnkH/jP7gUPTC8EvctY+vPg5ceq/
+nB5wjy8fnJabTtstQ94mKTd+dtX0zwoeEYkZZuuS2OWP/wpkCbHFaqExRheFUKbl
+j2t5CiC7vhuGnssFOz8hUcFJ8UVtgi5mwOdeIqfpHPkdy2iIryMO7txYQBSqgIp/
+bl88Mk3wYU5XzfMNj+X92/kPG9Ylc7Xlujo5MyJ/V5Q4vALZ6DDlr+JHlqhWY2wd
+ayReMlhwNnfOv2iall9EhbPXDOQhTPn87u5I2C8y1eO7fQx4gsdYuElg+L4miTT7
+enM0ep2HlYMCeTAnocWkhHcH7LAS+vfu/9RgM5WZmgLovHbHhkaanZh629ujPLY=
+=o6e9
+-----END PGP SIGNATURE-----
