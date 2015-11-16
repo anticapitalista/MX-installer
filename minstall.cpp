@@ -1296,14 +1296,14 @@ bool MInstall::setUserName()
     if ((dir = opendir(dpath.toUtf8())) == NULL) {
         // dir does not exist, must create it
         // copy skel to demo
-        if (system("cp -a /mnt/antiX/etc/skel /mnt/antiX/home") != 0) {
+        if (runCmd("cp -a /mnt/antiX/etc/skel /mnt/antiX/home") != 0) {
             setCursor(QCursor(Qt::ArrowCursor));
             QMessageBox::critical(0, QString::null,
                                   tr("Sorry, failed to create user directory."));
             return false;
         }
         cmd = QString("mv -f /mnt/antiX/home/skel %1").arg(dpath);
-        if (system(cmd.toUtf8()) != 0) {
+        if (runCmd(cmd.toUtf8()) != 0) {
             setCursor(QCursor(Qt::ArrowCursor));
             QMessageBox::critical(0, QString::null,
                                   tr("Sorry, failed to name user directory."));
@@ -1312,22 +1312,22 @@ bool MInstall::setUserName()
     } else {
         // dir does exist, clean it up
         cmd = QString("cp -n /mnt/antiX/etc/skel/.bash_profile %1").arg(dpath);
-        system(cmd.toUtf8());
+        runCmd(cmd.toUtf8());
         cmd = QString("cp -n /mnt/antiX/etc/skel/.bashrc %1").arg(dpath);
-        system(cmd.toUtf8());
+        runCmd(cmd.toUtf8());
         cmd = QString("cp -n /mnt/antiX/etc/skel/.gtkrc %1").arg(dpath);
-        system(cmd.toUtf8());
+        runCmd(cmd.toUtf8());
         cmd = QString("cp -n /mnt/antiX/etc/skel/.gtkrc-2.0 %1").arg(dpath);
-        system(cmd.toUtf8());
+        runCmd(cmd.toUtf8());
         cmd = QString("cp -Rn /mnt/antiX/etc/skel/.config %1").arg(dpath);
-        system(cmd.toUtf8());
+        runCmd(cmd.toUtf8());
         cmd = QString("cp -Rn /mnt/antiX/etc/skel/.local %1").arg(dpath);
-        system(cmd.toUtf8());
+        runCmd(cmd.toUtf8());
     }
     // saving Desktop changes
     if (saveDesktopCheckBox->isChecked()) {
         cmd = QString("rsync -a /home/demo/ %1 --exclude '.cache' --exclude '.gvfs' --exclude '.dbus' --exclude '.Xauthority' --exclude '.ICEauthority' --exclude '.mozilla' --exclude 'Installer.desktop'").arg(dpath);
-        if (system(cmd.toUtf8()) != 0) {
+        if (runCmd(cmd.toUtf8()) != 0) {
             setCursor(QCursor(Qt::ArrowCursor));
             QMessageBox::critical(0, QString::null,
                                   tr("Sorry, failed to save desktop changes."));
@@ -1335,7 +1335,7 @@ bool MInstall::setUserName()
     }
     // fix the ownership, demo=newuser
     cmd = QString("chown -R demo.users %1").arg(dpath);
-    if (system(cmd.toUtf8()) != 0) {
+    if (runCmd(cmd.toUtf8()) != 0) {
         setCursor(QCursor(Qt::ArrowCursor));
         QMessageBox::critical(0, QString::null,
                               tr("Sorry, failed to set ownership of user directory."));

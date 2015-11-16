@@ -1,3 +1,9 @@
+mx-installer (15.11.9mx15) mx; urgency=medium
+
+  * fix home configuration issue
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 15 Nov 2015 19:20:25 -0500
+
 mx-installer (15.11.8mx15) mx; urgency=medium
 
   * minor clock format change
