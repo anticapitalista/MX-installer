@@ -117,6 +117,42 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent)
     //setup csView
     csView->header()->setMinimumSectionSize(150);
     csView->header()->resizeSection(0,150);
+
+    QTreeWidgetItem *adminItem = new QTreeWidgetItem(csView);
+    networkItem->setText(0, tr("Administration"));
+
+    val = getCmdValue("dpkg -s anacron | grep '^Status'", "ok", " ", " ");
+    if (val.compare("installed") == 0) {
+        anacronItem = new QTreeWidgetItem(adminItem);
+        anacronItem->setText(0, "anacron");
+        anacronItem->setText(1, tr("Runs commands periodically"));
+        anacronItem->setCheckState(0, Qt::Checked);
+    } else {
+        anacronItem = NULL;
+    }
+
+    val = getCmdValue("dpkg -s cron | grep '^Status'", "ok", " ", " ");
+    if (val.compare("installed") == 0) {
+        cronItem = new QTreeWidgetItem(adminItem);
+        cronItem->setText(0, "cron");
+        cronItem->setText(1, tr("Time-based job scheduler"));
+        cronItem->setCheckState(0, Qt::Checked);
+    } else {
+        cronItem = NULL;
+    }
+
+    val = getCmdValue("dpkg -s sudo | grep '^Status'", "ok", " ", " ");
+    if (val.compare("installed") == 0) {
+        sudoItem = new QTreeWidgetItem(adminItem);
+        sudoItem->setText(0, "sudo");
+        sudoItem->setText(1, tr("Execute a command as another user"));
+        sudoItem->setCheckState(0, Qt::Checked);
+    } else {
+        sudoItem = NULL;
+    }
+
+    adminItem->setExpanded(true);
+
     QTreeWidgetItem *networkItem = new QTreeWidgetItem(csView);
     networkItem->setText(0, tr("Networking"));
 
@@ -204,16 +240,6 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent)
         cpufreqItem = NULL;
     }
 
-    val = getCmdValue("dpkg -s anacron | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        anacronItem = new QTreeWidgetItem(hardwareItem);
-        anacronItem->setText(0, "anacron");
-        anacronItem->setText(1, tr("Runs commands periodically"));
-        anacronItem->setCheckState(0, Qt::Checked);
-    } else {
-        anacronItem = NULL;
-    }
-
     val = getCmdValue("dpkg -s smartmontools | grep '^Status'", "ok", " ", " ");
     if (val.compare("installed") == 0) {
         smartmontoolsItem = new QTreeWidgetItem(hardwareItem);
@@ -264,16 +290,6 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent)
         dbusItem = NULL;
     }
 
-    val = getCmdValue("dpkg -s cron | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        cronItem = new QTreeWidgetItem(hardwareItem);
-        cronItem->setText(0, "cron");
-        cronItem->setText(1, tr("Time-based job scheduler"));
-        cronItem->setCheckState(0, Qt::Checked);
-    } else {
-        cronItem = NULL;
-    }
-
     val = getCmdValue("dpkg -s gpm | grep '^Status'", "ok", " ", " ");
     if (val.compare("installed") == 0) {
         gpmItem = new QTreeWidgetItem(hardwareItem);
@@ -282,16 +298,6 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent)
         gpmItem->setCheckState(0, Qt::Checked);
     } else {
         gpmItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s sudo | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        sudoItem = new QTreeWidgetItem(hardwareItem);
-        sudoItem->setText(0, "sudo");
-        sudoItem->setText(1, tr("Execute a command as another user"));
-        sudoItem->setCheckState(0, Qt::Checked);
-    } else {
-        sudoItem = NULL;
     }
 
     val = getCmdValue("dpkg -s sane-utils | grep '^Status'", "ok", " ", " ");
