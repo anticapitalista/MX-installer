@@ -180,6 +180,16 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent)
         bluetoothItem = NULL;
     }
 
+    val = getCmdValue("dpkg -s rsync | grep '^Status'", "ok", " ", " ");
+    if (val.compare("installed") == 0) {
+        rsyncItem = new QTreeWidgetItem(networkItem);
+        rsyncItem->setText(0, "rsync");
+        rsyncItem->setText(1, tr("File-copying tool"));
+        rsyncItem->setCheckState(0, Qt::Checked);
+    } else {
+        rsyncItem = NULL;
+    }
+
     networkItem->setExpanded(true);
 
     QTreeWidgetItem *hardwareItem = new QTreeWidgetItem(csView);
@@ -262,16 +272,6 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent)
         cronItem->setCheckState(0, Qt::Checked);
     } else {
         cronItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s rsync | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        rsyncItem = new QTreeWidgetItem(hardwareItem);
-        rsyncItem->setText(0, "rsync");
-        rsyncItem->setText(1, tr("File-copying tool"));
-        rsyncItem->setCheckState(0, Qt::Checked);
-    } else {
-        rsyncItem = NULL;
     }
 
     val = getCmdValue("dpkg -s gpm | grep '^Status'", "ok", " ", " ");
