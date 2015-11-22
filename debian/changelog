@@ -1,3 +1,9 @@
+mx-installer (15.11.11mx15) mx; urgency=medium
+
+  * fix HDD detection code
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 22 Nov 2015 10:45:43 -0500
+
 mx-installer (15.11.10mx15) mx; urgency=medium
 
   * changed HDD detection code
