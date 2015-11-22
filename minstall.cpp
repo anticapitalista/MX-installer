@@ -119,9 +119,9 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent)
     csView->header()->resizeSection(0,150);
 
     QTreeWidgetItem *adminItem = new QTreeWidgetItem(csView);
-    networkItem->setText(0, tr("Administration"));
+    adminItem->setText(0, tr("Administration"));
 
-    val = getCmdValue("dpkg -s anacron | grep '^Status'", "ok", " ", " ");
+    QString val = getCmdValue("dpkg -s anacron | grep '^Status'", "ok", " ", " ");
     if (val.compare("installed") == 0) {
         anacronItem = new QTreeWidgetItem(adminItem);
         anacronItem->setText(0, "anacron");
@@ -156,7 +156,7 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent)
     QTreeWidgetItem *networkItem = new QTreeWidgetItem(csView);
     networkItem->setText(0, tr("Networking"));
 
-    QString val = getCmdValue("dpkg -s network-manager | grep '^Status'", "ok", " ", " ");
+    val = getCmdValue("dpkg -s network-manager | grep '^Status'", "ok", " ", " ");
     if (val.compare("installed") == 0) {
         networkmanagerItem = new QTreeWidgetItem(networkItem);
         networkmanagerItem->setText(0, "network-manager");
@@ -2206,10 +2206,9 @@ void MInstall::refresh()
     this->updatePartitionWidgets();
 
     //  system("umount -a 2>/dev/null");
-    FILE *fp = popen("[ ! $(lsblk -lno MOUNTPOINT | grep /live/boot-dev) ]|| \
-                     lsblk -ln -o NAME,SIZE,MODEL -d -e 2,11 | grep '^[h,s,v].[a-z]' | grep -v $(lsblk -l | grep /live/boot-dev | cut -c1-3) | sort 2>/dev/null; \
-            [   $(lsblk -lno MOUNTPOINT | grep /live/boot-dev) ]|| \
-            lsblk -ln -o NAME,SIZE,MODEL -d -e 2,11 | grep '^[h,s,v].[a-z]' | sort 2>/dev/null", "r");
+    FILE *fp = popen("lsblk -ln -o name,size,model -d -I 8 \
+                     | grep -v \"^$(lsblk -l | grep /live/boot-dev || echo XXX | cut -c1-3)\" \
+                     | sort 2>/dev/null", "r");
             if (fp == NULL) {
         return;
     }
