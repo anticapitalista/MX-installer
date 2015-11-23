@@ -2206,7 +2206,7 @@ void MInstall::refresh()
     this->updatePartitionWidgets();
 
     //  system("umount -a 2>/dev/null");
-    FILE *fp = popen("lsblk -ln -o name,size,model -d -I 3,8 \
+    FILE *fp = popen("lsblk -ln -o name,size,model -d -I 3,8,22,179 \
                      | grep -v \"^$(lsblk -l | grep /live/boot-dev || echo XXX | cut -c1-3)\" \
                      | sort 2>/dev/null", "r");
             if (fp == NULL) {
