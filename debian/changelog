@@ -1,3 +1,9 @@
+mx-installer (15.11.12mx15) mx; urgency=medium
+
+  * added --target=i386-pc to grub-install
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 23 Nov 2015 09:24:42 -0500
+
 mx-installer (15.11.11mx15) mx; urgency=medium
 
   * fix HDD detection code
