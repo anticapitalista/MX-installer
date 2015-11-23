@@ -153,81 +153,6 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent)
 
     adminItem->setExpanded(true);
 
-    QTreeWidgetItem *networkItem = new QTreeWidgetItem(csView);
-    networkItem->setText(0, tr("Networking"));
-
-    val = getCmdValue("dpkg -s network-manager | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        networkmanagerItem = new QTreeWidgetItem(networkItem);
-        networkmanagerItem->setText(0, "network-manager");
-        networkmanagerItem->setText(1, tr("Network connection"));
-        networkmanagerItem->setCheckState(0, Qt::Checked);
-    } else {
-        networkmanagerItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s openssh-client | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        sshItem = new QTreeWidgetItem(networkItem);
-        sshItem->setText(0, "ssh");
-        sshItem->setText(1, tr("Secure Shell"));
-        sshItem->setCheckState(0, Qt::Checked);
-    } else {
-        sshItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s spamassassin 2>/dev/null | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        spamassassinItem = new QTreeWidgetItem(networkItem);
-        spamassassinItem->setText(0, "spamassassin");
-        spamassassinItem->setText(1, tr("Mail filter"));
-        spamassassinItem->setCheckState(0, Qt::Checked);
-    } else {
-        spamassassinItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s nfs-common | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        nfsItem = new QTreeWidgetItem(networkItem);
-        nfsItem->setText(0, "nfs");
-        nfsItem->setText(1, tr("Network File System"));
-        nfsItem->setCheckState(0, Qt::Checked);
-    } else {
-        nfsItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s openvpn | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        openvpnItem = new QTreeWidgetItem(networkItem);
-        openvpnItem->setText(0, "openVPN");
-        openvpnItem->setText(1, tr("VPN program that creates secure connections"));
-        openvpnItem->setCheckState(0, Qt::Checked);
-    } else {
-        openvpnItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s bluetooth | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        bluetoothItem = new QTreeWidgetItem(networkItem);
-        bluetoothItem->setText(0, "bluetooth");
-        bluetoothItem->setText(1, tr("Bluetooth"));
-        bluetoothItem->setCheckState(0, Qt::Checked);
-    } else {
-        bluetoothItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s rsync | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        rsyncItem = new QTreeWidgetItem(networkItem);
-        rsyncItem->setText(0, "rsync");
-        rsyncItem->setText(1, tr("File-copying tool"));
-        rsyncItem->setCheckState(0, Qt::Checked);
-    } else {
-        rsyncItem = NULL;
-    }
-
-    networkItem->setExpanded(true);
-
     QTreeWidgetItem *hardwareItem = new QTreeWidgetItem(csView);
     hardwareItem->setText(0, tr("Hardware"));
     val = getCmdValue("dpkg -s cpufrequtils | grep '^Status'", "ok", " ", " ");
@@ -331,6 +256,81 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent)
     }
 
     hardwareItem->setExpanded(true);
+
+    QTreeWidgetItem *networkItem = new QTreeWidgetItem(csView);
+    networkItem->setText(0, tr("Networking"));
+
+    val = getCmdValue("dpkg -s network-manager | grep '^Status'", "ok", " ", " ");
+    if (val.compare("installed") == 0) {
+        networkmanagerItem = new QTreeWidgetItem(networkItem);
+        networkmanagerItem->setText(0, "network-manager");
+        networkmanagerItem->setText(1, tr("Network connection"));
+        networkmanagerItem->setCheckState(0, Qt::Checked);
+    } else {
+        networkmanagerItem = NULL;
+    }
+
+    val = getCmdValue("dpkg -s openssh-client | grep '^Status'", "ok", " ", " ");
+    if (val.compare("installed") == 0) {
+        sshItem = new QTreeWidgetItem(networkItem);
+        sshItem->setText(0, "ssh");
+        sshItem->setText(1, tr("Secure Shell"));
+        sshItem->setCheckState(0, Qt::Checked);
+    } else {
+        sshItem = NULL;
+    }
+
+    val = getCmdValue("dpkg -s spamassassin 2>/dev/null | grep '^Status'", "ok", " ", " ");
+    if (val.compare("installed") == 0) {
+        spamassassinItem = new QTreeWidgetItem(networkItem);
+        spamassassinItem->setText(0, "spamassassin");
+        spamassassinItem->setText(1, tr("Mail filter"));
+        spamassassinItem->setCheckState(0, Qt::Checked);
+    } else {
+        spamassassinItem = NULL;
+    }
+
+    val = getCmdValue("dpkg -s nfs-common | grep '^Status'", "ok", " ", " ");
+    if (val.compare("installed") == 0) {
+        nfsItem = new QTreeWidgetItem(networkItem);
+        nfsItem->setText(0, "nfs");
+        nfsItem->setText(1, tr("Network File System"));
+        nfsItem->setCheckState(0, Qt::Checked);
+    } else {
+        nfsItem = NULL;
+    }
+
+    val = getCmdValue("dpkg -s openvpn | grep '^Status'", "ok", " ", " ");
+    if (val.compare("installed") == 0) {
+        openvpnItem = new QTreeWidgetItem(networkItem);
+        openvpnItem->setText(0, "openVPN");
+        openvpnItem->setText(1, tr("VPN program that creates secure connections"));
+        openvpnItem->setCheckState(0, Qt::Checked);
+    } else {
+        openvpnItem = NULL;
+    }
+
+    val = getCmdValue("dpkg -s bluetooth | grep '^Status'", "ok", " ", " ");
+    if (val.compare("installed") == 0) {
+        bluetoothItem = new QTreeWidgetItem(networkItem);
+        bluetoothItem->setText(0, "bluetooth");
+        bluetoothItem->setText(1, tr("Bluetooth"));
+        bluetoothItem->setCheckState(0, Qt::Checked);
+    } else {
+        bluetoothItem = NULL;
+    }
+
+    val = getCmdValue("dpkg -s rsync | grep '^Status'", "ok", " ", " ");
+    if (val.compare("installed") == 0) {
+        rsyncItem = new QTreeWidgetItem(networkItem);
+        rsyncItem->setText(0, "rsync");
+        rsyncItem->setText(1, tr("File-copying tool"));
+        rsyncItem->setCheckState(0, Qt::Checked);
+    } else {
+        rsyncItem = NULL;
+    }
+
+    networkItem->setExpanded(true);
 
     QTreeWidgetItem *printItem = new QTreeWidgetItem(csView);
     printItem->setText(0, tr("Printing"));

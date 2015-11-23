@@ -18,20 +18,20 @@ Changes:
  .
    * added --target=i386-pc to grub-install
 Checksums-Sha1: 
- 54e0faf46cdbf5edb738e920569038ec5745aaa6 225304 mx-installer_15.11.12mx15_i386.deb
+ 8ad729e8f9ffbbad6e8e65d7624831e97662ed88 224778 mx-installer_15.11.12mx15_i386.deb
 Checksums-Sha256: 
- 2a9031761fcbcdfdeffdd63f8d578a79b7b729f73332bf2901b11d491e73eb9f 225304 mx-installer_15.11.12mx15_i386.deb
+ 12d5dfbdce597b39f326c8f47e1c5132e0cf470541a4f1a3b5d4bece8208d4b4 224778 mx-installer_15.11.12mx15_i386.deb
 Files: 
- 2388c863af76d28c2b9d683a42db2bc6 225304 system optional mx-installer_15.11.12mx15_i386.deb
+ ee4890de78da5bc887b992b4afa43bca 224778 system optional mx-installer_15.11.12mx15_i386.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.12 (GNU/Linux)
 
-iQEcBAEBAgAGBQJWUyHtAAoJEHCTjHgGee6Yl7kH/3+FHUAmZ61ehTcVGBqcRuAV
-c51ZFFBuzL1mfC0zgJjHcMVBR2+2ekla2jIUGq8czlzseaxJT1IZcD4Vv9B5A339
-O8iyBdFvZRHj3rQJrKbGB8ya5OptxqiGxp3xBz+FvND9iPkqTmmDWrqtGEqy+IXF
-zRIexPak66qkjQEMPxMZBM6JD5UWzyPWDNnCjDoaPy5XsgJFyzG/UgDA0W2l5/65
-cIlWFdYojg38A7mc7Ot+kyWzoOmiABHTSkLyA95krS59U6+jefdLo78LcDeqXCEX
-fzO6ol6qu/u3N4Tgt0lnX2SMaBjbdZpcDC7LtZmQA63NmUm9o0n9kc2ylkGJQhs=
-=TttP
+iQEcBAEBAgAGBQJWUy2JAAoJEHCTjHgGee6Ya3sIAK548WEIe2rd4DWsk1BaJKHB
+1EqF7ooUbJU2D8IyDauKyV48Cz/G5YADCnAdnN+VFts9n1Jl7I5NkJ6rZtqawz91
+DEoV1BEgwx5nU0A5c0DidgnDA5J8Vd1vALShdZexljAwBCEy1IdBRKRNUXswK5XG
+HUWmVnyuZ8kKlYrHGoTKBC8xhJnxl6LTKJMyt/Dj3xSc6+pC+HgFsxK5FoBH5AE8
+962dyzpVez8wBjKJNcRBN3J5WRe7+UpgJYW1iEnPSo8q9c6Xu+CcSJZN7wllgCJh
+9VhSXwjCd9eja73qrPcTkxYbl7+xjGQiVKolgksaFcqxA8bIHShxSufQ+9+hszc=
+=mP1y
 -----END PGP SIGNATURE-----

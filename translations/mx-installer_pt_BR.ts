@@ -4,47 +4,47 @@
 <context>
     <name>MInstall</name>
     <message>
-        <location filename="../minstall.cpp" line="157"/>
+        <location filename="../minstall.cpp" line="261"/>
         <source>Networking</source>
         <translation>Rede</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="163"/>
+        <location filename="../minstall.cpp" line="267"/>
         <source>Network connection</source>
         <translation>Conectar rede</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="173"/>
+        <location filename="../minstall.cpp" line="277"/>
         <source>Secure Shell</source>
         <translation>Secure Shell </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="183"/>
+        <location filename="../minstall.cpp" line="287"/>
         <source>Mail filter</source>
         <translation>Mail filter </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="193"/>
+        <location filename="../minstall.cpp" line="297"/>
         <source>Network File System</source>
         <translation>Network File System </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="203"/>
+        <location filename="../minstall.cpp" line="307"/>
         <source>VPN program that creates secure connections</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="213"/>
+        <location filename="../minstall.cpp" line="317"/>
         <source>Bluetooth</source>
         <translation>Bluetooth </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="232"/>
+        <location filename="../minstall.cpp" line="157"/>
         <source>Hardware</source>
         <translation>Hardware</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="237"/>
+        <location filename="../minstall.cpp" line="162"/>
         <source>CPU frequency, irqbalance</source>
         <translation>CPU frequency, irqbalance</translation>
     </message>
@@ -54,27 +54,27 @@
         <translation>Runs commands periodically </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="247"/>
+        <location filename="../minstall.cpp" line="172"/>
         <source>S.M.A.R.T. monitoring tools</source>
         <translation>S.M.A.R.T. monitoring tools </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="257"/>
+        <location filename="../minstall.cpp" line="182"/>
         <source>Advanced Configuration and Power Interface event daemon</source>
         <translation>Advanced Configuration and Power Interface event daemon </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="267"/>
+        <location filename="../minstall.cpp" line="192"/>
         <source>HDD temperature monitor</source>
         <translation>HDD temperature monitor </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="277"/>
+        <location filename="../minstall.cpp" line="202"/>
         <source>Generates key events for ACPI scripts</source>
         <translation>Generates key events for ACPI scripts </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="287"/>
+        <location filename="../minstall.cpp" line="212"/>
         <source>Message bus daemon</source>
         <translation>Message bus daemon </translation>
     </message>
@@ -84,12 +84,12 @@
         <translation>Time-based job scheduler </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="223"/>
+        <location filename="../minstall.cpp" line="327"/>
         <source>File-copying tool</source>
         <translation>File-copying tool </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="297"/>
+        <location filename="../minstall.cpp" line="222"/>
         <source>Mouse event server</source>
         <translation>Mouse event server </translation>
     </message>
@@ -104,17 +104,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="307"/>
+        <location filename="../minstall.cpp" line="232"/>
         <source>Scanner daemon</source>
         <translation>Scanner daemon </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="317"/>
+        <location filename="../minstall.cpp" line="242"/>
         <source>Random number generator</source>
         <translation>Random number generator </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="327"/>
+        <location filename="../minstall.cpp" line="252"/>
         <source>Enables programs to publish and discover services and hosts</source>
         <translation type="unfinished"></translation>
     </message>
