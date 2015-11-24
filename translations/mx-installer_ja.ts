@@ -4,47 +4,47 @@
 <context>
     <name>MInstall</name>
     <message>
-        <location filename="../minstall.cpp" line="157"/>
+        <location filename="../minstall.cpp" line="261"/>
         <source>Networking</source>
         <translation>ネットワーク</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="163"/>
+        <location filename="../minstall.cpp" line="267"/>
         <source>Network connection</source>
         <translation>ネットワーク接続</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="173"/>
+        <location filename="../minstall.cpp" line="277"/>
         <source>Secure Shell</source>
         <translation>セキュアシェル</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="183"/>
+        <location filename="../minstall.cpp" line="287"/>
         <source>Mail filter</source>
         <translation>メールフィルタ</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="193"/>
+        <location filename="../minstall.cpp" line="297"/>
         <source>Network File System</source>
         <translation>ネットワークファイルシステム</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="203"/>
+        <location filename="../minstall.cpp" line="307"/>
         <source>VPN program that creates secure connections</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="213"/>
+        <location filename="../minstall.cpp" line="317"/>
         <source>Bluetooth</source>
         <translation>Bluetooth</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="232"/>
+        <location filename="../minstall.cpp" line="157"/>
         <source>Hardware</source>
         <translation>ハードウェア</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="237"/>
+        <location filename="../minstall.cpp" line="162"/>
         <source>CPU frequency, irqbalance</source>
         <translation>CPU frequency, irqbalance</translation>
     </message>
@@ -54,27 +54,27 @@
         <translation>定期的にコマンドを実行する</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="247"/>
+        <location filename="../minstall.cpp" line="172"/>
         <source>S.M.A.R.T. monitoring tools</source>
         <translation>S.M.A.R.T. 監視ツール</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="257"/>
+        <location filename="../minstall.cpp" line="182"/>
         <source>Advanced Configuration and Power Interface event daemon</source>
         <translation>拡張オプション・電源管理</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="267"/>
+        <location filename="../minstall.cpp" line="192"/>
         <source>HDD temperature monitor</source>
         <translation>ハードディスク温度管理</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="277"/>
+        <location filename="../minstall.cpp" line="202"/>
         <source>Generates key events for ACPI scripts</source>
         <translation>ACPI スクリプトのキー生成</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="287"/>
+        <location filename="../minstall.cpp" line="212"/>
         <source>Message bus daemon</source>
         <translation>BUS デーモン出力</translation>
     </message>
@@ -84,12 +84,12 @@
         <translation>時間スケジュール処理</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="223"/>
+        <location filename="../minstall.cpp" line="327"/>
         <source>File-copying tool</source>
         <translation>ファイルコピーツール</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="297"/>
+        <location filename="../minstall.cpp" line="222"/>
         <source>Mouse event server</source>
         <translation>マウスイベントサーバ</translation>
     </message>
@@ -104,17 +104,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="307"/>
+        <location filename="../minstall.cpp" line="232"/>
         <source>Scanner daemon</source>
         <translation>デーモンを検索</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="317"/>
+        <location filename="../minstall.cpp" line="242"/>
         <source>Random number generator</source>
         <translation>順番をランダムにする</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="327"/>
+        <location filename="../minstall.cpp" line="252"/>
         <source>Enables programs to publish and discover services and hosts</source>
         <translation type="unfinished"></translation>
     </message>

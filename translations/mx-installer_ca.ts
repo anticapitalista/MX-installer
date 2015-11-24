@@ -4,47 +4,47 @@
 <context>
     <name>MInstall</name>
     <message>
-        <location filename="../minstall.cpp" line="157"/>
+        <location filename="../minstall.cpp" line="261"/>
         <source>Networking</source>
         <translation>Xarxa</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="163"/>
+        <location filename="../minstall.cpp" line="267"/>
         <source>Network connection</source>
         <translation>Connexió de xarxa</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="173"/>
+        <location filename="../minstall.cpp" line="277"/>
         <source>Secure Shell</source>
         <translation>Intèrpret Segur </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="183"/>
+        <location filename="../minstall.cpp" line="287"/>
         <source>Mail filter</source>
         <translation>Filtre de correu</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="193"/>
+        <location filename="../minstall.cpp" line="297"/>
         <source>Network File System</source>
         <translation>Sistema de Fitxers de Xarxa</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="203"/>
+        <location filename="../minstall.cpp" line="307"/>
         <source>VPN program that creates secure connections</source>
         <translation>Programa VPN que crea connexions segures</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="213"/>
+        <location filename="../minstall.cpp" line="317"/>
         <source>Bluetooth</source>
         <translation>Bluetooth  </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="232"/>
+        <location filename="../minstall.cpp" line="157"/>
         <source>Hardware</source>
         <translation>Maquinari </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="237"/>
+        <location filename="../minstall.cpp" line="162"/>
         <source>CPU frequency, irqbalance</source>
         <translation>Freqüència de CPU,  compensació d&apos;IRQ </translation>
     </message>
@@ -54,27 +54,27 @@
         <translation>Executa ordres periòdicament </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="247"/>
+        <location filename="../minstall.cpp" line="172"/>
         <source>S.M.A.R.T. monitoring tools</source>
         <translation>Eines de seguiment S.M.A.R.T. </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="257"/>
+        <location filename="../minstall.cpp" line="182"/>
         <source>Advanced Configuration and Power Interface event daemon</source>
         <translation>Dimoni d&apos;esdeveniments Advanced Configuration and Power Interface </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="267"/>
+        <location filename="../minstall.cpp" line="192"/>
         <source>HDD temperature monitor</source>
         <translation>Seguiment de temperatura del disc dur  </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="277"/>
+        <location filename="../minstall.cpp" line="202"/>
         <source>Generates key events for ACPI scripts</source>
         <translation>Genera esdeveniments clau per als scripts d&apos;ACPI </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="287"/>
+        <location filename="../minstall.cpp" line="212"/>
         <source>Message bus daemon</source>
         <translation>Dimoni del bus de missatges  </translation>
     </message>
@@ -84,12 +84,12 @@
         <translation>Programador de tasques en el temps </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="223"/>
+        <location filename="../minstall.cpp" line="327"/>
         <source>File-copying tool</source>
         <translation>Eina de còpia de fitxers </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="297"/>
+        <location filename="../minstall.cpp" line="222"/>
         <source>Mouse event server</source>
         <translation>Servidor d&apos;esdeveniments de ratolí </translation>
     </message>
@@ -104,17 +104,17 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="307"/>
+        <location filename="../minstall.cpp" line="232"/>
         <source>Scanner daemon</source>
         <translation>Dimoni d&apos;escàner  </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="317"/>
+        <location filename="../minstall.cpp" line="242"/>
         <source>Random number generator</source>
         <translation>Generador de nombres aleatoris  </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="327"/>
+        <location filename="../minstall.cpp" line="252"/>
         <source>Enables programs to publish and discover services and hosts</source>
         <translation>Permet que els programes publiquin i descobreixin serveis i amfitrions </translation>
     </message>
