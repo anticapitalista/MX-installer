@@ -1,8 +1,81 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="fr">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.0">
 <context>
     <name>MInstall</name>
+    <message>
+        <location filename="../minstall.cpp" line="122"/>
+        <source>Administration</source>
+        <translation>Administration</translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="128"/>
+        <source>Runs commands periodically</source>
+        <translation> Exécute des commandes périodiquement</translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="138"/>
+        <source>Time-based job scheduler</source>
+        <translation>Time-based job scheduler </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="148"/>
+        <source>Execute a command as another user</source>
+        <translation> Exécuter une commande en tant qu&apos;un autre utilisateur</translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="157"/>
+        <source>Hardware</source>
+        <translation>Matériel</translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="162"/>
+        <source>CPU frequency, irqbalance</source>
+        <translation>CPU frequency, irqbalance</translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="172"/>
+        <source>S.M.A.R.T. monitoring tools</source>
+        <translation>S.M.A.R.T. monitoring tools </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="182"/>
+        <source>Advanced Configuration and Power Interface event daemon</source>
+        <translation>Advanced Configuration and Power Interface event daemon </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="192"/>
+        <source>HDD temperature monitor</source>
+        <translation>HDD temperature monitor </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="202"/>
+        <source>Generates key events for ACPI scripts</source>
+        <translation>Generates key events for ACPI scripts </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="212"/>
+        <source>Message bus daemon</source>
+        <translation>Message bus daemon </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="222"/>
+        <source>Mouse event server</source>
+        <translation>Mouse event server </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="232"/>
+        <source>Scanner daemon</source>
+        <translation>Scanner daemon </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="242"/>
+        <source>Random number generator</source>
+        <translation>Random number generator </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="252"/>
+        <source>Enables programs to publish and discover services and hosts</source>
+        <translation>Permet aux programmes de publier et découvrir des services et des hôtes</translation>
+    </message>
     <message>
         <location filename="../minstall.cpp" line="261"/>
         <source>Networking</source>
@@ -39,84 +112,9 @@
         <translation>Bluetooth </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="157"/>
-        <source>Hardware</source>
-        <translation>Matériel</translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="162"/>
-        <source>CPU frequency, irqbalance</source>
-        <translation>CPU frequency, irqbalance</translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="128"/>
-        <source>Runs commands periodically</source>
-        <translation> Exécute des commandes périodiquement</translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="172"/>
-        <source>S.M.A.R.T. monitoring tools</source>
-        <translation>S.M.A.R.T. monitoring tools </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="182"/>
-        <source>Advanced Configuration and Power Interface event daemon</source>
-        <translation>Advanced Configuration and Power Interface event daemon </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="192"/>
-        <source>HDD temperature monitor</source>
-        <translation>HDD temperature monitor </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="202"/>
-        <source>Generates key events for ACPI scripts</source>
-        <translation>Generates key events for ACPI scripts </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="212"/>
-        <source>Message bus daemon</source>
-        <translation>Message bus daemon </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="138"/>
-        <source>Time-based job scheduler</source>
-        <translation>Time-based job scheduler </translation>
-    </message>
-    <message>
         <location filename="../minstall.cpp" line="327"/>
         <source>File-copying tool</source>
         <translation>File-copying tool </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="222"/>
-        <source>Mouse event server</source>
-        <translation>Mouse event server </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="148"/>
-        <source>Execute a command as another user</source>
-        <translation> Exécuter une commande en tant qu&apos;un autre utilisateur</translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="122"/>
-        <source>Administration</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="232"/>
-        <source>Scanner daemon</source>
-        <translation>Scanner daemon </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="242"/>
-        <source>Random number generator</source>
-        <translation>Random number generator </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="252"/>
-        <source>Enables programs to publish and discover services and hosts</source>
-        <translation>Permet aux programmes de publier et découvrir des services et des hôtes</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="336"/>
@@ -361,7 +359,7 @@ et créer un nouveau répertoire home ?</translation>
     <message>
         <location filename="../minstall.cpp" line="1269"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Désolé, la sauvegarde de l&apos;ancien répertoire home a échoué.
 Avant de poursuivre vous devez sélectionner un autre nom
@@ -383,7 +381,7 @@ d&apos;utilisateur.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1295"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Vous avez décidé de ne pas utiliser, sauvegarder ou effecer l&apos;ancien
 répertoire home. Avant de poursuivre vous devez sélectionner un autre 
@@ -483,7 +481,7 @@ Veuillez, svp, essayer à nouveau.</translation>
     <message>
         <location filename="../minstall.cpp" line="1513"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>Désolé, le nom de votre ordinateur doit faire 
 au  moins 2 caractères. Veuillez, svp, choisir
@@ -492,7 +490,7 @@ un nom plus long avant de continuer.</translation>
     <message>
         <location filename="../minstall.cpp" line="1517"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Désolé, votre nom de l&apos;ordinateur contient des caractères non valides. 
 Veuillez, svp, choisir un nom plus long avant de continuer.</translation>
@@ -500,7 +498,7 @@ Veuillez, svp, choisir un nom plus long avant de continuer.</translation>
     <message>
         <location filename="../minstall.cpp" line="1523"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Désolé, le nom du domaine doit faire au
 moins 2 caractères. Veuillez, svp, choisir
@@ -509,7 +507,7 @@ un nom plus long avant de continuer.</translation>
     <message>
         <location filename="../minstall.cpp" line="1527"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Désolé, votre domaine de l&apos;ordinateur contient des caractères non valides.
 Veuillez, svp, choisir un nom plus long avant de continuer.</translation>
@@ -517,7 +515,7 @@ Veuillez, svp, choisir un nom plus long avant de continuer.</translation>
     <message>
         <location filename="../minstall.cpp" line="1536"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Désolé, le nom du groupe de travail doit faire 
 au moins 2 caractères. Veuillez, svp, choisir
@@ -729,37 +727,25 @@ Returning to Step 1.</source>
         <translation>Conditions d&apos;utilisation</translation>
     </message>
     <message>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;MX Linux is an independent linux distribution based on Debian Stable&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;Enjoy using MX Linux.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt; 
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt; 
-p, li { white-space: pre-wrap; } 
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;MX Linux est une distribution Linux basée sur Debian Stable.&lt;/span&gt;&lt;/p&gt; 
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;MX Linux utilise certains composants de MEPIS Linux qui sont libérés en vertu d&apos;une licence Apache libre. Certains composants MEPIS ont été modifiés pour MX Linux.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;Profitez de l&apos;utilisation de MX LIinux:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
-    </message>
-    <message>
         <location filename="../meinstall.ui" line="180"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux is an independent linux distribution based on Debian Stable&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Droid Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans';&quot;&gt;MX Linux is an independent linux distribution based on Debian Stable&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans';&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;Enjoy using MX Linux.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+ p, li { white-space: pre-wrap; }
+ &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+ &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux est une distribution Linux indépendante basée sur Debian Stable.&lt;/span&gt;&lt;/p&gt;
+ &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+ &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux utilise certains composants de MEPIS Linux qui sont libérés en vertu d&apos;une licence Apache libre. Certains composants MEPIS ont été modifiés pour MX Linux.&lt;/span&gt;&lt;/p&gt;
+ &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+ &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot;font-family:&apos;Sans&apos;;&quot;&gt;Profitez de l&apos;utilisation de MX LIinux.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="223"/>
@@ -1046,17 +1032,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="1626"/>
         <source>Format:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meinstall.ui" line="2150"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>Format:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1643"/>
@@ -1154,18 +1130,19 @@ p, li { white-space: pre-wrap; }
         <translation>Rappels</translation>
     </message>
     <message>
+        <location filename="../meinstall.ui" line="2150"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Droid Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans'; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:600;&quot;&gt;Supporter MX Linux&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;MX-14 est supporté par des personnes telles que vous. Certains aident les autres sur le Forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org, d&apos;autres traduisent des fichiers d&apos;aides dans d&apos;autres langues, font des suggestions, écrivent des documentations ou aident à tester de nouveaux logiciels.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-weight:600;&quot;&gt;Supporter MX Linux&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX-14 est supporté par des personnes telles que vous. Certains aident les autres sur le Forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org, d&apos;autres traduisent des fichiers d&apos;aides dans d&apos;autres langues, font des suggestions, écrivent des documentations ou aident à tester de nouveaux logiciels.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
