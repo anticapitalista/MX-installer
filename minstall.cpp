@@ -113,252 +113,6 @@ MInstall::MInstall(QWidget *parent) : QWidget(parent)
         grubMbrButton->setEnabled(false);
         gmtCheckBox->setChecked(true);
     }
-
-    //setup csView
-    csView->header()->setMinimumSectionSize(150);
-    csView->header()->resizeSection(0,150);
-
-    QTreeWidgetItem *adminItem = new QTreeWidgetItem(csView);
-    adminItem->setText(0, tr("Administration"));
-
-    QString val = getCmdValue("dpkg -s anacron | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        anacronItem = new QTreeWidgetItem(adminItem);
-        anacronItem->setText(0, "anacron");
-        anacronItem->setText(1, tr("Runs commands periodically"));
-        anacronItem->setCheckState(0, Qt::Checked);
-    } else {
-        anacronItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s cron | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        cronItem = new QTreeWidgetItem(adminItem);
-        cronItem->setText(0, "cron");
-        cronItem->setText(1, tr("Time-based job scheduler"));
-        cronItem->setCheckState(0, Qt::Checked);
-    } else {
-        cronItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s sudo | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        sudoItem = new QTreeWidgetItem(adminItem);
-        sudoItem->setText(0, "sudo");
-        sudoItem->setText(1, tr("Execute a command as another user"));
-        sudoItem->setCheckState(0, Qt::Checked);
-    } else {
-        sudoItem = NULL;
-    }
-
-    adminItem->setExpanded(true);
-
-    QTreeWidgetItem *hardwareItem = new QTreeWidgetItem(csView);
-    hardwareItem->setText(0, tr("Hardware"));
-    val = getCmdValue("dpkg -s cpufrequtils | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        cpufreqItem = new QTreeWidgetItem(hardwareItem);
-        cpufreqItem->setText(0, "cpufrequtils");
-        cpufreqItem->setText(1, tr("CPU frequency, irqbalance"));
-        cpufreqItem->setCheckState(0, Qt::Checked);
-    } else {
-        cpufreqItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s smartmontools | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        smartmontoolsItem = new QTreeWidgetItem(hardwareItem);
-        smartmontoolsItem->setText(0, "smartmontools");
-        smartmontoolsItem->setText(1, tr("S.M.A.R.T. monitoring tools"));
-        smartmontoolsItem->setCheckState(0, Qt::Checked);
-    } else {
-        smartmontoolsItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s acpid | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        acpidItem = new QTreeWidgetItem(hardwareItem);
-        acpidItem->setText(0, "acpid");
-        acpidItem->setText(1, tr("Advanced Configuration and Power Interface event daemon"));
-        acpidItem->setCheckState(0, Qt::Checked);
-    } else {
-        acpidItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s hddtemp | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        hddtempItem = new QTreeWidgetItem(hardwareItem);
-        hddtempItem->setText(0, "hddtemp");
-        hddtempItem->setText(1, tr("HDD temperature monitor"));
-        hddtempItem->setCheckState(0, Qt::Checked);
-    } else {
-        hddtempItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s acpi-fakekey | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        acpifakekeyItem = new QTreeWidgetItem(hardwareItem);
-        acpifakekeyItem->setText(0, "acpi-fakekey");
-        acpifakekeyItem->setText(1, tr("Generates key events for ACPI scripts"));
-        acpifakekeyItem->setCheckState(0, Qt::Checked);
-    } else {
-        acpifakekeyItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s dbus | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        dbusItem = new QTreeWidgetItem(hardwareItem);
-        dbusItem->setText(0, "dbus");
-        dbusItem->setText(1, tr("Message bus daemon"));
-        dbusItem->setCheckState(0, Qt::Checked);
-    } else {
-        dbusItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s gpm | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        gpmItem = new QTreeWidgetItem(hardwareItem);
-        gpmItem->setText(0, "gpm");
-        gpmItem->setText(1, tr("Mouse event server"));
-        gpmItem->setCheckState(0, Qt::Checked);
-    } else {
-        gpmItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s sane-utils | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        sanedItem = new QTreeWidgetItem(hardwareItem);
-        sanedItem->setText(0, "saned");
-        sanedItem->setText(1, tr("Scanner daemon"));
-        sanedItem->setCheckState(0, Qt::Checked);
-    } else {
-        sanedItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s haveged | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        havegedItem = new QTreeWidgetItem(hardwareItem);
-        havegedItem->setText(0, "haveged");
-        havegedItem->setText(1, tr("Random number generator"));
-        havegedItem->setCheckState(0, Qt::Checked);
-    } else {
-        havegedItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s avahi-daemon | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        avahiItem = new QTreeWidgetItem(hardwareItem);
-        avahiItem->setText(0, "avahi-daemon");
-        avahiItem->setText(1, tr("Enables programs to publish and discover services and hosts"));
-        avahiItem->setCheckState(0, Qt::Checked);
-    } else {
-        avahiItem = NULL;
-    }
-
-    hardwareItem->setExpanded(true);
-
-    QTreeWidgetItem *networkItem = new QTreeWidgetItem(csView);
-    networkItem->setText(0, tr("Networking"));
-
-    val = getCmdValue("dpkg -s network-manager | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        networkmanagerItem = new QTreeWidgetItem(networkItem);
-        networkmanagerItem->setText(0, "network-manager");
-        networkmanagerItem->setText(1, tr("Network connection"));
-        networkmanagerItem->setCheckState(0, Qt::Checked);
-    } else {
-        networkmanagerItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s openssh-client | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        sshItem = new QTreeWidgetItem(networkItem);
-        sshItem->setText(0, "ssh");
-        sshItem->setText(1, tr("Secure Shell"));
-        sshItem->setCheckState(0, Qt::Checked);
-    } else {
-        sshItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s spamassassin 2>/dev/null | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        spamassassinItem = new QTreeWidgetItem(networkItem);
-        spamassassinItem->setText(0, "spamassassin");
-        spamassassinItem->setText(1, tr("Mail filter"));
-        spamassassinItem->setCheckState(0, Qt::Checked);
-    } else {
-        spamassassinItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s nfs-common | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        nfsItem = new QTreeWidgetItem(networkItem);
-        nfsItem->setText(0, "nfs");
-        nfsItem->setText(1, tr("Network File System"));
-        nfsItem->setCheckState(0, Qt::Checked);
-    } else {
-        nfsItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s openvpn | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        openvpnItem = new QTreeWidgetItem(networkItem);
-        openvpnItem->setText(0, "openVPN");
-        openvpnItem->setText(1, tr("VPN program that creates secure connections"));
-        openvpnItem->setCheckState(0, Qt::Checked);
-    } else {
-        openvpnItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s bluetooth | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        bluetoothItem = new QTreeWidgetItem(networkItem);
-        bluetoothItem->setText(0, "bluetooth");
-        bluetoothItem->setText(1, tr("Bluetooth"));
-        bluetoothItem->setCheckState(0, Qt::Checked);
-    } else {
-        bluetoothItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s rsync | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        rsyncItem = new QTreeWidgetItem(networkItem);
-        rsyncItem->setText(0, "rsync");
-        rsyncItem->setText(1, tr("File-copying tool"));
-        rsyncItem->setCheckState(0, Qt::Checked);
-    } else {
-        rsyncItem = NULL;
-    }
-
-    networkItem->setExpanded(true);
-
-    QTreeWidgetItem *printItem = new QTreeWidgetItem(csView);
-    printItem->setText(0, tr("Printing"));
-
-    val = getCmdValue("dpkg -s cups | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        cupsItem = new QTreeWidgetItem(printItem);
-        cupsItem->setText(0, "cups");
-        cupsItem->setText(1, tr("Linux and OS X printer service"));
-        cupsItem->setCheckState(0, Qt::Checked);
-        cupsItem->setExpanded(true);
-        printItem->setExpanded(true);
-    } else {
-        cupsItem = NULL;
-    }
-
-    val = getCmdValue("dpkg -s samba | grep '^Status'", "ok", " ", " ");
-    if (val.compare("installed") == 0) {
-        sambaCheckBox->setChecked(true);
-    } else {
-        sambaCheckBox->setChecked(false);
-        sambaCheckBox->setEnabled(false);
-        computerGroupLabel->setEnabled(false);
-        computerGroupEdit->setEnabled(false);
-        computerGroupEdit->setText("");
-    }
-    csView->resizeColumnToContents(0);
-    csView->resizeColumnToContents(1);
 }
 
 MInstall::~MInstall() {
@@ -848,7 +602,9 @@ bool MInstall::makeChosenPartitions()
                               tr("You must choose a root partition.\nThe root partition must be at least 3.5 GB."));
         return false;
     }
-    if (!rootCombo->currentText().contains("linux", Qt::CaseInsensitive)) {
+
+    cmd = QString("partition-info is-linux=%1").arg(rootdev);
+    if (system(cmd.toUtf8()) != 0) {
         msg = QString(tr("The partition you selected for root, appears to be a MS-Windows partition.  Are you sure you want to reformat this partition?")).arg(rootdev);
         ans = QMessageBox::warning(0, QString::null, msg,
                                    tr("Yes"), tr("No"));
@@ -882,7 +638,8 @@ bool MInstall::makeChosenPartitions()
 
     // format /home?
     if (homedev.compare("/dev/root") != 0) {
-        if (!rootCombo->currentText().contains("linux", Qt::CaseInsensitive)) {
+        cmd = QString("partition-info is-linux=%1").arg(homedev);
+        if (system(cmd.toUtf8()) != 0) {
             msg = QString(tr("The partition you selected for /home, appears to be a MS-Windows partition.  Are you sure you want to reformat this partition?")).arg(rootdev);
             ans = QMessageBox::warning(0, QString::null, msg,
                                        tr("Yes"), tr("No"));
@@ -1186,9 +943,7 @@ bool MInstall::installLoader()
             setCursor(QCursor(Qt::ArrowCursor));
             QMessageBox::critical(this, QString::null,
                                   tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function."));
-            system("umount /mnt/antiX/proc");
-            system("umount /mnt/antiX/sys");
-            system("umount /mnt/antiX/dev");
+            system("umount /mnt/antiX/proc; umount /mnt/antiX/sys; umount /mnt/antiX/dev");
             if (system("mountpoint -q /mnt/antiX/boot/efi") == 0) {
                 system("umount /mnt/antiX/boot/efi");
             }
@@ -1217,9 +972,7 @@ bool MInstall::installLoader()
     runCmd("chroot /mnt/antiX make-fstab --swap-only");
     runCmd("chroot /mnt/antiX dev2uuid_fstab");
     runCmd("chroot /mnt/antiX update-initramfs -u -t -k all");
-    system("umount /mnt/antiX/proc");
-    system("umount /mnt/antiX/sys");
-    system("umount /mnt/antiX/dev");
+    system("umount /mnt/antiX/proc; umount /mnt/antiX/sys; umount /mnt/antiX/dev");
     if (system("mountpoint -q /mnt/antiX/boot/efi") == 0) {
         system("umount /mnt/antiX/boot/efi");
     }
@@ -1603,20 +1356,34 @@ void MInstall::setLocale()
     system(cmd.toUtf8());
     cmd = QString("Language=%1").arg(localeCombo->currentText());
 
-    // timezone
-    system("cp -f /etc/default/rcS /mnt/antiX/etc/default");
-    system("cp -f /etc/adjtime /mnt/antiX/etc/");
     // /etc/localtime is a copy of one of the timezone files in /usr/share/zoneinfo. Use the one selected by the user.
     cmd = QString("cp -f /usr/share/zoneinfo/%1 /mnt/antiX/etc/localtime").arg(timezoneCombo->currentText());
+    system(cmd.toUtf8());
+    cmd = QString("cp -f /usr/share/zoneinfo/%1 /etc/localtime").arg(timezoneCombo->currentText());
     system(cmd.toUtf8());
     // /etc/timezone is text file with the timezone written in it. Write the user-selected timezone in it now.
     cmd = QString("echo %1 > /mnt/antiX/etc/timezone").arg(timezoneCombo->currentText());
     system(cmd.toUtf8());
+    cmd = QString("echo %1 > /etc/timezone").arg(timezoneCombo->currentText());
+    system(cmd.toUtf8());
 
+    // timezone
+    system("cp -f /etc/default/rcS /mnt/antiX/etc/default");
     // Set clock to use LOCAL
     if (gmtCheckBox->isChecked()) {
-        replaceStringInFile("^UTC", "LOCAL", "/mnt/antiX/etc/adjtime");
+        system("echo '0.0 0 0.0\\n0\\nLOCAL' > /etc/adjtime");
+    } else {
+        system("echo '0.0 0 0.0\\n0\\nUTC' > /etc/adjtime");
     }
+    runCmd("hwclock --hctosys");
+    QString rootdev = "/dev/" + QString(rootCombo->currentText()).section(" ", 0, 0);
+    QString homedev = "/dev/" + QString(homeCombo->currentText()).section(" ", 0, 0);
+    runCmd("umount -R /mnt/antiX");
+    runCmd(QString("mount %1 /mnt/antiX").arg(rootdev));
+    if (homedev != "/dev/root") {
+        runCmd(QString("mount %1 /mnt/antiX/home").arg(homedev));
+    }
+    system("cp -f /etc/adjtime /mnt/antiX/etc/");   
 
     // Set clock format
     if (radio12h->isChecked()) {
@@ -2201,30 +1968,16 @@ void MInstall::updatePartitionWidgets()
 // widget being shown
 void MInstall::refresh()
 {
-    char line[130];
-
     this->updatePartitionWidgets();
 
     //  system("umount -a 2>/dev/null");
-    FILE *fp = popen("lsblk -ln -o name,size,model -d -I 3,8,22,179 \
-                     | grep -v \"^$(lsblk -l | grep /live/boot-dev || echo XXX | cut -c1-3)\" \
-                     | sort 2>/dev/null", "r");
-            if (fp == NULL) {
-        return;
-    }
+    QStringList drives = getCmdOuts("partition-info -n drives");
     diskCombo->clear();
     grubBootCombo->clear();
     homeLabelEdit->setHidden(true);
     homeLabelCheck->setHidden(true);
-    int i;
-    while (fgets(line, sizeof line, fp) != NULL) {
-        i = strlen(line);
-        line[--i] = '\0';
-        diskCombo->addItem(line);
-        grubBootCombo->addItem(line);
-    }
-
-    pclose(fp);
+    diskCombo->addItems(drives);
+    grubBootCombo->addItems(drives);
 
     on_diskCombo_activated();
 
@@ -2292,91 +2045,30 @@ void MInstall::on_qtpartedButton_clicked()
 
 // disk selection changed, rebuild dropdown menus
 void MInstall::on_diskCombo_activated(QString)
-{
-    char line[130];
-    QString strLabel;
+{    
     QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
 
     rootCombo->clear();
     swapCombo->clear();
-    swapCombo->addItem("none - or existing");
     homeCombo->clear();
+    swapCombo->addItem("none - or existing"); 
     homeCombo->addItem("root");
     removedItem = "";
 
     // build rootCombo
-    QString cmd = QString("partinfo %1 -e").arg(drv);
-    FILE *fp = popen(cmd.toUtf8(), "r");
-    int rcount = 0;
-    if (fp != NULL) {
-        char *ndev, *nsz, *nsys, *label;
-        int nsize;
-        int i;
-        while (fgets(line, sizeof line, fp) != NULL) {
-            i = strlen(line);
-            line[--i] = '\0';
-            strtok(line, " /*+\t");
-            ndev = strtok(NULL, " /*+\t");
-            nsz = strtok(NULL, " *+\t");
-            nsys = strtok(NULL, " *+\t");
-            strtok(NULL, " *+\t");
-            label = strtok(NULL, " *+\t");
-            strLabel = QString(label);
-            nsize = atoi(nsz);
-            nsize = nsize / 1024;
-            if (strLabel.contains("~~~~~")) {
-                strLabel.replace("~~~~~", "");
-            } else if (strLabel.contains("~.~")) {
-                strLabel.replace("~.~", " ");
-            }
-            if ((nsize >= 1200) && (strncmp(nsys, "swap", 4) != 0)) {
-                sprintf(line, "%s - %dMB - %s", ndev, nsize, nsys);
-                rootCombo->addItem(QString(line) + " " + strLabel);
-                rcount++;
-            }
-        }
-        pclose(fp);
-    }
-    if (rcount == 0) {
+    QStringList partitions = getCmdOuts(QString("partition-info -n -e=a -m=1200 %1").arg(drv));
+    rootCombo->addItems(partitions);
+    if (partitions.size() == 0) {
         rootCombo->addItem("none");
     }
 
-    // build home and swap combo for all disks
-    for (int i = 0; i < diskCombo->count(); ++i) {
-        QString drv = QString("/dev/%1").arg(diskCombo->itemText(i));
-        QString cmd = QString("partinfo %1 -e").arg(drv);
-        FILE *fp = popen(cmd.toUtf8(), "r");
-        if (fp != NULL) {
-            char *ndev, *nsz, *nsys, *label;
-            int nsize, i;
-            while (fgets(line, sizeof line, fp) != NULL) {
-                i = strlen(line);
-                line[--i] = '\0';
-                strtok(line, " /*+\t");
-                ndev = strtok(NULL, " /*+\t");
-                nsz = strtok(NULL, " *+\t");
-                nsys = strtok(NULL, " *+\t");
-                strtok(NULL, " *+\t");
-                label = strtok(NULL, " *+\t");
-                strLabel = QString(label);
-                nsize = atoi(nsz);
-                nsize = nsize / 1024;
-                if (strLabel.contains("~~~~~")) {
-                    strLabel.replace("~~~~~", "");
-                } else if (strLabel.contains("~.~")) {
-                    strLabel.replace("~.~", " ");
-                }
-                if ((nsize >= 100) && strncmp(nsys, "swap", 4) != 0) {;
-                    sprintf(line, "%s - %dMB - %s", ndev, nsize, nsys);
-                    homeCombo->addItem(QString(line) + " " + strLabel);
-                } else if (nsys != NULL && strncmp(nsys, "swap", 4) == 0) {
-                    sprintf(line, "%s - %dMB - %s", ndev, nsize, nsys);
-                    swapCombo->addItem(QString(line) + " " + strLabel);
-                }
-            }
-            pclose(fp);
-        }
-    }
+    // build homeCombo for all disks
+    partitions = getCmdOuts("partition-info all -n -e=a -m=100");
+    homeCombo->addItems(partitions);
+
+    // build swapCombo for all disks
+    partitions = getCmdOuts("partition-info swap -n");
+    swapCombo->addItems(partitions);
     on_rootCombo_activated();
 }
 
@@ -2610,6 +2302,258 @@ void MInstall::copyDone(int, QProcess::ExitStatus exitStatus)
         system("/bin/rm -rf /mnt/antiX/media/sd*");
         system("/bin/rm -rf /mnt/antiX/media/hd*");
         system("/bin/mv -f /mnt/antiX/etc/X11/xorg.conf /mnt/antiX/etc/X11/xorg.conf.live >/dev/null 2>&1");
+
+        // guess localtime vs UTC
+        QString guess = getCmdOut("guess-hwclock");
+        if (guess == "localtime") {
+            gmtCheckBox->setChecked(true);
+        }
+
+        //setup csView
+        csView->header()->setMinimumSectionSize(150);
+        csView->header()->resizeSection(0,150);
+
+        QTreeWidgetItem *adminItem = new QTreeWidgetItem(csView);
+        adminItem->setText(0, tr("Administration"));
+
+        QString val = getCmdValue("dpkg -s anacron | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            anacronItem = new QTreeWidgetItem(adminItem);
+            anacronItem->setText(0, "anacron");
+            anacronItem->setText(1, tr("Runs commands periodically"));
+            anacronItem->setCheckState(0, Qt::Checked);
+        } else {
+            anacronItem = NULL;
+        }
+
+        val = getCmdValue("dpkg -s cron | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            cronItem = new QTreeWidgetItem(adminItem);
+            cronItem->setText(0, "cron");
+            cronItem->setText(1, tr("Time-based job scheduler"));
+            cronItem->setCheckState(0, Qt::Checked);
+        } else {
+            cronItem = NULL;
+        }
+
+        val = getCmdValue("dpkg -s sudo | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            sudoItem = new QTreeWidgetItem(adminItem);
+            sudoItem->setText(0, "sudo");
+            sudoItem->setText(1, tr("Execute a command as another user"));
+            sudoItem->setCheckState(0, Qt::Checked);
+        } else {
+            sudoItem = NULL;
+        }
+
+        adminItem->setExpanded(true);
+
+        QTreeWidgetItem *hardwareItem = new QTreeWidgetItem(csView);
+        hardwareItem->setText(0, tr("Hardware"));
+        val = getCmdValue("dpkg -s cpufrequtils | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            cpufreqItem = new QTreeWidgetItem(hardwareItem);
+            cpufreqItem->setText(0, "cpufrequtils");
+            cpufreqItem->setText(1, tr("CPU frequency, irqbalance"));
+            cpufreqItem->setCheckState(0, Qt::Checked);
+        } else {
+            cpufreqItem = NULL;
+        }
+
+        val = getCmdValue("dpkg -s smartmontools | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            smartmontoolsItem = new QTreeWidgetItem(hardwareItem);
+            smartmontoolsItem->setText(0, "smartmontools");
+            smartmontoolsItem->setText(1, tr("S.M.A.R.T. monitoring tools"));
+            smartmontoolsItem->setCheckState(0, Qt::Checked);
+        } else {
+            smartmontoolsItem = NULL;
+        }
+
+        val = getCmdValue("dpkg -s acpid | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            acpidItem = new QTreeWidgetItem(hardwareItem);
+            acpidItem->setText(0, "acpid");
+            acpidItem->setText(1, tr("Advanced Configuration and Power Interface event daemon"));
+            acpidItem->setCheckState(0, Qt::Checked);
+        } else {
+            acpidItem = NULL;
+        }
+
+        val = getCmdValue("dpkg -s hddtemp | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            hddtempItem = new QTreeWidgetItem(hardwareItem);
+            hddtempItem->setText(0, "hddtemp");
+            hddtempItem->setText(1, tr("HDD temperature monitor"));
+            hddtempItem->setCheckState(0, Qt::Checked);
+        } else {
+            hddtempItem = NULL;
+        }
+
+        val = getCmdValue("dpkg -s acpi-fakekey | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            acpifakekeyItem = new QTreeWidgetItem(hardwareItem);
+            acpifakekeyItem->setText(0, "acpi-fakekey");
+            acpifakekeyItem->setText(1, tr("Generates key events for ACPI scripts"));
+            acpifakekeyItem->setCheckState(0, Qt::Checked);
+        } else {
+            acpifakekeyItem = NULL;
+        }
+
+        val = getCmdValue("dpkg -s dbus | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            dbusItem = new QTreeWidgetItem(hardwareItem);
+            dbusItem->setText(0, "dbus");
+            dbusItem->setText(1, tr("Message bus daemon"));
+            dbusItem->setCheckState(0, Qt::Checked);
+        } else {
+            dbusItem = NULL;
+        }
+
+        val = getCmdValue("dpkg -s gpm | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            gpmItem = new QTreeWidgetItem(hardwareItem);
+            gpmItem->setText(0, "gpm");
+            gpmItem->setText(1, tr("Mouse event server"));
+            gpmItem->setCheckState(0, Qt::Checked);
+        } else {
+            gpmItem = NULL;
+        }
+
+        val = getCmdValue("dpkg -s sane-utils | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            sanedItem = new QTreeWidgetItem(hardwareItem);
+            sanedItem->setText(0, "saned");
+            sanedItem->setText(1, tr("Scanner daemon"));
+            sanedItem->setCheckState(0, Qt::Checked);
+        } else {
+            sanedItem = NULL;
+        }
+
+        val = getCmdValue("dpkg -s haveged | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            havegedItem = new QTreeWidgetItem(hardwareItem);
+            havegedItem->setText(0, "haveged");
+            havegedItem->setText(1, tr("Random number generator"));
+            havegedItem->setCheckState(0, Qt::Checked);
+        } else {
+            havegedItem = NULL;
+        }
+
+        val = getCmdValue("dpkg -s avahi-daemon | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            avahiItem = new QTreeWidgetItem(hardwareItem);
+            avahiItem->setText(0, "avahi-daemon");
+            avahiItem->setText(1, tr("Enables programs to publish and discover services and hosts"));
+            avahiItem->setCheckState(0, Qt::Checked);
+        } else {
+            avahiItem = NULL;
+        }
+
+        hardwareItem->setExpanded(true);
+
+        QTreeWidgetItem *networkItem = new QTreeWidgetItem(csView);
+        networkItem->setText(0, tr("Networking"));
+
+        val = getCmdValue("dpkg -s network-manager | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            networkmanagerItem = new QTreeWidgetItem(networkItem);
+            networkmanagerItem->setText(0, "network-manager");
+            networkmanagerItem->setText(1, tr("Network connection"));
+            networkmanagerItem->setCheckState(0, Qt::Checked);
+        } else {
+            networkmanagerItem = NULL;
+        }
+
+        val = getCmdValue("dpkg -s openssh-client | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            sshItem = new QTreeWidgetItem(networkItem);
+            sshItem->setText(0, "ssh");
+            sshItem->setText(1, tr("Secure Shell"));
+            sshItem->setCheckState(0, Qt::Checked);
+        } else {
+            sshItem = NULL;
+        }
+
+        val = getCmdValue("dpkg -s spamassassin 2>/dev/null | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            spamassassinItem = new QTreeWidgetItem(networkItem);
+            spamassassinItem->setText(0, "spamassassin");
+            spamassassinItem->setText(1, tr("Mail filter"));
+            spamassassinItem->setCheckState(0, Qt::Checked);
+        } else {
+            spamassassinItem = NULL;
+        }
+
+        val = getCmdValue("dpkg -s nfs-common | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            nfsItem = new QTreeWidgetItem(networkItem);
+            nfsItem->setText(0, "nfs");
+            nfsItem->setText(1, tr("Network File System"));
+            nfsItem->setCheckState(0, Qt::Checked);
+        } else {
+            nfsItem = NULL;
+        }
+
+        val = getCmdValue("dpkg -s openvpn | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            openvpnItem = new QTreeWidgetItem(networkItem);
+            openvpnItem->setText(0, "openVPN");
+            openvpnItem->setText(1, tr("VPN program that creates secure connections"));
+            openvpnItem->setCheckState(0, Qt::Checked);
+        } else {
+            openvpnItem = NULL;
+        }
+
+        val = getCmdValue("dpkg -s bluetooth | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            bluetoothItem = new QTreeWidgetItem(networkItem);
+            bluetoothItem->setText(0, "bluetooth");
+            bluetoothItem->setText(1, tr("Bluetooth"));
+            bluetoothItem->setCheckState(0, Qt::Checked);
+        } else {
+            bluetoothItem = NULL;
+        }
+
+        val = getCmdValue("dpkg -s rsync | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            rsyncItem = new QTreeWidgetItem(networkItem);
+            rsyncItem->setText(0, "rsync");
+            rsyncItem->setText(1, tr("File-copying tool"));
+            rsyncItem->setCheckState(0, Qt::Checked);
+        } else {
+            rsyncItem = NULL;
+        }
+
+        networkItem->setExpanded(true);
+
+        QTreeWidgetItem *printItem = new QTreeWidgetItem(csView);
+        printItem->setText(0, tr("Printing"));
+
+        val = getCmdValue("dpkg -s cups | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            cupsItem = new QTreeWidgetItem(printItem);
+            cupsItem->setText(0, "cups");
+            cupsItem->setText(1, tr("Linux and OS X printer service"));
+            cupsItem->setCheckState(0, Qt::Checked);
+            cupsItem->setExpanded(true);
+            printItem->setExpanded(true);
+        } else {
+            cupsItem = NULL;
+        }
+
+        val = getCmdValue("dpkg -s samba | grep '^Status'", "ok", " ", " ");
+        if (val.compare("installed") == 0) {
+            sambaCheckBox->setChecked(true);
+        } else {
+            sambaCheckBox->setChecked(false);
+            sambaCheckBox->setEnabled(false);
+            computerGroupLabel->setEnabled(false);
+            computerGroupEdit->setEnabled(false);
+            computerGroupEdit->setText("");
+        }
+        csView->resizeColumnToContents(0);
+        csView->resizeColumnToContents(1);
 
         progressBar->setValue(100);
         nextButton->setEnabled(true);
