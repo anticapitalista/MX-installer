@@ -18,20 +18,20 @@ Changes:
  .
    * included guess-hwclock, partition-info
 Checksums-Sha1:
- 3b81785b4ca01076597a62375a0fbb64fa910445 226046 mx-installer_15.12mx15_i386.deb
+ 41a4d19ad1dab2cd241742dba9b1205765bbce14 229604 mx-installer_15.12mx15_i386.deb
 Checksums-Sha256:
- 979d4b4fff80ab490e70bad1504333fa4d60550bb8ada573dde68d617404c119 226046 mx-installer_15.12mx15_i386.deb
+ d2cb61bbac8f7e3e1fdcc7388957350d4dcb0300ca351e8e2951032b5cfaab50 229604 mx-installer_15.12mx15_i386.deb
 Files:
- b144f958b3d85eddd977950a4ebb586b 226046 system optional mx-installer_15.12mx15_i386.deb
+ 2c1e7f09d92295f355a5a5e16a9ccf50 229604 system optional mx-installer_15.12mx15_i386.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJWZLr7AAoJEHCTjHgGee6YpvMIALOG2rYDz/NPdZmvnFkrmTuZ
-3s1/9wdHozn+OCdzg7Yq5jNCQ9/YHGf77pvhSq4WzStx6FgFDVedfp88qfvtqQgg
-GjpHuNaS4faTW/Msf9RBrqVCMMSxQL3YbxzIxOwLp+dSFVQcF06Sf/2pjIoCtaYt
-RlRLr5XyXTuxAbyI+fW2L8RvF8NomoIK/Xzo5dZlD3saqq5/r04c9NKnKmWpYb6c
-pxqo/260mGMOakXpiRazMTJ+8+CGXm4fk+J/e+mqSSWSOWSlau44HtBcsexlo/AL
-9Y9JABgaxnkyuQQTFyn4NZUr2l01V9fWQRdhqUloc6a+oEFql8i4nkTzuNVw96g=
-=6HhQ
+iQEcBAEBAgAGBQJWZhH9AAoJEHCTjHgGee6Y7J8H/3MBJXYOL9ZoYT/TWptUd/l0
+UBCptrFEVjYdYsEfK7Jm5ZE7B6woQg3RcPpec+0uX5gHeRXLPtilODs+aHaeMOOK
+XicA9dwzmEN4xHo2ktlC9aDlMo9Vi329T2U69dJm773rhLJhzUSiM6Qs2hw1vHii
+tOvedL4cUedNf5Q/BNPtFM9i2bRP+U+D1e2Gikdztl+IdSQSO90yM7V+Ut1mpuO6
+xR5i3LggVClhUx84Qtq+aBe3egzCpGFYrwsfjpQa1shep3Rxt7qHf/bepUVoUI+V
+0KnOhRkUNXZXLeJej2/5GonMbKSnl37tkNOO5xL3gEYEQ4E4Lf1pHvghnn9n3FM=
+=Kp3w
 -----END PGP SIGNATURE-----
