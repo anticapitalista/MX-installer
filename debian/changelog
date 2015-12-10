@@ -1,3 +1,9 @@
+mx-installer (15.12.1mx15) mx; urgency=medium
+
+  * eliminates error message on 64bit installed system
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 09 Dec 2015 22:41:08 -0500
+
 mx-installer (15.12mx15) mx; urgency=medium
 
   * included guess-hwclock, partition-info

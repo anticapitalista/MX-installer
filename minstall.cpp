@@ -157,6 +157,13 @@ QStringList MInstall::getCmdOuts(QString cmd)
     return results;
 }
 
+// Check if running from a 32bit environment
+bool MInstall::is32bit()
+{
+    return (getCmdOut("uname -m") == "i686");
+}
+
+
 
 int MInstall::command(const QString &cmd)
 {
@@ -965,6 +972,9 @@ bool MInstall::installLoader()
     QString cmdline = getCmdOut("/live/bin/non-live-cmdline");
     cmdline.replace('\\', "\\\\");
     cmdline.replace('|', "\\|");
+    if (!is32bit()) {
+        cmdline.prepend("zswap.zpool=zsmalloc ");
+    }
     cmd = QString("sed -i -r 's|^(GRUB_CMDLINE_LINUX_DEFAULT=).*|\\1\"%1\"|' /mnt/antiX/etc/default/grub").arg(cmdline);
     system(cmd.toUtf8());
     // update grub config
