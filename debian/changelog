@@ -1,3 +1,9 @@
+mx-installer (15.12.2mx15) mx; urgency=medium
+
+  * disable VirtualBox additions when not installing in VB
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 11 Dec 2015 09:47:28 -0500
+
 mx-installer (15.12.1mx15) mx; urgency=medium
 
   * eliminates error message on 64bit installed system

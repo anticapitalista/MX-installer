@@ -163,6 +163,11 @@ bool MInstall::is32bit()
     return (getCmdOut("uname -m") == "i686");
 }
 
+// Check if running inside VirtualBox
+bool MInstall::isInsideVB()
+{
+    return (system("lspci -d 80ee:beef  | grep -q .") == 0);
+}
 
 
 int MInstall::command(const QString &cmd)
@@ -1679,6 +1684,13 @@ void MInstall::setServices()
         system("mv -f /mnt/antiX/etc/rc4.d/S04openvpn /mnt/antiX/etc/rc4.d/K01openvpn >/dev/null 2>&1");
         system("mv -f /mnt/antiX/etc/rc3.d/S04openvpn /mnt/antiX/etc/rc3.d/K01openvpn >/dev/null 2>&1");
         system("mv -f /mnt/antiX/etc/rc2.d/S04openvpn /mnt/antiX/etc/rc2.d/K01openvpn >/dev/null 2>&1");
+    }
+    if (!isInsideVB()) {
+        system("mv -f /mnt/antiX/etc/rc5.d/S01virtualbox-guest-utils /mnt/antiX/etc/rc5.d/K01virtualbox-guest-utils >/dev/null 2>&1");
+        system("mv -f /mnt/antiX/etc/rc4.d/S01virtualbox-guest-utils /mnt/antiX/etc/rc4.d/K01virtualbox-guest-utils >/dev/null 2>&1");
+        system("mv -f /mnt/antiX/etc/rc3.d/S01virtualbox-guest-utils /mnt/antiX/etc/rc3.d/K01virtualbox-guest-utils >/dev/null 2>&1");
+        system("mv -f /mnt/antiX/etc/rc2.d/S01virtualbox-guest-utils /mnt/antiX/etc/rc2.d/K01virtualbox-guest-utils >/dev/null 2>&1");
+        system("mv -f /mnt/antiX/etc/rcS.d/S21virtualbox-guest-x11 /mnt/antiX/etc/rcS.d/K21virtualbox-guest-x11 >/dev/null 2>&1");
     }
 
     setCursor(QCursor(Qt::ArrowCursor));
