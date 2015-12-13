@@ -4,127 +4,127 @@
 <context>
     <name>MInstall</name>
     <message>
-        <location filename="../minstall.cpp" line="2339"/>
+        <location filename="../minstall.cpp" line="2016"/>
         <source>Administration</source>
         <translation>Administración</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2345"/>
+        <location filename="../minstall.cpp" line="2022"/>
         <source>Runs commands periodically</source>
         <translation>Ejecuta órdenes periódicamente</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2355"/>
+        <location filename="../minstall.cpp" line="2032"/>
         <source>Time-based job scheduler</source>
         <translation>Temporizador de trabajos basados en tiempo</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2365"/>
+        <location filename="../minstall.cpp" line="2042"/>
         <source>Execute a command as another user</source>
         <translation>Ejecutar órdenes como otro usuario</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2374"/>
+        <location filename="../minstall.cpp" line="2051"/>
         <source>Hardware</source>
         <translation>Equipo físico</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2379"/>
+        <location filename="../minstall.cpp" line="2056"/>
         <source>CPU frequency, irqbalance</source>
         <translation>Frecuencia del CPU, balance irq</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2389"/>
+        <location filename="../minstall.cpp" line="2066"/>
         <source>S.M.A.R.T. monitoring tools</source>
         <translation>Herramientas S.M.A.R.T. </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2399"/>
+        <location filename="../minstall.cpp" line="2076"/>
         <source>Advanced Configuration and Power Interface event daemon</source>
         <translation>Demonio para interfaz de energía y configuración avanzada (ACPI)</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2409"/>
+        <location filename="../minstall.cpp" line="2086"/>
         <source>HDD temperature monitor</source>
         <translation>Monitor de temperatura del disco</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2419"/>
+        <location filename="../minstall.cpp" line="2096"/>
         <source>Generates key events for ACPI scripts</source>
         <translation>Genera eventos de teclas para scripts ACPI</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2429"/>
+        <location filename="../minstall.cpp" line="2106"/>
         <source>Message bus daemon</source>
         <translation>demonio de mensajes de bus</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2439"/>
+        <location filename="../minstall.cpp" line="2116"/>
         <source>Mouse event server</source>
         <translation>Servidor de eventos del Ratón</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2449"/>
+        <location filename="../minstall.cpp" line="2126"/>
         <source>Scanner daemon</source>
         <translation>demonio de escáner</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2459"/>
+        <location filename="../minstall.cpp" line="2136"/>
         <source>Random number generator</source>
         <translation>generador de números aleatorios</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2469"/>
+        <location filename="../minstall.cpp" line="2146"/>
         <source>Enables programs to publish and discover services and hosts</source>
         <translation>Permite a los programas publicar y descubrir los servicios y los hosts</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2478"/>
+        <location filename="../minstall.cpp" line="2155"/>
         <source>Networking</source>
         <translation>Conexión entre redes</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2484"/>
+        <location filename="../minstall.cpp" line="2161"/>
         <source>Network connection</source>
         <translation>Conexión a la red</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2494"/>
+        <location filename="../minstall.cpp" line="2171"/>
         <source>Secure Shell</source>
         <translation>Consola Segura</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2504"/>
+        <location filename="../minstall.cpp" line="2181"/>
         <source>Mail filter</source>
         <translation>Filtro de Correo</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2514"/>
+        <location filename="../minstall.cpp" line="2191"/>
         <source>Network File System</source>
         <translation>Sistema de Archivos de Red</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2524"/>
+        <location filename="../minstall.cpp" line="2205"/>
         <source>VPN program that creates secure connections</source>
         <translation>Programa VPN que crea conexiones seguras</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2534"/>
+        <location filename="../minstall.cpp" line="2215"/>
         <source>Bluetooth</source>
         <translation>Bluetooth</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2544"/>
+        <location filename="../minstall.cpp" line="2225"/>
         <source>File-copying tool</source>
         <translation>Herramienta para copiar archivos</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2553"/>
+        <location filename="../minstall.cpp" line="2234"/>
         <source>Printing</source>
         <translation>Impresión</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2559"/>
+        <location filename="../minstall.cpp" line="2240"/>
         <source>Linux and OS X printer service</source>
         <translation>Servicio de impresión para Linux y OS X</translation>
     </message>
@@ -178,7 +178,7 @@ El disco, con la partición seleccionada, esta fallando.
         <location filename="../minstall.cpp" line="1048"/>
         <location filename="../minstall.cpp" line="1714"/>
         <location filename="../minstall.cpp" line="1728"/>
-        <location filename="../minstall.cpp" line="2166"/>
+        <location filename="../minstall.cpp" line="2419"/>
         <source>Yes</source>
         <translation>Sí</translation>
     </message>
@@ -197,7 +197,7 @@ El disco, con la partición seleccionada, esta fallando.
         <location filename="../minstall.cpp" line="1048"/>
         <location filename="../minstall.cpp" line="1714"/>
         <location filename="../minstall.cpp" line="1728"/>
-        <location filename="../minstall.cpp" line="2166"/>
+        <location filename="../minstall.cpp" line="2419"/>
         <source>No</source>
         <translation>No</translation>
     </message>
@@ -634,60 +634,60 @@ La mayoría de los usuarios no deben cambiar los valores por defecto.  Los usuar
         <translation>Terminar</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2165"/>
+        <location filename="../minstall.cpp" line="2418"/>
         <source>MX Linux is installing, are you 
 sure you want to Close now?</source>
         <translation>MX Linux se está instalando, ¿está seguro que desea cerrar ahora?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2192"/>
+        <location filename="../minstall.cpp" line="2445"/>
         <source>Deleting old system</source>
         <translation>Quitando sistema viejo</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2201"/>
+        <location filename="../minstall.cpp" line="2454"/>
         <source>Failed to delete old MX Linux on destination.
 Returning to Step 1.</source>
         <translation>Hubo un fallo al borrar la versión anterior de MX Linux. Regresando al Paso 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2227"/>
+        <location filename="../minstall.cpp" line="2480"/>
         <source>Copying new system</source>
         <translation>Copiando el sistema nuevo</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2251"/>
+        <location filename="../minstall.cpp" line="2504"/>
         <source>Fixing configuration</source>
         <translation>Reparando la configuración</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2587"/>
+        <location filename="../minstall.cpp" line="2595"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
         <translation>Hubo un fallo al escribir MX Linux. Regresando al Paso 1.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2614"/>
+        <location filename="../minstall.cpp" line="2622"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at http://antix.mepis.com and http://www.mepiscommunity.org/mx. There are volunteers to help you at the antiX Forum, http://antix.freeforums.org and the MEPIS Community Forum http://forum.mepiscommunity.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Obtener Ayuda&lt;/b&gt;&lt;br/&gt;La Información básica acerca de MX Linux se encuentra en http://antix.mepis.com y http://www.mepiscommunity.org/mx. Además, hay voluntarios que brindan ayuda en el Foro de MX Linux, http://antix.freeforums.org y MEPIS Community Forum http://forum.mepiscommunity.org &lt;/p&gt;&lt;p&gt;Si pide ayuda, por favor recuerde: debe describir el problema y carácteristicas del computador detalladamente. Las declaraciones como, &quot;Esto no funciona&quot; no son útiles para obtener ayuda.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2622"/>
+        <location filename="../minstall.cpp" line="2630"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from CD and running one of the utilities in System Configuration or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux CD to recover data from MS-Windows systems!&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Reparar su Instalación&lt;/b&gt;&lt;br/&gt;Si MX Liinux deja de funcionar desde el disco duro, a veces es posible corregir el problema arrancando del CD y ejecutando una de las utilidades en Configuración del Sistema o con algunas de las herramientas regulares de Linux para reparar el sistema.&lt;/p&gt;&lt;p&gt;¡También puede utilizar el CD de MX Linux para recuperar los datos de un sistema de MS-Windows!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2628"/>
+        <location filename="../minstall.cpp" line="2636"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Soporte de MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux cuenta con el apoyo de gente como usted. Algunos ayudan a los otros en el foro de soporte en - http://antix.freeforums.org, - http://forum.mepiscommunity.org o traducen los archivos de ayuda a diferentes idiomas, hacen sugerencias, escriben la documentación, y/o prueban el software nuevo.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2635"/>
+        <location filename="../minstall.cpp" line="2643"/>
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Ajuste del mezclador de Sonido&lt;/b&gt;&lt;br/&gt;MX Linux intenta configurar la mezcla de sonido pero a veces es necesario subir el volumen o quitar el mudo de algún canal del mezclador para escucharlo.&lt;/p&gt; &lt;p&gt;El atajo del mezclador está ubicado en la bandeja. Haga clic en el ícono para abrir el mezclador. &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2643"/>
+        <location filename="../minstall.cpp" line="2651"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit http://antix.freeforums.org or http://forum.mepiscommunity.org &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Mantenga su MX Linux actualizado (Up-to-date)&lt;/b&gt;&lt;br/&gt;Para información de MX Linux y actualizaciones, por favor visite http://antix.freeforums.org o http://forum.mepiscommunity.org &lt;/p&gt;</translation>
     </message>

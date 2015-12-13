@@ -95,28 +95,28 @@ public:
     bool isInsideVB();
     int runCmd(QString cmd);
 
-
-    void updateStatus(QString msg, int val);
-    bool mountPartition(QString dev, const char *point);
-    void prepareToInstall();
-    bool makeSwapPartition(QString dev);
-    bool makeLinuxPartition(QString dev, const char *type, bool bad, QString label);
-    bool makeDefaultPartitions();
-    bool makeChosenPartitions();
-    void installLinux();
+    void buildServiceList();
     void copyLinux();
-    bool makeFloppy();
-    bool installLoader();
+    void installLinux();
+    void prepareToInstall();
     void setLocale();
     void setServices();
-    bool setUserName();
+    void updatePartitionWidgets();
+    void updateStatus(QString msg, int val);
+    bool checkDisk();
+    bool installLoader();
+    bool makeChosenPartitions();
+    bool makeDefaultPartitions();
+    bool makeFloppy();
+    bool makeGrub(int rootdev, QString rootpart, const char *rootmnt, bool initrd);
+    bool makeLinuxPartition(QString dev, const char *type, bool bad, QString label);
+    bool makeSwapPartition(QString dev);
+    bool mountPartition(QString dev, const char *point);
+    bool removeKernel();
+    bool setComputerName();
     bool setPasswords();
     bool setUserInfo();
-    bool setComputerName();
-    bool removeKernel();
-    bool makeGrub(int rootdev, QString rootpart, const char *rootmnt, bool initrd);
-    void updatePartitionWidgets();
-    bool checkDisk();
+    bool setUserName();                
 
     void gotoPage(int next);
     void pageDisplayed(int next);
