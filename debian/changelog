@@ -1,3 +1,21 @@
+mx-installer (15.12.2mx15) mx; urgency=medium
+
+  * disable VirtualBox additions when not installing in VB
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 11 Dec 2015 09:47:28 -0500
+
+mx-installer (15.12.1mx15) mx; urgency=medium
+
+  * eliminates error message on 64bit installed system
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 09 Dec 2015 22:41:08 -0500
+
+mx-installer (15.12mx15) mx; urgency=medium
+
+  * included guess-hwclock, partition-info
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 03 Dec 2015 10:52:57 -0500
+
 mx-installer (15.11.12mx15) mx; urgency=medium
 
   * added --target=i386-pc to grub-install

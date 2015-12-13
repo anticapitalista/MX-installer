@@ -76,6 +76,7 @@ public:
     ~MInstall();
 
     bool abortInstall;
+
     int removedItemIndex;
     QString removedItem;
 
@@ -90,7 +91,10 @@ public:
     static bool replaceStringInFile(QString oldtext, QString newtext, QString filepath);
     static int getPartitionNumber();
     static int command(const QString &string);
+    bool is32bit();
+    bool isInsideVB();
     int runCmd(QString cmd);
+
 
     void updateStatus(QString msg, int val);
     bool mountPartition(QString dev, const char *point);

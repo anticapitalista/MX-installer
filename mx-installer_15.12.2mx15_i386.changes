@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 11 Dec 2015 09:47:28 -0500
+Source: mx-installer
+Binary: mx-installer
+Architecture: i386
+Version: 15.12.2mx15
+Distribution: mx
+Urgency: medium
+Maintainer: anticapitalista <antiX@operamail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-installer - GUI installer for MX Linux.
+Changes:
+ mx-installer (15.12.2mx15) mx; urgency=medium
+ .
+   * disable VirtualBox additions when not installing in VB
+Checksums-Sha1:
+ ab0ccde90933ea7936686aa14435a655c8cb817c 229984 mx-installer_15.12.2mx15_i386.deb
+Checksums-Sha256:
+ 7ac1ad9230ecd1ba3fc9d0bf00e6989cdc1d53884bf22b67b0c2eb90afc0ac77 229984 mx-installer_15.12.2mx15_i386.deb
+Files:
+ 359a278b0b077a44de8423a3ea219551 229984 system optional mx-installer_15.12.2mx15_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWauVUAAoJEHCTjHgGee6YgHIH/2uruwpVFWP1LQF4QoSC6q1I
+GgzkkFoLnLiSnalKuKpdHvOveZj3Sle2tMEMPv09j2m8h6pC7FpY04xYwBp4iHH/
+Nr+snmBBWvw9SklMYpq9ut2AcW2zHLxpQyuJ63SOkiH8wGfmmkatWul9zxbaAVQW
+vfw5IiMln9089Ra9UTiRML6QVanxUDHj5yStdWp3DuOTh9cw6cXTbfkwmp9dUCwT
+4HJZiEg8E+Q3h/P3OYENM8zoU5zY717CP/BzFWOMKDt3QukAJ2o2rusgSworAhGK
+2F1FRHeiVtYCTLqcMDAHn2QmLE0UX7EgGBp/kJLaO7RDZb5HRrVZ/I0p9HlZvkA=
+=DUKs
+-----END PGP SIGNATURE-----
