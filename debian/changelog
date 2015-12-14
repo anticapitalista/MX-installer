@@ -1,3 +1,9 @@
+mx-installer (15.12.3mx15) mx; urgency=medium
+
+  * disable NFS service on installed system if not running
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 13 Dec 2015 16:10:40 -0500
+
 mx-installer (15.12.2mx15) mx; urgency=medium
 
   * disable VirtualBox additions when not installing in VB

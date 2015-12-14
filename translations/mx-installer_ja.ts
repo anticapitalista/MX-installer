@@ -4,127 +4,127 @@
 <context>
     <name>MInstall</name>
     <message>
-        <location filename="../minstall.cpp" line="2339"/>
+        <location filename="../minstall.cpp" line="2016"/>
         <source>Administration</source>
         <translation>管理者</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2345"/>
+        <location filename="../minstall.cpp" line="2022"/>
         <source>Runs commands periodically</source>
         <translation>定期的にコマンドを実行する</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2355"/>
+        <location filename="../minstall.cpp" line="2032"/>
         <source>Time-based job scheduler</source>
         <translation>時間スケジュール処理</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2365"/>
+        <location filename="../minstall.cpp" line="2042"/>
         <source>Execute a command as another user</source>
         <translation>他のユーザがコマンドを実行</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2374"/>
+        <location filename="../minstall.cpp" line="2051"/>
         <source>Hardware</source>
         <translation>ハードウェア</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2379"/>
+        <location filename="../minstall.cpp" line="2056"/>
         <source>CPU frequency, irqbalance</source>
         <translation>CPU frequency, irqbalance</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2389"/>
+        <location filename="../minstall.cpp" line="2066"/>
         <source>S.M.A.R.T. monitoring tools</source>
         <translation>S.M.A.R.T. 監視ツール</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2399"/>
+        <location filename="../minstall.cpp" line="2076"/>
         <source>Advanced Configuration and Power Interface event daemon</source>
         <translation>拡張オプション・電源管理</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2409"/>
+        <location filename="../minstall.cpp" line="2086"/>
         <source>HDD temperature monitor</source>
         <translation>ハードディスク温度管理</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2419"/>
+        <location filename="../minstall.cpp" line="2096"/>
         <source>Generates key events for ACPI scripts</source>
         <translation>ACPI スクリプトのキー生成</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2429"/>
+        <location filename="../minstall.cpp" line="2106"/>
         <source>Message bus daemon</source>
         <translation>BUS デーモン出力</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2439"/>
+        <location filename="../minstall.cpp" line="2116"/>
         <source>Mouse event server</source>
         <translation>マウスイベントサーバ</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2449"/>
+        <location filename="../minstall.cpp" line="2126"/>
         <source>Scanner daemon</source>
         <translation>デーモンを検索</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2459"/>
+        <location filename="../minstall.cpp" line="2136"/>
         <source>Random number generator</source>
         <translation>順番をランダムにする</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2469"/>
+        <location filename="../minstall.cpp" line="2146"/>
         <source>Enables programs to publish and discover services and hosts</source>
         <translation>サービスやホストを検出するためプログラムの公開を有効にします</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2478"/>
+        <location filename="../minstall.cpp" line="2155"/>
         <source>Networking</source>
         <translation>ネットワーク</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2484"/>
+        <location filename="../minstall.cpp" line="2161"/>
         <source>Network connection</source>
         <translation>ネットワーク接続</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2494"/>
+        <location filename="../minstall.cpp" line="2171"/>
         <source>Secure Shell</source>
         <translation>セキュアシェル</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2504"/>
+        <location filename="../minstall.cpp" line="2181"/>
         <source>Mail filter</source>
         <translation>メールフィルタ</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2514"/>
+        <location filename="../minstall.cpp" line="2191"/>
         <source>Network File System</source>
         <translation>ネットワークファイルシステム</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2524"/>
+        <location filename="../minstall.cpp" line="2205"/>
         <source>VPN program that creates secure connections</source>
         <translation>VPN プログラムはセキュア接続を生成します</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2534"/>
+        <location filename="../minstall.cpp" line="2215"/>
         <source>Bluetooth</source>
         <translation>Bluetooth</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2544"/>
+        <location filename="../minstall.cpp" line="2225"/>
         <source>File-copying tool</source>
         <translation>ファイルコピーツール</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2553"/>
+        <location filename="../minstall.cpp" line="2234"/>
         <source>Printing</source>
         <translation>印刷</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2559"/>
+        <location filename="../minstall.cpp" line="2240"/>
         <source>Linux and OS X printer service</source>
         <translation>Linux・OS X 印刷サービス</translation>
     </message>
@@ -176,7 +176,7 @@ The disk with the partition you selected for installation is failing.
         <location filename="../minstall.cpp" line="1048"/>
         <location filename="../minstall.cpp" line="1714"/>
         <location filename="../minstall.cpp" line="1728"/>
-        <location filename="../minstall.cpp" line="2166"/>
+        <location filename="../minstall.cpp" line="2419"/>
         <source>Yes</source>
         <translation>はい</translation>
     </message>
@@ -195,7 +195,7 @@ The disk with the partition you selected for installation is failing.
         <location filename="../minstall.cpp" line="1048"/>
         <location filename="../minstall.cpp" line="1714"/>
         <location filename="../minstall.cpp" line="1728"/>
-        <location filename="../minstall.cpp" line="2166"/>
+        <location filename="../minstall.cpp" line="2419"/>
         <source>No</source>
         <translation>いいえ</translation>
     </message>
@@ -627,63 +627,63 @@ Step 1 に処理を戻します。</translation>
         <translation>完了</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2165"/>
+        <location filename="../minstall.cpp" line="2418"/>
         <source>MX Linux is installing, are you 
 sure you want to Close now?</source>
         <translation>MX Linux はインストール中です。
 本当に閉じてもよろしいですか？</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2192"/>
+        <location filename="../minstall.cpp" line="2445"/>
         <source>Deleting old system</source>
         <translation>旧システムの削除中</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2201"/>
+        <location filename="../minstall.cpp" line="2454"/>
         <source>Failed to delete old MX Linux on destination.
 Returning to Step 1.</source>
         <translation>古い MX Linux の削除に失敗しました。
 Step 1 に処理を戻します。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2227"/>
+        <location filename="../minstall.cpp" line="2480"/>
         <source>Copying new system</source>
         <translation>新システムのコピー中</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2251"/>
+        <location filename="../minstall.cpp" line="2504"/>
         <source>Fixing configuration</source>
         <translation>設定の構築中</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2587"/>
+        <location filename="../minstall.cpp" line="2595"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
         <translation>MX Linux の書き込みに失敗しました。
 Step 1 へ処理を戻します。</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2614"/>
+        <location filename="../minstall.cpp" line="2622"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at http://antix.mepis.com and http://www.mepiscommunity.org/mx. There are volunteers to help you at the antiX Forum, http://antix.freeforums.org and the MEPIS Community Forum http://forum.mepiscommunity.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;困った時は (英語情報)&lt;/b&gt;&lt;br/&gt;MX Linux の基本的な情報は http://antix.mepis.com および http://www.mepiscommunity.org/mx で参照できます。 antiX Forum http://antix.freeforums.org と MEPIS Community Forum http://forum.mepiscommunity.org で助けてくれる人がいるでしょう。&lt;/p&gt;&lt;p&gt;もし助けを求める場合、必須情報として問題の詳細とコンピュータ情報を忘れずに記述して下さい。通常「動きません」とだけ書かれた内容は役に立ちません。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2622"/>
+        <location filename="../minstall.cpp" line="2630"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from CD and running one of the utilities in System Configuration or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux CD to recover data from MS-Windows systems!&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;インストールの復旧&lt;/b&gt;&lt;br/&gt;もし MX Linux が動作しない場合は、CD や USB から起動し、システム設定にあるユーティリティを実行するか、基本的な Linux ツールを使用してシステムを復旧させる事ができます。&lt;/p&gt;&lt;p&gt;マイクロソフト Windows で使用していたデータを復旧させるために MX Linux の CD・USB メモリを使用する事も可能です。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2628"/>
+        <location filename="../minstall.cpp" line="2636"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;MX Linux のサポート&lt;/b&gt;&lt;br/&gt;MX Linux はあなたのような皆様に支援されています。サポートフォーラム http://antix.freeforums.org http://forum.mepiscommunity.orgで他の人を助ける、使用している言語の翻訳作業を行う、ドキュメント作成を行う、新しいバージョンのテストを行う、といった支援が可能です。&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2635"/>
+        <location filename="../minstall.cpp" line="2643"/>
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;音量調整&lt;/b&gt;&lt;br/&gt;MX Linux は音楽ミキサーを備えます。たまに音を聞くため、ミキサーでチャンネル毎の音量調整が必要になるかもしれません。&lt;/p&gt; &lt;p&gt;ミキサーの素早い起動はメニューからミキサーをクリックして開いて下さい。 &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2643"/>
+        <location filename="../minstall.cpp" line="2651"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit http://antix.freeforums.org or http://forum.mepiscommunity.org &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;MX Linux の最新情報&lt;/b&gt;&lt;br/&gt;MX Linux の最新情報はフォーラムを参照して下さい。 http://antix.freeforums.org http://forum.mepiscommunity.org &lt;/p&gt;</translation>
     </message>

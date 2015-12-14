@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 13 Dec 2015 16:10:40 -0500
+Source: mx-installer
+Binary: mx-installer
+Architecture: i386
+Version: 15.12.3mx15
+Distribution: mx
+Urgency: medium
+Maintainer: anticapitalista <antiX@operamail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-installer - GUI installer for MX Linux.
+Changes:
+ mx-installer (15.12.3mx15) mx; urgency=medium
+ .
+   * disable NFS service on installed system if not running
+Checksums-Sha1:
+ e71b9a31a9c12ffc473cd367ff9ec24b276861f7 230260 mx-installer_15.12.3mx15_i386.deb
+Checksums-Sha256:
+ f5464aef997ff982112de7a1c7ee5e6de34bce9f3d79b2651746d1903fced32f 230260 mx-installer_15.12.3mx15_i386.deb
+Files:
+ 92487c0cc178ef1e8b579b5f2f1d7750 230260 system optional mx-installer_15.12.3mx15_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWbeBTAAoJEHCTjHgGee6Ydp8H/1VS9O3T54fMyXLxI3hdi+sv
+qlXpdkNM8urFOVLcpl4TTUMsa/IpXA9lJ7XVUmk2H6JLJh1ufXvvFolIakz/Sskv
+0LMDLN0d8qXKfe4iVhiTo60eGdeZf2a7II1CQ+sLBcA57u7aenZPHmFMduPDWaRb
+P6EX48RT1xB9aO08deh/V6b32/t/fwjh4d/F20MsG8f0ANQ4QWH55VfsVT177Pau
+0zIlbsNheFEJznu0q0MkSPA3jUe8mniXsMDXffJLd3GeB3MEut/usqvKW81pGg+j
+Q7+KBvOct8xmrlfw/cxF7br+gEPpRjx+CTXy0NWfT4oKQrzhN3HOY9z8qEM2cm0=
+=t6Up
+-----END PGP SIGNATURE-----
