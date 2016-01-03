@@ -1,3 +1,9 @@
+mx-installer (16.1mx15) mx; urgency=medium
+
+  * fix for partition selection for EFI systems, filter out partitions < 4000 MB
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 03 Jan 2016 15:14:55 -0500
+
 mx-installer (15.12.3mx15) mx; urgency=medium
 
   * disable NFS service on installed system if not running

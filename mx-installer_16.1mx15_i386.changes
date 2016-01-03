@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 03 Jan 2016 15:14:55 -0500
+Source: mx-installer
+Binary: mx-installer
+Architecture: i386
+Version: 16.1mx15
+Distribution: mx
+Urgency: medium
+Maintainer: anticapitalista <antiX@operamail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-installer - GUI installer for MX Linux.
+Changes:
+ mx-installer (16.1mx15) mx; urgency=medium
+ .
+   * fix for partition selection for EFI systems, filter out partitions < 4000 MB
+Checksums-Sha1:
+ a7bce9b817ed6c331b512e6d5475f20e3b85dfe8 230384 mx-installer_16.1mx15_i386.deb
+Checksums-Sha256:
+ 2f51337043fb9cdaa6c5f6f026eae135153be76be4ff91d374ee3f75addd486d 230384 mx-installer_16.1mx15_i386.deb
+Files:
+ 3f90f8764453a0da29d86defd3a4b359 230384 system optional mx-installer_16.1mx15_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWiZBjAAoJEHCTjHgGee6Ydo4IAJwOZJHKNQO0diw4PzqV8dgd
+Ky3DQiLQdkreMEYbIFK4xlbfzKl8i0A65rikKCPvy1ezRSn44hzwdkE3vcQFVjD+
+qbmrEPs7sNoqu4f3sLqzN2CHCqnpSn224l8cizwwlj0NLb+XdKtTLp8zr05jyMyK
+XMxpIOzKZxWMAWkEk1mT90Z76U3Xi2/qaoVwSoj0GdPc15N/8gOXmdp+cLUIVa33
+QyCbBVSDA323s0uvNp4jRgrnaEPwfJo3PG1zQQUkotPldyi28HI8/k3BYl5HofAD
+9AL7gVTyCwyuH4IYlPNeB6V7OcY1NRhJjRkxuOJnqDHuAZ2i7uDBMJMl+Y3Pa/k=
+=cCXd
+-----END PGP SIGNATURE-----
