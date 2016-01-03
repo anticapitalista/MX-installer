@@ -18,20 +18,20 @@ Changes:
  .
    * fix for partition selection for EFI systems, filter out partitions < 4000 MB
 Checksums-Sha1:
- a7bce9b817ed6c331b512e6d5475f20e3b85dfe8 230384 mx-installer_16.1mx15_i386.deb
+ 6dfc41e156ec77932238538f285dc67a41021ff4 230374 mx-installer_16.1mx15_i386.deb
 Checksums-Sha256:
- 2f51337043fb9cdaa6c5f6f026eae135153be76be4ff91d374ee3f75addd486d 230384 mx-installer_16.1mx15_i386.deb
+ ca26951d57bd5880c9b5e178ef369287f6cc209f96693e7e27837659674e5556 230374 mx-installer_16.1mx15_i386.deb
 Files:
- 3f90f8764453a0da29d86defd3a4b359 230384 system optional mx-installer_16.1mx15_i386.deb
+ 5afa9684c192c690a87276affcef59f4 230374 system optional mx-installer_16.1mx15_i386.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJWiZBjAAoJEHCTjHgGee6Ydo4IAJwOZJHKNQO0diw4PzqV8dgd
-Ky3DQiLQdkreMEYbIFK4xlbfzKl8i0A65rikKCPvy1ezRSn44hzwdkE3vcQFVjD+
-qbmrEPs7sNoqu4f3sLqzN2CHCqnpSn224l8cizwwlj0NLb+XdKtTLp8zr05jyMyK
-XMxpIOzKZxWMAWkEk1mT90Z76U3Xi2/qaoVwSoj0GdPc15N/8gOXmdp+cLUIVa33
-QyCbBVSDA323s0uvNp4jRgrnaEPwfJo3PG1zQQUkotPldyi28HI8/k3BYl5HofAD
-9AL7gVTyCwyuH4IYlPNeB6V7OcY1NRhJjRkxuOJnqDHuAZ2i7uDBMJMl+Y3Pa/k=
-=cCXd
+iQEcBAEBAgAGBQJWiZ3+AAoJEHCTjHgGee6YgyMH/i+QlVTfyRE+rC0+XG9z5L2T
+GDgosgWQ0w6D3ZvaIZJGUKUbl6h39Ibm1zMpaDDlG8XzRAg3oALGX8lfuwMqoGAW
+bVSkL5o2J6lxJj5IKM0enA9GWjD7BAYUARBOrJ61C3ODKvRkQOgDs4RZUD8j6l5X
+HAci/906y8pNNmoo8mMGRaDJPGPGUq95q1V3N7wlrRXf2sO8UI8NKGJWLu8lwa3a
+LjT3zJZviiDBPcuZC/bcjiiz4kiv3TaRsbAIYW15US+uw6rIa6qyyAtpeFjnWjSB
+NwKk3eG+tBg16vkibKpI+ucKygU8VzykcbNpYmzxwk8Ma6XhLoB5rL5QZN9bRio=
+=gAGd
 -----END PGP SIGNATURE-----

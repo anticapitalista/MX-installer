@@ -773,7 +773,7 @@ bool MInstall::makeChosenPartitions()
             updateStatus(tr("Formatting the /home partition"), 8);
             // always set type
             if (gpt) {
-                cmd = QString("/sbin/sgdisk %1 -t=%2:8302").arg(swapdev.mid(0,8)).arg(swapdev.mid(8));
+                cmd = QString("/sbin/sgdisk %1 -t=%2:8302").arg(homedev.mid(0,8)).arg(homedev.mid(8));
             } else {
                 cmd = QString("/sbin/sfdisk %1 -c %2 83").arg(homedev.mid(0,8)).arg(homedev.mid(8));
             }
