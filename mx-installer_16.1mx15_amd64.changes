@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Sun, 03 Jan 2016 15:14:55 -0500
+Source: mx-installer
+Binary: mx-installer
+Architecture: source amd64
+Version: 16.1mx15
+Distribution: mx
+Urgency: medium
+Maintainer: anticapitalista <antiX@operamail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-installer - GUI installer for MX Linux.
+Changes:
+ mx-installer (16.1mx15) mx; urgency=medium
+ .
+   * fix for partition selection for EFI systems, filter out partitions < 4000 MB
+Checksums-Sha1:
+ 94ee4d13c058351a294725c0be23679150538147 1164 mx-installer_16.1mx15.dsc
+ 33667bf92a7f7d03b5655495369ca60977872935 1180088 mx-installer_16.1mx15.tar.xz
+ b75cc05198c3e1056b11de36292dd7f4f20726a5 227404 mx-installer_16.1mx15_amd64.deb
+Checksums-Sha256:
+ b598791fec7a8d42bac0c42a00c59ba8545b8fcc4b157d2368d847fe31d482d8 1164 mx-installer_16.1mx15.dsc
+ f1a4ee7ef8c29f3f9cebe55df1213743c5a1a99ebbef04ca97b36e6823a472d5 1180088 mx-installer_16.1mx15.tar.xz
+ e00e8343769f501c3719ee3a90550492012ab974e4c9676b36a004adec945579 227404 mx-installer_16.1mx15_amd64.deb
+Files:
+ 5a0a8d0fe966db2cd870c3509a6e7c1e 1164 system optional mx-installer_16.1mx15.dsc
+ db48e2c9544cca3db371bf8d927777bf 1180088 system optional mx-installer_16.1mx15.tar.xz
+ 309d04e00e9189ab6ccfde3049f0d52f 227404 system optional mx-installer_16.1mx15_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJWiZvDAAoJEHCTjHgGee6Y84gH/iP6+qi+Ykex1E3RZq3+f1tY
+/FuEnsipIua2WlXxp74A178M6A+767IxhCNhafXvStiuIGCZlFRo3tJkv1Cc/LuT
+tbdxBbTYy6cRO8k4DFw09jyVDmMgpu/Nv+2p80YfvjNwoOdFgrG4+kYtvHbK71x2
+f2rxBlh7YwHM3o8LLfxoVX8z9DBM5NW+U+/SxYbDQAxgD7bd9SsHU4pjBCkWt6od
+MEE4EID1odz9neYcDd0/zIJY8Du/CAa7y2Xy1tKqTPUvzZDrv2cQwrcGU1EmtpGc
+LFTNkd4M6jmqZXd04kHBDQARLUvs8ZdFEaLV+54x76D+VcJtlQeT0eXG9+l0+UE=
+=ONfw
+-----END PGP SIGNATURE-----

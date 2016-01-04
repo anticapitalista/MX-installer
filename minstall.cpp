@@ -724,7 +724,7 @@ bool MInstall::makeChosenPartitions()
         updateStatus(tr("Formatting the / (root) partition"), 3);
         // always set type
         if (gpt) {
-            cmd = QString("/sbin/sgdisk %1 -t=%2:8300").arg(swapdev.mid(0,8)).arg(swapdev.mid(8));
+            cmd = QString("/sbin/sgdisk %1 -t=%2:8300").arg(rootdev.mid(0,8)).arg(rootdev.mid(8));
         } else {
             cmd = QString("/sbin/sfdisk %1 -c %2 83").arg(rootdev.mid(0,8)).arg(rootdev.mid(8));
         }
@@ -773,7 +773,7 @@ bool MInstall::makeChosenPartitions()
             updateStatus(tr("Formatting the /home partition"), 8);
             // always set type
             if (gpt) {
-                cmd = QString("/sbin/sgdisk %1 -t=%2:8302").arg(swapdev.mid(0,8)).arg(swapdev.mid(8));
+                cmd = QString("/sbin/sgdisk %1 -t=%2:8302").arg(homedev.mid(0,8)).arg(homedev.mid(8));
             } else {
                 cmd = QString("/sbin/sfdisk %1 -c %2 83").arg(homedev.mid(0,8)).arg(homedev.mid(8));
             }
@@ -1993,7 +1993,7 @@ void MInstall::refresh()
     this->updatePartitionWidgets();
 
     //  system("umount -a 2>/dev/null");
-    QStringList drives = getCmdOuts("partition-info -n drives");
+    QStringList drives = getCmdOuts("partition-info -e=b -m=4000 -n drives");
     diskCombo->clear();
     grubBootCombo->clear();
     homeLabelEdit->setHidden(true);
@@ -2331,7 +2331,7 @@ void MInstall::on_diskCombo_activated(QString)
     removedItem = "";
 
     // build rootCombo
-    QStringList partitions = getCmdOuts(QString("partition-info -n -e=a -m=1200 %1").arg(drv));
+    QStringList partitions = getCmdOuts(QString("partition-info -n -e=a -m=4000 %1").arg(drv));
     rootCombo->addItems(partitions);
     if (partitions.size() == 0) {
         rootCombo->addItem("none");
