@@ -1,4 +1,4 @@
-mx-installer (16.1.1mx16) mx; urgency=medium
+mx-installer (16.1.1mx15) mx; urgency=medium
 
   * add support for long device names, such as /dev/mmcblk0p1
 
