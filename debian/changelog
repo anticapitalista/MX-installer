@@ -1,3 +1,9 @@
+mx-installer (16.1.1mx16) mx; urgency=medium
+
+  * add support for long device names, such as /dev/mmcblk0p1
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 04 Jan 2016 15:14:06 -0500
+
 mx-installer (16.1mx15) mx; urgency=medium
 
   * fix for partition selection for EFI systems, filter out partitions < 4000 MB

@@ -600,14 +600,17 @@ bool MInstall::makeChosenPartitions()
     strcpy(line, rootCombo->currentText().toUtf8());
     char *tok = strtok(line, " -");
     QString rootdev = QString("/dev/%1").arg(tok);
+    QStringList rootsplit = getCmdOut("partition-info split-device=" + rootdev).split(" ", QString::SkipEmptyParts);
 
     strcpy(line, swapCombo->currentText().toUtf8());
     tok = strtok(line, " -");
     QString swapdev = QString("/dev/%1").arg(tok);
+    QStringList swapsplit = getCmdOut("partition-info split-device=" + swapdev).split(" ", QString::SkipEmptyParts);
 
     strcpy(line, homeCombo->currentText().toUtf8());
     tok = strtok(line, " -");
     QString homedev = QString("/dev/%1").arg(tok);
+    QStringList homesplit = getCmdOut("partition-info split-device=" + homedev).split(" ", QString::SkipEmptyParts);
 
     if (rootdev.compare("/dev/none") == 0) {
         QMessageBox::critical(0, QString::null,
@@ -704,9 +707,9 @@ bool MInstall::makeChosenPartitions()
         updateStatus(tr("Formatting swap partition"), 2);
         // always set type
         if (gpt) {
-            cmd = QString("/sbin/sgdisk %1 -t=%2:8200").arg(swapdev.mid(0,8)).arg(swapdev.mid(8));
+            cmd = QString("/sbin/sgdisk %1 --typecode=%2:8200").arg(swapsplit[0]).arg(swapsplit[1]);
         } else {
-            cmd = QString("/sbin/sfdisk %1 -c %2 82").arg(swapdev.mid(0,8)).arg(swapdev.mid(8));
+            cmd = QString("/sbin/sfdisk %1 --change-id %2 82").arg(swapsplit[0]).arg(swapsplit[1]);
         }
         system(cmd.toUtf8());
         system("sleep 1");
@@ -724,9 +727,13 @@ bool MInstall::makeChosenPartitions()
         updateStatus(tr("Formatting the / (root) partition"), 3);
         // always set type
         if (gpt) {
-            cmd = QString("/sbin/sgdisk %1 -t=%2:8300").arg(rootdev.mid(0,8)).arg(rootdev.mid(8));
+            if (is32bit()) {
+                cmd = QString("/sbin/sgdisk %1 --typecode=%2:8303").arg(rootsplit[0]).arg(rootsplit[1]);
+            } else {
+                cmd = QString("/sbin/sgdisk %1 --typecode=%2:8304").arg(rootsplit[0]).arg(rootsplit[1]);
+            }
         } else {
-            cmd = QString("/sbin/sfdisk %1 -c %2 83").arg(rootdev.mid(0,8)).arg(rootdev.mid(8));
+            cmd = QString("/sbin/sfdisk %1 --change-id %2 83").arg(rootsplit[0]).arg(rootsplit[1]);
         }
         system(cmd.toUtf8());
         system("sleep 1");
@@ -773,9 +780,9 @@ bool MInstall::makeChosenPartitions()
             updateStatus(tr("Formatting the /home partition"), 8);
             // always set type
             if (gpt) {
-                cmd = QString("/sbin/sgdisk %1 -t=%2:8302").arg(homedev.mid(0,8)).arg(homedev.mid(8));
+                cmd = QString("/sbin/sgdisk %1 --typecode=%2:8302").arg(homesplit[0]).arg(homesplit[1]);
             } else {
-                cmd = QString("/sbin/sfdisk %1 -c %2 83").arg(homedev.mid(0,8)).arg(homedev.mid(8));
+                cmd = QString("/sbin/sfdisk %1 --change-id %2 83").arg(homesplit[0]).arg(homesplit[1]);
             }
             system(cmd.toUtf8());
             system("sleep 1");
@@ -902,8 +909,11 @@ bool MInstall::installLoader()
         boot = rootpart;
     } else if (grubEspButton->isChecked()) {
         // find first ESP on the boot disk
-        QString cmd = QString("sgdisk -p /dev/%1 | grep ' EF00 '| awk 'NR==1{print \"'%1'\"$1}'").arg(bootdrv);
+        QString cmd = QString("partition-info find-esp=%1").arg(bootdrv);
         boot = getCmdOut(cmd);
+        if (boot == "") {
+            return false;
+        }
     }
 
     // install Grub?
@@ -1993,7 +2003,7 @@ void MInstall::refresh()
     this->updatePartitionWidgets();
 
     //  system("umount -a 2>/dev/null");
-    QStringList drives = getCmdOuts("partition-info -e=b -m=4000 -n drives");
+    QStringList drives = getCmdOuts("partition-info --exclude=boot --min-size=4000 -n drives");
     diskCombo->clear();
     grubBootCombo->clear();
     homeLabelEdit->setHidden(true);
@@ -2331,14 +2341,14 @@ void MInstall::on_diskCombo_activated(QString)
     removedItem = "";
 
     // build rootCombo
-    QStringList partitions = getCmdOuts(QString("partition-info -n -e=a -m=4000 %1").arg(drv));
+    QStringList partitions = getCmdOuts(QString("partition-info -n --exclude=all --min-size=4000 %1").arg(drv));
     rootCombo->addItems(partitions);
     if (partitions.size() == 0) {
         rootCombo->addItem("none");
     }
 
     // build homeCombo for all disks
-    partitions = getCmdOuts("partition-info all -n -e=a -m=100");
+    partitions = getCmdOuts("partition-info all -n --exclude=all --min-size=100");
     homeCombo->addItems(partitions);
 
     // build swapCombo for all disks

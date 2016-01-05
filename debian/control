@@ -11,6 +11,6 @@ Homepage: http://antix.mepis.org
 
 Package: mx-installer
 Architecture: any
-Depends: ${misc:Depends}, ${shlibs:Depends}, os-prober, gdisk, partition-info, antix-libs, grub-efi-amd64-bin [amd64], grub-efi-ia32-bin [i386]
+Depends: ${misc:Depends}, ${shlibs:Depends}, os-prober, gdisk, partition-info (>= 1.0mx150+3), antix-libs, grub-efi-amd64-bin [amd64], grub-efi-ia32-bin [i386]
 Recommends: gparted, partitionmanager
 Description: GUI installer for MX Linux.
