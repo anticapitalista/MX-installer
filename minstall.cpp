@@ -1422,6 +1422,9 @@ void MInstall::setLocale()
         system("sed -i '/data0=/c\\data0=%H:%M' /mnt/antiX/usr/local/share/appdata/panels/vertical/panel/xfce4-orageclock-plugin-1.rc");
         system("sed -i '/data0=/c\\data0=%H:%M' /mnt/antiX/usr/local/share/appdata/panels/horizontal/panel/xfce4-orageclock-plugin-1.rc");
     }
+
+    // localize repos
+    runCmd("chroot /mnt/antiX localize-repo default");
 }
 
 void MInstall::setServices()
