@@ -707,9 +707,9 @@ bool MInstall::makeChosenPartitions()
         updateStatus(tr("Formatting swap partition"), 2);
         // always set type
         if (gpt) {
-            cmd = QString("/sbin/sgdisk %1 --typecode=%2:8200").arg(swapsplit[0]).arg(swapsplit[1]);
+            cmd = QString("/sbin/sgdisk /dev/%1 --typecode=%2:8200").arg(swapsplit[0]).arg(swapsplit[1]);
         } else {
-            cmd = QString("/sbin/sfdisk %1 --change-id %2 82").arg(swapsplit[0]).arg(swapsplit[1]);
+            cmd = QString("/sbin/sfdisk /dev/%1 --change-id %2 82").arg(swapsplit[0]).arg(swapsplit[1]);
         }
         system(cmd.toUtf8());
         system("sleep 1");
@@ -728,12 +728,12 @@ bool MInstall::makeChosenPartitions()
         // always set type
         if (gpt) {
             if (is32bit()) {
-                cmd = QString("/sbin/sgdisk %1 --typecode=%2:8303").arg(rootsplit[0]).arg(rootsplit[1]);
+                cmd = QString("/sbin/sgdisk /dev/%1 --typecode=%2:8303").arg(rootsplit[0]).arg(rootsplit[1]);
             } else {
-                cmd = QString("/sbin/sgdisk %1 --typecode=%2:8304").arg(rootsplit[0]).arg(rootsplit[1]);
+                cmd = QString("/sbin/sgdisk /dev/%1 --typecode=%2:8304").arg(rootsplit[0]).arg(rootsplit[1]);
             }
         } else {
-            cmd = QString("/sbin/sfdisk %1 --change-id %2 83").arg(rootsplit[0]).arg(rootsplit[1]);
+            cmd = QString("/sbin/sfdisk /dev/%1 --change-id %2 83").arg(rootsplit[0]).arg(rootsplit[1]);
         }
         system(cmd.toUtf8());
         system("sleep 1");
@@ -780,9 +780,9 @@ bool MInstall::makeChosenPartitions()
             updateStatus(tr("Formatting the /home partition"), 8);
             // always set type
             if (gpt) {
-                cmd = QString("/sbin/sgdisk %1 --typecode=%2:8302").arg(homesplit[0]).arg(homesplit[1]);
+                cmd = QString("/sbin/sgdisk /dev/%1 --typecode=%2:8302").arg(homesplit[0]).arg(homesplit[1]);
             } else {
-                cmd = QString("/sbin/sfdisk %1 --change-id %2 83").arg(homesplit[0]).arg(homesplit[1]);
+                cmd = QString("/sbin/sfdisk /dev/%1 --change-id %2 83").arg(homesplit[0]).arg(homesplit[1]);
             }
             system(cmd.toUtf8());
             system("sleep 1");
