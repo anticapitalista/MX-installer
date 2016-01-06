@@ -1,3 +1,9 @@
+mx-installer (16.1.2mx15+1) mx; urgency=medium
+
+  * localize repos
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 06 Jan 2016 13:26:37 -0500
+
 mx-installer (16.1.2mx15) mx; urgency=medium
 
   * fix, add /dev before device name
