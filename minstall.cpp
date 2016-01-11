@@ -727,11 +727,7 @@ bool MInstall::makeChosenPartitions()
         updateStatus(tr("Formatting the / (root) partition"), 3);
         // always set type
         if (gpt) {
-            if (is32bit()) {
-                cmd = QString("/sbin/sgdisk /dev/%1 --typecode=%2:8303").arg(rootsplit[0]).arg(rootsplit[1]);
-            } else {
-                cmd = QString("/sbin/sgdisk /dev/%1 --typecode=%2:8304").arg(rootsplit[0]).arg(rootsplit[1]);
-            }
+            cmd = QString("/sbin/sgdisk /dev/%1 --typecode=%2:8303").arg(rootsplit[0]).arg(rootsplit[1]);
         } else {
             cmd = QString("/sbin/sfdisk /dev/%1 --change-id %2 83").arg(rootsplit[0]).arg(rootsplit[1]);
         }
