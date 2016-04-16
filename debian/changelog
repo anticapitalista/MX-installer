@@ -1,3 +1,9 @@
+mx-installer (16.3mx15) mx; urgency=medium
+
+  * added boot-directory=/boot/efi for ESP install
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 20 Mar 2016 11:30:22 -0400
+
 mx-installer (16.1.2mx15+1) mx; urgency=medium
 
   * localize repos

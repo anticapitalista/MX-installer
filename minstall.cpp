@@ -950,7 +950,7 @@ bool MInstall::installLoader()
         if (arch == "i686") { // rename arch to match grub-install target
             arch = "i386";
         }
-        cmd = QString("chroot /mnt/antiX grub-install --target=%1-efi --efi-directory=/boot/efi --bootloader-id=MX15 --recheck").arg(arch);
+        cmd = QString("chroot /mnt/antiX grub-install --target=%1-efi --efi-directory=/boot/efi --boot-directory=/boot/efi --bootloader-id=MX15 --recheck").arg(arch);
     }
     if (runCmd(cmd) != 0) {
         // error, try again
