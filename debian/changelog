@@ -1,3 +1,9 @@
+mx-installer (16.9mx15) mx; urgency=medium
+
+  * reset blueman conf before copying over
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 11 Sep 2016 16:39:40 -0400
+
 mx-installer (16.6mx15) mx; urgency=medium
 
   * removed boot-directory for ESP

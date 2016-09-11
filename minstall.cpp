@@ -1106,6 +1106,7 @@ bool MInstall::setUserName()
     }
     // saving Desktop changes
     if (saveDesktopCheckBox->isChecked()) {
+        runCmd("sudo -Eu demo bash -c 'dconf reset /org/blueman/transfer/shared-path'"); //reset blueman path
         cmd = QString("rsync -a /home/demo/ %1 --exclude '.cache' --exclude '.gvfs' --exclude '.dbus' --exclude '.Xauthority' --exclude '.ICEauthority' --exclude '.mozilla' --exclude 'Installer.desktop'").arg(dpath);
         if (runCmd(cmd.toUtf8()) != 0) {
             setCursor(QCursor(Qt::ArrowCursor));
@@ -1404,7 +1405,7 @@ void MInstall::setLocale()
     if (homedev != "/dev/root") {
         runCmd(QString("mount %1 /mnt/antiX/home").arg(homedev));
     }
-    system("cp -f /etc/adjtime /mnt/antiX/etc/");   
+    system("cp -f /etc/adjtime /mnt/antiX/etc/");
 
     // Set clock format
     if (radio12h->isChecked()) {
@@ -2329,13 +2330,13 @@ void MInstall::on_qtpartedButton_clicked()
 
 // disk selection changed, rebuild dropdown menus
 void MInstall::on_diskCombo_activated(QString)
-{    
+{
     QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
 
     rootCombo->clear();
     swapCombo->clear();
     homeCombo->clear();
-    swapCombo->addItem("none - or existing"); 
+    swapCombo->addItem("none - or existing");
     homeCombo->addItem("root");
     removedItem = "";
 
