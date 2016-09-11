@@ -1106,7 +1106,7 @@ bool MInstall::setUserName()
     }
     // saving Desktop changes
     if (saveDesktopCheckBox->isChecked()) {
-        runCmd("sudo -Eu demo bash -c 'dconf reset /org/blueman/transfer/shared-path'"); //reset blueman path
+        runCmd("su -c 'dconf reset /org/blueman/transfer/shared-path' demo"); //reset blueman path
         cmd = QString("rsync -a /home/demo/ %1 --exclude '.cache' --exclude '.gvfs' --exclude '.dbus' --exclude '.Xauthority' --exclude '.ICEauthority' --exclude '.mozilla' --exclude 'Installer.desktop'").arg(dpath);
         if (runCmd(cmd.toUtf8()) != 0) {
             setCursor(QCursor(Qt::ArrowCursor));
@@ -1980,7 +1980,7 @@ void MInstall::firstRefresh(QDialog *main)
 {
     mmn = main;
     // disable automounting in Thunar
-    system("sudo -Eu demo bash -c 'xfconf-query --channel thunar-volman --property /automount-drives/enabled --set false'");
+    system("su -c 'xfconf-query --channel thunar-volman --property /automount-drives/enabled --set false' demo");
     refresh();
 }
 

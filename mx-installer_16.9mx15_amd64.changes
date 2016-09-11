@@ -18,26 +18,26 @@ Changes:
  .
    * reset blueman conf before copying over
 Checksums-Sha1:
- df3028ac7356907e1022e51d6fbb8c363d94cebd 1161 mx-installer_16.9mx15.dsc
- 0e2b277bb2a9f9df081b7ae4b44410db8d65190f 155036 mx-installer_16.9mx15.tar.xz
- 90202a28af8698b5395a430c2d782ce672e82d43 227598 mx-installer_16.9mx15_amd64.deb
+ 5ab34c7c15a8a1e27231e36ace14da366dae33af 1161 mx-installer_16.9mx15.dsc
+ ea30510c2132e738c8f1ee8243e76927dcce584f 310760 mx-installer_16.9mx15.tar.xz
+ b4f945c10a60c81685420e93f253958e633e4d73 228236 mx-installer_16.9mx15_amd64.deb
 Checksums-Sha256:
- b9e8c97eb294eeba7855aa86c3ed7ad72424635ff6704a31377d25c9373f53e6 1161 mx-installer_16.9mx15.dsc
- b89d4585ce0b8098343607f3218c202af51b78a7b4defeacde1725b4c73e0f35 155036 mx-installer_16.9mx15.tar.xz
- cc9a54925229055e7f4df9bacbc81b47dafbb52ebedaf3b269879169026a1ed6 227598 mx-installer_16.9mx15_amd64.deb
+ 81e3a75761dc23ca8021351ad0a8b283af32de4077c4f0d54d66c7200a601a4e 1161 mx-installer_16.9mx15.dsc
+ df8b56bec619f082e63dcfbaed564f5f214f4779d33f8942e8ef38e347058da7 310760 mx-installer_16.9mx15.tar.xz
+ 2406fba17dcae396afda58bed471b3b839e3cfffc643a1ed5c09fbeb22114a8e 228236 mx-installer_16.9mx15_amd64.deb
 Files:
- c926064bf819e568cc36dc331e047030 1161 system optional mx-installer_16.9mx15.dsc
- 8a71baa41d6ad874ea12138e11507159 155036 system optional mx-installer_16.9mx15.tar.xz
- b469e15f005dc3ef2db5568c877ed6c8 227598 system optional mx-installer_16.9mx15_amd64.deb
+ 226a7213bf5afc503688a8155c3479b3 1161 system optional mx-installer_16.9mx15.dsc
+ ee7da3e9fd91b1cd7a5499f9dc59aa50 310760 system optional mx-installer_16.9mx15.tar.xz
+ 9c8d1ebbfb3b81221705d201950f5606 228236 system optional mx-installer_16.9mx15_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJX1cg2AAoJEHCTjHgGee6Y6l4IALs7LJ+kDDHPgTsQs+l5AUQf
-FODO4CiTe1TEqHXO8OxY4WPL93LefRCS+D4vJokwtuxwGStGJIm2Fa8yDg/igRtM
-tv91IBWVUPfj4B43DjwNLJR4+TMhbO+bEjhyG0fgTq+THmazykKLeSM9oqWDZEua
-94aNTbXjrONBhzIm3OYqWKrT3KVi327Mg2SLkB7V8jed0dYKXt4b6e1avj53v82N
-1idzou55hVx4sXxQNbsK7x7nvUJ8LBfCW+i4y5vdcegHBPN10MX3DLiyCMwH4p0+
-5Z12z2oQPHTIDCT/BPvMBdktYis3ote4lQue43Oa7++ooZarCRu1SGcP2QJePy0=
-=CssO
+iQEcBAEBAgAGBQJX1eCJAAoJEHCTjHgGee6YAwoH/3FCkIbogwBVFbV+u22HgNO+
+x04f8kfs5CikNdTin9Od8upEazD5fXnbUiePkQ3xHztdPgHzoZvh3Ji0lifehQE1
+cI9PQUBkL2Ar+1GgfjsE0xyI34KyxBWvIalZF2BaqiXn0sTNFTfPMa2dek1O1OlZ
+IDccroORAlZ7eDomUv4bVHKvYcSonJv2Jx2L6FwqPG2lr9xvHHfNSwxicqC8coJX
+pR6J/NPjDN2dTG3H1hoOWNxq+7XkGFmhZksEu8FL6o0ovoSi8Grt4lUSRagxIe0c
+1VnBAJUvqS61YIKHhBCBEzFabLYbnzGeFpY+iZuL5eAmm/FINwPrnCPome4M050=
+=fxiz
 -----END PGP SIGNATURE-----
