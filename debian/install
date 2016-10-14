@@ -12,3 +12,6 @@ minstall.desktop                usr/share/applications/mx
 msystem.png                     usr/share/icons
 msystem.png                     usr/share/pixmaps
 scripts/rc.local.install        usr/share/antiX
+backdrop-textbox.png		usr/share/mx-installer/images
+mxfeclogo-installer-png		usr/share/mx-installer/images
+
