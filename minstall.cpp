@@ -1840,7 +1840,7 @@ void MInstall::pageDisplayed(int next)
         setCursor(QCursor(Qt::WaitCursor));
         tipsEdit->setText(tr("<p><b>Special Thanks</b><br/>Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.</p>"
                              "<p>Without you there would be no MX Linux.</p>"
-                             "<p>anticapitalista, Mepis and antiX Communities</p>"));
+                             "<p>anticapitalista, MX Community</p>"));
         ((MMain *)mmn)->setHelpText(tr("<p><b>Installation in Progress</b><br/>"
                                        "MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.</p>"
                                        "<p>If you click the Abort button, the installation will be stopped as soon as possible.</p>"));
@@ -2630,8 +2630,8 @@ void MInstall::copyTime()
     switch (i) {
     case 1:
         tipsEdit->setText(tr("<p><b>Getting Help</b><br/>"
-                             "Basic information about MX Linux is at http://antix.mepis.com and http://www.mepiscommunity.org/mx. "
-                             "There are volunteers to help you at the antiX Forum, http://antix.freeforums.org and the MEPIS Community Forum http://forum.mepiscommunity.org </p>"
+                             "Basic information about MX Linux is at http://mxlinux.org"
+                             "There are volunteers to help you at the MX forum, http://forum.mxlinux.org </p>"
                              "<p>If you ask for help, please remember to describe your problem and your computer "
                              "in some detail. Usually statements like 'it didn't work' are not helpful.</p>"));
         break;
@@ -2645,7 +2645,7 @@ void MInstall::copyTime()
     case 30:
         tipsEdit->setText(tr("<p><b>Support MX Linux</b><br/>"
                              "MX Linux is supported by people like you. Some help others at the "
-                             "support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different "
+                             "support forum - http://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different "
                              "languages, or make suggestions, write documentation, or help test new software.</p>"));
         break;
 
@@ -2659,7 +2659,7 @@ void MInstall::copyTime()
 
     case 60:
         tipsEdit->setText(tr("<p><b>Keep Your Copy of MX Linux up-to-date</b><br/>"
-                             "For MX Linux information and updates please visit http://antix.freeforums.org or http://forum.mepiscommunity.org </p>"));
+                             "For MX Linux information and updates please visit http://mxlinux.org or http://antix.freeforums.org</p>"));
         break;
 
     default:

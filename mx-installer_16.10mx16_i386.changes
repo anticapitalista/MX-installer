@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Fri, 14 Oct 2016 11:10:57 -0400
+Source: mx-installer
+Binary: mx-installer
+Architecture: i386
+Version: 16.10mx16
+Distribution: mx
+Urgency: medium
+Maintainer: anticapitalista <antiX@operamail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-installer - GUI installer for MX Linux.
+Changes:
+ mx-installer (16.10mx16) mx; urgency=medium
+ .
+   * changed URLs
+Checksums-Sha1:
+ 0bd21efc57f7b73368be9de42714a0d4af18a46f 222526 mx-installer_16.10mx16_i386.deb
+Checksums-Sha256:
+ bc3db6236f43dda9b9b50c55a38e8925392a28ca1acf501153e1438b60c48025 222526 mx-installer_16.10mx16_i386.deb
+Files:
+ 4372fc47f28ae1029da4c22ca2e4d020 222526 system optional mx-installer_16.10mx16_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJYAQsoAAoJEHCTjHgGee6YtNUIAMjJrZVapHgfucesj2pNB5bP
+tFeWCpcxLHPhhEjIMvr3qq+kGbkSbxlz77IOuaJXijy+MrTm4AXtq1ZZBMqQu2uj
+/6HGP43WNqO/Lly1clZs70nBER3xAo1p0nUPi1OppVWWF8ai1P7JS9y8GTfdHfN8
+Z2XCp/zoe7Huwe07xkP7UUdVP4EgEtkdb5c6upqbGTX50MoS6fZ9abhamOI0joB9
+hBRfg1FN9RJwOXgZR6Ck4ovstDX1ty7nL9W2B6nrSheJMUkHAaYGhn5JCMvzG545
+Csz3iq0Rc509ppNXHML07bP6sYFWHDiYV6aGkhqhd90zxDYpyiqZVFdG876FBO8=
+=ku1S
+-----END PGP SIGNATURE-----

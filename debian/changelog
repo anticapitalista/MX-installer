@@ -1,3 +1,9 @@
+mx-installer (16.10mx16) mx; urgency=medium
+
+  * changed URLs
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 14 Oct 2016 11:10:57 -0400
+
 mx-installer (16.9mx15) mx; urgency=medium
 
   * reset blueman conf before copying over

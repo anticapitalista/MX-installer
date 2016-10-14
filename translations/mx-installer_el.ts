@@ -554,8 +554,27 @@ Do you really want to stop now?</source>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1841"/>
+        <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2632"/>
+        <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at http://mxlinux.orgThere are volunteers to help you at the MX forum, http://forum.mxlinux.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2646"/>
+        <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - http://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2661"/>
+        <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit http://mxlinux.org or http://antix.freeforums.org&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis and antiX Communities&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Ιδιαίτερες Ευχαριστίες&lt;/b&gt;&lt;br/&gt;Τις ευχαριστίες μου προς όλους εκείνους που επέλεξαν να υποστηρίξουν το MX Linux με τον χρόνο τους, χρήμα, υποδείξεις, εργασία, επαίνους, ιδέες, προώθηση και/ή ενθάρρυνση.&lt;/p&gt;&lt;p&gt;Χωρίς εσάς, δεν θα υπήρχε καθόλου το MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis και antiX Communities&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Ιδιαίτερες Ευχαριστίες&lt;/b&gt;&lt;br/&gt;Τις ευχαριστίες μου προς όλους εκείνους που επέλεξαν να υποστηρίξουν το MX Linux με τον χρόνο τους, χρήμα, υποδείξεις, εργασία, επαίνους, ιδέες, προώθηση και/ή ενθάρρυνση.&lt;/p&gt;&lt;p&gt;Χωρίς εσάς, δεν θα υπήρχε καθόλου το MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis και antiX Communities&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1844"/>
@@ -664,9 +683,8 @@ Returning to Step 1.</source>
 Επιστροφή στο Βήμα 1. </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2632"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at http://antix.mepis.com and http://www.mepiscommunity.org/mx. There are volunteers to help you at the antiX Forum, http://antix.freeforums.org and the MEPIS Community Forum http://forum.mepiscommunity.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Παίρνοντας Βοήθεια&lt;/b&gt;&lt;br/&gt;Μπορείτε να βρείτε Βασικές Πληροφορίες για το MX Linux στη διεύθυνση http://antix.mepis.com και http://www.mepiscommunity.org/mx. Υπάρχουν εθελοντές που θα σας βοηθήσουν στο antiX Forum  και στο MEPIS Community Forum, στη διεύθυνση http://antix.freeforums.org και http://forum.mepiscommunity.org. &lt;/p&gt;&lt;p&gt;Αν αναζητάτε βοήθεια, παρακαλώ να θυμάστε να περιγράψετε το πρόβλημά σας και τον υπολογιστή σας, με κάποιες λεπτομέρειες. Φράσεις όπως &apos;δεν δούλεψε&apos; δεν βοηθούν συνήθως και πάρα πολύ.&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Παίρνοντας Βοήθεια&lt;/b&gt;&lt;br/&gt;Μπορείτε να βρείτε Βασικές Πληροφορίες για το MX Linux στη διεύθυνση http://antix.mepis.com και http://www.mepiscommunity.org/mx. Υπάρχουν εθελοντές που θα σας βοηθήσουν στο antiX Forum  και στο MEPIS Community Forum, στη διεύθυνση http://antix.freeforums.org και http://forum.mepiscommunity.org. &lt;/p&gt;&lt;p&gt;Αν αναζητάτε βοήθεια, παρακαλώ να θυμάστε να περιγράψετε το πρόβλημά σας και τον υπολογιστή σας, με κάποιες λεπτομέρειες. Φράσεις όπως &apos;δεν δούλεψε&apos; δεν βοηθούν συνήθως και πάρα πολύ.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2640"/>
@@ -674,9 +692,8 @@ Returning to Step 1.</source>
         <translation>&lt;p&gt;&lt;b&gt;Επισκευή της Εγκατάστασής σας&lt;/b&gt;&lt;br/&gt;Αν το MX Linux σταματήσει να λειτουργεί από τον σκληρό δίσκο, μπορεί, ορισμένες φορές, να είναι εφικτή η διόρθωση του προβλήματος, κάνοντας εκκίνηση από το CD και τρέχοντας ένα από τα utilities στη Ρύθμιση Συστήματος, είτε χρησιμοποιώντας ένα από τα συνηθισμένα εργαλεία Linux για την επισκευή του συστήματος.&lt;/p&gt;&lt;p&gt;Μπορείτε, επίσης, να χρησιμοποιήσετε το CD του MX Linux για να ανακτήσετε δεδομένα από συστήματα MS-Windows!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2646"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Υποστηρίξτε το MX Linux&lt;/b&gt;&lt;br/&gt;Το MX Linux στηρίζεται από ανθρώπους σαν κι&apos; εσάς. Κάποιο βοηθούν κάποιους άλλους στο forum υποστήριξης- http://antix.freeforums.org - http://forum.mepiscommunity.org, ή μεταφράζουν αρχεία βοήθειας σε διάφορες γλώσσες, ή κάνουν υποδείξεις, γράφουν τεκμηρίωση, ή βοηθούν δοκιμάζοντας νεό λογισικό.&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Υποστηρίξτε το MX Linux&lt;/b&gt;&lt;br/&gt;Το MX Linux στηρίζεται από ανθρώπους σαν κι&apos; εσάς. Κάποιο βοηθούν κάποιους άλλους στο forum υποστήριξης- http://antix.freeforums.org - http://forum.mepiscommunity.org, ή μεταφράζουν αρχεία βοήθειας σε διάφορες γλώσσες, ή κάνουν υποδείξεις, γράφουν τεκμηρίωση, ή βοηθούν δοκιμάζοντας νεό λογισικό.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2653"/>
@@ -684,9 +701,8 @@ Returning to Step 1.</source>
         <translation>&lt;p&gt;&lt;b&gt;Ρύθμιση του Μίκτη Ήχου&lt;/b&gt;&lt;br/&gt;Το MX Linux προσπαθεί να ρυθμίσει τον Μίκτη Ήχου για σας, αλλά μπορεί να πρέπει πρώτα να δυναμώσετε την ένταση του ήχου και να βγάλετε τη Σίγαση από τα κανάλια του μίκτη, για να ακούσετε ήχο.&lt;/p&gt; &lt;p&gt;Η συντόμευση για τον μίκτη βρίσκεται στο tray. Κάντε κλικ πάνω της για να ανοίξετε τον Μίκτη. &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2661"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit http://antix.freeforums.org or http://forum.mepiscommunity.org &lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Διατηρείστε ενημερωμένο το αντίγραφό σας του MX Linux&lt;/b&gt;&lt;br/&gt;Για πληροφορίες και ενημερώσεις του MX Linux, παρακαλώ επισκεφθείτε τη διεύθυνση http://antix.freeforums.org η http://forum.mepiscommunity.org &lt;/p&gt; </translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Διατηρείστε ενημερωμένο το αντίγραφό σας του MX Linux&lt;/b&gt;&lt;br/&gt;Για πληροφορίες και ενημερώσεις του MX Linux, παρακαλώ επισκεφθείτε τη διεύθυνση http://antix.freeforums.org η http://forum.mepiscommunity.org &lt;/p&gt; </translation>
     </message>
 </context>
 <context>
@@ -1131,8 +1147,17 @@ p, li { white-space: pre-wrap; }
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux is supported by people like you. Some help others at the support forum - http://forum.mxlinux.org, - http://antix.freeforums.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+        <translation type="vanished">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
