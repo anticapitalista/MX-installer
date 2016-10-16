@@ -62,8 +62,8 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>290</width>
-         <height>471</height>
+         <width>287</width>
+         <height>380</height>
         </rect>
        </property>
        <property name="sizePolicy">
@@ -98,7 +98,7 @@ color: rgb(24, 12, 12);</string>
          <x>0</x>
          <y>0</y>
          <width>273</width>
-         <height>471</height>
+         <height>382</height>
         </rect>
        </property>
        <property name="text">
@@ -106,6 +106,9 @@ color: rgb(24, 12, 12);</string>
        </property>
        <property name="pixmap">
         <pixmap>../../../usr/share/mx-installer/images/backdrop-textbox.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>false</bool>
        </property>
       </widget>
       <zorder>helpboxbackdrop</zorder>
