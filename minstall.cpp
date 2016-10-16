@@ -26,6 +26,7 @@
 MInstall::MInstall(QWidget *parent) : QWidget(parent)
 {
     setupUi(this);
+    labelMX->setPixmap(QPixmap("/usr/share/mx-installer/images/mxfcelogo-installer.png"));
     char line[260];
     char *tok;
     FILE *fp;
@@ -2665,4 +2666,9 @@ void MInstall::copyTime()
     default:
         break;
     }
+}
+
+void MInstall::on_closeButton_clicked()
+{
+   ((MMain *)mmn)->closeClicked();
 }

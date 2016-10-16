@@ -4,132 +4,132 @@
 <context>
     <name>MInstall</name>
     <message>
-        <location filename="../minstall.cpp" line="2026"/>
+        <location filename="../minstall.cpp" line="2027"/>
         <source>Administration</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2032"/>
+        <location filename="../minstall.cpp" line="2033"/>
         <source>Runs commands periodically</source>
         <translation>Runs commands periodically </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2042"/>
+        <location filename="../minstall.cpp" line="2043"/>
         <source>Time-based job scheduler</source>
         <translation>Time-based job scheduler </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2052"/>
+        <location filename="../minstall.cpp" line="2053"/>
         <source>Execute a command as another user</source>
         <translation>Execute a command as another user </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2061"/>
+        <location filename="../minstall.cpp" line="2062"/>
         <source>Hardware</source>
         <translation>Hardver</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2066"/>
+        <location filename="../minstall.cpp" line="2067"/>
         <source>CPU frequency, irqbalance</source>
         <translation>CPU frequency, irqbalance</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2076"/>
+        <location filename="../minstall.cpp" line="2077"/>
         <source>S.M.A.R.T. monitoring tools</source>
         <translation>S.M.A.R.T. monitoring tools </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2086"/>
+        <location filename="../minstall.cpp" line="2087"/>
         <source>Advanced Configuration and Power Interface event daemon</source>
         <translation>Advanced Configuration and Power Interface event daemon </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2096"/>
+        <location filename="../minstall.cpp" line="2097"/>
         <source>HDD temperature monitor</source>
         <translation>HDD temperature monitor </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2106"/>
+        <location filename="../minstall.cpp" line="2107"/>
         <source>Generates key events for ACPI scripts</source>
         <translation>Generates key events for ACPI scripts </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2116"/>
+        <location filename="../minstall.cpp" line="2117"/>
         <source>Message bus daemon</source>
         <translation>Message bus daemon </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2126"/>
+        <location filename="../minstall.cpp" line="2127"/>
         <source>Mouse event server</source>
         <translation>Mouse event server </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2136"/>
+        <location filename="../minstall.cpp" line="2137"/>
         <source>Scanner daemon</source>
         <translation>Scanner daemon </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2146"/>
+        <location filename="../minstall.cpp" line="2147"/>
         <source>Random number generator</source>
         <translation>Random number generator </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2156"/>
+        <location filename="../minstall.cpp" line="2157"/>
         <source>Enables programs to publish and discover services and hosts</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2165"/>
+        <location filename="../minstall.cpp" line="2166"/>
         <source>Networking</source>
         <translation>Hálózatok</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2171"/>
+        <location filename="../minstall.cpp" line="2172"/>
         <source>Network connection</source>
         <translation>hálózati csatlakozás</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2181"/>
+        <location filename="../minstall.cpp" line="2182"/>
         <source>Secure Shell</source>
         <translation>Secure Shell </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2191"/>
+        <location filename="../minstall.cpp" line="2192"/>
         <source>Mail filter</source>
         <translation>Mail filter </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2201"/>
+        <location filename="../minstall.cpp" line="2202"/>
         <source>Network File System</source>
         <translation>Network File System </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2215"/>
+        <location filename="../minstall.cpp" line="2216"/>
         <source>VPN program that creates secure connections</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2225"/>
+        <location filename="../minstall.cpp" line="2226"/>
         <source>Bluetooth</source>
         <translation>Bluetooth </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2235"/>
+        <location filename="../minstall.cpp" line="2236"/>
         <source>File-copying tool</source>
         <translation>File-copying tool </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2244"/>
+        <location filename="../minstall.cpp" line="2245"/>
         <source>Printing</source>
         <translation>Nyomtatás</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2250"/>
+        <location filename="../minstall.cpp" line="2251"/>
         <source>Linux and OS X printer service</source>
         <translation>Linux and OS X printer service </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="279"/>
+        <location filename="../minstall.cpp" line="280"/>
         <source>
 
 The disk with the partition you selected for installation is failing.
@@ -140,14 +140,14 @@ The disk with the partition you selected for installation is failing.
 A lemezt a partíció kiválasztott telepítés nem. </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="280"/>
+        <location filename="../minstall.cpp" line="281"/>
         <source>You are strongly advised to abort.
 </source>
         <translation>Erősen javasoljuk, hogy szakítani. </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="281"/>
-        <location filename="../minstall.cpp" line="295"/>
+        <location filename="../minstall.cpp" line="282"/>
+        <location filename="../minstall.cpp" line="296"/>
         <source>If unsure, please exit the Installer and run GSmartControl for more information.
 
 </source>
@@ -155,205 +155,205 @@ A lemezt a partíció kiválasztott telepítés nem. </translation>
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="282"/>
+        <location filename="../minstall.cpp" line="283"/>
         <source>Do you want to abort the installation?</source>
         <translation>Szeretné, hogy megszakítja a telepítést? </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="284"/>
-        <location filename="../minstall.cpp" line="298"/>
-        <location filename="../minstall.cpp" line="455"/>
-        <location filename="../minstall.cpp" line="625"/>
-        <location filename="../minstall.cpp" line="637"/>
-        <location filename="../minstall.cpp" line="647"/>
-        <location filename="../minstall.cpp" line="660"/>
-        <location filename="../minstall.cpp" line="673"/>
-        <location filename="../minstall.cpp" line="918"/>
-        <location filename="../minstall.cpp" line="1024"/>
-        <location filename="../minstall.cpp" line="1029"/>
-        <location filename="../minstall.cpp" line="1054"/>
-        <location filename="../minstall.cpp" line="1724"/>
-        <location filename="../minstall.cpp" line="1738"/>
-        <location filename="../minstall.cpp" line="2429"/>
+        <location filename="../minstall.cpp" line="285"/>
+        <location filename="../minstall.cpp" line="299"/>
+        <location filename="../minstall.cpp" line="456"/>
+        <location filename="../minstall.cpp" line="626"/>
+        <location filename="../minstall.cpp" line="638"/>
+        <location filename="../minstall.cpp" line="648"/>
+        <location filename="../minstall.cpp" line="661"/>
+        <location filename="../minstall.cpp" line="674"/>
+        <location filename="../minstall.cpp" line="919"/>
+        <location filename="../minstall.cpp" line="1025"/>
+        <location filename="../minstall.cpp" line="1030"/>
+        <location filename="../minstall.cpp" line="1055"/>
+        <location filename="../minstall.cpp" line="1725"/>
+        <location filename="../minstall.cpp" line="1739"/>
+        <location filename="../minstall.cpp" line="2430"/>
         <source>Yes</source>
         <translation>Igen</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="284"/>
-        <location filename="../minstall.cpp" line="298"/>
-        <location filename="../minstall.cpp" line="455"/>
-        <location filename="../minstall.cpp" line="625"/>
-        <location filename="../minstall.cpp" line="637"/>
-        <location filename="../minstall.cpp" line="647"/>
-        <location filename="../minstall.cpp" line="660"/>
-        <location filename="../minstall.cpp" line="673"/>
-        <location filename="../minstall.cpp" line="918"/>
-        <location filename="../minstall.cpp" line="1024"/>
-        <location filename="../minstall.cpp" line="1029"/>
-        <location filename="../minstall.cpp" line="1054"/>
-        <location filename="../minstall.cpp" line="1724"/>
-        <location filename="../minstall.cpp" line="1738"/>
-        <location filename="../minstall.cpp" line="2429"/>
+        <location filename="../minstall.cpp" line="285"/>
+        <location filename="../minstall.cpp" line="299"/>
+        <location filename="../minstall.cpp" line="456"/>
+        <location filename="../minstall.cpp" line="626"/>
+        <location filename="../minstall.cpp" line="638"/>
+        <location filename="../minstall.cpp" line="648"/>
+        <location filename="../minstall.cpp" line="661"/>
+        <location filename="../minstall.cpp" line="674"/>
+        <location filename="../minstall.cpp" line="919"/>
+        <location filename="../minstall.cpp" line="1025"/>
+        <location filename="../minstall.cpp" line="1030"/>
+        <location filename="../minstall.cpp" line="1055"/>
+        <location filename="../minstall.cpp" line="1725"/>
+        <location filename="../minstall.cpp" line="1739"/>
+        <location filename="../minstall.cpp" line="2430"/>
         <source>No</source>
         <translation>Nem</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="292"/>
+        <location filename="../minstall.cpp" line="293"/>
         <source>Smartmon tool output:
 
 </source>
         <translation>Smartmon eszköz kimeneti: </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="293"/>
+        <location filename="../minstall.cpp" line="294"/>
         <source>The disk with the partition you selected for installation passes the S.M.A.R.T. monitor test (smartctl)
 </source>
         <translation>A lemezt a partíció jelölve a telepítéshez halad a SMART monitor teszt (smartctl) </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="294"/>
+        <location filename="../minstall.cpp" line="295"/>
         <source>but the tests indicate it will have a higher than average failure rate in the upcoming year.
 </source>
         <translation>de a vizsgálatok azt jelzik, hogy lesz egy átlagosnál magasabb hibaszázalék a következő évben. </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="296"/>
+        <location filename="../minstall.cpp" line="297"/>
         <source>Do you want to continue?</source>
         <translation>Szeretné folytatni? </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="330"/>
+        <location filename="../minstall.cpp" line="331"/>
         <source>Ready to install MX Linux filesystem</source>
         <translation>MX Linux fájlrendszer telepítésére készen</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="453"/>
+        <location filename="../minstall.cpp" line="454"/>
         <source>Ok to format and use the entire disk (%1) for MX Linux?</source>
         <translation>Szeretnéd formázni és használni az egész lemezt (%1) a MX Linux-re?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="465"/>
+        <location filename="../minstall.cpp" line="466"/>
         <source>Creating required partitions</source>
         <translation>A szükséges partíciók létrehozása</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="544"/>
-        <location filename="../minstall.cpp" line="707"/>
+        <location filename="../minstall.cpp" line="545"/>
+        <location filename="../minstall.cpp" line="708"/>
         <source>Formatting swap partition</source>
         <translation>A swap partíció formázása</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="553"/>
+        <location filename="../minstall.cpp" line="554"/>
         <source>Formatting root partition</source>
         <translation>A root partíció formázása</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="617"/>
+        <location filename="../minstall.cpp" line="618"/>
         <source>You must choose a root partition.
 The root partition must be at least 3.5 GB.</source>
         <translation>Ki kell választanod egy root partíciót.
 A root partíciónak legalább 3,5 GB-nak kell lennie.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="623"/>
+        <location filename="../minstall.cpp" line="624"/>
         <source>The partition you selected for root, appears to be a MS-Windows partition.  Are you sure you want to reformat this partition?</source>
         <translation>Az általad root-nak választott partíció MS-Windows partíciónak tűnik. Biztosan újra szeretnéd formázni?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="632"/>
+        <location filename="../minstall.cpp" line="633"/>
         <source>Ok to format and destroy all data on 
 %1 for the / (root) partition?</source>
         <translation>Szeretnéd formázni és az összes adatot törölni a
 %1 -n a /(root) partíció számára?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="634"/>
+        <location filename="../minstall.cpp" line="635"/>
         <source>All data on %1 will be deleted, except for /home
 Ok to continue?</source>
         <translation>Minden adat% 1 törlésre kerül, kivéve a /home
 Ok, hogy továbbra is? </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="645"/>
+        <location filename="../minstall.cpp" line="646"/>
         <source>Ok to format and destroy all data on 
 %1 for the swap partition?</source>
         <translation>Szeretnéd formázni és az összes adatot törölni a
 %1 -n a swap számára?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="658"/>
+        <location filename="../minstall.cpp" line="659"/>
         <source>The partition you selected for /home, appears to be a MS-Windows partition.  Are you sure you want to reformat this partition?</source>
         <translation>Az általad /home-nak választott partíció MS-Windows partíciónak tűnik. Biztosan újra szeretnéd formázni?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="667"/>
+        <location filename="../minstall.cpp" line="668"/>
         <source>Ok to reuse (no reformat) %1 as the /home partition?</source>
         <translation>Biztosan újra szeretnéd használni (formázás nélkül) %1 -t /home partícióként?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="669"/>
+        <location filename="../minstall.cpp" line="670"/>
         <source>Ok to format and destroy all data on %1 for the /home partition?</source>
         <translation>Biztosan leformázod és törlöd az összes adatot a %1 -n a /home könyvtár számára?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="680"/>
+        <location filename="../minstall.cpp" line="681"/>
         <source>Preparing required partitions</source>
         <translation>Szükséges partíciók előkészítése</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="727"/>
+        <location filename="../minstall.cpp" line="728"/>
         <source>Formatting the / (root) partition</source>
         <translation>/(root) partíció formázása folyamatban</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="761"/>
+        <location filename="../minstall.cpp" line="762"/>
         <source>Mounting the /home partition</source>
         <translation>/home partíció csatolása folyamatban</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="776"/>
+        <location filename="../minstall.cpp" line="777"/>
         <source>Formatting the /home partition</source>
         <translation>/home partíció formázása folyamatban</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="822"/>
+        <location filename="../minstall.cpp" line="823"/>
         <source>Mounting the / (root) partition</source>
         <translation>/root partíció csatolása folyamatban</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="853"/>
+        <location filename="../minstall.cpp" line="854"/>
         <source>Creating system directories</source>
         <translation>Rendszer könyvtárak létrehozása</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="916"/>
+        <location filename="../minstall.cpp" line="917"/>
         <source>Ok to install GRUB bootloader at %1 ?</source>
         <translation>Biztosan telepíted a GRUB bootmenedzsert %1 -re?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="928"/>
+        <location filename="../minstall.cpp" line="929"/>
         <source>Please wait till GRUB is installed, it might take a couple of minutes.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="963"/>
+        <location filename="../minstall.cpp" line="964"/>
         <source>Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function.</source>
         <translation>Bocs, a GRUB telepítése nem sikerült. Ez a lemez formázásának megváltozása miatt lehetséges. Kikapcsolhatod a GRUB box-ot és befejezheted a MX  telepítését. A GRUB-ot a LiveCD-be való újraindítás után a GRUB újratelepítése funkcióval telepítheted.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1021"/>
+        <location filename="../minstall.cpp" line="1022"/>
         <source>The home directory for %1 already exists.Would you like to reuse the old home directory?</source>
         <translation>A %1 -en már van home könyvtár. Újra szeretnéd használni a régi a home könyvtárat?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1027"/>
+        <location filename="../minstall.cpp" line="1028"/>
         <source>Would you like to save the old home directory
 and create a new home directory?</source>
         <translation>El szeretnéd menteni a régi home könyvtárat
 és egy új home könyvtárat létrehozni?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1043"/>
+        <location filename="../minstall.cpp" line="1044"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
 you&apos;ll have to select a different username or
 delete a previously saved copy of your home directory.</source>
@@ -362,56 +362,56 @@ folytatnád, egy új felhasználónevet kell választanod,
 vagy le kell törölnöd egy előzőleg mentett home könyvtárad.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1052"/>
+        <location filename="../minstall.cpp" line="1053"/>
         <source>Would you like to delete the old home directory for %1?</source>
         <translation>Le szeretnéd törölni a régi home könyvtárat a %1 -n?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1062"/>
+        <location filename="../minstall.cpp" line="1063"/>
         <source>Sorry, failed to delete old home directory. Before proceeding, 
 you&apos;ll have to select a different username.</source>
         <translation>Bocs, de a régi home könyvtár törlése nem sikerült. Mielőtt
 folytatnád, egy új felhasználónevet kell választanod.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1069"/>
+        <location filename="../minstall.cpp" line="1070"/>
         <source>You&apos;ve chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Nem választottad ki, hogy használd, töröld vagy mentsd a régi home
 könyvtárad. Mielőtt folytatnád, egy új felhasználónevet kell választanod.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1082"/>
+        <location filename="../minstall.cpp" line="1083"/>
         <source>Sorry, failed to create user directory.</source>
         <translation>Bocs, de nem sikerült felhasználói könyvtárat létrehozni.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1089"/>
+        <location filename="../minstall.cpp" line="1090"/>
         <source>Sorry, failed to name user directory.</source>
         <translation>Bocs, de nem sikerült elnevezni a felhasználói könyvtárat.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1114"/>
+        <location filename="../minstall.cpp" line="1115"/>
         <source>Sorry, failed to save desktop changes.</source>
         <translation>Sajnáljuk, nem sikerült megmenteni asztali változások.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1122"/>
+        <location filename="../minstall.cpp" line="1123"/>
         <source>Sorry, failed to set ownership of user directory.</source>
         <translation>Bocs, de nem sikerült a felhasználói könyvtár tulajdonjogait beállítani.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1171"/>
+        <location filename="../minstall.cpp" line="1172"/>
         <source>Sorry, unable to set root password.</source>
         <translation>Bocs, de nem lehet a root jelszót beállítani.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1198"/>
+        <location filename="../minstall.cpp" line="1199"/>
         <source>Sorry, unable to set user password.</source>
         <translation>Bocs, de nem lehet a felhasználói jelszót beállítani.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1211"/>
+        <location filename="../minstall.cpp" line="1212"/>
         <source>The user name needs to be at least
 2 characters long. Please select
 a longer name before proceeding.</source>
@@ -420,7 +420,7 @@ a longer name before proceeding.</source>
 Válassz egy hosszabb nevet mielőtt folytatnád.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1217"/>
+        <location filename="../minstall.cpp" line="1218"/>
         <source>The user name needs be lower case and it
 cannot contain special characters or spaces
 please choose another name before proceeding.</source>
@@ -428,8 +428,8 @@ please choose another name before proceeding.</source>
 Kérjük, válasszon másik nevet előtt.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1224"/>
-        <location filename="../minstall.cpp" line="1259"/>
+        <location filename="../minstall.cpp" line="1225"/>
+        <location filename="../minstall.cpp" line="1260"/>
         <source>The user password needs to be at least
 2 characters long. Please select
 a longer password before proceeding.</source>
@@ -438,8 +438,8 @@ a longer password before proceeding.</source>
 Válassz egy hosszabb jelszót mielőtt folytatnád.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1231"/>
-        <location filename="../minstall.cpp" line="1266"/>
+        <location filename="../minstall.cpp" line="1232"/>
+        <location filename="../minstall.cpp" line="1267"/>
         <source>The root password needs to be at least
 2 characters long. Please select
 a longer password before proceeding.</source>
@@ -448,7 +448,7 @@ hosszúnak kell lennie. Válassz egy
 hosszabb jelszót mielőtt folytatnád.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1240"/>
+        <location filename="../minstall.cpp" line="1241"/>
         <source>Sorry that name is in use.
 Please select a different name.
 </source>
@@ -457,21 +457,21 @@ Válassz egy másik nevet.
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1247"/>
+        <location filename="../minstall.cpp" line="1248"/>
         <source>The user password entries do
 not match.  Please try again.</source>
         <translation>A felhasználó jelszó bejegyzések
 nem egyeznek. Próbáld meg újra.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1253"/>
+        <location filename="../minstall.cpp" line="1254"/>
         <source>The root password entries do
  not match.  Please try again.</source>
         <translation>A root jelszó bejegyzések nem
 egyeznek. Próbáld meg újra.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1288"/>
+        <location filename="../minstall.cpp" line="1289"/>
         <source>Sorry your computer name needs to be
 at least 2 characters long. You&apos;ll have to
 select a different name before proceeding.</source>
@@ -480,7 +480,7 @@ select a different name before proceeding.</source>
 Válassz egy másik nevet mielőtt folytatnád.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1292"/>
+        <location filename="../minstall.cpp" line="1293"/>
         <source>Sorry your computer name contains invalid characters.
 You&apos;ll have to select a different
 name before proceeding.</source>
@@ -488,7 +488,7 @@ name before proceeding.</source>
 Válassz egy másik nevet mielőtt folytatnád.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1298"/>
+        <location filename="../minstall.cpp" line="1299"/>
         <source>Sorry your computer domain needs to be at least
 2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
@@ -497,7 +497,7 @@ karakternyi hosszúnak kell lennie. Válassz egy
 másik nevet mielőtt folytatnád.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1302"/>
+        <location filename="../minstall.cpp" line="1303"/>
         <source>Sorry your computer domain contains invalid characters.
 You&apos;ll have to select a different
 name before proceeding.</source>
@@ -505,7 +505,7 @@ name before proceeding.</source>
 Válassz egy másik nevet mielőtt folytatnád.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1311"/>
+        <location filename="../minstall.cpp" line="1312"/>
         <source>Sorry your workgroup needs to be at least
 2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
@@ -514,7 +514,7 @@ karakternyi hosszúnak kell lennie. Válassz
 egy másik nevet mielőtt folytatnád.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1721"/>
+        <location filename="../minstall.cpp" line="1722"/>
         <source>MX Linux installation and configuration is complete.
 To use the new installation, reboot without the installation media.
 
@@ -526,44 +526,44 @@ CD nélkül.
 Újra szeretnéd indítani a számítógépet most?  </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1737"/>
+        <location filename="../minstall.cpp" line="1738"/>
         <source>The installation and configuration is incomplete.
 Do you really want to stop now?</source>
         <translation>A telepítés és beállítás még nem teljes.
 Biztos meg akarod állítani a folyamatot?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1812"/>
+        <location filename="../minstall.cpp" line="1813"/>
         <source>&lt;p&gt;&lt;b&gt;General Instructions&lt;/b&gt;&lt;br/&gt;BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.&lt;/p&gt;&lt;p&gt;On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. You will be prompted for confirmation before any destructive actions are performed.&lt;/p&gt;&lt;p&gt;MX Linux requires about 3.5 GB of space. 5 GB or more is preferred. You can use the entire disk or you can put MX Linux on existing partitions. &lt;/p&gt;&lt;p&gt;If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system&apos;s software to set up partitions and boot manager before installing MX Linux.&lt;/p&gt;&lt;p&gt;The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Általános Útmutatók&lt;/b&gt;&lt;br/&gt;MIELŐTT FOLYTATNÁD, ZÁRD BE AZ ÖSSZES EGYÉB ALKALMAZÁST. HA A 3D ASZTALT HASZNÁLOD, JAVASOLT A KIJELENTKEZÉS ÉS A SIMA KDE ASZTALRA VALÓ ÚJBÓLI BEJELENTKEZÉS.&lt;/p&gt;&lt;p&gt;Mindegyik oldalon olvasd el az útmutatókat, válaszd ki a megfelelő beállításokat, majd nyomd meg a Tovább gombot mikor kész vagy. Mindennemű destruktív művelet előtt a beleegyezésed ki lesz kérve.&lt;/p&gt;&lt;p&gt;A MX Linux még a bővebb verzió 3,5 GB-ot. 5 GB vagy annál több rendelkezésre álló hely javasolt. Az egész lemezt is fölhasználhatod vagy már meglévő partíciókra is telepítheted a MX Linux-t.&lt;/p&gt;&lt;p&gt;Ha PC típusú hardvert használsz, akkor futtasd innen a GParted alkalmazást, ha módosítanod kell néhány partíciót az egyéni telepítés előtt. Ha Apple típusú hardvert használsz, soha ne használd a GParted vagy parted alkalmazást a boot lemezeden. Ehelyett használd az OSX alkalmazásait a partíciók beállítására illetve az OSX bootmenedzserét a MX Linux telepítése előtt.&lt;/p&gt;&lt;p&gt;Az ext2, ext3, ext4, jfs, xfs, btrfs és reiserfs fájlrendszerek vannak támogatva, amelyek közül az ext4 az ajánlott.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1823"/>
+        <location filename="../minstall.cpp" line="1824"/>
         <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for badblocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has badblocks.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Korlátozások&lt;/b&gt;&lt;br/&gt;Emlékezz, hogy ezt a programot úgy kapod AHOGY VAN, mindenféle garancia nélkül. Teljesen a te felelőséged az adatok lementése a telepítés folytatása előtt.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Partíciók Kiválasztása&lt;/b&gt;&lt;br/&gt;A MX Linux-nek szüksége van egy root partícióra. A swap partíció használata tetszőleges, ám erősen ajánlott. Ha a későbbiekben szeretnéd használni a MX Linux hibernálás funkcióját, akkor a fizikai memóriánál (RAM) nagyobb méretű swap partícióra szükséged lesz.&lt;/p&gt;&lt;p&gt;Ha a különálló /home partíció mellett döntesz, akkor a későbbiekben könnyebb lesz a rendszer frissítése. Különálló home partíció nélküli rendszer esetén az ilyen, egyszerű frissítés nem lehetséges.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Frissítés&lt;/b&gt;&lt;br/&gt;Ha egy már létező Linux-ot frissítesz, akkor válaszd ki az előzőleg használt /home partíciót és pipáld be a &apos;Adatok meghagyása a /home-ban&apos; opciót.&lt;/p&gt;&lt;p&gt;Ha a root partíción már létező home könyvtárban hagyod meg az adatokat, akkor a telepítő nem fogja újraformázni a root partíciót. Ennek az lesz az eredménye, hogy a telepítés a szokásosnál hosszabb ideig fog tartani.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Ajánlott Fájlrendszer Típus&lt;/b&gt;&lt;br/&gt;Az ext3, ext4, jfs, xfs, btrfs és reiserfs fájlrendszerek egyikét választhatod ki a MX Linux számára.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Hibás Blokkok&lt;/b&gt;&lt;br/&gt;Ha az ext2, ext3 és ext4 fájlrendszert választod, akkor lehetőséged van a merevlemezen esetlegesen előforduló hibás blokkok keresésére és javítására. A hibás blokkok keresése nagyon időigényes. Hacsak nem gyanakszol hibás blokkokra a merevlemezeden, akkor valószínűleg ki szeretnéd hagyni ezt a tesztet.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1837"/>
+        <location filename="../minstall.cpp" line="1838"/>
         <source>Returning to Step 1 to select another disk.</source>
         <translation>Visszatérés az 1. Lépéshez.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1841"/>
+        <location filename="../minstall.cpp" line="1842"/>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2632"/>
+        <location filename="../minstall.cpp" line="2633"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at http://mxlinux.orgThere are volunteers to help you at the MX forum, http://forum.mxlinux.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2646"/>
+        <location filename="../minstall.cpp" line="2647"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - http://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2661"/>
+        <location filename="../minstall.cpp" line="2662"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit http://mxlinux.org or http://antix.freeforums.org&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
@@ -572,105 +572,105 @@ Biztos meg akarod állítani a folyamatot?</translation>
         <translation type="vanished">&lt;p&gt;&lt;b&gt;Külön Köszönet&lt;/b&gt;&lt;br/&gt;Köszönöm mindenkinek aki időt, pénzt, tanácsot, munkát, dicséretet, ötletet, híresztelést és/vagy bátorítást adott, hogy támogassa a MX Linux-t.&lt;/p&gt;&lt;p&gt;Nélkületek nem létezne MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis és antiX Communities&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1844"/>
+        <location filename="../minstall.cpp" line="1845"/>
         <source>&lt;p&gt;&lt;b&gt;Installation in Progress&lt;/b&gt;&lt;br/&gt;MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.&lt;/p&gt;&lt;p&gt;If you click the Abort button, the installation will be stopped as soon as possible.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Telepítés Folyamatban&lt;/b&gt;&lt;br/&gt;A MX Linux telepszik. Új telepítésnél ez valószínűleg 3-20 percet fog igénybe venni a rendszered sebességétől és a általad formázott partíciók méretétől függően.&lt;/p&gt;&lt;p&gt;Ha megnyomod a Megszakít gombot, akkor a telepítés a lehető leghamarább le fog állni.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1856"/>
+        <location filename="../minstall.cpp" line="1857"/>
         <source>Failed to create required partitions.
 Returning to Step 1.</source>
         <translation>A szükséges partíciók létrehozása sikertelen.
 Visszatérés az 1. lépéshez.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1865"/>
+        <location filename="../minstall.cpp" line="1866"/>
         <source>Failed to prepare chosen partitions.
 Returning to Step 1.</source>
         <translation>A kiválasztott partíciók előkészítése sikertelen.
 Visszatérés az 1. lépéshez.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1878"/>
+        <location filename="../minstall.cpp" line="1879"/>
         <source>&lt;p&gt;&lt;b&gt;Select Boot Method&lt;/b&gt;&lt;br/&gt;MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. &lt;p&gt;By default GRUB2 is installed in the Master Boot Record or ESP (EFI System Partition for 64-bit UEFI boot systems) of your boot drive and replaces the boot loader you were using before. This is normal.&lt;/p&gt;&lt;p&gt;If you choose to install GRUB2 at root instead, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.&lt;/p&gt;&lt;p&gt;If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.&lt;/p&gt;</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1887"/>
+        <location filename="../minstall.cpp" line="1888"/>
         <source>&lt;p&gt;&lt;b&gt;Common Services to Enable&lt;/b&gt;&lt;br/&gt;Select any of the these common services that you might need with your system configuration and the services will be started automatically when you start MX Linux.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Általános Szolgáltatások Bekapcsolása&lt;/b&gt;&lt;br/&gt;Válaszd ki bármelyik alábbi általános szolgáltatást melyre szükséged lehet a rendszer beállításai miatt, így azok automatikusan el lesznek indítva a MX Linux indításával együtt.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1894"/>
+        <location filename="../minstall.cpp" line="1895"/>
         <source>&lt;p&gt;&lt;b&gt;Computer Identity&lt;/b&gt;&lt;br/&gt;The computer name is a common unique name which will identify your computer if it is on a network. The computer domain is unlikely to be used unless your ISP or local network requires it.&lt;/p&gt;&lt;p&gt;The computer and domain names can contain only alphanumeric characters, dots, hyphens. They cannot contain blank spaces, start or end with hyphens&lt;/p&gt;&lt;p&gt;The SaMBa Server needs to be activated if you want to use it to share some of your directories or printer with a local computer that is running MS-Windows or Mac OSX.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Számítógép azonosító&lt;/b&gt;&lt;br/&gt;A számítógépnév egy általános, egyedi név, amely azonosítani fogja számítógéped, ha egy hálózatra van csatlakoztatva. A számítógép domént nem valószínű hogy használni kell, hacsak az internet szolgáltató vagy helyi hálózat nem kívánja..&lt;/p&gt;&lt;p&gt;A számítógép és a domain nevek csak alfanumerikus karaktereket tartalmaz, pontok, kötőjelek. Ezek nem tartalmazhatnak szóközt, elején vagy végén kötőjellel.&lt;/p&gt;&lt;p&gt;A SaMBa Szervert aktiválni kell, ha néhány mappádat vagy nyomtatódat meg szeretnéd osztani egy olyan helyi hálózaton, ahol a gépeken MS-Windows vagy Mac OSX fut.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1905"/>
+        <location filename="../minstall.cpp" line="1906"/>
         <source>&lt;p&gt;&lt;b&gt;Localization Defaults&lt;/b&gt;&lt;br/&gt;Set the default keyboard and locale. These will apply unless, they are overridden later by the user.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configure Clock&lt;/b&gt;&lt;br/&gt;If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for &apos;System clock uses LOCAL.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Timezone Settings&lt;/b&gt;&lt;br/&gt;The CD boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Adjust Date &amp; Time...&lt;/p&gt;&lt;p&gt;&lt;b&gt;Service Settings&lt;/b&gt;&lt;br/&gt;Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! </source>
         <translation>&lt;p&gt;&lt;b&gt;Lokalizációs Alapbeállítások&lt;/b&gt;&lt;br/&gt;Állítsd be az alapértelmezett billenytűzetet és helyet. Ezek lesznek érvényesek, hacsak a felhasználó később felül nem írja.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Óra Beállítása&lt;/b&gt;&lt;br/&gt;Ha Apple vagy tisztán Unix alapú számítógéped van, akkor az óra alapértlemezetten a GMT-i (Greenwich-i Idő) vagy UTC-i (Egyetemes Idő) időzónára van állítva.  Ebben az esetben pipáld be a &apos;A számítógép órája LOCAL-re van állítva&apos; boxot.&lt;/p&gt;A CD az GMT/UTC időzónára állítva indul el. Az időzóna átállításához (az újonnan telepített rendszer elindítása után) klikkelj a jobb egérgombbal a Panelon (tálca) található órára és válaszd a &apos;dátum és az idő beállítása&apos; pontot.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1915"/>
+        <location filename="../minstall.cpp" line="1916"/>
         <source>&lt;p&gt;&lt;b&gt;Default User Login&lt;/b&gt;&lt;br/&gt;The root user is similar to the Administrator user in some other operating systems. You should not use the root user as your daily user account. Please enter the name for a new (default) user account that you will use on a daily basis. If needed, you can add other user accounts later with MX User Manager. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Passwords&lt;/b&gt;&lt;br/&gt;Enter a new password for your default user account and for the root account. Each password must be entered twice.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Alapértelmezett Felhasználói Fiók&lt;/b&gt;&lt;br/&gt;A root felhasználó hasonlít a más operációs rendszerekből ismert Adminisztrátori felhasználóhoz. Légyszíves adj megegy nevet az új (alapértelmezett) felhasználói fiókodhoz, melyet napi rendszerességgel fogsz használni. Ha szükséges, később további fiókokat is megadhatsz.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Jelszók&lt;/b&gt;&lt;br/&gt;Adj meg egy-egy új jelszót az alapértelmezett felhasználói és root fiókokhoz. Mindegyik jelszót kettőször kell begépelni.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1926"/>
+        <location filename="../minstall.cpp" line="1927"/>
         <source>&lt;p&gt;&lt;b&gt;Congratulations!&lt;/b&gt;&lt;br/&gt;You have completed the installation of </source>
         <translation>&lt;p&gt;&lt;b&gt;Gratulálunk!&lt;/b&gt;&lt;br/&gt;Sikeresen befejezted a </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1926"/>
+        <location filename="../minstall.cpp" line="1927"/>
         <source>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Finding Applications&lt;/b&gt;&lt;br/&gt;There are hundreds of excellent applications installed with MX Linux. The best way to learn about them is to browse through the Menu and try them. Many of the apps were developed specifically for the Xfce environment. These are shown in the main menus. &lt;p&gt;In addition MX Linux includes many standard Linux applications that are run only from the commandline and therefore do not show up in Menu.&lt;/p&gt;</source>
         <translation>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Programok Megtalálása&lt;/b&gt;&lt;br/&gt;Több száz kitűnő program települt a MX Linux-el. A legjobb mód megismerésükre a Menu böngészése és a menupontok kipróbálása. Az alkalmazások többsége kifejezetten a Xfce felülethez lettek tervezve. Ezek a főbb menükben vannak feltünteteve. Az egyéb alkalmazások a K Menu &gt; Applications&lt;/p&gt;&lt;p&gt;Ráadásképp, a MX Linux sok olyan linxos alkalmazást is tartalmaz, melyek csak a parancssorban futnak, így a Menu-ben nem is jelennek meg.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1938"/>
+        <location filename="../minstall.cpp" line="1939"/>
         <source>&lt;p&gt;&lt;b&gt;Enjoy using MX Linux!&lt;/b&gt;&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Szívesen használja MX Linux!&lt;/b&gt;&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1952"/>
-        <location filename="../minstall.cpp" line="1964"/>
+        <location filename="../minstall.cpp" line="1953"/>
+        <location filename="../minstall.cpp" line="1965"/>
         <source>Next &gt;</source>
         <translation>Következő&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1962"/>
+        <location filename="../minstall.cpp" line="1963"/>
         <source>Finish</source>
         <translation>Befejezés</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2428"/>
+        <location filename="../minstall.cpp" line="2429"/>
         <source>MX Linux is installing, are you 
 sure you want to Close now?</source>
         <translation>A MX Linux telepszik, biztosan meg akarod szakítani?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2455"/>
+        <location filename="../minstall.cpp" line="2456"/>
         <source>Deleting old system</source>
         <translation>Régi rendszer törlése</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2464"/>
+        <location filename="../minstall.cpp" line="2465"/>
         <source>Failed to delete old MX Linux on destination.
 Returning to Step 1.</source>
         <translation>A régi MX Linux törlése sikertelen a célmeghajtón.
 Visszatérés az 1. lépéshez.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2490"/>
+        <location filename="../minstall.cpp" line="2491"/>
         <source>Copying new system</source>
         <translation>Új rendszer másolása</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2514"/>
+        <location filename="../minstall.cpp" line="2515"/>
         <source>Fixing configuration</source>
         <translation>Beállítások javítása</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2605"/>
+        <location filename="../minstall.cpp" line="2606"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
         <translation>Nem sikerült a kijelölt helyre írni a MX Linux-t.
@@ -681,7 +681,7 @@ Visszatérés az 1. Lépéshez.</translation>
         <translation type="vanished">&lt;p&gt;&lt;b&gt;Segítség Szerzése&lt;/b&gt;&lt;br/&gt;A MX Linux-ről alapinformációk a a http://antix.mepis.com és http://www.mepiscommunity.org/mx oldalon találhatók, valamint önkéntesek is segítenek probléma estén a antiX Fórumon, http://antix.freeforums.org és MEPIS Community Forum http://forum.mepiscommunity.org &lt;/p&gt;&lt;p&gt;Ha segítséget kérsz, emlékezz hogy a problámát a problémád és számítógéped valamennyi szükséges részletével együtt írd le. Az &apos;ez nem működik&apos; típusú kijelentések általában nem segítenek a probléma megoldásában.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2640"/>
+        <location filename="../minstall.cpp" line="2641"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from CD and running one of the utilities in System Configuration or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux CD to recover data from MS-Windows systems!&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;A Telepített Rendszer Javítása&lt;/b&gt;&lt;br/&gt;Ha a MX Linux nem működik a merevlemezről többé, akkor néha meg lehet oldani a problémát a CD-ről való indítás segítségével. Választhatjuk a CD-n lévő System Configuration-ben lévő segédek egyikét, vagy éppen valamelyik szokásos Linux alkalmazást, hogy kijavítsuk a rendszerhibát.&lt;/p&gt;&lt;p&gt;A MX Linux CD-t MS-WIndows rendszerekről való adatmentésre is fel tudod használni!&lt;/p&gt;</translation>
     </message>
@@ -690,7 +690,7 @@ Visszatérés az 1. Lépéshez.</translation>
         <translation type="vanished">&lt;p&gt;&lt;b&gt;Támogasd a MX Linux-t&lt;/b&gt;&lt;br/&gt;A MX Linux-t olyan emberek támogatják, mint te. Néhányan a http://antix.freeforums.org - http://forum.mepiscommunity.org fórumon keresztül segítenek másokat, mások fájlokat fordítanak más nyelvekre, javaslatokat tesznek, dokumentációt írnak, vagy éppen az új szofvert tesztelik.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2653"/>
+        <location filename="../minstall.cpp" line="2654"/>
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;A Hangkeverő Beállítása&lt;/b&gt;&lt;br/&gt;A MX Linux megpróbálja beállítani a hangkeverőt a számodra, de néha szükséges lehet a hangerő felerősítése, valamint hangcsatornák némításának kikapcsolása a hallható hang érdekében.&lt;/p&gt; &lt;p&gt;A keverő ikonja a panelen megtalálható. Nyomd meg, hogy megnyisd a keverőt.&lt;/p&gt;</translation>
     </message>
@@ -708,31 +708,36 @@ Visszatérés az 1. Lépéshez.</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="47"/>
+        <source>Close</source>
+        <translation type="unfinished">Bezár</translation>
+    </message>
+    <message>
+        <location filename="../meinstall.ui" line="67"/>
         <source>Next &gt;</source>
         <translation>Következő &gt;</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="50"/>
+        <location filename="../meinstall.ui" line="70"/>
         <source>Alt+N</source>
         <translation>Alt+N</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="73"/>
+        <location filename="../meinstall.ui" line="80"/>
         <source>&lt; Back</source>
         <translation>&lt; Vissza</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="76"/>
+        <location filename="../meinstall.ui" line="83"/>
         <source>Alt+K</source>
         <translation>Alt+K</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="123"/>
+        <location filename="../meinstall.ui" line="130"/>
         <source>Terms of Use</source>
         <translation>Használat feltételei</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="180"/>
+        <location filename="../meinstall.ui" line="187"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -745,389 +750,389 @@ p, li { white-space: pre-wrap; }
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="223"/>
+        <location filename="../meinstall.ui" line="230"/>
         <source>1c. Select type of installation</source>
         <translation>1c. Válassz telepítési típust</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="269"/>
+        <location filename="../meinstall.ui" line="276"/>
         <source>Leave free space up to:</source>
         <translation>Ennyi szabad hely maradjon:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="304"/>
+        <location filename="../meinstall.ui" line="311"/>
         <source>MB </source>
         <translation>MB</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="320"/>
+        <location filename="../meinstall.ui" line="327"/>
         <source>Auto-install using entire disk </source>
         <translation>Automatikus telepítés az egész lemez felhasználásával</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="336"/>
+        <location filename="../meinstall.ui" line="343"/>
         <source>Custom install on existing partitions</source>
         <translation>Egyéni telepítés meglévő partíciókra</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="355"/>
+        <location filename="../meinstall.ui" line="362"/>
         <source>1a. Choose disk for installation</source>
         <translation>1a. Válassz lemezt a telepítésre</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="395"/>
+        <location filename="../meinstall.ui" line="402"/>
         <source>Use disk:</source>
         <translation>Ezt a lemezt használd:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="414"/>
+        <location filename="../meinstall.ui" line="421"/>
         <source>1b. Rearrange disk partitions (optional)</source>
         <translation>1b. A partíciók átrendezése (opcionális)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="441"/>
+        <location filename="../meinstall.ui" line="448"/>
         <source>Run partition tool...</source>
         <translation>Fuss partíció eszköz...</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="454"/>
+        <location filename="../meinstall.ui" line="461"/>
         <source>Modify partitions:</source>
         <translation>Partíciók módosítása:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="518"/>
+        <location filename="../meinstall.ui" line="525"/>
         <source>2b. Preferences</source>
         <translation>2b. Beállítások</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="545"/>
+        <location filename="../meinstall.ui" line="552"/>
         <source>Preserve data in /home (if upgrading)</source>
         <translation>Adatok meghagyása a /home-ban (frissítéskor)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="580"/>
+        <location filename="../meinstall.ui" line="587"/>
         <source>Filesystem type:</source>
         <translation>Fájlrendszer típus:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="606"/>
+        <location filename="../meinstall.ui" line="613"/>
         <source>Change default / (root) partition label:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="620"/>
+        <location filename="../meinstall.ui" line="627"/>
         <source>ext4</source>
         <translation>ext4</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="625"/>
+        <location filename="../meinstall.ui" line="632"/>
         <source>ext3</source>
         <translation>ext3</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="630"/>
+        <location filename="../meinstall.ui" line="637"/>
         <source>ext2</source>
         <translation>ext2</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="635"/>
+        <location filename="../meinstall.ui" line="642"/>
         <source>jfs</source>
         <translation>jfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="640"/>
+        <location filename="../meinstall.ui" line="647"/>
         <source>xfs</source>
         <translation>xfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="645"/>
+        <location filename="../meinstall.ui" line="652"/>
         <source>btrfs</source>
         <translation>btrfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="650"/>
+        <location filename="../meinstall.ui" line="657"/>
         <source>reiserfs</source>
         <translation>reiserfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="661"/>
+        <location filename="../meinstall.ui" line="668"/>
         <source>Change default /home partition label:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="680"/>
+        <location filename="../meinstall.ui" line="687"/>
         <source>Check for badblocks (takes longer)</source>
         <translation>Hibás blokkok keresése (tovább tart)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="699"/>
+        <location filename="../meinstall.ui" line="706"/>
         <source>2a. Choose partitions</source>
         <translation>2a. Válassz partíciókat</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="729"/>
+        <location filename="../meinstall.ui" line="736"/>
         <source>/ (root) partition:</source>
         <translation>/(root) partíció:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="745"/>
+        <location filename="../meinstall.ui" line="752"/>
         <source>swap partition:</source>
         <translation>swap partíció:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="761"/>
+        <location filename="../meinstall.ui" line="768"/>
         <source>/home partition:</source>
         <translation>/home partíció:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="840"/>
-        <location filename="../meinstall.ui" line="1191"/>
+        <location filename="../meinstall.ui" line="847"/>
+        <location filename="../meinstall.ui" line="1198"/>
         <source>root</source>
         <translation>root</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="876"/>
+        <location filename="../meinstall.ui" line="883"/>
         <source>3. Installation in progress</source>
         <translation>3. A telepítés folyamatban</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="919"/>
+        <location filename="../meinstall.ui" line="926"/>
         <source>Abort</source>
         <translation>Megszakít</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="922"/>
-        <location filename="../meinstall.ui" line="1140"/>
+        <location filename="../meinstall.ui" line="929"/>
+        <location filename="../meinstall.ui" line="1147"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="961"/>
+        <location filename="../meinstall.ui" line="968"/>
         <source>Ready to install MX Linux filesystem</source>
         <translation>MX Linux fájlrendszer telepítésére készen</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="983"/>
+        <location filename="../meinstall.ui" line="990"/>
         <source>Tips</source>
         <translation>Tippek</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1057"/>
+        <location filename="../meinstall.ui" line="1064"/>
         <source>4. Select Boot Method</source>
         <translation>4. Válassz Indítási Módot</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1090"/>
+        <location filename="../meinstall.ui" line="1097"/>
         <source>MBR</source>
         <translation>MBR</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1093"/>
+        <location filename="../meinstall.ui" line="1100"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1121"/>
+        <location filename="../meinstall.ui" line="1128"/>
         <source>Install on:</source>
         <translation>Telepítés ezen:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1137"/>
+        <location filename="../meinstall.ui" line="1144"/>
         <source>Install GRUB for MX Linux and Windows</source>
         <translation>GRUB telepítése MX Linux és Windows számára</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1159"/>
+        <location filename="../meinstall.ui" line="1166"/>
         <source>System boot disk:</source>
         <translation>Rendszer boot lemez:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1204"/>
+        <location filename="../meinstall.ui" line="1211"/>
         <source>EFI System Partition</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1207"/>
+        <location filename="../meinstall.ui" line="1214"/>
         <source>ESP</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1277"/>
+        <location filename="../meinstall.ui" line="1284"/>
         <source>Common Services to Enable</source>
         <translation>Általános szolgáltatások elindítása</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1317"/>
+        <location filename="../meinstall.ui" line="1324"/>
         <source>Service</source>
         <translation>Szolgáltatás</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1322"/>
+        <location filename="../meinstall.ui" line="1329"/>
         <source>Description</source>
         <translation>Leírás</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1358"/>
+        <location filename="../meinstall.ui" line="1365"/>
         <source>5. Computer Network Names</source>
         <translation>5. Számítógép hálózati nevek</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1385"/>
+        <location filename="../meinstall.ui" line="1392"/>
         <source>Workgroup</source>
         <translation>Munkacsoport:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1398"/>
+        <location filename="../meinstall.ui" line="1405"/>
         <source>Workgroup:</source>
         <translation>Munkacsoport:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1414"/>
+        <location filename="../meinstall.ui" line="1421"/>
         <source>SaMBa Server for MS Networking</source>
         <translation>SaMBa szerver MS hálózatokhoz</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1430"/>
+        <location filename="../meinstall.ui" line="1437"/>
         <source>example.dom</source>
         <translation>pelda.dom</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1443"/>
+        <location filename="../meinstall.ui" line="1450"/>
         <source>Computer domain:</source>
         <translation>Számítógép domén:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1459"/>
+        <location filename="../meinstall.ui" line="1466"/>
         <source>mx1</source>
         <translation>mx1</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1475"/>
+        <location filename="../meinstall.ui" line="1482"/>
         <source>Computer name:</source>
         <translation>Számítógép név:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1548"/>
+        <location filename="../meinstall.ui" line="1555"/>
         <source>6d. Service Settings (advanced)</source>
         <translation>6d. Szolgáltatás beállításai (haladó) </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1566"/>
+        <location filename="../meinstall.ui" line="1573"/>
         <source>Adjust which services should run at startup</source>
         <translation>Állítsa mely szolgáltatások futtatott </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1569"/>
+        <location filename="../meinstall.ui" line="1576"/>
         <source>View</source>
         <translation>kilátás </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1598"/>
+        <location filename="../meinstall.ui" line="1605"/>
         <source>6b. Configure Clock</source>
         <translation>6b. Óra Beállítása</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1626"/>
+        <location filename="../meinstall.ui" line="1633"/>
         <source>Format:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1643"/>
+        <location filename="../meinstall.ui" line="1650"/>
         <source>System clock uses LOCAL</source>
         <translation>A számítógép órája LOCAL-re van állítva</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1672"/>
+        <location filename="../meinstall.ui" line="1679"/>
         <source>6a. Localization Defaults</source>
         <translation>6a. Lokalizációs Alapértelmezések</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1702"/>
+        <location filename="../meinstall.ui" line="1709"/>
         <source>Locale:</source>
         <translation>Hely:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1741"/>
+        <location filename="../meinstall.ui" line="1748"/>
         <source>Keyboard:</source>
         <translation>Billentyűzet:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1760"/>
+        <location filename="../meinstall.ui" line="1767"/>
         <source>6c. Timezone Settings</source>
         <translation>6c. Válasszon időzónát</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1766"/>
+        <location filename="../meinstall.ui" line="1773"/>
         <source>Timezone:</source>
         <translation>Időzóna:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1820"/>
+        <location filename="../meinstall.ui" line="1827"/>
         <source>7b. Root (administrator) Account</source>
         <translation>7b. Root (rendszergazda) Fiók</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1879"/>
+        <location filename="../meinstall.ui" line="1886"/>
         <source>Confirm root password:</source>
         <translation>Root jelszó megerősítése:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1895"/>
+        <location filename="../meinstall.ui" line="1902"/>
         <source>Root password:</source>
         <translation>Root jelszó:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1927"/>
+        <location filename="../meinstall.ui" line="1934"/>
         <source>7a. Default User Account</source>
         <translation>7a. Alapértelmezett Felhasználói Fiók</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1989"/>
+        <location filename="../meinstall.ui" line="1996"/>
         <source>username</source>
         <translation>felhasználónév</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2002"/>
+        <location filename="../meinstall.ui" line="2009"/>
         <source>Confirm user password:</source>
         <translation>felhasználó jelszavának megerősítése:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2018"/>
+        <location filename="../meinstall.ui" line="2025"/>
         <source>Default user password:</source>
         <translation>Alapértelmezett felhasználói jelszó:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2034"/>
+        <location filename="../meinstall.ui" line="2041"/>
         <source>Default user login name:</source>
         <translation>Alapértlemezett felhasználói login név:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2047"/>
+        <location filename="../meinstall.ui" line="2054"/>
         <source>Autologin</source>
         <translation>Autologin</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2054"/>
+        <location filename="../meinstall.ui" line="2061"/>
         <source>Show passwords</source>
         <translation>Megjelenítés jelszavak</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2061"/>
+        <location filename="../meinstall.ui" line="2068"/>
         <source>Desktop modification made in the live environment will be carried over to the installed OS</source>
         <translation>Desktop módosítás történt a valós környezetben átviszik a telepített operációs rendszereket</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2064"/>
+        <location filename="../meinstall.ui" line="2071"/>
         <source>Save live desktop changes</source>
         <translation>Mentsd élő asztali változások</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2096"/>
+        <location filename="../meinstall.ui" line="2103"/>
         <source>Reminders</source>
         <translation>Emlékeztetők</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2150"/>
+        <location filename="../meinstall.ui" line="2157"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -1145,12 +1150,11 @@ p, li { white-space: pre-wrap; }
         <translation>MX Linux telepítő</translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="100"/>
         <source>Close</source>
-        <translation>Bezár</translation>
+        <translation type="vanished">Bezár</translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="127"/>
+        <location filename="../memain.ui" line="58"/>
         <source>Help</source>
         <translation>Segítség</translation>
     </message>
