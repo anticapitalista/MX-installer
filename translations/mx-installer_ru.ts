@@ -1179,7 +1179,7 @@ p, li { white-space: pre-wrap; }
         <translation>Закрыть</translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="127"/>
+        <location filename="../memain.ui" line="146"/>
         <source>Help</source>
         <translation>Справка</translation>
     </message>

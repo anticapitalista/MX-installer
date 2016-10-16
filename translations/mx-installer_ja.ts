@@ -1177,7 +1177,7 @@ p, li { white-space: pre-wrap; }
         <translation>閉じる</translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="127"/>
+        <location filename="../memain.ui" line="146"/>
         <source>Help</source>
         <translation>ヘルプ</translation>
     </message>

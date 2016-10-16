@@ -1178,7 +1178,7 @@ p, li { white-space: pre-wrap; }
         <translation>Κλείσιμο</translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="127"/>
+        <location filename="../memain.ui" line="146"/>
         <source>Help</source>
         <translation>Βοήθεια</translation>
     </message>

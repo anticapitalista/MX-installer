@@ -1154,7 +1154,7 @@ p, li { white-space: pre-wrap; }
         <translation>Zavřít</translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="127"/>
+        <location filename="../memain.ui" line="146"/>
         <source>Help</source>
         <translation>Nápověda</translation>
     </message>

@@ -1183,7 +1183,7 @@ p, li { white-space: pre-wrap; }
         <translation>Chiudi</translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="127"/>
+        <location filename="../memain.ui" line="146"/>
         <source>Help</source>
         <translation>Aiuto</translation>
     </message>

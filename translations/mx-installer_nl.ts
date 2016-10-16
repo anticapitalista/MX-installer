@@ -1191,7 +1191,7 @@ p, li { white-space: pre-wrap; }
         <translation>Sluiten</translation>
     </message>
     <message>
-        <location filename="../memain.ui" line="127"/>
+        <location filename="../memain.ui" line="146"/>
         <source>Help</source>
         <translation>Help</translation>
     </message>
