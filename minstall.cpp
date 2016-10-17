@@ -1106,6 +1106,7 @@ bool MInstall::setUserName()
     }
     // saving Desktop changes
     if (saveDesktopCheckBox->isChecked()) {
+        runCmd("su -c 'dconf reset /org/blueman/transfer/shared-path' demo"); //reset blueman path
         cmd = QString("rsync -a /home/demo/ %1 --exclude '.cache' --exclude '.gvfs' --exclude '.dbus' --exclude '.Xauthority' --exclude '.ICEauthority' --exclude '.mozilla' --exclude 'Installer.desktop'").arg(dpath);
         if (runCmd(cmd.toUtf8()) != 0) {
             setCursor(QCursor(Qt::ArrowCursor));
@@ -1404,7 +1405,7 @@ void MInstall::setLocale()
     if (homedev != "/dev/root") {
         runCmd(QString("mount %1 /mnt/antiX/home").arg(homedev));
     }
-    system("cp -f /etc/adjtime /mnt/antiX/etc/");   
+    system("cp -f /etc/adjtime /mnt/antiX/etc/");
 
     // Set clock format
     if (radio12h->isChecked()) {
@@ -1839,7 +1840,7 @@ void MInstall::pageDisplayed(int next)
         setCursor(QCursor(Qt::WaitCursor));
         tipsEdit->setText(tr("<p><b>Special Thanks</b><br/>Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.</p>"
                              "<p>Without you there would be no MX Linux.</p>"
-                             "<p>anticapitalista, Mepis and antiX Communities</p>"));
+                             "<p>anticapitalista, MX Community</p>"));
         ((MMain *)mmn)->setHelpText(tr("<p><b>Installation in Progress</b><br/>"
                                        "MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.</p>"
                                        "<p>If you click the Abort button, the installation will be stopped as soon as possible.</p>"));
@@ -1979,7 +1980,7 @@ void MInstall::firstRefresh(QDialog *main)
 {
     mmn = main;
     // disable automounting in Thunar
-    system("sudo -Eu demo bash -c 'xfconf-query --channel thunar-volman --property /automount-drives/enabled --set false'");
+    system("su -c 'xfconf-query --channel thunar-volman --property /automount-drives/enabled --set false' demo");
     refresh();
 }
 
@@ -2329,13 +2330,13 @@ void MInstall::on_qtpartedButton_clicked()
 
 // disk selection changed, rebuild dropdown menus
 void MInstall::on_diskCombo_activated(QString)
-{    
+{
     QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
 
     rootCombo->clear();
     swapCombo->clear();
     homeCombo->clear();
-    swapCombo->addItem("none - or existing"); 
+    swapCombo->addItem("none - or existing");
     homeCombo->addItem("root");
     removedItem = "";
 
@@ -2629,8 +2630,8 @@ void MInstall::copyTime()
     switch (i) {
     case 1:
         tipsEdit->setText(tr("<p><b>Getting Help</b><br/>"
-                             "Basic information about MX Linux is at http://antix.mepis.com and http://www.mepiscommunity.org/mx. "
-                             "There are volunteers to help you at the antiX Forum, http://antix.freeforums.org and the MEPIS Community Forum http://forum.mepiscommunity.org </p>"
+                             "Basic information about MX Linux is at http://mxlinux.org"
+                             "There are volunteers to help you at the MX forum, http://forum.mxlinux.org </p>"
                              "<p>If you ask for help, please remember to describe your problem and your computer "
                              "in some detail. Usually statements like 'it didn't work' are not helpful.</p>"));
         break;
@@ -2644,7 +2645,7 @@ void MInstall::copyTime()
     case 30:
         tipsEdit->setText(tr("<p><b>Support MX Linux</b><br/>"
                              "MX Linux is supported by people like you. Some help others at the "
-                             "support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different "
+                             "support forum - http://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different "
                              "languages, or make suggestions, write documentation, or help test new software.</p>"));
         break;
 
@@ -2658,7 +2659,7 @@ void MInstall::copyTime()
 
     case 60:
         tipsEdit->setText(tr("<p><b>Keep Your Copy of MX Linux up-to-date</b><br/>"
-                             "For MX Linux information and updates please visit http://antix.freeforums.org or http://forum.mepiscommunity.org </p>"));
+                             "For MX Linux information and updates please visit http://mxlinux.org or http://antix.freeforums.org</p>"));
         break;
 
     default:
