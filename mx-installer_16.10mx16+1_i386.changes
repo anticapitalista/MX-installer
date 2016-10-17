@@ -18,20 +18,20 @@ Changes:
  .
    * changed GUI
 Checksums-Sha1:
- d2f052d1ef3f467b7b99800fef284f2b29981e9a 422460 mx-installer_16.10mx16+1_i386.deb
+ 577cc0c80bb9c681ce9f9b68c6358a6b547cdf40 408972 mx-installer_16.10mx16+1_i386.deb
 Checksums-Sha256:
- eb1de028fdab41dd399ba5c652115715816b592eb339494b758b5d560055e1d7 422460 mx-installer_16.10mx16+1_i386.deb
+ 27ceb7e123fd91ab56dff20b39724a6d6e0078dc01edc61b5b4c629d072d43d3 408972 mx-installer_16.10mx16+1_i386.deb
 Files:
- 86370155758c676e6e71225ddbf09c71 422460 system optional mx-installer_16.10mx16+1_i386.deb
+ 8200915bde0538c7046c3eeec6024b61 408972 system optional mx-installer_16.10mx16+1_i386.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJYBOeSAAoJEHCTjHgGee6YnPQIAKMoqQM+26ZycdihEOgx9021
-vBmvVv4SM5Z36hGi33fWG+inn0PrG4142dqgsHJAm2y87QkF3LYsMW4Gld6oBM9n
-UepIoiEHDjC/c4u7lbuvYdxDBsUCBdz5xx2058pS9FOUNTUBAPjXj03yCh+wk5Hg
-4Mj+E0hUlLKh1yhkfX4RWcbavbnRQ8qncbfkneMuKqMYoLeDXPGD79Vs4dku0467
-4l/NJJdKu5nsO84zxM6ZSyLieQVsYIbvlmWqiNhS7BU3PNBJ5ArgyFFuZgIDTcbw
-5vm5wi05glwWCFm9ZM1obt+qbNt09Ea/q1udvnGEmckkaFw0XK54tzIqtw4E1kQ=
-=j/t6
+iQEcBAEBAgAGBQJYBTvDAAoJEHCTjHgGee6Yn+EH/jW6UtzsJtWulaKuqH1DWpCr
+7vv5h6B8Ci5CGU0nEynYYUQ5yuhwlZvwqEK6zbuDpQya/f+FFiTuJNx/FBg3Bq5v
+zr7IagfjhzsK4YXZcXxO6/K51FLfNNTvWB6aAmiroXDzcoA1rtAKOPEb/rp6rc9M
+mMRJ0EnDpIAsAxsBUdgWHb39eHDSqRx59kJJ6rKHwtVUde4nyMqqOeTTzJLXu3AX
+1PLHongJD6xpqtLwdv1VxNXwmUlwapgLdfAvmeuRbWQQCK4TuvoHwDiJQGeovHwV
++HMHuCDzJjBbq8U8l49SqY6yq2Jq0+30blHJCM6XAO6FUoWKpUW7dfq5AprqNSY=
+=Z5vb
 -----END PGP SIGNATURE-----

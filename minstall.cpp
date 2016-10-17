@@ -2631,8 +2631,8 @@ void MInstall::copyTime()
     switch (i) {
     case 1:
         tipsEdit->setText(tr("<p><b>Getting Help</b><br/>"
-                             "Basic information about MX Linux is at http://mxlinux.org"
-                             "There are volunteers to help you at the MX forum, http://forum.mxlinux.org </p>"
+                             "Basic information about MX Linux is at https://mxlinux.org "
+                             "There are volunteers to help you at the MX forum, https://forum.mxlinux.org </p>"
                              "<p>If you ask for help, please remember to describe your problem and your computer "
                              "in some detail. Usually statements like 'it didn't work' are not helpful.</p>"));
         break;
@@ -2646,7 +2646,7 @@ void MInstall::copyTime()
     case 30:
         tipsEdit->setText(tr("<p><b>Support MX Linux</b><br/>"
                              "MX Linux is supported by people like you. Some help others at the "
-                             "support forum - http://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different "
+                             "support forum - https://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different "
                              "languages, or make suggestions, write documentation, or help test new software.</p>"));
         break;
 
@@ -2660,7 +2660,7 @@ void MInstall::copyTime()
 
     case 60:
         tipsEdit->setText(tr("<p><b>Keep Your Copy of MX Linux up-to-date</b><br/>"
-                             "For MX Linux information and updates please visit http://mxlinux.org or http://antix.freeforums.org</p>"));
+                             "For MX Linux information and updates please visit https://mxlinux.org or http://antix.freeforums.org</p>"));
         break;
 
     default:
