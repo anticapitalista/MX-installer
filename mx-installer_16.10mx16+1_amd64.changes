@@ -1,6 +1,3 @@
------BEGIN PGP SIGNED MESSAGE-----
-Hash: SHA1
-
 Format: 1.8
 Date: Sun, 16 Oct 2016 10:51:15 -0400
 Source: mx-installer
@@ -18,26 +15,14 @@ Changes:
  .
    * changed GUI
 Checksums-Sha1:
- 641afa5165a663ff810e9c0f90c399fc054dd02a 1169 mx-installer_16.10mx16+1.dsc
- d1eabdaf77352e04db5f48715bd51d289bdcd049 447728 mx-installer_16.10mx16+1.tar.xz
- aec24c04153fcc8682f7e162948adccdcf4ee391 410606 mx-installer_16.10mx16+1_amd64.deb
+ 0d63f281d73cfa2dd7bbb8cb5148e8954c2362aa 648 mx-installer_16.10mx16+1.dsc
+ 907a76761413e209d575043b9944b97b1f703aec 342272 mx-installer_16.10mx16+1.tar.xz
+ ee839db3fbd155e91fcd2af2b15f0610b0079878 407164 mx-installer_16.10mx16+1_amd64.deb
 Checksums-Sha256:
- f625b475be8dc4640d8e93615caf2dd4be5f7384efa372340856f61a73a72b7d 1169 mx-installer_16.10mx16+1.dsc
- 4647aee285263f44493482d9e925a4a141cca4668fc39de9c649cfdcf1ebad08 447728 mx-installer_16.10mx16+1.tar.xz
- cad4649372cb37d20cfae51c69dddec8aae18e73316add2e4b3ab21193cfcbea 410606 mx-installer_16.10mx16+1_amd64.deb
+ 00ba77f9be0f17fe5af649dc2a9ffa9d785b93114bf76a9048b7153903bbf813 648 mx-installer_16.10mx16+1.dsc
+ fd373376b179a59edadfbe6988b62e48d9832582d72fef32b17869cc5f648faa 342272 mx-installer_16.10mx16+1.tar.xz
+ 9fcdf0d5fc678a75dbc9391b08425d78c9df00363af3a0e9de59a803d61d4822 407164 mx-installer_16.10mx16+1_amd64.deb
 Files:
- 5d91e14ae4d8f50bbfe03984a7de2ecd 1169 system optional mx-installer_16.10mx16+1.dsc
- 1f0baa773e8733225a2b8409329a0ed6 447728 system optional mx-installer_16.10mx16+1.tar.xz
- aacc2b083563f1fef09b78511546dbce 410606 system optional mx-installer_16.10mx16+1_amd64.deb
-
------BEGIN PGP SIGNATURE-----
-Version: GnuPG v1
-
-iQEcBAEBAgAGBQJYBTqNAAoJEHCTjHgGee6Y1dwIAIOZWL2stl8HCB/hGrjTT6Ag
-SKDcmw2Wy9xCgAqE9LrxXewAv4Xr0sNIYf7UTiiexGtiBc1b1sLugoPzoMgT4W6q
-Q4rvA2ptrbeetBicXQKTUiJn6cNOqH4QQ6ygJabI4+0FHpQkFOnduCICMEXU8fLt
-WUJP/7K0wbCDMJnT+yjlU37Gc8H1Jd249dyYqZPoJ3IODB2wfeIiOG94bUaEsy9b
-HAWASy/24pauTQGATkGxo6o4NtXs3c7FAxDyImtY6H12u9Nhb24YOzlqP+p6SDAG
-X8YdaKGpAYdCtOJbZZ3/U6yAP7ctRNfR2e/hmjRI/nRqOdgQHD223u49c5KmaQ0=
-=l+xL
------END PGP SIGNATURE-----
+ 18f4346c59090aff7ebcc7e85ac39977 648 system optional mx-installer_16.10mx16+1.dsc
+ b306f374e4be07490a9a7370fe92eba5 342272 system optional mx-installer_16.10mx16+1.tar.xz
+ 0cd55c794c543cc4ef651e68956cb75c 407164 system optional mx-installer_16.10mx16+1_amd64.deb
