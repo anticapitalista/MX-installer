@@ -2649,7 +2649,7 @@ void MInstall::copyTime()
 
     case 15:
         tipsEdit->setText(tr("<p><b>Repairing Your Installation</b><br/>"
-                             "If MX Linux stops working from the hard drive, sometimes it's possible to fix the problem by booting from CD and running one of the utilities in System Configuration or by using one of the regular Linux tools to repair the system.</p>"
+                             "If MX Linux stops working from the hard drive, sometimes it's possible to fix the problem by booting from LiveDVD or LiveUSB and running one of the utilities in MX Tools or by using one of the regular Linux tools to repair the system.</p>"
                              "<p>You can also use your MX Linux CD to recover data from MS-Windows systems!</p>"));
         break;
 
