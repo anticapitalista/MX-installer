@@ -971,7 +971,7 @@ bool MInstall::installLoader()
             progress->close();
             setCursor(QCursor(Qt::ArrowCursor));
             QMessageBox::critical(this, QString::null,
-                                  tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function."));
+                                  tr("Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the LiveDVD or LiveUSB and repair the installation with the reinstall GRUB function."));
             system("umount /mnt/antiX/proc; umount /mnt/antiX/sys; umount /mnt/antiX/dev");
             if (system("mountpoint -q /mnt/antiX/boot/efi") == 0) {
                 system("umount /mnt/antiX/boot/efi");
@@ -1915,7 +1915,7 @@ void MInstall::pageDisplayed(int next)
         setCursor(QCursor(Qt::ArrowCursor));
         ((MMain *)mmn)->setHelpText(tr("<p><b>Localization Defaults</b><br/>Set the default keyboard and locale. These will apply unless, they are overridden later by the user.</p>"
                                        "<p><b>Configure Clock</b><br/>If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for 'System clock uses LOCAL.'</p>"
-                                       "<p><b>Timezone Settings</b><br/>The CD boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Adjust Date & Time...</p>"
+                                       "<p><b>Timezone Settings</b><br/>The system boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Adjust Date & Time...</p>"
                                        "<p><b>Service Settings</b><br/>Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! "));
         nextButton->setEnabled(true);
         backButton->setEnabled(false);
@@ -2650,7 +2650,7 @@ void MInstall::copyTime()
     case 15:
         tipsEdit->setText(tr("<p><b>Repairing Your Installation</b><br/>"
                              "If MX Linux stops working from the hard drive, sometimes it's possible to fix the problem by booting from LiveDVD or LiveUSB and running one of the utilities in MX Tools or by using one of the regular Linux tools to repair the system.</p>"
-                             "<p>You can also use your MX Linux CD to recover data from MS-Windows systems!</p>"));
+                             "<p>You can also use your MX Linux LiveDVD or LiveUSB to recover data from MS-Windows systems!</p>"));
         break;
 
     case 30:
