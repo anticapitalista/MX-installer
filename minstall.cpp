@@ -961,7 +961,7 @@ bool MInstall::installLoader()
         if (arch == "i686") { // rename arch to match grub-install target
             arch = "i386";
         }
-        cmd = QString("chroot /mnt/antiX grub-install --target=%1-efi --efi-directory=/boot/efi --bootloader-id=MX15 --recheck").arg(arch);
+        cmd = QString("chroot /mnt/antiX grub-install --target=%1-efi --efi-directory=/boot/efi --bootloader-id=MX16 --recheck").arg(arch);
     }
     if (runCmd(cmd) != 0) {
         // error, try again
@@ -980,12 +980,12 @@ bool MInstall::installLoader()
         }
     }
     //  // install GRUB as the active bootloader
-    //  if (grubEspButton->isChecked() && system("efibootmgr -v | grep -q MX15") != 0) {
+    //  if (grubEspButton->isChecked() && system("efibootmgr -v | grep -q MX16") != 0) {
     //      QString arch = getCmdOut("uname -m");
     //      if (arch == "i686") {
-    //          cmd = QString("chroot /mnt/antiX efibootmgr -c -d /dev/%1 -p %2 -L \"MX15\" -l \"\\efi\\mx15\\bootia32.efi\"").arg(bootdrv).arg(boot.remove(bootdrv));
+    //          cmd = QString("chroot /mnt/antiX efibootmgr -c -d /dev/%1 -p %2 -L \"MX16\" -l \"\\efi\\mx16\\bootia32.efi\"").arg(bootdrv).arg(boot.remove(bootdrv));
     //      } else {
-    //          cmd = QString("chroot /mnt/antiX efibootmgr -c -d /dev/%1 -p %2 -L \"MX15\" -l \"\\efi\\mx15\\bootx64.efi\"").arg(bootdrv).arg(boot.remove(bootdrv));
+    //          cmd = QString("chroot /mnt/antiX efibootmgr -c -d /dev/%1 -p %2 -L \"MX16\" -l \"\\efi\\mx16\\bootx64.efi\"").arg(bootdrv).arg(boot.remove(bootdrv));
     //      }
     //      runCmd(cmd);
     //  }
