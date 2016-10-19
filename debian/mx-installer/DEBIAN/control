@@ -1,0 +1,11 @@
+Package: mx-installer
+Version: 16.10mx16+1
+Architecture: amd64
+Maintainer: anticapitalista <antiX@operamail.com>
+Installed-Size: 1397
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libgl1-mesa-glx | libgl1, libqt5core5a (>= 5.0.2), libqt5gui5 (>= 5.0.2), libqt5widgets5 (>= 5.0.2), libstdc++6 (>= 4.1.1), os-prober, gdisk, partition-info (>= 1.0mx150+3), antix-libs, grub-efi-amd64-bin
+Recommends: gparted, partitionmanager
+Section: system
+Priority: optional
+Homepage: http://mxlinux.org
+Description: GUI installer for MX Linux.

@@ -642,16 +642,22 @@ bool MInstall::makeChosenPartitions()
     }
 
     // format swap
-    if (swapdev.compare("/dev/none") != 0) {
-        msg = QString(tr("Ok to format and destroy all data on \n%1 for the swap partition?")).arg(swapdev);
-        ans = QMessageBox::warning(0, QString::null, msg,
-                                   tr("Yes"), tr("No"));
-        if (ans != 0) {
-            // don't format--stop install
-            return false;
-        }
-    }
 
+        //if partition chosen is already swap, don't do anything
+
+        cmd = QString("partition-info %1 |grep swap").arg(swapdev);
+
+        if (system(cmd.toUtf8()) != 0) {
+            if (swapdev.compare("/dev/none") != 0) {
+                msg = QString(tr("Ok to format and destroy all data on \n%1 for the swap partition?")).arg(swapdev);
+                ans = QMessageBox::warning(0, QString::null, msg,
+                                           tr("Yes"), tr("No"));
+                if (ans != 0) {
+                    // don't format--stop install
+                    return false;
+                }
+            }
+        }
     // format /home?
     if (homedev.compare("/dev/root") != 0) {
         cmd = QString("partition-info is-linux=%1").arg(homedev);
@@ -698,31 +704,35 @@ bool MInstall::makeChosenPartitions()
         if (swapoff(rootdev.toUtf8()) != 0) {
         }
     }
+    //if swap exists, do nothing
 
-    if (swapdev.compare("/dev/none") != 0) {
-        if (swapoff(swapdev.toUtf8()) != 0) {
-            cmd = QString("pumount %1").arg(swapdev);
-            if (system(cmd.toUtf8()) != 0) {
+    cmd = QString("partition-info %1 |grep swap").arg(swapdev);
+
+    if (system(cmd.toUtf8()) != 0) {
+        if (swapdev.compare("/dev/none") != 0) {
+            if (swapoff(swapdev.toUtf8()) != 0) {
+                cmd = QString("pumount %1").arg(swapdev);
+                if (system(cmd.toUtf8()) != 0) {
+                }
             }
+            updateStatus(tr("Formatting swap partition"), 2);
+            // always set type
+            if (gpt) {
+                cmd = QString("/sbin/sgdisk /dev/%1 --typecode=%2:8200").arg(swapsplit[0]).arg(swapsplit[1]);
+            } else {
+                cmd = QString("/sbin/sfdisk /dev/%1 --change-id %2 82").arg(swapsplit[0]).arg(swapsplit[1]);
+            }
+            system(cmd.toUtf8());
+            system("sleep 1");
+            if (!makeSwapPartition(swapdev)) {
+                return false;
+            }
+            // enable the new swap partition asap
+            system("sleep 1");
+            system("make-fstab -s");
+            swapon(swapdev.toUtf8(),0);
         }
-        updateStatus(tr("Formatting swap partition"), 2);
-        // always set type
-        if (gpt) {
-            cmd = QString("/sbin/sgdisk /dev/%1 --typecode=%2:8200").arg(swapsplit[0]).arg(swapsplit[1]);
-        } else {
-            cmd = QString("/sbin/sfdisk /dev/%1 --change-id %2 82").arg(swapsplit[0]).arg(swapsplit[1]);
-        }
-        system(cmd.toUtf8());
-        system("sleep 1");
-        if (!makeSwapPartition(swapdev)) {
-            return false;
-        }
-        // enable the new swap partition asap
-        system("sleep 1");
-        system("make-fstab -s");
-        swapon(swapdev.toUtf8(),0);
     }
-
     // maybe format root
     if (!(saveHomeCheck->isChecked() && homedev.compare("/dev/root") == 0)) {
         updateStatus(tr("Formatting the / (root) partition"), 3);
