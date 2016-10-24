@@ -1,3 +1,9 @@
+mx-installer (16.10mx16+2) mx; urgency=medium
+
+  * text changes 
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 24 Oct 2016 10:06:19 -0400
+
 mx-installer (16.10mx16+1) mx; urgency=medium
 
   * changed GUI
