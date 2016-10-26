@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Type=Application
-Exec=sudo minstall
+Exec=sudo -E minstall
 Icon=msystem
 Name=Installer
 Name[ar]=تنصيب
