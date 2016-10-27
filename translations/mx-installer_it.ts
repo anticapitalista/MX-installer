@@ -4,6 +4,71 @@
 <context>
     <name>MInstall</name>
     <message>
+        <location filename="../minstall.cpp" line="454"/>
+        <source>OK to format and use the entire disk (%1) for MX Linux?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="633"/>
+        <source>OK to format and destroy all data on 
+%1 for the / (root) partition?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="635"/>
+        <source>All data on %1 will be deleted, except for /home
+OK to continue?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="652"/>
+        <source>OK to format and destroy all data on 
+%1 for the swap partition?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="674"/>
+        <source>OK to reuse (no reformat) %1 as the /home partition?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="676"/>
+        <source>OK to format and destroy all data on %1 for the /home partition?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="927"/>
+        <source>OK to install GRUB bootloader at %1 ?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="1228"/>
+        <source>The user name needs be lower case and it
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="1834"/>
+        <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for bad blocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has bad blocks.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="1898"/>
+        <source>&lt;p&gt;&lt;b&gt;Common Services to Enable&lt;/b&gt;&lt;br/&gt;Select any of these common services that you might need with your system configuration and the services will be started automatically when you start MX Linux.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="1916"/>
+        <source>&lt;p&gt;&lt;b&gt;Localization Defaults&lt;/b&gt;&lt;br/&gt;Set the default keyboard and locale. These will apply unless they are overridden later by the user.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configure Clock&lt;/b&gt;&lt;br/&gt;If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for &apos;System clock uses LOCAL.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Timezone Settings&lt;/b&gt;&lt;br/&gt;The system boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Adjust Date &amp; Time...&lt;/p&gt;&lt;p&gt;&lt;b&gt;Service Settings&lt;/b&gt;&lt;br/&gt;Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! </source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="1937"/>
+        <source>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Finding Applications&lt;/b&gt;&lt;br/&gt;There are hundreds of excellent applications installed with MX Linux. The best way to learn about them is to browse through the Menu and try them. Many of the apps were developed specifically for the Xfce environment. These are shown in the main menus. &lt;p&gt;In addition MX Linux includes many standard Linux applications that are run only from the command line and therefore do not show up in the Menu.&lt;/p&gt;</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <location filename="../minstall.cpp" line="2037"/>
         <source>Administration</source>
         <translation>Amministrazione</translation>
@@ -235,9 +300,8 @@ Il disco contenente la partizione scelta per l&apos;installazione è difettoso.
         <translation>Si sta per installare MX Linux filesystem</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="454"/>
         <source>Ok to format and use the entire disk (%1) for MX Linux?</source>
-        <translation>Ok per formattare e usare l&apos;intero Hard Disk  (%1) per MX Linux?</translation>
+        <translation type="vanished">Ok per formattare e usare l&apos;intero Hard Disk  (%1) per MX Linux?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="466"/>
@@ -268,24 +332,21 @@ La partizione root deve essere minimo di 3.5 GB.</translation>
         <translation>La partizione selezionata per root, sembra essere una partizione MS-Windows. Sei sicuro di voler riformattare questa partizione?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="633"/>
         <source>Ok to format and destroy all data on 
 %1 for the / (root) partition?</source>
-        <translation>Ok a formattare e cancellare tutti i dati su 
+        <translation type="vanished">Ok a formattare e cancellare tutti i dati su 
 %1 per la partizione / (root) ?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="635"/>
         <source>All data on %1 will be deleted, except for /home
 Ok to continue?</source>
-        <translation>Tutti i dati su %1 saranno cancellati, eccetto quelli di /home
+        <translation type="vanished">Tutti i dati su %1 saranno cancellati, eccetto quelli di /home
 Ok a continuare?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="652"/>
         <source>Ok to format and destroy all data on 
 %1 for the swap partition?</source>
-        <translation>Ok a formattare e distruggere tutti i dati su 
+        <translation type="vanished">Ok a formattare e distruggere tutti i dati su 
 %1 per la partizione swap?</translation>
     </message>
     <message>
@@ -294,14 +355,12 @@ Ok a continuare?</translation>
         <translation>La partizione selezionata per /home, sembra essere una partizione MS-Windows. Sei sicuro di voler riformattare questa partizione?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="674"/>
         <source>Ok to reuse (no reformat) %1 as the /home partition?</source>
-        <translation>Ok per riusare (senza riformattare) %1 come partizione /home?</translation>
+        <translation type="vanished">Ok per riusare (senza riformattare) %1 come partizione /home?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="676"/>
         <source>Ok to format and destroy all data on %1 for the /home partition?</source>
-        <translation>Ok per formattare e distruggere tutti i dati presenti su %1 per la partizione /home?</translation>
+        <translation type="vanished">Ok per formattare e distruggere tutti i dati presenti su %1 per la partizione /home?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="687"/>
@@ -334,9 +393,8 @@ Ok a continuare?</translation>
         <translation>Creazione delle cartelle di sistema</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="927"/>
         <source>Ok to install GRUB bootloader at %1 ?</source>
-        <translation>Sei d&apos;accordo ad installare il gestore d&apos;avvio GRUB su %1 ?</translation>
+        <translation type="vanished">Sei d&apos;accordo ad installare il gestore d&apos;avvio GRUB su %1 ?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="939"/>
@@ -432,11 +490,10 @@ a longer name before proceeding.</source>
  un nome più lungo prima di procedere.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1228"/>
         <source>The user name needs be lower case and it
 cannot contain special characters or spaces
 please choose another name before proceeding.</source>
-        <translation>Il nome utente deve essere scritto in minuscolo
+        <translation type="vanished">Il nome utente deve essere scritto in minuscolo
 e non può contenere caratteri speciali o spazi
 prego, scegli un altro nome prima di procedere.</translation>
     </message>
@@ -552,9 +609,8 @@ Vuoi davvero chiudere ora?</translation>
         <translation>&lt;p&gt;&lt;b&gt;Istruzioni Generali&lt;/b&gt;&lt;br/&gt;PRIMA DI PROCEDERE, CHIUDI TUTTE LE ALTRE APPLICAZIONI.&lt;/p&gt;&lt;p&gt;Per favore, leggi le istruzioni di ogni pagina, fai le tue scelte, e poi clicca su Avanti quando sei pronto a procedere. Verrà richiesta una conferma prima di eseguire qualsiasi azione distruttiva.&lt;/p&gt;&lt;p&gt;MX Linux richiede circa 3.5 GB di spazio. Meglio destinargli 5 GB o più. Puoi usare l&apos;intero disco o puoi installare MX Linux su partizioni esistenti. &lt;/p&gt;&lt;p&gt;Se tu stai usando Mac OS o Windows OS (da Vista in avanti), puoi usare il software di quei sistemi per creare le partizioni e impostare il nuovo boot manager prima di installare MX Linux.&lt;/p&gt;&lt;p&gt;I filesystems Linux ext2, ext3, ext4, jfs, xfs, btrfs e reiserfs sono tutti supportati ma è raccomandato ext4.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1834"/>
         <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for badblocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has badblocks.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Limitazioni&lt;/b&gt;&lt;br/&gt;Ricorda, questo software è fornito tal quale senza alcun tipo di garanzia. Sarà esclusivamente tua responsabilità fare il backup dei tuoi dati prima di procedere.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Scegliere le Partizioni&lt;/b&gt;&lt;br/&gt;MX Linux richiede una partizione root. La partizione swap è facoltativa ma altamente raccomandata. Se vuoi usufruire della sospensione del computer grazie alla funzione Suspend-to-Disk di MX Linux, ti servirà una partizione swap più grande della RAM del computer.&lt;/p&gt;&lt;p&gt;Se scegli una partizione /home separata ti sarà più facile, in futuro, aggiornare ad una versione superiore della distribuzione  senza dover reinstallare, cosa che non sarà possibile se il sistema non diispone già di una partizione home separata.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrade&lt;/b&gt;&lt;br/&gt;Per aggiornare un installazione Linux esistente, seleziona per l&apos;utente la stessa partizione home che hai già, e scegli l&apos;opzione per preservare i dati in /home.&lt;/p&gt;&lt;p&gt;Se si vuole preservare la /home quando questa è localizzata con la sua cartella e sottocartelle all&apos;interno della partizione root, l&apos;installer non riformatterà la partizione root. Ne consegue che l&apos;installazione richiederà molto più tempo del solito.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Tipo di Filesystem preferito&lt;/b&gt;&lt;br/&gt;Per MX Linux, puoi scegliere di formattare le partitioni come ext2, ext3, ext4, jfs, xfs, btrfs o reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;Scegliendo come tipo di formato ext2, ext3 o ext4, avrai poi, eventualmente, la possibilità di selezionare l&apos;opzione di correzione dei settori danneggiati dell&apos;hard disk. La ricerca dei badblock richiede molto tempo, ma potrai saltare questo passaggio, se non sospetti che l&apos;unità contenga errori.&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Limitazioni&lt;/b&gt;&lt;br/&gt;Ricorda, questo software è fornito tal quale senza alcun tipo di garanzia. Sarà esclusivamente tua responsabilità fare il backup dei tuoi dati prima di procedere.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Scegliere le Partizioni&lt;/b&gt;&lt;br/&gt;MX Linux richiede una partizione root. La partizione swap è facoltativa ma altamente raccomandata. Se vuoi usufruire della sospensione del computer grazie alla funzione Suspend-to-Disk di MX Linux, ti servirà una partizione swap più grande della RAM del computer.&lt;/p&gt;&lt;p&gt;Se scegli una partizione /home separata ti sarà più facile, in futuro, aggiornare ad una versione superiore della distribuzione  senza dover reinstallare, cosa che non sarà possibile se il sistema non diispone già di una partizione home separata.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrade&lt;/b&gt;&lt;br/&gt;Per aggiornare un installazione Linux esistente, seleziona per l&apos;utente la stessa partizione home che hai già, e scegli l&apos;opzione per preservare i dati in /home.&lt;/p&gt;&lt;p&gt;Se si vuole preservare la /home quando questa è localizzata con la sua cartella e sottocartelle all&apos;interno della partizione root, l&apos;installer non riformatterà la partizione root. Ne consegue che l&apos;installazione richiederà molto più tempo del solito.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Tipo di Filesystem preferito&lt;/b&gt;&lt;br/&gt;Per MX Linux, puoi scegliere di formattare le partitioni come ext2, ext3, ext4, jfs, xfs, btrfs o reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;Scegliendo come tipo di formato ext2, ext3 o ext4, avrai poi, eventualmente, la possibilità di selezionare l&apos;opzione di correzione dei settori danneggiati dell&apos;hard disk. La ricerca dei badblock richiede molto tempo, ma potrai saltare questo passaggio, se non sospetti che l&apos;unità contenga errori.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1848"/>
@@ -564,11 +620,6 @@ Vuoi davvero chiudere ora?</translation>
     <message>
         <location filename="../minstall.cpp" line="1852"/>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="1916"/>
-        <source>&lt;p&gt;&lt;b&gt;Localization Defaults&lt;/b&gt;&lt;br/&gt;Set the default keyboard and locale. These will apply unless, they are overridden later by the user.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configure Clock&lt;/b&gt;&lt;br/&gt;If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for &apos;System clock uses LOCAL.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Timezone Settings&lt;/b&gt;&lt;br/&gt;The system boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Adjust Date &amp; Time...&lt;/p&gt;&lt;p&gt;&lt;b&gt;Service Settings&lt;/b&gt;&lt;br/&gt;Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! </source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -620,9 +671,8 @@ Torna allo Step 1.</translation>
         <translation>&lt;p&gt;&lt;b&gt;Seleziona Sistema di Boot&lt;/b&gt;&lt;br/&gt;MX Linux usa GRUB come caricatore del boot per l&apos;avvio sia di MX Linux che di MS-Windows. &lt;p&gt;Di default GRUB2 viene installato nell&apos;apposito Master Boot Record o ESP (EFI System Partition for 64-bit UEFI boot systems) presente nell&apos;Hard Disk o comunque nell&apos;unità che usi per il boot e va a rimpiazzare il caricatore del boot che stavi usando prima. Questa è la norma.&lt;/p&gt;&lt;p&gt;Se tu scegli di installare GRUB2 sulla partizione di root, invece che nell&apos;MBR, allora GRUB2 sarà installato all&apos;inizio della partizione root. Questa opzione è solo per gli esperti.&lt;/p&gt;&lt;p&gt;Se tu deselezioni la casella di installazione del caricatore GRUB, allora GRUB non verrà installato in questo momento. Questa opzione è solo per esperti.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1898"/>
         <source>&lt;p&gt;&lt;b&gt;Common Services to Enable&lt;/b&gt;&lt;br/&gt;Select any of the these common services that you might need with your system configuration and the services will be started automatically when you start MX Linux.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Servizi da avviare in automatico&lt;/b&gt;&lt;br/&gt;Seleziona quali tra questi servizi, che ritieni importanti per la configurazione del tuo sistema, vuoi che siano attivati automaticamente all&apos;avvio di MX.&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;p&gt;&lt;b&gt;Servizi da avviare in automatico&lt;/b&gt;&lt;br/&gt;Seleziona quali tra questi servizi, che ritieni importanti per la configurazione del tuo sistema, vuoi che siano attivati automaticamente all&apos;avvio di MX.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1905"/>
@@ -644,9 +694,8 @@ Torna allo Step 1.</translation>
         <translation>&lt;p&gt;&lt;b&gt;Congratulazioni!&lt;/b&gt;&lt;br/&gt;Hai completato l&apos;installazione di </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1937"/>
         <source>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Finding Applications&lt;/b&gt;&lt;br/&gt;There are hundreds of excellent applications installed with MX Linux. The best way to learn about them is to browse through the Menu and try them. Many of the apps were developed specifically for the Xfce environment. These are shown in the main menus. &lt;p&gt;In addition MX Linux includes many standard Linux applications that are run only from the commandline and therefore do not show up in Menu.&lt;/p&gt;</source>
-        <translation>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Trovare Applicazioni&lt;/b&gt;&lt;br/&gt;Ci sono centinaia di eccellenti applicazioni installate con MX Linux. Il miglior modo di cominciare a conoscerle è di scorrere il Menu e cercarle. Molte applicazioni sono sviluppate specificatamente per l&apos;interfaccia Xfce. Queste sono visibili nei menu e sottomenu delle applicazioni. &lt;p&gt;In aggiunta MX Linux include molte applicazioni standard di Linux che sono avviabili solo da linea di comando e quindi non appaiono nei menu.&lt;/p&gt;</translation>
+        <translation type="vanished">&lt;/p&gt;&lt;p&gt;&lt;b&gt;Trovare Applicazioni&lt;/b&gt;&lt;br/&gt;Ci sono centinaia di eccellenti applicazioni installate con MX Linux. Il miglior modo di cominciare a conoscerle è di scorrere il Menu e cercarle. Molte applicazioni sono sviluppate specificatamente per l&apos;interfaccia Xfce. Queste sono visibili nei menu e sottomenu delle applicazioni. &lt;p&gt;In aggiunta MX Linux include molte applicazioni standard di Linux che sono avviabili solo da linea di comando e quindi non appaiono nei menu.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1949"/>
@@ -1149,8 +1198,12 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="../meinstall.ui" line="2068"/>
+        <source>Desktop modifications made in the live environment will be carried over to the installed OS</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
         <source>Desktop modification made in the live environment will be carried over to the installed OS</source>
-        <translation>Le modifiche del desktop, fatte in modalità &quot;live&quot;, verranno trasferite sul sistema una volta installato</translation>
+        <translation type="vanished">Le modifiche del desktop, fatte in modalità &quot;live&quot;, verranno trasferite sul sistema una volta installato</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2071"/>

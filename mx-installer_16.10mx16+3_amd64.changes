@@ -1,0 +1,43 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Thu, 27 Oct 2016 13:49:39 -0400
+Source: mx-installer
+Binary: mx-installer
+Architecture: source amd64
+Version: 16.10mx16+3
+Distribution: mx
+Urgency: medium
+Maintainer: anticapitalista <antiX@operamail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-installer - GUI installer for MX Linux.
+Changes:
+ mx-installer (16.10mx16+3) mx; urgency=medium
+ .
+   * start with sudo -E and small text fixes
+Checksums-Sha1:
+ ff40efaa4f2134049ab53763d8d228cb10c69efa 1169 mx-installer_16.10mx16+3.dsc
+ 3a0d6d4d7e0f1c2a7c638f095a879ca9bfa94582 448480 mx-installer_16.10mx16+3.tar.xz
+ b32cc07fbb270d5fe1de55a57d8624a343daa64c 380386 mx-installer_16.10mx16+3_amd64.deb
+Checksums-Sha256:
+ 56de169022eeba8d56ad9acdeaa614d70162fd54b58ee3defa240c8dde56ef06 1169 mx-installer_16.10mx16+3.dsc
+ 31a417176da5fac5ea6311eca7fa008f41d068abdff301162740397b9627836b 448480 mx-installer_16.10mx16+3.tar.xz
+ 4fbf634c29795f220ad4094f40f4fc720fcf8929f884788d16a7d2335d65d677 380386 mx-installer_16.10mx16+3_amd64.deb
+Files:
+ 2d047316b1edead46819fbf41cd1f7e9 1169 system optional mx-installer_16.10mx16+3.dsc
+ e7b23ca3d07770aa21a27c5a894f9d75 448480 system optional mx-installer_16.10mx16+3.tar.xz
+ 9921f3825d78408a101c5cf43dbc90e4 380386 system optional mx-installer_16.10mx16+3_amd64.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJYEj5yAAoJEHCTjHgGee6YVG0IALz9AZW2WLNE3wwW+UBloPL9
+b2hra2trzoXwEXitoFqLpxaXTpvi3k15E6p3B5SasPi2YnQBaKRus6j/NToQmCVB
+V4HGJTZujGxFNZ18D7q7K4jO/d5VdjQQGH3cTPo2XM06/fIdyONpwRVQLgMEoSNJ
+cbCEiYC2uCOnE2vVTiO1cm041hUYT3FdM10NwUG9urApQLbttF/jo8t402ZW3ZgT
+ha5EReHO1NSJDDYpceTKmEfAs7ff6iTg67TCIPSMyqsZZesrDWcHbHv3tAOR1o/4
+5VRVucpqlb9LUmKeq/ubyh54PMWdH0+8V67Q6fTQLQkkZftCzEXaLEfsojdEqxU=
+=IdOY
+-----END PGP SIGNATURE-----

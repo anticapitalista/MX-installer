@@ -1,3 +1,9 @@
+mx-installer (16.10mx16+3) mx; urgency=medium
+
+  * start with sudo -E and small text fixes
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 27 Oct 2016 13:49:39 -0400
+
 mx-installer (16.10mx16+2) mx; urgency=medium
 
   * text changes 
