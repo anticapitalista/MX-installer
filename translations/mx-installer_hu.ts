@@ -1,198 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="hu">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="hu" version="2.1">
 <context>
     <name>MInstall</name>
-    <message>
-        <location filename="../minstall.cpp" line="454"/>
-        <source>OK to format and use the entire disk (%1) for MX Linux?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="633"/>
-        <source>OK to format and destroy all data on 
-%1 for the / (root) partition?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="635"/>
-        <source>All data on %1 will be deleted, except for /home
-OK to continue?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="652"/>
-        <source>OK to format and destroy all data on 
-%1 for the swap partition?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="674"/>
-        <source>OK to reuse (no reformat) %1 as the /home partition?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="676"/>
-        <source>OK to format and destroy all data on %1 for the /home partition?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="927"/>
-        <source>OK to install GRUB bootloader at %1 ?</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="1228"/>
-        <source>The user name needs be lower case and it
-cannot contain special characters or spaces.
-Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="1834"/>
-        <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for bad blocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has bad blocks.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="1898"/>
-        <source>&lt;p&gt;&lt;b&gt;Common Services to Enable&lt;/b&gt;&lt;br/&gt;Select any of these common services that you might need with your system configuration and the services will be started automatically when you start MX Linux.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="1916"/>
-        <source>&lt;p&gt;&lt;b&gt;Localization Defaults&lt;/b&gt;&lt;br/&gt;Set the default keyboard and locale. These will apply unless they are overridden later by the user.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configure Clock&lt;/b&gt;&lt;br/&gt;If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for &apos;System clock uses LOCAL.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Timezone Settings&lt;/b&gt;&lt;br/&gt;The system boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Adjust Date &amp; Time...&lt;/p&gt;&lt;p&gt;&lt;b&gt;Service Settings&lt;/b&gt;&lt;br/&gt;Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! </source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="1937"/>
-        <source>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Finding Applications&lt;/b&gt;&lt;br/&gt;There are hundreds of excellent applications installed with MX Linux. The best way to learn about them is to browse through the Menu and try them. Many of the apps were developed specifically for the Xfce environment. These are shown in the main menus. &lt;p&gt;In addition MX Linux includes many standard Linux applications that are run only from the command line and therefore do not show up in the Menu.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2037"/>
-        <source>Administration</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2043"/>
-        <source>Runs commands periodically</source>
-        <translation>Runs commands periodically </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2053"/>
-        <source>Time-based job scheduler</source>
-        <translation>Time-based job scheduler </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2063"/>
-        <source>Execute a command as another user</source>
-        <translation>Execute a command as another user </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2072"/>
-        <source>Hardware</source>
-        <translation>Hardver</translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2077"/>
-        <source>CPU frequency, irqbalance</source>
-        <translation>CPU frequency, irqbalance</translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2087"/>
-        <source>S.M.A.R.T. monitoring tools</source>
-        <translation>S.M.A.R.T. monitoring tools </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2097"/>
-        <source>Advanced Configuration and Power Interface event daemon</source>
-        <translation>Advanced Configuration and Power Interface event daemon </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2107"/>
-        <source>HDD temperature monitor</source>
-        <translation>HDD temperature monitor </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2117"/>
-        <source>Generates key events for ACPI scripts</source>
-        <translation>Generates key events for ACPI scripts </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2127"/>
-        <source>Message bus daemon</source>
-        <translation>Message bus daemon </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2137"/>
-        <source>Mouse event server</source>
-        <translation>Mouse event server </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2147"/>
-        <source>Scanner daemon</source>
-        <translation>Scanner daemon </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2157"/>
-        <source>Random number generator</source>
-        <translation>Random number generator </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2167"/>
-        <source>Enables programs to publish and discover services and hosts</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2176"/>
-        <source>Networking</source>
-        <translation>Hálózatok</translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2182"/>
-        <source>Network connection</source>
-        <translation>hálózati csatlakozás</translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2192"/>
-        <source>Secure Shell</source>
-        <translation>Secure Shell </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2202"/>
-        <source>Mail filter</source>
-        <translation>Mail filter </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2212"/>
-        <source>Network File System</source>
-        <translation>Network File System </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2226"/>
-        <source>VPN program that creates secure connections</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2236"/>
-        <source>Bluetooth</source>
-        <translation>Bluetooth </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2246"/>
-        <source>File-copying tool</source>
-        <translation>File-copying tool </translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2255"/>
-        <source>Printing</source>
-        <translation>Nyomtatás</translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2261"/>
-        <source>Linux and OS X printer service</source>
-        <translation>Linux and OS X printer service </translation>
-    </message>
     <message>
         <location filename="../minstall.cpp" line="280"/>
         <source>
@@ -292,8 +100,9 @@ A lemezt a partíció kiválasztott telepítés nem. </translation>
         <translation>MX Linux fájlrendszer telepítésére készen</translation>
     </message>
     <message>
-        <source>Ok to format and use the entire disk (%1) for MX Linux?</source>
-        <translation type="vanished">Szeretnéd formázni és használni az egész lemezt (%1) a MX Linux-re?</translation>
+        <location filename="../minstall.cpp" line="454"/>
+        <source>OK to format and use the entire disk (%1) for MX Linux?</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="466"/>
@@ -324,22 +133,22 @@ A root partíciónak legalább 3,5 GB-nak kell lennie.</translation>
         <translation>Az általad root-nak választott partíció MS-Windows partíciónak tűnik. Biztosan újra szeretnéd formázni?</translation>
     </message>
     <message>
-        <source>Ok to format and destroy all data on 
+        <location filename="../minstall.cpp" line="633"/>
+        <source>OK to format and destroy all data on 
 %1 for the / (root) partition?</source>
-        <translation type="vanished">Szeretnéd formázni és az összes adatot törölni a
-%1 -n a /(root) partíció számára?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
+        <location filename="../minstall.cpp" line="635"/>
         <source>All data on %1 will be deleted, except for /home
-Ok to continue?</source>
-        <translation type="vanished">Minden adat% 1 törlésre kerül, kivéve a /home
-Ok, hogy továbbra is? </translation>
+OK to continue?</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <source>Ok to format and destroy all data on 
+        <location filename="../minstall.cpp" line="652"/>
+        <source>OK to format and destroy all data on 
 %1 for the swap partition?</source>
-        <translation type="vanished">Szeretnéd formázni és az összes adatot törölni a
-%1 -n a swap számára?</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="665"/>
@@ -347,12 +156,14 @@ Ok, hogy továbbra is? </translation>
         <translation>Az általad /home-nak választott partíció MS-Windows partíciónak tűnik. Biztosan újra szeretnéd formázni?</translation>
     </message>
     <message>
-        <source>Ok to reuse (no reformat) %1 as the /home partition?</source>
-        <translation type="vanished">Biztosan újra szeretnéd használni (formázás nélkül) %1 -t /home partícióként?</translation>
+        <location filename="../minstall.cpp" line="674"/>
+        <source>OK to reuse (no reformat) %1 as the /home partition?</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <source>Ok to format and destroy all data on %1 for the /home partition?</source>
-        <translation type="vanished">Biztosan leformázod és törlöd az összes adatot a %1 -n a /home könyvtár számára?</translation>
+        <location filename="../minstall.cpp" line="676"/>
+        <source>OK to format and destroy all data on %1 for the /home partition?</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="687"/>
@@ -385,22 +196,19 @@ Ok, hogy továbbra is? </translation>
         <translation>Rendszer könyvtárak létrehozása</translation>
     </message>
     <message>
-        <source>Ok to install GRUB bootloader at %1 ?</source>
-        <translation type="vanished">Biztosan telepíted a GRUB bootmenedzsert %1 -re?</translation>
+        <location filename="../minstall.cpp" line="927"/>
+        <source>OK to install GRUB bootloader at %1 ?</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="939"/>
         <source>Please wait till GRUB is installed, it might take a couple of minutes.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the CD and repair the installation with the reinstall GRUB function.</source>
-        <translation type="vanished">Bocs, a GRUB telepítése nem sikerült. Ez a lemez formázásának megváltozása miatt lehetséges. Kikapcsolhatod a GRUB box-ot és befejezheted a MX  telepítését. A GRUB-ot a LiveCD-be való újraindítás után a GRUB újratelepítése funkcióval telepítheted.</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="974"/>
         <source>Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the LiveDVD or LiveUSB and repair the installation with the reinstall GRUB function.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1032"/>
@@ -417,7 +225,7 @@ and create a new home directory?</source>
     <message>
         <location filename="../minstall.cpp" line="1054"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Bocs, de a régi home könyvtár mentése nem sikerült. Mielőtt
 folytatnád, egy új felhasználónevet kell választanod,
@@ -437,7 +245,7 @@ folytatnád, egy új felhasználónevet kell választanod.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1080"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Nem választottad ki, hogy használd, töröld vagy mentsd a régi home
 könyvtárad. Mielőtt folytatnád, egy új felhasználónevet kell választanod.</translation>
@@ -482,11 +290,11 @@ a longer name before proceeding.</source>
 Válassz egy hosszabb nevet mielőtt folytatnád.</translation>
     </message>
     <message>
+        <location filename="../minstall.cpp" line="1228"/>
         <source>The user name needs be lower case and it
-cannot contain special characters or spaces
-please choose another name before proceeding.</source>
-        <translation type="vanished">A felhasználói név kell lennie kisbetű, és nem tartalmazhat speciális karaktereket vagy szóközöket.
-Kérjük, válasszon másik nevet előtt.</translation>
+cannot contain special characters or spaces.
+Please choose another name before proceeding.</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1235"/>
@@ -534,7 +342,7 @@ egyeznek. Próbáld meg újra.</translation>
     <message>
         <location filename="../minstall.cpp" line="1299"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>A számítógép nevének legalább
 2 karakternyi hosszúnak kell lennie.
@@ -543,7 +351,7 @@ Válassz egy másik nevet mielőtt folytatnád.</translation>
     <message>
         <location filename="../minstall.cpp" line="1303"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Sajnos a számítógép érvénytelen karaktereket tartalmaz. 
 Válassz egy másik nevet mielőtt folytatnád.</translation>
@@ -551,7 +359,7 @@ Válassz egy másik nevet mielőtt folytatnád.</translation>
     <message>
         <location filename="../minstall.cpp" line="1309"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Bocs, de a számítógép doménnek legalább 2
 karakternyi hosszúnak kell lennie. Válassz egy
@@ -560,7 +368,7 @@ másik nevet mielőtt folytatnád.</translation>
     <message>
         <location filename="../minstall.cpp" line="1313"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Sajnos a számítógép tartományban érvénytelen karaktereket tartalmaz. 
 Válassz egy másik nevet mielőtt folytatnád.</translation>
@@ -568,7 +376,7 @@ Válassz egy másik nevet mielőtt folytatnád.</translation>
     <message>
         <location filename="../minstall.cpp" line="1322"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Bocs, de a munkacsoportnak legalább 2
 karakternyi hosszúnak kell lennie. Válassz
@@ -599,8 +407,9 @@ Biztos meg akarod állítani a folyamatot?</translation>
         <translation>&lt;p&gt;&lt;b&gt;Általános Útmutatók&lt;/b&gt;&lt;br/&gt;MIELŐTT FOLYTATNÁD, ZÁRD BE AZ ÖSSZES EGYÉB ALKALMAZÁST. HA A 3D ASZTALT HASZNÁLOD, JAVASOLT A KIJELENTKEZÉS ÉS A SIMA KDE ASZTALRA VALÓ ÚJBÓLI BEJELENTKEZÉS.&lt;/p&gt;&lt;p&gt;Mindegyik oldalon olvasd el az útmutatókat, válaszd ki a megfelelő beállításokat, majd nyomd meg a Tovább gombot mikor kész vagy. Mindennemű destruktív művelet előtt a beleegyezésed ki lesz kérve.&lt;/p&gt;&lt;p&gt;A MX Linux még a bővebb verzió 3,5 GB-ot. 5 GB vagy annál több rendelkezésre álló hely javasolt. Az egész lemezt is fölhasználhatod vagy már meglévő partíciókra is telepítheted a MX Linux-t.&lt;/p&gt;&lt;p&gt;Ha PC típusú hardvert használsz, akkor futtasd innen a GParted alkalmazást, ha módosítanod kell néhány partíciót az egyéni telepítés előtt. Ha Apple típusú hardvert használsz, soha ne használd a GParted vagy parted alkalmazást a boot lemezeden. Ehelyett használd az OSX alkalmazásait a partíciók beállítására illetve az OSX bootmenedzserét a MX Linux telepítése előtt.&lt;/p&gt;&lt;p&gt;Az ext2, ext3, ext4, jfs, xfs, btrfs és reiserfs fájlrendszerek vannak támogatva, amelyek közül az ext4 az ajánlott.&lt;/p&gt;</translation>
     </message>
     <message>
-        <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for badblocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has badblocks.&lt;/p&gt;</source>
-        <translation type="vanished">&lt;p&gt;&lt;b&gt;Korlátozások&lt;/b&gt;&lt;br/&gt;Emlékezz, hogy ezt a programot úgy kapod AHOGY VAN, mindenféle garancia nélkül. Teljesen a te felelőséged az adatok lementése a telepítés folytatása előtt.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Partíciók Kiválasztása&lt;/b&gt;&lt;br/&gt;A MX Linux-nek szüksége van egy root partícióra. A swap partíció használata tetszőleges, ám erősen ajánlott. Ha a későbbiekben szeretnéd használni a MX Linux hibernálás funkcióját, akkor a fizikai memóriánál (RAM) nagyobb méretű swap partícióra szükséged lesz.&lt;/p&gt;&lt;p&gt;Ha a különálló /home partíció mellett döntesz, akkor a későbbiekben könnyebb lesz a rendszer frissítése. Különálló home partíció nélküli rendszer esetén az ilyen, egyszerű frissítés nem lehetséges.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Frissítés&lt;/b&gt;&lt;br/&gt;Ha egy már létező Linux-ot frissítesz, akkor válaszd ki az előzőleg használt /home partíciót és pipáld be a &apos;Adatok meghagyása a /home-ban&apos; opciót.&lt;/p&gt;&lt;p&gt;Ha a root partíción már létező home könyvtárban hagyod meg az adatokat, akkor a telepítő nem fogja újraformázni a root partíciót. Ennek az lesz az eredménye, hogy a telepítés a szokásosnál hosszabb ideig fog tartani.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Ajánlott Fájlrendszer Típus&lt;/b&gt;&lt;br/&gt;Az ext3, ext4, jfs, xfs, btrfs és reiserfs fájlrendszerek egyikét választhatod ki a MX Linux számára.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Hibás Blokkok&lt;/b&gt;&lt;br/&gt;Ha az ext2, ext3 és ext4 fájlrendszert választod, akkor lehetőséged van a merevlemezen esetlegesen előforduló hibás blokkok keresésére és javítására. A hibás blokkok keresése nagyon időigényes. Hacsak nem gyanakszol hibás blokkokra a merevlemezeden, akkor valószínűleg ki szeretnéd hagyni ezt a tesztet.&lt;/p&gt;</translation>
+        <location filename="../minstall.cpp" line="1834"/>
+        <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for bad blocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has bad blocks.&lt;/p&gt;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1848"/>
@@ -610,31 +419,7 @@ Biztos meg akarod állítani a folyamatot?</translation>
     <message>
         <location filename="../minstall.cpp" line="1852"/>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2643"/>
-        <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at https://mxlinux.org There are volunteers to help you at the MX forum, https://forum.mxlinux.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2651"/>
-        <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from LiveDVD or LiveUSB and running one of the utilities in MX Tools or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux LiveDVD or LiveUSB to recover data from MS-Windows systems!&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2657"/>
-        <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../minstall.cpp" line="2672"/>
-        <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org or http://antix.freeforums.org&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis and antiX Communities&lt;/p&gt;</source>
-        <translation type="vanished">&lt;p&gt;&lt;b&gt;Külön Köszönet&lt;/b&gt;&lt;br/&gt;Köszönöm mindenkinek aki időt, pénzt, tanácsot, munkát, dicséretet, ötletet, híresztelést és/vagy bátorítást adott, hogy támogassa a MX Linux-t.&lt;/p&gt;&lt;p&gt;Nélkületek nem létezne MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Mepis és antiX Communities&lt;/p&gt;</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1855"/>
@@ -658,11 +443,12 @@ Visszatérés az 1. lépéshez.</translation>
     <message>
         <location filename="../minstall.cpp" line="1889"/>
         <source>&lt;p&gt;&lt;b&gt;Select Boot Method&lt;/b&gt;&lt;br/&gt;MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. &lt;p&gt;By default GRUB2 is installed in the Master Boot Record or ESP (EFI System Partition for 64-bit UEFI boot systems) of your boot drive and replaces the boot loader you were using before. This is normal.&lt;/p&gt;&lt;p&gt;If you choose to install GRUB2 at root instead, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.&lt;/p&gt;&lt;p&gt;If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <source>&lt;p&gt;&lt;b&gt;Common Services to Enable&lt;/b&gt;&lt;br/&gt;Select any of the these common services that you might need with your system configuration and the services will be started automatically when you start MX Linux.&lt;/p&gt;</source>
-        <translation type="vanished">&lt;p&gt;&lt;b&gt;Általános Szolgáltatások Bekapcsolása&lt;/b&gt;&lt;br/&gt;Válaszd ki bármelyik alábbi általános szolgáltatást melyre szükséged lehet a rendszer beállításai miatt, így azok automatikusan el lesznek indítva a MX Linux indításával együtt.&lt;/p&gt;</translation>
+        <location filename="../minstall.cpp" line="1898"/>
+        <source>&lt;p&gt;&lt;b&gt;Common Services to Enable&lt;/b&gt;&lt;br/&gt;Select any of these common services that you might need with your system configuration and the services will be started automatically when you start MX Linux.&lt;/p&gt;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1905"/>
@@ -670,8 +456,9 @@ Visszatérés az 1. lépéshez.</translation>
         <translation>&lt;p&gt;&lt;b&gt;Számítógép azonosító&lt;/b&gt;&lt;br/&gt;A számítógépnév egy általános, egyedi név, amely azonosítani fogja számítógéped, ha egy hálózatra van csatlakoztatva. A számítógép domént nem valószínű hogy használni kell, hacsak az internet szolgáltató vagy helyi hálózat nem kívánja..&lt;/p&gt;&lt;p&gt;A számítógép és a domain nevek csak alfanumerikus karaktereket tartalmaz, pontok, kötőjelek. Ezek nem tartalmazhatnak szóközt, elején vagy végén kötőjellel.&lt;/p&gt;&lt;p&gt;A SaMBa Szervert aktiválni kell, ha néhány mappádat vagy nyomtatódat meg szeretnéd osztani egy olyan helyi hálózaton, ahol a gépeken MS-Windows vagy Mac OSX fut.&lt;/p&gt;</translation>
     </message>
     <message>
-        <source>&lt;p&gt;&lt;b&gt;Localization Defaults&lt;/b&gt;&lt;br/&gt;Set the default keyboard and locale. These will apply unless, they are overridden later by the user.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configure Clock&lt;/b&gt;&lt;br/&gt;If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for &apos;System clock uses LOCAL.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Timezone Settings&lt;/b&gt;&lt;br/&gt;The CD boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Adjust Date &amp; Time...&lt;/p&gt;&lt;p&gt;&lt;b&gt;Service Settings&lt;/b&gt;&lt;br/&gt;Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! </source>
-        <translation type="vanished">&lt;p&gt;&lt;b&gt;Lokalizációs Alapbeállítások&lt;/b&gt;&lt;br/&gt;Állítsd be az alapértelmezett billenytűzetet és helyet. Ezek lesznek érvényesek, hacsak a felhasználó később felül nem írja.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Óra Beállítása&lt;/b&gt;&lt;br/&gt;Ha Apple vagy tisztán Unix alapú számítógéped van, akkor az óra alapértlemezetten a GMT-i (Greenwich-i Idő) vagy UTC-i (Egyetemes Idő) időzónára van állítva.  Ebben az esetben pipáld be a &apos;A számítógép órája LOCAL-re van állítva&apos; boxot.&lt;/p&gt;A CD az GMT/UTC időzónára állítva indul el. Az időzóna átállításához (az újonnan telepített rendszer elindítása után) klikkelj a jobb egérgombbal a Panelon (tálca) található órára és válaszd a &apos;dátum és az idő beállítása&apos; pontot.&lt;/p&gt;</translation>
+        <location filename="../minstall.cpp" line="1916"/>
+        <source>&lt;p&gt;&lt;b&gt;Localization Defaults&lt;/b&gt;&lt;br/&gt;Set the default keyboard and locale. These will apply unless they are overridden later by the user.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configure Clock&lt;/b&gt;&lt;br/&gt;If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for &apos;System clock uses LOCAL.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Timezone Settings&lt;/b&gt;&lt;br/&gt;The system boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Adjust Date &amp; Time...&lt;/p&gt;&lt;p&gt;&lt;b&gt;Service Settings&lt;/b&gt;&lt;br/&gt;Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! </source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1926"/>
@@ -684,8 +471,9 @@ Visszatérés az 1. lépéshez.</translation>
         <translation>&lt;p&gt;&lt;b&gt;Gratulálunk!&lt;/b&gt;&lt;br/&gt;Sikeresen befejezted a </translation>
     </message>
     <message>
-        <source>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Finding Applications&lt;/b&gt;&lt;br/&gt;There are hundreds of excellent applications installed with MX Linux. The best way to learn about them is to browse through the Menu and try them. Many of the apps were developed specifically for the Xfce environment. These are shown in the main menus. &lt;p&gt;In addition MX Linux includes many standard Linux applications that are run only from the commandline and therefore do not show up in Menu.&lt;/p&gt;</source>
-        <translation type="vanished">&lt;/p&gt;&lt;p&gt;&lt;b&gt;Programok Megtalálása&lt;/b&gt;&lt;br/&gt;Több száz kitűnő program települt a MX Linux-el. A legjobb mód megismerésükre a Menu böngészése és a menupontok kipróbálása. Az alkalmazások többsége kifejezetten a Xfce felülethez lettek tervezve. Ezek a főbb menükben vannak feltünteteve. Az egyéb alkalmazások a K Menu &gt; Applications&lt;/p&gt;&lt;p&gt;Ráadásképp, a MX Linux sok olyan linxos alkalmazást is tartalmaz, melyek csak a parancssorban futnak, így a Menu-ben nem is jelennek meg.&lt;/p&gt;</translation>
+        <location filename="../minstall.cpp" line="1937"/>
+        <source>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Finding Applications&lt;/b&gt;&lt;br/&gt;There are hundreds of excellent applications installed with MX Linux. The best way to learn about them is to browse through the Menu and try them. Many of the apps were developed specifically for the Xfce environment. These are shown in the main menus. &lt;p&gt;In addition MX Linux includes many standard Linux applications that are run only from the command line and therefore do not show up in the Menu.&lt;/p&gt;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1949"/>
@@ -702,6 +490,131 @@ Visszatérés az 1. lépéshez.</translation>
         <location filename="../minstall.cpp" line="1973"/>
         <source>Finish</source>
         <translation>Befejezés</translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2037"/>
+        <source>Administration</source>
+        <translation>Adminisztráció</translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2043"/>
+        <source>Runs commands periodically</source>
+        <translation>Runs commands periodically </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2053"/>
+        <source>Time-based job scheduler</source>
+        <translation>Time-based job scheduler </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2063"/>
+        <source>Execute a command as another user</source>
+        <translation>Execute a command as another user </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2072"/>
+        <source>Hardware</source>
+        <translation>Hardver</translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2077"/>
+        <source>CPU frequency, irqbalance</source>
+        <translation>CPU frequency, irqbalance</translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2087"/>
+        <source>S.M.A.R.T. monitoring tools</source>
+        <translation>S.M.A.R.T. monitoring tools </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2097"/>
+        <source>Advanced Configuration and Power Interface event daemon</source>
+        <translation>Advanced Configuration and Power Interface event daemon </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2107"/>
+        <source>HDD temperature monitor</source>
+        <translation>HDD temperature monitor </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2117"/>
+        <source>Generates key events for ACPI scripts</source>
+        <translation>Generates key events for ACPI scripts </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2127"/>
+        <source>Message bus daemon</source>
+        <translation>Message bus daemon </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2137"/>
+        <source>Mouse event server</source>
+        <translation>Mouse event server </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2147"/>
+        <source>Scanner daemon</source>
+        <translation>Scanner daemon </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2157"/>
+        <source>Random number generator</source>
+        <translation>Random number generator </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2167"/>
+        <source>Enables programs to publish and discover services and hosts</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2176"/>
+        <source>Networking</source>
+        <translation>Hálózatok</translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2182"/>
+        <source>Network connection</source>
+        <translation>hálózati csatlakozás</translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2192"/>
+        <source>Secure Shell</source>
+        <translation>Secure Shell </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2202"/>
+        <source>Mail filter</source>
+        <translation>Mail filter </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2212"/>
+        <source>Network File System</source>
+        <translation>Network File System </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2226"/>
+        <source>VPN program that creates secure connections</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2236"/>
+        <source>Bluetooth</source>
+        <translation>Bluetooth </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2246"/>
+        <source>File-copying tool</source>
+        <translation>File-copying tool </translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2255"/>
+        <source>Printing</source>
+        <translation>Nyomtatás</translation>
+    </message>
+    <message>
+        <location filename="../minstall.cpp" line="2261"/>
+        <source>Linux and OS X printer service</source>
+        <translation>Linux and OS X printer service </translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2439"/>
@@ -739,16 +652,19 @@ Returning to Step 1.</source>
 Visszatérés az 1. Lépéshez.</translation>
     </message>
     <message>
-        <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at http://antix.mepis.com and http://www.mepiscommunity.org/mx. There are volunteers to help you at the antiX Forum, http://antix.freeforums.org and the MEPIS Community Forum http://forum.mepiscommunity.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
-        <translation type="vanished">&lt;p&gt;&lt;b&gt;Segítség Szerzése&lt;/b&gt;&lt;br/&gt;A MX Linux-ről alapinformációk a a http://antix.mepis.com és http://www.mepiscommunity.org/mx oldalon találhatók, valamint önkéntesek is segítenek probléma estén a antiX Fórumon, http://antix.freeforums.org és MEPIS Community Forum http://forum.mepiscommunity.org &lt;/p&gt;&lt;p&gt;Ha segítséget kérsz, emlékezz hogy a problámát a problémád és számítógéped valamennyi szükséges részletével együtt írd le. Az &apos;ez nem működik&apos; típusú kijelentések általában nem segítenek a probléma megoldásában.&lt;/p&gt;</translation>
+        <location filename="../minstall.cpp" line="2643"/>
+        <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at https://mxlinux.org There are volunteers to help you at the MX forum, https://forum.mxlinux.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from CD and running one of the utilities in System Configuration or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux CD to recover data from MS-Windows systems!&lt;/p&gt;</source>
-        <translation type="vanished">&lt;p&gt;&lt;b&gt;A Telepített Rendszer Javítása&lt;/b&gt;&lt;br/&gt;Ha a MX Linux nem működik a merevlemezről többé, akkor néha meg lehet oldani a problémát a CD-ről való indítás segítségével. Választhatjuk a CD-n lévő System Configuration-ben lévő segédek egyikét, vagy éppen valamelyik szokásos Linux alkalmazást, hogy kijavítsuk a rendszerhibát.&lt;/p&gt;&lt;p&gt;A MX Linux CD-t MS-WIndows rendszerekről való adatmentésre is fel tudod használni!&lt;/p&gt;</translation>
+        <location filename="../minstall.cpp" line="2651"/>
+        <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from LiveDVD or LiveUSB and running one of the utilities in MX Tools or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux LiveDVD or LiveUSB to recover data from MS-Windows systems!&lt;/p&gt;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - http://antix.freeforums.org, - http://forum.mepiscommunity.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
-        <translation type="vanished">&lt;p&gt;&lt;b&gt;Támogasd a MX Linux-t&lt;/b&gt;&lt;br/&gt;A MX Linux-t olyan emberek támogatják, mint te. Néhányan a http://antix.freeforums.org - http://forum.mepiscommunity.org fórumon keresztül segítenek másokat, mások fájlokat fordítanak más nyelvekre, javaslatokat tesznek, dokumentációt írnak, vagy éppen az új szofvert tesztelik.&lt;/p&gt;</translation>
+        <location filename="../minstall.cpp" line="2657"/>
+        <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2664"/>
@@ -756,8 +672,9 @@ Visszatérés az 1. Lépéshez.</translation>
         <translation>&lt;p&gt;&lt;b&gt;A Hangkeverő Beállítása&lt;/b&gt;&lt;br/&gt;A MX Linux megpróbálja beállítani a hangkeverőt a számodra, de néha szükséges lehet a hangerő felerősítése, valamint hangcsatornák némításának kikapcsolása a hallható hang érdekében.&lt;/p&gt; &lt;p&gt;A keverő ikonja a panelen megtalálható. Nyomd meg, hogy megnyisd a keverőt.&lt;/p&gt;</translation>
     </message>
     <message>
-        <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit http://antix.freeforums.org or http://forum.mepiscommunity.org &lt;/p&gt;</source>
-        <translation type="vanished">&lt;p&gt;&lt;b&gt;Tartsd a MX Linux-ed Frissítve&lt;/b&gt;&lt;br/&gt;MX Linux információkért és frissítésekért látogasd meg a http://antix.freeforums.org vagy http://forum.mepiscommunity.org weblapot. &lt;/p&gt;</translation>
+        <location filename="../minstall.cpp" line="2672"/>
+        <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org or http://antix.freeforums.org&lt;/p&gt;</source>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -770,7 +687,7 @@ Visszatérés az 1. Lépéshez.</translation>
     <message>
         <location filename="../meinstall.ui" line="47"/>
         <source>Close</source>
-        <translation type="unfinished">Bezár</translation>
+        <translation>Bezár</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="67"/>
@@ -802,13 +719,13 @@ Visszatérés az 1. Lépéshez.</translation>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux is an independent linux distribution based on Debian Stable&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Droid Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans';&quot;&gt;MX Linux is an independent linux distribution based on Debian Stable&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans';&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;Enjoy using MX Linux.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="230"/>
@@ -878,7 +795,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="613"/>
         <source>Change default / (root) partition label:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="627"/>
@@ -918,7 +835,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="668"/>
         <source>Change default /home partition label:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="687"/>
@@ -1010,12 +927,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="1211"/>
         <source>EFI System Partition</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1214"/>
         <source>ESP</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1284"/>
@@ -1095,7 +1012,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="1633"/>
         <source>Format:</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1650"/>
@@ -1180,11 +1097,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="2068"/>
         <source>Desktop modifications made in the live environment will be carried over to the installed OS</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>Desktop modification made in the live environment will be carried over to the installed OS</source>
-        <translation type="vanished">Desktop módosítás történt a valós környezetben átviszik a telepített operációs rendszereket</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2071"/>
@@ -1201,10 +1114,10 @@ p, li { white-space: pre-wrap; }
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Droid Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans'; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -1213,10 +1126,6 @@ p, li { white-space: pre-wrap; }
         <location filename="../memain.ui" line="32"/>
         <source>MX Linux Install</source>
         <translation>MX Linux telepítő</translation>
-    </message>
-    <message>
-        <source>Close</source>
-        <translation type="vanished">Bezár</translation>
     </message>
     <message>
         <location filename="../memain.ui" line="58"/>
