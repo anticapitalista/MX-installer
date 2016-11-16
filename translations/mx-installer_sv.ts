@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sv">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sv" version="2.1">
 <context>
     <name>MInstall</name>
     <message>
@@ -240,7 +238,7 @@ och skapa en ny hemkatalog</translation>
     <message>
         <location filename="../minstall.cpp" line="1054"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Ledsen, misslyckades med att spara den gamla hemkatalogen.
 Innan du fortsätter måste du välja ett annat användarnamn
@@ -260,7 +258,7 @@ Innan du fortsätter, måste du välja ett annat användarnamn.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1080"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Du har valt att inte använda, spara eller ta bort den gamla hemkatalogen.
 Innan du fortsätter, måste du välja ett annat användarnamn.</translation>
@@ -359,7 +357,7 @@ inte överens. Var vänlig försök igen.</translation>
     <message>
         <location filename="../minstall.cpp" line="1299"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>Ledsen, ditt datornamn måste vara
 åtminstone 2 bokstäver. Du måste
@@ -368,7 +366,7 @@ välja ett annat namn innan du fortsätter.</translation>
     <message>
         <location filename="../minstall.cpp" line="1303"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Ledsen, ditt användarnamn innehåller ogiltiga tecken.
 Du måste välja ett annat namn
@@ -377,7 +375,7 @@ innan du fortsätter.</translation>
     <message>
         <location filename="../minstall.cpp" line="1309"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Ledsen, din dator-domän måste vara åtminstone
 2 bokstäver lång. Du måste välja ett annat
@@ -386,7 +384,7 @@ namn innan du fortsätter.</translation>
     <message>
         <location filename="../minstall.cpp" line="1313"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Ledsen, din dator-domän innehåller ogiltiga tecken.
 Du måste välja ett annat namn
@@ -395,7 +393,7 @@ innan du fortsätter.</translation>
     <message>
         <location filename="../minstall.cpp" line="1322"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Ledsen, din arbetsgrupp måste vara åtminstone
 2 bokstäver lång. Du måste välja ett annat namn
@@ -475,8 +473,8 @@ Returning to Step 1.</source>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1916"/>
-        <source>&lt;p&gt;&lt;b&gt;Localization Defaults&lt;/b&gt;&lt;br/&gt;Set the default keyboard and locale. These will apply unless they are overridden later by the user.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configure Clock&lt;/b&gt;&lt;br/&gt;If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for &apos;System clock uses LOCAL.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Timezone Settings&lt;/b&gt;&lt;br/&gt;The system boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Adjust Date &amp; Time...&lt;/p&gt;&lt;p&gt;&lt;b&gt;Service Settings&lt;/b&gt;&lt;br/&gt;Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! </source>
-        <translation>&lt;p&gt;&lt;b&gt;Standard Region&lt;/b&gt;&lt;br/&gt;Välj standard-tangentbord och region, de kommer att användas om de inte senare åsidosätts av användaren&lt;/p&gt;&lt;p&gt;&lt;b&gt;Ställ in Klockan&lt;/b&gt;&lt;br/&gt;Om du har en Apple eller en ren Unix dator, ställs systemklockan som standard in på GMT eller Universal Time. För att ändra, markera rutan för &apos;System-klockan använder LOCAL.&apos;&lt;/p&gt;Systemet startar med tidszonen förinställd till GMT/UTC. För att ändra tidszon, efter att du startat om den nya installationen, högerklicka på Klockan i Panelen och välj Justera Datum &amp; Tid...&lt;/p&gt;&lt;p&gt;&lt;b&gt;Tjänst-inställningar&lt;/b&gt;&lt;br/&gt;De flesta användare bör inte ändra på standardinställningarna. Användare med resurssvaga datorer vill ibland stänga av onödiga tjänster för att hålla minnesanvändningen så låg som möjligt. Var säker på att du vet vad du gör! </translation>
+        <source>&lt;p&gt;&lt;b&gt;Localization Defaults&lt;/b&gt;&lt;br/&gt;Set the default keyboard and locale. These will apply unless they are overridden later by the user.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configure Clock&lt;/b&gt;&lt;br/&gt;If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for &apos;System clock uses LOCAL.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Timezone Settings&lt;/b&gt;&lt;br/&gt;The system boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Properties.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Service Settings&lt;/b&gt;&lt;br/&gt;Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! </source>
+        <translation>&lt;p&gt;&lt;b&gt;Standard Region&lt;/b&gt;&lt;br/&gt;Välj standard-tangentbord och region, de kommer att användas om de inte senare åsidosätts av användaren&lt;/p&gt;&lt;p&gt;&lt;b&gt;Ställ in Klockan&lt;/b&gt;&lt;br/&gt;Om du har en Apple eller en ren Unix dator, ställs systemklockan som standard in på GMT eller Universal Time. För att ändra, markera rutan för &apos;System-klockan använder LOCAL.&apos;&lt;/p&gt;Systemet startar med tidszonen förinställd till GMT/UTC. För att ändra tidszon, efter att du startat om den nya installationen, högerklicka på Klockan i Panelen och välj Egenskaper.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Tjänst-inställningar&lt;/b&gt;&lt;br/&gt;De flesta användare bör inte ändra på standardinställningarna. Användare med resurssvaga datorer vill ibland stänga av onödiga tjänster för att hålla minnesanvändningen så låg som möjligt. Var säker på att du vet vad du gör! </translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1926"/>
@@ -738,17 +736,17 @@ Returning to Step 1.</source>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux is an independent linux distribution based on Debian Stable&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Droid Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans';&quot;&gt;MX Linux is an independent Linux distribution based on Debian Stable&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans';&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;Enjoy using MX Linux.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux är en oberoende linux distribution baserad på Debian Stable&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux är en oberoende Linux distribution baserad på Debian Stable&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux använder en del komponenter från MEPIS Linux som är utgivna under Apache free license. En del MEPIS komponenter har modifierats för MX Linux.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -1141,8 +1139,8 @@ p, li { white-space: pre-wrap; }
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Droid Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans'; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>h
 &lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt; &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;

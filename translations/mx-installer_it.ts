@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="it">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="it" version="2.1">
 <context>
     <name>MInstall</name>
     <message>
@@ -112,7 +110,7 @@ Il disco contenente la partizione scelta per l&apos;installazione è difettoso.
     <message>
         <location filename="../minstall.cpp" line="454"/>
         <source>OK to format and use the entire disk (%1) for MX Linux?</source>
-        <translation type="unfinished"></translation>
+        <translation>OK per formattare e usare l&apos;intero disco (%1) per MX Linux?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="466"/>
@@ -146,19 +144,22 @@ La partizione root deve essere minimo di 3.5 GB.</translation>
         <location filename="../minstall.cpp" line="633"/>
         <source>OK to format and destroy all data on 
 %1 for the / (root) partition?</source>
-        <translation type="unfinished"></translation>
+        <translation>OK a formattare e cancellare tutti i dati su
+%1 per la partizione / (root) ?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="635"/>
         <source>All data on %1 will be deleted, except for /home
 OK to continue?</source>
-        <translation type="unfinished"></translation>
+        <translation>Tutti i dati su %1 saranno cancellati, eccetto quelli della /home
+OK a continuare?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="652"/>
         <source>OK to format and destroy all data on 
 %1 for the swap partition?</source>
-        <translation type="unfinished"></translation>
+        <translation>OK a formattare e distruggere tutti i dati su
+%1 per la partizione swap?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="665"/>
@@ -168,12 +169,12 @@ OK to continue?</source>
     <message>
         <location filename="../minstall.cpp" line="674"/>
         <source>OK to reuse (no reformat) %1 as the /home partition?</source>
-        <translation type="unfinished"></translation>
+        <translation>OK per riusare (senza riformattare) %1 come partizione /home?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="676"/>
         <source>OK to format and destroy all data on %1 for the /home partition?</source>
-        <translation type="unfinished"></translation>
+        <translation>OK a formattare e distruggere tutti i dati presenti su %1 per la partizione /home?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="687"/>
@@ -208,7 +209,7 @@ OK to continue?</source>
     <message>
         <location filename="../minstall.cpp" line="927"/>
         <source>OK to install GRUB bootloader at %1 ?</source>
-        <translation type="unfinished"></translation>
+        <translation>OK ad installare il gestore d&apos;avvio GRUB su %1 ?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="939"/>
@@ -218,7 +219,7 @@ OK to continue?</source>
     <message>
         <location filename="../minstall.cpp" line="974"/>
         <source>Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the LiveDVD or LiveUSB and repair the installation with the reinstall GRUB function.</source>
-        <translation type="unfinished"></translation>
+        <translation>Spiacente, l&apos;installazione di GRUB è fallita. Ciò può essere causato da un problema di formattazione dell&apos;unita di memoria. Puoi deselezionare GRUB e completare l&apos;installazione di MX Linux quindi riavviare il DVD-Live ol&apos;USB-Live e riparare l&apos;installazione con la funzione Reinstalla GRUB dell&apos;utility Boot Repair.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1032"/>
@@ -235,7 +236,7 @@ e creare una nuova cartella home?</translation>
     <message>
         <location filename="../minstall.cpp" line="1054"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Spiacente, il salvataggio della vecchia home è fallito. Prima di procedere,
 dovrai scegliere un nome utente differente o
@@ -255,7 +256,7 @@ dovrai scegliere un nome utente differente. </translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1080"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Hai scelto di non usare, salvare o eliminare la vecchia cartella home.
 Prima di procedere, dovrai scegliere un nome utente differente.</translation>
@@ -304,7 +305,9 @@ a longer name before proceeding.</source>
         <source>The user name needs be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>Il nome utente deve essere scritto in minuscolo
+e non può contenere caratteri speciali o spazi.
+Prego, scegli un altro nome prima di procedere.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1235"/>
@@ -352,7 +355,7 @@ non corrispondono. Prego, riprova.</translation>
     <message>
         <location filename="../minstall.cpp" line="1299"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>Spiacente, Il nome del tuo computer deve essere
  lungo almeno 2 caratteri. Devi scegliere
@@ -361,7 +364,7 @@ select a different name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1303"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Spiacente, il nome del tuo computer contiene caratteri non validi.
 Devi scegliere un nome differente
@@ -370,7 +373,7 @@ prima di procedere.</translation>
     <message>
         <location filename="../minstall.cpp" line="1309"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Spiacente, il dominio del tuo computer deve essere lungo almeno
  2 caratteri. Devi scegliere un nome differente
@@ -379,7 +382,7 @@ name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1313"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Spiacente, il dominio del tuo computer contiene caratteri non validi.
 Devi scegliere un nome differente
@@ -388,7 +391,7 @@ Devi scegliere un nome differente
     <message>
         <location filename="../minstall.cpp" line="1322"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Spiacente, il nome del tuo gruppo di lavoro deve essere lungo almeno
  2 caratteri. Devi scegliere un nome differente
@@ -420,7 +423,7 @@ Vuoi davvero chiudere ora?</translation>
     <message>
         <location filename="../minstall.cpp" line="1834"/>
         <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for bad blocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has bad blocks.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;&lt;b&gt;Limitazioni&lt;/b&gt;&lt;br/&gt;Ricorda, questo software è fornito tal quale senza alcun tipo di garanzia. Sarà esclusivamente tua responsabilità fare il backup dei tuoi dati prima di procedere.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Scegliere le Partizioni&lt;/b&gt;&lt;br/&gt;MX Linux richiede una partizione root. La partizione swap è facoltativa ma altamente raccomandata. Se vuoi usufruire della sospensione del computer grazie alla funzione Suspend-to-Disk di MX Linux, ti servirà una partizione swap più grande della RAM del computer.&lt;/p&gt;&lt;p&gt;Se scegli una partizione /home separata ti sarà più facile, in futuro, aggiornare ad una versione superiore della distribuzione senza dover reinstallare, cosa che non sarà possibile se il sistema non dispone già di una partizione home separata.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrade&lt;/b&gt;&lt;br/&gt;Per aggiornare un installazione Linux esistente, seleziona per l&apos;utente la stessa partizione home che hai già, e scegli l&apos;opzione per preservare i dati in /home.&lt;/p&gt;&lt;p&gt;Se si vuole preservare la /home quando questa è localizzata con la sua cartella e sottocartelle all&apos;interno della partizione root, l&apos;installer non riformatterà la partizione root. Ne consegue che l&apos;installazione richiederà molto più tempo del solito.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Tipo di Filesystem Preferito&lt;/b&gt;&lt;br/&gt;Per MX Linux, puoi scegliere di formattare le partitioni come ext2, ext3, ext4, jfs, xfs, btrfs o reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;Scegliendo come tipo di formato ext2, ext3 o ext4, avrai poi, eventualmente, la possibilità di selezionare l&apos;opzione di correzione dei settori danneggiati sul disco. La ricerca dei badblock richiede molto tempo, ma potrai saltare questo passaggio, se non sospetti che l&apos;unità contenga errori.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1848"/>
@@ -430,7 +433,7 @@ Vuoi davvero chiudere ora?</translation>
     <message>
         <location filename="../minstall.cpp" line="1852"/>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;&lt;b&gt;Ringraziamenti&lt;/b&gt;&lt;br/&gt;Grazie a tutti coloro che hanno deciso di supportare MX Linux con il loro tempo, denaro, promozione, consigli, lavoro, idee, lodi, e/o incoraggiamento.&lt;/p&gt;&lt;p&gt;Senza di voi non ci sarebbe MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1855"/>
@@ -459,7 +462,7 @@ Torna allo Step 1.</translation>
     <message>
         <location filename="../minstall.cpp" line="1898"/>
         <source>&lt;p&gt;&lt;b&gt;Common Services to Enable&lt;/b&gt;&lt;br/&gt;Select any of these common services that you might need with your system configuration and the services will be started automatically when you start MX Linux.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;&lt;b&gt;Servizi da Avviare in Automatico&lt;/b&gt;&lt;br/&gt;Seleziona quali tra questi servizi, che ritieni importanti per la configurazione del tuo sistema, vuoi che siano attivati automaticamente all&apos;avvio di MX Linux.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1905"/>
@@ -468,8 +471,8 @@ Torna allo Step 1.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1916"/>
-        <source>&lt;p&gt;&lt;b&gt;Localization Defaults&lt;/b&gt;&lt;br/&gt;Set the default keyboard and locale. These will apply unless they are overridden later by the user.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configure Clock&lt;/b&gt;&lt;br/&gt;If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for &apos;System clock uses LOCAL.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Timezone Settings&lt;/b&gt;&lt;br/&gt;The system boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Adjust Date &amp; Time...&lt;/p&gt;&lt;p&gt;&lt;b&gt;Service Settings&lt;/b&gt;&lt;br/&gt;Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! </source>
-        <translation type="unfinished"></translation>
+        <source>&lt;p&gt;&lt;b&gt;Localization Defaults&lt;/b&gt;&lt;br/&gt;Set the default keyboard and locale. These will apply unless they are overridden later by the user.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configure Clock&lt;/b&gt;&lt;br/&gt;If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for &apos;System clock uses LOCAL.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Timezone Settings&lt;/b&gt;&lt;br/&gt;The system boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Properties.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Service Settings&lt;/b&gt;&lt;br/&gt;Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! </source>
+        <translation>&lt;p&gt;&lt;b&gt;Impostazioni di Localizzazione&lt;/b&gt;&lt;br/&gt;Impostare la lingua di default e relativa tastiera. Queste verranno applicate in questa fase, ma potranno anche essere modificate dall&apos;utente successivamente.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configurare l&apos;Ora&lt;/b&gt;&lt;br/&gt;Se si dispone di un computer Apple o con un sistema Unix puro, l&apos;orologio è preselezionato su GMT o Ora Universale. Per cambiare, seleziona la casella &apos;Ora di sistema da usare LOCALE.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Impostazione Fuso Orario&lt;/b&gt;&lt;br/&gt;All&apos;installazione, il fuso orario è predefinito su GMT/UTC. Per cambiare il fuso orario, dopo l&apos;installazione fai il reboot poi clicca con tasto destro sull&apos;orologio presente sulla barra del Pannello e seleziona Proprietà.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Impostazione dei Servizi&lt;/b&gt;&lt;br/&gt;La maggior parte degli utenti non dovrebbe cambiare le impostazioni di defaults. Gli utenti con computer con poche risorse a volte desiderano disattivare alcuni servizi per mantenere l&apos;uso più basso possibile della RAM. In questo caso assicuratevi di sapere cosa state facendo!</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1926"/>
@@ -484,7 +487,7 @@ Torna allo Step 1.</translation>
     <message>
         <location filename="../minstall.cpp" line="1937"/>
         <source>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Finding Applications&lt;/b&gt;&lt;br/&gt;There are hundreds of excellent applications installed with MX Linux. The best way to learn about them is to browse through the Menu and try them. Many of the apps were developed specifically for the Xfce environment. These are shown in the main menus. &lt;p&gt;In addition MX Linux includes many standard Linux applications that are run only from the command line and therefore do not show up in the Menu.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Trovare Applicazioni&lt;/b&gt;&lt;br/&gt;Ci sono centinaia di eccellenti applicazioni installate con MX Linux. Il miglior modo di cominciare a conoscerle è di scorrere il Menu e provarle. Molte applicazioni sono sviluppate specificatamente per l&apos;interfaccia Xfce. Queste sono visibili nel menu principale e relativi sottomenu. &lt;p&gt;In aggiunta MX Linux include molte applicazioni standard di Linux che sono avviabili solo da linea di comando e quindi non appaiono nel Menu.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1949"/>
@@ -666,17 +669,17 @@ Torna allo Step 1.</translation>
     <message>
         <location filename="../minstall.cpp" line="2643"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at https://mxlinux.org There are volunteers to help you at the MX forum, https://forum.mxlinux.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;&lt;b&gt;Ricevere Assistenza&lt;/b&gt;&lt;br/&gt;Informazioni di base su MX Linux puoi trovarle in https://mxlinux.org. Ci sono volontari che ti possono aiutare nel Forum di MX, https://forum.mxlinux.org &lt;/p&gt;&lt;p&gt;Se chiedi aiuto, per favore ricordati di fornire sufficienti dettagli per descrivere il tuo problema e il tuo computer. Di solito con richieste del tipo &apos;non funziona&apos; non si riceve aiuto.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2651"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from LiveDVD or LiveUSB and running one of the utilities in MX Tools or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux LiveDVD or LiveUSB to recover data from MS-Windows systems!&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;&lt;b&gt;Riparare la tua Installazione&lt;/b&gt;&lt;br/&gt;Se MX Linux, installato sul disco, per qualche motivo non dovesse funzionare, talvolta è possibile riparare il danno avviando il DVD-Live o l&apos;USB-Live e facendo uso delle utility presenti negli specifici strumenti d&apos;aiuto della distribuzione MX Tools o usando i normali strumenti Linux per riparare il sistema.&lt;/p&gt;&lt;p&gt;Puoi usare il DVD-Live o l&apos;USB-Live di MX Linux anche per recuperare dati da un sistema MS-Windows!&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2657"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;&lt;b&gt;Sostieni MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux è sostenuto da persone come te. Alcuni aiutano altri nei forum di supporto - https://forum.mxlinux.org, - http://antix.freeforums.org o traducono guide in lingue diverse, danno consigli, scrivono documentazione, o aiutano a testare nuovo software.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2664"/>
@@ -686,7 +689,7 @@ Torna allo Step 1.</translation>
     <message>
         <location filename="../minstall.cpp" line="2672"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org or http://antix.freeforums.org&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;&lt;b&gt;Mantenere MX Linux aggiornato&lt;/b&gt;&lt;br/&gt;Per informazioni e aggiornamenti di MX Linux, prego visita https://mxlinux.org or http://antix.freeforums.org&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -731,17 +734,17 @@ Torna allo Step 1.</translation>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux is an independent linux distribution based on Debian Stable&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Droid Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans';&quot;&gt;MX Linux is an independent Linux distribution based on Debian Stable&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans';&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;Enjoy using MX Linux.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux è una distribuzione linux indipendente basata su Debian Stabile&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux è una distribuzione Linux indipendente basata su Debian Stabile&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux usa alcuni componenti da MEPIS Linux che sono rilasciati con una licenza libera Apache. Alcuni componenti MEPIS sono stati modificati per MX Linux.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -1117,7 +1120,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="2068"/>
         <source>Desktop modifications made in the live environment will be carried over to the installed OS</source>
-        <translation type="unfinished"></translation>
+        <translation>Le modifiche del desktop, fatte in modalità &quot;live&quot;, verranno trasferite sul sistema una volta installato</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2071"/>
@@ -1134,10 +1137,15 @@ p, li { white-space: pre-wrap; }
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Droid Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans'; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-weight:600;&quot;&gt;Sostieni MX Linux&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux è sostenuto da persone come te. Alcuni aiutano altri nei forum di supporto - https://forum.mxlinux.org, - http://antix.freeforums.org o traducono guide in lingue diverse, danno consigli, scrivono documentazione, o aiutano a testare nuovo software.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>

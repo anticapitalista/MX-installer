@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ja">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ja" version="2.1">
 <context>
     <name>MInstall</name>
     <message>
@@ -110,7 +108,7 @@ The disk with the partition you selected for installation is failing.
     <message>
         <location filename="../minstall.cpp" line="454"/>
         <source>OK to format and use the entire disk (%1) for MX Linux?</source>
-        <translation type="unfinished"></translation>
+        <translation>フォーマットし、MX Linux用にディスク全体 (%1) を使用しますか？ よければ OK を押して下さい</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="466"/>
@@ -144,19 +142,23 @@ The root partition must be at least 3.5 GB.</source>
         <location filename="../minstall.cpp" line="633"/>
         <source>OK to format and destroy all data on 
 %1 for the / (root) partition?</source>
-        <translation type="unfinished"></translation>
+        <translation>/ （ルート) パーティション ％1 をフォーマットし、
+全データを破壊してよろしいですか？ OK で実施します
+</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="635"/>
         <source>All data on %1 will be deleted, except for /home
 OK to continue?</source>
-        <translation type="unfinished"></translation>
+        <translation>/home を除く %1 の全データを削除してよろしいですか？
+OK で実施します</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="652"/>
         <source>OK to format and destroy all data on 
 %1 for the swap partition?</source>
-        <translation type="unfinished"></translation>
+        <translation>swap パーティション %1 をフォーマットし、
+全データを削除してよろしいですか？ OK で実施します。</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="665"/>
@@ -166,12 +168,12 @@ OK to continue?</source>
     <message>
         <location filename="../minstall.cpp" line="674"/>
         <source>OK to reuse (no reformat) %1 as the /home partition?</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 を /home パーティションにしますか？(未初期化) OK で確定します。</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="676"/>
         <source>OK to format and destroy all data on %1 for the /home partition?</source>
-        <translation type="unfinished"></translation>
+        <translation>/home パーティション %1 を初期化し、全データを削除してよろしいですか？ OK で実施します</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="687"/>
@@ -206,7 +208,7 @@ OK to continue?</source>
     <message>
         <location filename="../minstall.cpp" line="927"/>
         <source>OK to install GRUB bootloader at %1 ?</source>
-        <translation type="unfinished"></translation>
+        <translation>%1 に GRUB ブートローダーをインストールしてよろしいですか？ OK で実施します</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="939"/>
@@ -216,7 +218,7 @@ OK to continue?</source>
     <message>
         <location filename="../minstall.cpp" line="974"/>
         <source>Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the LiveDVD or LiveUSB and repair the installation with the reinstall GRUB function.</source>
-        <translation type="unfinished"></translation>
+        <translation>ごめんなさい。 GRUB インストールに失敗しました。これはディスクフォーマットの変化した事に起因し得ます。GRUBをオフにして、MX Linux LiveDVD・LiveUSB を再起動し、GRUB 再インストール機能を使用して復旧インストールを行う事でインストールを完了できます。</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1032"/>
@@ -233,7 +235,7 @@ and create a new home directory?</source>
     <message>
         <location filename="../minstall.cpp" line="1054"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>/home ディレクトリの保存に失敗しました。
 処理を進めるために異なるユーザー名を選択するか
@@ -252,7 +254,7 @@ you&apos;ll have to select a different username.</source>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1080"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>ホームディレクトリの使用・保存・削除をしたくない場合は
 ユーザー名を変更して下さい。</translation>
@@ -301,7 +303,9 @@ a longer name before proceeding.</source>
         <source>The user name needs be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
-        <translation type="unfinished"></translation>
+        <translation>ユーザー名には小文字を使用し
+特殊記号やスペースを含める事はできません。
+先へ進む前に別の名前を入力して下さい。</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1235"/>
@@ -347,7 +351,7 @@ not match.  Please try again.</source>
     <message>
         <location filename="../minstall.cpp" line="1299"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>コンピューター名は2文字より
 長くしなければいけません。
@@ -356,7 +360,7 @@ select a different name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1303"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>コンピュータ名に使用できない文字が
 含まれています。
@@ -365,7 +369,7 @@ name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1309"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>ドメイン名は2文字以上に
 しなければいけません。
@@ -374,7 +378,7 @@ name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1313"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>ドメイン名に使用できない文字が
 含まれています。
@@ -383,7 +387,7 @@ name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1322"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>ワープグループは2文字以上で
 なければいけません。
@@ -414,7 +418,7 @@ Do you really want to stop now?</source>
     <message>
         <location filename="../minstall.cpp" line="1834"/>
         <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for bad blocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has bad blocks.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;&lt;b&gt;制限事項&lt;/b&gt;&lt;br/&gt;このソフトウェアは何の保証もない現状のまま提供されている事を覚えておいてください。あなたの責任で進む前に、まずはデータのバックアップを行いましょう。&lt;/p&gt;&lt;p&gt;&lt;b&gt;パーティションの選択&lt;/b&gt;&lt;br/&gt;MX Linux のルートパーティションが必要です。swap パーティションはオプションですが、非常におすすめされます。MX Linux でディスクへのサスペンド機能を使用したい場合、物理メモリのサイズよりも大きいスワップパーティションが必要になります。&lt;/p&gt;&lt;p&gt;別の /home パーティションを選択した場合、将来的にアップグレードすることが容易になりますが、別のホームパーティションを持たずにインストールされた MX Linux をアップグレードする場合、これは行えません。&lt;/p&gt;&lt;p&gt;&lt;b&gt;アップグレード&lt;/b&gt;&lt;br/&gt;既存 Linux インストールからアップグレードするには、前と同じ /home パーティションを選択し、/home 内のデータを保存する設定にしている事を確認してください。&lt;/p&gt;&lt;p&gt;ルートパーティション上にある既存の /home ディレクトリツリーを保持している場合、インストーラはルートパーティションをフォーマットしません。その結果、インストールが通常よりもはるかに長い時間がかかります。&lt;/p&gt;&lt;p&gt;&lt;b&gt;最適なファイルシステムの種類&lt;/b&gt;&lt;br/&gt;MX Linux では次のパーティションでフォーマットすることを選択することができます。ext2 ext3 ext4 jfs xfs btrfs reiser&lt;/p&gt;&lt;p&gt;&lt;b&gt;不良ブロック&lt;/b&gt;&lt;br/&gt;フォーマットの種類として ext2 ext3 ext4 のファイルシステムを選択した場合、ドライブの不良ブロックを確認・補正するオプションがあります。 ドライブが不良ブロックを持っていると思われる場合を除き、これはスキップする事が可能です。不正ブロックの確認は非常に時間を要します。&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1848"/>
@@ -424,7 +428,7 @@ Do you really want to stop now?</source>
     <message>
         <location filename="../minstall.cpp" line="1852"/>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;&lt;b&gt;スペシャルサンクス&lt;/b&gt;&lt;br/&gt;MX Linux をサポートするために、自分の時間、お金、提案、仕事、賞賛、アイデア、プロモーション、激励を提供してくれたすべての方々に感謝いたします。&lt;/p&gt;&lt;p&gt;あなたなしでは MX Linux はなかったでしょう。&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1855"/>
@@ -453,7 +457,7 @@ Step 1 に処理を戻します。</translation>
     <message>
         <location filename="../minstall.cpp" line="1898"/>
         <source>&lt;p&gt;&lt;b&gt;Common Services to Enable&lt;/b&gt;&lt;br/&gt;Select any of these common services that you might need with your system configuration and the services will be started automatically when you start MX Linux.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;&lt;b&gt;コモンサービスの有効&lt;/b&gt;&lt;br/&gt;ご使用のシステム構成に必要なサービスがあればそれを選択して下さい。これは MX Linux 起動時に自動的に開始されます。&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1905"/>
@@ -462,8 +466,8 @@ Step 1 に処理を戻します。</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1916"/>
-        <source>&lt;p&gt;&lt;b&gt;Localization Defaults&lt;/b&gt;&lt;br/&gt;Set the default keyboard and locale. These will apply unless they are overridden later by the user.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configure Clock&lt;/b&gt;&lt;br/&gt;If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for &apos;System clock uses LOCAL.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Timezone Settings&lt;/b&gt;&lt;br/&gt;The system boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Adjust Date &amp; Time...&lt;/p&gt;&lt;p&gt;&lt;b&gt;Service Settings&lt;/b&gt;&lt;br/&gt;Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! </source>
-        <translation type="unfinished"></translation>
+        <source>&lt;p&gt;&lt;b&gt;Localization Defaults&lt;/b&gt;&lt;br/&gt;Set the default keyboard and locale. These will apply unless they are overridden later by the user.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configure Clock&lt;/b&gt;&lt;br/&gt;If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for &apos;System clock uses LOCAL.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Timezone Settings&lt;/b&gt;&lt;br/&gt;The system boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Properties.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Service Settings&lt;/b&gt;&lt;br/&gt;Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! </source>
+        <translation>&lt;p&gt;&lt;b&gt;言語のデフォルト&lt;/b&gt;&lt;br/&gt;デフォルトキーボードと言語(ロケール)を設定します。これらは後にユーザーによって上書きされない限り適用されます。&lt;/p&gt;&lt;p&gt;&lt;b&gt;クロックの設定&lt;/b&gt;&lt;br/&gt;もし Apple や純粋な Unix コンピュータを使用している場合、そのシステムは通常 GMT または Universal Time (UTC) へ設定します。それを変更する場合は「シシテムクロックにローカルタイムを使用する」をクリックしチェックを入れます&lt;/p&gt;&lt;p&gt;&lt;b&gt;タイムゾーンの設定&lt;/b&gt;&lt;br/&gt;システム起動時、タイムゾーンは GMT/UTC へ設定されています。タイムゾーンを再起動して新たにインストールしたシステムで変更したい場合、パネルにある時計を右クリックし、プロパティを選択して下さい。&lt;/p&gt;&lt;p&gt;&lt;b&gt;サービス設定&lt;/b&gt;&lt;br/&gt;通常ユーザーはこれを変更しないで下さい。低リソースのコンピュータを使用するユーザーはいくつかのサービスを無効にする事でメモリ使用を低く抑える事ができます。行っている事を承知の上で実施して下さい！ </translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1926"/>
@@ -478,7 +482,7 @@ Step 1 に処理を戻します。</translation>
     <message>
         <location filename="../minstall.cpp" line="1937"/>
         <source>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Finding Applications&lt;/b&gt;&lt;br/&gt;There are hundreds of excellent applications installed with MX Linux. The best way to learn about them is to browse through the Menu and try them. Many of the apps were developed specifically for the Xfce environment. These are shown in the main menus. &lt;p&gt;In addition MX Linux includes many standard Linux applications that are run only from the command line and therefore do not show up in the Menu.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;/p&gt;&lt;p&gt;&lt;b&gt;アプリケーションの検索&lt;/b&gt;&lt;br/&gt;MX Linux には優れた何百ものアプリケーションがインストールされています。 それらについて学ぶ最も良い方法は、メニューを参照し、それらを試してみることです。アプリの多くは、Xfce 環境のため特別に開発されました。これらはメインメニューに表示されています。&lt;p&gt;また MX Linux ではコマンドラインでのみ実行されるメニューに表示されない多くの標準的な Linux アプリケーションが含まれています。&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1949"/>
@@ -524,7 +528,7 @@ Step 1 に処理を戻します。</translation>
     <message>
         <location filename="../minstall.cpp" line="2077"/>
         <source>CPU frequency, irqbalance</source>
-        <translation>CPU frequency, irqbalance</translation>
+        <translation>CPU 周波数, irqbalance</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2087"/>
@@ -660,17 +664,17 @@ Step 1 へ処理を戻します。</translation>
     <message>
         <location filename="../minstall.cpp" line="2643"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at https://mxlinux.org There are volunteers to help you at the MX forum, https://forum.mxlinux.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;&lt;b&gt;ヘルプを求める&lt;/b&gt;&lt;br/&gt;MX Linux に関する基本的な情報は https://mxlinux.org 、助けるためのボランティア MX フォーラム（掲示板） https://forum.mxlinux.org があります。 &lt;/p&gt;&lt;p&gt;助けを求める場合は、問題といくつかコンピュータの詳細を記述するのを忘れないで下さい。通常、「動作しません」のような文は有用ではありません。&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2651"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from LiveDVD or LiveUSB and running one of the utilities in MX Tools or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux LiveDVD or LiveUSB to recover data from MS-Windows systems!&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;&lt;b&gt;インストールの修復&lt;/b&gt;&lt;br/&gt;MX Linux はハードドライブから作業を停止した場合、LiveDVD や LiveUSB からブートし MX ツールのユーティリティいずれかを実行するか、システムを修復するため Linux ツールを使用して問題を解決することが可能です。&lt;/p&gt;&lt;p&gt;また、MS-Windows システムからデータを回復するために MX Linux LiveDVD やLiveUSB を使用することができます！&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2657"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;&lt;b&gt;MX Linux のサポート&lt;/b&gt;&lt;br/&gt;MX Linux はあなたのような人々によってサポートされています。サポートフォーラム https://forum.mxlinux.org および http://antix.freeforums.org で他の人たちが助けてくれます。また別の言語やヘルプファイルの翻訳、新たなソフトウェアのテスト、ドキュメントを製作、提案などを行っています。&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2664"/>
@@ -680,7 +684,7 @@ Step 1 へ処理を戻します。</translation>
     <message>
         <location filename="../minstall.cpp" line="2672"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org or http://antix.freeforums.org&lt;/p&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;p&gt;&lt;b&gt;MX Linux を最新にする&lt;/b&gt;&lt;br/&gt;MX Linux 情報やアップデートについてをご参照ください。  https://mxlinux.org または  http://antix.freeforums.org&lt;/p&gt;</translation>
     </message>
 </context>
 <context>
@@ -725,11 +729,11 @@ Step 1 へ処理を戻します。</translation>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux is an independent linux distribution based on Debian Stable&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Droid Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans';&quot;&gt;MX Linux is an independent Linux distribution based on Debian Stable&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans';&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;Enjoy using MX Linux.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
         <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -1111,7 +1115,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="2068"/>
         <source>Desktop modifications made in the live environment will be carried over to the installed OS</source>
-        <translation type="unfinished"></translation>
+        <translation>ライブ環境で作られたデスクトップの修正がインストールされている OS へ引き継がれます</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2071"/>
@@ -1128,10 +1132,15 @@ p, li { white-space: pre-wrap; }
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Droid Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans'; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-weight:600;&quot;&gt;MX Linux のサポート&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux はあなたのような人々によってサポートされています。サポートフォーラム https://forum.mxlinux.org,  または http://antix.freeforums.org で他の方々が助けてくれます。 また別言語やヘルプファイルの翻訳、新しいソフトウェアのテスト、ドキュメントの製作、提案を行っています。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
 </context>
 <context>
