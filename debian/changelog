@@ -1,3 +1,9 @@
+mx-installer (16.11mx16) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 16 Nov 2016 13:15:17 -0500
+
 mx-installer (16.10mx16+5) mx; urgency=medium
 
   * new translations
