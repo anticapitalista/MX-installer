@@ -1,3 +1,33 @@
+mx-installer (16.11mx16) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 16 Nov 2016 13:15:17 -0500
+
+mx-installer (16.10mx16+5) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Fri, 28 Oct 2016 08:33:33 -0400
+
+mx-installer (16.10mx16+3) mx; urgency=medium
+
+  * start with sudo -E and small text fixes
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 27 Oct 2016 13:49:39 -0400
+
+mx-installer (16.10mx16+2) mx; urgency=medium
+
+  * text changes 
+
+ -- Adrian <adrian@mxlinux.org>  Mon, 24 Oct 2016 10:06:19 -0400
+
+mx-installer (16.10mx16+1) mx; urgency=medium
+
+  * changed GUI
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 16 Oct 2016 10:51:15 -0400
+
 mx-installer (16.10mx16) mx; urgency=medium
 
   * changed URLs

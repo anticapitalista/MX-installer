@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="pl">
+<TS version="2.1" language="tr">
 <context>
     <name>MInstall</name>
     <message>
@@ -10,18 +10,13 @@
 The disk with the partition you selected for installation is failing.
 
 </source>
-        <translation>
-
-Partycja wybrana do instalacji zawodzi.
-
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="281"/>
         <source>You are strongly advised to abort.
 </source>
-        <translation>Zalecamy przerwanie.
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="282"/>
@@ -29,14 +24,12 @@ Partycja wybrana do instalacji zawodzi.
         <source>If unsure, please exit the Installer and run GSmartControl for more information.
 
 </source>
-        <translation>Jeśli nie jesteś pewien, proszę opuść instalator i uruchom GSmartControl by zdobyć więcej informacji.
-
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="283"/>
         <source>Do you want to abort the installation?</source>
-        <translation>Czy chcesz przerwać instalację?</translation>
+        <translation>Kurulumu iptal etmek istiyor musunuz?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="285"/>
@@ -55,7 +48,7 @@ Partycja wybrana do instalacji zawodzi.
         <location filename="../minstall.cpp" line="1749"/>
         <location filename="../minstall.cpp" line="2440"/>
         <source>Yes</source>
-        <translation>Tak</translation>
+        <translation>Evet</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="285"/>
@@ -74,40 +67,36 @@ Partycja wybrana do instalacji zawodzi.
         <location filename="../minstall.cpp" line="1749"/>
         <location filename="../minstall.cpp" line="2440"/>
         <source>No</source>
-        <translation>Nie</translation>
+        <translation>Hayır</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="293"/>
         <source>Smartmon tool output:
 
 </source>
-        <translation>Informacje narzędzia smartmon:
-
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="294"/>
         <source>The disk with the partition you selected for installation passes the S.M.A.R.T. monitor test (smartctl)
 </source>
-        <translation>Wybrana partycja przechodzi test monitora S.M.A.R.T. (smartctl)
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="295"/>
         <source>but the tests indicate it will have a higher than average failure rate in the upcoming year.
 </source>
-        <translation>lecz testy wskazują na to, że stan Twojego dysku może pogorszyć się w najbliższym roku.
-</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="297"/>
         <source>Do you want to continue?</source>
-        <translation>Czy chcesz kontynuować?</translation>
+        <translation>Devam etmek istiyor musunuz?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="331"/>
         <source>Ready to install MX Linux filesystem</source>
-        <translation>Gotowy do zainstalowania systemu plików MX Linux</translation>
+        <translation>MX Linux dosya sistemi kuruluma hazır</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="454"/>
@@ -117,30 +106,30 @@ Partycja wybrana do instalacji zawodzi.
     <message>
         <location filename="../minstall.cpp" line="466"/>
         <source>Creating required partitions</source>
-        <translation>Tworzenie wymaganych partycji</translation>
+        <translation>Gerekli bölümler oluşturuluyor</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="545"/>
         <location filename="../minstall.cpp" line="718"/>
         <source>Formatting swap partition</source>
-        <translation>Formatowanie partycji SWAP</translation>
+        <translation>Takas alanı biçimlendiriliyor</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="554"/>
         <source>Formatting root partition</source>
-        <translation>Formatowanie partycji głównej</translation>
+        <translation>Kök bölümü biçimlendiriliyor</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="618"/>
         <source>You must choose a root partition.
 The root partition must be at least 3.5 GB.</source>
-        <translation>Musisz wybrać partycję główną.
-Partycja główna musi mieć przynajmniej 3,5G.</translation>
+        <translation>Bir kök bölümü seçmelisiniz.
+Kök bölümü en az 3.5 GB olmalı.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="624"/>
         <source>The partition you selected for root, appears to be a MS-Windows partition.  Are you sure you want to reformat this partition?</source>
-        <translation>Wybrana partycja główna wygląda na partycję MS Windows. Czy jesteś pewny, że chcesz ją sformatować?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="633"/>
@@ -163,7 +152,7 @@ OK to continue?</source>
     <message>
         <location filename="../minstall.cpp" line="665"/>
         <source>The partition you selected for /home, appears to be a MS-Windows partition.  Are you sure you want to reformat this partition?</source>
-        <translation>Wybrana partycja dla /home wygląda na partycję MS Windows. Czy jesteś pewny, że chcesz sformatować tę partycję?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="674"/>
@@ -178,32 +167,32 @@ OK to continue?</source>
     <message>
         <location filename="../minstall.cpp" line="687"/>
         <source>Preparing required partitions</source>
-        <translation>Przygotowywanie wymaganych partycji</translation>
+        <translation>Gerekli bölümler hazırlanıyor</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="738"/>
         <source>Formatting the / (root) partition</source>
-        <translation>Formatowanie / (głównej) partycji</translation>
+        <translation>/ (kök) bölümü biçimlendiriliyor</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="772"/>
         <source>Mounting the /home partition</source>
-        <translation>Montowanie partycji /home</translation>
+        <translation>/home bölümü bağlanıyor</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="787"/>
         <source>Formatting the /home partition</source>
-        <translation>Formatowanie partycji /home</translation>
+        <translation>/home bölümü biçimlendiriliyor</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="833"/>
         <source>Mounting the / (root) partition</source>
-        <translation>Montowanie / (głównej) partycji</translation>
+        <translation>/ (kök) bölümü bağlanıyor</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="864"/>
         <source>Creating system directories</source>
-        <translation>Tworzenie katalogów systemowych</translation>
+        <translation>Sistem dizinleri oluşturuluyor</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="927"/>
@@ -223,81 +212,74 @@ OK to continue?</source>
     <message>
         <location filename="../minstall.cpp" line="1032"/>
         <source>The home directory for %1 already exists.Would you like to reuse the old home directory?</source>
-        <translation>Katalog domowy dla %1 już istnieje. Czy chcesz ponownie użyć stary katalog domowy?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1038"/>
         <source>Would you like to save the old home directory
 and create a new home directory?</source>
-        <translation>Czy chcesz zachować stary katalog domowy
-i stworzyć nowy katalog domowy?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1054"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
 you&apos;ll have to select a different username or
 delete a previously saved copy of your home directory.</source>
-        <translation>Przepraszam, wystąpił błąd przy zachowywaniu starego katalogu domowego. By kontynuować
-powinieneś wybrać inną nazwę użytkownika
-i usunąć poprzednią kopię swojego katalogu domowego.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1063"/>
         <source>Would you like to delete the old home directory for %1?</source>
-        <translation>Czy chcesz usunąć stary katalog domowy dla %1?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1073"/>
         <source>Sorry, failed to delete old home directory. Before proceeding, 
 you&apos;ll have to select a different username.</source>
-        <translation>Przepraszam, wystąpił błąd przy usuwaniu starego katalogu domowego. By kontynuować, 
-powinieneś wybrać inną nazwę użytkownika.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1080"/>
         <source>You&apos;ve chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
-        <translation>Nie wybrałeś ani używania, zachowania, ani usunięcia starego katalogu domowego.
-By kontynuować powinieneś wybrać inną nazwę użytkownika.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1093"/>
         <source>Sorry, failed to create user directory.</source>
-        <translation>Przepraszam, wystąpił błąd przy tworzeniu katalogu użytkownika.</translation>
+        <translation>Üzgünüm,kullanıcı dizini oluşturma başarısız.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1100"/>
         <source>Sorry, failed to name user directory.</source>
-        <translation>Przepraszam, wystąpił błąd przy nazywaniu katalogu użytkownika.</translation>
+        <translation>Üzgünüm,kullanıcı dizini adı hatalı.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1125"/>
         <source>Sorry, failed to save desktop changes.</source>
-        <translation>Przepraszam, wystąpił błąd zapisu zmian pulpitu.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1133"/>
         <source>Sorry, failed to set ownership of user directory.</source>
-        <translation>Przepraszam, wystąpił błąd przy ustawianiu własności katalogu użytkownika.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1182"/>
         <source>Sorry, unable to set root password.</source>
-        <translation>Przepraszam, nie można ustawić hasła administratora.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1209"/>
         <source>Sorry, unable to set user password.</source>
-        <translation>Przepraszam, nie można ustawić hasła użytkownika.</translation>
+        <translation>Üzgünüm, kullanıcı parolası yetersiz</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1222"/>
         <source>The user name needs to be at least
 2 characters long. Please select
 a longer name before proceeding.</source>
-        <translation>Nazwa użytkownika musi mieć co najmniej
-2 znaki długości. Wybierz
-dłuższą nazwę, by kontynuować.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1228"/>
@@ -312,9 +294,7 @@ Please choose another name before proceeding.</source>
         <source>The user password needs to be at least
 2 characters long. Please select
 a longer password before proceeding.</source>
-        <translation>Hasło użytkownika musi mieć co najmniej
-2 znaki długości. Wybierz
-dłuższe hasło, by kontynuować.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1242"/>
@@ -322,78 +302,63 @@ dłuższe hasło, by kontynuować.</translation>
         <source>The root password needs to be at least
 2 characters long. Please select
 a longer password before proceeding.</source>
-        <translation>Hasło administratora musi mieć co najmniej
-2 znaki długości. Wybierz
-dłuższe hasło, by kontynuować.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1251"/>
         <source>Sorry that name is in use.
 Please select a different name.
 </source>
-        <translation>Ta nazwa jest już wykorzystywana.
-Proszę wybierz inną.
-
+        <translation>Üzgünüm bu ad kullanılıyor.
+Farklı bir ad seçin.
 </translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1258"/>
         <source>The user password entries do
 not match.  Please try again.</source>
-        <translation>Hasła użytkownika nie zgadzają się.
-Spróbuj ponownie.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1264"/>
         <source>The root password entries do
  not match.  Please try again.</source>
-        <translation>Hasła administratora nie zgadzają się.
-Spróbuj ponownie.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1299"/>
         <source>Sorry your computer name needs to be
 at least 2 characters long. You&apos;ll have to
 select a different name before proceeding.</source>
-        <translation>Przepraszam, nazwa Twojego komputera musi mieć
-co najmniej 2 znaki. Wybierz inną
-nazwę, by kontynuować.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1303"/>
         <source>Sorry your computer name contains invalid characters.
 You&apos;ll have to select a different
 name before proceeding.</source>
-        <translation>Ta nazwa komputera zawiera niedozwolone znaki.
-Musisz wybrać inną
-nazwę, by kontynuować.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1309"/>
         <source>Sorry your computer domain needs to be at least
 2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
-        <translation>Przepraszam, nazwa domeny musi mieć
-co najmniej 2 znaki. Wybierz inną
-nazwę, by kontynuować.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1313"/>
         <source>Sorry your computer domain contains invalid characters.
 You&apos;ll have to select a different
 name before proceeding.</source>
-        <translation>Nazwa domeny komputera zawiera niedozwolone znaki.
-Wybierz inną,
-by kontynuować.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1322"/>
         <source>Sorry your workgroup needs to be at least
 2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
-        <translation>Przepraszam, nazwa domeny musi mieć
-co najmniej 2 znaki. Wybierz inną
-nazwę, by kontynuować.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1732"/>
@@ -401,21 +366,19 @@ nazwę, by kontynuować.</translation>
 To use the new installation, reboot without the installation media.
 
 Do you want to reboot now?</source>
-        <translation>Instalacja i konfiguracja MX Linux&apos;a zakończona.
-Aby skorzystać z nowej instalacji, uruchom ponownie komputer bez płyty CD/DVD/USB
- Czy chcesz uruchomić ponownie teraz? </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1748"/>
         <source>The installation and configuration is incomplete.
 Do you really want to stop now?</source>
-        <translation>Instalacja i konfiguracja MX-14&apos;a jest niekompletna.
-Czy naprawdę chcesz zakończyć?</translation>
+        <translation>Kurulum ve yapılandırma tamamlanmadı.
+Gerçekten şimdi durdurmak istiyor musunuz?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1823"/>
         <source>&lt;p&gt;&lt;b&gt;General Instructions&lt;/b&gt;&lt;br/&gt;BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.&lt;/p&gt;&lt;p&gt;On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. You will be prompted for confirmation before any destructive actions are performed.&lt;/p&gt;&lt;p&gt;MX Linux requires about 3.5 GB of space. 5 GB or more is preferred. You can use the entire disk or you can put MX Linux on existing partitions. &lt;/p&gt;&lt;p&gt;If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system&apos;s software to set up partitions and boot manager before installing MX Linux.&lt;/p&gt;&lt;p&gt;The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Instrukcja&lt;/b&gt;&lt;br/&gt;PRZED ROZPOCZĘCIEM ZAMKNIJ WSZYSTKIE INNE APLIKACJE.&lt;/p&gt;&lt;p&gt;Przeczytaj instrukcje zawarte na każdej ze stron, dokonaj wyborów, a potem kliknij „Następna”, gdy jesteś gotów kontynuować. Zostaniesz poproszony o potwierdzenie przed każdą akcją, która może dokonać poważnych zmian na komputerze.&lt;/p&gt;&lt;p&gt; MX Linux wymaga około 3,5G przestrzeni dyskowej. Zalecamy jednak przygotowanie przynajmniej 5G. Możesz wykorzystać cały dysk lub zainstalować MX Linux na istniejących partycjach. &lt;/p&gt;&lt;p&gt; Jeśli korzystasz z systemu Mac OS lub Windows (poczynając od Visty), może zaistnieć konieczność wykorzystania oprogramowania systemowego do przygotowania partycji oraz menadżera rozruchu przed instalacją MX Linux.&lt;/p&gt;&lt;p&gt;MX Linux wspiera partycje wykorzystujące następujące systemy plików: ext2, ext3, ext4 (rekomendowany), jfs, xfs, btrfs, reiserfs. &lt;/p&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1834"/>
@@ -425,7 +388,7 @@ Czy naprawdę chcesz zakończyć?</translation>
     <message>
         <location filename="../minstall.cpp" line="1848"/>
         <source>Returning to Step 1 to select another disk.</source>
-        <translation>Powrót do kroku pierwszego by wybrać inny dysk.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1852"/>
@@ -435,21 +398,19 @@ Czy naprawdę chcesz zakończyć?</translation>
     <message>
         <location filename="../minstall.cpp" line="1855"/>
         <source>&lt;p&gt;&lt;b&gt;Installation in Progress&lt;/b&gt;&lt;br/&gt;MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.&lt;/p&gt;&lt;p&gt;If you click the Abort button, the installation will be stopped as soon as possible.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Trwa instalacja&lt;/b&gt;&lt;br/&gt;MX Linux jest instalowany. Świeża instalacja zajmie prawdopodobnie od 3 do 20 minut, w zależności od możliwości sprzętowych Twojego komputera i rozmiaru partycji, które zostały ustanowione.&lt;/p&gt;&lt;p&gt;Jeśli zostanie kliknięty przycisk Przerwij, instalacja zostanie zatrzymana tak szybko jak to możliwe.&lt;/p&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1867"/>
         <source>Failed to create required partitions.
 Returning to Step 1.</source>
-        <translation>Błąd przy tworzeniu wymaganych partycji.
-Powracam do kroku 1.</translation>
+        <translation>Gerekli bölümlendirmelerin oluşturulması başarısız.Adım 1&apos;e geri dönülüyor.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1876"/>
         <source>Failed to prepare chosen partitions.
 Returning to Step 1.</source>
-        <translation>Błąd przy przygotowywaniu wybranych partycji.
-Powracam do kroku 1.</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1889"/>
@@ -464,7 +425,7 @@ Powracam do kroku 1.</translation>
     <message>
         <location filename="../minstall.cpp" line="1905"/>
         <source>&lt;p&gt;&lt;b&gt;Computer Identity&lt;/b&gt;&lt;br/&gt;The computer name is a common unique name which will identify your computer if it is on a network. The computer domain is unlikely to be used unless your ISP or local network requires it.&lt;/p&gt;&lt;p&gt;The computer and domain names can contain only alphanumeric characters, dots, hyphens. They cannot contain blank spaces, start or end with hyphens&lt;/p&gt;&lt;p&gt;The SaMBa Server needs to be activated if you want to use it to share some of your directories or printer with a local computer that is running MS-Windows or Mac OSX.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Tożsamość komputera&lt;/b&gt;&lt;br/&gt;Nazwa komputera jest unikalnym identyfikatorem Twojego komputera w sieci. Domena komputera prawdopodobnie nie będzie wykorzystywana, dopóki nie jest wymagana przez administratora sieci lokalnej lub dostawcę internetu.&lt;/p&gt;&lt;p&gt;Nazwy komputera i domeny mogą zawierać jedynie litery, numery, kropki oraz podkreślenia. Nie mogą zawierać spacji oraz zaczynać się i kończyć podkreśleniem.&lt;/p&gt;&lt;p&gt;Serwer SaMBa musi zostać aktywowany jeśli chcesz współdzielić jakiekolwiek zasoby w sieci lokalnej z komputerami działającymi pod kontrolą systemów operacyjnych MS Windows i Mac OSX.&lt;/p&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1916"/>
@@ -474,12 +435,12 @@ Powracam do kroku 1.</translation>
     <message>
         <location filename="../minstall.cpp" line="1926"/>
         <source>&lt;p&gt;&lt;b&gt;Default User Login&lt;/b&gt;&lt;br/&gt;The root user is similar to the Administrator user in some other operating systems. You should not use the root user as your daily user account. Please enter the name for a new (default) user account that you will use on a daily basis. If needed, you can add other user accounts later with MX User Manager. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Passwords&lt;/b&gt;&lt;br/&gt;Enter a new password for your default user account and for the root account. Each password must be entered twice.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Tworzenie użytkownika&lt;/b&gt;&lt;br/&gt;Użytkownik uprzywilejowany (root) ma charakter zbliżony do konta Administratora w innych systemach operacyjnych. Nie powinieneś korzystać z niego, w swoich codziennych działaniach. Wprowadź proszę nazwę konta nowego użytkownika, które będziesz wykorzystywać. Możesz potem dodać kolejnych użytkowników za pomocą narzędzia MX Zarządzanie użytkownikami. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Hasła&lt;/b&gt;&lt;br/&gt;Wprowadź nowe hasło dla zdefiniowanego wcześniej konta oraz dla konta uprzywilejowanego (root). Każde hasło musi zostać wprowadzone dwukrotnie.&lt;/p&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1937"/>
         <source>&lt;p&gt;&lt;b&gt;Congratulations!&lt;/b&gt;&lt;br/&gt;You have completed the installation of </source>
-        <translation>&lt;p&gt;&lt;b&gt;Gratulujemy!&lt;/b&gt;&lt;br/&gt;Zakończono instalację</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1937"/>
@@ -489,88 +450,88 @@ Powracam do kroku 1.</translation>
     <message>
         <location filename="../minstall.cpp" line="1949"/>
         <source>&lt;p&gt;&lt;b&gt;Enjoy using MX Linux!&lt;/b&gt;&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Miłego korzystania z MX Linux!&lt;/b&gt;&lt;/p&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1963"/>
         <location filename="../minstall.cpp" line="1975"/>
         <source>Next &gt;</source>
-        <translation>Dalej &gt;</translation>
+        <translation>İleri</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1973"/>
         <source>Finish</source>
-        <translation>Zakończ</translation>
+        <translation>Son</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2037"/>
         <source>Administration</source>
-        <translation>Administracja</translation>
+        <translation>Yönetim</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2043"/>
         <source>Runs commands periodically</source>
-        <translation>Wykonuj komendy cyklicznie</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2053"/>
         <source>Time-based job scheduler</source>
-        <translation>Planowanie zadań oparte o czas</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2063"/>
         <source>Execute a command as another user</source>
-        <translation>Wykonaj komendę jako inny użytkownik</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2072"/>
         <source>Hardware</source>
-        <translation>Urządzenia</translation>
+        <translation>Donanım</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2077"/>
         <source>CPU frequency, irqbalance</source>
-        <translation>Częstotliwość procesora, balans irq</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2087"/>
         <source>S.M.A.R.T. monitoring tools</source>
-        <translation>S.M.A.R.T. narzędzia monitorowania</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2097"/>
         <source>Advanced Configuration and Power Interface event daemon</source>
-        <translation>Daemon wydarzeń Zaawansowanej Konfiguracji i Interfejsu Zasilania</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2107"/>
         <source>HDD temperature monitor</source>
-        <translation>Monitor temperatury dysku twardego</translation>
+        <translation>HDD sıcaklık izleme</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2117"/>
         <source>Generates key events for ACPI scripts</source>
-        <translation>Tworzy kluczowe wydarzenia dla skryptów ACPI</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2127"/>
         <source>Message bus daemon</source>
-        <translation>Daemon message bus </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2137"/>
         <source>Mouse event server</source>
-        <translation>Serwer wydarzeń myszy</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2147"/>
         <source>Scanner daemon</source>
-        <translation>Daemon skanera</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2157"/>
         <source>Random number generator</source>
-        <translation>Generator liczb losowych</translation>
+        <translation>Rasgele numara üreteci</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2167"/>
@@ -580,27 +541,27 @@ Powracam do kroku 1.</translation>
     <message>
         <location filename="../minstall.cpp" line="2176"/>
         <source>Networking</source>
-        <translation>Sieciowe</translation>
+        <translation>Ağ kurma</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2182"/>
         <source>Network connection</source>
-        <translation>Połączenie z sieciowe</translation>
+        <translation>Ağ bağlantısı</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2192"/>
         <source>Secure Shell</source>
-        <translation>Bezpieczna powłoka</translation>
+        <translation>Güvenli Kabuk</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2202"/>
         <source>Mail filter</source>
-        <translation>Filtr poczty</translation>
+        <translation>Posta süzgeci</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2212"/>
         <source>Network File System</source>
-        <translation>Zdalny system plików</translation>
+        <translation>Ağ Dosya Sistemi</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2226"/>
@@ -610,58 +571,57 @@ Powracam do kroku 1.</translation>
     <message>
         <location filename="../minstall.cpp" line="2236"/>
         <source>Bluetooth</source>
-        <translation>Bluetooth </translation>
+        <translation>Bluetooth</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2246"/>
         <source>File-copying tool</source>
-        <translation>Narzędzie kopiowania plików</translation>
+        <translation>Dosya kopyalama aracı</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2255"/>
         <source>Printing</source>
-        <translation>Drukowanie</translation>
+        <translation>Yazdırılıyor</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2261"/>
         <source>Linux and OS X printer service</source>
-        <translation>Usługa druku systemów Linux i OS X</translation>
+        <translation>Linux ve OS X yazıcı hizmeti</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2439"/>
         <source>MX Linux is installing, are you 
 sure you want to Close now?</source>
-        <translation>MX Linux jest instalowany, czy jesteś
-pewien, że chcesz teraz zakończyć?</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2466"/>
         <source>Deleting old system</source>
-        <translation>Usuwanie starego systemu</translation>
+        <translation>Eski sistem siliniyor</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2475"/>
         <source>Failed to delete old MX Linux on destination.
 Returning to Step 1.</source>
-        <translation>Wystąpił błąd podczas usuwania starego MX Linux&apos;a w miejscu docelowym.
-Powracam do kroku 1.</translation>
+        <translation>Eski antiX silme yolu başarısız.
+1. adıma geri dönün.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2501"/>
         <source>Copying new system</source>
-        <translation>Kopiowanie nowego systemu</translation>
+        <translation>Yeni sistem kopyalanıyor</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2525"/>
         <source>Fixing configuration</source>
-        <translation>Naprawianie konfiguracji</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2616"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
-        <translation>Wystąpił błąd podczas zapisu MX Linux do miejsca przeznaczenia.
-Powracam do Kroku 1.</translation>
+        <translation>MX Linux silme yolu başarısız oldu.
+1.Adıma Geri Dönün</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2643"/>
@@ -681,7 +641,7 @@ Powracam do Kroku 1.</translation>
     <message>
         <location filename="../minstall.cpp" line="2664"/>
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Dostosowanie ustawień dźwięku&lt;/b&gt;&lt;br/&gt;MX Linux próbuje skonfigurować Twoją kartę dźwiękową, jednak czasem trzeba ręcznie dostosować głośność lub odblokować któryś z kanałów, by usłyszeć dźwięk.&lt;/p&gt;&lt;p&gt;Skrót do właściwych ustawień znajdziesz w menu. Kliknij w niego prawym przyciskiem myszy i otwórz mikser.&lt;/p&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2672"/>
@@ -694,17 +654,17 @@ Powracam do Kroku 1.</translation>
     <message>
         <location filename="../meinstall.ui" line="26"/>
         <source>MeInstall</source>
-        <translation>MeInstall</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="47"/>
         <source>Close</source>
-        <translation>Zamknij</translation>
+        <translation>Kapat</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="67"/>
         <source>Next &gt;</source>
-        <translation>Dalej &gt;</translation>
+        <translation>İleri</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="70"/>
@@ -714,7 +674,7 @@ Powracam do Kroku 1.</translation>
     <message>
         <location filename="../meinstall.ui" line="80"/>
         <source>&lt; Back</source>
-        <translation>&lt; Wstecz</translation>
+        <translation>&lt; Geri</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="83"/>
@@ -724,7 +684,7 @@ Powracam do Kroku 1.</translation>
     <message>
         <location filename="../meinstall.ui" line="130"/>
         <source>Terms of Use</source>
-        <translation>Zasady korzystania</translation>
+        <translation>Kullanım Koşulları</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="187"/>
@@ -737,25 +697,17 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;Enjoy using MX Linux.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux jest niezależną dystrybucją opartą o źródła Debiana Stable&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux wykorzystuje komponenty dystrybucji MEPIS, które zostały udostępnione na licencji Apache. Nie które z nich zostały zmodyfikowane na potrzeby MX Linux.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;Miłego korzystania z MX Linux.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="230"/>
         <source>1c. Select type of installation</source>
-        <translation>1c. Wybierz typ instalacji</translation>
+        <translation>1c. Kurulum türünü seçin</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="276"/>
         <source>Leave free space up to:</source>
-        <translation>Deixar espaço livre até:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="311"/>
@@ -765,57 +717,57 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="327"/>
         <source>Auto-install using entire disk </source>
-        <translation>Automatyczna instalacja przy użyciu wybranego dysku </translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="343"/>
         <source>Custom install on existing partitions</source>
-        <translation>Własna instalacja na istniejących partycjach</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="362"/>
         <source>1a. Choose disk for installation</source>
-        <translation>1a. Wybierz dysk dla instalacji</translation>
+        <translation>1a. Kurulacak diski seç</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="402"/>
         <source>Use disk:</source>
-        <translation>Użyj dysku:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="421"/>
         <source>1b. Rearrange disk partitions (optional)</source>
-        <translation>1b. Zmiana partycji dysku (opcjonalnie)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="448"/>
         <source>Run partition tool...</source>
-        <translation>Execute a ferramenta de partição...</translation>
+        <translation>bölümlendirme aracını çalıştır...</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="461"/>
         <source>Modify partitions:</source>
-        <translation>Modyfkuj partycje:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="525"/>
         <source>2b. Preferences</source>
-        <translation>2b. Preferencje</translation>
+        <translation>2b. Yeğlenenler</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="552"/>
         <source>Preserve data in /home (if upgrading)</source>
-        <translation>Zachowanie danych w /home (jeśli uaktualnianie)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="587"/>
         <source>Filesystem type:</source>
-        <translation>Typ systemu plików:</translation>
+        <translation>Dosya sistemi türü:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="613"/>
         <source>Change default / (root) partition label:</source>
-        <translation>Zmień etykietę partycji głównej / (root):</translation>
+        <translation>Öntanımlı / (kök) bölüm etiketini değiştir:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="627"/>
@@ -855,48 +807,48 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="668"/>
         <source>Change default /home partition label:</source>
-        <translation>Zmień etykietę partycji /home:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="687"/>
         <source>Check for badblocks (takes longer)</source>
-        <translation>Sprawdź obecność błędów na dysku (może zająć trochę czasu)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="706"/>
         <source>2a. Choose partitions</source>
-        <translation>2a. Wybierz partycje</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="736"/>
         <source>/ (root) partition:</source>
-        <translation>/ (główna) partycja:</translation>
+        <translation>/ (kök) bölümü:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="752"/>
         <source>swap partition:</source>
-        <translation>partycja swap</translation>
+        <translation>takas alanı:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="768"/>
         <source>/home partition:</source>
-        <translation>partycja /home</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="847"/>
         <location filename="../meinstall.ui" line="1198"/>
         <source>root</source>
-        <translation>główna</translation>
+        <translation>Kök</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="883"/>
         <source>3. Installation in progress</source>
-        <translation>3. Instalacja w trakcie</translation>
+        <translation>3. Kurulum ilerliyor</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="926"/>
         <source>Abort</source>
-        <translation>Przerwij</translation>
+        <translation>Vazgeç</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="929"/>
@@ -907,17 +859,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="968"/>
         <source>Ready to install MX Linux filesystem</source>
-        <translation>Gotowy do zainstalowania systemu plików MX Linux</translation>
+        <translation>MX Linux dosya sistemi kuruluma hazır</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="990"/>
         <source>Tips</source>
-        <translation>Podpowiedzi</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1064"/>
         <source>4. Select Boot Method</source>
-        <translation>4. Wybierz metodę uruchamiania</translation>
+        <translation>4. Önyükleme Yöntemini Seçin</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1097"/>
@@ -932,72 +884,72 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="1128"/>
         <source>Install on:</source>
-        <translation>Zainstaluj na:</translation>
+        <translation>Buraya kur:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1144"/>
         <source>Install GRUB for MX Linux and Windows</source>
-        <translation>Instaluj GRUB dla MX Linux&apos;a i Windows</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1166"/>
         <source>System boot disk:</source>
-        <translation>Systemowy dysk uruchamiający:</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1211"/>
         <source>EFI System Partition</source>
-        <translation>Partycja systemowa EFI</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1214"/>
         <source>ESP</source>
-        <translation>ESP</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1284"/>
         <source>Common Services to Enable</source>
-        <translation>Usługi do uruchomienia</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1324"/>
         <source>Service</source>
-        <translation>Usługa</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1329"/>
         <source>Description</source>
-        <translation>Opis</translation>
+        <translation>Açıklama</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1365"/>
         <source>5. Computer Network Names</source>
-        <translation>5. Nazwa komputera w sieci</translation>
+        <translation>Bilgisayar Ağ Adları</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1392"/>
         <source>Workgroup</source>
-        <translation>Grupa robocza</translation>
+        <translation>Çalışmagrubu</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1405"/>
         <source>Workgroup:</source>
-        <translation>Grupa robocza:</translation>
+        <translation>Çalışma grubu</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1421"/>
         <source>SaMBa Server for MS Networking</source>
-        <translation>Serwer SAMBA dla sieci MS</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1437"/>
         <source>example.dom</source>
-        <translation>przyklad.dom</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1450"/>
         <source>Computer domain:</source>
-        <translation>Domena komputera:</translation>
+        <translation>Bilgisayar alan adı:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1466"/>
@@ -1007,112 +959,112 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="1482"/>
         <source>Computer name:</source>
-        <translation>Nazwa komputera:</translation>
+        <translation>Bilgisayar adı:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1555"/>
         <source>6d. Service Settings (advanced)</source>
-        <translation>6d. Ustawienia usług (zaawansowane)</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1573"/>
         <source>Adjust which services should run at startup</source>
-        <translation>Dostosuj usługi, które będą uruchamiane przy starcie systemu</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1576"/>
         <source>View</source>
-        <translation>Podgląd</translation>
+        <translation>Görünüm</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1605"/>
         <source>6b. Configure Clock</source>
-        <translation>6b. Konfiguracja zegara</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1633"/>
         <source>Format:</source>
-        <translation type="unfinished"></translation>
+        <translation>Biçimlendirme:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1650"/>
         <source>System clock uses LOCAL</source>
-        <translation>Zegar systemowy używa LOCAL</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1679"/>
         <source>6a. Localization Defaults</source>
-        <translation>6a. Konfiguracja języka</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1709"/>
         <source>Locale:</source>
-        <translation>Lokalizacja:</translation>
+        <translation>Bölge</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1748"/>
         <source>Keyboard:</source>
-        <translation>Klawiatura:</translation>
+        <translation>Tuş takımı:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1767"/>
         <source>6c. Timezone Settings</source>
-        <translation>6c. Konfiguracja strefy czasowej</translation>
+        <translation>6c. Saat Dilimi Ayarları</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1773"/>
         <source>Timezone:</source>
-        <translation>Fuso horário:</translation>
+        <translation>Saat dilimi:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1827"/>
         <source>7b. Root (administrator) Account</source>
-        <translation>7b. Konfiguracja konta administratora (root)</translation>
+        <translation>7b. Kök (yönetici) Hesabı</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1886"/>
         <source>Confirm root password:</source>
-        <translation>Potwierdź hasło roota:</translation>
+        <translation>Kök parolasını onayla:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1902"/>
         <source>Root password:</source>
-        <translation>Hasło administratora (roota):</translation>
+        <translation>Kök parolası:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1934"/>
         <source>7a. Default User Account</source>
-        <translation>7a. Konfiguracja konta użytkownika</translation>
+        <translation>7a. Öntanımlı Kullanıcı Hesabı</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1996"/>
         <source>username</source>
-        <translation>nazwa użytkownika</translation>
+        <translation>kullanıcı adı</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2009"/>
         <source>Confirm user password:</source>
-        <translation>Potwierdź hasło użytkownika:</translation>
+        <translation>Kullanıcı parolasını onayla:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2025"/>
         <source>Default user password:</source>
-        <translation>Domyślne hasło użytkownika:</translation>
+        <translation>Öntanımlı kullanıcı parolası:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2041"/>
         <source>Default user login name:</source>
-        <translation>Domyślna nazwa użytkownika:</translation>
+        <translation>Öntanımlı kullanıcı giriş adı:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2054"/>
         <source>Autologin</source>
-        <translation>Autologin</translation>
+        <translation>Otomatik Oturum Aç</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2061"/>
         <source>Show passwords</source>
-        <translation>Mostrar senhas</translation>
+        <translation>Parolayı göster</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2068"/>
@@ -1122,12 +1074,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../meinstall.ui" line="2071"/>
         <source>Save live desktop changes</source>
-        <translation>Zapisz zmiany pulpitu LiveCD</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2103"/>
         <source>Reminders</source>
-        <translation>Przypomnienia</translation>
+        <translation>Anımsatıcılar</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2157"/>
@@ -1145,12 +1097,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../memain.ui" line="32"/>
         <source>MX Linux Install</source>
-        <translation>Instalacja MX Linux&apos;a</translation>
+        <translation>MX Linux Yükle</translation>
     </message>
     <message>
         <location filename="../memain.ui" line="58"/>
         <source>Help</source>
-        <translation>Pomoc</translation>
+        <translation>Yardım</translation>
     </message>
 </context>
 <context>
@@ -1158,7 +1110,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../app.cpp" line="52"/>
         <source>You must run this app as root.</source>
-        <translation>Musisz uruchomić tę aplikację jako administrator.</translation>
+        <translation>Bu uygulamayı root olarak çalıştırmalısınız.</translation>
     </message>
 </context>
 </TS>

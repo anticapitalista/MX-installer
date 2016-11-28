@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>450</width>
-    <height>423</height>
+    <height>405</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -41,20 +41,14 @@
    <property name="spacing">
     <number>6</number>
    </property>
-   <item row="2" column="2">
-    <widget class="QPushButton" name="nextButton">
+   <item row="2" column="1">
+    <widget class="QPushButton" name="closeButton">
      <property name="text">
-      <string>Next &gt;</string>
-     </property>
-     <property name="shortcut">
-      <string>Alt+N</string>
-     </property>
-     <property name="default">
-      <bool>true</bool>
+      <string>Close</string>
      </property>
     </widget>
    </item>
-   <item row="2" column="0">
+   <item row="2" column="2">
     <spacer>
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
@@ -67,7 +61,20 @@
      </property>
     </spacer>
    </item>
-   <item row="2" column="1">
+   <item row="2" column="6">
+    <widget class="QPushButton" name="nextButton">
+     <property name="text">
+      <string>Next &gt;</string>
+     </property>
+     <property name="shortcut">
+      <string>Alt+N</string>
+     </property>
+     <property name="default">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="5">
     <widget class="QPushButton" name="backButton">
      <property name="text">
       <string>&lt; Back</string>
@@ -77,7 +84,7 @@
      </property>
     </widget>
    </item>
-   <item row="0" column="0" colspan="3">
+   <item row="0" column="0" colspan="7">
     <widget class="QStackedWidget" name="widgetStack">
      <property name="sizePolicy">
       <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
@@ -92,7 +99,7 @@
       </size>
      </property>
      <property name="currentIndex">
-      <number>1</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="Step_0">
       <layout class="QGridLayout">
@@ -181,7 +188,7 @@
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Droid Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans';&quot;&gt;MX Linux is an independent linux distribution based on Debian Stable&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans';&quot;&gt;MX Linux is an independent Linux distribution based on Debian Stable&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans';&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:'Sans';&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -590,7 +597,7 @@ p, li { white-space: pre-wrap; }
              <bool>false</bool>
             </property>
             <property name="text">
-             <string notr="true">rootMX-15</string>
+             <string notr="true">rootMX-16</string>
             </property>
             <property name="maxLength">
              <number>16</number>
@@ -2058,7 +2065,7 @@ p, li { white-space: pre-wrap; }
        <item row="4" column="0">
         <widget class="QCheckBox" name="saveDesktopCheckBox">
          <property name="toolTip">
-          <string>Desktop modification made in the live environment will be carried over to the installed OS</string>
+          <string>Desktop modifications made in the live environment will be carried over to the installed OS</string>
          </property>
          <property name="text">
           <string>Save live desktop changes</string>
@@ -2152,7 +2159,7 @@ p, li { white-space: pre-wrap; }
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Droid Sans'; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans'; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans';&quot;&gt;MX Linux is supported by people like you. Some help others at the support forum - http://forum.mxlinux.org, - http://antix.freeforums.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:'Sans';&quot;&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
            </widget>
           </item>
@@ -2162,6 +2169,38 @@ p, li { white-space: pre-wrap; }
       </layout>
      </widget>
     </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QLabel" name="labelMX">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>32</width>
+       <height>32</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="4">
+    <spacer name="horizontalSpacer_6">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>201</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
    </item>
   </layout>
  </widget>
