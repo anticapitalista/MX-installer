@@ -1,3 +1,9 @@
+mx-installer (17.1mx16) mx; urgency=medium
+
+  * added message box if it doesn't start because another instance is running
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 21 Jan 2017 18:51:03 -0500
+
 mx-installer (16.11mx16) mx; urgency=medium
 
   * new translations
