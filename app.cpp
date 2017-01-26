@@ -27,10 +27,6 @@
 
 int main(int argc, char *argv[])
 {
-    //exit if "minstall" is already running
-    if (system("ps -C minstall | sed '0,/minstall/{s/minstall//}' | grep minstall") == 0) {
-        return 1;
-    }
     QApplication a(argc, argv);
     a.setWindowIcon(QIcon("/usr/share/icons/msystem.png"));
 
@@ -41,6 +37,14 @@ int main(int argc, char *argv[])
     QTranslator appTran;
     appTran.load(QString("mx-installer_") + QLocale::system().name(), "/usr/share/mx-installer/locale");
     a.installTranslator(&appTran);
+
+    //exit if "minstall" is already running
+    if (system("ps -C minstall | sed '0,/minstall/{s/minstall//}' | grep minstall") == 0) {
+        QMessageBox::critical(0, QString::null,
+                              QApplication::tr("The installer won't launch because it appears to be running already in the background.\n\n"
+                                               "Please close it if possible, or run 'pkill minstall' in terminal."));
+        return 1;
+    }
 
     if (getuid() == 0) {
         MMain mmain;

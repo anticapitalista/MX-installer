@@ -33,7 +33,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../../../../../../../usr/share/icons/msystem.png</normaloff>../../../../../../../usr/share/icons/msystem.png</iconset>
+    <normaloff>../../../../../../../../usr/share/icons/msystem.png</normaloff>../../../../../../../../usr/share/icons/msystem.png</iconset>
   </property>
   <property name="sizeGripEnabled">
    <bool>false</bool>
