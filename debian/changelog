@@ -1,3 +1,9 @@
+mx-installer (17.2mx16) mx; urgency=medium
+
+  * new translations, removed partitionmanager from recommends
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 08 Feb 2017 19:30:57 -0500
+
 mx-installer (17.1mx16) mx; urgency=medium
 
   * added message box if it doesn't start because another instance is running

@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="ru" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="ru">
 <context>
     <name>MInstall</name>
     <message>
@@ -232,7 +234,7 @@ and create a new home directory?</source>
     <message>
         <location filename="../minstall.cpp" line="1054"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you'll have to select a different username or
+you&apos;ll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>К сожалению, не удалось сохранить старую домашнюю директорию. Прежде чем продолжить,
 Вы должны выбрать другое имя или
@@ -252,7 +254,7 @@ you&apos;ll have to select a different username.</source>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1080"/>
-        <source>You've chosen to not use, save or delete the old home directory.
+        <source>You&apos;ve chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Вы выбрали варианты не использовать, сохранить или удалить старый домашний каталог.
 Прежде чем продолжить, Вы должны выбрать другое имя.</translation>
@@ -351,7 +353,7 @@ not match.  Please try again.</source>
     <message>
         <location filename="../minstall.cpp" line="1299"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You'll have to
+at least 2 characters long. You&apos;ll have to
 select a different name before proceeding.</source>
         <translation>Извините, имя компьютера должно иметь,
 по крайней мере, 2 символа.
@@ -360,7 +362,7 @@ select a different name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1303"/>
         <source>Sorry your computer name contains invalid characters.
-You'll have to select a different
+You&apos;ll have to select a different
 name before proceeding.</source>
         <translation>Извините, имя компьютера содержит
 недопустимые символы. Выберите
@@ -369,7 +371,7 @@ name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1309"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You'll have to select a different
+2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
         <translation>Извините, имя домена должно иметь,
 по крайней мере, 2 символa. Выберите
@@ -378,7 +380,7 @@ name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1313"/>
         <source>Sorry your computer domain contains invalid characters.
-You'll have to select a different
+You&apos;ll have to select a different
 name before proceeding.</source>
         <translation>Извините, имя домена содержит
 недопустимые символы. Выберите
@@ -387,7 +389,7 @@ name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1322"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You'll have to select a different
+2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
         <translation>Извините, имя рабочей группы должно иметь,
 по крайней мере, 2 символа. Выберите
@@ -1147,7 +1149,7 @@ MX Linux поддерживается такими же людьми, как и 
     <name>QApplication</name>
     <message>
         <location filename="../app.cpp" line="44"/>
-        <source>The installer won't launch because it appears to be running already in the background.
+        <source>The installer won&apos;t launch because it appears to be running already in the background.
 
 Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</source>
         <translation>Программа установки не может быть запущена, она уже выполняется в фоновом режиме.

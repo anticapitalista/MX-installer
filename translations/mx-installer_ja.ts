@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="ja" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="ja">
 <context>
     <name>MInstall</name>
     <message>
@@ -235,7 +237,7 @@ and create a new home directory?</source>
     <message>
         <location filename="../minstall.cpp" line="1054"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you'll have to select a different username or
+you&apos;ll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>/home ディレクトリの保存に失敗しました。
 処理を進めるために異なるユーザー名を選択するか
@@ -254,7 +256,7 @@ you&apos;ll have to select a different username.</source>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1080"/>
-        <source>You've chosen to not use, save or delete the old home directory.
+        <source>You&apos;ve chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>ホームディレクトリの使用・保存・削除をしたくない場合は
 ユーザー名を変更して下さい。</translation>
@@ -351,7 +353,7 @@ not match.  Please try again.</source>
     <message>
         <location filename="../minstall.cpp" line="1299"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You'll have to
+at least 2 characters long. You&apos;ll have to
 select a different name before proceeding.</source>
         <translation>コンピューター名は2文字より
 長くしなければいけません。
@@ -360,7 +362,7 @@ select a different name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1303"/>
         <source>Sorry your computer name contains invalid characters.
-You'll have to select a different
+You&apos;ll have to select a different
 name before proceeding.</source>
         <translation>コンピュータ名に使用できない文字が
 含まれています。
@@ -369,7 +371,7 @@ name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1309"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You'll have to select a different
+2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
         <translation>ドメイン名は2文字以上に
 しなければいけません。
@@ -378,7 +380,7 @@ name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1313"/>
         <source>Sorry your computer domain contains invalid characters.
-You'll have to select a different
+You&apos;ll have to select a different
 name before proceeding.</source>
         <translation>ドメイン名に使用できない文字が
 含まれています。
@@ -387,7 +389,7 @@ name before proceeding.</source>
     <message>
         <location filename="../minstall.cpp" line="1322"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You'll have to select a different
+2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
         <translation>ワープグループは2文字以上で
 なければいけません。
@@ -1146,7 +1148,7 @@ MX Linux はあなたのような人々によってサポートされていま�
     <name>QApplication</name>
     <message>
         <location filename="../app.cpp" line="44"/>
-        <source>The installer won't launch because it appears to be running already in the background.
+        <source>The installer won&apos;t launch because it appears to be running already in the background.
 
 Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</source>
         <translation>インストーラはすでにバックグラウンドで実行されているように見えるため起動しません。
