@@ -579,7 +579,6 @@ bool MInstall::makeDefaultPartitions()
 
 bool MInstall::makeChosenPartitions()
 {
-    bool gpt;
     int ans;
     char line[130];
     char type[20];
@@ -587,13 +586,7 @@ bool MInstall::makeChosenPartitions()
     QString cmd;
 
     QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
-
-    cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
-    if (system(cmd.toUtf8()) == 0) {
-        gpt = true;
-    } else {
-        gpt = false;
-    }
+    bool gpt = isGpt(drv);
 
     // get config
     strncpy(type, rootTypeCombo->currentText().toUtf8(), 4);
@@ -1013,6 +1006,15 @@ bool MInstall::installLoader()
     timer->stop();
     progress->close();
     return true;
+}
+
+bool MInstall::isGpt(QString drv)
+{
+    QString cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
+    if (system(cmd.toUtf8()) == 0) {
+        return true;
+    }
+    return false;
 }
 
 /////////////////////////////////////////////////////////////////////////

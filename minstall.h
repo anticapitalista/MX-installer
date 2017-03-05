@@ -105,6 +105,7 @@ public:
     void updateStatus(QString msg, int val);
     bool checkDisk();
     bool installLoader();
+    bool isGpt(QString drv);
     bool makeChosenPartitions();
     bool makeDefaultPartitions();
     bool makeFloppy();
