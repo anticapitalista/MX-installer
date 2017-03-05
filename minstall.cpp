@@ -1011,10 +1011,12 @@ bool MInstall::installLoader()
 bool MInstall::isGpt(QString drv)
 {
     QString cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
-    if (system(cmd.toUtf8()) == 0) {
-        return true;
-    }
-    return false;
+    return (system(cmd.toUtf8()) == 0);
+}
+
+bool MInstall::isUefi()
+{
+    return (system("test -d /sys/firmware/efi") == 0);
 }
 
 /////////////////////////////////////////////////////////////////////////
@@ -2418,7 +2420,7 @@ void MInstall::on_grubBootCombo_activated(QString)
     // if 64bit, GPT, and ESP exists
     if (getCmdOut("uname -m") == "x86_64" && system(cmd.toUtf8()) == 0 && system(detectESP.toUtf8()) == 0) {
         grubEspButton->setEnabled(true);
-        if (system("test -d /sys/firmware/efi") == 0) { // if booted from UEFI
+        if (isUefi()) { // if booted from UEFI
             grubEspButton->setChecked(true);
         } else {
             grubMbrButton->setChecked(true);

@@ -93,6 +93,8 @@ public:
     static int command(const QString &string);
     bool is32bit();
     bool isInsideVB();
+    bool isGpt(QString drv);
+    bool isUefi();
     int runCmd(QString cmd);
 
     void buildServiceList();
@@ -105,7 +107,6 @@ public:
     void updateStatus(QString msg, int val);
     bool checkDisk();
     bool installLoader();
-    bool isGpt(QString drv);
     bool makeChosenPartitions();
     bool makeDefaultPartitions();
     bool makeFloppy();
