@@ -18,26 +18,26 @@ Changes:
  .
    * use GPT when using default partitioning
 Checksums-Sha1:
- b8d0ddb3d5e795d6fb13c1a4bdbdb3880a1a2da5 1157 mx-installer_17.3mx16.dsc
- 97047039eda7d086224f722612379199bdb77452 345172 mx-installer_17.3mx16.tar.xz
- 97611f2f61427163ff40a8bcbfc1240a970fba28 418580 mx-installer_17.3mx16_amd64.deb
+ 47c4f5ddac4e2a1be5198bae91e24d57073aa3ed 1157 mx-installer_17.3mx16.dsc
+ 1472248cc7e0dcd91c20d25bf1289dfb2128df75 345284 mx-installer_17.3mx16.tar.xz
+ 5725dd5a8bb0375fcba76dfa160af5b1666f966d 418470 mx-installer_17.3mx16_amd64.deb
 Checksums-Sha256:
- 989272cd9a1581c04eaedeb4aa540b290c6e1f23e682801a9aec2c5cf7d25046 1157 mx-installer_17.3mx16.dsc
- 881b128e00273d33b0913a626c04181b8f87afe3f14a209cd2c2a45bd8d817e1 345172 mx-installer_17.3mx16.tar.xz
- 67f9969c59dda98023a8373e329bd6069faae455049264ccec2c9ce5afb231e2 418580 mx-installer_17.3mx16_amd64.deb
+ 07596419b304118af1eb4074cb79ae0150292274c6c58da9b85df9ca3e0e3c1e 1157 mx-installer_17.3mx16.dsc
+ 2dbaa9a1be5110c654c34997f95f7abc65d5278424ee4cf632d62e9c0b249db6 345284 mx-installer_17.3mx16.tar.xz
+ 87bb013665664c5f912fb75f2ff0902ec4e561d89a4e1b0dbe49cef6eb2d4b0e 418470 mx-installer_17.3mx16_amd64.deb
 Files:
- 54c2646ce6c54eeb3b86d15887be15a9 1157 system optional mx-installer_17.3mx16.dsc
- 54efb08c22de47d65704143053b22f56 345172 system optional mx-installer_17.3mx16.tar.xz
- 0214a1c56d0bf4bc9b02ecd19bf79aec 418580 system optional mx-installer_17.3mx16_amd64.deb
+ fce13b6f22424032aa4e057b4a299274 1157 system optional mx-installer_17.3mx16.dsc
+ 96f655b48427fc3a45ea4d5e9c91343a 345284 system optional mx-installer_17.3mx16.tar.xz
+ d5599f1c08f598f8cca7b0672dfcd450 418470 system optional mx-installer_17.3mx16_amd64.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJYvZMwAAoJEHCTjHgGee6Y7MsIAMENeEq95JwT7AY4luw9zyu0
-vYPgLdKbHRwUtZcho5gi8t25pHxB4T32tvHZCeZG/uyn8gBpAgbS2gI6a2xahiLl
-vkETCqs/o0HClWeiqItzTM93Keeo+GMNL/zUqPqK/pnB2eu0UX5T2mRgt8W9BL80
-Ly6rwH5oPCuxkBTPgBCZC3ok4fRKDP/YUaJxe3qdmapt/Vafcqkk6bckbhnNHvWi
-pMMKNeXEwC7NYefRWxjVpLGPqCC2omDiZDimSEnKrs1EFUF01TYT7DTuJifuj1bg
-NkFsrJJ4JEJJT+jjbPb5/IWkACsabAKVv6nBixAp/hOYBdhEQYsDNZFBqTCcelM=
-=3Ilk
+iQEcBAEBAgAGBQJYvaU2AAoJEHCTjHgGee6YgGcH/11PBlIHRmkQTLFPuhSYS/0g
+CzLmC8PAEA8LrSRXp0Fhu7sDpThzB2IPpjTJTW7La2koXustcjDy55fVaA3xrV3S
+NhfLl+O1v4GyL/2/d7myYki11x2zuQMFmd0ztFqEgGdkST+uktacnfyY5pg02sf8
+xZ9QGa8szx6HDefvhZGeFgXYL66xBWYI8sH0lVBEAP2P6vd5bAO+Pe45wJWY5Zxg
+iecEQYMx2HdMNCp2KFuAqxZFFcN4oWeQkAI6hSMOjD1zd7mTaUdYWwzVHygKtVUS
+Wdt1GgXoDTnWnp/ArFSatE51xIMsxQrNHjHKCf37MLvY1JY7pEvQOjdmBxyHLv8=
+=1aV/
 -----END PGP SIGNATURE-----
