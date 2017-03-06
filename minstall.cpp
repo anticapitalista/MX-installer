@@ -365,7 +365,7 @@ bool MInstall::makeEsp(QString drv, int size)
 
     runCmd("parted -s " + drv + " set 1 esp on");   // sets boot flag and esp flag
 
-    err = runCmd("mkfs.msdos -F 32" + drv + "1");
+    err = runCmd("mkfs.msdos -F 32 " + drv + "1");
     if (err != 0) {
         qDebug() << "Could not format ESP";
         return false;
@@ -555,7 +555,9 @@ bool MInstall::makeDefaultPartitions()
         rootdev = drv + "2";
         swapdev = drv + "3";
         updateStatus(tr("Formating EFI System Partition (ESP)"), ++prog);
-        makeEsp(drv, esp_size);
+        if(!makeEsp(drv, esp_size)) {
+            return false;
+        }
     } else {
         rootdev = drv + "1";
         swapdev = drv + "2";
@@ -568,14 +570,14 @@ bool MInstall::makeDefaultPartitions()
     } else {
         start = QString::number(esp_size) + "MiB ";
     }
-    err = runCmd("parted -s " + drv + " mkpart primary  " + start + QString::number(remaining) + "MiB");
+    int end_root = esp_size + remaining;
+    err = runCmd("parted -s " + drv + " mkpart primary  " + start + QString::number(end_root) + "MiB");
     if (err != 0) {
         qDebug() << "Could not create root partition";
         return false;
     }
 
-    // create swap partition
-    int end_root = esp_size + remaining;
+    // create swap partition   
     err = runCmd("parted -s " + drv + " mkpart primary  " + QString::number(end_root) + "MiB " + QString::number(end_root + swap) + "MiB");
     if (err != 0) {
         qDebug() << "Could not create swap partition";
@@ -952,6 +954,7 @@ bool MInstall::installLoader()
         QString cmd = QString("partition-info find-esp=%1").arg(bootdrv);
         boot = getCmdOut(cmd);
         if (boot == "") {
+            qDebug() << "could not find ESP on: " << bootdrv;
             return false;
         }
     }
