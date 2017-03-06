@@ -113,6 +113,7 @@ public:
     bool makeGrub(int rootdev, QString rootpart, const char *rootmnt, bool initrd);
     bool makeLinuxPartition(QString dev, const char *type, bool bad, QString label);
     bool makeSwapPartition(QString dev);
+    bool makeEsp(QString drv, int size);
     bool mountPartition(QString dev, const char *point);
     bool removeKernel();
     bool setComputerName();

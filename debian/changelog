@@ -1,3 +1,9 @@
+mx-installer (17.3mx16) mx; urgency=medium
+
+  * use GPT when using default partitioning
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 05 Mar 2017 20:42:33 -0500
+
 mx-installer (17.2mx16) mx; urgency=medium
 
   * new translations, removed partitionmanager from recommends
