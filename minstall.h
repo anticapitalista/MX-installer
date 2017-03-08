@@ -92,6 +92,7 @@ public:
     static int getPartitionNumber();
     static int command(const QString &string);
     bool is32bit();
+    bool is64bit();
     bool isInsideVB();
     bool isGpt(QString drv);
     bool isUefi();

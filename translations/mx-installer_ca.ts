@@ -4,7 +4,7 @@
 <context>
     <name>MInstall</name>
     <message>
-        <location filename="../minstall.cpp" line="280"/>
+        <location filename="../minstall.cpp" line="287"/>
         <source>
 
 The disk with the partition you selected for installation is failing.
@@ -17,15 +17,15 @@ El disc amb la partició que heu seleccionat per a la instal·lació està falla
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="281"/>
+        <location filename="../minstall.cpp" line="288"/>
         <source>You are strongly advised to abort.
 </source>
         <translation>Us aconsellem que ho interrompeu. 
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="282"/>
-        <location filename="../minstall.cpp" line="296"/>
+        <location filename="../minstall.cpp" line="289"/>
+        <location filename="../minstall.cpp" line="303"/>
         <source>If unsure, please exit the Installer and run GSmartControl for more information.
 
 </source>
@@ -34,50 +34,50 @@ El disc amb la partició que heu seleccionat per a la instal·lació està falla
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="283"/>
+        <location filename="../minstall.cpp" line="290"/>
         <source>Do you want to abort the installation?</source>
         <translation>Voleu interrompre la instal·lació? </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="285"/>
-        <location filename="../minstall.cpp" line="299"/>
-        <location filename="../minstall.cpp" line="476"/>
-        <location filename="../minstall.cpp" line="661"/>
-        <location filename="../minstall.cpp" line="673"/>
-        <location filename="../minstall.cpp" line="689"/>
-        <location filename="../minstall.cpp" line="702"/>
-        <location filename="../minstall.cpp" line="715"/>
-        <location filename="../minstall.cpp" line="965"/>
-        <location filename="../minstall.cpp" line="1082"/>
-        <location filename="../minstall.cpp" line="1087"/>
-        <location filename="../minstall.cpp" line="1112"/>
-        <location filename="../minstall.cpp" line="1782"/>
-        <location filename="../minstall.cpp" line="1796"/>
-        <location filename="../minstall.cpp" line="2487"/>
+        <location filename="../minstall.cpp" line="292"/>
+        <location filename="../minstall.cpp" line="306"/>
+        <location filename="../minstall.cpp" line="486"/>
+        <location filename="../minstall.cpp" line="676"/>
+        <location filename="../minstall.cpp" line="688"/>
+        <location filename="../minstall.cpp" line="704"/>
+        <location filename="../minstall.cpp" line="717"/>
+        <location filename="../minstall.cpp" line="730"/>
+        <location filename="../minstall.cpp" line="980"/>
+        <location filename="../minstall.cpp" line="1097"/>
+        <location filename="../minstall.cpp" line="1102"/>
+        <location filename="../minstall.cpp" line="1127"/>
+        <location filename="../minstall.cpp" line="1797"/>
+        <location filename="../minstall.cpp" line="1811"/>
+        <location filename="../minstall.cpp" line="2502"/>
         <source>Yes</source>
         <translation>Sí</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="285"/>
-        <location filename="../minstall.cpp" line="299"/>
-        <location filename="../minstall.cpp" line="476"/>
-        <location filename="../minstall.cpp" line="661"/>
-        <location filename="../minstall.cpp" line="673"/>
-        <location filename="../minstall.cpp" line="689"/>
-        <location filename="../minstall.cpp" line="702"/>
-        <location filename="../minstall.cpp" line="715"/>
-        <location filename="../minstall.cpp" line="965"/>
-        <location filename="../minstall.cpp" line="1082"/>
-        <location filename="../minstall.cpp" line="1087"/>
-        <location filename="../minstall.cpp" line="1112"/>
-        <location filename="../minstall.cpp" line="1782"/>
-        <location filename="../minstall.cpp" line="1796"/>
-        <location filename="../minstall.cpp" line="2487"/>
+        <location filename="../minstall.cpp" line="292"/>
+        <location filename="../minstall.cpp" line="306"/>
+        <location filename="../minstall.cpp" line="486"/>
+        <location filename="../minstall.cpp" line="676"/>
+        <location filename="../minstall.cpp" line="688"/>
+        <location filename="../minstall.cpp" line="704"/>
+        <location filename="../minstall.cpp" line="717"/>
+        <location filename="../minstall.cpp" line="730"/>
+        <location filename="../minstall.cpp" line="980"/>
+        <location filename="../minstall.cpp" line="1097"/>
+        <location filename="../minstall.cpp" line="1102"/>
+        <location filename="../minstall.cpp" line="1127"/>
+        <location filename="../minstall.cpp" line="1797"/>
+        <location filename="../minstall.cpp" line="1811"/>
+        <location filename="../minstall.cpp" line="2502"/>
         <source>No</source>
         <translation>No</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="293"/>
+        <location filename="../minstall.cpp" line="300"/>
         <source>Smartmon tool output:
 
 </source>
@@ -86,162 +86,162 @@ El disc amb la partició que heu seleccionat per a la instal·lació està falla
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="294"/>
+        <location filename="../minstall.cpp" line="301"/>
         <source>The disk with the partition you selected for installation passes the S.M.A.R.T. monitor test (smartctl)
 </source>
         <translation>El disc amb la partició que heu seleccionat per a la instal·lació passa la prova del monitor S.M.A.R.T. (smartctl) 
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="295"/>
+        <location filename="../minstall.cpp" line="302"/>
         <source>but the tests indicate it will have a higher than average failure rate in the upcoming year.
 </source>
         <translation>però les proves indiquen que té un risc de fallades superior a la mitjana per l&apos;any vinent. 
 </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="297"/>
+        <location filename="../minstall.cpp" line="304"/>
         <source>Do you want to continue?</source>
         <translation>Voleu continuar? </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="331"/>
+        <location filename="../minstall.cpp" line="338"/>
         <source>Ready to install MX Linux filesystem</source>
         <translation>A punt per instal·lar el sistema de fitxers MX Linux </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="474"/>
+        <location filename="../minstall.cpp" line="484"/>
         <source>OK to format and use the entire disk (%1) for MX Linux?</source>
         <translation>D&apos;acord en formatar i usar tot el disc (%1) per a MX Linux? </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="482"/>
+        <location filename="../minstall.cpp" line="492"/>
         <source>Creating required partitions</source>
         <translation>Creant les particions necessàries </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="557"/>
+        <location filename="../minstall.cpp" line="566"/>
         <source>Formating EFI System Partition (ESP)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="587"/>
-        <location filename="../minstall.cpp" line="753"/>
+        <location filename="../minstall.cpp" line="602"/>
+        <location filename="../minstall.cpp" line="768"/>
         <source>Formatting swap partition</source>
         <translation>Formatant la partició d&apos;intercanvi </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="596"/>
+        <location filename="../minstall.cpp" line="611"/>
         <source>Formatting root partition</source>
         <translation>Formatant la partició arrel </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="653"/>
+        <location filename="../minstall.cpp" line="668"/>
         <source>You must choose a root partition.
 The root partition must be at least 3.5 GB.</source>
         <translation>Cal que trieu una partició arrel. La
 partició arrel ha de tenir 3,5 GB o més. </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="659"/>
+        <location filename="../minstall.cpp" line="674"/>
         <source>The partition you selected for root, appears to be a MS-Windows partition.  Are you sure you want to reformat this partition?</source>
         <translation>La partició que heu triat com arrel, sembla ser de MS-Windows. Esteu segur que voleu reformatar-la? </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="668"/>
+        <location filename="../minstall.cpp" line="683"/>
         <source>OK to format and destroy all data on 
 %1 for the / (root) partition?</source>
         <translation>D&apos;acord en formatar i destruir totes les dades a 
 %1 per a la partició / (arrel, root)?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="670"/>
+        <location filename="../minstall.cpp" line="685"/>
         <source>All data on %1 will be deleted, except for /home
 OK to continue?</source>
         <translation>S&apos;esborraran totes les dades a %1, excepte per a 
 /home, d&apos;acord en continuar? </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="687"/>
+        <location filename="../minstall.cpp" line="702"/>
         <source>OK to format and destroy all data on 
 %1 for the swap partition?</source>
         <translation>D&apos;acord en formatar i destruir totes les dades a 
 %1 per la partició d&apos;intercanvi?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="700"/>
+        <location filename="../minstall.cpp" line="715"/>
         <source>The partition you selected for /home, appears to be a MS-Windows partition.  Are you sure you want to reformat this partition?</source>
         <translation>La partició que heu triat per a /home, sembla ser de MS-Windows. Esteu segur que voleu reformatar-la?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="709"/>
+        <location filename="../minstall.cpp" line="724"/>
         <source>OK to reuse (no reformat) %1 as the /home partition?</source>
         <translation>D&apos;acord en reutilitzar (sense reformatar) %1 com a partició /home?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="711"/>
+        <location filename="../minstall.cpp" line="726"/>
         <source>OK to format and destroy all data on %1 for the /home partition?</source>
         <translation>D&apos;acord en formatar i destruir totes les dades a %1 per a la partició /home? </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="722"/>
+        <location filename="../minstall.cpp" line="737"/>
         <source>Preparing required partitions</source>
         <translation>Preparant les particions adients </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="773"/>
+        <location filename="../minstall.cpp" line="788"/>
         <source>Formatting the / (root) partition</source>
         <translation>Formatant la partició / (arrel) </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="807"/>
+        <location filename="../minstall.cpp" line="822"/>
         <source>Mounting the /home partition</source>
         <translation>Muntant la partició /home </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="822"/>
+        <location filename="../minstall.cpp" line="837"/>
         <source>Formatting the /home partition</source>
         <translation>Formatant la partició /home </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="868"/>
+        <location filename="../minstall.cpp" line="883"/>
         <source>Mounting the / (root) partition</source>
         <translation>Muntant la partició / (arrel) </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="899"/>
+        <location filename="../minstall.cpp" line="914"/>
         <source>Creating system directories</source>
         <translation>Creant els directoris de sistema </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="963"/>
+        <location filename="../minstall.cpp" line="978"/>
         <source>OK to install GRUB bootloader at %1 ?</source>
         <translation>D&apos;acord en instal·lar l&apos;arrencador GRUB a %1 ?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="975"/>
+        <location filename="../minstall.cpp" line="990"/>
         <source>Please wait till GRUB is installed, it might take a couple of minutes.</source>
         <translation>Si us plau, espereu mentre s&apos;instal·la el GRUB, pot trigar un parell de minuts. </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1010"/>
+        <location filename="../minstall.cpp" line="1025"/>
         <source>Sorry, installing GRUB failed. This may be due to a change in the disk formatting. You can uncheck GRUB and finish installing MX Linux then reboot to the LiveDVD or LiveUSB and repair the installation with the reinstall GRUB function.</source>
         <translation>Ho sento, la instal·lació de GRUB ha fallat. Això pot ser degut a un canvi en el format del disc. Podeu deseleccionar GRUB i acabar la instal·lació de MX Linux i llavors arrencar amb el LiveDVD o LiveUSB i reparar la instal·lació amb l&apos;opció de reinstal·lar el GRUB.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1079"/>
+        <location filename="../minstall.cpp" line="1094"/>
         <source>The home directory for %1 already exists.Would you like to reuse the old home directory?</source>
         <translation>El directori d&apos;usuaris per a %1 ja hi és. Voleu reutilitzar el directori d&apos;usuaris preexistent? </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1085"/>
+        <location filename="../minstall.cpp" line="1100"/>
         <source>Would you like to save the old home directory
 and create a new home directory?</source>
         <translation>Voleu desar el directori d&apos;usuaris anterior
 i crear-ne un de nou?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1101"/>
+        <location filename="../minstall.cpp" line="1116"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
 you&apos;ll have to select a different username or
 delete a previously saved copy of your home directory.</source>
@@ -250,56 +250,56 @@ Abans de continuar, cal triar un nom d&apos;usuari nou o
 esborrar la còpia desada del vostre directori d&apos;usuari. </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1110"/>
+        <location filename="../minstall.cpp" line="1125"/>
         <source>Would you like to delete the old home directory for %1?</source>
         <translation>Voleu esborrar el directori d&apos;usuaris preexistent per a %1 ?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1120"/>
+        <location filename="../minstall.cpp" line="1135"/>
         <source>Sorry, failed to delete old home directory. Before proceeding, 
 you&apos;ll have to select a different username.</source>
         <translation>Ho sento, ha fallat l&apos;esborrat del vostre directori d&apos;usuaris antic.
 Abans de continuar, cal triar un nom d&apos;usuari diferent.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1127"/>
+        <location filename="../minstall.cpp" line="1142"/>
         <source>You&apos;ve chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Heu triat no usar, desar o esborrar el directori d&apos;usuaris antic.
 Abans de continuar, cal que trieu un nom d&apos;usuari diferent. </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1140"/>
+        <location filename="../minstall.cpp" line="1155"/>
         <source>Sorry, failed to create user directory.</source>
         <translation>Ho sento, ha fallat la creació del directori d&apos;usuari. </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1147"/>
+        <location filename="../minstall.cpp" line="1162"/>
         <source>Sorry, failed to name user directory.</source>
         <translation>Ho sento, ha fallat en nomenar el directori d&apos;usuari.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1172"/>
+        <location filename="../minstall.cpp" line="1187"/>
         <source>Sorry, failed to save desktop changes.</source>
         <translation>Ho sento, no s&apos;han pogut desar els canvis a l&apos;escriptori.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1180"/>
+        <location filename="../minstall.cpp" line="1195"/>
         <source>Sorry, failed to set ownership of user directory.</source>
         <translation>Ho sento, ha fallat en establir la propietat del directori d&apos;usuari.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1229"/>
+        <location filename="../minstall.cpp" line="1244"/>
         <source>Sorry, unable to set root password.</source>
         <translation>Ho sento, no es pot establir la contrasenya d&apos;usuari primari.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1256"/>
+        <location filename="../minstall.cpp" line="1271"/>
         <source>Sorry, unable to set user password.</source>
         <translation>Ho sento, no es pot establir la contrasenya d&apos;usuari.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1269"/>
+        <location filename="../minstall.cpp" line="1284"/>
         <source>The user name needs to be at least
 2 characters long. Please select
 a longer name before proceeding.</source>
@@ -308,7 +308,7 @@ mínim 2 caràcters. Si us plau, trieu
 un altre nom d&apos;usuari més llarg.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1275"/>
+        <location filename="../minstall.cpp" line="1290"/>
         <source>The user name needs be lower case and it
 cannot contain special characters or spaces.
 Please choose another name before proceeding.</source>
@@ -317,8 +317,8 @@ pot contenir caràcters especials o espais.
 Si us plau, trieu un altre nom abans de continuar.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1282"/>
-        <location filename="../minstall.cpp" line="1317"/>
+        <location filename="../minstall.cpp" line="1297"/>
+        <location filename="../minstall.cpp" line="1332"/>
         <source>The user password needs to be at least
 2 characters long. Please select
 a longer password before proceeding.</source>
@@ -327,8 +327,8 @@ com a mínim 2 caràcters. Si us plau,
 trieu una altra contrasenya més llarga.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1289"/>
-        <location filename="../minstall.cpp" line="1324"/>
+        <location filename="../minstall.cpp" line="1304"/>
+        <location filename="../minstall.cpp" line="1339"/>
         <source>The root password needs to be at least
 2 characters long. Please select
 a longer password before proceeding.</source>
@@ -337,7 +337,7 @@ tenir com a mínim 2 caràcters. Si us
 plau, trieu una contrasenya més llarga.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1298"/>
+        <location filename="../minstall.cpp" line="1313"/>
         <source>Sorry that name is in use.
 Please select a different name.
 </source>
@@ -345,21 +345,21 @@ Please select a different name.
 Si us plau, trieu-ne un diferent.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1305"/>
+        <location filename="../minstall.cpp" line="1320"/>
         <source>The user password entries do
 not match.  Please try again.</source>
         <translation>Les contrasenyes d&apos;usuari no
 coincideixen. Proveu-ho un altre cop.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1311"/>
+        <location filename="../minstall.cpp" line="1326"/>
         <source>The root password entries do
  not match.  Please try again.</source>
         <translation>Les contrasenyes d&apos;usuari primari no
 coincideixen. Proveu-ho un altre cop.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1346"/>
+        <location filename="../minstall.cpp" line="1361"/>
         <source>Sorry your computer name needs to be
 at least 2 characters long. You&apos;ll have to
 select a different name before proceeding.</source>
@@ -368,7 +368,7 @@ tenir 2 caràcters com a mínim. Cal que
 en trieu un altre abans de continuar.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1350"/>
+        <location filename="../minstall.cpp" line="1365"/>
         <source>Sorry your computer name contains invalid characters.
 You&apos;ll have to select a different
 name before proceeding.</source>
@@ -377,7 +377,7 @@ Cal que en trieu un altre diferent
 abans de continuar.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1356"/>
+        <location filename="../minstall.cpp" line="1371"/>
         <source>Sorry your computer domain needs to be at least
 2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
@@ -386,7 +386,7 @@ name before proceeding.</source>
 altre diferent abans de continuar.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1360"/>
+        <location filename="../minstall.cpp" line="1375"/>
         <source>Sorry your computer domain contains invalid characters.
 You&apos;ll have to select a different
 name before proceeding.</source>
@@ -395,7 +395,7 @@ Cal que en trieu un altre diferent
 abans de continuar.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1369"/>
+        <location filename="../minstall.cpp" line="1384"/>
         <source>Sorry your workgroup needs to be at least
 2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
@@ -404,7 +404,7 @@ tenir 2 caràcters com a mínim. Cal que en
 trieu un altre diferent abans de continuar.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1779"/>
+        <location filename="../minstall.cpp" line="1794"/>
         <source>MX Linux installation and configuration is complete.
 To use the new installation, reboot without the installation media.
 
@@ -416,285 +416,285 @@ sense el CD/DVD o USB.
 Voleu tornar a arrencar ara? </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1795"/>
+        <location filename="../minstall.cpp" line="1810"/>
         <source>The installation and configuration is incomplete.
 Do you really want to stop now?</source>
         <translation>No s&apos;ha acabat la instal·lació i configuració.
 De debò voleu aturar-la ara?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1870"/>
+        <location filename="../minstall.cpp" line="1885"/>
         <source>&lt;p&gt;&lt;b&gt;General Instructions&lt;/b&gt;&lt;br/&gt;BEFORE PROCEEDING, CLOSE ALL OTHER APPLICATIONS.&lt;/p&gt;&lt;p&gt;On each page, please read the instructions, make your selections, and then click on Next when you are ready to proceed. You will be prompted for confirmation before any destructive actions are performed.&lt;/p&gt;&lt;p&gt;MX Linux requires about 3.5 GB of space. 5 GB or more is preferred. You can use the entire disk or you can put MX Linux on existing partitions. &lt;/p&gt;&lt;p&gt;If you are running Mac OS or Windows OS (from Vista onwards), you may have to use that system&apos;s software to set up partitions and boot manager before installing MX Linux.&lt;/p&gt;&lt;p&gt;The ext2, ext3, ext4, jfs, xfs, btrfs and reiserfs Linux filesystems are supported and ext4 is recommended.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Instruccions Generals&lt;/b&gt;&lt;br/&gt;ABANS DE CONTINUAR, TANQUEU TOTS ELS ALTRES PROGRAMES.&lt;/p&gt;&lt;p&gt;A cada pàgina, llegiu-ne les instruccions, feu la vostra tria i cliqueu &quot;Següent&quot; quan vulgueu continuar. Se us demanarà confirmació abans d&apos;executar accions destructives.&lt;/p&gt;&lt;p&gt;MX Linux necessita al voltant de 3,5 GB d&apos;espai al disc dur. És preferible tenir-ne 5 GB o més. Podeu usar el disc sencer o instal·lar MX Linux en una de les particions existents. &lt;/p&gt;&lt;p&gt;Si teniu maquinari Apple o bé useu MS-Windows (Vista o superior) és millor usar el programari d&apos;aquests Sistemes Operatius per definir les particions i l&apos;arrencador abans d&apos;instal·lar MX Linux.&lt;/p&gt;&lt;p&gt;Se suporten tots els sistemes de fitxers Linux: ext2, ext3, ext4, jfs, xfs, btrfs i reiserfs, tot i que es recomana ext4.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1881"/>
+        <location filename="../minstall.cpp" line="1896"/>
         <source>&lt;p&gt;&lt;b&gt;Limitations&lt;/b&gt;&lt;br/&gt;Remember, this software is provided AS-IS with no warranty what-so-ever. It&apos;s solely your responsibility to backup your data before proceeding.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Choose Partitions&lt;/b&gt;&lt;br/&gt;MX Linux requires a root partition. The swap partition is optional but highly recommended. If you want to use the Suspend-to-Disk feature of MX Linux, you will need a swap partition that is larger than your physical memory size.&lt;/p&gt;&lt;p&gt;If you choose a separate /home partition it will be easier for you to upgrade in the future, but this will not be possible if you are upgrading from an installation that does not have a separate home partition.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Upgrading&lt;/b&gt;&lt;br/&gt;To upgrade from an existing Linux installation, select the same home partition as before and check the preference to preserve data in /home.&lt;/p&gt;&lt;p&gt;If you are preserving an existing /home directory tree located on your root partition, the installer will not reformat the root partition. As a result, the installation will take much longer than usual.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Preferred Filesystem Type&lt;/b&gt;&lt;br/&gt;For MX Linux, you may choose to format the partitions as ext2, ext3, ext4, jfs, xfs, btrfs or reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Bad Blocks&lt;/b&gt;&lt;br/&gt;If you choose ext2, ext3 or ext4 as the format type, you have the option of checking and correcting for bad blocks on the drive. The badblock check is very time consuming, so you may want to skip this step unless you suspect that your drive has bad blocks.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Limitacions&lt;/b&gt;&lt;br/&gt;Recordeu que aquest programari es facilita TAL-QUAL, sense garantia de cap mena. És de la vostra responsabilitat fer còpia de seguretat de les dades abans de continuar.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Tria de Particions&lt;/b&gt;&lt;br/&gt;MX Linux necessita una partició arrel (/root). La partició d&apos;intercanvi (swap) és opcional però molt recomanable. Si voleu usar la característica de Suspensió al Disc de MX Linux, us caldrà una partició d&apos;intercanvi més gran que la mida de la vostra memòria física.&lt;/p&gt;&lt;p&gt;Si trieu una partició separada per a /home us serà més fàcil actualitzar en el futur, però això no serà possible si esteu actualitzant des d&apos;una instal·lació que no té una partició /home separada&lt;/p&gt;&lt;p&gt;&lt;b&gt;Actualització&lt;/b&gt;&lt;br/&gt;Per actualitzar a partir d&apos;una instal·lació Linux existent, trieu la mateixa partició /home anterior i marqueu la preferència de preservar les dades a /home.&lt;p&gt;&lt;p&gt;Si conserveu un arbre de directoris /home a la vostra partició arrel, l&apos;instal·lador no reformatarà la partició arrel (root). Per tant, la instal·lació trigarà molt més del normal.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Tipus de Sistema de Fitxers preferit&lt;/b&gt;&lt;br/&gt;Per a MX Linux, podeu triar entre formatar les particions com a ext2, ext3, ext4, jfs, xfs, btrfs o reiser. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Blocs Erronis&lt;/b&gt;&lt;br/&gt;Si trieu ext2, ext3 o ext4 com el tipus de format, teniu l&apos;opció de comprovar i corregir els blocs erronis del dispositiu. La comprovació de blocs erronis és molt feixuga, o sigui que potser voleu saltar aquesta etapa, llevat que sospiteu que el vostre disc té blocs erronis.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1895"/>
+        <location filename="../minstall.cpp" line="1910"/>
         <source>Returning to Step 1 to select another disk.</source>
         <translation>Retornant al primer pas per triar un altre disc. </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1899"/>
+        <location filename="../minstall.cpp" line="1914"/>
         <source>&lt;p&gt;&lt;b&gt;Special Thanks&lt;/b&gt;&lt;br/&gt;Thanks to everyone who has chosen to support MX Linux with their time, money, suggestions, work, praise, ideas, promotion, and/or encouragement.&lt;/p&gt;&lt;p&gt;Without you there would be no MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, MX Community&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Agraïments&lt;/b&gt;&lt;br/&gt;Gràcies a tothom que ha donat suport a  MX Linux amb el seu temps, suggeriments,, treball, diners, recomanacions, idees, promoció i/o suport moral.&lt;/p&gt;&lt;p&gt;Sense vosaltres no hi hauria MX Linux.&lt;/p&gt;&lt;p&gt;anticapitalista, Comunitat MX.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1902"/>
+        <location filename="../minstall.cpp" line="1917"/>
         <source>&lt;p&gt;&lt;b&gt;Installation in Progress&lt;/b&gt;&lt;br/&gt;MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.&lt;/p&gt;&lt;p&gt;If you click the Abort button, the installation will be stopped as soon as possible.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Instal·lació en curs&lt;/b&gt;&lt;br/&gt;S&apos;està instal·lant MX Linux.  Per a una instal·lació nova, això trigarà probablement entre 3 i 20 minuts, depenent de la velocitat del vostre maquinari i de la mida de les particions que reformateu.&lt;/p&gt;&lt;p&gt;Si cliqueu el botó d&apos;interrupció, la instal·lació s&apos;aturarà tan aviat com sigui possible.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1914"/>
+        <location filename="../minstall.cpp" line="1929"/>
         <source>Failed to create required partitions.
 Returning to Step 1.</source>
         <translation>Ha fallat la creació de particions.
 Retornant al primer pas.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1923"/>
+        <location filename="../minstall.cpp" line="1938"/>
         <source>Failed to prepare chosen partitions.
 Returning to Step 1.</source>
         <translation>Ha fallat la preparació de particions.
 Retornant al primer pas.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1936"/>
+        <location filename="../minstall.cpp" line="1951"/>
         <source>&lt;p&gt;&lt;b&gt;Select Boot Method&lt;/b&gt;&lt;br/&gt;MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. &lt;p&gt;By default GRUB2 is installed in the Master Boot Record or ESP (EFI System Partition for 64-bit UEFI boot systems) of your boot drive and replaces the boot loader you were using before. This is normal.&lt;/p&gt;&lt;p&gt;If you choose to install GRUB2 at root instead, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.&lt;/p&gt;&lt;p&gt;If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Trieu el Mètode d&apos;Arrencada&lt;/b&gt;&lt;br/&gt;MX Linux usa l&apos;arrencador GRUB per engegar MX Linux i MS-Windows. &lt;p&gt;GRUB2 s&apos;instal·la per omissió al Master Boot Record o a l&apos;ESP (&lt;i&gt;EFI System Partition&lt;/i&gt; per sistemes de 64 bit amb arrencada UEFI) del vostre disc d&apos;arrencada i substitueix l&apos;arrencador que hi hagués bans. Això és normal.&lt;/p&gt;&lt;p&gt;Si escolliu instal·lar el GRUB2 a la partició arrel en comptes del MBR, llavors el GRUB2 s&apos;instal·larà a l&apos;inici de la partició arrel. Aquesta opció s&apos;aconsella només als experts.&lt;/p&gt;&lt;p&gt;Si desmarqueu la casella d&apos;instal·lar el GRUB, aquest no s&apos;instal·larà en aquest moment. Aquesta opció tampoc s&apos;aconsella als que no siguin prou experts.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1945"/>
+        <location filename="../minstall.cpp" line="1960"/>
         <source>&lt;p&gt;&lt;b&gt;Common Services to Enable&lt;/b&gt;&lt;br/&gt;Select any of these common services that you might need with your system configuration and the services will be started automatically when you start MX Linux.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Serveis Comuns a Activar&lt;/b&gt;&lt;br/&gt;Trieu qualsevol dels serveis comuns que podeu necessitar, segons la configuració del vostre sistema, i aquests serveis s&apos;activaran automàticament quan arrenqueu  MX Linux.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1952"/>
+        <location filename="../minstall.cpp" line="1967"/>
         <source>&lt;p&gt;&lt;b&gt;Computer Identity&lt;/b&gt;&lt;br/&gt;The computer name is a common unique name which will identify your computer if it is on a network. The computer domain is unlikely to be used unless your ISP or local network requires it.&lt;/p&gt;&lt;p&gt;The computer and domain names can contain only alphanumeric characters, dots, hyphens. They cannot contain blank spaces, start or end with hyphens&lt;/p&gt;&lt;p&gt;The SaMBa Server needs to be activated if you want to use it to share some of your directories or printer with a local computer that is running MS-Windows or Mac OSX.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Identitat de l&apos;ordinador&lt;/b&gt;&lt;br/&gt;El nom de l&apos;ordinador és un nom únic que identifica el vostre ordinador quan forma part d&apos;una xarxa. El domini de l&apos;ordinador és improbable que sigui obligatori llevat que el vostre proveïdor d&apos;Internet ISP o bé la xarxa local ho necessitin.&lt;/p&gt;&lt;p&gt;Els noms d&apos;equip i de domini poden contenir només caràcters alfanumèrics, punts i guionets. No poden contenir espais en blanc, començar o acabar amb guionets.&lt;/p&gt;&lt;p&gt;Cal activar el servidor SaMBa si voleu compartir els vostres directoris o impressores amb un ordinador local que usi MS-Windows o Mac OSX.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1963"/>
+        <location filename="../minstall.cpp" line="1978"/>
         <source>&lt;p&gt;&lt;b&gt;Localization Defaults&lt;/b&gt;&lt;br/&gt;Set the default keyboard and locale. These will apply unless they are overridden later by the user.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configure Clock&lt;/b&gt;&lt;br/&gt;If you have an Apple or a pure Unix computer, by default the system clock is set to GMT or Universal Time. To change, check the box for &apos;System clock uses LOCAL.&apos;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Timezone Settings&lt;/b&gt;&lt;br/&gt;The system boots with the timezone preset to GMT/UTC. To change the timezone, after you reboot into the new installation, right click on the clock in the Panel and select Properties.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Service Settings&lt;/b&gt;&lt;br/&gt;Most users should not change the defaults. Users with low-resource computers sometimes want to disable unneeded services in order to keep the RAM usage as low as possible. Make sure you know what you are doing! </source>
         <translation>&lt;p&gt;&lt;b&gt;Localització per omissió&lt;/b&gt;&lt;br/&gt;Definiu el teclat per omissió i el &lt;i&gt;locale&lt;/i&gt;.  Aquests s&apos;aplicaran tot seguit, però es poden canviar més endavant per l&apos;usuari.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configuració del Rellotge&lt;/b&gt;&lt;br/&gt;Si teniu un ordinador Apple o un sistema Unix pur, per omissió el rellotge del sistema s&apos;estableix en hora GMT &lt;i&gt;Greenwich Mean Time&lt;/i&gt; o UT &lt;i&gt;Universal Time&lt;/i&gt;.  Per canviar-lo, marqueu la casella de &apos;Rellotge de Sistema en LOCAL&apos;.&lt;/p&gt;El sistema arrenca amb la zona horària GMT/UTC per omissió. Per canviar la zona horària, un cop heu arrencat amb la nova instal·lació, feu clic amb el botó dret del ratolí sobre el rellotge del plafó i trieu Propietats.&lt;/p&gt;&lt;p&gt;&lt;b&gt;Configuració de Serveis&lt;/b&gt;&lt;br/&gt;Normalment no cal canviar la configuració per omissió. Els usuaris amb ordinadors de poca capacitat a vegades poden desactivar alguns serveis innecessaris, per tal de minimitzar l&apos;ús de la RAM. Assegureu-vos, però, de saber el que esteu fent! </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1973"/>
+        <location filename="../minstall.cpp" line="1988"/>
         <source>&lt;p&gt;&lt;b&gt;Default User Login&lt;/b&gt;&lt;br/&gt;The root user is similar to the Administrator user in some other operating systems. You should not use the root user as your daily user account. Please enter the name for a new (default) user account that you will use on a daily basis. If needed, you can add other user accounts later with MX User Manager. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Passwords&lt;/b&gt;&lt;br/&gt;Enter a new password for your default user account and for the root account. Each password must be entered twice.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Registre d&apos;usuari per omissió&lt;/b&gt;&lt;br/&gt;L&apos;usuari primari (root) és similar a l&apos;usuari Administrador en altres Sistemes Operatius. No heu d&apos;utilitzar l&apos;usuari primari com el vostre usuari habitual. Si us plau, introduïu el nom per al nou usuari per omissió que fareu servir normalment. &lt;/p&gt;&lt;p&gt;&lt;b&gt;Contrasenyes&lt;/b&gt;&lt;br/&gt;Introduïu una nova contrasenya per al vostre usuari normal i per al compte d&apos;usuari primari (&lt;i&gt;root&lt;/i&gt;). Cada contrasenya s&apos;ha d&apos;introduir dues vegades.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1984"/>
+        <location filename="../minstall.cpp" line="1999"/>
         <source>&lt;p&gt;&lt;b&gt;Congratulations!&lt;/b&gt;&lt;br/&gt;You have completed the installation of </source>
         <translation>&lt;p&gt;&lt;b&gt;Enhorabona!&lt;/b&gt;&lt;br/&gt;Heu acabat la instal·lació de </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1984"/>
+        <location filename="../minstall.cpp" line="1999"/>
         <source>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Finding Applications&lt;/b&gt;&lt;br/&gt;There are hundreds of excellent applications installed with MX Linux. The best way to learn about them is to browse through the Menu and try them. Many of the apps were developed specifically for the Xfce environment. These are shown in the main menus. &lt;p&gt;In addition MX Linux includes many standard Linux applications that are run only from the command line and therefore do not show up in the Menu.&lt;/p&gt;</source>
         <translation>&lt;/p&gt;&lt;p&gt;&lt;b&gt;Trobar programari&lt;/b&gt;&lt;br/&gt;Hi ha centenars de programes excel·lents ja instal·lats a MX Linux. La millor manera de familiaritzar-se amb ells és explorar mitjançant el Menú i provar-los. Molts programes s&apos;han desenvolupat específicament per a l&apos;entorn Xfce.&lt;/p&gt; &lt;p&gt;Addicionalment, MX Linux inclou molts programes estàndard Linux que s&apos;executen a la línia d&apos;ordres i per tant no apareixen al Menú.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="1996"/>
+        <location filename="../minstall.cpp" line="2011"/>
         <source>&lt;p&gt;&lt;b&gt;Enjoy using MX Linux!&lt;/b&gt;&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Gaudiu usant MX Linux!&lt;/b&gt;&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2010"/>
-        <location filename="../minstall.cpp" line="2022"/>
+        <location filename="../minstall.cpp" line="2025"/>
+        <location filename="../minstall.cpp" line="2037"/>
         <source>Next &gt;</source>
         <translation>Següent &gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2020"/>
+        <location filename="../minstall.cpp" line="2035"/>
         <source>Finish</source>
         <translation>Acaba</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2084"/>
+        <location filename="../minstall.cpp" line="2099"/>
         <source>Administration</source>
         <translation>Administració </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2090"/>
+        <location filename="../minstall.cpp" line="2105"/>
         <source>Runs commands periodically</source>
         <translation>Executa ordres periòdicament </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2100"/>
+        <location filename="../minstall.cpp" line="2115"/>
         <source>Time-based job scheduler</source>
         <translation>Programador de tasques en el temps </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2110"/>
+        <location filename="../minstall.cpp" line="2125"/>
         <source>Execute a command as another user</source>
         <translation>Executa una ordre com un altre usuari </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2119"/>
+        <location filename="../minstall.cpp" line="2134"/>
         <source>Hardware</source>
         <translation>Maquinari </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2124"/>
+        <location filename="../minstall.cpp" line="2139"/>
         <source>CPU frequency, irqbalance</source>
         <translation>Freqüència de CPU,  compensació d&apos;IRQ </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2134"/>
+        <location filename="../minstall.cpp" line="2149"/>
         <source>S.M.A.R.T. monitoring tools</source>
         <translation>Eines de seguiment S.M.A.R.T. </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2144"/>
+        <location filename="../minstall.cpp" line="2159"/>
         <source>Advanced Configuration and Power Interface event daemon</source>
         <translation>Dimoni d&apos;esdeveniments Advanced Configuration and Power Interface </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2154"/>
+        <location filename="../minstall.cpp" line="2169"/>
         <source>HDD temperature monitor</source>
         <translation>Seguiment de temperatura del disc dur  </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2164"/>
+        <location filename="../minstall.cpp" line="2179"/>
         <source>Generates key events for ACPI scripts</source>
         <translation>Genera esdeveniments clau per als scripts d&apos;ACPI </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2174"/>
+        <location filename="../minstall.cpp" line="2189"/>
         <source>Message bus daemon</source>
         <translation>Dimoni del bus de missatges  </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2184"/>
+        <location filename="../minstall.cpp" line="2199"/>
         <source>Mouse event server</source>
         <translation>Servidor d&apos;esdeveniments de ratolí </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2194"/>
+        <location filename="../minstall.cpp" line="2209"/>
         <source>Scanner daemon</source>
         <translation>Dimoni d&apos;escàner  </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2204"/>
+        <location filename="../minstall.cpp" line="2219"/>
         <source>Random number generator</source>
         <translation>Generador de nombres aleatoris  </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2214"/>
+        <location filename="../minstall.cpp" line="2229"/>
         <source>Enables programs to publish and discover services and hosts</source>
         <translation>Permet que els programes publiquin i descobreixin serveis i amfitrions </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2223"/>
+        <location filename="../minstall.cpp" line="2238"/>
         <source>Networking</source>
         <translation>Xarxa</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2229"/>
+        <location filename="../minstall.cpp" line="2244"/>
         <source>Network connection</source>
         <translation>Connexió de xarxa</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2239"/>
+        <location filename="../minstall.cpp" line="2254"/>
         <source>Secure Shell</source>
         <translation>Intèrpret Segur </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2249"/>
+        <location filename="../minstall.cpp" line="2264"/>
         <source>Mail filter</source>
         <translation>Filtre de correu</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2259"/>
+        <location filename="../minstall.cpp" line="2274"/>
         <source>Network File System</source>
         <translation>Sistema de Fitxers de Xarxa</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2273"/>
+        <location filename="../minstall.cpp" line="2288"/>
         <source>VPN program that creates secure connections</source>
         <translation>Programa VPN que crea connexions segures</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2283"/>
+        <location filename="../minstall.cpp" line="2298"/>
         <source>Bluetooth</source>
         <translation>Bluetooth  </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2293"/>
+        <location filename="../minstall.cpp" line="2308"/>
         <source>File-copying tool</source>
         <translation>Eina de còpia de fitxers </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2302"/>
+        <location filename="../minstall.cpp" line="2317"/>
         <source>Printing</source>
         <translation>Impressió </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2308"/>
+        <location filename="../minstall.cpp" line="2323"/>
         <source>Linux and OS X printer service</source>
         <translation>Servei d&apos;impressió per a Linux i OS X </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2486"/>
+        <location filename="../minstall.cpp" line="2501"/>
         <source>MX Linux is installing, are you 
 sure you want to Close now?</source>
         <translation>S&apos;està instal·lant MX Linux, esteu
 segurs que voleu acabar ara?</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2513"/>
+        <location filename="../minstall.cpp" line="2528"/>
         <source>Deleting old system</source>
         <translation>Esborrant el sistema antic </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2522"/>
+        <location filename="../minstall.cpp" line="2537"/>
         <source>Failed to delete old MX Linux on destination.
 Returning to Step 1.</source>
         <translation>Ha fallat l&apos;esborrat del sistema MX Linux a la
 destinació. Retornant al primer pas.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2548"/>
+        <location filename="../minstall.cpp" line="2563"/>
         <source>Copying new system</source>
         <translation>Copiant el nou sistema </translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2572"/>
+        <location filename="../minstall.cpp" line="2587"/>
         <source>Fixing configuration</source>
         <translation>Arranjant la configuració</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2663"/>
+        <location filename="../minstall.cpp" line="2678"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
         <translation>Ha fallat escrivint MX Linux a la destinació.
 Retornant al primer pas.</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2690"/>
+        <location filename="../minstall.cpp" line="2705"/>
         <source>&lt;p&gt;&lt;b&gt;Getting Help&lt;/b&gt;&lt;br/&gt;Basic information about MX Linux is at https://mxlinux.org There are volunteers to help you at the MX forum, https://forum.mxlinux.org &lt;/p&gt;&lt;p&gt;If you ask for help, please remember to describe your problem and your computer in some detail. Usually statements like &apos;it didn&apos;t work&apos; are not helpful.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Cercar Ajuda&lt;/b&gt;&lt;br/&gt;Trobareu informació bàsica quant a MX Linux a https://mxlinux.org Hi ha voluntaris per ajudar-vos al fòrum MX https://forum.mxlinux.org . Al fòrum GNU-Linux de Softcatalà a http://www.softcatala.org/forum i molts altres també trobareu ajuda en la nostra llengua.&lt;/p&gt;&lt;p&gt;Si demaneu ajuda, recordeu-vos de descriure el vostre problema i el maquinari. Normalment títols com &apos;No funciona!&apos; no son gens útils.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2698"/>
+        <location filename="../minstall.cpp" line="2713"/>
         <source>&lt;p&gt;&lt;b&gt;Repairing Your Installation&lt;/b&gt;&lt;br/&gt;If MX Linux stops working from the hard drive, sometimes it&apos;s possible to fix the problem by booting from LiveDVD or LiveUSB and running one of the utilities in MX Tools or by using one of the regular Linux tools to repair the system.&lt;/p&gt;&lt;p&gt;You can also use your MX Linux LiveDVD or LiveUSB to recover data from MS-Windows systems!&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Reparar la instal·lació&lt;/b&gt;&lt;br/&gt;Si MX Linux deixés de funcionar des del disc dur, sovint es pot arreglar el problema arrencant des del DVD o USB autònom i executant alguna de les utilitats que trobareu a &apos;Eines de MX&apos; o bé usant alguna de les eines típiques de Linux per a reparar el sistema.&lt;/p&gt;&lt;p&gt;Fins i tot podeu usar usar el DVD o USB autònom de MX Linux per recuperar dades dels sistemes MS-Windows!&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2704"/>
+        <location filename="../minstall.cpp" line="2719"/>
         <source>&lt;p&gt;&lt;b&gt;Support MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org, or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Suport de MX Linux&lt;/b&gt;&lt;br/&gt;MX Linux té el suport de gent com vosaltres. Alguns n&apos;ajuden d&apos;altres als fòrums de suport, com  http://forum.mxlinux.org o http://antix.freeforums.org, altres tradueixen programari o fitxers d&apos;ajuda a altres llengües, fan suggeriments, escriuen manuals i documentació, o ajuden a provar el funcionament del programari nou.&lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2711"/>
+        <location filename="../minstall.cpp" line="2726"/>
         <source>&lt;p&gt;&lt;b&gt;Adjusting Your Sound Mixer&lt;/b&gt;&lt;br/&gt;MX Linux attempts to configure the sound mixer for you but sometimes it will be necessary for you to turn up volumes and unmute channels in the mixer in order to hear sound.&lt;/p&gt; &lt;p&gt;The mixer shortcut is located in the menu. Click on it to open the mixer. &lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Ajustar el Volum del Mesclador de So&lt;/b&gt;&lt;br/&gt;MX Linux intenta configurar el mesclador de so, però amb alguns dispositius pot ser necessari apujar el volum del mesclador o &quot;desenmudir&quot; algun canal per tal d&apos;escoltar so.&lt;/p&gt; &lt;p&gt;La drecera del mesclador està situada al menú i al plafó. Cliqueu sobre la icona per a obrir el mesclador. &lt;/p&gt;</translation>
     </message>
     <message>
-        <location filename="../minstall.cpp" line="2719"/>
+        <location filename="../minstall.cpp" line="2734"/>
         <source>&lt;p&gt;&lt;b&gt;Keep Your Copy of MX Linux up-to-date&lt;/b&gt;&lt;br/&gt;For MX Linux information and updates please visit https://mxlinux.org or http://antix.freeforums.org&lt;/p&gt;</source>
         <translation>&lt;p&gt;&lt;b&gt;Mantenir el vostre MX Linux al dia&lt;/b&gt;&lt;br/&gt;Per a tenir informació i actualitzacions de MX Linux visiteu https://mxlinux.org o http://antix.freeforums.org&lt;/p&gt;</translation>
     </message>

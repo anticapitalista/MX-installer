@@ -18,20 +18,20 @@ Changes:
  .
    * use GPT when using default partitioning
 Checksums-Sha1:
- 9a932b1af160d5f820badf58efb931e0e60bf054 422542 mx-installer_17.3mx16_i386.deb
+ 52eb9faca2795b3f760a7f04897e25b8fcfca3a5 422852 mx-installer_17.3mx16_i386.deb
 Checksums-Sha256:
- 4a4d65167818bc0814cb4187d57da2cd5edfec6fe9c8bbdea03ae0e9e0664bae 422542 mx-installer_17.3mx16_i386.deb
+ 57e1cd390b44a5788b390af2a7070afdc6d68215a41a6cefdb9b72acb74904b5 422852 mx-installer_17.3mx16_i386.deb
 Files:
- 590845045c87517e3f2f8d5de1333df9 422542 system optional mx-installer_17.3mx16_i386.deb
+ 6768df90db143b98b6195b45b72914cc 422852 system optional mx-installer_17.3mx16_i386.deb
 
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1
 
-iQEcBAEBAgAGBQJYvaWWAAoJEHCTjHgGee6YTdUH/0At0QgXHoP4BIj8rAfBeBXa
-hqXRP8ELH/VZF15OIcZGoDVpwv7g9ZQTsC5tHImsuT9ZeTpL0FzMj59p3wDd89QK
-M9P5tEaTqQhJ0p9BIvruUi/IL8nwOEz4uPoRUa4EkoeMR0XDSf07QLu5PypRFFyP
-6DSdrXjifLwcxnQ1IzbOJoo2NhSr5xWbsEIGnoBHxVOTnFtLe4L+vTDV5Z6qV6Dy
-DbthhohkgYVKC/+kIkoaGea1sBC8ljB87KmsKhfuWN79E8eMXKAJmdkwoJ8lg3pl
-PUWK633rirIf6QCLfFScQMrzo5pHHCeKe/b0E8gsiIahiyItAsljTsWajuQa+KQ=
-=s6SQ
+iQEcBAEBAgAGBQJYwJQ2AAoJEHCTjHgGee6YowcIAL21z8HyGnFNKByYcxn5AN9y
+VnUvq/d5tpYIuTuPUZJ1aOlp+hMXNfvi1GOZIf+1UWk3kNTUQRjtBRYgR3pvJPEU
+TE1yk1vr8LxBKjNuKST/OUc3s6KPjIoarT4RXes81WDqr6M3pqrBmkqB8MxsEGAP
+certWilGz761GGqOrva8g1jX4mpF72qkzkCCuXDVFaePraMpHcDVi9gb01fZi+hr
+CsjESn3hVYJKgzlwwJ+EAfKJ9vVnCaJp881Mjg7gN9pNivLly0xcIP9rDnwV71jx
+nTa8tjuQuqerYzWQ94ZjNeU8zuQQthujqh3X/Ff1DyuG4gnghu+eSjgzHc8RBgY=
+=FpO9
 -----END PGP SIGNATURE-----

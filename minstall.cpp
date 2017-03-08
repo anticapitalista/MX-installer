@@ -164,6 +164,13 @@ bool MInstall::is32bit()
     return (getCmdOut("uname -m") == "i686");
 }
 
+// Check if running from a 64bit environment
+bool MInstall::is64bit()
+{
+    return (getCmdOut("uname -m") == "x86_64");
+}
+
+
 // Check if running inside VirtualBox
 bool MInstall::isInsideVB()
 {
@@ -459,6 +466,7 @@ bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad, QStri
     }
     return true;
 }
+
 ///////////////////////////////////////////////////////////////////////////
 // in this case use all of the drive
 
@@ -468,6 +476,8 @@ bool MInstall::makeDefaultPartitions()
     int ans;
     int prog = 0;
     bool uefi = isUefi();
+    bool arch64 = is64bit();
+
     QString rootdev, swapdev;
 
     QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
@@ -515,7 +525,7 @@ bool MInstall::makeDefaultPartitions()
 
     // allocate space for ESP
     int esp_size = 0;
-    if(uefi) {
+    if(uefi && arch64) { // if booted from UEFI and 64bit
         esp_size = 256;
         remaining -= esp_size;
     }
@@ -539,19 +549,18 @@ bool MInstall::makeDefaultPartitions()
         if (free > remaining - 8192) {
             free = remaining - 8192;
         }
-        remaining = remaining - free;
+        remaining -= free;
     } else { // no free space
         free = 0;
-    }
+    }   
 
-    // new partition table
-    int err = runCmd("parted -s " + drv + " mklabel gpt");
-    if (err != 0) {
-        qDebug() << "Could not create a partition table";
-        return false;
-    }
-
-    if(uefi) { // make ESP if booting on UEFI
+    if(uefi && arch64) { // if booted from UEFI and 64bit make ESP
+        // new GPT partition table
+        int err = runCmd("parted -s " + drv + " mklabel gpt");
+        if (err != 0 ) {
+            qDebug() << "Could not create gpt partition table on " + drv;
+            return false;
+        }
         rootdev = drv + "2";
         swapdev = drv + "3";
         updateStatus(tr("Formating EFI System Partition (ESP)"), ++prog);
@@ -559,6 +568,12 @@ bool MInstall::makeDefaultPartitions()
             return false;
         }
     } else {
+        // new msdos partition table
+        int err = runCmd("parted -s " + drv + " mklabel msdos");
+        if (err != 0 ) {
+            qDebug() << "Could not create msdos partition table on " + drv;
+            return false;
+        }
         rootdev = drv + "1";
         swapdev = drv + "2";
     }
@@ -571,7 +586,7 @@ bool MInstall::makeDefaultPartitions()
         start = QString::number(esp_size) + "MiB ";
     }
     int end_root = esp_size + remaining;
-    err = runCmd("parted -s " + drv + " mkpart primary  " + start + QString::number(end_root) + "MiB");
+    int err = runCmd("parted -s " + drv + " mkpart primary  " + start + QString::number(end_root) + "MiB");
     if (err != 0) {
         qDebug() << "Could not create root partition";
         return false;
@@ -2461,7 +2476,7 @@ void MInstall::on_grubBootCombo_activated(QString)
     QString cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
     QString detectESP = QString("sgdisk -p %1 | grep -q ' EF00 '").arg(drv);
     // if 64bit, GPT, and ESP exists
-    if (getCmdOut("uname -m") == "x86_64" && system(cmd.toUtf8()) == 0 && system(detectESP.toUtf8()) == 0) {
+    if (is64bit() && system(cmd.toUtf8()) == 0 && system(detectESP.toUtf8()) == 0) {
         grubEspButton->setEnabled(true);
         if (isUefi()) { // if booted from UEFI
             grubEspButton->setChecked(true);
