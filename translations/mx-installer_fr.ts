@@ -734,443 +734,408 @@ Returning to Step 1.</source>
         <translation>Conditions d&apos;utilisation</translation>
     </message>
     <message>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux is an independent Linux distribution based on Debian Stable&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;Enjoy using MX Linux.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
- p, li { white-space: pre-wrap; }
- &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
- &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux est une distribution Linux indépendante basée sur Debian Stable.&lt;/span&gt;&lt;/p&gt;
- &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
- &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux utilise certains composants de MEPIS Linux qui sont libérés en vertu d&apos;une licence Apache libre. Certains composants MEPIS ont été modifiés pour MX Linux.&lt;/span&gt;&lt;/p&gt;
- &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
- &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot;font-family:&apos;Sans&apos;;&quot;&gt;Profitez de l&apos;utilisation de MX Linux.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <location filename="../meinstall.ui" line="184"/>
+        <source>MX Linux is an independent Linux distribution based on Debian Stable
+
+MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.
+
+Enjoy using MX Linux.</source>
+        <translation>MX Linux est une distribution Linux indépendante basée sur Debian Stable.
+
+MX Linux utilise certains composants de MEPIS Linux qui sont libérés en vertu d&apos;une licence Apache libre. Certains composants MEPIS ont été modifiés pour MX Linux.
+
+Profitez de l&apos;utilisation de MX Linux.</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="187"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10.5pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;MX Linux is an independent Linux distribution based on Debian Stable&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;Enjoy using MX Linux.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location filename="../meinstall.ui" line="230"/>
+        <location filename="../meinstall.ui" line="226"/>
         <source>1c. Select type of installation</source>
         <translation>1c. Sélectionner le type d&apos;installation</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="276"/>
+        <location filename="../meinstall.ui" line="272"/>
         <source>Leave free space up to:</source>
         <translation>Laisser de l&apos;espace libre jusqu&apos;à :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="311"/>
+        <location filename="../meinstall.ui" line="307"/>
         <source>MB </source>
         <translation>Mo</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="327"/>
+        <location filename="../meinstall.ui" line="323"/>
         <source>Auto-install using entire disk </source>
         <translation>Installation automatique en utilisant l&apos;intégralité du disque  </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="343"/>
+        <location filename="../meinstall.ui" line="339"/>
         <source>Custom install on existing partitions</source>
         <translation>Installation personnalisée sur des partitions existantes</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="362"/>
+        <location filename="../meinstall.ui" line="358"/>
         <source>1a. Choose disk for installation</source>
         <translation>1a. Choisir un disque pour l&apos;installation</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="402"/>
+        <location filename="../meinstall.ui" line="398"/>
         <source>Use disk:</source>
         <translation>Utiliser le disque :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="421"/>
+        <location filename="../meinstall.ui" line="417"/>
         <source>1b. Rearrange disk partitions (optional)</source>
         <translation>1b. Réarranger les partitions disques (optionnel)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="448"/>
+        <location filename="../meinstall.ui" line="444"/>
         <source>Run partition tool...</source>
         <translation>Exécuter outil de partitionnement ...</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="461"/>
+        <location filename="../meinstall.ui" line="457"/>
         <source>Modify partitions:</source>
         <translation>Modifier les partitions :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="525"/>
+        <location filename="../meinstall.ui" line="521"/>
         <source>2b. Preferences</source>
         <translation>2b. Préférences</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="552"/>
+        <location filename="../meinstall.ui" line="548"/>
         <source>Preserve data in /home (if upgrading)</source>
         <translation>Préserver les données de /home (en cas de mise-à-jour)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="587"/>
+        <location filename="../meinstall.ui" line="583"/>
         <source>Filesystem type:</source>
         <translation>Type du système de fichiers :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="613"/>
+        <location filename="../meinstall.ui" line="609"/>
         <source>Change default / (root) partition label:</source>
         <translation>Changer l&apos;étiquette de partition / (root) par défaut</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="627"/>
+        <location filename="../meinstall.ui" line="623"/>
         <source>ext4</source>
         <translation>ext4</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="632"/>
+        <location filename="../meinstall.ui" line="628"/>
         <source>ext3</source>
         <translation>ext3</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="637"/>
+        <location filename="../meinstall.ui" line="633"/>
         <source>ext2</source>
         <translation>ext2</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="642"/>
+        <location filename="../meinstall.ui" line="638"/>
         <source>jfs</source>
         <translation>jfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="647"/>
+        <location filename="../meinstall.ui" line="643"/>
         <source>xfs</source>
         <translation>xfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="652"/>
+        <location filename="../meinstall.ui" line="648"/>
         <source>btrfs</source>
         <translation>btrfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="657"/>
+        <location filename="../meinstall.ui" line="653"/>
         <source>reiserfs</source>
         <translation>reiserfs</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="668"/>
+        <location filename="../meinstall.ui" line="664"/>
         <source>Change default /home partition label:</source>
         <translation>Changer l&apos;étiquette de partition /home par défaut</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="687"/>
+        <location filename="../meinstall.ui" line="683"/>
         <source>Check for badblocks (takes longer)</source>
         <translation>Vérifier les secteurs défectueux (long)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="706"/>
+        <location filename="../meinstall.ui" line="702"/>
         <source>2a. Choose partitions</source>
         <translation>2a. Choississez les partitions</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="736"/>
+        <location filename="../meinstall.ui" line="732"/>
         <source>/ (root) partition:</source>
         <translation>/ partition racine (root) :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="752"/>
+        <location filename="../meinstall.ui" line="748"/>
         <source>swap partition:</source>
         <translation>partition d&apos;échange (swap) :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="768"/>
+        <location filename="../meinstall.ui" line="764"/>
         <source>/home partition:</source>
         <translation>partition /home :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="847"/>
-        <location filename="../meinstall.ui" line="1198"/>
+        <location filename="../meinstall.ui" line="843"/>
+        <location filename="../meinstall.ui" line="1194"/>
         <source>root</source>
         <translation>root</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="883"/>
+        <location filename="../meinstall.ui" line="879"/>
         <source>3. Installation in progress</source>
         <translation>3. Installation en cours</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="926"/>
+        <location filename="../meinstall.ui" line="922"/>
         <source>Abort</source>
         <translation>Abandonner</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="929"/>
-        <location filename="../meinstall.ui" line="1147"/>
+        <location filename="../meinstall.ui" line="925"/>
+        <location filename="../meinstall.ui" line="1143"/>
         <source>Alt+A</source>
         <translation>Alt+A</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="968"/>
+        <location filename="../meinstall.ui" line="964"/>
         <source>Ready to install MX Linux filesystem</source>
         <translation>Prêt pour installer le système MX-Linux</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="990"/>
+        <location filename="../meinstall.ui" line="986"/>
         <source>Tips</source>
         <translation>Astuces</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1064"/>
+        <location filename="../meinstall.ui" line="1060"/>
         <source>4. Select Boot Method</source>
         <translation>4. Sélectionner une Méthode de Démarrage</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1097"/>
+        <location filename="../meinstall.ui" line="1093"/>
         <source>MBR</source>
         <translation>MBR</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1100"/>
+        <location filename="../meinstall.ui" line="1096"/>
         <source>Alt+B</source>
         <translation>Alt+B</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1128"/>
+        <location filename="../meinstall.ui" line="1124"/>
         <source>Install on:</source>
         <translation>Installer sur :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1144"/>
+        <location filename="../meinstall.ui" line="1140"/>
         <source>Install GRUB for MX Linux and Windows</source>
         <translation>Installer GRUB pour MX Linux et Windows</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1166"/>
+        <location filename="../meinstall.ui" line="1162"/>
         <source>System boot disk:</source>
         <translation>Disque système de démarrage :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1211"/>
+        <location filename="../meinstall.ui" line="1207"/>
         <source>EFI System Partition</source>
         <translation>Partition système EFI</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1214"/>
+        <location filename="../meinstall.ui" line="1210"/>
         <source>ESP</source>
         <translation>ESP</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1284"/>
+        <location filename="../meinstall.ui" line="1280"/>
         <source>Common Services to Enable</source>
         <translation>Services courants à activer</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1324"/>
+        <location filename="../meinstall.ui" line="1320"/>
         <source>Service</source>
         <translation>Service</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1329"/>
+        <location filename="../meinstall.ui" line="1325"/>
         <source>Description</source>
         <translation>Description</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1365"/>
+        <location filename="../meinstall.ui" line="1361"/>
         <source>5. Computer Network Names</source>
         <translation>5. Noms Réseaux de l&apos;Ordinateur</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1392"/>
+        <location filename="../meinstall.ui" line="1388"/>
         <source>Workgroup</source>
         <translation>Groupe de travail :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1405"/>
+        <location filename="../meinstall.ui" line="1401"/>
         <source>Workgroup:</source>
         <translation>Groupe de travail :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1421"/>
+        <location filename="../meinstall.ui" line="1417"/>
         <source>SaMBa Server for MS Networking</source>
         <translation>Serveur SaMBa pour réseaux MS</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1437"/>
+        <location filename="../meinstall.ui" line="1433"/>
         <source>example.dom</source>
         <translation>exemple.dom</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1450"/>
+        <location filename="../meinstall.ui" line="1446"/>
         <source>Computer domain:</source>
         <translation>Nom du domaine :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1466"/>
+        <location filename="../meinstall.ui" line="1462"/>
         <source>mx1</source>
         <translation>mx1</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1482"/>
+        <location filename="../meinstall.ui" line="1478"/>
         <source>Computer name:</source>
         <translation>Nom de l&apos;ordinateur :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1555"/>
+        <location filename="../meinstall.ui" line="1551"/>
         <source>6d. Service Settings (advanced)</source>
         <translation>6d. Réglages des services (avancé)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1573"/>
+        <location filename="../meinstall.ui" line="1569"/>
         <source>Adjust which services should run at startup</source>
         <translation>Réglez les services qui doivent être exécutés au démarrage</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1576"/>
+        <location filename="../meinstall.ui" line="1572"/>
         <source>View</source>
         <translation>Voir</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1605"/>
+        <location filename="../meinstall.ui" line="1601"/>
         <source>6b. Configure Clock</source>
         <translation>6b. Régler l&apos;heure</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1633"/>
+        <location filename="../meinstall.ui" line="1629"/>
         <source>Format:</source>
         <translation>Format:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1650"/>
+        <location filename="../meinstall.ui" line="1646"/>
         <source>System clock uses LOCAL</source>
         <translation>L&apos;horloge système est LOCAL</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1679"/>
+        <location filename="../meinstall.ui" line="1675"/>
         <source>6a. Localization Defaults</source>
         <translation>6a. Localisation par défaut</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1709"/>
+        <location filename="../meinstall.ui" line="1705"/>
         <source>Locale:</source>
         <translation>Localiser :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1748"/>
+        <location filename="../meinstall.ui" line="1744"/>
         <source>Keyboard:</source>
         <translation>Clavier :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1767"/>
+        <location filename="../meinstall.ui" line="1763"/>
         <source>6c. Timezone Settings</source>
         <translation>6c. Réglages des fuseaux horaires</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1773"/>
+        <location filename="../meinstall.ui" line="1769"/>
         <source>Timezone:</source>
         <translation>Fuseau horaire:</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1827"/>
+        <location filename="../meinstall.ui" line="1823"/>
         <source>7b. Root (administrator) Account</source>
         <translation>7b. Compte Administrateur (root)</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1886"/>
+        <location filename="../meinstall.ui" line="1882"/>
         <source>Confirm root password:</source>
         <translation>Confirmer le mot de passe administrateur : </translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1902"/>
+        <location filename="../meinstall.ui" line="1898"/>
         <source>Root password:</source>
         <translation>Mot de passe administrateur :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1934"/>
+        <location filename="../meinstall.ui" line="1930"/>
         <source>7a. Default User Account</source>
         <translation>7a. Compte utilisateur par défaut</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="1996"/>
+        <location filename="../meinstall.ui" line="1992"/>
         <source>username</source>
         <translation>nom d&apos;utilisateur</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2009"/>
+        <location filename="../meinstall.ui" line="2005"/>
         <source>Confirm user password:</source>
         <translation>Confirmer le mot de passe utilisateur :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2025"/>
+        <location filename="../meinstall.ui" line="2021"/>
         <source>Default user password:</source>
         <translation>Mot de passe utilisateur :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2041"/>
+        <location filename="../meinstall.ui" line="2037"/>
         <source>Default user login name:</source>
         <translation>Nom d&apos;utilisateur par défaut :</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2054"/>
+        <location filename="../meinstall.ui" line="2050"/>
         <source>Autologin</source>
         <translation>Connexion automatique</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2061"/>
+        <location filename="../meinstall.ui" line="2057"/>
         <source>Show passwords</source>
         <translation>Afficher les mots de passe</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2068"/>
+        <location filename="../meinstall.ui" line="2064"/>
         <source>Desktop modifications made in the live environment will be carried over to the installed OS</source>
         <translation>Les modifications de bureau effectuées dans l&apos;environnement &apos;live&apos; seront reportées sur le système installé</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2071"/>
+        <location filename="../meinstall.ui" line="2067"/>
         <source>Save live desktop changes</source>
         <translation>Enregistrer les modifications de bureau en &apos;live&apos;</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2103"/>
+        <location filename="../meinstall.ui" line="2099"/>
         <source>Reminders</source>
         <translation>Rappels</translation>
     </message>
     <message>
-        <location filename="../meinstall.ui" line="2157"/>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10.5pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-size:10pt;&quot;&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-weight:600;&quot;&gt;Support MX Linux&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation type="vanished">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Droid Sans&apos;; font-size:10pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;; font-weight:600;&quot;&gt;Supporter MX Linux&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Sans&apos;;&quot;&gt;MX Linux est soutenu par des personnes telles que vous. Certains proposent leur aide sur le Forum - https://forum.mxlinux.org, - http://antix.freeforums.org, d&apos;autres traduisent des fichiers d&apos;aides dans d&apos;autres langues, font des suggestions, écrivent des documentations ou aident à tester de nouveaux logiciels.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <location filename="../meinstall.ui" line="2147"/>
+        <source>Support MX Linux
+
+MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.</source>
+        <translation>Supporter MX Linux
+
+MX Linux est soutenu par des personnes telles que vous. Certains proposent leur aide sur le Forum - https://forum.mxlinux.org, - http://antix.freeforums.org, d&apos;autres traduisent des fichiers d&apos;aides dans d&apos;autres langues, font des suggestions, écrivent des documentations ou aident à tester de nouveaux logiciels.</translation>
     </message>
 </context>
 <context>
@@ -1193,7 +1158,8 @@ p, li { white-space: pre-wrap; }
         <source>The installer won&apos;t launch because it appears to be running already in the background.
 
 Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation>L&apos;installateur ne peut démarrer car il semblerait qu&apos;il soit déjà lancé en arrière-plan.
+Veuillez le fermer si possible, ou tuer &apos;pkill minstall&apos; dans un terminal.</translation>
     </message>
     <message>
         <location filename="../app.cpp" line="56"/>
