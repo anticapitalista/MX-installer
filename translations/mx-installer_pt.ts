@@ -1149,7 +1149,7 @@ O Linux MX é apoiado por pessoas como você. Algumas prestam ajuda a quem a sol
 <context>
     <name>QApplication</name>
     <message>
-        <location filename="../app.cpp" line="44"/>
+        <location filename="../app.cpp" line="47"/>
         <source>The installer won&apos;t launch because it appears to be running already in the background.
 
 Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</source>
@@ -1158,7 +1158,25 @@ Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</sou
 Por favor encerre-o se possível, ou execute no terminal &apos;pkill minstall&apos;.</translation>
     </message>
     <message>
-        <location filename="../app.cpp" line="56"/>
+        <location filename="../app.cpp" line="55"/>
+        <source>You are running 32bit OS started in UEFI mode, the system will not be able to boot unless you select Legacy Boot or similar at restart.
+We recommend you quit now and restart in Legacy Boot
+
+Do you want to continue the installation?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../app.cpp" line="59"/>
+        <source>Yes</source>
+        <translation type="unfinished">Sim</translation>
+    </message>
+    <message>
+        <location filename="../app.cpp" line="59"/>
+        <source>No</source>
+        <translation type="unfinished">Não</translation>
+    </message>
+    <message>
+        <location filename="../app.cpp" line="73"/>
         <source>You must run this app as root.</source>
         <translation>Tem que executar esta aplicação como root.</translation>
     </message>

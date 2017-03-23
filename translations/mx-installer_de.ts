@@ -1163,14 +1163,32 @@ MX Linux wird produziert von Leuten wie Dir und mir. Viele machen aktiv mit, zum
 <context>
     <name>QApplication</name>
     <message>
-        <location filename="../app.cpp" line="44"/>
+        <location filename="../app.cpp" line="47"/>
         <source>The installer won&apos;t launch because it appears to be running already in the background.
 
 Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../app.cpp" line="56"/>
+        <location filename="../app.cpp" line="55"/>
+        <source>You are running 32bit OS started in UEFI mode, the system will not be able to boot unless you select Legacy Boot or similar at restart.
+We recommend you quit now and restart in Legacy Boot
+
+Do you want to continue the installation?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../app.cpp" line="59"/>
+        <source>Yes</source>
+        <translation type="unfinished">Ja</translation>
+    </message>
+    <message>
+        <location filename="../app.cpp" line="59"/>
+        <source>No</source>
+        <translation type="unfinished">Nein</translation>
+    </message>
+    <message>
+        <location filename="../app.cpp" line="73"/>
         <source>You must run this app as root.</source>
         <translation>Diese Anwendung muss als Benutzer &quot;root&quot; ausgeführt werden.</translation>
     </message>

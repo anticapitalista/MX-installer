@@ -14,6 +14,8 @@
 //   limitations under the License.
 //
 
+#include <unistd.h>
+
 #include <QApplication>
 #include <QFont>
 #include <QString>
@@ -21,9 +23,10 @@
 #include <QTranslator>
 #include <QMessageBox>
 #include <QFile>
-#include <unistd.h>
+#include <QDebug>
 
 #include "mmain.h"
+
 
 int main(int argc, char *argv[])
 {
@@ -45,6 +48,20 @@ int main(int argc, char *argv[])
                                                "Please close it if possible, or run 'pkill minstall' in terminal."));
         return 1;
     }
+
+    // check if 32bit on UEFI
+    if (system("uname -m | grep -q i686") == 0 && system("test -d /sys/firmware/efi") == 0)
+    {        
+        int ans = QMessageBox::question(0, QString::null, QApplication::tr("You are running 32bit OS started in UEFI mode, the system will not be able to boot"
+                                                                           " unless you select Legacy Boot or similar at restart.\n"
+                                                                           "We recommend you quit now and restart in Legacy Boot\n\n"
+                                                                           "Do you want to continue the installation?"),
+                                    QApplication::tr("Yes"), QApplication::tr("No"));
+        if (ans != 0) {
+            return 1;
+        }
+    }
+
 
     if (getuid() == 0) {
         MMain mmain;

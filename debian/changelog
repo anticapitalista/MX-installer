@@ -1,3 +1,9 @@
+mx-installer (17.3mx16+1) mx; urgency=medium
+
+  * added warning for 32bit UEFI booting
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 23 Mar 2017 17:02:38 -0400
+
 mx-installer (17.3mx16) mx; urgency=medium
 
   * use GPT when using default partitioning

@@ -1157,7 +1157,7 @@ MX Linux té el suport de persones com vosaltres. Alguns donen ajuda als usuaris
 <context>
     <name>QApplication</name>
     <message>
-        <location filename="../app.cpp" line="44"/>
+        <location filename="../app.cpp" line="47"/>
         <source>The installer won&apos;t launch because it appears to be running already in the background.
 
 Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</source>
@@ -1167,7 +1167,25 @@ Si us plau, tanqueu-lo si podeu, o executeu &apos;pkill minstall&apos; en un ter
 </translation>
     </message>
     <message>
-        <location filename="../app.cpp" line="56"/>
+        <location filename="../app.cpp" line="55"/>
+        <source>You are running 32bit OS started in UEFI mode, the system will not be able to boot unless you select Legacy Boot or similar at restart.
+We recommend you quit now and restart in Legacy Boot
+
+Do you want to continue the installation?</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../app.cpp" line="59"/>
+        <source>Yes</source>
+        <translation type="unfinished">Sí</translation>
+    </message>
+    <message>
+        <location filename="../app.cpp" line="59"/>
+        <source>No</source>
+        <translation type="unfinished">No</translation>
+    </message>
+    <message>
+        <location filename="../app.cpp" line="73"/>
         <source>You must run this app as root.</source>
         <translation>Cal ser usuari primari per executar el programa.</translation>
     </message>

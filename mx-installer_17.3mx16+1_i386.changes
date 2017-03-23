@@ -1,0 +1,37 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Format: 1.8
+Date: Thu, 23 Mar 2017 17:02:38 -0400
+Source: mx-installer
+Binary: mx-installer
+Architecture: i386
+Version: 17.3mx16+1
+Distribution: mx
+Urgency: medium
+Maintainer: anticapitalista <antiX@operamail.com>
+Changed-By: Adrian <adrian@mxlinux.org>
+Description:
+ mx-installer - GUI installer for MX Linux.
+Changes:
+ mx-installer (17.3mx16+1) mx; urgency=medium
+ .
+   * added warning for 32bit UEFI booting
+Checksums-Sha1:
+ b94ac94618243147cfef0b797813e457f95bfdca 423284 mx-installer_17.3mx16+1_i386.deb
+Checksums-Sha256:
+ a6275fd1c7bc443a1ecf28b4b59586b911d300b53497ccebd65e6cc6700f871f 423284 mx-installer_17.3mx16+1_i386.deb
+Files:
+ 88802d63be5ba9d8c41cbf59c090bcb5 423284 system optional mx-installer_17.3mx16+1_i386.deb
+
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1
+
+iQEcBAEBAgAGBQJY1Di9AAoJEHCTjHgGee6YrUkIAInvLIuZu//sSqefD+vHYNwn
+v0fxP45byPnJMaz8hYLWse2ATsk+RjFpscaWlKHkku+EIE191wYMrQFjfXUjSQBn
+IkzVwX3rL6pVqgZ1rcAqJypJsDsx24/CjXySl4LcFLYPCwM9u0NkND1Lgz7nyRam
+Hhg9meo6I17M5kvuVvJnNdrmYEnfAhAQOoeeLjyrGs+MoSPw79jPhK4D8lvosp1H
+lIcF+MMT1VYYI+4yZ5+T8Z5aqnUqhD4FhjMXXZGBwP/H4nwuXtCDc+pW/TK7BPpA
+AW58+wReOpLFrfE8nAx4HiHPLsAiz01w6xJ1PQitaKxmNCjSsUPzXkvgMRd6f2U=
+=nhty
+-----END PGP SIGNATURE-----
