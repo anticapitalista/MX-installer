@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="sv">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="sv" version="2.1">
 <context>
     <name>MInstall</name>
     <message>
@@ -122,7 +120,7 @@ Hårddisken med partitionen du valt för installering sviktar.
     <message>
         <location filename="../minstall.cpp" line="566"/>
         <source>Formating EFI System Partition (ESP)</source>
-        <translation type="unfinished"></translation>
+        <translation>Formaterar EFI System Partition (ESP)</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="602"/>
@@ -245,7 +243,7 @@ och skapa en ny hemkatalog</translation>
     <message>
         <location filename="../minstall.cpp" line="1116"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Ledsen, misslyckades med att spara den gamla hemkatalogen.
 Innan du fortsätter måste du välja ett annat användarnamn
@@ -265,7 +263,7 @@ Innan du fortsätter, måste du välja ett annat användarnamn.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1142"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Du har valt att inte använda, spara eller ta bort den gamla hemkatalogen.
 Innan du fortsätter, måste du välja ett annat användarnamn.</translation>
@@ -364,7 +362,7 @@ inte överens. Var vänlig försök igen.</translation>
     <message>
         <location filename="../minstall.cpp" line="1361"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>Ledsen, ditt datornamn måste vara
 åtminstone 2 bokstäver. Du måste
@@ -373,7 +371,7 @@ välja ett annat namn innan du fortsätter.</translation>
     <message>
         <location filename="../minstall.cpp" line="1365"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Ledsen, ditt användarnamn innehåller ogiltiga tecken.
 Du måste välja ett annat namn
@@ -382,7 +380,7 @@ innan du fortsätter.</translation>
     <message>
         <location filename="../minstall.cpp" line="1371"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Ledsen, din dator-domän måste vara åtminstone
 2 bokstäver lång. Du måste välja ett annat
@@ -391,7 +389,7 @@ namn innan du fortsätter.</translation>
     <message>
         <location filename="../minstall.cpp" line="1375"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Ledsen, din dator-domän innehåller ogiltiga tecken.
 Du måste välja ett annat namn
@@ -400,7 +398,7 @@ innan du fortsätter.</translation>
     <message>
         <location filename="../minstall.cpp" line="1384"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Ledsen, din arbetsgrupp måste vara åtminstone
 2 bokstäver lång. Du måste välja ett annat namn
@@ -1160,7 +1158,7 @@ MX Linux stöds av folk som du. En del hjälper andra på supportforumet - https
     <name>QApplication</name>
     <message>
         <location filename="../app.cpp" line="47"/>
-        <source>The installer won&apos;t launch because it appears to be running already in the background.
+        <source>The installer won't launch because it appears to be running already in the background.
 
 Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</source>
         <translation>Installeraren kan inte starta eftersom den redan verkar köras i bakgrunden
@@ -1173,17 +1171,20 @@ Var vänlig stäng om möjligt, eller kör &apos;pkill minstall&apos; i en termi
 We recommend you quit now and restart in Legacy Boot
 
 Do you want to continue the installation?</source>
-        <translation type="unfinished"></translation>
+        <translation>Du kör 32bit OS som startats i UEFI mode. systemet kommer inte att kunna starta om du inte väljer Legacy Boot eller liknande vid omstart.
+Vi rekommenderar att du avslutar nu och startar om i Legacy Boot
+
+Vill du fortsätta installationen?</translation>
     </message>
     <message>
         <location filename="../app.cpp" line="59"/>
         <source>Yes</source>
-        <translation type="unfinished">Ja</translation>
+        <translation>Ja</translation>
     </message>
     <message>
         <location filename="../app.cpp" line="59"/>
         <source>No</source>
-        <translation type="unfinished">Nej</translation>
+        <translation>Nej</translation>
     </message>
     <message>
         <location filename="../app.cpp" line="73"/>

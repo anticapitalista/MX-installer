@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="ro">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ro" version="2.1">
 <context>
     <name>MInstall</name>
     <message>
@@ -122,7 +120,7 @@ Discul cu partiția selectă pentru instalare este in curs de defectare.
     <message>
         <location filename="../minstall.cpp" line="566"/>
         <source>Formating EFI System Partition (ESP)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="602"/>
@@ -245,7 +243,7 @@ and create a new home directory?</source>
     <message>
         <location filename="../minstall.cpp" line="1116"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Nu s-a reușit să se salveze vechiul director /home. 
 Înainte de a continua alegeți alt nume de utilizator
@@ -265,7 +263,7 @@ va trebui să alegeți un nou nume de utilizator.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1142"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Ați ales să nu refolosiți, salvați, or să ștergeți vechiul director home.
 Înainte de a continua, va trebui să alegeți un alt nume de utilizator.</translation>
@@ -364,7 +362,7 @@ nu se potrivesc. Încearcați din nou.</translation>
     <message>
         <location filename="../minstall.cpp" line="1361"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>Numele computerului trebuie sa aibă
 cel puțin 2 caractere. Alegeți alt nume
@@ -373,7 +371,7 @@ cel puțin 2 caractere. Alegeți alt nume
     <message>
         <location filename="../minstall.cpp" line="1365"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Numele computerlui conține caractere nepermise.
 Selectați un nume diferit
@@ -382,7 +380,7 @@ inainte de a continua.</translation>
     <message>
         <location filename="../minstall.cpp" line="1371"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Numele domeniului trebuie să aibă
 cel puțin 2 caractere. Alegeți alt nume
@@ -391,7 +389,7 @@ cel puțin 2 caractere. Alegeți alt nume
     <message>
         <location filename="../minstall.cpp" line="1375"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Numele domeniului conține caractere nepermise.
 Selectați un nume diferit
@@ -400,7 +398,7 @@ inainte de a continua.</translation>
     <message>
         <location filename="../minstall.cpp" line="1384"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Numele grupului de lucru trebuie să aibă
 cel puțin 2 caractere. Alegeți alt nume
@@ -1160,10 +1158,10 @@ MX Linux este susținut de către oameni ca tine care se ajută unii pe alții p
     <name>QApplication</name>
     <message>
         <location filename="../app.cpp" line="47"/>
-        <source>The installer won&apos;t launch because it appears to be running already in the background.
+        <source>The installer won't launch because it appears to be running already in the background.
 
 Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../app.cpp" line="55"/>
@@ -1171,17 +1169,17 @@ Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</sou
 We recommend you quit now and restart in Legacy Boot
 
 Do you want to continue the installation?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../app.cpp" line="59"/>
         <source>Yes</source>
-        <translation type="unfinished">Da</translation>
+        <translation>Da</translation>
     </message>
     <message>
         <location filename="../app.cpp" line="59"/>
         <source>No</source>
-        <translation type="unfinished">Nu</translation>
+        <translation>Nu</translation>
     </message>
     <message>
         <location filename="../app.cpp" line="73"/>

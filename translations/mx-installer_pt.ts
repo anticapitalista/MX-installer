@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="pt">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="pt" version="2.1">
 <context>
     <name>MInstall</name>
     <message>
@@ -116,7 +114,7 @@ O disco com a partição que selecionou para a instalação está a falhar.
     <message>
         <location filename="../minstall.cpp" line="566"/>
         <source>Formating EFI System Partition (ESP)</source>
-        <translation type="unfinished"></translation>
+        <translation>A formatar Partição de Sistema EFI (ESP)</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="602"/>
@@ -238,7 +236,7 @@ e criar uma nova diretoria home?</translation>
     <message>
         <location filename="../minstall.cpp" line="1116"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>O processo de guardar o diretório home existente falhou. Antes de prosseguir,
 deverá selecionar um nome de utilizador diferente ou
@@ -258,7 +256,7 @@ deverá selecionar um nome de utilizador diferente.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1142"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Optou por não usar, guardar ou apagar a diretoria home existente.
 Antes de prosseguir, deverá selecionar um nome de utilizador diferente.</translation>
@@ -356,7 +354,7 @@ Por favor tente de novo.</translation>
     <message>
         <location filename="../minstall.cpp" line="1361"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>O nome do computador deve ter
 pelo menos 2 caracteres. Escolha
@@ -365,7 +363,7 @@ outro nome.</translation>
     <message>
         <location filename="../minstall.cpp" line="1365"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>O nome do computador contém caracteres inválidos. 
 Escolha outro nome.</translation>
@@ -373,7 +371,7 @@ Escolha outro nome.</translation>
     <message>
         <location filename="../minstall.cpp" line="1371"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>O nome do domínio do computador deve conter
 pelo menos 2 caracteres. Escolha outro
@@ -382,7 +380,7 @@ nome.</translation>
     <message>
         <location filename="../minstall.cpp" line="1375"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>O nome do domínio do computador contém caracteres inválidos. 
 Escolha outro nome.</translation>
@@ -390,7 +388,7 @@ Escolha outro nome.</translation>
     <message>
         <location filename="../minstall.cpp" line="1384"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>O nome do grupo de trabalho deve ter
 pelo menos 2 caracteres. Escolha outro
@@ -1130,7 +1128,7 @@ Usufrua do Linux MX.</translation>
 MX Linux is supported by people like you. Some help others at the support forum - https://forum.mxlinux.org, - http://antix.freeforums.org or translate help files into different languages, or make suggestions, write documentation, or help test new software.</source>
         <translation>Apoie o MX Linux
 
-O Linux MX é apoiado por pessoas como você. Algumas prestam ajuda a quem a solicita nos fóruns de apoio - https://forum.mxlinux.org e http://antix.freeforums.org - outras traduzem ficheiros da ajuda para diferentes idiomas, fazem sugestões, elaboram documentação ou ajudam a testar novos programas.</translation>
+O MX é apoiado por pessoas como você. Algumas prestam ajuda a quem a solicita nos fóruns de apoio - https://forum.mxlinux.org e http://antix.freeforums.org - outras traduzem ficheiros da ajuda para diferentes idiomas, fazem sugestões, elaboram documentação ou ajudam a testar novos programas.</translation>
     </message>
 </context>
 <context>
@@ -1150,12 +1148,12 @@ O Linux MX é apoiado por pessoas como você. Algumas prestam ajuda a quem a sol
     <name>QApplication</name>
     <message>
         <location filename="../app.cpp" line="47"/>
-        <source>The installer won&apos;t launch because it appears to be running already in the background.
+        <source>The installer won't launch because it appears to be running already in the background.
 
 Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</source>
-        <translation>O instalador não inicia porque parece que já está a ser executado em segundo plano.
+        <translation>O instalador não inicia porque parece já estar a ser executado em segundo plano.
 
-Por favor encerre-o se possível, ou execute no terminal &apos;pkill minstall&apos;.</translation>
+Queira encerrá-lo, se possível, ou executar &apos;pkill minstall&apos; no terminal.</translation>
     </message>
     <message>
         <location filename="../app.cpp" line="55"/>
@@ -1163,17 +1161,20 @@ Por favor encerre-o se possível, ou execute no terminal &apos;pkill minstall&ap
 We recommend you quit now and restart in Legacy Boot
 
 Do you want to continue the installation?</source>
-        <translation type="unfinished"></translation>
+        <translation>Está a usar e a instalar no computador um Sistema Operativo de 32bit iniciado através de UEFI. Depois de instalado, o sistema não iniciará, a menos que reinicie agora o computador e escolha a opção Legacy Boot ou similar.
+Recomenda-se que saia agora e reinicie no modo Legacy Boot.
+
+Pretende continuar a instalação?</translation>
     </message>
     <message>
         <location filename="../app.cpp" line="59"/>
         <source>Yes</source>
-        <translation type="unfinished">Sim</translation>
+        <translation>Sim</translation>
     </message>
     <message>
         <location filename="../app.cpp" line="59"/>
         <source>No</source>
-        <translation type="unfinished">Não</translation>
+        <translation>Não</translation>
     </message>
     <message>
         <location filename="../app.cpp" line="73"/>

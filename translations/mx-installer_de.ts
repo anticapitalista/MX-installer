@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="de">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="de" version="2.1">
 <context>
     <name>MInstall</name>
     <message>
@@ -122,7 +120,7 @@ Das Laufwerk mit der Partition, die Sie für die Installation gewählt haben, is
     <message>
         <location filename="../minstall.cpp" line="566"/>
         <source>Formating EFI System Partition (ESP)</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../minstall.cpp" line="602"/>
@@ -243,7 +241,7 @@ und ein neues Home-Verzeichnis anlegen?</translation>
     <message>
         <location filename="../minstall.cpp" line="1116"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Konnte das alte Home-Verzeichnis nicht sichern. Bevor Sie weitermachen,
 müssen Sie einen anderen Benutzernamen auswählen oder
@@ -263,7 +261,7 @@ müssen Sie einen anderen Benutzernamen auswählen.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1142"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Sie haben beschlossen das alte Home-Verzeichnis nicht zu benutzen, zu sichern oder zu löschen.
 Bevor Sie weitermachen, müssen Sie einen anderen Benutzernamen auswählen.</translation>
@@ -363,7 +361,7 @@ nicht überein.  Bitte gleiches Passwort zweimal eingeben.</translation>
     <message>
         <location filename="../minstall.cpp" line="1361"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>Der Name des Computers muss mindestens
 2 Zeichen lang sein. Bitte wählen Sie einen 
@@ -372,7 +370,7 @@ längeren Namen, bevor Sie weitermachen.</translation>
     <message>
         <location filename="../minstall.cpp" line="1365"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Der Computername enthält leider ungültige Zeichen.. 
 Bitte wählen Sie einen anderen Namen, 
@@ -381,7 +379,7 @@ bevor Sie weitermachen.</translation>
     <message>
         <location filename="../minstall.cpp" line="1371"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Der Domänenname des Computers muss mindestens
 2 Zeichen lang sein. Bitte wählen Sie einen 
@@ -390,7 +388,7 @@ längeren Namen, bevor Sie weitermachen.</translation>
     <message>
         <location filename="../minstall.cpp" line="1375"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Der Domänenname des Computers enthält leider ungültige Zeichen.
 Bitte wählen Sie einen anderen Namen, bevor Sie weitermachen.</translation>
@@ -398,7 +396,7 @@ Bitte wählen Sie einen anderen Namen, bevor Sie weitermachen.</translation>
     <message>
         <location filename="../minstall.cpp" line="1384"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Der Name der Arbeitsgruppe muss mindestens
 2 Zeichen lang sein. Bitte wählen Sie einen 
@@ -1164,10 +1162,10 @@ MX Linux wird produziert von Leuten wie Dir und mir. Viele machen aktiv mit, zum
     <name>QApplication</name>
     <message>
         <location filename="../app.cpp" line="47"/>
-        <source>The installer won&apos;t launch because it appears to be running already in the background.
+        <source>The installer won't launch because it appears to be running already in the background.
 
 Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../app.cpp" line="55"/>
@@ -1175,17 +1173,17 @@ Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</sou
 We recommend you quit now and restart in Legacy Boot
 
 Do you want to continue the installation?</source>
-        <translation type="unfinished"></translation>
+        <translation type="unfinished"/>
     </message>
     <message>
         <location filename="../app.cpp" line="59"/>
         <source>Yes</source>
-        <translation type="unfinished">Ja</translation>
+        <translation>Ja</translation>
     </message>
     <message>
         <location filename="../app.cpp" line="59"/>
         <source>No</source>
-        <translation type="unfinished">Nein</translation>
+        <translation>Nein</translation>
     </message>
     <message>
         <location filename="../app.cpp" line="73"/>

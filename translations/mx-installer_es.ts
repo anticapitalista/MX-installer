@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="es">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="es" version="2.1">
 <context>
     <name>MInstall</name>
     <message>
@@ -122,7 +120,7 @@ El disco, con la partición seleccionada, está fallando.
     <message>
         <location filename="../minstall.cpp" line="566"/>
         <source>Formating EFI System Partition (ESP)</source>
-        <translation type="unfinished"></translation>
+        <translation>Formateando Sistema de partición EFI (ESP)</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="602"/>
@@ -243,7 +241,7 @@ y crear un nuevo directorio /home?</translation>
     <message>
         <location filename="../minstall.cpp" line="1116"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Falló el guardado del directorio /home anterior. Antes de proceder, 
 tendrá que seleccionar un nombre de usuario diferente, o 
@@ -263,7 +261,7 @@ tendrá que seleccionar un nombre de usuario diferente.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1142"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Ha elegido no usar, guardar ni borrar el viejo directorio /home. 
 Antes de seguir, tendrá que seleccionar un nombre de usuario diferente.</translation>
@@ -362,7 +360,7 @@ no concuerdan. Por favor, intenténtelo de nuevo.</translation>
     <message>
         <location filename="../minstall.cpp" line="1361"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>Lo siento, el nombre del computador necesita ser 
 de por lo menos 2 caracteres de largo. Tendrá que 
@@ -371,7 +369,7 @@ escoger un nombre diferente antes de proceder.</translation>
     <message>
         <location filename="../minstall.cpp" line="1365"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>El nombre de su computadora contiene caracteres inválidos.
 Deberá seleccionar uno diferente
@@ -380,7 +378,7 @@ antes de proseguir.</translation>
     <message>
         <location filename="../minstall.cpp" line="1371"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Lo siento, el nombre del dominio necesita ser por lo menos 
 de 2 caracteres de largo. Tendrá que escoger un dominio 
@@ -389,7 +387,7 @@ diferente antes de proceder.</translation>
     <message>
         <location filename="../minstall.cpp" line="1375"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>El dominio de su computadora contiene caracteres inválidos.
 Deberá seleccionar uno diferente
@@ -398,7 +396,7 @@ antes de continuar.</translation>
     <message>
         <location filename="../minstall.cpp" line="1384"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Lo siento, el nombre del grupo de trabajo necesita ser por lo menos 
 de 2 caracteres de largo. Tendrá que escoger un nombre 
@@ -1155,7 +1153,7 @@ MX Linux está apoyado por gente como usted. Algunos ayudan a los otros en el fo
     <name>QApplication</name>
     <message>
         <location filename="../app.cpp" line="47"/>
-        <source>The installer won&apos;t launch because it appears to be running already in the background.
+        <source>The installer won't launch because it appears to be running already in the background.
 
 Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</source>
         <translation>El instalador no ejecuta porque parece estar ejecutando en el fondo
@@ -1168,17 +1166,20 @@ Favor cerrarlo si es posible, o ejecuta &apos;pkill minstall&apos; en un termina
 We recommend you quit now and restart in Legacy Boot
 
 Do you want to continue the installation?</source>
-        <translation type="unfinished"></translation>
+        <translation>Esta ejecutando un OS de 32bit iniciado en modo UEFI, el sistema no sera capaz de iniciar a menos que seleccionar Legacy Boot o algo parecido al reiniciar.
+Recomiendo que salga y reiniciar en modo de Legacy Boot.
+
+Desea continuar con la instalación? </translation>
     </message>
     <message>
         <location filename="../app.cpp" line="59"/>
         <source>Yes</source>
-        <translation type="unfinished">Sí</translation>
+        <translation>Sí</translation>
     </message>
     <message>
         <location filename="../app.cpp" line="59"/>
         <source>No</source>
-        <translation type="unfinished">No</translation>
+        <translation>No</translation>
     </message>
     <message>
         <location filename="../app.cpp" line="73"/>
