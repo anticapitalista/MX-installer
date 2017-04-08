@@ -1,4 +1,6 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="nl" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="nl">
 <context>
     <name>MInstall</name>
     <message>
@@ -238,7 +240,7 @@ en een nieuwe home-directory aanmaken?</translation>
     <message>
         <location filename="../minstall.cpp" line="1116"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you'll have to select a different username or
+you&apos;ll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Sorry. Het opslaan van de oude home-directory is mislukt. Voordat u verder gaat,
 dient u een andere gebruikersnaam te kiezen of
@@ -258,7 +260,7 @@ dient u een andere gebruikersnaam te kiezen.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1142"/>
-        <source>You've chosen to not use, save or delete the old home directory.
+        <source>You&apos;ve chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>U hebt ervoor gekozen de oude home-directory niet te gebruiken, bewaren of te wissen.
 Voordat u verder gaat dient u een andere gebrukersnaam te kiezen.</translation>
@@ -357,7 +359,7 @@ verschillen. Probeer a.u.b. opnieuw.</translation>
     <message>
         <location filename="../minstall.cpp" line="1361"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You'll have to
+at least 2 characters long. You&apos;ll have to
 select a different name before proceeding.</source>
         <translation>Sorry. Uw computernaam dient
 ten minste 2 karakters te bevatten. Kies
@@ -366,7 +368,7 @@ een andere naam voordat u verder gaat.</translation>
     <message>
         <location filename="../minstall.cpp" line="1365"/>
         <source>Sorry your computer name contains invalid characters.
-You'll have to select a different
+You&apos;ll have to select a different
 name before proceeding.</source>
         <translation>Sorry uw computernaam bevat ongeldige karakters.
 U moet een andere naam kiezen voordat u door gaat.</translation>
@@ -374,7 +376,7 @@ U moet een andere naam kiezen voordat u door gaat.</translation>
     <message>
         <location filename="../minstall.cpp" line="1371"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You'll have to select a different
+2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
         <translation>Sorry. De domeinnaam van uw computer dient
 tenminste 2 karakters te bevatten. Kies een andere
@@ -383,7 +385,7 @@ naam voordat u verder gaat.</translation>
     <message>
         <location filename="../minstall.cpp" line="1375"/>
         <source>Sorry your computer domain contains invalid characters.
-You'll have to select a different
+You&apos;ll have to select a different
 name before proceeding.</source>
         <translation>Sorry uw computerdomein bevat ongeldige karakters.
 U moet een andere naam kiezen voordat u door gaat.</translation>
@@ -391,7 +393,7 @@ U moet een andere naam kiezen voordat u door gaat.</translation>
     <message>
         <location filename="../minstall.cpp" line="1384"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You'll have to select a different
+2 characters long. You&apos;ll have to select a different
 name before proceeding.</source>
         <translation>Sorry. De naam voor uw werkgroep dient tenminste
 2 karakters te bevatten. Kies een andere
@@ -1150,7 +1152,7 @@ MX Linux wordt ondersteund door mensen als U. Sommigen helpen anderen in het sup
     <name>QApplication</name>
     <message>
         <location filename="../app.cpp" line="47"/>
-        <source>The installer won't launch because it appears to be running already in the background.
+        <source>The installer won&apos;t launch because it appears to be running already in the background.
 
 Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</source>
         <translation>De installeerder kan niet starten omdat het reeds in de achtergrond actief is.
