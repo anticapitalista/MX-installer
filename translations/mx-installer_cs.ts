@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="cs">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="cs" version="2.1">
 <context>
     <name>MInstall</name>
     <message>
@@ -12,13 +10,15 @@ The disk with the partition you selected for installation is failing.
 </source>
         <translation>
 
-Disk s přepážkou jste vybrali pro instalaci selhává. </translation>
+Disk s oddílem jenž jste vybráli pro instalaci selhává.
+</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="288"/>
         <source>You are strongly advised to abort.
 </source>
-        <translation>Nacházíte se důrazně doporučuje zrušit. </translation>
+        <translation>Důrazně doporučeno zrušit.
+</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="289"/>
@@ -82,14 +82,16 @@ Disk s přepážkou jste vybrali pro instalaci selhává. </translation>
         <location filename="../minstall.cpp" line="301"/>
         <source>The disk with the partition you selected for installation passes the S.M.A.R.T. monitor test (smartctl)
 </source>
-        <translation>Disk s přepážkou jste vybrali pro instalaci projde SMART Test monitoru (smartctl) 
+        <translation>Disk s oddílem jenž jste vybráli pro instalaci prošel testem S.M.A.R.T. (smartctl)
+
 </translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="302"/>
         <source>but the tests indicate it will have a higher than average failure rate in the upcoming year.
 </source>
-        <translation>ale testy ukazují, že bude mít vyšší, než je průměr poruchovost v nadcházejícím roce. </translation>
+        <translation>ale testy naznačují, že bude mít vyšší, než li průměrnou poruchovost.
+</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="304"/>
@@ -131,39 +133,39 @@ Disk s přepážkou jste vybrali pro instalaci selhává. </translation>
         <location filename="../minstall.cpp" line="668"/>
         <source>You must choose a root partition.
 The root partition must be at least 3.5 GB.</source>
-        <translation>Musíte vybrat korenový oddíl.
-Kořenový oddíl musí mít 3.5 GB.</translation>
+        <translation>Musíte vybrat kořenový oddíl.
+Kořenový oddíl musí mít alespoň 3.5 GB.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="674"/>
         <source>The partition you selected for root, appears to be a MS-Windows partition.  Are you sure you want to reformat this partition?</source>
-        <translation>Oddíl, který jste vybrali pro root, se zdá být oddíl MS WIndows. Jste si jisti, že chcete tento oddíl reformátovat?</translation>
+        <translation>Oddíl, který jste vybrali pro root, se zdá být oddíl MS WIndows. Jste si jisti, že chcete tento oddíl přeformátovat?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="683"/>
         <source>OK to format and destroy all data on 
 %1 for the / (root) partition?</source>
         <translation>Je v pořádku formátovat a zničit všechna data na 
-%1 pro oddíl / (root)</translation>
+%1 pro oddíl / (root)?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="685"/>
         <source>All data on %1 will be deleted, except for /home
 OK to continue?</source>
-        <translation>Všechna data na% 1 budou odstraněny, s výjimkou pro /home
-Ok pokračovat?</translation>
+        <translation>Všechna data na% 1 budou odstraněna, s výjimkou pro /home
+Pokračovat?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="702"/>
         <source>OK to format and destroy all data on 
 %1 for the swap partition?</source>
         <translation>Je v pořádku formátovat a zničit všechna data na 
-%1 pro výměnu oddílu?</translation>
+%1 pro SWAP oddíl?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="715"/>
         <source>The partition you selected for /home, appears to be a MS-Windows partition.  Are you sure you want to reformat this partition?</source>
-        <translation>Oddíl, který jste vybrali pro/home se zdá být oddíl MS WIndows. Jste si jisti, že chcete tento oddíl reformátovat?</translation>
+        <translation>Oddíl, který jste vybrali pro/home se zdá být oddíl MS WIndows. Jste si jisti, že chcete tento oddíl přeformátovat?</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="724"/>
@@ -183,7 +185,7 @@ Ok pokračovat?</translation>
     <message>
         <location filename="../minstall.cpp" line="788"/>
         <source>Formatting the / (root) partition</source>
-        <translation>Formátování / (kořenového) oddílu</translation>
+        <translation>Formátuji oddíl / (root)</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="822"/>
@@ -193,7 +195,7 @@ Ok pokračovat?</translation>
     <message>
         <location filename="../minstall.cpp" line="837"/>
         <source>Formatting the /home partition</source>
-        <translation>Formátování /domácího oddílu</translation>
+        <translation>Formátování oddílu /home</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="883"/>
@@ -235,7 +237,7 @@ a vytvořit nový domovský adresář?</translation>
     <message>
         <location filename="../minstall.cpp" line="1116"/>
         <source>Sorry, failed to save old home directory. Before proceeding,
-you&apos;ll have to select a different username or
+you'll have to select a different username or
 delete a previously saved copy of your home directory.</source>
         <translation>Je nám líto, nelze uložit do staré domovské složky. Před pokračováním,
 musíte vybrat jiné uživatelské jméno nebo
@@ -255,7 +257,7 @@ si budete muset zvolit jiné uživatelské jméno.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1142"/>
-        <source>You&apos;ve chosen to not use, save or delete the old home directory.
+        <source>You've chosen to not use, save or delete the old home directory.
 Before proceeding, you&apos;ll have to select a different username.</source>
         <translation>Zvolili jste, že nechcete použít, uložit ani smazat starou domovskou složku. 
 Před pokračováním musíte zvolit jiné uživatelské jméno.</translation>
@@ -263,17 +265,17 @@ Před pokračováním musíte zvolit jiné uživatelské jméno.</translation>
     <message>
         <location filename="../minstall.cpp" line="1155"/>
         <source>Sorry, failed to create user directory.</source>
-        <translation>Promiňte, vytvoření uživatelského adresáře selhalo.</translation>
+        <translation>Je nám líto, vytvoření uživatelského adresáře selhalo.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1162"/>
         <source>Sorry, failed to name user directory.</source>
-        <translation>Promiňte, jmenování uživatelského adresáře selhalo.</translation>
+        <translation>Je nám líto, pojmenování uživatelského adresáře selhalo.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1187"/>
         <source>Sorry, failed to save desktop changes.</source>
-        <translation>Omlouváme se, ale nepodařilo uložit změny desktop.</translation>
+        <translation>Je nám líto, nepodařilo uložit změny plochy.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1195"/>
@@ -283,12 +285,12 @@ Před pokračováním musíte zvolit jiné uživatelské jméno.</translation>
     <message>
         <location filename="../minstall.cpp" line="1244"/>
         <source>Sorry, unable to set root password.</source>
-        <translation>Je nám líto, nelze natavit heslo pro root.</translation>
+        <translation>Je nám líto, nelze nastavit heslo pro root.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1271"/>
         <source>Sorry, unable to set user password.</source>
-        <translation>Promiňte, nelze změnit uživatelské heslo.</translation>
+        <translation>Je nám líto, nelze nastavit uživatelské heslo.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1284"/>
@@ -333,15 +335,15 @@ zvolte prosím delší heslo.</translation>
         <source>Sorry that name is in use.
 Please select a different name.
 </source>
-        <translation>&gt;Promiňte, toto jméno je již používáno.
-Prosím zvolte si jiné.</translation>
+        <translation>Je nám líto, toto jméno je již používáno.
+Prosím zvolte si jiné.
+</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1320"/>
         <source>The user password entries do
 not match.  Please try again.</source>
-        <translation>Položka užicatelské heslo se
-neshoduje. Prosím zkuste to znovu.</translation>
+        <translation>Záznamy hesla se neshodují. Zkuste to znovu prosím.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1326"/>
@@ -353,7 +355,7 @@ neshoduje. Prosím zkuste to znovu.</translation>
     <message>
         <location filename="../minstall.cpp" line="1361"/>
         <source>Sorry your computer name needs to be
-at least 2 characters long. You&apos;ll have to
+at least 2 characters long. You'll have to
 select a different name before proceeding.</source>
         <translation>Je nám líto. Název Vašeho počítače musí mít
 délku alespoň 2 znaky. Před pokračováním
@@ -362,15 +364,16 @@ budete muset zvolit jiný název.</translation>
     <message>
         <location filename="../minstall.cpp" line="1365"/>
         <source>Sorry your computer name contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
-        <translation>Omlouváme se název počítače obsahuje neplatné znaky. 
-Před pokračováním budete muset zvolit jiný název.</translation>
+        <translation>Je nám líto. Název počítače obsahuje neplatné znaky. 
+Před pokračováním budete muset
+zvolit jiný název.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1371"/>
         <source>Sorry your computer domain needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Je nám líto, název Vaší domény musí být dlouhý
 alespoň 2 znaky. Před pokračováním
@@ -379,7 +382,7 @@ budete muset zvolit jiný název.</translation>
     <message>
         <location filename="../minstall.cpp" line="1375"/>
         <source>Sorry your computer domain contains invalid characters.
-You&apos;ll have to select a different
+You'll have to select a different
 name before proceeding.</source>
         <translation>Je nám líto, název Vaší doményobsahuje neplatné znaky.  
 Před pokračováním budete muset zvolit jiný název.</translation>
@@ -387,7 +390,7 @@ Před pokračováním budete muset zvolit jiný název.</translation>
     <message>
         <location filename="../minstall.cpp" line="1384"/>
         <source>Sorry your workgroup needs to be at least
-2 characters long. You&apos;ll have to select a different
+2 characters long. You'll have to select a different
 name before proceeding.</source>
         <translation>Je nám líto, Vaše pracovní skupina musí být alespoň
 2 znaky dlouhá. Před pokračováním musíte zvolit
@@ -435,14 +438,14 @@ Ak použijete separátní /home (domovský) oddíl bude pro Vás jednoduchší p
     <message>
         <location filename="../minstall.cpp" line="1917"/>
         <source>&lt;p&gt;&lt;b&gt;Installation in Progress&lt;/b&gt;&lt;br/&gt;MX Linux is installing.  For a fresh install, this will probably take 3-20 minutes, depending on the speed of your system and the size of any partitions you are reformatting.&lt;/p&gt;&lt;p&gt;If you click the Abort button, the installation will be stopped as soon as possible.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Instalace probíhá&lt;/b&gt;&lt;br/&gt;S&apos;MX Linux se instaluje. Svěží instalace by měla trvat 3-20 minut, podle rychlosti vašecho systému a velikosti oddílů které reformátujete.&lt;/p&gt;&lt;p&gt;Pokud kliknete na tlačítko Zrušit, instalace bude zastavena a možná se vrátí.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;b&gt;Instalace probíhá&lt;/b&gt;&lt;br/&gt;MX Linux se instaluje. Instalace by měla trvat 3-20 minut, podle rychlosti vašecho systému a velikosti oddílů které reformátujete.&lt;/p&gt;&lt;p&gt;Pokud kliknete na tlačítko Zrušit, instalace bude zastavena jakmile to bude možné.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1929"/>
         <source>Failed to create required partitions.
 Returning to Step 1.</source>
         <translation>Vytváření požadovaných oddílů selhalo.
-Vracím se ke kroku 1.</translation>
+Návrat ke kroku 1.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1938"/>
@@ -454,7 +457,7 @@ Návrat ke Kroku 1.</translation>
     <message>
         <location filename="../minstall.cpp" line="1951"/>
         <source>&lt;p&gt;&lt;b&gt;Select Boot Method&lt;/b&gt;&lt;br/&gt;MX Linux uses the GRUB bootloader to boot MX Linux and MS-Windows. &lt;p&gt;By default GRUB2 is installed in the Master Boot Record or ESP (EFI System Partition for 64-bit UEFI boot systems) of your boot drive and replaces the boot loader you were using before. This is normal.&lt;/p&gt;&lt;p&gt;If you choose to install GRUB2 at root instead, then GRUB2 will be installed at the beginning of the root partition. This option is for experts only.&lt;/p&gt;&lt;p&gt;If you uncheck the Install GRUB box, GRUB will not be installed at this time. This option is for experts only.&lt;/p&gt;</source>
-        <translation>&lt;p&gt;&lt;b&gt;Vyberte způsob zavedení systému&lt;/b&gt;&lt;br/&gt;MX Linux používá GRUB zavaděč k zavedení MX Linux a MS-Windows. &lt;p&gt;Standardně je GRUB2 nainstalován do MBR (Master Boot Record) nebo ESP (oddíl EFI Systemu pro 64-bitové UEFI zaváděcí systémy) ve vaší hlavní diskové jednotce a nahrazuje zavaděč, který jste používali doposud. To je naprosto normální.&lt;/p&gt;&lt;p&gt; Když ale na místo toho zvolíte volbu nainstalovat GRUB2 do root-u, pak bude GRUB2 nainstalován na začátek oddílu root. Tahle volba je doporučená pouze pro experty.&lt;/p&gt;&lt;p&gt;Ak odvyberete instalaci GRUB, tento nebude nainstalován. Tahle volba je doporučená pouze pro experty.&lt;/p&gt;</translation>
+        <translation>&lt;p&gt;&lt;b&gt;Vyberte způsob zavedení systému&lt;/b&gt;&lt;br/&gt;MX Linux používá GRUB zavaděč k zavedení MX Linux a MS-Windows. &lt;p&gt;Standardně je GRUB2 nainstalován do MBR Master Boot Record nebo ESP (oddíl EFI Systemu pro 64-bitové UEFI zaváděcí systémy) ve vaší hlavní diskové jednotce a nahrazuje zavaděč, který jste používali doposud. To je naprosto normální.&lt;/p&gt;&lt;p&gt; Když ale na místo toho zvolíte volbu nainstalovat GRUB2 do root-u, pak bude GRUB2 nainstalován na začátek oddílu root. Tahle volba je doporučená pouze pro experty.&lt;/p&gt;&lt;p&gt;Ak odvyberete instalaci GRUB, tento nebude nainstalován. Tahle volba je doporučená pouze pro experty.&lt;/p&gt;</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="1960"/>
@@ -510,17 +513,17 @@ Návrat ke Kroku 1.</translation>
     <message>
         <location filename="../minstall.cpp" line="2105"/>
         <source>Runs commands periodically</source>
-        <translation>Runs commands periodically </translation>
+        <translation>Spouští příkazy periodicky</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2115"/>
         <source>Time-based job scheduler</source>
-        <translation>Time-based job scheduler </translation>
+        <translation>Plánovač úkolů</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2125"/>
         <source>Execute a command as another user</source>
-        <translation>Execute a command as another user </translation>
+        <translation>Spustit příkaz jako jiný uživatel</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2134"/>
@@ -530,27 +533,27 @@ Návrat ke Kroku 1.</translation>
     <message>
         <location filename="../minstall.cpp" line="2139"/>
         <source>CPU frequency, irqbalance</source>
-        <translation>CPU frequency, irqbalance</translation>
+        <translation>CPU frekvence, irqbalance</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2149"/>
         <source>S.M.A.R.T. monitoring tools</source>
-        <translation>S.M.A.R.T. monitoring tools </translation>
+        <translation>Monitorovací nástroje S.M.A.R.T.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2159"/>
         <source>Advanced Configuration and Power Interface event daemon</source>
-        <translation>Advanced Configuration and Power Interface event daemon </translation>
+        <translation>Daemon pro pokročilá nastavení a nastavení napájení</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2169"/>
         <source>HDD temperature monitor</source>
-        <translation>HDD temperature monitor </translation>
+        <translation>Monitor teploty HDDD</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2179"/>
         <source>Generates key events for ACPI scripts</source>
-        <translation>Generates key events for ACPI scripts </translation>
+        <translation>Generuje klíčenky pro ACPI skripty</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2189"/>
@@ -595,12 +598,12 @@ Návrat ke Kroku 1.</translation>
     <message>
         <location filename="../minstall.cpp" line="2264"/>
         <source>Mail filter</source>
-        <translation>Mail filter </translation>
+        <translation>Filter emailů</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2274"/>
         <source>Network File System</source>
-        <translation>Network File System </translation>
+        <translation>Systém souborů sítě</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2288"/>
@@ -615,7 +618,7 @@ Návrat ke Kroku 1.</translation>
     <message>
         <location filename="../minstall.cpp" line="2308"/>
         <source>File-copying tool</source>
-        <translation>File-copying tool </translation>
+        <translation>Nástroj k kopírování souborů</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2317"/>
@@ -625,7 +628,7 @@ Návrat ke Kroku 1.</translation>
     <message>
         <location filename="../minstall.cpp" line="2323"/>
         <source>Linux and OS X printer service</source>
-        <translation>Linux and OS X printer service </translation>
+        <translation>Linux a OSX služby tisku</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2501"/>
@@ -643,8 +646,8 @@ jisti, že chcete nyní Zavřít?</translation>
         <location filename="../minstall.cpp" line="2537"/>
         <source>Failed to delete old MX Linux on destination.
 Returning to Step 1.</source>
-        <translation>Nelze smazat staré MX Linux v cílovém umístění.
-Návrat do Kroku 1.</translation>
+        <translation>Nelze smazat starý MX Linux v cílovém umístění.
+Návrat ke Kroku 1.</translation>
     </message>
     <message>
         <location filename="../minstall.cpp" line="2563"/>
@@ -660,7 +663,7 @@ Návrat do Kroku 1.</translation>
         <location filename="../minstall.cpp" line="2678"/>
         <source>Failed to write MX Linux to destination.
 Returning to Step 1.</source>
-        <translation>Nelze zapisovat MX Linux do cíle.
+        <translation>Nelze zapsat MX Linux do cílového umístnění.
 Návrat ke Kroku 1.</translation>
     </message>
     <message>
@@ -694,7 +697,7 @@ Návrat ke Kroku 1.</translation>
     <message>
         <location filename="../meinstall.ui" line="26"/>
         <source>MeInstall</source>
-        <translation>MeInstalace</translation>
+        <translation>Instalace</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="47"/>
@@ -733,11 +736,11 @@ Návrat ke Kroku 1.</translation>
 MX Linux uses some components from MEPIS Linux which are released under an Apache free license. Some MEPIS components have been modified for MX Linux.
 
 Enjoy using MX Linux.</source>
-        <translation>MX Linux je nezávislá linuxová distribuce založené na Debian Stable
+        <translation>MX Linux je nezávislá linuxová distribuce založená na Debian Stable
 
 MX Linux používá některé komponenty z MEPIS Linux, který je šířen pod svobodnou licencí Apache. Některé MEPIS komponenty byly upraveny pro MX Linux.
 
-Užijte si pomocí MX Linux.</translation>
+Užijte si používání MX Linux.</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="226"/>
@@ -772,7 +775,7 @@ Užijte si pomocí MX Linux.</translation>
     <message>
         <location filename="../meinstall.ui" line="398"/>
         <source>Use disk:</source>
-        <translation>Využít disk:</translation>
+        <translation>Použít disk:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="417"/>
@@ -782,7 +785,7 @@ Užijte si pomocí MX Linux.</translation>
     <message>
         <location filename="../meinstall.ui" line="444"/>
         <source>Run partition tool...</source>
-        <translation>Spustit oddíl nástroj...</translation>
+        <translation>Spustit správce oddílů...</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="457"/>
@@ -792,7 +795,7 @@ Užijte si pomocí MX Linux.</translation>
     <message>
         <location filename="../meinstall.ui" line="521"/>
         <source>2b. Preferences</source>
-        <translation>2b.Nastavení</translation>
+        <translation>2b. Nastavení</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="548"/>
@@ -807,7 +810,7 @@ Užijte si pomocí MX Linux.</translation>
     <message>
         <location filename="../meinstall.ui" line="609"/>
         <source>Change default / (root) partition label:</source>
-        <translation>Změna default / (root) partition štítek:</translation>
+        <translation>Změnit štítek / (root) diskového oddílu:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="623"/>
@@ -847,7 +850,7 @@ Užijte si pomocí MX Linux.</translation>
     <message>
         <location filename="../meinstall.ui" line="664"/>
         <source>Change default /home partition label:</source>
-        <translation>Změna default / home partition štítek:</translation>
+        <translation>Změnit štítek / home diskového oddílu:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="683"/>
@@ -867,12 +870,12 @@ Užijte si pomocí MX Linux.</translation>
     <message>
         <location filename="../meinstall.ui" line="748"/>
         <source>swap partition:</source>
-        <translation>vyměnit oddíl:</translation>
+        <translation>SWAP oddíl:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="764"/>
         <source>/home partition:</source>
-        <translation>oddíl /home:</translation>
+        <translation>/home oddíl:</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="843"/>
@@ -969,7 +972,7 @@ Užijte si pomocí MX Linux.</translation>
     <message>
         <location filename="../meinstall.ui" line="1388"/>
         <source>Workgroup</source>
-        <translation>Pracovní skupina:</translation>
+        <translation>Pracovní skupina</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1401"/>
@@ -1009,7 +1012,7 @@ Užijte si pomocí MX Linux.</translation>
     <message>
         <location filename="../meinstall.ui" line="1569"/>
         <source>Adjust which services should run at startup</source>
-        <translation>Nastavit, které služby by měly spuštění při startu </translation>
+        <translation>Nastavit, které služby by měly spouštěny při startu </translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1572"/>
@@ -1059,7 +1062,7 @@ Užijte si pomocí MX Linux.</translation>
     <message>
         <location filename="../meinstall.ui" line="1823"/>
         <source>7b. Root (administrator) Account</source>
-        <translation>7b. Účet správce</translation>
+        <translation>7b. Účet (správce) Root</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="1882"/>
@@ -1099,7 +1102,7 @@ Užijte si pomocí MX Linux.</translation>
     <message>
         <location filename="../meinstall.ui" line="2050"/>
         <source>Autologin</source>
-        <translation>Autolog</translation>
+        <translation>Automatické přihlašování</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2057"/>
@@ -1114,7 +1117,7 @@ Užijte si pomocí MX Linux.</translation>
     <message>
         <location filename="../meinstall.ui" line="2067"/>
         <source>Save live desktop changes</source>
-        <translation>Uložte živé změny desktop</translation>
+        <translation>Uložte změny plochy live sezení</translation>
     </message>
     <message>
         <location filename="../meinstall.ui" line="2099"/>
@@ -1148,7 +1151,7 @@ MX Linux je podporovaný lidmi jako jste Vy. Někteří pomáhají jiným přes 
     <name>QApplication</name>
     <message>
         <location filename="../app.cpp" line="47"/>
-        <source>The installer won&apos;t launch because it appears to be running already in the background.
+        <source>The installer won't launch because it appears to be running already in the background.
 
 Please close it if possible, or run &apos;pkill minstall&apos; in terminal.</source>
         <translation>Instalační program se nespustí protože již bězí na pozadí.
@@ -1161,7 +1164,10 @@ Prosím ukončete ho ak je to možné, nebo zadejte &apos;pkill minstall&apos; v
 We recommend you quit now and restart in Legacy Boot
 
 Do you want to continue the installation?</source>
-        <translation type="unfinished"></translation>
+        <translation>Spustili jste 32bitový operační systém v módu UEFI, systém nebude možné zavést. Prosím při restartu zvolte Legacy Boot.
+Důrazně se doporučuje přerušit instalaci a restartovat v módu Legacy Boot.
+
+Přejete si pokračovat v instalaci?</translation>
     </message>
     <message>
         <location filename="../app.cpp" line="59"/>
