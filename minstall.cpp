@@ -164,6 +164,13 @@ bool MInstall::is32bit()
     return (getCmdOut("uname -m") == "i686");
 }
 
+// Check if running from a 64bit environment
+bool MInstall::is64bit()
+{
+    return (getCmdOut("uname -m") == "x86_64");
+}
+
+
 // Check if running inside VirtualBox
 bool MInstall::isInsideVB()
 {
@@ -354,6 +361,25 @@ bool MInstall::makeSwapPartition(QString dev)
     return true;
 }
 
+// create ESP at the begining of the drive
+bool MInstall::makeEsp(QString drv, int size)
+{
+    int err = runCmd("parted -s " + drv + " mkpart primary 0 " + QString::number(size) + "MiB");
+    if (err != 0) {
+        qDebug() << "Could not create ESP";
+        return false;
+    }
+
+    runCmd("parted -s " + drv + " set 1 esp on");   // sets boot flag and esp flag
+
+    err = runCmd("mkfs.msdos -F 32 " + drv + "1");
+    if (err != 0) {
+        qDebug() << "Could not format ESP";
+        return false;
+    }
+    return true;
+}
+
 bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad, QString label)
 {
     QString cmd;
@@ -440,30 +466,30 @@ bool MInstall::makeLinuxPartition(QString dev, const char *type, bool bad, QStri
     }
     return true;
 }
+
 ///////////////////////////////////////////////////////////////////////////
 // in this case use all of the drive
 
 bool MInstall::makeDefaultPartitions()
-{
+{    
     char line[130];
     int ans;
+    int prog = 0;
+    bool uefi = isUefi();
+    bool arch64 = is64bit();
+
+    QString rootdev, swapdev;
 
     QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
-    QString rootdev = QString(drv).append("1");
-    QString swapdev = QString(drv).append("2");
     QString msg = QString(tr("OK to format and use the entire disk (%1) for MX Linux?")).arg(drv);
     ans = QMessageBox::information(0, QString::null, msg,
                                    tr("Yes"), tr("No"));
-    if (ans != 0) {
-        // don't format--stop install
+    if (ans != 0) { // don't format--stop install
         return false;
     }
-    isRootFormatted = true;
-    isHomeFormatted = false;
-    isFormatExt3 = true;
 
     // entire disk, create partitions
-    updateStatus(tr("Creating required partitions"), 1);
+    updateStatus(tr("Creating required partitions"), ++prog);
 
     // ready to partition
     // try to be sure that entire drive is available
@@ -472,14 +498,13 @@ bool MInstall::makeDefaultPartitions()
     // unmount root part
     QString cmd = QString("/bin/umount -l %1 >/dev/null 2>&1").arg(rootdev);
     if (system(cmd.toUtf8()) != 0) {
-        // error
+        qDebug() << "could not umount: " << rootdev;
     }
 
-    bool free = false;
-    bool fiok = true;
-    int fi = freeSpaceEdit->text().toInt(&fiok,10);
-    if (!fiok) {
-        fi = 0;
+    bool ok = true;
+    int free = freeSpaceEdit->text().toInt(&ok,10);
+    if (!ok) {
+        free = 0;
     }
 
     const char *tstr;                    // total size
@@ -492,57 +517,89 @@ bool MInstall::makeDefaultPartitions()
     fgets(line, sizeof line, fp);
     tstr = strtok(line," ");
     pclose(fp);
-    int sz = atoi(tstr);
-    sz = sz / 1024;
+    int size = atoi(tstr);
+    size = size / 1024; // in MiB
     // pre-compensate for rounding errors in disk geometry
-    sz = sz - 32;
+    size = size - 32;
+    int remaining = size;
+
+    // allocate space for ESP
+    int esp_size = 0;
+    if(uefi && arch64) { // if booted from UEFI and 64bit
+        esp_size = 256;
+        remaining -= esp_size;
+    }
+
     // 2048 swap should be ample
-    int si = 2048;
-    if (sz < 2048) {
-        si = 128;
-    } else if (sz < 3096) {
-        si = 256;
-    } else if (sz < 4096) {
-        si = 512;
-    } else if (sz < 12288) {
-        si = 1024;
+    int swap = 2048;
+    if (remaining < 2048) {
+        swap = 128;
+    } else if (remaining < 3096) {
+        swap = 256;
+    } else if (remaining < 4096) {
+        swap = 512;
+    } else if (remaining < 12288) {
+        swap = 1024;
     }
-    int ri = sz - si;
+    remaining -= swap;
 
-    if (fi > 0 && ri > 8192) {
-        // allow fi
-        // ri is capped until fi is satisfied
-        if (fi > ri - 8192) {
-            fi = ri - 8192;
+    if (free > 0 && remaining > 8192) {
+        // allow free_size
+        // remaining is capped until free is satisfied
+        if (free > remaining - 8192) {
+            free = remaining - 8192;
         }
-        ri = ri - fi;
-        free = true;             // free space will be unallocated
+        remaining -= free;
+    } else { // no free space
+        free = 0;
+    }   
+
+    if(uefi && arch64) { // if booted from UEFI and 64bit make ESP
+        // new GPT partition table
+        int err = runCmd("parted -s " + drv + " mklabel gpt");
+        if (err != 0 ) {
+            qDebug() << "Could not create gpt partition table on " + drv;
+            return false;
+        }
+        rootdev = drv + "2";
+        swapdev = drv + "3";
+        updateStatus(tr("Formating EFI System Partition (ESP)"), ++prog);
+        if(!makeEsp(drv, esp_size)) {
+            return false;
+        }
     } else {
-        // no fi
-        fi = 0;
-        free = false;		// no free space
+        // new msdos partition table
+        int err = runCmd("parted -s " + drv + " mklabel msdos");
+        if (err != 0 ) {
+            qDebug() << "Could not create msdos partition table on " + drv;
+            return false;
+        }
+        rootdev = drv + "1";
+        swapdev = drv + "2";
     }
 
-    // new partition table
-    cmd = QString("/bin/dd if=/dev/zero of=%1 bs=512 count=100").arg(drv);
-    system(cmd.toUtf8());
-    cmd = QString("/sbin/sfdisk --no-reread -D -uM %1").arg(drv);
-    fp = popen(cmd.toUtf8(), "w");
-    if (fp != NULL) {
-        if (free) {
-            cmd = QString(",%1,L,*\n,%2,S\n,,\n;\ny\n").arg(ri).arg(si);
-        } else {
-            cmd = QString(",%1,L,*\n,,S\n,,\n;\ny\n").arg(ri);
-        }
-        fputs(cmd.toUtf8(), fp);
-        fputc(EOF, fp);
-        pclose(fp);
+    // create root partition
+    QString start;
+    if (esp_size == 0) {
+        start = "0 "; // have to do this because parted fails if 0MiB is used as start point, while 0 (or 0MB) works.
     } else {
-        // error
+        start = QString::number(esp_size) + "MiB ";
+    }
+    int end_root = esp_size + remaining;
+    int err = runCmd("parted -s " + drv + " mkpart primary  " + start + QString::number(end_root) + "MiB");
+    if (err != 0) {
+        qDebug() << "Could not create root partition";
         return false;
     }
 
-    updateStatus(tr("Formatting swap partition"), 2);
+    // create swap partition   
+    err = runCmd("parted -s " + drv + " mkpart primary  " + QString::number(end_root) + "MiB " + QString::number(end_root + swap) + "MiB");
+    if (err != 0) {
+        qDebug() << "Could not create swap partition";
+        return false;
+    }
+
+    updateStatus(tr("Formatting swap partition"), ++prog);
     system("sleep 1");
     if (!makeSwapPartition(swapdev)) {
         return false;
@@ -551,7 +608,7 @@ bool MInstall::makeDefaultPartitions()
     system("make-fstab -s");
     system("/sbin/swapon -a 2>&1");
 
-    updateStatus(tr("Formatting root partition"), 3);
+    updateStatus(tr("Formatting root partition"), ++prog);
     if (!makeLinuxPartition(rootdev, "ext4", false, rootLabelEdit->text())) {
         return false;
     }
@@ -579,7 +636,6 @@ bool MInstall::makeDefaultPartitions()
 
 bool MInstall::makeChosenPartitions()
 {
-    bool gpt;
     int ans;
     char line[130];
     char type[20];
@@ -587,13 +643,7 @@ bool MInstall::makeChosenPartitions()
     QString cmd;
 
     QString drv = QString("/dev/%1").arg(diskCombo->currentText().section(" ", 0, 0));
-
-    cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
-    if (system(cmd.toUtf8()) == 0) {
-        gpt = true;
-    } else {
-        gpt = false;
-    }
+    bool gpt = isGpt(drv);
 
     // get config
     strncpy(type, rootTypeCombo->currentText().toUtf8(), 4);
@@ -919,6 +969,7 @@ bool MInstall::installLoader()
         QString cmd = QString("partition-info find-esp=%1").arg(bootdrv);
         boot = getCmdOut(cmd);
         if (boot == "") {
+            qDebug() << "could not find ESP on: " << bootdrv;
             return false;
         }
     }
@@ -1013,6 +1064,17 @@ bool MInstall::installLoader()
     timer->stop();
     progress->close();
     return true;
+}
+
+bool MInstall::isGpt(QString drv)
+{
+    QString cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
+    return (system(cmd.toUtf8()) == 0);
+}
+
+bool MInstall::isUefi()
+{
+    return (system("test -d /sys/firmware/efi") == 0);
 }
 
 /////////////////////////////////////////////////////////////////////////
@@ -2414,9 +2476,9 @@ void MInstall::on_grubBootCombo_activated(QString)
     QString cmd = QString("blkid %1 | grep -q PTTYPE=\\\"gpt\\\"").arg(drv);
     QString detectESP = QString("sgdisk -p %1 | grep -q ' EF00 '").arg(drv);
     // if 64bit, GPT, and ESP exists
-    if (getCmdOut("uname -m") == "x86_64" && system(cmd.toUtf8()) == 0 && system(detectESP.toUtf8()) == 0) {
+    if (is64bit() && system(cmd.toUtf8()) == 0 && system(detectESP.toUtf8()) == 0) {
         grubEspButton->setEnabled(true);
-        if (system("test -d /sys/firmware/efi") == 0) { // if booted from UEFI
+        if (isUefi()) { // if booted from UEFI
             grubEspButton->setChecked(true);
         } else {
             grubMbrButton->setChecked(true);

@@ -1,3 +1,27 @@
+mx-installer (17.4mx16+1) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Wed, 12 Apr 2017 12:47:27 -0400
+
+mx-installer (17.4mx16) mx; urgency=medium
+
+  * new translations
+
+ -- Adrian <adrian@mxlinux.org>  Sat, 08 Apr 2017 15:00:50 -0400
+
+mx-installer (17.3mx16+1) mx; urgency=medium
+
+  * added warning for 32bit UEFI booting
+
+ -- Adrian <adrian@mxlinux.org>  Thu, 23 Mar 2017 17:02:38 -0400
+
+mx-installer (17.3mx16) mx; urgency=medium
+
+  * use GPT when using default partitioning
+
+ -- Adrian <adrian@mxlinux.org>  Sun, 05 Mar 2017 20:42:33 -0500
+
 mx-installer (17.2mx16) mx; urgency=medium
 
   * new translations, removed partitionmanager from recommends

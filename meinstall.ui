@@ -99,7 +99,7 @@
       </size>
      </property>
      <property name="currentIndex">
-      <number>9</number>
+      <number>0</number>
      </property>
      <widget class="QWidget" name="Step_0">
       <layout class="QGridLayout">
@@ -593,7 +593,7 @@ Enjoy using MX Linux.</string>
              <bool>false</bool>
             </property>
             <property name="text">
-             <string notr="true">rootMX-16</string>
+             <string notr="true">rootMX16</string>
             </property>
             <property name="maxLength">
              <number>16</number>
